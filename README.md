@@ -1,5 +1,5 @@
 # GCP for Bioinformatics
-This repository contains information about using Google Cloud Platform services for data analysis.  This guidance is tailored for bioinformatics researchers - in particular, for thos who are new to working with GCP.  Guidance is based on advisory work my team has done with the following groups and organizations:
+This repository contains information about using Google Cloud Platform services for data analysis tasks.  The guidance is intended for bioinformatics researchers - in particular, for those who are new to working with GCP.  The information is based on advisory work my team has done with the following groups and organizations:
 
 1) The Broad Institute in Cambridge, MA - [link](https://www.broadinstitute.org)
 2) CSIRO Bioinformatics in Sydney, Australia - [link](https://bioinformatics.csiro.au/)
