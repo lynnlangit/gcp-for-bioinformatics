@@ -4,7 +4,7 @@
 
 ### Why do this
   - High accuracy - In 2016 DeepVariant won PrecisionFDA Truth Challenge for best SNP Performance. DeepVariant maintains high accuracy across data from different sequencing technologies, prep methods, and species.
-  
+
  - Flexibility - Out-of-the-box use for PCR-positive samples and low quality sequencing runs, and easy adjustments for different sequencing technologies and non-human species.
  - Ease of use - No filtering is needed beyond setting your preferred minimum quality threshold.
  - Cost effectiveness - With an optimized setup on Google Cloud, it costs ~$2-3 to call a whole genome and $0.20 to call an exome with preemptible instances.
@@ -41,3 +41,5 @@
 
 ### How to learn more
  - GitHub Repo for [DeepVariant](https://github.com/google/deepvariant)
+
+ [![DeepVariant](/images/deep-variant.png)](https://google.github.io/deepvariant/posts/2018-12-05-improved-non-human-variant-calling-using-species-specific-deepvariant-models/)
