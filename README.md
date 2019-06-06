@@ -6,9 +6,14 @@ This repository contains information about Google Cloud Platform services.  This
 3) Nextflow.io team in Barcelona, Spain - [link](https://www.nextflow.io/about-us.html)
 4) EMBL-EBI in Cambridge, UK - [link](https://www.ebi.ac.uk/)
 
-Below is a quick reference with links to answer to commonly-asked questions.
+## Why should I use it?
 
-## Common Questions - "How do I..."
+- [Nature article: "Cloud computing for genomic data analysis and collaboration"](https://www.nature.com/articles/nrg.2017.113)
+
+
+## Commonly Asked: "How do I..."
+
+Here are quick links to some of the most commonly asked questions.
 
 - [Setup my GCP account?](#setup-my-gcp-account)
 - [Upload a file to a GCP storage bucket?](#upload-a-file-to-a-gcp-storage-bucket)
@@ -17,3 +22,7 @@ Below is a quick reference with links to answer to commonly-asked questions.
 - [Understand how much GCP services cost?](#understand-how-much-gcp-services-cost)
 - [Use GCP security best practices?](#use-gcp-security-best-practices)
 - [Learn more about using GCP?](#learn-more-about-using-gcp)
+
+## TOC for this Repository
+
+[![toc](/images/toc.png)]()
