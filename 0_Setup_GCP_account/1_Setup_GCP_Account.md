@@ -1,10 +1,11 @@
 # Setup your GCP Account
 
-
+[![gcp-account](/images/gcp-account.png)]()
 
 ### Why do this
  - Your workload is too big to run on your laptop
  - You don't want to wait for time on your organization's shared cluster
+ - You want to use Google Cloud Platform (services) to run large (or huge) genomic analysis jobs
 
 
 ### What is this
