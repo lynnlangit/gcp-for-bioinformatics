@@ -23,6 +23,35 @@ Here are quick links to some of the most commonly asked questions.
 - [Use GCP security best practices?](#use-gcp-security-best-practices)
 - [Learn more about using GCP?](#learn-more-about-using-gcp)
 
-## TOC for this Repository
+## Topic Areas in this Repository
 
-[![toc](/images/toc.png)]()
+- Setup GCP Account
+    - Setup
+    - Client tools
+- Files and Data 
+    - Google Cloud Storage
+    - Public genomic datasets on GCP
+    - Big Query
+    - Cloud SQL
+- Compute with VMs and Containers
+    - Google Compute Engine
+    - Terra.bio
+    - Docker
+    - cromwell
+    - dsub
+    - Kubernetes
+    - Nextflow.io
+    - GCE Jupyter Notebook instances
+- Machine Learning
+    - ML Vision / Video APIs & AutoML
+    - ML Text / Natural Language APIs
+    - ML Table Analysis
+    - Deep Variant
+    - GCE ML (deep learning) image 
+- Code/Cloud Tools
+    - Google Code Repositories
+    - Deployments
+    - Google Container Repositories
+    - Stackdriver
+- Serverless Compute with Functions
+    - Cloud Functions and Cloud Run
