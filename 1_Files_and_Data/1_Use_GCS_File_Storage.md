@@ -1,4 +1,4 @@
-# Use GCS File Storage
+# Use Google Cloud File Storage
 
 
 
@@ -8,32 +8,31 @@
 
 
 ### What is this
- - Ability to perform Compute on Data at scale 
- - Running on services hosted by GCP
+ - Using GCP service Cloud Storage to store and be able to perform analysis (compute services) on your files
 
 
 ### Key considerations
- - Use Free Tier
- - Use Your Organization's Account
- - Size & complexity of your workload 
- - Your budget
- - Your timeline
+ - Understanding costs and selecting the best fit type of storage for your data
+ - Understanding storage class types (multi-regional, regional, nearline, coldline)
+ - Understanding storage location options (shown below)
+
+ [![Cloud Storage regions](/images/regions.png)]()
 
 ### How to do this
- - Select account type
- - Request account from your organization -or-
- - Setup free tier (testing) account
+ - Create a bucket with a unique name
+ - Configure the bucket storage class type (see below)
+ - Configure the bucket location 
+ - Configure the bucket access control, encryption and retention
+
+ [![Cloud Storage types](/images/storage.png)]()
+
+ [![Cloud Storage config](/images/bucket.png)]()
 
 ### How to verify you've done it
- - Login to GCP console
- - Verify your account
- - Verify your envionment
+ - Upload file(s) to the bucket
 
 ### Other Things to Know
- - Use GCP Billing tools (& budgets)
- - Understand GCP service limits by account type
- - Follow GCP security best practices
+ - Storage can be the most significant GCP service cost for bioinformatics (due to the number and size of files involved in analysis)
 
 ### How to learn more
- - Link to 'how to set up a billing alert'
- - Link to 'core GCP security practices'
+ - Best practice for Google Cloud Storage - [link](https://cloud.google.com/storage/docs/best-practices)
