@@ -28,32 +28,35 @@ Here are quick links to some of the most commonly asked questions.
 ## Topic Areas in this Repository
 
 - Setup GCP Account
-    - Setup
-    - Client tools
+    - Setup Account
+    - Select and setup client tools
+    - Configure user permission / service security
 - Files and Data 
-    - Google Cloud Storage
-    - Public genomic datasets on GCP
-    - Big Query
-    - Cloud SQL
+    - Use Google Cloud Storage
+    - Use Public genomic datasets on GCP
+    - Use Big Query
+    - Use Cloud SQL
 - Compute with VMs and Containers
-    - Google Compute Engine
-    - Terra.bio
-    - Docker
-    - cromwell
-    - dsub
-    - Kubernetes
-    - Nextflow.io
-    - GCE Jupyter Notebook instances
+    - Use Google Compute Engine
+    - Use Terra.bio
+    - Use Docker
+    - Use cromwell
+    - Use dsub
+    - Use Kubernetes
+    - Use Nextflow.io
+    - Use GCE Jupyter Notebook instances
 - Machine Learning
-    - ML Vision / Video APIs & AutoML
-    - ML Text / Natural Language APIs
-    - ML Table Analysis
-    - Deep Variant
-    - GCE ML (deep learning) image 
+    - Use ML Vision / Video APIs & AutoML
+    - Use ML Text / Natural Language APIs
+    - Use ML Table Analysis
+    - Use Deep Variant
+    - Use GCE ML (deep learning) image 
 - Code/Cloud Tools
-    - Google Code Repositories
-    - Deployments
-    - Google Container Repositories
-    - Stackdriver
+    - Use Google Code Repositories
+    - Use Deployments
+    - Use Google Container Repositories
+    - Use Stackdriver
 - Serverless Compute with Functions
-    - Cloud Functions and Cloud Run
+    - Use loud Functions and Cloud Run
+- Advanced GCP Topic
+    - Get links to advanced GCP topics
