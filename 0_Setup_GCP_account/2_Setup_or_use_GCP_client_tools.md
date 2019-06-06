@@ -5,14 +5,27 @@
  - Work efficiently using the best combination of GCP client tools
 
 ### What is this
- - Understand, select and configure GCP client tools
- - Available tools include the following:
-    - GCP Web UI (or console) - [link](https://console.cloud.google.com/)
-    - GCP shell (integrated GCP client from withing the GCP console) - shown below in animated image
-    - GCP cli - part of GCP SDK (gcloud, gsutil, bq... script tools) - [download](https://cloud.google.com/sdk/)
-    - GCP SDK - available in many programming languages, Python, Go, Java... - [download](https://cloud.google.com/sdk/)
+ Understand, select and configure GCP client tools. Available tools include the following:  
 
-[![GCP integrated shell](/images/shellstart-update.gif)]()
+- GCP Web UI (or console) - [link](https://console.cloud.google.com/)
+- GCP cloud shell (integrated GCP client from withing the GCP console) - shown below in animated image. Cloud Shell provides the following:
+
+    - A temporary Compute Engine virtual machine instance
+    - Command-line access to the instance from a web browser
+    - Built-in code editor BETA
+    - 5 GB of persistent disk storage
+    - Pre-installed Google Cloud SDK and other tools
+    - Language support for Java, Go, Python, Node.js, PHP, Ruby and .NET
+    - Web preview functionality
+    - Built-in authorization for access to GCP Console projects and resources
+
+[   ![GCP integrated shell](/images/shellstart-update.gif)]()
+
+
+- GCP cli - part of GCP SDK (gcloud, gsutil, bq... script tools) - [download](https://cloud.google.com/sdk/)
+- GCP SDK - available in many programming languages, Python, Go, Java... - [download](https://cloud.google.com/sdk/)
+
+
 
 ### Key considerations
  - Learn via console
@@ -36,4 +49,5 @@
  - IAM is 'Identity and Access Management' - this contains security objects, such as users, groups, roles and permissions
 
 ### How to learn more
+ - Link to [Integrated Shell features](https://cloud.google.com/shell/docs/features)
  - Link to [Integrated Shell limits](https://cloud.google.com/shell/docs/limitations)
