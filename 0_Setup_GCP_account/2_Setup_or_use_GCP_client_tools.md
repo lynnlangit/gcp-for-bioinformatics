@@ -4,22 +4,21 @@
 ### Why do this
  - Work efficiently using the best combination of GCP client tools
 
-
 ### What is this
  - Understand, select and configure GCP client tools
  - Available tools include the following:
     - GCP Web UI (or console) - [link](https://console.cloud.google.com/)
-    - GCP shell (integrated into GCP console)
-    - GCP cli - part of GCP SDK (gcloud, gsutil, bq... script tools)
-    - GCP SDK - available in many programming languages, Python, Go, Java...
+    - GCP shell (integrated GCP client from withing the GCP console) - shown below in animated image
+    - GCP cli - part of GCP SDK (gcloud, gsutil, bq... script tools) - [download](https://cloud.google.com/sdk/)
+    - GCP SDK - available in many programming languages, Python, Go, Java... - [download](https://cloud.google.com/sdk/)
 
 [![GCP integrated shell](/images/shellstart-update.gif)]()
 
 ### Key considerations
  - Learn via console
- - Experiment via console and scripts
- - Scale via scripts 
- - Optimize using SDK language integration
+ - Experiment via integrated console and scripts
+ - Reproduce analysis using scripts 
+ - Scale and optimize analysis using SDK language integration (Python, Java... GCP SDK)
 
 ### How to do this
  - Click in GCP console and/or use shell - no setup /install required
@@ -37,5 +36,4 @@
  - IAM is 'Identity and Access Management' - this contains security objects, such as users, groups, roles and permissions
 
 ### How to learn more
- - Link to 'Using GCP client tools (via the integrated shell)'
- - Link to 'Using GCP client tools (install locally)'
+ - Link to [Integrated Shell limits](https://cloud.google.com/shell/docs/limitations)
