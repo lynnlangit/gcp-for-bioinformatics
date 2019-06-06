@@ -1,0 +1,42 @@
+Area, GCP Essentials Links, link  
+All, GCP-Essentials GitHub, https://github.com/lynnlangit/gcp-essentials 
+All, How to Visualize GCP Billing Data, https://cloud.google.com/billing/docs/how-to/visualize-data
+GCE, GCP Lift and Shift, https://cloud.google.com/files/Lift-and-Shift-onto-Google-Cloud.pdf 
+GCE, GCP Migration, https://cloud.google.com/solutions/migration-center/ 
+GCE, GCP VM Migration, https://cloud.google.com/vm-migrate/
+GCE, GCP VM Best Practices for Migrations, https://cloud.google.com/solutions/best-practices-migrating-vm-to-compute-engine
+GCE, How Disruptive is GCE Live Migration?, https://blog.doit-intl.com/how-live-is-google-compute-engine-live-migration-f875e96ba923
+GKE, Anthos concepts, https://cloud.google.com/anthos/docs/concepts/anthos-overview
+GKE, What is Anthos, https://thenewstack.io/anthos-kubernetes-infrastructure-to-make-developers-more-productive/
+GCE, GCE Image Mangement Best Practices, https://cloud.google.com/solutions/image-management-best-practices
+GCE, Create GCE Images, https://cloud.google.com/compute/docs/images/create-delete-deprecate-private-images#creating_a_custom_image
+GCE, GCE Image Management, https://cloud.google.com/compute/docs/images/export-image
+All, GCP Serverless summary, https://cloud.google.com/serverless/whitepaper/
+GKE, Kubernetes Comic, https://cloud.google.com/kubernetes-engine/kubernetes-comic/
+GKE, Cloud Run on GKE, https://cloud.google.com/run/docs/gke/setup
+DR, GCP Disaster Recovery Planning Guide, https://cloud.google.com/solutions/dr-scenarios-planning-guide
+DR, GCP DR Building Blocks, https://cloud.google.com/solutions/dr-scenarios-building-blocks
+DR, Secrets Management with Cloud KMS, https://cloud.google.com/kms/docs/secret-management
+DR, Live Migration, https://cloud.google.com/compute/docs/instances/live-migratation
+DW, Build a Data Warehouse on GCP, https://cloud.google.com/solutions/marketing-data-warehouse-on-gcp
+DW, BigQuery for Data Warehousing, https://cloud.google.com/solutions/bigquery-data-warehouse
+DW, Build a Marketing DW on BQ, https://cloud.google.com/solutions/marketing-data-warehouse-on-gcp
+DW, BigQuery Cookbook, https://support.google.com/analytics/answer/4419694?hl=en
+DW, BQ Machine Learning, https://cloud.google.com/bigquery/docs/bigqueryml-intro
+DW, Data Fusion, https://cloud.google.com/data-fusion/concepts/overview
+DW, Data Fusion Tutorial, https://cloud.google.com/data-fusion/tutorials/targeting-campaign-pipeline
+CI/CD, Private Catalog, https://cloud.google.com/private-catalog/docs/quickstart-private-catalog
+CI/CD, CI/CD Pipeline, https://cloud.google.com/docs/ci-cd/
+CI/CD, Terraform on GCP, https://www.terraform.io/docs/providers/google/index.html
+CI/CD, Cloud Foundation Toolkit, https://cloud.google.com/foundation-toolkit/
+CI/CD, CD with Cloud Build Codelab, https://codelabs.developers.google.com/codelabs/cloud-builder-gke-continuous-deploy/index.html#0
+CI/CD, Faster K8 CI/CD w/Skaffold, https://www.youtube.com/watch?v=TYx0BTyFtmc
+CI/CD, Using Kaniko Cache with Cloud Build, https://cloud.google.com/cloud-build/docs/kaniko-cache
+CI/CD, GCP CI/CD for multiple environments, https://www.youtube.com/watch?v=rt287-94Pq4
+Data, Build a Data Lake, https://cloud.google.com/solutions/build-a-data-lake-on-gcp
+Data, Data Lifecycle, https://cloud.google.com/solutions/data-lifecycle-cloud-patterns
+Data, Course - GCP Machine Learning (ML), https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/build-complete-solutions-with-machine-learning-services
+Data, Cloud Composer / Apache Airflow, https://www.youtube.com/watch?v=gFQVmsRRY_A
+Data, Enterprise IoT Application, https://codelabs.developers.google.com/codelabs/iot-data-pipeline/index.html?index=..%2F..index#0
+Data, Genomics Data Pipelines, https://cloud.google.com/genomics/docs/quickstart
+Data, Genomic Analysis on GCP, https://www.youtube.com/watch?v=27tSivxnQ_E
