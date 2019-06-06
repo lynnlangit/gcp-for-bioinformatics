@@ -1,7 +1,5 @@
 # Use Public Reference Datasets
 
-[![public-datasets](/images/public-datasets.png)](https://cloud.google.com/genomics/docs/public-datasets/)
-
 ### What is this
 - Cloud Genomics provides a variety of public datasets that you can access for free and integrate into your applications. Google hosts these datasets, providing public access to the data via the BigQuery or Cloud Storage.
 
@@ -30,3 +28,5 @@
 
 ### How to learn more
  - Link to [GCP Public Datasets](https://cloud.google.com/genomics/docs/public-datasets/)
+
+ [![public-datasets](/images/public-datasets.png)](https://cloud.google.com/genomics/docs/public-datasets/)
