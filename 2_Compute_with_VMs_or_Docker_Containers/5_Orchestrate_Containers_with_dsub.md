@@ -35,5 +35,5 @@
  - Follow GCP security best practices
 
 ### How to learn more
- - Link to 'how to set up a billing alert'
+ - Link to [Run in dsub](https://cloud.google.com/genomics/docs/tutorials/dsub)
  - Link to 'core GCP security practices'

@@ -1,4 +1,4 @@
-# Use GCE Virtual Machines for Compute
+# Use DeepVariant to perform variant calling
 
 
 
@@ -8,8 +8,7 @@
 
 
 ### What is this
- - Ability to perform Compute on Data at scale 
- - Running on services hosted by GCP
+ - DeepVariant is an analysis pipeline that uses a deep neural network to call genetic variants from next-generation DNA sequencing data.
 
 
 ### Key considerations
