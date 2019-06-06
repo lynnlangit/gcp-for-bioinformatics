@@ -3,8 +3,13 @@
 
 
 ### Why do this
- - Your workload is too big to run on your laptop
- - You don't want to wait for time on your organization's shared cluster
+  - High accuracy - In 2016 DeepVariant won PrecisionFDA Truth Challenge for best SNP Performance. DeepVariant maintains high accuracy across data from different sequencing technologies, prep methods, and species.
+  
+ - Flexibility - Out-of-the-box use for PCR-positive samples and low quality sequencing runs, and easy adjustments for different sequencing technologies and non-human species.
+ - Ease of use - No filtering is needed beyond setting your preferred minimum quality threshold.
+ - Cost effectiveness - With an optimized setup on Google Cloud, it costs ~$2-3 to call a whole genome and $0.20 to call an exome with preemptible instances.
+ - Speed - On a 64-core CPU-only machine, DeepVariant completes a 50x WGS in 5 hours and an exome in 16 minutes (1). Multiple options for acceleration exist, taking the WGS pipeline to as fast as 40 minutes (see external solutions).
+ - Usage options - DeepVariant can be run via Docker or binaries, using both on-premise hardware or in the cloud, with support for hardware accelerators like GPUs and TPUs.
 
 
 ### What is this
