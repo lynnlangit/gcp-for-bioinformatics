@@ -8,10 +8,12 @@
 ### What is this
  - Understand, select and configure GCP client tools
  - Available tools include the following:
-    - GCP Web UI (or console)
+    - GCP Web UI (or console) - [link](https://console.cloud.google.com/)
     - GCP shell (integrated into GCP console)
     - GCP cli - part of GCP SDK (gcloud, gsutil, bq... script tools)
     - GCP SDK - available in many programming languages, Python, Go, Java...
+
+[![GCP integrated shell](/images/shellstart-update.gif)]()
 
 ### Key considerations
  - Learn via console
