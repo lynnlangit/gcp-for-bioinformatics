@@ -10,8 +10,7 @@
     - you'd like routine database maintainence tasks, such as database backups to happen automatically
 
 ### What is this
- - Managed MySQL instaces
-
+ - Cloud SQL instances are fully managed, relational MySQL and PostgreSQL databases. Google handles replication, patch management and database management to ensure availability and performance
 
 ### Key considerations
  - Is this the right service for your workload?
@@ -27,6 +26,7 @@
 
 ### Other Things to Know
  - Max size of database for CloudSQL - [link](https://cloud.google.com/sql/docs/quotas)
+ - GCP has a service which allows you to migrate data from on premises into a Cloud SQL instance - [link](https://cloud.google.com/sql/docs/mysql/migrate-data)
  - Google has another service, Cloud Spanner - [link](https://cloud.google.com/spanner/), which is designed to host massively-scalable, frequently updated, transactionaly consistant relational databases
 
 ### How to learn more
