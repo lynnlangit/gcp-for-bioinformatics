@@ -12,13 +12,9 @@
  - Google adds more reference files as they become available
 
 ### How to do this
- - Interactive access is available in the BigQuery console. You can explore variant calls in case/control and cohort analysis. There are sample queries to help you get started. For information on how to get started with public datasets in BigQuery, see BigQuery public datasets.
+ - Interactive access is available in the BigQuery console. You can explore variant calls in case/control and cohort analysis. There are sample queries to help you get started. [GO TO CLOUD GENOMICS DATASETS IN BIGQUERY](https://bigquery.cloud.google.com/project/genomics-public-data)
 
- - [GO TO CLOUD GENOMICS DATASETS IN BIGQUERY](https://bigquery.cloud.google.com/project/genomics-public-data)
-
- - File access is available from Cloud Storage. Files are available in BAM, VCF, and FASTA formats. Copy the files you need to local disk or a Compute Engine VM for access from your favorite bioinformatics tools. For information on how to get started with Cloud Storage, see How to use public datasets on Cloud Storage.
-
- - [GO TO THE CLOUD GENOMICS BUCKET IN CLOUD STORAGE](https://console.cloud.google.com/storage/genomics-public-data/)
+ - File access is available from Cloud Storage. Files are available in BAM, VCF, and FASTA formats. Copy the files you need to local disk or a Compute Engine VM for access from your favorite bioinformatics tools. [GO TO THE CLOUD GENOMICS BUCKET IN CLOUD STORAGE](https://console.cloud.google.com/storage/genomics-public-data/)
 
 ### How to verify you've done it
  - Reference the file in a BigQuery query or a VM-based analysis
