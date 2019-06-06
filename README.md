@@ -1,5 +1,10 @@
 # GCP for Bioinformatics
-This repository contains information about Google Cloud Platform essentials for Bioinformatics Researchers.
+This repository contains information about Google Cloud Platform services.  This guidance is tailored for bioinformatics researchers who are new to working with GCP.  This includes work my team has done with the following groups and organizations:
+
+1) The Broad Institute in Cambridge, MA - [link](https://www.broadinstitute.org)
+2) CSIRO Bioinformatics in Sydney, Australia - [link](https://bioinformatics.csiro.au/)
+3) Nextflow.io team in Barcelona, Spain - [link](https://www.nextflow.io/about-us.html)
+4) EMBL-EBI in Cambridge, UK - [link](https://www.ebi.ac.uk/)
 
 Below is a quick reference with links to answer to commonly-asked questions.
 
