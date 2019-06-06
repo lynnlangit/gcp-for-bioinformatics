@@ -20,7 +20,7 @@
 ### How to do this
  - Select account type (FREE or ORG)
  - Request account from your organization --OR-- set up new account
- - Create a GCP PROJECT
+ - Create a GCP PROJECT for your research
  - Use each Project as a containers for GCP service instances, i.e. 
  my Virtual Machine instance is located the Google datacenter in us-east and in my GCP Project named 'my-research-project'
 
@@ -34,11 +34,14 @@
  [![gcp-account](/images/gcp-account.png)]()
 
 ### Other Things to Know
- - Service costs are billed to YOU for FREE Tier (after you've spent $300 credit); service costs are billed to YOUR COMPANY (or research group) for Organizational Accounts
- - Use GCP Billing tools (& budgets)
- - Understand GCP service limits by account type
- - Follow GCP security best practices
+ - GCP service costs are billed to YOU for FREE Tier (after you've spent your $300 credit)
+ - GCP service costs are billed to YOUR COMPANY (or research group) for Organizational Accounts
+ - A GCP Billing Account can be linked to one or more projects and is how you pay (credit card, invoice...).
+   - billing account is linked to a payment profile (individual or corporate)
+
+ [![billing](/images/billing.png)]()
+ 
 
 ### How to learn more
  - Link to [how to set up a budget alert](https://cloud.google.com/billing/docs/how-to/budgets)
- - Link to 'core GCP security practices'
+ - Link to [GCP Billing concepts](https://cloud.google.com/billing/docs/concepts)
