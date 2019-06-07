@@ -1,14 +1,14 @@
-# Setup your GCP Account
+# Setup your Google Cloud Platform (GCP) Account
 
 
 ### Why do this
  - Your workload is too big to run on your laptop
  - You don't want to wait for time on your organization's shared compute cluster
- - You want to use Google Cloud Platform (services) to run large (or huge) genomic analysis jobs
+ - You want to use Google Cloud Platform services to run large (or huge) genomic analysis jobs
 
 ### What is this
- - Ability to perform Compute on Data at scale 
- - Running on services hosted by GCP
+ - Ability to perform analysis (Compute) on files (Data) at scale 
+ - Running on public cloud services hosted by GCP
 
 ### Key considerations
  - Use the best GCP Account type:
@@ -16,6 +16,7 @@
     - **Use Your Organization's GCP Account** - service limits set by your company & Google
  - Understand the size & complexity of your analysis 
  - Review your budget / timeline
+ - NOTE: There are many bioinformatics analysis workflow tools, libraries and solutions which can be run using GCP services.  Examples include [Terra.bio (was Firecloud)](https://terra.bio/), [cromwell](https://cromwell.readthedocs.io/en/stable/), [Nextflow.io](https://www.nextflow.io/) and many others.
 
 ### How to do this
  - Select account type (FREE or ORG)
