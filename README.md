@@ -18,8 +18,9 @@ This repository contains information about using Google Cloud Platform services 
 Here are quick links to some of the most commonly asked questions.
 
 - [Setup my GCP account?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/0_Setup_GCP_account/1_Setup_GCP_Account.md)
+- [Use services in a GCP Free Tier account?](https://cloud.google.com/free/docs/gcp-free-tier)
 - [Upload a file to a GCP storage bucket?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_and_Data/1_Use_GCS_File_Storage.md)
-- [Run a Virtual Machine on GCP?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/2_Compute_with_VMs_and_Docker_Containers/1_Use_GCE_VMs_for_Compute.md)
+- [Start a Virtual Machine instance on GCP?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/2_Compute_with_VMs_and_Docker_Containers/1_Use_GCE_VMs_for_Compute.md)
 - [Run an example analysis on Terra.bio (on GCP)?](https://app.terra.bio/#library/showcase)
 - [Understand how much GCP services cost?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/0_Setup_GCP_account/1_Setup_GCP_Account.md#key-considerations)
 - [Use GCP security best practices?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/0_Setup_GCP_account/3_Setup_GCP_Project_Security.md)

@@ -12,7 +12,7 @@
 
 ### Key considerations
  - Use the best GCP Account type:
-    - **Use GCP Free Tier** (get $ 300 USD in GCP credits for new users) minimal service limits set by Google  --OR--
+    - **Use GCP Free Tier** (get $ 300 USD in GCP credits for new users) minimal service limits set by Google - [link](https://cloud.google.com/free) --OR--
     - **Use Your Organization's GCP Account** - service limits set by your company & Google
  - Understand the size & complexity of your analysis 
  - Review your budget / timeline
@@ -36,6 +36,7 @@
 
 ### Other Things to Know
  - GCP service costs are billed to YOU for FREE Tier (after you've spent your $300 credit)
+ - GCP FREE tier account have built-in service usage limits - [link](https://cloud.google.com/free/docs/gcp-free-tier)
  - GCP service costs are billed to YOUR COMPANY (or research group) for Organizational Accounts
  - A GCP Billing Account can be linked to one or more projects and is how you pay (credit card, invoice...).
    - billing account is linked to a payment profile (individual or corporate)
