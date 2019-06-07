@@ -17,23 +17,23 @@ This repository contains information about using Google Cloud Platform services 
 
 Here are quick links to some of the most commonly asked questions.
 
-- [Setup my GCP account?](#setup-my-gcp-account)
-- [Upload a file to a GCP storage bucket?](#upload-a-file-to-a-gcp-storage-bucket)
-- [Run a Virtual Machine on GCP?](#run-a-virtual-machine-on-gcp)
-- [Run an analysis on Terra.bio (on GCP)?](#run-an-analysis-on-terrabio-on-gcp)
-- [Understand how much GCP services cost?](#understand-how-much-gcp-services-cost)
-- [Use GCP security best practices?](#use-gcp-security-best-practices)
-- [Learn more about using GCP?](#learn-more-about-using-gcp)
+- [Setup my GCP account?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/0_Setup_GCP_account/1_Setup_GCP_Account.md)
+- [Upload a file to a GCP storage bucket?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_and_Data/1_Use_GCS_File_Storage.md)
+- [Run a Virtual Machine on GCP?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/2_Compute_with_VMs_and_Docker_Containers/1_Use_GCE_VMs_for_Compute.md)
+- [Run an example analysis on Terra.bio (on GCP)?](https://app.terra.bio/#library/showcase)
+- [Understand how much GCP services cost?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/0_Setup_GCP_account/1_Setup_GCP_Account.md#key-considerations)
+- [Use GCP security best practices?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/0_Setup_GCP_account/3_Setup_GCP_Project_Security.md)
+- [Learn more about using GCP?](https://www.linkedin.com/learning/google-cloud-platform-essential-training-2017)
 
 ## Topic Areas in this Repository
 
-- Setup GCP Account
+- Setup Google Cloud Platform Account
     - Setup Account
     - Select and setup client tools
-    - Configure user permission / service security
+    - Configure user permissions / GCP services security
 - Files and Data 
     - Use Google Cloud Storage
-    - Use Public genomic datasets on GCP
+    - Use public genomic datasets on GCP
     - Use Big Query
     - Use Cloud SQL
 - Compute with VMs and Containers
@@ -53,10 +53,10 @@ Here are quick links to some of the most commonly asked questions.
     - Use GCE ML (deep learning) image 
 - Code/Cloud Tools
     - Use Google Code Repositories
-    - Use Deployments
+    - Use GCP Deployments
     - Use Google Container Repositories
     - Use Stackdriver
 - Serverless Compute with Functions
-    - Use loud Functions and Cloud Run
+    - Use Cloud Functions and Cloud Run
 - Advanced GCP Topic
     - Get links to advanced GCP topics
