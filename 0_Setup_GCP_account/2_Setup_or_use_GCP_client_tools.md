@@ -7,8 +7,13 @@
 ### What is this
  Understand, select and configure GCP client tools. Available tools include the following:  
 
-- GCP Web UI (or console) - [link](https://console.cloud.google.com/)
-- GCP cloud shell (integrated GCP client from withing the GCP console) - shown below in animated image. Cloud Shell provides the following:
+- **GCP Web UI (or console)** - [link to console](https://console.cloud.google.com/) -- Usage Tips:
+
+    - Use Google chrome browser to access the GCP console
+    - Use the search box within the GCP console to quickly jump within the console (shown in the screenshot below)
+
+[   ![GCP integrated search](/images/jump.png)]()    
+- **GCP cloud shell** (integrated GCP client from withing the GCP console) - shown below in animated image. Cloud Shell provides the following:
 
     - A temporary Compute Engine virtual machine instance
     - Command-line access to the instance from a web browser
@@ -29,7 +34,7 @@
 
 
 ### Key considerations
- - Learn via console
+ - Learn about GCP services by using the GCP console
  - Experiment via integrated console and scripts
  - Reproduce analysis using scripts 
  - Scale and optimize analysis using SDK language integration (Python, Java... GCP SDK)
