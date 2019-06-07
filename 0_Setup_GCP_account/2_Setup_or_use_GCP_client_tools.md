@@ -18,6 +18,7 @@
     - Language support for Java, Go, Python, Node.js, PHP, Ruby and .NET
     - Web preview functionality
     - Built-in authorization for access to GCP Console projects and resources
+    - 5 min codelab on using cloud shell and gcloud command - [link](https://codelabs.developers.google.com/codelabs/cloud-shell/index.html)
 
 [   ![GCP integrated shell](/images/shellstart-update.gif)]()
 

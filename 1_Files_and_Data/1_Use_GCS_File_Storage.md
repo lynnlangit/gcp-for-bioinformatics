@@ -1,14 +1,13 @@
 # Use Google Cloud File Storage
 
 
-
 ### Why do this
  - Your workload is too big to run on your laptop
  - You don't want to wait for time on your organization's shared cluster
 
 
 ### What is this
- - Using GCP service Cloud Storage to store and be able to perform analysis (compute services) on your files
+ - Using GCP service Cloud Storage buckets to store and be able to perform analysis (compute services) on your files
 
 
 ### Key considerations
@@ -23,16 +22,19 @@
  - Configure the bucket storage class type (see below)
  - Configure the bucket location 
  - Configure the bucket access control, encryption and retention
+ - List of key [bucket operations](https://cloud.google.com/storage/docs/how-to)
 
  [![Cloud Storage types](/images/storage.png)]()
 
  [![Cloud Storage config](/images/bucket.png)]()
 
+
 ### How to verify you've done it
- - Upload file(s) to the bucket
+ - Upload file(s) to the bucket using the web console or the 'gsutil' tool - [link](https://cloud.google.com/storage/docs/gsutil)
 
 ### Other Things to Know
  - Storage can be the most significant GCP service cost for bioinformatics (due to the number and size of files involved in analysis)
 
 ### How to learn more
- - Best practice for Google Cloud Storage - [link](https://cloud.google.com/storage/docs/best-practices)
+ - Best practices for Google Cloud Storage - [link](https://cloud.google.com/storage/docs/best-practices)
+ - Hosting a static website on Cloud Storage - [link](https://cloud.google.com/storage/docs/hosting-static-website)
