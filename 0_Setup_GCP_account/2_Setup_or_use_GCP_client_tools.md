@@ -1,4 +1,4 @@
-# Setup or Use GCP client tools
+# Use GCP client tools
 
 
 ### Why do this
@@ -46,7 +46,10 @@
 ### How to verify you've done it
  - Login to GCP console
  - Verify your account
- - Verify a 'hello world' service - usually put a file in a bucket
+ - Verify that you can perform a 'hello world' task in your account.  Common examples are below:
+    - View your GCP project name and ID using the console --OR-- 
+    - Upload a file into a Cloud Storage bucket --OR--
+    - Start a Compute Engine Virtual Machine Linux instance and connect to it using the ssh tool
 
 ### Other Things to Know
  - Access to the some or all of the GCP console can (and sometime should) be restricted
