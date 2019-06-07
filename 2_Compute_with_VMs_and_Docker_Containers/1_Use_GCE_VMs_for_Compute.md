@@ -8,12 +8,12 @@
 
 
 ### What is this
- - Ability to perform analysis (Compute) on Data at scale 
+ - Ability to perform analysis (compute) on data at scale 
  - Running GCE Virtual Machine instances on GCP
 
 ### Key considerations
  - On-demand - size the instance appropriately
- - Use options to save money: Pre-emptible
+ - Use options to save money: [Preemptible VM](https://cloud.google.com/compute/docs/instances/preemptible) is an instance that you can create and run at a much lower price than normal instances. However, Compute Engine might terminate (preempt) these instances if it requires access to those resources for other tasks. Preemptible instances are excess Compute Engine capacity so their availability varies with usage.
  - Understand costs: billed by CPU/RAM...Always on autodiscounting
  - Your budget / Your timeline
 
@@ -34,6 +34,7 @@
   in a CORP account can be much more - ex. 2400)
  - Follow GCE security best practices
  - GCP provides images with OS and services pre-installed
+ - Understand GCE disk, image or snapshot - [link](https://cloud.google.com/compute/docs/instances/)
  - Can add GPU/TPUs for machine learning workloads
 
 ### How to learn more
