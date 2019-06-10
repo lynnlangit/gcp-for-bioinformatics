@@ -8,7 +8,7 @@ This repository contains information about using Google Cloud Platform public cl
 
  [![gcp-genomics](/images/gcp-genomics.png)](https://cloud.google.com/genomics/docs/public-datasets/)
 
-## Why should I use the public cloud for bioinformatic analysis?
+## Why should I use a public cloud vendor for bioinformatic analysis?
 
 - [Nature article: "Cloud computing for genomic data analysis and collaboration"](https://www.nature.com/articles/nrg.2017.113)
 - Being able to run large (or huge) scale analysis jobs when and only when you need to run them
@@ -26,6 +26,7 @@ Here are quick links to some of the most commonly asked questions.
 - [Understand how much GCP services cost?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/0_Setup_GCP_account/1_Setup_GCP_Account.md#key-considerations)
 - [Use GCP security best practices?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/0_Setup_GCP_account/3_Setup_GCP_Project_Security.md)
 - [Learn more about using GCP?](https://www.linkedin.com/learning/google-cloud-platform-essential-training-2017)
+- [How do I use the BASH command line?](https://www.youtube.com/watch?v=EMaFdfIlK58)
 
 ## Topic Areas in this Repository
 
