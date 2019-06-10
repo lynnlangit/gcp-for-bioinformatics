@@ -1,5 +1,5 @@
 # Google Cloud Platform (GCP) for Bioinformatics
-This repository contains information about using Google Cloud Platform services for data analysis tasks.  The guidance is intended for bioinformatics researchers - in particular, for those who are new to working with GCP.  The information is based on advisory work my team has done with the following groups and organizations:
+This repository contains information about using Google Cloud Platform public cloud services for data analysis tasks.  The guidance is intended for bioinformatics researchers - in particular, for those who are new to working with GCP.  The information is based on advisory work my team has done with the following groups and organizations:
 
 1) The Broad Institute (Cambridge, MA) - [link](https://www.broadinstitute.org)
 2) CSIRO Bioinformatics (Sydney, Australia) - [link](https://bioinformatics.csiro.au/)
@@ -8,9 +8,10 @@ This repository contains information about using Google Cloud Platform services 
 
  [![gcp-genomics](/images/gcp-genomics.png)](https://cloud.google.com/genomics/docs/public-datasets/)
 
-## Why should I use the public cloud for analysis?
+## Why should I use the public cloud for bioinformatic analysis?
 
 - [Nature article: "Cloud computing for genomic data analysis and collaboration"](https://www.nature.com/articles/nrg.2017.113)
+- Being able to run large (or huge) scale analysis jobs when and only when you need to run them
 
 
 ## Commonly Asked: "How do I..."
