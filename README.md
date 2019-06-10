@@ -1,3 +1,5 @@
+[![Chat on Gitter](https://img.shields.io/gitter/room/gcp-for-bioinformatics/nextflow.svg?colorB=26af64&style=popout)](https://gitter.im/gcp-for-bioinformatics)
+
 # Google Cloud Platform (GCP) for Bioinformatics
 This repository contains information about using Google Cloud Platform public cloud services for data analysis tasks.  The guidance is intended for bioinformatics researchers - in particular, for those who are new to working with GCP.  The information is based on advisory work my team has done with the following groups and organizations:
 
