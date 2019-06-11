@@ -32,7 +32,6 @@
 - GCP SDK - available in many programming languages, Python, Go, Java... - [download](https://cloud.google.com/sdk/)
 
 
-
 ### Key considerations
  - Learn about GCP services by using the GCP console
  - Experiment via integrated console and scripts
@@ -60,3 +59,4 @@
 ### How to learn more
  - Link to [Integrated Shell features](https://cloud.google.com/shell/docs/features)
  - Link to [Integrated Shell limits](https://cloud.google.com/shell/docs/limitations)
+ - Link to [Scripting GCP examples](https://cloud.google.com/sdk/docs/scripting-gcloud)
