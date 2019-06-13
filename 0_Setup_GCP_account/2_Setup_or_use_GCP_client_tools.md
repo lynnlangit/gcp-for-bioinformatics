@@ -5,16 +5,17 @@
  - Work efficiently using the best combination of GCP client tools
 
 ### What is this
- Understand, select and configure GCP client tools. Available tools include the following:  
+ Understand, select and configure GCP client tools. There are generally two types client tools.  One type runs in web browser, so there is nothing to install locally.  The other type requires downloading, installing and configuring client tools. If you chose to download, then be sure to follow the installation instructions for your laptop OS.
+ Available tools include the following:  
 
 - **GCP Web UI (or console)** - [link to console](https://console.cloud.google.com/) -- Usage Tips:
-
+    - ZERO INSTALL
     - Use Google chrome browser to access the GCP console
     - Use the search box within the GCP console to quickly jump within the console (shown in the screenshot below)
 
 [   ![GCP integrated search](/images/jump.png)]()    
 - **GCP cloud shell** (integrated GCP client from withing the GCP console) - shown below in animated image. Cloud Shell provides the following:
-
+    - ZERO INSTALL, runs in GCP Web UI
     - A temporary Compute Engine virtual machine instance
     - Command-line access to the instance from a web browser
     - Built-in code editor BETA
@@ -27,9 +28,14 @@
 
 [   ![GCP integrated shell](/images/shellstart-update.gif)]()
 
+- **Google Colabs** - [link to site](https://colab.research.google.com)
+    - ZERO INSTALL, Jupyter-style notebooks with many samples for connecting to key GCP services (storage, BigQuery, Machine Learning and others)
+    - NOTE: It is also possible to connect to GCP service with standard [Jupyter notebooks](https://jupyter.org/).  These notebooks can be run remotely (on GCP) or installed on your local machine
 
-- GCP cli - part of GCP SDK (gcloud, gsutil, bq... script tools) - [download](https://cloud.google.com/sdk/)
-- GCP SDK - available in many programming languages, Python, Go, Java... - [download](https://cloud.google.com/sdk/)
+    ![Google Colabs](/images/colabs.png)]() 
+
+- **GCP cli** - part of GCP SDK (gcloud, gsutil, bq... script tools) - REQUIRES INSTALLATION - [download](https://cloud.google.com/sdk/)
+- **GCP SDK** - available in many programming languages, Python, Go, Java... - REQUIRES INSTALLATION - [download](https://cloud.google.com/sdk/)
 
 
 ### Key considerations
