@@ -15,13 +15,18 @@
     - **Use Your Organization's GCP Account** - service limits set by your company & Google
  - Understand the size & complexity of your analysis 
  - Review your budget / timeline
- - NOTE: There are many bioinformatics analysis workflow tools, libraries and solutions which can be run using GCP services.  Examples include [Terra.bio (was Firecloud)](https://terra.bio/), [cromwell](https://cromwell.readthedocs.io/en/stable/), [Nextflow.io](https://www.nextflow.io/) and many others.
+ - Determine the location (Google data center) for your project - [locations](https://cloud.google.com/about/locations/)
+
+   [![GCP Locations](/images/all-regions.png)]()
+
+ NOTE: There are many bioinformatics analysis workflow tools, libraries and solutions which can be run on top of core GCP services.  Examples include [Terra.bio (was Firecloud)](https://terra.bio/), [cromwell](https://cromwell.readthedocs.io/en/stable/), [Nextflow.io](https://www.nextflow.io/) and many others.
 
 ### How to do this
- - Select account type (FREE or ORG)
- - Request account from your organization --OR-- set up new account
- - Create a GCP PROJECT for your research
- - Use each Project as a containers for GCP service instances, i.e. 
+ - Select GCP account type (FREE or ORG)
+ - Request GCP account from your organization --OR-- set up GCP new account
+ - Create a **GCP PROJECT** for your research project
+
+ - Use **each** GCP Project as a container for GCP service instances, i.e. 
  my Virtual Machine instance is located the Google datacenter in us-east and in my GCP Project named 'my-research-project'
 
   [![GCP Resource Hierarchy](/images/resources.png)]()
