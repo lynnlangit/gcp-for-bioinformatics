@@ -10,6 +10,8 @@ This repository contains information about using Google Cloud Platform public cl
 3) Nextflow.io team (Barcelona, Spain) - [link](https://www.nextflow.io/about-us.html)
 4) EMBL-EBI (Cambridge, UK) - [link](https://www.ebi.ac.uk/)
 
+[![bioinformatics-groups](/images/logos.png)]() 
+
 ## Why should I use a public cloud vendor for bioinformatic analysis?
 
 - [Nature article: "Cloud computing for genomic data analysis and collaboration"](https://www.nature.com/articles/nrg.2017.113)
