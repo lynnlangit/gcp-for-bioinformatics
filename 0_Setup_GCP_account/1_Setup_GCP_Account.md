@@ -51,3 +51,4 @@
 ### How to learn more
  - Link to [how to set up a budget alert](https://cloud.google.com/billing/docs/how-to/budgets)
  - Link to [GCP Billing concepts](https://cloud.google.com/billing/docs/concepts)
+ - Link to [GCP Service Pricing Calculator](https://cloud.google.com/products/calculator/)

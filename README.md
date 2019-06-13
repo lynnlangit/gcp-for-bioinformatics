@@ -28,10 +28,9 @@ Here are quick links to some of the most commonly asked questions.
 - [Upload a file to a GCP storage bucket?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_and_Data/1_Use_GCS_File_Storage.md)
 - [Start a Virtual Machine instance on GCP?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/2_Compute_with_VMs_and_Docker_Containers/1_Use_GCE_VMs_for_Compute.md)
 - [Run an example analysis on Terra.bio (on GCP)?](https://app.terra.bio/#library/showcase)
-- [Understand how much GCP services cost?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/0_Setup_GCP_account/1_Setup_GCP_Account.md#key-considerations)
+- [Understand how much GCP services cost?](https://cloud.google.com/products/calculator/)
 - [Use GCP security best practices?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/0_Setup_GCP_account/3_Setup_GCP_Project_Security.md)
-- [Learn more about using GCP?](https://www.linkedin.com/learning/google-cloud-platform-essential-training-2017)
-- [How do I use the BASH command line?](https://www.youtube.com/watch?v=EMaFdfIlK58)
+- [Learn more about using GCP services?](https://www.linkedin.com/learning/google-cloud-platform-essential-training-3)
 
 ## Topic Areas in this Repository
 

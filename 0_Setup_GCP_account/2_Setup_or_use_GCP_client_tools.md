@@ -60,3 +60,4 @@
  - Link to [Integrated Shell features](https://cloud.google.com/shell/docs/features)
  - Link to [Integrated Shell limits](https://cloud.google.com/shell/docs/limitations)
  - Link to [Scripting GCP examples](https://cloud.google.com/sdk/docs/scripting-gcloud)
+ - Link to [How do I use the BASH command line?](https://www.youtube.com/watch?v=EMaFdfIlK58)
