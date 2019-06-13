@@ -1,5 +1,7 @@
 [![Chat on Gitter](https://img.shields.io/gitter/room/gcp-for-bioinformatics/nextflow.svg?colorB=26af64&style=popout)](https://gitter.im/gcp-for-bioinformatics)
 
+ [![gcp-bioinformatics](/images/main.png)]() 
+
 # Google Cloud Platform (GCP) for Bioinformatics
 This repository contains information about using Google Cloud Platform public cloud services for data analysis tasks.  The guidance is intended for bioinformatics researchers - in particular, for those who are new to working with GCP.  The information is based on advisory work my team has done with the following groups and organizations:
 
@@ -8,12 +10,11 @@ This repository contains information about using Google Cloud Platform public cl
 3) Nextflow.io team (Barcelona, Spain) - [link](https://www.nextflow.io/about-us.html)
 4) EMBL-EBI (Cambridge, UK) - [link](https://www.ebi.ac.uk/)
 
- [![gcp-genomics](/images/gcp-genomics.png)](https://cloud.google.com/genomics/docs/public-datasets/) [![Join the chat at https://gitter.im/gcp-for-bioinformatics/community](https://badges.gitter.im/gcp-for-bioinformatics/community.svg)](https://gitter.im/gcp-for-bioinformatics/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 ## Why should I use a public cloud vendor for bioinformatic analysis?
 
 - [Nature article: "Cloud computing for genomic data analysis and collaboration"](https://www.nature.com/articles/nrg.2017.113)
 - Being able to run large (or huge) scale analysis jobs when and only when you need to run them
+- Save time and money and get results faster
 
 
 ## Commonly Asked: "How do I..."
