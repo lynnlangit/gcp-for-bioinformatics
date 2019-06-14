@@ -1,15 +1,14 @@
 # Use GCP for Serverless Compute
 
 
-
 ### Why do this
  - You have stateless, short-term compute tasks
  - Tasks can be solo, or chained into a workflow 
  - You only want to pay when a function is called, rather than for a long-running VM or container
 
 ### What is this
- - Using functions rather than containers or VMs for compute
- - You can use GCP Cloud Functions or Cloud Run
+ - Use functions rather than containers or VMs for compute
+ - Use GCP Cloud Functions or Cloud Run to host your function(s) on GCP
 
 ### Key considerations
  - In Cloud Functions, you supply the code, GCP runs your code on containers/VMs, but you don't see or manage any infrastructure
@@ -22,8 +21,8 @@
  - Test and monitor your service
 
 ### How to verify you've done it
- - Invoke the function 
- - Read the Stackdriver logs
+ - Invoke the function manually or via a test script
+ - Read the Stackdriver logs to see the result of the function invocation
 
 ### Other Things to Know
  - Serverless patterns are often used for workloads that have spikes in demand
