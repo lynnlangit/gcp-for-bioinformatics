@@ -1,9 +1,7 @@
 [![Chat on Gitter](https://img.shields.io/gitter/room/gcp-for-bioinformatics/nextflow.svg?colorB=26af64&style=popout)](https://gitter.im/gcp-for-bioinformatics)
 
- [![gcp-bioinformatics](/images/main.png)]() 
-
 # Google Cloud Platform (GCP) for Bioinformatics
-This repository contains information about using Google Cloud Platform public cloud services for data analysis tasks.  The guidance is intended for bioinformatics researchers - in particular, for those who are new to working with GCP.  The information is based on advisory work my team has done with the following groups and organizations:
+This repository contains information about using Google Cloud Platform public cloud services for data analysis tasks.  The guidance is intended for bioinformatics researchers - in particular, for those who are new to working with GCP.  Key GCP services and patterns will be covered in this guide. The information is based on advisory work my team has done with the following groups and organizations:
 
 1) The Broad Institute (Cambridge, MA) - [link](https://www.broadinstitute.org)
 2) CSIRO Bioinformatics (Sydney, Australia) - [link](https://bioinformatics.csiro.au/)
@@ -18,10 +16,11 @@ This repository contains information about using Google Cloud Platform public cl
 - Be able to run large (or huge) sized analysis jobs when and only when you need to run them
 - Save time and money on infrastructre and get results faster
 
+[![gcp-bioinformatics](/images/main.png)]() 
+
+Shown above is a basic pattern for performing genomic analysis jobs on Google Cloud Platform. Each blue icon represents a type of GCP service.  In this guide, you'll read how to get started with the services shown below.  In addition to the topic coverage, listed below a direct set of links to answer the most commonly asked questions.
 
 ## Commonly Asked: "How do I..."
-
-Here are quick links to some of the most commonly asked questions.
 
 - [Setup my GCP account?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/0_Setup_GCP_account/1_Setup_GCP_Account.md)
 - [Use services in a GCP Free Tier account?](https://cloud.google.com/free/docs/gcp-free-tier)
