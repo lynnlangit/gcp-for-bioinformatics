@@ -32,17 +32,17 @@
     - ZERO INSTALL, Jupyter-style notebooks with many samples for connecting to key GCP services (storage, BigQuery, Machine Learning and others)
     - NOTE: It is also possible to connect to GCP service with standard [Jupyter notebooks](https://jupyter.org/).  These notebooks can be run remotely (on GCP) or installed on your local machine
 
-    ![Google Colabs](/images/colabs.png)]() 
+[    ![Google Colabs](/images/colabs.png)]() 
 
 - **GCP cli** - part of GCP SDK (gcloud, gsutil, bq... script tools) - REQUIRES INSTALLATION - [download](https://cloud.google.com/sdk/)
 - **GCP SDK** - available in many programming languages, Python, Go, Java... - REQUIRES INSTALLATION - [download](https://cloud.google.com/sdk/)
 
 
 ### Key considerations
- - Learn about GCP services by using the GCP console
- - Experiment via integrated console and scripts
- - Reproduce analysis using scripts 
- - Scale and optimize analysis using SDK language integration (Python, Java... GCP SDK)
+ - Use the **GCP console** when you are LEARNING about GCP Services
+ - Use the **integrated console (shell)** and scripts to EXPERIMENT with small analysis jobs
+ - Use **scripts and source control** to create reproducible analysis jobs
+ - Use **GCP SDK language integration** (Python, Java... GCP SDK) to scale your analysis for large/huge jobs. Example of using the Python client libary - [link](https://cloud.google.com/compute/docs/tutorials/python-guide)
 
 ### How to do this
  - Click in GCP console and/or use shell - no setup /install required
