@@ -4,4 +4,4 @@ In this section, you'll get information about using Google Cloud storage for fil
 
 The sections of the reference architecture outlined in red will be covered.
 
-[![gcp-iam](/images/files.png)]()
+[![gcp-files](/images/files.png)]()

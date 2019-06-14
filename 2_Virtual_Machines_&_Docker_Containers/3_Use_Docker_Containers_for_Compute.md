@@ -13,8 +13,8 @@
 
 
 ### Key considerations
- - Use Free Tier
- - Use Your Organization's Account
+ - You must evaluate, select, configure and test container orchestration method
+ - You can orchestrate container workloads with Kubernetes, cromwell, or Nextflow
  - Size & complexity of your workload 
  - Your budget
  - Your timeline

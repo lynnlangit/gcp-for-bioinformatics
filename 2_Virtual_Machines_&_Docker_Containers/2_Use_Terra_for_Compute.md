@@ -1,5 +1,4 @@
-
-# Use Terra.bio for Compute
+# Use Terra.bio for Compute Workflows
 
 **IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 
@@ -14,8 +13,8 @@
 
 
 ### Key considerations
- - Use Free Tier
- - Use Your Organization's Account
+ - Can be used with VMs or Docker container Images
+ - Using Docker images is preferred
  - Size & complexity of your workload 
  - Your budget
  - Your timeline

@@ -1,6 +1,7 @@
-# Use Docker Containers for Compute
+# Orchestrate Compute with dsub and Google Genomics
 
 **IMPORTANT: THIS ARTICLE IS IN PROGRESS**
+
 
 ### Why do this
  - Your workload is too big to run on your laptop
@@ -9,20 +10,18 @@
 
 ### What is this
  - Ability to perform Compute on Data at scale 
- - Running on services hosted by GCP
+ - Running on services hosted by GCP using the special purpose GCP Genomics (Pipelines) API for GCE (Compute Engine).  The Genomics API provides orchestration for mulitple GCE VM instances.
 
 
 ### Key considerations
- - Use Free Tier
+ - Can be used with VMs or Docker container Images
  - Use Your Organization's Account
  - Size & complexity of your workload 
  - Your budget
  - Your timeline
 
 ### How to do this
- - Select account type
- - Request account from your organization -or-
- - Setup free tier (testing) account
+ - Use GCP Cloud Genomics tutorial - [link](https://cloud.google.com/genomics/docs/tutorials/dsub)
 
 ### How to verify you've done it
  - Login to GCP console
@@ -35,5 +34,4 @@
  - Follow GCP security best practices
 
 ### How to learn more
- - Link to 'how to set up a billing alert'
- - Link to 'core GCP security practices'
+ - Link to [Run a Sention DNAseq pipeline](https://cloud.google.com/genomics/docs/tutorials/sentieon)

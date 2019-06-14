@@ -1,21 +1,22 @@
-# Use Google Compute Engine(GCE) Virtual Machines for Analysis (Compute)
-
+# Use Google Compute Engine Virtual Machines for Analysis 
 **IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 
 ### Why do this
- - Your workload is too big to run on your laptop
+ - Your analysis job is too big or complex to run on your laptop
  - You don't want to wait for time on your organization's shared cluster
 
-
 ### What is this
- - Ability to perform analysis (compute) on data at scale 
- - Running GCE Virtual Machine instances on GCP
+ - The ability to perform analysis (compute) on files or data at dynamic scale 
+ - Running Google Compute Engine(GCE) Virtual Machine instances from within your GCP Project
 
 ### Key considerations
- - On-demand - size the instance appropriately
- - Use options to save money: [Preemptible VM](https://cloud.google.com/compute/docs/instances/preemptible) is an instance that you can create and run at a much lower price than normal instances (can be up to 80% LESS than regular instances). However, Compute Engine might terminate (preempt) these instances if it requires access to those resources for other tasks. Preemptible instances are excess Compute Engine capacity so their availability varies with usage.
+ - Select the best-fit VM instance type.  There are two key types:
+    - [On-demand VM]() (default) - size the instance appropriately, use for one-time, small-sized jobs
+    - [Preemptible VM](https://cloud.google.com/compute/docs/instances/preemptible) is an instance that you can create and run at a much lower price than normal instances (can be up to 80% LESS than regular instances). However, Compute Engine might terminate (preempt) these instances if it requires access to those resources for other tasks. Preemptible instances are excess Compute Engine capacity so their availability varies with usage. Select this instance type to save money.  Shown below is the configuration switch to enable an instance to be preemptible.
  - Understand costs: billed by CPU/RAM...Always on autodiscounting
  - Your budget / Your timeline
+
+ [![gcp-preempt](/images/preempt.png)]()
 
 ### How to do this
  - Create an instance from a GCP template, 3rd party template or your own template (file)

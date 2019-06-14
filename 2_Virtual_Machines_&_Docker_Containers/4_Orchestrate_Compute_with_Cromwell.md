@@ -1,4 +1,4 @@
-# Use Docker Containers for Compute
+# Orchestrate Compute with cromwell and WDL
 
 **IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 
@@ -13,7 +13,7 @@
 
 
 ### Key considerations
- - Use Free Tier
+ - Can be used with VMs or Docker container Images
  - Use Your Organization's Account
  - Size & complexity of your workload 
  - Your budget
@@ -35,5 +35,5 @@
  - Follow GCP security best practices
 
 ### How to learn more
- - Link to 'how to set up a billing alert'
+ - Link to [run a GATK best practices pipeline](https://cloud.google.com/genomics/docs/tutorials/gatk)
  - Link to 'core GCP security practices'

@@ -1,7 +1,6 @@
-# Use Docker Containers for Compute
+# Orchestrate Compute with Nextflow
 
 **IMPORTANT: THIS ARTICLE IS IN PROGRESS**
-
 
 ### Why do this
  - Your workload is too big to run on your laptop
@@ -14,7 +13,7 @@
 
 
 ### Key considerations
- - Use Free Tier
+ - Can be used with VMs or Docker container Images
  - Use Your Organization's Account
  - Size & complexity of your workload 
  - Your budget
@@ -36,5 +35,5 @@
  - Follow GCP security best practices
 
 ### How to learn more
- - Link to [Run in dsub](https://cloud.google.com/genomics/docs/tutorials/dsub)
+ - Link to 'how to set up a billing alert'
  - Link to 'core GCP security practices'
