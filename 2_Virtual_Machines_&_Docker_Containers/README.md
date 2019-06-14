@@ -4,6 +4,9 @@ In this section, you'll get information about using Google Cloud services for VM
 
 The sections of the reference architecture outlined in red will be covered.
 
-[![gcp-iam](/images/compute.png)]()
+[![gcp-compute](/images/compute.png)]()
 
-Bioinformatics APIs include the following: dsub, cromwell, Terra.bio and Nextflow.io
+Bioinformatics APIs include the following: dsub, cromwell, Terra.bio and Nextflow.io. There are a number of possible ways to construct high volume data analysis workflows or pipelines on GCP with these purpose-built APIs.  A representation is shown below.
+
+[![gcp-workflows](/images/workflows.png)]()
+
