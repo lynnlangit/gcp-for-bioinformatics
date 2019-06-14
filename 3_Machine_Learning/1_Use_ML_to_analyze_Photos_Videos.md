@@ -1,4 +1,4 @@
-# Use GCE Virtual Machines for Compute
+#  Use ML to automatically analyze text or language data
 
 **IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 
