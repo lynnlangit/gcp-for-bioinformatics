@@ -6,8 +6,8 @@
  - You want to use Google Cloud Platform services to run large (or huge) genomic analysis jobs
 
 ### What is this
- - Ability to perform analysis (Compute) on files (Data) at scale 
- - Running on public cloud services hosted by GCP
+ - The ability to perform analysis (or compute) on files (and other types of data) at dynamic scale 
+ - Preparation for running analysis on public cloud services hosted by GCP
 
 ### Key considerations
  - Use the best GCP Account type:
@@ -26,7 +26,8 @@
  - Request GCP account from your organization --OR-- set up GCP new account
  - Create a **GCP PROJECT** for your research project
 
- - Use **each** GCP Project as a container for GCP service instances, i.e. 
+ - Use **each** GCP Project as a container for your research project
+ - Add GCP service instances to your GCP Project, i.e. 
  my Virtual Machine instance is located the Google datacenter in us-east and in my GCP Project named 'my-research-project'
 
   [![GCP Resource Hierarchy](/images/resources.png)]()
@@ -39,11 +40,11 @@
  [![gcp-account](/images/gcp-account.png)]()
 
 ### Other Things to Know
- - GCP service costs are billed to YOU for FREE Tier (after you've spent your $300 credit)
+ - GCP service costs are billed to **YOU** for FREE Tier (after you've spent your $300 credit)
  - GCP FREE tier account have built-in service usage limits - [link](https://cloud.google.com/free/docs/gcp-free-tier)
- - GCP service costs are billed to YOUR COMPANY (or research group) for Organizational Accounts
- - A GCP Billing Account can be linked to one or more projects and is how you pay (credit card, invoice...).
-   - billing account is linked to a payment profile (individual or corporate)
+ - GCP service costs are billed to **YOUR COMPANY**  (or research group) for Organizational Accounts
+ - A GCP billing account can be linked to one or more GCP projects and the billing account specifies how you pay (credit card, invoice...) for GCP services
+   - A GCP billing account is linked to a payment profile (individual or corporate)
 
  [![billing](/images/billing.png)]()
  

@@ -1,6 +1,6 @@
 # Use GCE Virtual Machines for Compute
 
-
+**IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 
 ### Why do this
   - High accuracy - In 2016 DeepVariant won PrecisionFDA Truth Challenge for best SNP Performance. DeepVariant maintains high accuracy across data from different sequencing technologies, prep methods, and species.

@@ -2,12 +2,13 @@
 
 
 ### Why do this
- - Your workload is too big to run on your laptop
+ - Your workload and data files are too big to run on your laptop
  - You don't want to wait for time on your organization's shared cluster
 
 
 ### What is this
- - Using GCP service Cloud Storage buckets to store and be able to perform analysis (compute services) on your files
+ - Use GCP Cloud Storage buckets to store your files
+ - Use GCP Cloud Storage buckets to perform analysis (compute services) on your files
 
 
 ### Key considerations

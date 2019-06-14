@@ -1,5 +1,6 @@
 # Use GCE Virtual Machines for Compute
 
+**IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 
 
 ### Why do this
