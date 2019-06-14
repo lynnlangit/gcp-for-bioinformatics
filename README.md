@@ -15,8 +15,8 @@ This repository contains information about using Google Cloud Platform public cl
 ## Why should I use a public cloud vendor for bioinformatic analysis?
 
 - [Nature article: "Cloud computing for genomic data analysis and collaboration"](https://www.nature.com/articles/nrg.2017.113)
-- Being able to run large (or huge) scale analysis jobs when and only when you need to run them
-- Save time and money and get results faster
+- Be able to run large (or huge) sized analysis jobs when and only when you need to run them
+- Save time and money on infrastructre and get results faster
 
 
 ## Commonly Asked: "How do I..."
@@ -35,35 +35,40 @@ Here are quick links to some of the most commonly asked questions.
 ## Topic Areas in this Repository
 
 - Setup Google Cloud Platform Account
-    - Setup Account
-    - Select and setup client tools
-    - Configure user permissions / GCP services security
-- Files and Data 
-    - Use Google Cloud Storage
+    - Setup GCP Account
+    - Setup GCP client tools
+    - Setup GCP project security
+- Files & Data 
+    - Use Google Cloud Storage for files
     - Use public genomic datasets on GCP
-    - Use Big Query
-    - Use Cloud SQL
+    - Use Big Query to query files
+    - Use Cloud SQL to store data
 - Compute with VMs and Containers
-    - Use Google Compute Engine
-    - Use Terra.bio
-    - Use Docker
-    - Use cromwell
-    - Use dsub
-    - Use Kubernetes
-    - Use Nextflow.io
-    - Use GCE Jupyter Notebook instances
+    - Use Google Compute Engine Virtual Machines
+    - Use Terra.bio workflows
+    - Use Docker containers
+    - Use cromwell workflows
+    - Use dsub workflows
+    - Use Kubernetes to orchestrate container pipelines
+    - Use Nextflow.io workflows
+    - Use Google Compute Engine with Jupyter Notebooks on a Virtual Machine
 - Machine Learning
     - Use ML Vision / Video APIs & AutoML
     - Use ML Text / Natural Language APIs
     - Use ML Table Analysis
     - Use Deep Variant
-    - Use GCE ML (deep learning) image 
+    - Use Google Compute Engine ML (deep learning) image to create a Virtual Machine
+    - Use a Jupyter notebook in Google Colabs with BigQuery
+    - Use a Jupyter notebook in Google Colabs with BigQuery ML
 - Code/Cloud Tools
-    - Use Google Code Repositories
-    - Use GCP Deployments
-    - Use Google Container Repositories
-    - Use Stackdriver
+    - Use Google Code Repositories for code source control with Git
+    - Use GCP Deployments to deploy GCP services
+    - Use Google Container Repositories to host docker container images
+    - Use Stackdriver to analyze GCP service logs
 - Serverless Compute with Functions
     - Use Cloud Functions and Cloud Run
 - Advanced GCP Topic
     - Get links to advanced GCP topics
+    - Use gcloud with GCE
+    - Use gcloud with Cloud SQL
+    - Use gsutil with Cloud Storage

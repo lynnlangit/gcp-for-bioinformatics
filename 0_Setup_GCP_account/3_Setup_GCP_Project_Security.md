@@ -1,11 +1,9 @@
 # Setup GCP Project Security
 
 
-
 ### Why do this
  - Secure your analysis data
  - Secure your GCP project resources
-
 
 ### What is this
  - GCP uses IAM (Identity and Access Management) objects to allow you to configure security
