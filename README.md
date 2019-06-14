@@ -14,7 +14,7 @@ This repository contains information about using Google Cloud Platform public cl
 
 - [Nature article: "Cloud computing for genomic data analysis and collaboration"](https://www.nature.com/articles/nrg.2017.113)
 - Be able to run large (or huge) sized analysis jobs when and only when you need to run them
-- Save time and money on infrastructre and get results faster
+- Save time and money on infrastructure and get results faster
 
 [![gcp-bioinformatics](/images/main.png)]() 
 
