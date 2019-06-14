@@ -1,4 +1,4 @@
-# Orchestrate Compute with Nextflow
+# Orchestrate Compute with Nextflow.io
 
 **IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 

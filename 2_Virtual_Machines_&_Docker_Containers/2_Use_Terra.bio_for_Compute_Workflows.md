@@ -5,6 +5,7 @@
 ### Why do this
  - Your workload is too big to run on your laptop
  - You don't want to wait for time on your organization's shared cluster
+ - You would like to use proven workflows rather than author jobs yourself 
 
 
 ### What is this
@@ -13,7 +14,6 @@
 
 
 ### Key considerations
- - Can be used with VMs or Docker container Images
  - Using Docker images is preferred
  - Size & complexity of your workload 
  - Your budget

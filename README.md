@@ -44,13 +44,13 @@ Shown above is a basic pattern for performing genomic analysis jobs on Google Cl
     - Use Cloud SQL to store data
 - [Compute with Virtual Machines & Docker Containers](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/2_Virtual_Machines_%26_Docker_Containers)
     - Use Google Compute Engine Virtual Machines
-    - Use Terra.bio workflows
-    - Use Docker containers
-    - Use cromwell workflows
-    - Use dsub workflows
-    - Use Kubernetes to orchestrate container pipelines
-    - Use Nextflow.io workflows
-    - Use Google Compute Engine with Jupyter Notebooks on a Virtual Machine
+    - Use Terra.bio for compute workflows
+    - Use Docker containers for compute pipelines
+    - Orchestrate compute with cromwell and WDL
+    - Orchestrate compute with dsub 
+    - Orchestrate containers with Kubernetes
+    - Orchestrate compute with Nextflow.io 
+    - Use Compute Engine VM Jupyter Notebook instance 
 - [Machine Learning](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/3_Machine_Learning)
     - Use ML Vision / Video APIs & AutoML
     - Use ML Text / Natural Language APIs

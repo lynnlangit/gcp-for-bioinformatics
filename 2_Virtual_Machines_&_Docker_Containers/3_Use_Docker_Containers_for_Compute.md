@@ -1,4 +1,4 @@
-# Use Docker Containers for Compute
+# Use Docker Containers for Compute Pipelines
 
 **IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 

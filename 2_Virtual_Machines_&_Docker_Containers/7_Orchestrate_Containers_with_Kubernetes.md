@@ -1,5 +1,4 @@
-
-# Use Docker Containers for Compute
+# Orchestrate Containers with Kubernetes
 
 **IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 

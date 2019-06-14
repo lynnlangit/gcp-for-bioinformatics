@@ -11,10 +11,10 @@
 
 ### Key considerations
  - Select the best-fit VM instance type.  There are two key types:
-    - [On-demand VM]() (default) - size the instance appropriately, use for one-time, small-sized jobs
+    - Standard VM (default) - size the instance appropriately, use for one-time, small-sized jobs
     - [Preemptible VM](https://cloud.google.com/compute/docs/instances/preemptible) is an instance that you can create and run at a much lower price than normal instances (can be up to 80% LESS than regular instances). However, Compute Engine might terminate (preempt) these instances if it requires access to those resources for other tasks. Preemptible instances are excess Compute Engine capacity so their availability varies with usage. Select this instance type to save money.  Shown below is the configuration switch to enable an instance to be preemptible.
  - Understand costs: billed by CPU/RAM...Always on autodiscounting
- - Your budget / Your timeline
+ - Read GCP FAQ for GCE - [link](https://cloud.google.com/compute/docs/faq)
 
  [![gcp-preempt](/images/preempt.png)]()
 
@@ -39,5 +39,5 @@
  - Can add GPU/TPUs for machine learning workloads
 
 ### How to learn more
- - Link to 'how to set up a billing alert'
+ - Link to [GCE Pricing](https://cloud.google.com/compute/pricing#machinetype)
  - Link to 'core GCP security practices'

@@ -1,5 +1,5 @@
 
-# Use Docker Containers for Compute
+# Use Compute Engine Jupyter Notebook VM Instance
 
 **IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 
