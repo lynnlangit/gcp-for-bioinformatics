@@ -3,8 +3,8 @@
 
 ### Why do this
  - You have stateless, short-term compute tasks
- - Tasks can be solo, or chained into a workflow 
- - You only want to pay when a function is called, rather than for a long-running VM or container
+ - Your analysis job tasks can be run individually, or chained into a workflow (or pipeline)
+ - You only want to pay **when a function is called (or invoked)**, rather than for a long-running VM or container
 
 ### What is this
  - Use functions rather than containers or VMs for compute
