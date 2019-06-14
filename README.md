@@ -34,16 +34,16 @@ Here are quick links to some of the most commonly asked questions.
 
 ## Topic Areas in this Repository
 
-- Setup Google Cloud Platform Account
+- [Setup Google Cloud Platform Account](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/0_Setup_GCP_account)
     - Setup GCP Account
     - Setup GCP client tools
     - Setup GCP project security
-- Files & Data 
+- [Files & Data](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/1_Files_%26_Data) 
     - Use Google Cloud Storage for files
     - Use public genomic datasets on GCP
     - Use Big Query to query files
     - Use Cloud SQL to store data
-- Compute with VMs and Containers
+- [Compute with Virtual Machines & Docker Containers](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/2_Virtual_Machines_%26_Docker_Containers)
     - Use Google Compute Engine Virtual Machines
     - Use Terra.bio workflows
     - Use Docker containers
@@ -52,7 +52,7 @@ Here are quick links to some of the most commonly asked questions.
     - Use Kubernetes to orchestrate container pipelines
     - Use Nextflow.io workflows
     - Use Google Compute Engine with Jupyter Notebooks on a Virtual Machine
-- Machine Learning
+- [Machine Learning](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/3_Machine_Learning)
     - Use ML Vision / Video APIs & AutoML
     - Use ML Text / Natural Language APIs
     - Use ML Table Analysis
@@ -60,14 +60,14 @@ Here are quick links to some of the most commonly asked questions.
     - Use Google Compute Engine ML (deep learning) image to create a Virtual Machine
     - Use a Jupyter notebook in Google Colabs with BigQuery
     - Use a Jupyter notebook in Google Colabs with BigQuery ML
-- Code/Cloud Tools
+- [Code & Cloud Service Tools](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/4_Code_%26_Cloud_Service_Tools)
     - Use Google Code Repositories for code source control with Git
     - Use GCP Deployments to deploy GCP services
     - Use Google Container Repositories to host docker container images
     - Use Stackdriver to analyze GCP service logs
-- Serverless Compute with Functions
+- [Serverless Compute with Functions](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/5_Serverless_Compute_with_Functions)
     - Use Cloud Functions and Cloud Run
-- Advanced GCP Topic
+- [Advanced GCP & Scripts](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/6_Advanced_GCP_%26_Scripts)
     - Get links to advanced GCP topics
     - Use gcloud with GCE
     - Use gcloud with Cloud SQL
