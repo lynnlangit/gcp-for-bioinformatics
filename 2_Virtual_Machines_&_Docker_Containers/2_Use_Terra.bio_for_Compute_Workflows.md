@@ -5,22 +5,25 @@
 ### Why do this
  - Your workload is too big to run on your laptop
  - You don't want to wait for time on your organization's shared cluster
- - You would like to use proven workflows rather than author jobs yourself 
+ - You would like to use best-practice bioinformatics workflows rather than author jobs yourself 
+ - You would like to use GCP without manually configuring storage and VMs
+
+ [![terra-features](/images/terra-features.png)]()
 
 
 ### What is this
- - Ability to perform Compute on Data at scale 
- - Running on services hosted by GCP
+ - Use best-practice workflows for bioinformatics that run on pre-configured GCP services (VMs and storage buckets)
  - You have a number of choices - this article covers the items highlighted in RED SQUARES
 
 [![terra](/images/terra.png)]()
 
 
 ### Key considerations
- - Using Docker images is preferred
+ - You can use pre-created workflows or create your own workflow
+ - You must configure inputs and outputs for all types of workflows
+ - If you are creating a custom workflow to run on Terra.bio, then you must first create docker container images for your custom scripts or tools
  - Size & complexity of your workload 
- - Your budget
- - Your timeline
+ - Your budget and your timeline
 
 ### How to do this
  - Select account type
