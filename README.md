@@ -52,7 +52,7 @@ Shown above is a basic pattern for performing genomic analysis jobs on Google Cl
     - Orchestrate compute with dsub 
     - Orchestrate containers with Kubernetes
     - Orchestrate compute with Nextflow.io 
-    - Use Compute Engine VM Jupyter Notebook instance 
+    - Use Jupyter Notebook Virutal Machine 
 - [Machine Learning](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/3_Machine_Learning)
     - Use ML Vision / Video APIs & AutoML
     - Use ML Text / Natural Language APIs
