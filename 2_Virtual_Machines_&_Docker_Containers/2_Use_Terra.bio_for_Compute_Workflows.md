@@ -29,8 +29,8 @@
     - From The Broad, Terra uses cromwell orchestration.  Cromwell is configured with WDL files.
 
 ### How to do this
- - Navigate to Terra.bio and authenticate with your email
- - Review example workspaces and browse data from the start screen (shown below)
+ - Navigate to [Terra.bio](https://terra.bio/) --> 'Try Terra' and authenticate with your email
+ - Review the example workspaces and browse data from the start screen (shown below)
  - Determine whether you want to use Notebooks or Tools (Workflows)
  - Create your own workspace and either clone an existing workflow or import a workflow you've created into your workspace. 
     - Alternatively you can start a notebook instance and use (or import) a Jupyter noteook.
@@ -50,16 +50,18 @@
  
 
 ### How to verify you've done it
- - For a Terra notebook, start a notebook instance and perform your analysis in your notebook, shown below --OR--
- - For a Terra Workflow/Tool run do the following:
+ 1. For a Terra notebook, start a notebook instance and perform your analysis in your notebook, shown below 
+ 
+    
+   [![terra-notebook](/images/terra-notebook.png)]()  
+--OR--  
+
+2. For a Terra Workflow/Tool run do the following:
      - clone an existing workflow or import a workflow (using 'Find a Tool') that you created from Dockstore or Broad Methods Repository, shown below
      - add your data
      - configure the workflow / tool - shown below
      - click 'run analysis'
      - review job history - shown below
-    
-   [![terra-notebook](/images/terra-notebook.png)]()
-   --or--
    [![find-tool](/images/Find-tool.png)]()
    [![arrow](/images/arrow.png)]()
    [![configure-job](/images/configure-job.png)]()
