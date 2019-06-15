@@ -24,7 +24,7 @@
     
       However, Compute Engine might terminate (preempt) these instances if it requires access to those resources for other tasks. Preemptible instances are excess Compute Engine capacity so their availability varies with usage. Select this instance type to save money.  Shown below is the configuration switch to enable an instance to be preemptible.  
  - Understand service costs. VMs are billed by size (CPU/RAM), time (per second) and other factors (region).  VM cost can be reduced by using preemptible instances.  Pricing can also be reduced by always on auto-discounting (see screen below).
- - Read GCP FAQ for GCE - [link](https://cloud.google.com/compute/docs/faq)
+ - Read GCP FAQs for GCE - [link](https://cloud.google.com/compute/docs/faq)
 
  [![gcp-instance](/images/gce-instance.png)]()
 
