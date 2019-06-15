@@ -1,6 +1,6 @@
 # Use Public Reference Datasets
 
- [![gcp-genomics](/images/gcp-genomics.png =100x100)](https://cloud.google.com/genomics/docs/public-datasets/) 
+ [![gcp-genomics](/images/gcp-genomics.png)<!-- .element height="50%" width="50%" -->](https://cloud.google.com/genomics/docs/public-datasets/) 
 
 ### What is this
 - Cloud Genomics provides a variety of public datasets that you can access for free and integrate into your research jobs
