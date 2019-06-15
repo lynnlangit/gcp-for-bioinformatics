@@ -10,7 +10,7 @@
  - Running Google Compute Engine(GCE) Virtual Machine instances from within your GCP Project
  - You have a number of choices - this article covers the items highlighted in RED SQUARES
 
-[![gce](/images/gce.png)]()
+[![gce](/images/gce-path.png)]()
 
 
 ### Key considerations
