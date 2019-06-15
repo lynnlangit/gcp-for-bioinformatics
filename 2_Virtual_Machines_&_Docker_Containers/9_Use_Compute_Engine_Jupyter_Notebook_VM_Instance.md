@@ -1,15 +1,12 @@
 
-# Use Compute Engine Jupyter Notebook VM Instance
-
-**IMPORTANT: THIS ARTICLE IS IN PROGRESS**
+# Use Jupyter Notebook Instances
 
 ### Why do this
- - Your workload is too big to run on your laptop
- - You don't want to wait for time on your organization's shared cluster
-
+ - You want to use Jupyter notebooks and data analysis libraries for your reseach
+ - You want to use libraries (such as TensorFlow) and hardware (such as GPUs) which are pre-installed and pre-configured on a VM hosted in your GCP project
 
 ### What is this
- - Ability to perform Compute on Data at scale 
+ - Set up and use analysis using libraries and Jupyter notebooks on pre-configured GCE VMs quickly
  - Running on services hosted by GCP
   - You have a number of choices - this article covers the items highlighted in RED SQUARES
 
@@ -17,28 +14,30 @@
 
 
 ### Key considerations
- - Use Free Tier
- - Use Your Organization's Account
- - Size & complexity of your workload 
- - Your budget
- - Your timeline
+ - Select the core library (i.e. R, Python, etc...) for your notebook instance
+ - Configure the hardware for your VM based on your expected workload - can include GPUs
 
 ### How to do this
  - Create notebook instance from AI Platform -> Notebooks
- - Select appropriate type of Notebook (see screenshot below)
+ - Select appropriate type of Notebook - see screenshot below
+ - Create a notebook instance VM and wait for a green indicator - see screenshot below
 
  [![create-notebook](/images/create-notebook.png)]()
 
+ [![notebook-vm](/images/notebook-vm.png)]()
+
 ### How to verify you've done it
- - Login to GCP console
- - Verify your account
- - Verify your envionment
+ - Click the 'OPENJUPYTERLAB' link on the GCP AI hub -> Notebook instances interface for your VM
+ - Work with notebooks on your VM (example shown below)
+
+ [![jupyter-sample](/images/jupyter-sample.png)]()
 
 ### Other Things to Know
- - Use GCP Billing tools (& budgets)
- - Understand GCP service limits by account type
- - Follow GCP security best practices
+ - Notebook instances have libaries (such as R, Python...)  pre-installed
+ - Notebook instances are part of the GCP AI Hub - [link](https://cloud.google.com/ai-hub/docs/introduction)
+ - Notebook instances are an alternative to you using GCE VMs where YOU install libraries and drivers manually
+ - Google Colabs are public Jupyter servers where you can try our small experiments FREE using Jupyter notebooks - [link](https://colab.research.google.com/notebooks/welcome.ipynb)
 
 ### How to learn more
- - Link to 'how to set up a billing alert'
- - Link to 'core GCP security practices'
+ - Link to [Using Notebook Instances](https://cloud.google.com/ai-hub/docs/open-notebook)
+ - Link to [Publish a Notebook on AI Hub](https://cloud.google.com/ai-hub/docs/publish-notebook)
