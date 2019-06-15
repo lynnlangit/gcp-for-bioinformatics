@@ -7,6 +7,7 @@ This repository contains information about using Google Cloud Platform public cl
 2) CSIRO Bioinformatics (Sydney, Australia) - [link](https://bioinformatics.csiro.au/)
 3) Nextflow.io team (Barcelona, Spain) - [link](https://www.nextflow.io/about-us.html)
 4) EMBL-EBI (Cambridge, UK) - [link](https://www.ebi.ac.uk/)
+5) Galaxy Project (Europe) - [link](https://galaxyproject.org/cloud/)
 
 [![bioinformatics-groups](/images/logos.png)]() 
 
@@ -24,12 +25,13 @@ Shown above is a basic pattern for performing genomic analysis jobs on Google Cl
 
 - [Setup my GCP account?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/0_Setup_GCP_account/1_Setup_GCP_Account.md)
 - [Use services in a GCP Free Tier account?](https://cloud.google.com/free/docs/gcp-free-tier)
-- [Upload a file to a GCP storage bucket?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_and_Data/1_Use_GCS_File_Storage.md)
-- [Start a Virtual Machine instance on GCP?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/2_Compute_with_VMs_and_Docker_Containers/1_Use_GCE_VMs_for_Compute.md)
+- [Upload a file to a GCP storage bucket?](https://cloud.google.com/storage/docs/uploading-objects)
+- [Start a Virtual Machine instance on GCP?](https://cloud.google.com/compute/docs/quickstart-linux)
 - [Run an example analysis on Terra.bio (on GCP)?](https://app.terra.bio/#library/showcase)
 - [Understand how much GCP services cost?](https://cloud.google.com/products/calculator/)
-- [Use GCP security best practices?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/0_Setup_GCP_account/3_Setup_GCP_Project_Security.md)
+- [Use GCP security best practices?](https://cloud.google.com/iam/docs/using-iam-securely)
 - [Learn more about using GCP services?](https://www.linkedin.com/learning/google-cloud-platform-essential-training-3)
+- [See examples of scripting GCP services](https://github.com/lynnlangit/gcp-essentials)
 
 ## Topic Areas in this Repository
 
