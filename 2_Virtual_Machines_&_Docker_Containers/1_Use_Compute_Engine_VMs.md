@@ -17,7 +17,10 @@
  - Size your VM instance to meet your time/budget goals.  Considerations include the following (screenshot below):  
       - CPUs -- type and number of CPU cores.  You may also add specialty cores (often for machine learning jobs) - these can include GPUs or TPUs.
       - RAM (memory)
-      - Base OS - Debian Linux is the default
+      - Base OS disk - Debian Linux is the default
+      - Other storage - can be Cloud Storage Bucket, Persisent Disk or combination - [link to article](https://cloud.google.com/compute/docs/disks/). If your applications do not require the lower latency of persistent disks and local SSDs, you can store your data in much cheaper Cloud Storage buckets.
+
+Connect your instance to a Cloud Storage bucket when latency and throughput are not a priority and when you must share data easily between multiple instances or zones.
 - Select the best-fit VM instance type.  There are two key types:
     - Standard VM (default) - size the instance appropriately, use for one-time, small-sized jobs
     - [Preemptible VM](https://cloud.google.com/compute/docs/instances/preemptible) is an instance that you can create and run at a much lower price than normal instances (can be up to 80% LESS than regular instances). 
