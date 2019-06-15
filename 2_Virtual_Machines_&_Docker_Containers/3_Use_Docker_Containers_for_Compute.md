@@ -8,9 +8,13 @@
 
 
 ### What is this
- - Ability to perform Compute on Data at scale 
- - Running on services hosted by GCP
+ - Creating reusable, scalable container images for scalaing your analysis jobs on various GCP libraries
+ - There are several steps in the process, these are shown in the screenshot below
 
+[![tool-to-docker](/images/tool-to-docker.png)]()
+
+NOTES: Singularity is a type of container used for specialized compute environments (mostly NOT GCP). Container images can be run on GCP in GCE (VMs)
+or as part of a cluster of containers.  If a cluster, then a container orchestration API or service is generally added.  Kubernetes is the most popular open source container orchestrator.  GCP has GKE (Google Kubernetes Service).  Alternatively, there are a number of bioinformatics APIs that can orchestrate containers on GCP.  These include cromwell, dsub and Nextflow.io.
 
 ### Key considerations
  - You must evaluate, select, configure and test container orchestration method

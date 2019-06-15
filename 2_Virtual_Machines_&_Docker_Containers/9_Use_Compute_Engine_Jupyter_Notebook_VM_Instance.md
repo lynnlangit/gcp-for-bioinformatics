@@ -11,6 +11,9 @@
 ### What is this
  - Ability to perform Compute on Data at scale 
  - Running on services hosted by GCP
+  - You have a number of choices - this article covers the items highlighted in RED SQUARES
+
+[![notebook-instance](/images/notebook-instance.png)]()
 
 
 ### Key considerations
@@ -21,9 +24,10 @@
  - Your timeline
 
 ### How to do this
- - Select account type
- - Request account from your organization -or-
- - Setup free tier (testing) account
+ - Create notebook instance from AI Platform -> Notebooks
+ - Select appropriate type of Notebook (see screenshot below)
+
+ [![create-notebook](/images/create-notebook.png)]()
 
 ### How to verify you've done it
  - Login to GCP console
