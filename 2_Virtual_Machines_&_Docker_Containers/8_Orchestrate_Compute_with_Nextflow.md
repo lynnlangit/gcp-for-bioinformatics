@@ -10,6 +10,10 @@
 ### What is this
  - Ability to perform Compute on Data at scale 
  - Running on services hosted by GCP
+ - You have a number of choices - this article covers the items highlighted in RED SQUARES
+
+[![nextflow](/images/nextflow.png)]()
+
 
 
 ### Key considerations

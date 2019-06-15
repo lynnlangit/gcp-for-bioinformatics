@@ -8,6 +8,10 @@
 ### What is this
  - The ability to perform analysis (compute) on files or data at dynamic scale 
  - Running Google Compute Engine(GCE) Virtual Machine instances from within your GCP Project
+ - You have a number of choices - this article covers the items highlighted in RED SQUARES
+
+[![gce](/images/gce.png)]()
+
 
 ### Key considerations
  - Select the best-fit VM instance type.  There are two key types:

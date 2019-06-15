@@ -11,6 +11,9 @@
 ### What is this
  - Ability to perform Compute on Data at scale 
  - Running on services hosted by GCP using the special purpose GCP Genomics (Pipelines) API for GCE (Compute Engine).  The Genomics API provides orchestration for mulitple GCE VM instances.
+  - You have a number of choices - this article covers the items highlighted in RED SQUARES
+
+[![dsub](/images/dsub.png)]()
 
 
 ### Key considerations
