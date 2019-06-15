@@ -26,9 +26,11 @@
  - Your budget and your timeline
 
 ### How to do this
- - Select account type
- - Request account from your organization -or-
+ - Navigate to Terra.bio and authenticate with your email
+ - Review workspaces, examples or data from the start screen (shown below)
  - Setup free tier (testing) account
+
+ [![terra-start](/images/terra-start.png)]()
 
 ### How to verify you've done it
  - Login to GCP console

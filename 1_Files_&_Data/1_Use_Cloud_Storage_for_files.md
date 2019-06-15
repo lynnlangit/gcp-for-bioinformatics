@@ -35,6 +35,9 @@
 
 ### Other Things to Know
  - Storage can be the most significant GCP service cost for bioinformatics (due to the number and size of files involved in analysis)
+ - Select the storage class that fits best for your analysis, i.e. multi-regional, regional....
+ - Design file archiving processes, i.e. move to nearline or coldline if not accessing or over time (i.e. monthly...)
+ - Delete files generated during processing (often called intermediate files) that are no longer needed when jobs complete
 
 ### How to learn more
  - Best practices for Google Cloud Storage - [link](https://cloud.google.com/storage/docs/best-practices)
