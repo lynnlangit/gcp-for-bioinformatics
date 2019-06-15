@@ -2,7 +2,7 @@
 
 
 ### Why do this
- - Work efficiently using the best combination of GCP client tools when using GCP cloud services
+ Work efficiently using the best combination of GCP client tools when using GCP cloud services
 
 ### What is this
  Understand, select and configure GCP client tools. There are broadly two types of client tools.  

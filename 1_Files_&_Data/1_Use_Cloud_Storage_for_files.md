@@ -31,7 +31,10 @@
 
 
 ### How to verify you've done it
- - Upload file(s) to the bucket using the web console or the 'gsutil' tool - [link](https://cloud.google.com/storage/docs/gsutil)
+ - Upload file(s) to the bucket using the web console or the 'gsutil' tool - [link](https://cloud.google.com/storage/docs/gsutil) - example shown below
+
+ [![upload](/images/upload.png)]()
+
 
 ### Other Things to Know
  - Storage can be the most significant GCP service cost for bioinformatics (due to the number and size of files involved in analysis)

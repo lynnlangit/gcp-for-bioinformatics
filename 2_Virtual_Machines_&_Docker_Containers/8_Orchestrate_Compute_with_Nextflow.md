@@ -34,10 +34,10 @@
  - Verify your envionment
 
 ### Other Things to Know
- - Use GCP Billing tools (& budgets)
- - Understand GCP service limits by account type
- - Follow GCP security best practices
+ - Use Nextflow w/GCE or Nextflow w/container images & Google Genomics/Pipelines API
+ - Test Netflow pipelines locally
+ - Use Nextflow pipelines with other cloud vendors: AWS - [link](https://www.nextflow.io/docs/latest/awscloud.html)
 
 ### How to learn more
- - Link to 'how to set up a billing alert'
+ - Link to [Nextflow on GCP](https://www.nextflow.io/docs/latest/google.html)
  - Link to 'core GCP security practices'
