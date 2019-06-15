@@ -48,7 +48,7 @@ Shown above is a basic pattern for performing genomic analysis jobs on Google Cl
     - Use Google Compute Engine Virtual Machines
     - Use Terra.bio for compute workflows
     - Use Docker containers for compute pipelines
-    - Orchestrate compute with cromwell and WDL
+    - Orchestrate compute with cromwell & WDL
     - Orchestrate compute with dsub 
     - Orchestrate containers with Kubernetes
     - Orchestrate compute with Nextflow.io 
