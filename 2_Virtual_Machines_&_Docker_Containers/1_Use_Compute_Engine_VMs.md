@@ -13,7 +13,7 @@
 
 
 ### Key considerations
- - If you choose to run your workload on GCE VMs that you start from within your project, then you must configure and size all instances manually for your workload.  Alternatively, if you use bioinformatics tools and libraries (such as Terra.bio or dsub), then those libraries will most of the VM configuration and scaling for you automatically.  
+ - If you choose to run your workload on GCE VMs that you start from within your project, then you must configure and size all instances manually for your workload.  Alternatively, if you use bioinformatics tools and libraries (such as Terra.bio or dsub), then those libraries will do most of the VM configuration and scaling for you automatically.  
  - Size your VM instance to meet your time/budget goals.  Considerations include the following (screenshot below):  
       - CPUs -- type and number of CPU cores.  You may also add specialty cores (often for machine learning jobs) - these can include GPUs or TPUs.
       - RAM (memory)
@@ -22,7 +22,7 @@
     - Standard VM (default) - size the instance appropriately, use for one-time, small-sized jobs
     - [Preemptible VM](https://cloud.google.com/compute/docs/instances/preemptible) is an instance that you can create and run at a much lower price than normal instances (can be up to 80% LESS than regular instances). 
     
-      However, Compute Engine might terminate (preempt) these instances if it requires access to those resources for other tasks. Preemptible instances are excess Compute Engine capacity so their availability varies with usage. Select this instance type to save money.  Shown below is the configuration switch to enable an instance to be preemptible.  See screen below to select this option when you set up your VM instance.
+      However, Compute Engine might terminate (preempt) these instances if it requires access to those resources for other tasks. Preemptible instances are excess Compute Engine capacity so their availability varies with usage. Select this instance type to save money.  Shown below is the configuration switch to enable an instance to be preemptible.  
  - Understand service costs. VMs are billed by size (CPU/RAM), time (per second) and other factors (region).  VM cost can be reduced by using preemptible instances.  Pricing can also be reduced by always on auto-discounting (see screen below).
  - Read GCP FAQ for GCE - [link](https://cloud.google.com/compute/docs/faq)
 
@@ -31,7 +31,7 @@
  [![gcp-preempt](/images/preempt.png)]()
 
 ### How to do this
- - Create an a new VM instance from a GCP template, 3rd party template or your own template (file) using the GCP console
+ - Create a new VM instance from a GCP template, 3rd party template or your own template (file) using the GCP console
  - Configure the VM instance for your analysis workload size, by setting the number of cores and amount of memory.
  - Monitor instance resource usage (CPU, RAM...)
  - Stop the instance (and/or delete it) when your analysis is complete.
