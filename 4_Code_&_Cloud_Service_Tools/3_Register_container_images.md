@@ -10,6 +10,8 @@
 ### What is this
  - Registering docker container images on GCP for use (execution) by GCP services, such as VMs or Kubernetes clusters
  - Google Container Registry (gcr.io) can host images that are public or private (to a set of authorized GCP IAM users)
+ - Container Registry supports Docker Image Manifest V2 and OCI image formats
+ - Use the Docker credential helper command-line tool to configure Docker to authenticate directly with Container Registry
 
 ### Key considerations
  - GCR.io is an alternative to other container registries, such as DockerHub or Quay.io
@@ -26,7 +28,6 @@
 
 ### Other Things to Know
  - Integrates with CI/CD pipeline tools, such as Google CloudBuild and others/
- - GAE (AppEngine) is a serverless service which can be used to host web sites and support common programming language.  Python example [here](https://cloud.google.com/appengine/docs/python/)
 
 ### How to learn more
- - Link to [choosing a serverless option](https://cloud.google.com/serverless-options/)
+ - Link to [Container Analysis](https://cloud.google.com/container-registry/docs/container-analysis)
