@@ -19,7 +19,9 @@
  - More
 
 ### Other Things to Know
- - More
+ - **SEE** Main Galaxy site -- https://galaxyproject.org/
+ - **USE** public Galaxy server (main site)  -- https://usegalaxy.org/
+ - **USE** Galaxy 101/Hello Galaxy step-by-step -- https://github.com/nekrut/galaxy/wiki/Galaxy101-1
 
 ### How to learn more
  [![Scaling Galaxy Project on Google Cloud Platform](http://img.youtube.com/vi/qp99KdQurZY/0.jpg)](http://www.youtube.com/watch?v=qp99KdQurZY "Scaling Galaxy Project on GCP")
