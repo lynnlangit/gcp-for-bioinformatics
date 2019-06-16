@@ -63,10 +63,10 @@ Shown above is a basic pattern for performing genomic analysis jobs on Google Cl
     - Use a Jupyter notebook in Google Colabs with BigQuery
     - Use a Jupyter notebook in Google Colabs with BigQuery ML
 - [Code & Cloud Service Tools](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/4_Code_%26_Cloud_Service_Tools)
-    - Use Google Code Repositories for code source control with Git
-    - Use GCP Deployments to deploy GCP services
+    - Use Source Repositories for code source control
+    - Use Deployment Manager to deploy services
     - Use Google Container Repositories to host docker container images
-    - Use Stackdriver to analyze GCP service logs
+    - Monitor log with Stackdriver
 - [Serverless Compute with Functions](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/5_Serverless_Compute_with_Functions)
     - Serverless Cloud Functions 
     - Serverless Cloud Run

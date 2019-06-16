@@ -1,4 +1,4 @@
-# Use GCE Virtual Machines for Compute
+# Use Source Repositories for Code Source Control
 
 **IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 

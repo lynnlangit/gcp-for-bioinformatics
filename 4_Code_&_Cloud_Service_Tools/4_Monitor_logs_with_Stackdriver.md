@@ -1,4 +1,4 @@
-# Monitoring with Stackdriver
+# Monitor logs with Stackdriver
 
 **IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 

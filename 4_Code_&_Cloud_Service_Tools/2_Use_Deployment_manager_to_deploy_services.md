@@ -1,4 +1,4 @@
-# Use GCE Virtual Machines for Compute
+# Use Deployment Manager to deploy services
 
 **IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 

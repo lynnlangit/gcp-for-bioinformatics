@@ -1,6 +1,4 @@
-# Register container images
-
-**IMPORTANT: THIS ARTICLE IS IN PROGRESS**
+# Register container images with GCR
 
 ### Why do this
  - You want to use docker container images on GCP
