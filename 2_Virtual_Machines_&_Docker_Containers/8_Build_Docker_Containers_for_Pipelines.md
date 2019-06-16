@@ -3,39 +3,39 @@
 **IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 
 ### Why do this
- - Your workload is too big to run on your laptop
- - You don't want to wait for time on your organization's shared cluster
+ - Your want to scale your analysis processes (scripts or tools or both)
+ - You want to capture tool configuration (as an image) for reproducible research
 
 ### What is this
  - Creating reusable, scalable container images for scalaing your analysis jobs on various GCP libraries
+ - Describe your tool location (local or code repo, such as GitHub), required (and optional) data inputs and outputs and tool configuration via a DOCKERFILE -> build into a container image
  - There are several steps in the process, these are shown in the screenshot below
 
 [![tool-to-docker](/images/tool-to-docker.png)]()
 
-NOTES: Singularity is a type of container used for specialized compute environments (mostly NOT GCP). Container images can be run on GCP in GCE (VMs)
-or as part of a cluster of containers.  If a cluster, then a container orchestration API or service is generally added.  Kubernetes is the most popular open source container orchestrator.  GCP has GKE (Google Kubernetes Service).  Alternatively, there are a number of bioinformatics APIs that can orchestrate containers on GCP.  These include cromwell, dsub and Nextflow.io.
+NOTES: 
+ - Singularity is a type of container used for specialized compute environments (mostly NOT GCP). 
+ - Container images can be run on GCP in GCE (VMs)
+or as part of a cluster of containers.  
+ - If a cluster of container instances, then a container orchestration API or service is generally added.  
+ - Kubernetes is the most popular open source container orchestrator.  GCP has GKE (Google Kubernetes Service).  Alternatively, there are a number of bioinformatics APIs that can orchestrate containers on GCP.  These include cromwell, dsub and Nextflow.
 
 ### Key considerations
- - You must evaluate, select, configure and test container orchestration method
+ - You must evaluate, select, configure and test your preferred container orchestration method, i.e. run on VMs, Kubernetes, Terra, etc...
  - You can orchestrate container workloads with Kubernetes, cromwell, or Nextflow
- - Size & complexity of your workload 
- - Your budget
- - Your timeline
+ - You may choose to use a higher-level service, such as Terra.bio, which handles most of the container scaling configuration for you
 
 ### How to do this
- - Select account type
- - Request account from your organization -or-
- - Setup free tier (testing) account
+ - If using Kubernetes,  build a Kubernetes (or K8) cluster on Google Kubernetes service, then add your container image to that cluster (start or run your tools on those containers)
 
 ### How to verify you've done it
- - Login to GCP console
- - Verify your account
- - Verify your envionment
+ - Review output data (usually stored in Cloud Storage buckets)
+ - Review job / analysis log files
+ - Review Stackdriver logs for your cluster
 
 ### Other Things to Know
- - Use GCP Billing tools (& budgets)
- - Understand GCP service limits by account type
- - Follow GCP security best practices
+ - Building a docker container includes best practices
+ - Configuration, tuning and securing kubernetes clusters is complex
 
 ### How to learn more
  - Link to 'how to set up a billing alert'

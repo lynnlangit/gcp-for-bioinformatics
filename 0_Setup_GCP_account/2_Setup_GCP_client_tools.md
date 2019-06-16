@@ -56,7 +56,7 @@ Cloud Shell provides the following:
  - Click in GCP console and/or use shell - no setup /install required
  - Download GCP SDK - use gcp cli and/or sdk for your language, requires installation and configuration
 
- ### Click Lynn's 'Use GCP client tools' 6 min
+ ### Click below to see Lynn's 'Use GCP client tools' 6 min video
 [![GCP client tools - Google Cloud Platform for Bioinformatics](http://img.youtube.com/vi/ce1XZ68NdA8/0.jpg)](http://www.youtube.com/watch?v=ce1XZ68NdA8 "GCP client tools - Google Cloud Platform for Bioinformatics")
 
 ### How to verify you've done it

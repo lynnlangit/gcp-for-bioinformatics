@@ -23,7 +23,7 @@
 ### How to verify you've done it
  - Test permissions assigned to roles/users
 
-  ### Click Lynn's 'Use GCP IAM security roles' 6 min
+### Click below to see Lynn's 'Use GCP IAM security roles' 6 min video
 [![GCP IAM roles - Google Cloud Platform for Bioinformatics](http://img.youtube.com/vi/4oSA9bdwlPs/0.jpg)](http://www.youtube.com/watch?v=4oSA9bdwlPs "GCP IAM roles - Google Cloud Platform for Bioinformatics")
 
 ### Other Things to Know

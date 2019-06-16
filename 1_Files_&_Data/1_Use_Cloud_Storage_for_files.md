@@ -35,6 +35,9 @@
 
  [![upload](/images/upload.png)]()
 
+### Click below to see Lynn's 'Use Cloud Storage buckets' 10 min video
+[![Cloud Storage Buckets - Google Cloud Platform for Bioinformatics](http://img.youtube.com/vi/_O2Lxc0UsNc/0.jpg)](http://www.youtube.com/watch?v=_O2Lxc0UsNc "Cloud Storage buckets - Google Cloud Platform for Bioinformatics")
+
 
 ### Other Things to Know
  - Storage can be the most significant GCP service cost for bioinformatics (due to the number and size of files involved in analysis)
