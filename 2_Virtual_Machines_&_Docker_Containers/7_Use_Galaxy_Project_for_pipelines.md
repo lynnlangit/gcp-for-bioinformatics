@@ -1,6 +1,5 @@
 # Use Galaxy Project for Pipelines
 
-**IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 
 ### Why do this
  - You want to use the [GalaxyProject](https://galaxyproject.org/) toolkit
@@ -15,10 +14,10 @@
  - Learn how to use Galaxy Project workflows - [link](https://galaxyproject.org/learn/)
 
 ### How to do this
- - More
+ - See the scripts in this linked repo to set up Galaxy Project on GCP -[link](https://github.com/lynnlangit/TeamTeri/tree/master/Galaxy/Setup_VMs)
 
 ### How to verify you've done it
- - More
+ - As above
 
 ### Other Things to Know
  - **SEE** Main Galaxy site -- https://galaxyproject.org/
