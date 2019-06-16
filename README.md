@@ -68,7 +68,8 @@ Shown above is a basic pattern for performing genomic analysis jobs on Google Cl
     - Use Google Container Repositories to host docker container images
     - Use Stackdriver to analyze GCP service logs
 - [Serverless Compute with Functions](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/5_Serverless_Compute_with_Functions)
-    - Use Cloud Functions and Cloud Run
+    - Serverless Cloud Functions 
+    - Serverless Cloud Run
 - [Advanced GCP & Scripts](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/6_Advanced_GCP_%26_Scripts)
     - Get links to advanced GCP topics
     - Use gcloud with GCE
