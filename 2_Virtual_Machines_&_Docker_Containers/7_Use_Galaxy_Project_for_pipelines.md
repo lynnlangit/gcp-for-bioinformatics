@@ -14,10 +14,12 @@
  - Learn how to use Galaxy Project workflows - [link](https://galaxyproject.org/learn/)
 
 ### How to do this
- - See the scripts in this linked repo to set up Galaxy Project on GCP -[link](https://github.com/lynnlangit/TeamTeri/tree/master/Galaxy/Setup_VMs)
+ - See the scripts in this linked repo to set up Galaxy Project on GCP VMs - [link](https://github.com/lynnlangit/TeamTeri/tree/master/Galaxy/Setup_VMs)
+ - See the scripts in this linked repo to set up Galaxy Project on GCP GKE (containers) - [link](https://github.com/lynnlangit/TeamTeri/tree/master/Galaxy/Setup_kubernetes)
+ - Other Galaxy on GCP resources (data samples...) - [link](https://github.com/lynnlangit/TeamTeri/tree/master/Galaxy)
 
 ### How to verify you've done it
- - As above
+ - Follow directions in Repos listed in the previous section
 
 ### Other Things to Know
  - **SEE** Main Galaxy site -- https://galaxyproject.org/
