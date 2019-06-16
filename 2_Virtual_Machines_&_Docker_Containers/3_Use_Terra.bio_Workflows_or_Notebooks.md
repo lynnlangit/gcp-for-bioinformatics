@@ -1,4 +1,4 @@
-# Use Terra.bio for Compute Workflows
+# Use Terra.bio Compute Workflows or Notebooks
 
 
 ### Why do this

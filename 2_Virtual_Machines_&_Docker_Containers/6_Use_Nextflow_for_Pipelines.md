@@ -1,4 +1,4 @@
-# Orchestrate Compute with Nextflow.io
+# Use Nextflow.io for Pipelines
 
 **IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 

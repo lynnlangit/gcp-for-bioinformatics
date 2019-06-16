@@ -1,4 +1,4 @@
-# Orchestrate Compute with dsub and Google Genomics
+# Use dsub and Google Genomics for Pipelines
 
 **IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 

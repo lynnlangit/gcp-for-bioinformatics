@@ -1,4 +1,4 @@
-# Orchestrate Compute with cromwell and WDL
+# Use cromwell and WDL for Pipelines
 
 **IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 

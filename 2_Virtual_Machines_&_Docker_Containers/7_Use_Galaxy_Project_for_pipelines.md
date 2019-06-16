@@ -1,4 +1,4 @@
-# Orchestrate Compute with Galaxy Project
+# Use Galaxy Project for Pipelines
 
 **IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 
