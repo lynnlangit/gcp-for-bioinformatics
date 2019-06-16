@@ -3,30 +3,20 @@
 **IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 
 ### Why do this
- - Your workload is too big to run on your laptop
- - You don't want to wait for time on your organization's shared cluster
-
+ - You want to use the [GalaxyProject](https://galaxyproject.org/) toolkit
 
 ### What is this
- - Ability to perform Compute on Data at scale 
- - Running on services hosted by GCP
+ - Galaxy Project is a scientific workflow, data integration, and data and analysis persistence and publishing platform that aims to make computational biology accessible to research scientists that do not have computer programming or systems administration experience.
+ - It can be run on public cloud vendors, including GCP
 
 ### Key considerations
- - Can be used with VMs or Docker container Images
- - Use Your Organization's Account
- - Size & complexity of your workload 
- - Your budget
- - Your timeline
+ - Learn how to use Galaxy Project workflows - [link](https://galaxyproject.org/learn/)
 
 ### How to do this
- - Select account type
- - Request account from your organization -or-
- - Setup free tier (testing) account
+ - More
 
 ### How to verify you've done it
- - Login to GCP console
- - Verify your account
- - Verify your envionment
+ - More
 
 ### Other Things to Know
  - More
