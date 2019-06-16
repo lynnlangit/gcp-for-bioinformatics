@@ -1,7 +1,5 @@
 # Use Source Repositories for Code Source Control
 
-**IMPORTANT: THIS ARTICLE IS IN PROGRESS**
-
 ### Why do this
  - You want to use GCP to host your analysis source code
  - You want to build a CI/CD pipeline on GCP 
@@ -16,11 +14,14 @@
 ### How to do this
  - Create a new or connect an existing code repository (GitHub or Bitbucket) to get started
  - Do the quickstart to create a new Source Repository - [link](https://cloud.google.com/source-repositories/docs/quickstart)
-
+ - Set up authentication - Cloud Source Repositories supports the following types of authentication: SSH, Cloud SDK or
+manually generated credentials - [link](https://cloud.google.com/source-repositories/docs/authentication)
 
 ### How to verify you've done it
- - View your Source Repository via the GCP console
+ - View your Source Repository via the GCP console - example shown below
  - Push (or pull) code from your Source Repo
+
+ [![source-repo](/images/source-repo.png)]()
 
 ### Other Things to Know
  - Use integrated search to intelligently search any Source Repository code - [link]()https://cloud.google.com/source-repositories/docs/searching-code
