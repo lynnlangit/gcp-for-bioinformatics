@@ -46,7 +46,6 @@ Cloud Shell provides the following:
 4.  **GCP cli** - part of GCP SDK (gcloud, gsutil, bq... script tools) - REQUIRES INSTALLATION - [download](https://cloud.google.com/sdk/)
 5.  **GCP SDK** - available in many programming languages, Python, Go, Java... - REQUIRES INSTALLATION - [download](https://cloud.google.com/sdk/)
 
-
 ### Key considerations
  - Use the **GCP console** when you are LEARNING about GCP Services
  - Use the **integrated console (shell)** and scripts to EXPERIMENT with small analysis jobs
@@ -56,6 +55,9 @@ Cloud Shell provides the following:
 ### How to do this
  - Click in GCP console and/or use shell - no setup /install required
  - Download GCP SDK - use gcp cli and/or sdk for your language, requires installation and configuration
+
+ ### Click Lynn's 'Use GCP client tools' 6 min
+[![GCP client tools - Google Cloud Platform for Bioinformatics](http://img.youtube.com/vi/ce1XZ68NdA8/0.jpg)](http://www.youtube.com/watch?v=ce1XZ68NdA8 "GCP client tools - Google Cloud Platform for Bioinformatics")
 
 ### How to verify you've done it
  - Login to GCP console
