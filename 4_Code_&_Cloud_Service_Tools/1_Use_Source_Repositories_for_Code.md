@@ -3,35 +3,28 @@
 **IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 
 ### Why do this
- - Your workload is too big to run on your laptop
- - You don't want to wait for time on your organization's shared cluster
+ - You want to use GCP to host your analysis source code
+ - You want to build a CI/CD pipeline on GCP 
 
 ### What is this
- - Ability to perform Compute on Data at scale 
- - Running on services hosted by GCP
+ - Code repository hosted on GCP - can be new or mirror of existing repo
 
 ### Key considerations
- - Use Free Tier
- - Use Your Organization's Account
- - Size & complexity of your workload 
- - Your budget
- - Your timeline
+ - Source Repositories can be easily integrated with other GCP services
+ - Use integrated code source repositories to build a CI/CD pipeline using other GCP services, such as CloudBuild
 
 ### How to do this
- - Select account type
- - Request account from your organization -or-
- - Setup free tier (testing) account
+ - Create a new or connect an existing code repository (GitHub or Bitbucket) to get started
+ - Do the quickstart to create a new Source Repository - [link](https://cloud.google.com/source-repositories/docs/quickstart)
+
 
 ### How to verify you've done it
- - Login to GCP console
- - Verify your account
- - Verify your envionment
+ - View your Source Repository via the GCP console
+ - Push (or pull) code from your Source Repo
 
 ### Other Things to Know
- - Use GCP Billing tools (& budgets)
- - Understand GCP service limits by account type
- - Follow GCP security best practices
+ - Use integrated search to intelligently search any Source Repository code - [link]()https://cloud.google.com/source-repositories/docs/searching-code
+ - Source Repositories are integrated with Stackdriver activity log readers
 
 ### How to learn more
- - Link to 'how to set up a billing alert'
- - Link to 'core GCP security practices'
+ - Link to 'Gitops CI/CD with Cloud Build and Source Repositories' - [link](https://cloud.google.com/kubernetes-engine/docs/tutorials/gitops-cloud-build)
