@@ -22,15 +22,15 @@
  NOTE: There are many bioinformatics analysis workflow tools, libraries and solutions which can be run on top of core GCP services.  Examples include [Terra.bio (was Firecloud)](https://terra.bio/), [cromwell](https://cromwell.readthedocs.io/en/stable/), [Nextflow.io](https://www.nextflow.io/) and many others.
 
 ### How to do this
- - Select GCP account type (FREE or ORG)
- - Request GCP account from your organization --OR-- set up GCP new account
+ - Request GCP account from your organization --OR-- set up GCP new (FREE Tier) account
  - Create a **GCP PROJECT** for your research project
-
  - Use **each** GCP Project as a container for your research project
- - Add GCP service instances to your GCP Project, i.e. 
- my Virtual Machine instance is located the Google datacenter in us-east and in my GCP Project named 'my-research-project'
+ - Add GCP service instances to your GCP Project by location and project name
+    - my Virtual Machine instance and my Cloud Storage bucket 
+    - are located in the Google datacenter in us-east --and--
+    - in my GCP Project named 'my-research-project'
 
-  [![GCP Resource Hierarchy](/images/resources.png)]()
+[![Setup GCP Account - Google Cloud Platform for Bioinformatics](http://img.youtube.com/vi/oD8lD8v-Z14/0.jpg)](http://www.youtube.com/watch?v=oD8lD8v-Z14 "Setup GCP Account - Google Cloud Platform for Bioinformatics")
 
 ### How to verify you've done it
  - Login to [GCP console](http://console.cloud.google.com)
@@ -43,10 +43,12 @@
  - GCP service costs are billed to **YOU** for FREE Tier (after you've spent your $300 credit)
  - GCP FREE tier account have built-in service usage limits - [link](https://cloud.google.com/free/docs/gcp-free-tier)
  - GCP service costs are billed to **YOUR COMPANY**  (or research group) for Organizational Accounts
- - A GCP billing account can be linked to one or more GCP projects and the billing account specifies how you pay (credit card, invoice...) for GCP services
-   - A GCP billing account is linked to a payment profile (individual or corporate)
+ - Understand GCP Billing Accounts & Resources Hierachy (shown below)
+    - A billing account can be linked to one or more GCP projects and the billing account specifies how you pay (credit card, invoice...) for GCP services
+   - A billing account is linked to a payment profile (individual or corporate)
 
  [![billing](/images/billing.png)]()
+ [![GCP Resource Hierarchy](/images/resources.png)]()
  
 
 ### How to learn more
