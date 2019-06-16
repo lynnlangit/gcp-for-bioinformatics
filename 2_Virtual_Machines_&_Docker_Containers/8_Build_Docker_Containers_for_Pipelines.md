@@ -6,7 +6,6 @@
  - Your workload is too big to run on your laptop
  - You don't want to wait for time on your organization's shared cluster
 
-
 ### What is this
  - Creating reusable, scalable container images for scalaing your analysis jobs on various GCP libraries
  - There are several steps in the process, these are shown in the screenshot below

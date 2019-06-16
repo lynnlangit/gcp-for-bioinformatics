@@ -1,6 +1,5 @@
 # Use Galaxy Project for Pipelines
 
-
 ### Why do this
  - You want to use the [GalaxyProject](https://galaxyproject.org/) toolkit
 

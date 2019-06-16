@@ -2,11 +2,9 @@
 
 **IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 
-
 ### Why do this
  - Your workload is too big to run on your laptop
  - You don't want to wait for time on your organization's shared cluster
-
 
 ### What is this
  - Ability to perform Compute on Data at scale 
@@ -14,7 +12,6 @@
   - You have a number of choices - this article covers the items highlighted in RED SQUARES
 
 [![dsub](/images/dsub.png)]()
-
 
 ### Key considerations
  - Can be used with VMs or Docker container Images

@@ -2,16 +2,13 @@
 
 **IMPORTANT: THIS ARTICLE IS IN PROGRESS**
 
-
 ### Why do this
  - Your workload is too big to run on your laptop
  - You don't want to wait for time on your organization's shared cluster
 
-
 ### What is this
  - Ability to perform Compute on Data at scale 
  - Running on services hosted by GCP
-
 
 ### Key considerations
  - Use Free Tier

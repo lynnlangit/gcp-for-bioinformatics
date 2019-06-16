@@ -1,6 +1,5 @@
 # Use Nextflow for Pipelines
 
-
 ### Why do this
  You want to use the Nextflow pipeline language to define and run your analysis workflow
 
