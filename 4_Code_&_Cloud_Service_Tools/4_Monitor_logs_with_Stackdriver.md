@@ -1,34 +1,32 @@
 # Monitor logs with Stackdriver
 
-**IMPORTANT: THIS ARTICLE IS IN PROGRESS**
-
 ### Why do this
- - You have stateless, short-term compute tasks
- - Tasks can be solo, or chained into a workflow 
- - You only want to pay when a function is called, rather than for a long-running VM or container
+ - You want to understand whether your service instance is working as expected
+ - You want to see any error message or output logs from your service
+ - You want to understand if your service configuration fits your analysis workload size
 
 ### What is this
- - Using functions rather than containers or VMs for compute
- - You can use GCP Cloud Functions or Cloud Run
+ - Using the GCP Stackdriver service to read and aggregate your GCP service log files
+ - Using Stackdriver to do customized monitoring, i.e. alerts on performance conditions
 
 ### Key considerations
- - In Cloud Functions, you supply the code, GCP runs your code on containers/VMs, but you don't see or manage any infrastructure
- - In Cloud Run, you supply the code and container file (Dockerfile), GCP builds, registers and runs your container image. Your function can be called via HTTP requests
- - State is NOT automatically saved after the function is invoked.  If you need to persist information, then you must write the logic to save the output to files (bucket) or a database and then to retrieve that information in a later part of the workflow
+ - Most GCE services integrate with Stackdriver, so that service logs can be more easily read
+ - Advanced Stackdriver capabilities are billed for additional service charges
 
 ### How to do this
- - Select the GCP service (Functions or Cloud Run)
- - Write your function code and upload to the service
- - Test and monitor your service
+ - Click any link 'View in Stackdriver' in a service console for GCP
+ - Navigate to the Stackdriver console to see standard service metrics and to perfrom custom actions
 
 ### How to verify you've done it
- - Invoke the function 
- - Read the Stackdriver logs
+ - Start and run a service, click to view the service execution log in Stackdriver 
+ - You can filter, sort and search within logs using the Stackdriver interface
+
+ [![to-logs](/images/to-logs.png)]()
+ [![arrow](/images/arrow.png)]()
+ [![logs](/images/logs.png)]()
 
 ### Other Things to Know
- - Serverless patterns are often used for workloads that have spikes in demand
- - Serverless autoscales (to your GCP account limits) by default
- - GAE (AppEngine) is a serverless service which can be used to host web sites and support common programming language.  Python example [here](https://cloud.google.com/appengine/docs/python/)
+ - Best practice for logging - [link](https://cloud.google.com/blog/products/gcp/best-practices-for-working-with-google-cloud-audit-logging)
 
 ### How to learn more
- - Link to [choosing a serverless option](https://cloud.google.com/serverless-options/)
+ - Link to [design patterns for Stackdriver](https://cloud.google.com/solutions/design-patterns-for-exporting-stackdriver-logging)
