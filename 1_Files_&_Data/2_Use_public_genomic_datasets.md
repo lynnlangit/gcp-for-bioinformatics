@@ -2,7 +2,6 @@
 
  [![gcp-genomics](/images/gcp-genomics.png)](https://cloud.google.com/genomics/docs/public-datasets/) 
 
-
 ### What is this
 - Cloud Genomics provides a variety of public datasets that you can access for free and integrate into your research jobs
 - An example is the 1000 Genomes dataset - [link](https://cloud.google.com/genomics/docs/public-datasets/1000-genomes)

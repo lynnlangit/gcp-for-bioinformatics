@@ -17,25 +17,14 @@ This repository contains information about using Google Cloud Platform public cl
 - Be able to run large (or huge) sized analysis jobs when and only when you need to run them
 - Save time & money by using vendor-managed infrastructure -> get analysis results faster
 
-[![gcp-bioinformatics](/images/main.png)]() 
+Shown below is a basic pattern for performing genomic analysis jobs on Google Cloud Platform. Each blue icon represents a type of GCP service.  In this guide, you'll read how to get started with the services shown below.  In addition to the topic coverage, listed below a direct set of links to answer the most commonly asked questions.
 
-Shown above is a basic pattern for performing genomic analysis jobs on Google Cloud Platform. Each blue icon represents a type of GCP service.  In this guide, you'll read how to get started with the services shown below.  In addition to the topic coverage, listed below a direct set of links to answer the most commonly asked questions.
+[![gcp-bioinformatics](/images/main.png)]() 
 
 ## Click below to see 'Lynn's Welcome Video' (4 min) 
 
 [![Welcome to GCP for Bioinformatics](http://img.youtube.com/vi/YoFkSVDlN6k/0.jpg)](http://www.youtube.com/watch?v=YoFkSVDlN6k "Welcome to GCP for Bioinformatics")
 
-## Commonly Asked: "How do I..."
-
-- [Setup my GCP account?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/0_Setup_GCP_account/1_Setup_GCP_Account.md)
-- [Use services in a GCP Free Tier account?](https://cloud.google.com/free/docs/gcp-free-tier)
-- [Upload a file to a GCP storage bucket?](https://cloud.google.com/storage/docs/uploading-objects)
-- [Start a Virtual Machine instance on GCP?](https://cloud.google.com/compute/docs/quickstart-linux)
-- [Run an example analysis on Terra.bio (on GCP)?](https://app.terra.bio/#library/showcase)
-- [Understand how much GCP services cost?](https://cloud.google.com/products/calculator/)
-- [Use GCP security best practices?](https://cloud.google.com/iam/docs/using-iam-securely)
-- [Learn more about using GCP services?](https://www.linkedin.com/learning/google-cloud-platform-essential-training-3)
-- [See examples of scripting GCP services](https://github.com/lynnlangit/gcp-essentials)
 
 ## Topic Areas in this Repository
 
@@ -79,3 +68,15 @@ Shown above is a basic pattern for performing genomic analysis jobs on Google Cl
     - Use gcloud with GCE
     - Use gcloud with Cloud SQL
     - Use gsutil with Cloud Storage
+
+## Commonly Asked: "How do I..."
+
+- [Setup my GCP account?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/0_Setup_GCP_account/1_Setup_GCP_Account.md)
+- [Use services in a GCP Free Tier account?](https://cloud.google.com/free/docs/gcp-free-tier)
+- [Upload a file to a GCP storage bucket?](https://cloud.google.com/storage/docs/uploading-objects)
+- [Start a Virtual Machine instance on GCP?](https://cloud.google.com/compute/docs/quickstart-linux)
+- [Run an example analysis on Terra.bio (on GCP)?](https://app.terra.bio/#library/showcase)
+- [Understand how much GCP services cost?](https://cloud.google.com/products/calculator/)
+- [Use GCP security best practices?](https://cloud.google.com/iam/docs/using-iam-securely)
+- [Learn more about using GCP services?](https://www.linkedin.com/learning/google-cloud-platform-essential-training-3)
+- [See examples of scripting GCP services](https://github.com/lynnlangit/gcp-essentials)
