@@ -8,3 +8,7 @@ The sections of the reference architecture outlined in red will be covered.
 [![gcp-iam](/images/ml.png)]()
 
 NOTE: Right click on the 'Open in Colab' button at the top of the *.ipynb (IPython notebook file) and 'open link in a new tab' as directly opening this link is blocked in GitHub.
+
+### For More Information
+
+I created an entire course on LinkedIn Learning on GCP Machine Learning.  Also I published a GitHub Repo with code samples for GCP Machine Learning services - [link](https://github.com/lynnlangit/gcp-ml) for more advanced machine learning scenarios.
