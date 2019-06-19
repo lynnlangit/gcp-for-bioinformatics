@@ -5,9 +5,10 @@
 ### Why do this
  - Your want to scale your analysis processes (scripts or tools or both)
  - You want to capture tool configuration (as an image) for reproducible research
+ - You want to use Docker containers
 
 ### What is this
- - Creating reusable, scalable container images for scalaing your analysis jobs on various GCP libraries
+ - Creating reusable, scalable docker container images for scalaing your analysis jobs on various GCP services (VMs, Kubernetes, others...)
  - Describe your tool location (local or code repo, such as GitHub), required (and optional) data inputs and outputs and tool configuration via a DOCKERFILE -> build into a container image
  - There are several steps in the process, these are shown in the screenshot below
 
@@ -38,5 +39,5 @@ or as part of a cluster of containers.
  - Configuration, tuning and securing kubernetes clusters is complex
 
 ### How to learn more
- - Link to 'how to set up a billing alert'
- - Link to 'core GCP security practices'
+ - Link to [3 minutes to containers - for bioinformaticians](https://medium.com/series/running-containers-for-biologists-75d6dccbbf7c)
+ - Link to an example - [Blastn container files](https://github.com/lynnlangit/blastn)
