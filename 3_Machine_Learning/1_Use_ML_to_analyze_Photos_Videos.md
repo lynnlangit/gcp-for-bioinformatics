@@ -30,8 +30,6 @@
 ### Other Things to Know
  - AutoML Photo/Videos models can NOT be exported at this time
  - GCP automatically selects the model type and parameters and then deploys the model for you
- - AutoML Photo/Video automates feature engineering on a wide range of tabular data primitives — such as numbers, classes, strings, timestamps, and lists 
- - AutoML Photo/Video helps you detect and take care of missing values, outliers, and other common data issues
 
 ### How to learn more
  - Link to [Using AutoML for Photos/Video on GCP](https://cloud.google.com/automl/)
