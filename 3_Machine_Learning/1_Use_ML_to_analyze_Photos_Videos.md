@@ -1,37 +1,37 @@
-#  Use ML to automatically analyze text or language data
-
-**IMPORTANT: THIS ARTICLE IS IN PROGRESS**
+# Use ML to automatically analyze items in Photos or Videos
 
 ### Why do this
- - Your workload is too big to run on your laptop
- - You don't want to wait for time on your organization's shared cluster
+ - You want to analyze items found in photos or videos via machine learning models
+ - You would like GCP to create the best-fit ML model for your data
 
 ### What is this
- - Ability to perform Compute on Data at scale 
- - Running on services hosted by GCP
+ - Ability to use ML on photo/video data without manually creating/training an ML model
+ - Simply provide the photo/video data, labels and pay for ML training hours on GCP
+ - Product names are AutoML for Vision or AutoML for Video Intelligence
 
 ### Key considerations
- - Use Free Tier
- - Use Your Organization's Account
- - Size & complexity of your workload 
- - Your budget
- - Your timeline
+ - ML model accuracy improves with billable training time
+ - Google uses auto-grid and hyperparameter clusters to select, train and tune the best ML model 
+ - Alternatively you can use GCP Vision API or Video API (if returned labels fit your use case)
+ -- try the API in a browser [here](https://cloud.google.com/vision/).  Shown below is a comparision (for Vision) of the two types of products
+
+[![automl](/images/automl.png)]() 
 
 ### How to do this
- - Select account type
- - Request account from your organization -or-
- - Setup free tier (testing) account
+ - Provide the photo and video data
+ - Provide the labels
+ - Configure the desired training time
 
 ### How to verify you've done it
- - Login to GCP console
- - Verify your account
- - Verify your envionment
+ - Review the model quality results
+ - Test model accuracy with new data
+ - Add more data and/or add more training hours and repeat until your quality goal is met
 
 ### Other Things to Know
- - Use GCP Billing tools (& budgets)
- - Understand GCP service limits by account type
- - Follow GCP security best practices
+ - AutoML Photo/Videos models can NOT be exported at this time
+ - GCP automatically selects the model type and parameters and then deploys the model for you
+ - AutoML Photo/Video automates feature engineering on a wide range of tabular data primitives — such as numbers, classes, strings, timestamps, and lists 
+ - AutoML Photo/Video helps you detect and take care of missing values, outliers, and other common data issues
 
 ### How to learn more
- - Link to 'how to set up a billing alert'
- - Link to 'core GCP security practices'
+ - Link to [Using AutoML for Photos/Video on GCP](https://cloud.google.com/automl/)
