@@ -1,7 +1,5 @@
 # Use DeepVariant to perform variant calling
 
-**IMPORTANT: THIS ARTICLE IS IN PROGRESS**
-
 ### Why do this
   - High accuracy - In 2016 DeepVariant won PrecisionFDA Truth Challenge for best SNP Performance. DeepVariant maintains high accuracy across data from different sequencing technologies, prep methods, and species.
 
@@ -12,8 +10,7 @@
  - Usage options - DeepVariant can be run via Docker or binaries, using both on-premise hardware or in the cloud, with support for hardware accelerators like GPUs and TPUs.
 
 ### What is this
- - Ability to perform Compute on Data at scale 
- - Uses GCP Genomics API + purpose-built neural network machine learning model 
+ - Uses GCP Genomics API + a purpose-built neural network machine learning model for genomic variant analysis
 
 ### Key considerations
  - The following configuration is optimized to run DeepVariant at low cost. The total for the runtime and cost varies depending on the number of instances that get preempted, but you can expect that for a 30x whole genome sample, the pipeline will complete in 1 to 2 hours and cost between $3.00 and $4.00.
