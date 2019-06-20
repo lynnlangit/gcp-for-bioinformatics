@@ -16,6 +16,7 @@
  - Provide the data
  - Provide the labels
  - Configure the desired training time
+ - Follow the 'Auto ML Tables for Beginners' guide - [link](https://cloud.google.com/automl-tables/docs/beginners-guide)
 
 ### How to verify you've done it
  - Review the model quality results
