@@ -7,7 +7,9 @@
 ### What is this
  - Ability to use ML on photo/video data without manually creating/training an ML model
  - Simply provide the photo/video data, labels and pay for ML training hours on GCP
- - Product names are AutoML for Vision or AutoML for Video Intelligence
+ - Product names are AutoML for Vision or AutoML for Video Intelligence. Product architecture shown below
+
+ [![auto-ml-arch](/images/auto-ml-arch.png)]() 
 
 ### Key considerations
  - ML model accuracy improves with billable training time
