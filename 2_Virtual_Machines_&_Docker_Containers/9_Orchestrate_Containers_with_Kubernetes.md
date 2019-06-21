@@ -23,6 +23,9 @@
  - Use GKE to create a K8 cluster
  - Add your workload by creating service instance based on your docker container images
  - Configure and tune your cluster resources (CPU, memory, etc...) to suit the size of your analysis
+ - You can view your job in the K8 Web UI - example shown below - [link](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
+
+ [![K8 web ui](/images/k8-webui.png)]()
 
 ### How to verify you've done it
  - Run your analysis, monitor for correct results
