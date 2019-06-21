@@ -4,7 +4,7 @@
 
  - You would like to use best-practice bioinformatics tools & workflows rather than author jobs yourself 
  - You would like to use GCP without manually configuring storage and VMs
- - Terra capabilities are shown below 
+ - Terra capabilities are shown below - key features include Notebook or Jobs
 
  [![terra-features](/images/terra-features.png)]()
 
@@ -13,7 +13,7 @@
  
  - Use standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) or [Hail](https://hail.is/) in your analysis
  - Use best-practice workflows for bioinformatics that run on pre-configured GCP services (VMs and storage buckets)
- - Configure analysis jobs via Terra workflows -or- use Terra (Jupyter) notebooks for analysis
+ - Configure analysis jobs via The Broad Institute's Terra workflows -or- use Terra (Jupyter) notebooks for analysis
  - This article covers the potential ways of running analysis on GCP for the items highlighted in RED SQUARES shown below
 
 [![terra](/images/terra.png)]()
@@ -74,7 +74,7 @@
     - Workspace -> container for workflow(s)
     - Workflow -> container for tool(s) and configuration in WDL
     - Tool -> docker container image which includes script or binary tool in WDL
-    - WDL - workflow definition language, dialect required for configurating cromwell orchestration engine, as in 'a WDL file'
+    - WDL - [workflow definition language](https://software.broadinstitute.org/wdl), dialect required for configurating [cromwell orchestration engine](https://github.com/broadinstitute/cromwell), as in 'a WDL file'
     - Data (model) -> sample, reference and configuration (tool and workflow) data
 
 ### How to learn more
