@@ -2,16 +2,19 @@
 
 ### Why do this
 
- - You would like to use best-practice bioinformatics tools & workflows rather than author jobs yourself 
- - You would like to use GCP without manually configuring storage and VMs
- - Terra capabilities are shown below - key features include Notebook or Jobs
+ - You would like to use best-practice bioinformatics tools & workflows rather than author analysis jobs by hand 
+ - You would like to use GCP without manually configuring storage and VMs or container clusters
+ - You'd like to use The Broad Institute's Terra analysis system (which runs on GCP) 
+ - Terra capabilities are shown below 
 
  [![terra-features](/images/terra-features.png)]()
 
 
 ### What is this
  
- - Use standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) or [Hail](https://hail.is/) in your analysis
+ - Use standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) or [Hail](https://hail.is/) in your analysis.  GATK concepts are shown below
+
+ [![gatk-concepts](/images/gatk-concepts.png)]()
  - Use best-practice workflows for bioinformatics that run on pre-configured GCP services (VMs and storage buckets)
  - Configure analysis jobs via The Broad Institute's Terra workflows -or- use Terra (Jupyter) notebooks for analysis
  - This article covers the potential ways of running analysis on GCP for the items highlighted in RED SQUARES shown below
@@ -20,7 +23,7 @@
 
 
 ### Key considerations
- - You can use pre-created tools and workflows or create your own tools and workflows
+ - You can use pre-created tools  and workflows or create your own tools and workflows
  - You must configure input data and output data for both pre-created and custom workflows
  - If you are creating a custom workflow to run on Terra.bio, then you must first create docker container images for your custom scripts or tools
 - Terra workflows use resources from GCP and The Broad Institute.  
