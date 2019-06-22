@@ -83,3 +83,4 @@
 ### How to learn more
  - Link to [Terra resouces](https://support.terra.bio/hc/en-us)
  - Link to [Terra community forum](https://support.terra.bio/hc/en-us/community/topics/360000500432)
+ - Upload the example Terra notebook, using the [CSIRO Bioinformatics VariantSpark](https://bioinformatics.csiro.au/variantspark) library (*.ipynb file in this section).
