@@ -57,6 +57,7 @@ Shown below is a basic pattern for performing genomic analysis jobs on Google Cl
     - Use ML Table Analysis
     - Use Deep Variant
     - Use Google Compute Engine ML (deep learning) image to create a Virtual Machine
+    - Use Google optimized Deep Learning container to create your own ML container
     - Use a Jupyter notebook in Google Colabs with BigQuery
     - Use a Jupyter notebook in Google Colabs with BigQuery ML
 - [Code & Cloud Service Tools](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/4_Code_%26_Cloud_Service_Tools)

@@ -9,7 +9,8 @@ Here are the topic pages in this section:
 Use AutoML for Text to analyze text and natural language
 - Use AutoML Tables to analyze tabular data
 - Use DeepVariant to perform variant analysis
-- Use DeepLearning VM image to create your own ML model 
+- Use Deep Learning VM image to create your own ML model 
+- Use Deep Learning container image to create your own ML model/container
 - Use Jupyter notebook with BigQuery API
 - Use Jupyter notebook with BigQuery and BQ ML APIs
 
