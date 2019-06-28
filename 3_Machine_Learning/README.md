@@ -3,6 +3,16 @@
 
 In this section, you'll get information about using Google Cloud services for machine learning.  You'll use BigQuery Machine Learning.  Also you'll use Google ML APIs and services.  Additionally you'll use Google Colabs to run BigQuery ML jobs in a Jupyter notebook.
 
+Here are the topic pages in this section:
+
+- Use AutoML for Vision to analyze photos and videos
+Use AutoML for Text to analyze text and natural language
+- Use AutoML Tables to analyze tabular data
+- Use DeepVariant to perform variant analysis
+- Use DeepLearning VM image to create your own ML model 
+- Use Jupyter notebook with BigQuery API
+- Use Jupyter notebook with BigQuery and BQ ML APIs
+
 The sections of the reference architecture outlined in red will be covered.
 
 [![gcp-iam](/images/ml.png)]()

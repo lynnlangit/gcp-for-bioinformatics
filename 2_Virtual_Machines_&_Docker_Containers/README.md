@@ -2,7 +2,22 @@
 
 **IMPORTANT: THIS SECTION IS IN PROGRESS**
 
-In this section, you'll get information about using Google Cloud services for VMs and docker containers.  You'll use Google Compute Engine VMs.  Also you'll use services for docker containers including Google Kubernetes.  Additionally you'll use bioinformatics pipeline and workflow APIs to coordinate VMs and containers.  You'll also see how to create a Notebook instance VM using a GCP template, so that you can use a Jupyter notebook for your analysis job.
+In this section, you'll get information about using Google Cloud services for VMs and docker containers.  You'll use Google Compute Engine VMs.  Also you'll use services for docker containers including Google Kubernetes.  
+
+Additionally you'll use bioinformatics pipeline and workflow APIs to coordinate VMs and containers.  You'll also see how to create a Notebook instance VM using a GCP template, so that you can use a Jupyter notebook for your analysis job.
+
+Here are the topic pages in this section:
+
+- Use Compute Engine Virtual Machines
+- Use Jupyter Notebook VM Instance
+- Use Terra.bio Notebook
+- Use Terra.bio Job
+- Use Cromwell and WDL for Pipeline
+- Use dsub for Pipeline
+- Use Nextflow for Pipeline
+- Use Galaxy for Pipeline
+- Build Docker Container Images for Pipeline
+- Orchestrate Containers with GKE (Kubernetes)
 
 The sections of the reference architecture outlined in red will be covered.
 
