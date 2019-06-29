@@ -1,10 +1,11 @@
 # Advanced GCP Concepts and Scripts
 
-Here are the script pages in this section:
+After learning which services to use (and how to use them) in a research pipeline, it is common to then script the service configuration (infrastructure) using the GCP client tools (gcloud, gsutil, etc...).  This section contains example GCP client scripts for a few of the commonly-used services.   
 
+In addition to a list of links to advnced GCP topics, here are the script example pages in this section:  
+- Manage CloudStorage
 - List Compute engine instances
 - Manage CloudSQL instance
-- Manage CloudStorage
 - Use Genomics API
 -------
 ### More Information
