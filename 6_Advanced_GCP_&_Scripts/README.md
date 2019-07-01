@@ -7,6 +7,7 @@ In addition to a list of links to advnced GCP topics, here are the script exampl
 - List Compute engine instances
 - Manage CloudSQL instance
 - Use Genomics API
+- Run VariantTransforms in DataFlow and then use BigQuery to query results
 -------
 ### More Information
 
@@ -15,3 +16,5 @@ In addition to a list of links to advnced GCP topics, here are the script exampl
  - For many more examples GCP scripts using the GCP SDK command line tools (gcloud, gsutil, bq,...) - see the 'gcp-essentials' repository at this [link](https://github.com/lynnlangit/gcp-essentials).
 
  - For many more examples of GCP Machine Learning tools, libaries and example GCP SDK ML scripts, see the 'gcp-ml-essentials' repository at this [link](https://github.com/lynnlangit/gcp-ml)
+
+ - See Google Genomics Organization on GitHub - [link](https://github.com/googlegenomics)
