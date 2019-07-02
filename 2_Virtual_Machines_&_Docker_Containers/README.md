@@ -6,6 +6,9 @@ In this section, you'll get information about using Google Cloud services for VM
 
 Additionally you'll use bioinformatics pipeline and workflow APIs to coordinate VMs and containers.  You'll also see how to create a Notebook instance VM using a GCP template, so that you can use a Jupyter notebook for your analysis job.
 
+See Lynn's 3 minute intro to this section  
+[![GCP Compute](http://img.youtube.com/vi/o5EpSQ43myQ/0.jpg)](http://www.youtube.com/watch?v=o5EpSQ43myQ "Intro GCP Services for Compute")
+
 Here are the topic pages in this section:
 
 - Use Compute Engine Virtual Machines
