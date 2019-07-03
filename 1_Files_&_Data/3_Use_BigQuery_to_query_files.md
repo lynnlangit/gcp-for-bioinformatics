@@ -19,7 +19,7 @@
 ### How to do this
  - Learn SQL syntax - [link](https://www.w3schools.com/sql/sql_intro.asp)
  - Request account from your organization -or- Setup free tier (testing) account
- - Open BigQuery from the GPP console, write and review cost for a SQL query referencing a BQ dataset
+ - Open BigQuery from the GPP console, write and review cost for a SQL query referencing a BQ dataset - link to example [analyze genomic variants with BQ](https://cloud.google.com/genomics/docs/tutorials/analyze-variants-advanced)
  - BQ Dataset can be files stored in GCS or BQ storage
  - Execute the query by clicking the 'run' button, example results shown below
  - You can view the results and/or save the results into a new file in a storage bucket
@@ -46,3 +46,4 @@
  - Link to [Analyze variants with BQ](https://cloud.google.com/genomics/docs/tutorials/analyze-variants-advanced)
  - Link to [Example Genomics BQ queries](https://github.com/googlegenomics/bigquery-examples/tree/master/1000genomes)
  - Link to 60+ min Codelab [Analyze variants in BQ](https://codelabs.developers.google.com/codelabs/genomics-vcfbq/#0)
+ - Link to [Example ISB-CGC tutorial](https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/progapi/bigqueryGUI/WalkthroughOfGoogleBigQuery.html)
