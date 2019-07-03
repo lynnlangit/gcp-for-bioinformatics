@@ -24,6 +24,9 @@
  - Execute the query by clicking the 'run' button, example results shown below
  - You can view the results and/or save the results into a new file in a storage bucket
 
+ ### Click to see Lynn's 9 minute exploration of this section  
+[![GCP BigQuery for Bioinformatics](http://img.youtube.com/vi/bWI8JPR9h0E/0.jpg)](http://www.youtube.com/watch?v=bWI8JPR9h0E "GCP BigQuery for Bioinformatics")
+
  [![BigQuery results](/images/results.png)]()
 
 ### How to verify you've done it

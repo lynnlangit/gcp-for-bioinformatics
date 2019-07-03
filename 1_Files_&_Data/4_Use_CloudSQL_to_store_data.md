@@ -19,7 +19,10 @@
 ### How to do this
  - Create an instance of Cloud SQL
  - Create a database
- - Add data and verify (query it)
+ - Add data and verify (query it using the SQL language)
+
+### Click to see Lynn's 4 minute exploration of this section  
+[![GCP CloudSQL for Bioinformatics](http://img.youtube.com/vi/ceqG90ZFstc/0.jpg)](http://www.youtube.com/watch?v=ceqG90ZFstc "GCP CloudSQL for Bioinformatics")
 
 ### How to verify you've done it
  - Query to verify the added data using the GCP console, script or a locally-installed MySQL client tool
@@ -31,3 +34,4 @@
 
 ### How to learn more
  - Link to [Best practices for importing data into Cloud SQL](https://cloud.google.com/sql/docs/mysql/import-export/)
+ - Link to [20 minute Codelab for Cloud SQL](https://codelabs.developers.google.com/codelabs/cloud-create-cloud-sql-db/index.html)
