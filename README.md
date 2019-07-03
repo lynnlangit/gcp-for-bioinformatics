@@ -23,6 +23,12 @@ This repository contains information about using Google Cloud Platform public cl
 
 [![Welcome to GCP for Bioinformatics](http://img.youtube.com/vi/YoFkSVDlN6k/0.jpg)](http://www.youtube.com/watch?v=YoFkSVDlN6k "Welcome to GCP for Bioinformatics")
 
+NOTE: Each page of this Repo includes the following:  
+1. A short description of why, what, how to use the GCP service
+2. A short linked screencast showing how to use the GCP service.   Here is the link to all of the screencasts for this Repo - as a [YouTube playlist](https://www.youtube.com/playlist?list=PL4Q4HssKcxYvcixWS08UFaYIH7y4IAV0z)
+
+
+
 ## Diagram of key Google Cloud Services for Bioinformatics
 
 Shown below is a basic pattern for performing genomic analysis jobs on Google Cloud Platform. Each blue icon represents a type of GCP service.  In this guide, you'll read how to get started with the services shown below.  In addition to the topic coverage, listed below a direct set of links to answer the most commonly asked questions.
