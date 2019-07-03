@@ -39,6 +39,9 @@ Connect your instance to a Cloud Storage bucket when latency and throughput are 
  - Monitor instance resource usage (CPU, RAM...)
  - Stop the instance (and/or delete it) when your analysis is complete.
 
+ ### Click to see Lynn's 9 minute exploration of this section  
+[![GCP GCE Virtual Machines for Bioinformatics](http://img.youtube.com/vi/Nb5Lb5uwbng/0.jpg)](http://www.youtube.com/watch?v=Nb5Lb5uwbng "GCP GCE Virtual Machines for Bioinformatics")
+
 ### How to verify you've done it
  - Using the GCP console, connect the to instance, for example use the integrated ssh-client to connect to Linux-based instances.  You can do this from the GCP console (SSH button) - see screenshots below.  
  - Using integrated SSH, security keys will be automatically transferred to a new window. This windows will open and give you terminal access to your instance - screenshot below
