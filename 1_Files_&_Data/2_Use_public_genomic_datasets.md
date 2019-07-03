@@ -23,7 +23,7 @@
 ### How to verify you've done it
  - Reference the file in a BigQuery query or a VM-based analysis
 
- See Lynn's 3 minute exploration of this section  
+### Click to see Lynn's 3 minute exploration of this section  
 [![Public Reference Genomic Datasets on GCP](http://img.youtube.com/vi/4jfY9LmgHJk/0.jpg)](http://www.youtube.com/watch?v=4jfY9LmgHJk "Public Reference Genomic Datasets on GCP")
 
 ### Other Things to Know

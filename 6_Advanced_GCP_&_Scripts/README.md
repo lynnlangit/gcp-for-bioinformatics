@@ -2,7 +2,7 @@
 
 After learning which services to use (and how to use them) in a research pipeline, it is common to then script the service configuration (infrastructure) using the GCP client tools (gcloud, gsutil, etc...).  This section contains example GCP client scripts for a few of the commonly-used services.   
 
-See Lynn's 2 minute intro to this section  
+### Click below to see Lynn's 2 minute intro to this section  
 [![Intro to GCP Scripts](http://img.youtube.com/vi/aCkwA3ESubE/0.jpg)](http://www.youtube.com/watch?v=aCkwA3ESubE "Intro to GCP Scripts")
 
 In addition to a list of links to advnced GCP topics, here are the script example pages in this section:  
