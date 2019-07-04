@@ -81,14 +81,4 @@ Shown below is a basic pattern for performing genomic analysis jobs on Google Cl
     - Use gcloud with Cloud SQL
     - Use gsutil with Cloud Storage
 
-## Commonly Asked: "How do I..."
-
-- [Setup my GCP account?](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/0_Setup_GCP_account/1_Setup_GCP_Account.md)
-- [Use services in a GCP Free Tier account?](https://cloud.google.com/free/docs/gcp-free-tier)
-- [Upload a file to a GCP storage bucket?](https://cloud.google.com/storage/docs/uploading-objects)
-- [Start a Virtual Machine instance on GCP?](https://cloud.google.com/compute/docs/quickstart-linux)
-- [Run an example analysis on Terra.bio (on GCP)?](https://app.terra.bio/#library/showcase)
-- [Understand how much GCP services cost?](https://cloud.google.com/products/calculator/)
-- [Use GCP security best practices?](https://cloud.google.com/iam/docs/using-iam-securely)
-- [Learn more about using GCP services?](https://www.linkedin.com/learning/google-cloud-platform-essential-training-3)
-- [See examples of scripting GCP services](https://github.com/lynnlangit/gcp-essentials)
+----
