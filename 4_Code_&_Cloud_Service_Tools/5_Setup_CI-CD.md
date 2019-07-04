@@ -26,7 +26,7 @@
 
 
 ### Other Things to Know
- - Use integrated search to intelligently search any Source Repository code - [link]()https://cloud.google.com/source-repositories/docs/searching-code
+ - Use integrated search to intelligently search any Source Repository code - [link](https://cloud.google.com/source-repositories/docs/searching-code)
  - Source Repositories are integrated with Stackdriver activity log readers
 
 ### How to learn more
