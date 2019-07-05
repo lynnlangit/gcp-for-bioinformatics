@@ -32,3 +32,5 @@
 
 ### How to learn more
  - Link to [run a GATK best practices pipeline](https://cloud.google.com/genomics/docs/tutorials/gatk)
+ - Example WDL files for bioinformatics tools - [link](https://github.com/biowdl/tasks)
+ - WDL pipeline template examples - [link](https://github.com/biowdl/pipeline-template)
