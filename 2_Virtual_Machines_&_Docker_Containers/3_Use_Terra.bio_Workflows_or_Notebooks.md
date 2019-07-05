@@ -80,6 +80,9 @@
     - WDL - [workflow definition language](https://software.broadinstitute.org/wdl), dialect required for configurating [cromwell orchestration engine](https://github.com/broadinstitute/cromwell), as in 'a WDL file'
     - Data (model) -> sample, reference and configuration (tool and workflow) data
 
+### Click to see Lynn's 4 minute exploration of this section  
+[![GCP Jupyter Notebook Instances for Bioinformatics](http://img.youtube.com/vi/tboCODz0IL4/0.jpg)](http://www.youtube.com/watch?v=tboCODz0IL4 "GCP Jupyter Notebook Instances for Bioinformatics")
+
 ### How to learn more
  - Link to [Terra resouces](https://support.terra.bio/hc/en-us)
  - Link to [Terra community forum](https://support.terra.bio/hc/en-us/community/topics/360000500432)

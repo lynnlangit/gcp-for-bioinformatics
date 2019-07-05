@@ -32,7 +32,7 @@
 
  [![jupyter-sample](/images/jupyter-sample.png)]()
 
-  ### Click to see Lynn's 4 minute exploration of this section  
+### Click to see Lynn's 4 minute exploration of this section  
 [![GCP Jupyter Notebook Instances for Bioinformatics](http://img.youtube.com/vi/tboCODz0IL4/0.jpg)](http://www.youtube.com/watch?v=tboCODz0IL4 "GCP Jupyter Notebook Instances for Bioinformatics")
 
 ### Other Things to Know
