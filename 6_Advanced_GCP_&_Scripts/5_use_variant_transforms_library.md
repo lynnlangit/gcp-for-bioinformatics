@@ -1,5 +1,19 @@
 #   Using VariantTransforms & BQ
 
+### What is it?
+
+VariantTransforms is a tool (open source library, written in Python) for transforming and processing VCF files in a scalable manner. 
+
+It supports working with hundreds of thousands of files, millions of samples, and billions of records
+
+VariantTransforms uses GCP Dataflow. Dataflow implements an optimized version of the open source Apache Beam library on GCP.
+
+### Why use it?
+
+VariantTranforms can be used to...
+- directly load VCF files into BigQuery   
+ - pre-process (validate VCF files) so that the inconsistencies can be easily identified
+
 For complete directions see https://github.com/googlegenomics/gcp-variant-transforms
 
 #### Step 0
@@ -9,7 +23,7 @@ For complete directions see https://github.com/googlegenomics/gcp-variant-transf
     - click on 'Create new dataset' and name your dataset
 
 #### Step 1  
- - Get VariantTransforms using  
+ - Get VariantTransforms from a custom docker container image using the docker command below    
  `docker pull gcr.io/cloud-lifesciences/gcp-variant-transforms`  
  - Run VariantTransforms using the script named `6_run_variant_transforms.sh`
    - replace all script params with your values

@@ -77,8 +77,11 @@ Shown below is a basic pattern for performing genomic analysis jobs on Google Cl
     - Serverless Cloud Run
 - [Advanced GCP & Scripts](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/6_Advanced_GCP_%26_Scripts)
     - Get links to advanced GCP topics
-    - Use gcloud with GCE
-    - Use gcloud with Cloud SQL
-    - Use gsutil with Cloud Storage
+    - Use gsutil to manage Cloud Storage
+    - Use gcloud to list Compute Engine instances
+    - Use gcloud to manage Cloud SQL
+    - Use gcloud and bq to run a genomic analysis with Genomics API & BigQuery
+    - Start a container & run a genomic analysis with VariantTransforms on Cloud Dataflow
+    - Use a docker command to start a container & run a genomic analysis with VariantTransforms on Cloud Dataflow
 
 ----
