@@ -2,10 +2,10 @@
 
 ### Why do this
 
- - You would like to use best-practice bioinformatics tools & workflows rather than author analysis jobs by hand 
- - You would like to use GCP without manually configuring storage and VMs or container clusters
- - You'd like to use The Broad Institute's Terra analysis system (which runs on GCP) 
- - Terra capabilities are shown below 
+ - You would like to use bioinformatics tools (GATK, Hail...) & workflows on GCP
+ - You would like to run scalable analysis on GCP without manually configuring Cloud Storage & VMs (or container clusters)
+ - You'd like to use The Broad Institute's Terra.bio genomics analysis application (browser-based) 
+ - Terra's key capabilities are shown below 
 
  [![terra-features](/images/terra-features.png)]()
 
@@ -23,20 +23,24 @@
 
 
 ### Key considerations
- - You can use pre-created tools  and workflows or create your own tools and workflows
+ - You can implement Terra pre-created tools and workflows or create your own tools and workflows
  - You must configure input data and output data for both pre-created and custom workflows
+ - If you are using Jupyter notebooks, you can simply import your notebooks into a Terra workspace
  - If you are creating a custom workflow to run on Terra.bio, then you must first create docker container images for your custom scripts or tools
 - Terra workflows use resources from GCP and The Broad Institute.  
     - From GCP, Terra uses Compute Engine VMs and also the Google Genomics API. 
-    - From The Broad, Terra uses cromwell orchestration.  Cromwell is configured with WDL files.
+    - From The Broad, Terra uses their cromwell orchestration library.  Cromwell is configured with WDL files.
 
 ### How to do this
- - Navigate to [Terra.bio](https://terra.bio/) --> 'Try Terra' and authenticate with your email
- - Review the example workspaces and browse data from the start screen (shown below)
- - Determine whether you want to use Notebooks or Tools (Workflows)
- - Create your own workspace and either clone an existing workflow or import a workflow you've created into your workspace. 
-    - Alternatively you can start a notebook instance and use (or import) a Jupyter noteook.
-    - Reference public data and/or upload your own research data for analysis
+
+See screenshots below for general flow of working with Terra.  
+ - **LOGIN** -> Navigate to [Terra.bio](https://terra.bio/) --> 'Try Terra' and authenticate with your email
+   - You can use $300 USD in GCP credit when you first try out Terra
+   - Review the example workspaces and browse data from the start screen (shown below)
+ - **RUN WORKFLOW or NOTEBOOK** -> you can implement an example or build your own
+   - **CREATE WORKFLOW** -> create,import (or clone an existing) workflow  --OR--  
+   - **START NOTEBOOK INSTANCE** -> and use (or import) a Jupyter noteook.  
+   - **REFERENCE DATA** -> reference public data and/or upload your own research data for analysis
 
  [![terra-start](/images/terra-start.png)]()
  [![arrow](/images/arrow.png)]()
@@ -74,11 +78,11 @@
  - Terra runs on GCE VMs & the GCP Genomics/Pipelines API
  - Terra is the next generation of The Broad Institute's Firecloud tool
  - Terra terms:
-    - Workspace -> container for workflow(s)
-    - Workflow -> container for tool(s) and configuration in WDL
-    - Tool -> docker container image which includes script or binary tool in WDL
-    - WDL - [workflow definition language](https://software.broadinstitute.org/wdl), dialect required for configurating [cromwell orchestration engine](https://github.com/broadinstitute/cromwell), as in 'a WDL file'
-    - Data (model) -> sample, reference and configuration (tool and workflow) data
+    - **Workspace** -> container for workflow(s)
+    - **Workflow** -> container for tool(s) and configuration in WDL
+    - **Tool** -> docker container image which includes script or binary tool in WDL
+    - **WDL** -> [workflow definition language](https://software.broadinstitute.org/wdl), dialect required for configurating [cromwell orchestration engine](https://github.com/broadinstitute/cromwell), as in 'a WDL file'
+    - **Data (model)** -> sample, reference and configuration (tool and workflow) data
 
 
 
