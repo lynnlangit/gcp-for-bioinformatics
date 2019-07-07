@@ -29,3 +29,4 @@
 
 ### How to learn more
  - Link to [Container Analysis](https://cloud.google.com/container-registry/docs/container-analysis)
+ - Link to [Push DockerHub image to GCR](https://gatkforums.broadinstitute.org/firecloud/discussion/11558/howto-publish-a-docker-container-image-to-google-container-registry-gcr)

@@ -14,7 +14,7 @@ Here are the topic pages in this section:
 - Use Compute Engine Virtual Machines
 - Use Jupyter Notebook VM Instance
 - Use Terra.bio Notebook
-- Use Docker Container Images in Pipeline
+- Test Docker Container Image for Pipeline
 - Orchestrate Containers with GKE (Kubernetes)
 - Use Cromwell and WDL for Pipeline
 - Use Terra.bio Workflow
