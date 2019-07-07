@@ -51,7 +51,7 @@ Shown below is a basic pattern for performing genomic analysis jobs on Google Cl
     - Use Google Compute Engine Virtual Machines
     - Use Jupyter Notebook Instances (specialty GCE VMs)
     - Use Terra.bio Notebooks
-    - Use Docker containers for pipelines
+    - Use Docker containers in pipelines
     - Orchestrate containers with Kubernetes
     - Use cromwell & WDL for pipelines
     - Use Terra.bio Workflows
