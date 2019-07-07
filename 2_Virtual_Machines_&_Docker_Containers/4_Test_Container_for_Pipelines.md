@@ -28,11 +28,15 @@
  After you build and test your container, to run an analysis at scale, you must evaluate, select, configure and test your preferred container **orchestration** method. You could orchestrate container workloads with a number of methods -- Compute Engine VMs, Kubernetes clusters... Alternatively, you may choose to use a higher-level service, such as Terra.bio, which handles most of the container scaling configuration for you.
 
 ### How to do this
-0. LOCATE, REVIEW and TEST an existing DOCKER CONTAINER IMAGE  --or--
-   - Public container image registries include [DockerHub](https://hub.docker.com), [Quay.io](https://quay.io/) and [Biocontainers](https://biocontainers.pro/#/)
-   - GCP includes a container registry, called Google Container Registry (at gcr.io)  
+0. LOCATE, REVIEW and TEST an existing DOCKER CONTAINER IMAGE  
+   from a public container image registries such as... 
+   - [DockerHub](https://hub.docker.com)
+   - [Quay.io](https://quay.io/) 
+   - [Biocontainers](https://biocontainers.pro/#/)
+   - [Google Container Registry](gcr.io) for GCP for public or private images  
+   
+--or--
 1. BUILD and TEST your own DOCKER CONTAINER IMAGE
- 
  
 2. RUN YOUR CONTAINER IMAGE ON GCP
    - Select GCE or GKE to run. 
@@ -67,7 +71,7 @@ NOTES:
  - Singularity is a type of container used for specialized compute environments (mostly NOT GCP). 
 
 ### How to learn more
- - Link to [3 minutes to containers - for bioinformaticians](https://medium.com/series/running-containers-for-biologists-75d6dccbbf7c)
- - Link to an source code example - [Blastn container files](https://github.com/lynnlangit/blastn)
+ - Link to [Run a blastn container](https://biocontainers-edu.biocontainers.pro/en/latest/running_example.html)
+ - Link to DOCKERFILE example - [Blastn container files](https://github.com/lynnlangit/blastn)
  - Link to [Create a docker image the easy way](https://software.broadinstitute.org/firecloud/documentation/article?id=9453)
  - Link to [Building a Container from scratch](https://www.youtube.com/watch?v=Utf-A4rODH8) ~20 min. screencast video, includes advanced concepts (namespaces, more)
