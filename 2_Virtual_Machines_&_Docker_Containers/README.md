@@ -14,13 +14,13 @@ Here are the topic pages in this section:
 - Use Compute Engine Virtual Machines
 - Use Jupyter Notebook VM Instance
 - Use Terra.bio Notebook
-- Use Terra.bio Job
+- Build Docker Container Images for Pipeline
+- Orchestrate Containers with GKE (Kubernetes)
 - Use Cromwell and WDL for Pipeline
+- Use Terra.bio Workflow
 - Use dsub for Pipeline
 - Use Nextflow for Pipeline
 - Use Galaxy for Pipeline
-- Build Docker Container Images for Pipeline
-- Orchestrate Containers with GKE (Kubernetes)
 
 The sections of the reference architecture outlined in red will be covered.
 
