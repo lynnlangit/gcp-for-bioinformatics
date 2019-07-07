@@ -17,7 +17,7 @@
  - Use Terra (Jupyter) notebooks for analysis
  - This article covers the potential ways of running analysis on GCP for the items highlighted in RED SQUARES shown below
 
-[![terra](/images/terra.png)]()
+[![terra-notebooks](/images/terra-notebooks.png)]()
 
 
 ### Key considerations

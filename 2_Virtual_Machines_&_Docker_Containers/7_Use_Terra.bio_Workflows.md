@@ -12,7 +12,7 @@
 
 ### What is this
  
- - Use standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) or [Hail](https://hail.is/) in your analysis.  GATK concepts are shown below
+ - Use standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) or [Hail](https://hail.is/) to perform your analysis at scale.  GATK concepts are shown below
 
  [![gatk-concepts](/images/gatk-concepts.png)]()
  - Use best-practice workflows for bioinformatics that run on pre-configured GCP services (VMs and storage buckets)
@@ -22,21 +22,29 @@
 
 
 ### Key considerations
- - You can implement Terra pre-created tools and workflows or create your own tools and workflows
- - You must configure input data and output data for both pre-created and custom workflows
- - If you are creating a custom workflow to run on Terra.bio, then you must first create docker container images for your custom scripts or tools
-- Terra workflows use resources from GCP and The Broad Institute.  
-    - From GCP, Terra uses Compute Engine VMs and also the Google Genomics API. 
-    - From The Broad, Terra uses their cromwell orchestration library.  Cromwell is configured with WDL files.
+- Implement Terra best practice workflows --or--
+- Create your own tools and workflows 
+    -Create docker containers for your custom scripts or tools
+    -Write WDL scripts for your custom tools / workflows 
+- Configure input data and output data for both pre-created and custom workflows
+- Consider costs 
+    - Terra workflows use resources from GCP and The Broad Institute 
+    - From GCP, Terra uses Compute Engine, Google Pipelines/Genomics API, Cloud Storage and other services
 
 ### How to do this
 
-See screenshots below for general flow of working with Terra.  
- - **LOGIN** -> Navigate to [Terra.bio](https://terra.bio/) --> 'Try Terra' and authenticate with your email
+See example screenshots below for Terra Workflows.    
+- **LOGIN** -> 
+  - Navigate to [Terra.bio](https://terra.bio/) --> 'Try Terra' and authenticate with your email
    - You can use $300 USD in GCP credit when you first try out Terra
-   - Review the example workspaces and browse data from the start screen (shown below)
-- **CREATE WORKFLOW** -> create,import (or clone an existing) workflow  --OR--   
-- **REFERENCE DATA** -> reference public data and/or upload your own research data for analysis
+- **SELECT DATA** -> 
+  - use reference public data (Terra Library -> Data)
+  - upload your own research data for analysis (Your Terra Workspace -> Data Section)
+- **CREATE WORKFLOW** -> 
+  - import (or clone) and configure an existing workflow 
+  - create and configure your own workflow  
+
+### Example Screenshots from Terra  
 
 Terra Starter Screen - View Examples or View (Your)Workspaces
  [![terra-start](/images/terra-start.png)]()
@@ -50,7 +58,7 @@ Select Workflows to work with your Analysis Jobs
 
 ### How to verify you've done it
  For a Terra Workflow/Tool run do the following:  
-     - clone an existing workflow or import a workflow (using 'Find a Tool') that you created from Dockstore or Broad Methods Repository, shown below  
+    - clone an existing workflow or import a workflow (using 'Find a Tool') that you created from Dockstore or Broad Methods Repository, shown below  
      - add your data  
      - configure the workflow / tool - shown below  
      - click 'run analysis'  
@@ -64,11 +72,12 @@ Select Workflows to work with your Analysis Jobs
  - Terra is the next generation of The Broad Institute's Firecloud tool
  - Terra terms:
     - **Workspace** -> container for workflow(s)
-    - **Workflow** -> container for tool(s) and configuration in WDL
-    - **Tool** -> docker container image which includes script or binary tool in WDL
-    - **WDL** -> [workflow definition language](https://software.broadinstitute.org/wdl), dialect required for configurating [cromwell orchestration engine](https://github.com/broadinstitute/cromwell), as in 'a WDL file'
-    - **Data (model)** -> sample, reference and configuration (tool and workflow) data
-
+    - **Workflow** -> container for tool(s) and configuration, written in WDL for cromwell, JSON for parameters
+    - **Tool** -> docker container image of your research script or binary tool and configuration in WDL
+    - **WDL** -> [workflow definition language](https://software.broadinstitute.org/wdl), dialect required for configuring [cromwell orchestration engine](https://github.com/broadinstitute/cromwell), as in 'a WDL file'
+    - **Reference Data** -> reference data, i.e. 1000 Genomes
+    - **Workspace Data (model)** -> your research data
+    - **Configuration Data** -> WDL and JSON files
 
 
 ### How to learn more
