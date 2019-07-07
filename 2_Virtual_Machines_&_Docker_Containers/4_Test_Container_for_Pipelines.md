@@ -34,7 +34,7 @@
    - [Quay.io](https://quay.io/) 
    - [Biocontainers](https://biocontainers.pro/#/)
    - [Google Container Registry](gcr.io) for GCP for public or private images  
-   
+
 --or--
 1. BUILD and TEST your own DOCKER CONTAINER IMAGE
  
@@ -47,6 +47,8 @@
       - Use `docker ps` to get the name of the running container
       - Use the command `docker exec -it <container name> /bin/bash` to get a bash shell in the container
 
+### Click to see Lynn's 5 minute exploration of this section  
+[![Test Container on GCE for Bioinformatics](http://img.youtube.com/vi/Rq4wNbdylWs/0.jpg)](http://www.youtube.com/watch?v=Rq4wNbdylWs "Test Container on GCE for Bioinformatics")
 
 ### How to verify you've done it
 
@@ -68,10 +70,10 @@ NOTES:
  - Container images can be run on GCP in GCE (VMs) or as part of a cluster of containers.  
    - If a cluster of container instances, then a container orchestration API or service is generally added.  
    - Kubernetes (K8) is the most popular open source container orchestrator.  GCP has GKE (Google Kubernetes Service).  Alternatively, there are a number of bioinformatics APIs that can orchestrate containers on GCP.  These include cromwell, dsub and Nextflow.
- - Singularity is a type of container used for specialized compute environments (mostly NOT GCP). 
+ - [Singularity containers](http://singularity.lbl.gov/) are used for specialized compute environments such as HPC (and mostly NOT used on GCP pipelines). 
 
 ### How to learn more
  - Link to [Run a blastn container](https://biocontainers-edu.biocontainers.pro/en/latest/running_example.html)
- - Link to DOCKERFILE example - [Blastn container files](https://github.com/lynnlangit/blastn)
+ - Link to DOCKERFILE source code example - [Blastn container files](https://github.com/lynnlangit/blastn)
  - Link to [Create a docker image the easy way](https://software.broadinstitute.org/firecloud/documentation/article?id=9453)
  - Link to [Building a Container from scratch](https://www.youtube.com/watch?v=Utf-A4rODH8) ~20 min. screencast video, includes advanced concepts (namespaces, more)
