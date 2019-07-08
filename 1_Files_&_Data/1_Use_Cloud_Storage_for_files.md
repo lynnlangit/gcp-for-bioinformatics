@@ -48,3 +48,5 @@
 ### How to learn more
  - Best practices for Google Cloud Storage - [link](https://cloud.google.com/storage/docs/best-practices)
  - Hosting a static website on Cloud Storage - [link](https://cloud.google.com/storage/docs/hosting-static-website)
+ - Using Parallel Composite File Uploads - [link](https://cloud.google.com/storage/docs/gsutil/commands/cp#parallel-composite-uploads)
+ - Using the htsget protocol to access genomic data in GCP - [link](https://cloud.google.com/genomics/docs/how-tos/reading-data-htsget)
