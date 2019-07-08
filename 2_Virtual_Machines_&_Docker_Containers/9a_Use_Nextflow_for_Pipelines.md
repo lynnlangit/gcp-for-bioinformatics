@@ -19,6 +19,7 @@
  - Run 1-minute QuickStart - [link](https://www.nextflow.io/index.html#Features)
  - Run blast example - [link](https://www.nextflow.io/example3.html)
  - Run RNASeq example - [link](https://www.nextflow.io/example4.html)
+ - Run RNAseq on GCP examples - [link](https://cloud.google.com/genomics/docs/tutorials/nextflow)
  - Run VariantCalling pipeline w/GATK - [link](https://github.com/CRG-CNAG/CalliNGS-NF/)
 
 ### How to verify you've done it

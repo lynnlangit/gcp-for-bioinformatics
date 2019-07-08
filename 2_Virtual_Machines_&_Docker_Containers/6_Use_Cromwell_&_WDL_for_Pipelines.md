@@ -9,7 +9,8 @@
  [![wdl-cromwell](/images/wdl-cromwell.png)]()
 
 ### What is this
- - Next we wanted to run consider running blast on GCE w/Google Pipelines API, cromwell and WDL. We looked at the Pipelines API sample (using best practice for [The Broad’s GATK tools](https://software.broadinstitute.org/gatk/)).
+ - Scaling GCE w/Google Pipelines API, cromwell and WDL
+ - Here is the Pipelines API sample (using best practice for [The Broad’s GATK tools](https://software.broadinstitute.org/gatk/)).
   - You have a number of choices - this article covers the items highlighted in RED SQUARES
 
 [![cromwell](/images/cromwell.png)]()
