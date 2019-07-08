@@ -16,10 +16,11 @@ Here are the topic pages in this section:
 - Use Terra.bio Notebook
 - Test Docker Container Image for Pipeline
 - Orchestrate Containers with GKE (Kubernetes)
+- Use Pipelines API
 - Use Cromwell and WDL for Pipeline
 - Use Terra.bio Workflow
-- Use dsub for Pipeline
 - Use Nextflow for Pipeline
+- Use dsub for Pipeline
 - Use Galaxy for Pipeline
 
 The sections of the reference architecture outlined in red will be covered.

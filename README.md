@@ -53,10 +53,11 @@ Shown below is a basic pattern for performing genomic analysis jobs on Google Cl
     - Use Terra.bio Notebooks
     - Test Docker container image for Pipelines
     - Orchestrate containers with Kubernetes
+    - Use Google Pipelines API
     - Use cromwell & WDL for pipelines
     - Use Terra.bio Workflows
-    - Use dsub for pipelines 
     - Use Nextflow.io for pipelines
+    - Use dsub for pipelines 
     - Use Galaxy Project for pipelines
 - [Machine Learning](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/3_Machine_Learning)
     - Use ML Vision / Video APIs & AutoML
