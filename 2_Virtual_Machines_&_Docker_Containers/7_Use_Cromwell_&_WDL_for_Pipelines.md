@@ -22,6 +22,13 @@
  - You use JSON files to configure the input/output values for EACH job execution
 
 ### How to do this
+ - [This tutorial](https://wdl-runner.readthedocs.io/en/latest/GettingStarted/TutorialOverview/#tutorial-scenario) shows running a multi-stage workflow on GCP
+    - The workflow is **launched** with the Google Genomics Pipelines API
+    - The workflow is **defined** using the OpenWDL organization's Workflow Definition Language (WDL)
+    - The workflow stages are **orchestrated** by the Broad Institute's Cromwell
+    - When submitted using the Pipelines API, the workflow **runs** on multiple Google Compute Engine virtual machines. 
+      - First a master node is created for Cromwell
+      - Then Cromwell submits each stage of the workflow as one or more **separate pipelines**
  - Run a Broad Institute GATK best practice pipeline on Google Genomics/Pipelines API using WDL and cromwell - l[link](https://cloud.google.com/genomics/docs/tutorials/gatk)
 
 ### How to verify you've done it
