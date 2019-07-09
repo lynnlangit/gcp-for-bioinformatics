@@ -2,28 +2,29 @@
 
 ### Why do this
  - Your analysis job is too big or complex to run on your laptop
- - You don't want to wait for time on your organization's shared cluster
+ - You don't want to wait for time on your organization's shared Hadoop or HPC compute cluster
 
 ### What is this
- - The ability to perform analysis (compute) on files or data at dynamic scale 
+ - The ability to perform analysis (compute) on files and data at dynamic scale 
  - Running Google Compute Engine(GCE) Virtual Machine instances from within your GCP Project
  - You have a number of choices on exactly how to run bioinformatics analyasis jobs on GCP. This article covers the items highlighted in RED SQUARES in the detailed diagram below. 
 
-[![gce](/images/gce-path.png)]()
+[![gce-path](/images/gce-path.png)]()
 
 
 ### Key considerations
- - If you choose to run your workload on GCE VMs that you start from within your project, then you must configure and size all instances manually for your workload.  Alternatively, if you use bioinformatics tools and libraries (such as Terra.bio or dsub), then those libraries will do most of the VM configuration and scaling for you automatically.  
+ - If you choose to run your workload on GCE VMs that you start from within your project, then you must configure and size all instance **manually** for your analysis job
+ - Alternatively, if you use bioinformatics tools and libraries (such as Terra.bio or dsub), then those libraries will do most of the VM configuration and scaling for you automatically  
  - Size your VM instance to meet your time/budget goals.  Considerations include the following (screenshot below):  
-      - CPUs -- type and number of CPU cores.  You may also add specialty cores (often for machine learning jobs) - these can include GPUs or TPUs.
-      - RAM (memory)
-      - Base OS disk - Debian Linux is the default
-      - Other storage - can be Cloud Storage Bucket, Persisent Disk or combination - [link to article](https://cloud.google.com/compute/docs/disks/). If your applications do not require the lower latency of persistent disks and local SSDs, you can store your data in much cheaper Cloud Storage buckets.
+      - **CPUs** -- type and number of CPU cores.  You may also add specialty cores (often for machine learning jobs) - these can include GPUs or TPUs.
+      - **RAM** (memory)
+      - **Base OS disk** - Debian Linux is the default
+      - **Other storage** - can be Cloud Storage Bucket, Persisent Disk or combination - [link to article](https://cloud.google.com/compute/docs/disks/). If your applications do not require the lower latency of persistent disks and local SSDs, you can store your data in much cheaper Cloud Storage buckets.
 
 Connect your instance to a Cloud Storage bucket when latency and throughput are not a priority and when you must share data easily between multiple instances or zones.
 - Select the best-fit VM instance type.  There are two key types:
-    - Standard VM (default) - size the instance appropriately, use for one-time, small-sized jobs
-    - [Preemptible VM](https://cloud.google.com/compute/docs/instances/preemptible) is an instance that you can create and run at a much lower price than normal instances (can be up to 80% LESS than regular instances). 
+    - **Standard VM** (default) - size the instance appropriately, use for one-time, small-sized jobs
+    - **[Preemptible VM](https://cloud.google.com/compute/docs/instances/preemptible)** is an instance that you can create and run at a much lower price than normal instances (can be up to 80% LESS than regular instances). 
     
       However, Compute Engine might terminate (preempt) these instances if it requires access to those resources for other tasks. Preemptible instances are excess Compute Engine capacity so their availability varies with usage. Select this instance type to save money.  Shown below is the configuration switch to enable an instance to be preemptible.  
  - Understand service costs. VMs are billed by size (CPU/RAM), time (per second) and other factors (region).  VM cost can be reduced by using preemptible instances.  Pricing can also be reduced by always on auto-discounting (see screen below).
