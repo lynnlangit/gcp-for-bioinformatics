@@ -2,7 +2,7 @@
 
 
 ### Why do this
- You want to scale your analysis using Google Pipelines API  
+ You want to scale your analysis using Google Pipelines (also called Genomics) API  
 
  [![gcp-pipelines-api](/images/gcp-pipelines-api.png)]()
 
