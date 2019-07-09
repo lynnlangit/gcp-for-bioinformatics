@@ -3,12 +3,13 @@
 **ARTICLE IN PROGRESS**
 
 ### Why do this
- - You want to scale your analysis pipeline using Google Genomics/Pipelines API
+ - You want to scale your analysis pipeline using Google Pipelines API
+ - Pipelines API was previously called Genomics API and still uses that name in some of the documentation
 
  [![gcp-pipelines](/images/gcp-pipelines.png)]()
 
 ### What is this
- - Using Google Pipelines API to orchestrate scalable genomic analysis (compute) via GCP Dataflow (managed Apache Beam)
+ - Using Google Pipelines API to orchestrate scalable genomic analysis running Compute Engine
  - Using Cloud Storage + Pipelines API + BigQuery to create serverless end-to-end scalable genomic analysis jobs
  - You have a number of choices when scaling up pipelines - this article covers the items highlighted in RED SQUARES
 
