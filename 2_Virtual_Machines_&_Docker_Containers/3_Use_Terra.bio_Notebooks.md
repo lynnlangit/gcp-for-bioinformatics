@@ -21,6 +21,7 @@
 
 
 ### Key considerations
+- Terra includes example notebooks using tools such as Hail
 - Import and run your existing notebooks into a Terra workspace
 - Configure Terra Notebook instances as needed - use the blue gear
 - Control and configure GCP services through Terra - ComputeEngine and CloudStorage.  They can also use other GCP resources, such as BigQuery. 
