@@ -1,15 +1,14 @@
-# Use cromwell and WDL for Pipelines
-
+# Use Cromwell and WDL for Pipelines
 
 ### Why do this
  - You want to use [The Broad Institute's cromwell](https://github.com/broadinstitute/cromwell) orchestration engine to scale your analysis job
  - You want to use [The Broad's WDL (workflow definition language)](https://software.broadinstitute.org/wdl) for cromwell to describe your tool and workflow inputs and outputs
- - Example workfllow shown below
+ - Example workflow pattern shown below
 
  [![wdl-cromwell](/images/wdl-cromwell.png)]()
 
 ### What is this
- - Scaling GCE w/Google Pipelines API, cromwell and WDL
+ - Scaling Compute Engine w/Google Pipelines API, cromwell and WDL
  - Here is the Pipelines API sample (using best practice for [The Broad’s GATK tools](https://software.broadinstitute.org/gatk/)).
   - You have a number of choices - this article covers the items highlighted in RED SQUARES
 
@@ -23,17 +22,17 @@
 
 ### How to do this
  - [This tutorial](https://wdl-runner.readthedocs.io/en/latest/GettingStarted/TutorialOverview/#tutorial-scenario) shows running a multi-stage workflow on GCP
-    - The workflow is **launched** with the Google Genomics Pipelines API
-    - The workflow is **defined** using the OpenWDL organization's Workflow Definition Language (WDL)
-    - The workflow stages are **orchestrated** by the Broad Institute's Cromwell
-    - When submitted using the Pipelines API, the workflow **runs** on multiple Google Compute Engine virtual machines. 
-      - First a master node is created for Cromwell
-      - Then Cromwell submits each stage of the workflow as one or more **separate pipelines**
+    - The workflow is **launched** with Google Pipelines API
+    - The workflow is **defined** using WDL
+    - The workflow stages are **orchestrated** by cromwell
+    - The workflow **runs** on multiple Compute Engine VMs
+      - a master node is created for cromwell
+      - cromwell submits each workflow stage as 1+ **separate pipelines**
  - Run a Broad Institute GATK best practice pipeline on Google Genomics/Pipelines API using WDL and cromwell - l[link](https://cloud.google.com/genomics/docs/tutorials/gatk)
 
 ### How to verify you've done it
- - Review the files in the output destinations (CloudStorage buckets) to check they match the expected results
- - Use GCP Stackdriver to monitor the overhead (CPU, memory etc...usage) for the GCE VMs during job executions
+ - Review the files in the output destinations (Cloud Storage buckets) to check they match the expected results
+ - Use GCP Stackdriver to monitor the overhead (CPU, memory etc...usage) for the Compute Engine VMs during job executions
 
 ### Other Things to Know
  - Link to GATK Best Practice guidlines from The Broad - [link](https://software.broadinstitute.org/gatk/best-practices/)
