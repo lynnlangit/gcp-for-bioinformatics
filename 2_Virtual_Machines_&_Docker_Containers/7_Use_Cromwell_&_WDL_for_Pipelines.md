@@ -2,8 +2,8 @@
 
 ### Why do this
  - You want to use [The Broad Institute's cromwell](https://github.com/broadinstitute/cromwell) orchestration engine to scale your analysis job
- - You want to use [The Broad's WDL (workflow definition language)](https://software.broadinstitute.org/wdl) for cromwell to describe your tool and workflow inputs and outputs
- - Example workflow pattern shown below
+ - You want to use [The Broad Institute's WDL (workflow definition language)](https://software.broadinstitute.org/wdl) to configure the cromwell engine by describing your tool/workflow inputs & outputs
+ - Conceptual workflow pattern shown below
 
  [![wdl-cromwell](/images/wdl-cromwell.png)]()
 
@@ -28,7 +28,7 @@
     - The workflow **runs** on multiple Compute Engine VMs
       - a master node is created for cromwell
       - cromwell submits each workflow stage as 1+ **separate pipelines**
- - Run a Broad Institute GATK best practice pipeline on Google Genomics/Pipelines API using WDL and cromwell - l[link](https://cloud.google.com/genomics/docs/tutorials/gatk)
+ - Run a Broad Institute GATK best practice pipeline on Google Genomics/Pipelines API using WDL and cromwell - [link](https://cloud.google.com/genomics/docs/tutorials/gatk)
 
 ### How to verify you've done it
  - Review the files in the output destinations (Cloud Storage buckets) to check they match the expected results

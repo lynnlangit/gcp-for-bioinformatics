@@ -18,17 +18,22 @@
  - Understand (forecast) service costs for this solution, particularly for BigQuery is important so that you can inadvertently avoid overspending 
 
 ### How to do this
- - USE the GCP Genomics API Quick Start steps to get started -- https://cloud.google.com/genomics/quickstart
-- SEE the GCP Google Cloud Genomics API, see this link -- https://cloud.google.com/genomics/overview
+ USE the [Quick Start](https://cloud.google.com/genomics/quickstart) to run a pipeline that uses the Pipelines API to create an index file (BAI file) from a large binary file containing DNA sequences (BAM file)
 
 ### How to verify you've done it
  - Run your analysis, monitor for correct results (view files in your output bucket)
  - Monitor for service cost, execution time and adjust to meet your requirements
 
+
 ### Other Things to Know
  - Google Pipelines API was called Google Genomics API and still uses that name in some of the documentation
  - There are two major versions of the this API - v1 and v2
+ - The pipeline can run with unaligned BAM files stored in Cloud Storage
+    - If your files are in an aligned BAM or FASTQ format, then you must convert them to BAM
+    - You can convert your input files locally, or you can use the Pipelines API to convert them in the cloud
  - There are a number of bioinformatics libraries (cromwell, Nextflow....) that are designed to work WITH Pipelines API
 
 ### How to learn more
+ - Google Cloud Genomics scenarios, see this [link](https://cloud.google.com/genomics/docs/tutorials/)
+ - Pipelines API example in a Jupyter notebook - [link](https://github.com/googlegenomics/datalab-examples/blob/master/datalab/genomics/Getting%20started%20with%20the%20Genomics%20API.ipynb)
  - End-to-end pipeline patterns and documentation, see the Google Genomics Cookbook -- http://googlegenomics.readthedocs.io/en/latest/
