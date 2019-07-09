@@ -8,10 +8,10 @@
 
 ### What is this
  - An alternative to the gcloud tool, dsub adds user interfaces and workflow definition features that supplement the GCP Pipelines API. 
- - Running on services hosted by GCP using the special purpose GCP Genomics (Pipelines) API for GCE (Compute Engine).  The Genomics API provides orchestration for mulitple GCE VM instances.
+ - Running on services hosted by GCP using the Google Genomics (Pipelines) API for Compute Engine.  The Genomics API provides orchestration for mulitple GCE VM instances.
  - The dsub user experience is modeled after traditional high-performance computing job schedulers like Grid Engine and Slurm. 
  - You write a script and then submit it to a job scheduler from a shell prompt on your local machine.
- - dsub supports GCP as the backend batch job runner, along with a local provider for development and testing. 
+ - dsub supports GCP as the backend batch job runner, along with a local provider for development and testing - [more info](https://github.com/DataBiosphere/dsub/blob/master/docs/providers/README.md#google-v2-provider)
  - You have a number of choices in building job pipelines - this article covers the items highlighted in RED SQUARES
 
 [![dsub](/images/dsub.png)]()
