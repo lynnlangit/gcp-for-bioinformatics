@@ -5,7 +5,7 @@
 
 ### What is this
  - Galaxy Project is a scientific workflow, data integration, and data and analysis persistence and publishing platform that aims to make computational biology accessible to research scientists that do not have computer programming or systems administration experience - screenshot below
- - It can be run on public cloud vendors, including GCP
+ - It can be run on a number of public cloud vendors - [link](https://galaxyproject.org/cloud/)
 
  ![GalaxyMain](https://github.com/lynnlangit/TeamTeri/blob/master/Images/GalaxyMain.png)
 
