@@ -1,7 +1,7 @@
 # Test Container for Pipelines
 
 ### Why do this
- - SCALABILITY - package tools, libraries or APIs that into docker container images to be able to scale your analysis jobs more efficiently than in you used VMs (comparsion shown below)
+ - SCALABILITY - package tools, libraries or APIs that into docker container images to be able to scale your analysis jobs more efficiently than when using VMs (comparsion shown below)
  - REPRODUCIBILITY - capture tool configuration (as an image) for reproducible research
 
  [![vms-containers](/images/vms-containers.png)]()
@@ -29,7 +29,7 @@
 
 ### How to do this
 0. LOCATE, REVIEW and TEST an existing DOCKER CONTAINER IMAGE  
-   from a public container image registries such as... 
+   from a public container image registries such as... by searching for the tool name (i.e. bamstats, samtools, etc...)
    - [DockerHub](https://hub.docker.com)
    - [Quay.io](https://quay.io/) 
    - [Biocontainers](https://biocontainers.pro/#/)
@@ -39,8 +39,8 @@
 1. BUILD and TEST your own DOCKER CONTAINER IMAGE
  
 2. RUN YOUR CONTAINER IMAGE ON GCP
-   - Select GCE or GKE to run. 
-   - If GCE, check 'use container optimized image' option - [more info](https://cloud.google.com/compute/docs/containers/deploying-containers)
+   - Select Compute Engine or Kubernetes Engine as a target environment to run your container image
+   - If using Compute Engine, check 'use container optimized image' option - [more info](https://cloud.google.com/compute/docs/containers/deploying-containers)
    - Connect via SSH to your VM
       - Use `docker image ls` to get the name of your container instance
       - Use `docker run <image id>` to start your container instance
