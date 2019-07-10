@@ -32,9 +32,10 @@ See screenshots below for general flow of working with Terra.
 - **LOGIN** -> 
   - Navigate to [Terra.bio](https://terra.bio/) --> 'Try Terra' and authenticate with your email
    - You can use $300 USD in GCP credit when you first try out Terra
-- **SELECT DATA** -> 
-  - use reference public data (Terra Library -> Data)
+- **REFERENCE DATA** -> 
+  - use public reference data (Terra Library -> Data)
   - upload your own research data for analysis (Your Terra Workspace -> Data Section)
+  - refer to data in Cloud Storage (use gs://{mybucket}/{my folder}) in your notebook
 - **START NOTEBOOK INSTANCE** -> 
   - use (or import) a Jupyter noteook - view your notebook
   - configure (GEAR) and start a Terra Notebook instance
@@ -70,7 +71,12 @@ Click on your workspace and then the Notebooks menu to work with Jupyter Noteboo
     - **Workspace** -> Container for workflow(s)
     - **Notebook** -> Jupyter notebook
     - **Reference Data** -> public reference data
-    - **Workspace Data** -> your uploaded research data
+    - **Workspace Data** -> your uploaded research data - the 'Data' tab in the Terra UI
+      More about the Terra Data Model - [link](https://gatkforums.broadinstitute.org/firecloud/discussion/9769/data-model)
+      - Participant -> a person enrolled in a study
+      - Sample -> a biological sample collected from a participant
+      - Pair -> represents a pair of biological samples collected from a participant
+      - Set -> group of Participants, Samples or Pairs
 
 ### How to learn more
  - Link to [Terra resouces](https://support.terra.bio/hc/en-us)

@@ -40,6 +40,7 @@ See example screenshots below for Terra Workflows.
 - **SELECT DATA** -> 
   - use reference public data (Terra Library -> Data)
   - upload your own research data for analysis (Your Terra Workspace -> Data Section)
+  - refer to data in Cloud Storage (use gs://{mybucket}/{my folder}) in your job parameters
 - **CREATE WORKFLOW** -> 
   - import (or clone) and configure an existing workflow 
   - create and configure your own workflow  
@@ -76,7 +77,12 @@ Select Workflows to work with your Analysis Jobs
     - **Tool** -> docker container image of your research script or binary tool and configuration in WDL
     - **WDL** -> [workflow definition language](https://software.broadinstitute.org/wdl), dialect required for configuring [cromwell orchestration engine](https://github.com/broadinstitute/cromwell), as in 'a WDL file'
     - **Reference Data** -> reference data, i.e. 1000 Genomes
-    - **Workspace Data (model)** -> your research data
+    - **Workspace Data (model)** -> your research data -> the 'Data' tab in the Terra UI
+      More about the Terra Data Model - [link](https://gatkforums.broadinstitute.org/firecloud/discussion/9769/data-model)
+      - Participant -> a person enrolled in a study
+      - Sample -> a biological sample collected from a participant
+      - Pair -> represents a pair of biological samples collected from a participant
+      - Set -> group of Participants, Samples or Pairs
     - **Configuration Data** -> WDL and JSON files
 
 
