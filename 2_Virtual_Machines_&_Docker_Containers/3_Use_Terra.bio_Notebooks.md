@@ -21,10 +21,10 @@
 
 
 ### Key considerations
-- Terra includes example notebooks using tools such as Hail
+- Terra includes example notebooks using standard bioinformatics tools such as Hail
 - Import and run your existing notebooks into a Terra workspace
-- Configure Terra Notebook instances as needed - use the blue gear
-- Control and configure GCP services through Terra - ComputeEngine and CloudStorage.  They can also use other GCP resources, such as BigQuery. 
+- Configure Terra Notebook instances as needed - use the blue gear in the upper right of the Terra Notebook configuration interface
+- Configure & use GCP services via Terra Notebooks (Compute Engine, Cloud Storage, BigQuery...)
 
 ### How to do this
 
@@ -33,13 +33,13 @@ See screenshots below for general flow of working with Terra.
   - Navigate to [Terra.bio](https://terra.bio/) --> 'Try Terra' and authenticate with your email
    - You can use $300 USD in GCP credit when you first try out Terra
 - **REFERENCE DATA** -> 
-  - use public reference data (Terra Library -> Data)
-  - upload your own research data for analysis (Your Terra Workspace -> Data Section)
-  - refer to data in Cloud Storage (use gs://{mybucket}/{my folder}) in your notebook
+  - Use public reference data (Terra Library -> Data)
+  - Upload your own research data for analysis (Your Terra Workspace -> Data Section)
+  - Refer to data in Cloud Storage (use gs://{mybucket}/{my folder}) in your notebook
 - **START NOTEBOOK INSTANCE** -> 
-  - use (or import) a Jupyter noteook - view your notebook
-  - configure (GEAR) and start a Terra Notebook instance
-  - execute the cells in your notebook  
+  - Use (or import) a Jupyter noteook - view your notebook
+  - Configure (GEAR) and start a Terra Notebook instance
+  - Execute the cells in your notebook  
 
 
 ### Example Screenshots from Terra
