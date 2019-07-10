@@ -16,14 +16,11 @@
 - Understand the Nextflow features - [link](https://www.nextflow.io/index.html#Features)
 
 ### How to do this
- - Run 1-minute QuickStart - [link](https://www.nextflow.io/index.html#Features)
- - Run blast example - [link](https://www.nextflow.io/example3.html)
- - Run RNASeq example - [link](https://www.nextflow.io/example4.html)
  - Run RNAseq on GCP examples - [link](https://cloud.google.com/genomics/docs/tutorials/nextflow)
  - Run VariantCalling pipeline w/GATK - [link](https://github.com/CRG-CNAG/CalliNGS-NF/)
 
 ### How to verify you've done it
- - Use the examples above
+ - Verify the output files from the examples above
 
 ### Other Things to Know
  - Use Nextflow w/GCE or Nextflow w/container images & Google Genomics/Pipelines API
