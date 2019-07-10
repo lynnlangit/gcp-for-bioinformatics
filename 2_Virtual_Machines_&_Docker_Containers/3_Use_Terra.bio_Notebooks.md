@@ -78,6 +78,10 @@ Click on your workspace and then the Notebooks menu to work with Jupyter Noteboo
       - Pair -> represents a pair of biological samples collected from a participant
       - Set -> group of Participants, Samples or Pairs
 
+  [![data-model](/images/data-model.png)]()  
+  Image of Terra Data Model from this [link](https://software.broadinstitute.org/firecloud/documentation/quickstart?page=data)
+
+
 ### How to learn more
  - Link to [Terra resouces](https://support.terra.bio/hc/en-us)
  - Link to [Terra community forum](https://support.terra.bio/hc/en-us/community/topics/360000500432)

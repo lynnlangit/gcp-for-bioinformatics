@@ -85,6 +85,9 @@ Select Workflows to work with your Analysis Jobs
       - Set -> group of Participants, Samples or Pairs
     - **Configuration Data** -> WDL and JSON files
 
+[![data-model](/images/data-model.png)]()  
+  Image of Terra Data Model from this [link](https://software.broadinstitute.org/firecloud/documentation/quickstart?page=data)
+
 
 ### How to learn more
  - Link to [Terra resouces](https://support.terra.bio/hc/en-us)
