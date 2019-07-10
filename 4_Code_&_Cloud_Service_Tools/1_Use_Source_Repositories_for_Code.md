@@ -1,14 +1,15 @@
 # Use Source Repositories for Code Source Control
 
 ### Why do this
- - You want to use GCP to host your analysis source code
- - You want to build a CI/CD pipeline on GCP 
+ - You want to use GCP to host your reasearch job(s) source code
+ - You want to build a [CI/CD pipeline](https://cloud.google.com/solutions/continuous-delivery/) on GCP 
 
 ### What is this
- - Code repository hosted on GCP - can be new or mirror of existing repo
+ - Code repository hosted on GCP - can be new or mirror of existing code repo
+ - Supports integration with GitHub or Bitbucket
 
 ### Key considerations
- - Source Repositories can be easily integrated with other GCP services
+ - Source Repositories can be easily integrated with other GCP services, such as Cloud Storage
  - Use integrated code source repositories to build a CI/CD pipeline using other GCP services, such as CloudBuild
 
 ### How to do this
@@ -28,4 +29,4 @@ manually generated credentials - [link](https://cloud.google.com/source-reposito
  - Source Repositories are integrated with Stackdriver activity log readers
 
 ### How to learn more
- - Link to 'Gitops CI/CD with Cloud Build and Source Repositories' - [link](https://cloud.google.com/kubernetes-engine/docs/tutorials/gitops-cloud-build)
+ - Read 'Gitops CI/CD with Cloud Build and Source Repositories' [link](https://cloud.google.com/kubernetes-engine/docs/tutorials/gitops-cloud-build)
