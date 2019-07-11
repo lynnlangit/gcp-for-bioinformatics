@@ -23,9 +23,9 @@
 
 ### Key considerations
 - Implement Terra best practice workflows --or--
-- Create your own tools and workflows 
-    -Create docker containers for your custom scripts or tools
-    -Write WDL scripts for your custom tools / workflows 
+- Create your own tools and workflows   
+    - Create docker containers for your custom scripts or tools
+    - Write WDL scripts for your custom tools / workflows 
 - Configure input data and output data for both pre-created and custom workflows
 - Consider costs 
     - Terra workflows use resources from GCP and The Broad Institute 
@@ -41,11 +41,15 @@ See example screenshots below for Terra Workflows.
   - use reference public data (Terra Library -> Data)
   - upload your own research data for analysis (Your Terra Workspace -> Data Section)
   - refer to data in Cloud Storage (use gs://{mybucket}/{my folder}) in your job parameters
-- **CREATE WORKFLOW** -> 
-  - import (or clone) and configure an existing workflow 
-  - create and configure your own workflow  
+- **IMPORT or CREATE WORKFLOW** ->  
+  Import (or clone) and configure an existing workflow from Terra or from Dockstore.  Alternatively, you can create and configure your own workflow.
 
-### Example Screenshots from Terra  
+  - Run a [blastn WDL workflow](https://dockstore.org/workflows/dockstore.org/lynnlangit@gmail.com/blastn:5?tab=info) registered in Dockstore on a Terra Workspace.  See Dockstore screen below.
+
+  [![dockstore](/images/dockstore.png)](https://dockstore.org/workflows/dockstore.org/lynnlangit@gmail.com/blastn:5?tab=info)
+   
+
+### Workflow Screenshots from Terra  
 
 Terra Starter Screen - View Examples or View (Your)Workspaces
  [![terra-start](/images/terra-start.png)]()
@@ -53,20 +57,27 @@ Use Best Practice GATK4 Examples or Featured Workspaces
  [![workspaces](/images/workspaces.png)]()
 Browse Reference Data
  [![all-data](/images/all-data.png)]()
-Select Workflows to work with your Analysis Jobs
+Select Workflows to configure and run your Analysis Jobs
  [![workspace-menu](/images/workspace-menu.png)]()
  
 
 ### How to verify you've done it
  For a Terra Workflow/Tool run do the following:  
-    - clone an existing workflow or import a workflow (using 'Find a Tool') that you created from Dockstore or Broad Methods Repository, shown below  
+    - clone an existing workflow or import a workflow (using **'Find a Tool'**) that you created from Dockstore or Broad Methods Repository, shown below  
      - add your data  
      - configure the workflow / tool - shown below  
      - click 'run analysis'  
-     - review job history - shown below  
+     - review job history - shown below   
+
+  Click 'Find a Tool' on the Terra Workflows tab to use tools or workflows that others have created 
    [![find-tool](/images/Find-tool.png)]()
+  Configure your workflow or tool in Terra.  This example uses a bamstats workflow from Dockstore 
    [![configure-job](/images/configure-job.png)]()
+  Run your job and review the job history in Terra 
    [![verify-job](/images/verify-job.png)]()
+
+### Click to see Lynn's 10 minute exploration of this section  
+[![Terra.bio Workflows on GCP for Bioinformatics](http://img.youtube.com/vi/tdpWXYcFSVA/0.jpg)](http://www.youtube.com/watch?v=tdpWXYcFSVA "Terra.bio Workflows on GCP for Bioinformatics")
 
 ### Other Things to Know
  - Terra runs on GCE VMs & the GCP Genomics/Pipelines API

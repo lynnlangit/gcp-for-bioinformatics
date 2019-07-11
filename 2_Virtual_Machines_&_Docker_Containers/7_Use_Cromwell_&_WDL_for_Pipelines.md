@@ -21,6 +21,8 @@
  - Use JSON files to configure the input/output parameters for each tool and also for EACH job execution
 
 ### How to do this
+ 
+
  - [This tutorial](https://wdl-runner.readthedocs.io/en/latest/GettingStarted/TutorialOverview/#tutorial-scenario) shows running a multi-stage workflow on GCP
     - The workflow is **launched** with Google Pipelines API
     - The workflow is **defined** using WDL
