@@ -16,7 +16,7 @@
 
 ### Key considerations
 - Understand core Nextflow features - [link](https://www.nextflow.io/index.html#Features)
-- Nextflow is written the [Groovy programming language](https://en.wikipedia.org/wiki/Apache_Groovy) and is designed to run on [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine) instances
+
 
 ### How to do this
  - Run RNAseq pipeline on GCP cloud shell instance - [link]()
@@ -37,7 +37,7 @@ Nextflow RNAseq Dockerfile - uses bowtie, cufflinks and tophat tools
 ### Other Things to Know
  - Test Netflow pipelines on your local machine or on GCP cloud shell 
  - Use Nextflow pipelines with other cloud vendors: AWS - [link](https://www.nextflow.io/docs/latest/awscloud.html)
- - The Nextflow scripting language is an extension of Groovy (programming language which runs on a JVM[Java Virtual Machine]) 
+ - Nextflow is written in the [Groovy programming language](https://en.wikipedia.org/wiki/Apache_Groovy) & is designed to run on [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine) instances 
 
 ### How to learn more
  - Link to [Nextflow on GCP](https://www.nextflow.io/docs/latest/google.html)
