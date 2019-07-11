@@ -34,6 +34,9 @@ Nextflow RNAseq Dockerfile - uses bowtie, cufflinks and tophat tools
  - Verify the output files from the examples above
  - Nextflow examples produce files in a `results` folder
 
+ ### Click to see Lynn's 4 minute exploration of this section  
+[![Nextflow on GCP for Bioinformatics](http://img.youtube.com/vi/YtUOCMiC7Dk/0.jpg)](http://www.youtube.com/watch?v=YtUOCMiC7Dk "Nextflow on GCP for Bioinformatics")
+
 ### Other Things to Know
  - Test Netflow pipelines on your local machine or on GCP cloud shell 
  - Use Nextflow pipelines with other cloud vendors: AWS - [link](https://www.nextflow.io/docs/latest/awscloud.html)
