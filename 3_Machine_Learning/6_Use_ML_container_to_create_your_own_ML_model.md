@@ -34,3 +34,4 @@
 
 ### How to learn more
  - Link to [Use a Deep Learning Container](https://cloud.google.com/blog/products/ai-machine-learning/introducing-deep-learning-containers-consistent-and-portable-environments)
+ - Create & deploy a custom ML model using CloudML engine - [link](https://cloud.google.com/blog/products/gcp/genomic-ancestry-inference-with-deep-learning)
