@@ -10,8 +10,8 @@
  - Usage options - DeepVariant can be run via Docker or binaries, using both on-premise hardware or in the cloud, with support for hardware accelerators like GPUs and TPUs.
 
 ### What is this
- - Uses GCP Genomics API + a purpose-built neural network machine learning model for genomic variant analysis
-
+ - Uses GCP Genomics API + a purpose-built deep neural network machine learning model for genomic variant analysis (SNPs and Indels variant calling)
+- Can be run 'optimzed for (run) time' or 'optimized for (run) cost'
 ### Key considerations
  - The following configuration is optimized to run DeepVariant at low cost. The total for the runtime and cost varies depending on the number of instances that get preempted, but you can expect that for a 30x whole genome sample, the pipeline will complete in 1 to 2 hours and cost between $3.00 and $4.00.
 

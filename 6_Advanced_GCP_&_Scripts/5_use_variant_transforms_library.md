@@ -2,7 +2,7 @@
 
 ### What is it?
 
-VariantTransforms is a tool (open source library, written in Python) for transforming and processing VCF files in a scalable manner. 
+VariantTransforms is a tool (open source library, written in Python) for transforming & processing VCF files in a scalable manner. 
 
 It supports working with hundreds of thousands of files, millions of samples, and billions of records
 
@@ -12,12 +12,19 @@ VariantTransforms uses GCP Dataflow. Dataflow implements an optimized version of
 
 VariantTranforms can be used to...
 - directly load VCF files into BigQuery   
- - pre-process (validate VCF files) so that the inconsistencies can be easily identified
+- pre-process (validate VCF files) so that the inconsistencies can be easily identified
+- annotate files
+- export processed files out of BQ as vcf
+- can use quotas to set number of workers/ size of disk space
+- there is standard vcf schema in BQ (to enable querying in BQ) - shown below
+- you can use authorized views in BQ to granularly secure data stored in BQ
 
 For complete directions see https://github.com/googlegenomics/gcp-variant-transforms
 
+ [![bq-vcf-schema](/images/bq-vcf-schema.png)]()
+
 #### Step 0
- - Enable the Genomics, Compute Engine, Cloud Storage, and Dataflow APIs
+ - Enable the Genomics, Compute Engine, Cloud Storage, and GCP Dataflow (Apache Beam) APIs
  - Create a new BigQuery dataset using the BigQuery web UI  
     - click on the down arrow icon next to your project name in the navigation
     - click on 'Create new dataset' and name your dataset
