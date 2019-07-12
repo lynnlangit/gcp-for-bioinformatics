@@ -27,7 +27,7 @@
 [![Public Reference Genomic Datasets on GCP](http://img.youtube.com/vi/4jfY9LmgHJk/0.jpg)](http://www.youtube.com/watch?v=4jfY9LmgHJk "Public Reference Genomic Datasets on GCP")
 
 ### Other Things to Know
- - None
+ - Learn about VCF file structure - [link](https://software.broadinstitute.org/gatk/documentation/article?id=11005)
 
 ### How to learn more
  - Link to [GCP Public Datasets](https://cloud.google.com/genomics/docs/public-datasets/)
