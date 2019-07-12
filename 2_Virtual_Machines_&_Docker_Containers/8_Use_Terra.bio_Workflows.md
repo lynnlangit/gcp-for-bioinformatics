@@ -13,6 +13,7 @@
 ### What is this
  
  - Use standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) or [Hail](https://hail.is/) to perform your analysis at scale.  GATK concepts are shown below
+ - See also [GATK Dictionary](https://software.broadinstitute.org/gatk/documentation/topic?name=dictionary) for definitions of key terms 
 
  [![gatk-concepts](/images/gatk-concepts.png)]()
  - Use best-practice workflows for bioinformatics that run on pre-configured GCP services (VMs and storage buckets)
