@@ -38,3 +38,4 @@
  - GitHub Repo for [DeepVariant](https://github.com/google/deepvariant)
 
  [![DeepVariant](/images/deep-variant.png)](https://google.github.io/deepvariant/posts/2018-12-05-improved-non-human-variant-calling-using-species-specific-deepvariant-models/)
+ -  - From GCP: Marketplace - [Parabricks](https://console.cloud.google.com/marketplace/details/parabricks/parabricks) supports the full GATK4 germline, somatic and variant calling pipelines, Google DeepVariant and population study tools.

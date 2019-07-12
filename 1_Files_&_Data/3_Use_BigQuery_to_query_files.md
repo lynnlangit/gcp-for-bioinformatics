@@ -41,6 +41,7 @@
  - Estimate query cost before running the query using the '--dry_run' parameter 
  - Avoid using 'SELECT * ...' in queries
  - Use BQ best practices to manage service costs - [link](https://cloud.google.com/bigquery/docs/best-practices-costs)
+ - Example BQ SQL queries for genomics - [link](https://github.com/verilylifesciences/variant-qc/tree/master/sql)
 
 ### How to learn more
  - Link to [Understand BQ pricing](https://cloud.google.com/bigquery/pricing)

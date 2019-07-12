@@ -38,3 +38,4 @@ For complete directions see https://github.com/googlegenomics/gcp-variant-transf
 
 #### Learn More
  - Watch this video with tips on optimizing both Variant Transforms and also BigQuery queries from GCP:Next 2019 - [link])(https://www.youtube.com/watch?v=27tSivxnQ_E)
+
