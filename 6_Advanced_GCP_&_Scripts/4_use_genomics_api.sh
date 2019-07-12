@@ -8,7 +8,7 @@
 #   get data
 gsutil cp gs://genomics-public-data/platinum-genomes/vcf/NA1287*_S1.genome.vcf gs://my-genomics-bucket/platinum-genomes/vcf/
 
-#   create variantsets
+#   create variant sets
 gcloud alpha genomics variantsets create --dataset-id 17971165971694843048 --name variant1
 #   expected output on success, note id values
 #   ----Created variant set [variant1, id: 13016206918134735038] belonging to dataset [id: 17971165971694843048].

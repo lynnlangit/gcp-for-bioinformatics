@@ -21,7 +21,7 @@ VariantTranforms can be used to...
 
 For complete directions see https://github.com/googlegenomics/gcp-variant-transforms
 
- [![bq-vcf-schema](/images/bq-vcf-schema.png)]()
+ [![bq-vcf-schema](/images/bq-vcf-schema.png)](https://github.com/googlegenomics/gcp-variant-transforms)
 
 #### Step 0
  - Enable the Genomics, Compute Engine, Cloud Storage, and GCP Dataflow (Apache Beam) APIs
@@ -37,5 +37,5 @@ For complete directions see https://github.com/googlegenomics/gcp-variant-transf
    - monitor job progress in GCP Cloud Dataflow (managed Apache Beam) console
 
 #### Learn More
- - Watch this video with tips on optimizing both Variant Transforms and also BigQuery queries from GCP:Next 2019 - [link])(https://www.youtube.com/watch?v=27tSivxnQ_E)
+ - Watch this video with tips on optimizing both Variant Transforms and also BigQuery queries from GCP:Next 2019 - [link](https://www.youtube.com/watch?v=27tSivxnQ_E)
 
