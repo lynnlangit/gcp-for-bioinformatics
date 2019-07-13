@@ -17,7 +17,7 @@ If you're new to working with public cloud services, including those available f
 
 Rather than installing bioinformatics scripts, tools or libraries and their dependencies on your local laptop, you can use ☁️GCP to quickly start a 'development machine'. Do this by using services such as 🔶Google Compute Engine.  
 
-Additionally, many ☁️GCP services, such as 🔶Compute Engine or Kubernetes Engine support running docker container images, such as those on (biocontainers)[https://biocontainers.pro/#/], which include commonly used bioinformatics tools such as blastn, bamstats, GATK, Hail and others.  This means you can quickly and easily 'try out' tools running in docker container images on ☁️GCP, rather than having to install and configure docker tools locally in order to be able to run them.
+Additionally, many ☁️GCP services, such as 🔶Compute Engine or Kubernetes Engine support running docker container images, such as those on biocontainers](https://biocontainers.pro/#/), which include commonly used bioinformatics tools such as blastn, bamstats, GATK, Hail and others.  This means you can quickly and easily 'try out' tools running in docker container images on ☁️GCP, rather than having to install and configure docker tools locally in order to be able to run them.
 
 For more information see 📗[this section](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/2_Virtual_Machines_%26_Docker_Containers) of this repository.
 
