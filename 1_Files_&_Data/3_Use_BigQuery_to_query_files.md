@@ -28,18 +28,16 @@
 [![GCP BigQuery for Bioinformatics](http://img.youtube.com/vi/bWI8JPR9h0E/0.jpg)](http://www.youtube.com/watch?v=bWI8JPR9h0E "GCP BigQuery for Bioinformatics")
 
 -----
-
- RUN QUERY
- [![BigQuery query](/images/query.png)]()
- REVIEW QUERY RESULTS
- [![BigQuery results](/images/results.png)]()
-
 ### How to verify you've done it
  - Verify the query cost BEFORE you run it 
  - Validate the SQL syntax in the BQ web console
  - Execute your query and verify that the results match the expected output
  - Review the query 'Execution Details' (example shown below) to verify the actual query cost and execution ran as expected.  Example shown below
-
+ RUN QUERY
+ [![BigQuery query](/images/query.png)]()
+ REVIEW QUERY RESULTS
+ [![BigQuery results](/images/results.png)]()
+ REVIEW EXECUTION PLAN (OPTIONAL)
   [![BigQuery plan](/images/plan.png)]()
 
 ### Other Things to Know
