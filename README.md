@@ -15,8 +15,9 @@ This repository covers using ☁️Google Cloud Platform public cloud services f
 
 ### Why should I use a public cloud vendor for bioinformatics?
 
-- 📗Read [common use cases for using the public cloud for bioinformatics researchers](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/USING.md)
-- 📕Read article in Nature magazine: ["Cloud computing for genomic data analysis and collaboration"](https://www.nature.com/articles/nrg.2017.113)
+- 📗Read top 4 most [common use cases](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/USING.md) for using the public cloud for bioinformatics researchers
+- 📘Read the [FAQ for GCP bioinformatics](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/FAQ.md)
+- 📕Read Nature magazine: ["Cloud computing for genomic data analysis and collaboration"](https://www.nature.com/articles/nrg.2017.113)
 - ⭐️Top Reasons:
     - Be able to run large (or huge) sized analysis jobs when and only when you need to run them
     - Save time & money by using vendor-managed infrastructure -> get analysis results faster
@@ -27,15 +28,17 @@ This repository covers using ☁️Google Cloud Platform public cloud services f
 
 [![Welcome to GCP for Bioinformatics](http://img.youtube.com/vi/YoFkSVDlN6k/0.jpg)](http://www.youtube.com/watch?v=YoFkSVDlN6k "Welcome to GCP for Bioinformatics")
 
-NOTE: Each page of this Repo [Topics list](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/TOPICS.md) includes the following:  
-1. A short description of why, what, how to use the ☁️GCP service
-2. A short linked screencast showing how to use the ☁️GCP service.   Here is the link to all of the screencasts for this Repo - as a [YouTube playlist](https://www.youtube.com/playlist?list=PL4Q4HssKcxYvcixWS08UFaYIH7y4IAV0z)
+Each page of this Repo (see [all topics listed](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/TOPICS.md)) includes the following:  
+1. A short description of why, what and how to use the ☁️GCP service covered on that page
+2. A short linked 📺screencast showing how to use the ☁️GCP service.   
+
+Link to [YouTube playlist](https://www.youtube.com/playlist?list=PL4Q4HssKcxYvcixWS08UFaYIH7y4IAV0z) of all of the 📺screencasts 
 
 -----
 
 ### Diagram of key GCP Services for Bioinformatics
 
-Shown below is a basic pattern for performing genomic analysis jobs (also called pipelines or workflows) on ☁️ GCP. Each blue icon represents a type of ☁️GCP service.  In this guide, you'll read how to get started with the services shown below.  In addition to the topic coverage, listed below a direct set of links to answer the most commonly asked questions.
+Shown below is a basic pattern for performing genomic analysis jobs (also called pipelines or workflows) on ☁️ GCP. Each blue icon represents a type of ☁️GCP service.  In this guide, you'll read how to get started with the services shown below.  
 
 [![gcp-bioinformatics](/images/main.png)]() 
 
