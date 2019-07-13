@@ -20,12 +20,24 @@
 [![automl](/images/automl.png)]() 
 
 ### How to do this
- - Provide the photo and video data
- - Provide the labels
- - Configure the desired training time
-
-Link to 4 minute screencast - [AutoML Vision on GCP](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-the-cloud-vision-api-for-images)
+ - For Vision API - >
+    - Provide the photo or video data
+    - Call the API
+    - Review the recommended labels (results)
+    - Link to 4 minute screencast - [Vision API on GCP](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-the-cloud-vision-api-for-images)
 [![automl-vision-api](/images/automl-vision-api.png)](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-the-cloud-vision-api-for-images) 
+
+
+ - For AutoML Vision - > 
+    - Provide data, labels and examples of labeled images
+    - Train the model, (configure the desired training time in hours)
+    - Review the mode quality
+    - Call the model (predict)
+    - Review the results
+    - Link to 4 minute screencast - [AutoML Vision on GCP](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-using-a-trained-automl-vision-model)
+[![automl-vision-api](/images/automl-vision-api.png)](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-using-a-trained-automl-vision-model) 
+
+
 
 ### How to verify you've done it
  - Review the model quality results
