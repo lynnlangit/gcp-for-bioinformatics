@@ -32,7 +32,8 @@
  - Verify the query cost BEFORE you run it 
  - Validate the SQL syntax in the BQ web console
  - Execute your query and verify that the results match the expected output
- - Review the query 'Execution Details' (example shown below) to verify the actual query cost and execution ran as expected.  Example shown below
+ - Review the query 'Execution Details' (example shown below) to verify the actual query cost and execution ran as expected.  Example shown below  
+ 
  RUN QUERY
  [![BigQuery query](/images/query.png)]()
  REVIEW QUERY RESULTS
