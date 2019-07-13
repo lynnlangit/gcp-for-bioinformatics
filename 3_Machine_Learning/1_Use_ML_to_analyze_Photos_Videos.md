@@ -24,6 +24,9 @@
  - Provide the labels
  - Configure the desired training time
 
+Link to 4 minute screencast - [AutoML Vision on GCP](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-the-cloud-vision-api-for-images)
+[![automl-vision-api](/images/automl-vision-api.png)](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-the-cloud-vision-api-for-images) 
+
 ### How to verify you've done it
  - Review the model quality results
  - Test model accuracy with new data
