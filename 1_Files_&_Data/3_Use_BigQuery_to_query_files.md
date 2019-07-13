@@ -12,9 +12,9 @@
  - Understand how BQ billing works - you are charged by the amount of data scanned
  - Starts at $5/TB scanned
  - Each query will estimate the amount of data scanned (shown below on the bottom right)
- - Google provides many public reference datasets (including 1000 Genomes) which you can query (below)
+ - Google provides many public reference datasets (including 1000 Genomes) which you can query (shown below)
 
- [![BigQuery query](/images/query.png)]()
+
 
 ### How to do this
  - Learn SQL syntax - [link](https://www.w3schools.com/sql/sql_intro.asp)
@@ -27,6 +27,11 @@
  ### Click to see Lynn's 9 minute exploration of this section  
 [![GCP BigQuery for Bioinformatics](http://img.youtube.com/vi/bWI8JPR9h0E/0.jpg)](http://www.youtube.com/watch?v=bWI8JPR9h0E "GCP BigQuery for Bioinformatics")
 
+-----
+
+ RUN QUERY
+ [![BigQuery query](/images/query.png)]()
+ REVIEW QUERY RESULTS
  [![BigQuery results](/images/results.png)]()
 
 ### How to verify you've done it
@@ -52,4 +57,4 @@
  - Link to 60+ min Codelab [Analyze variants in BQ](https://codelabs.developers.google.com/codelabs/genomics-vcfbq/#0)
  - Link to [Example ISB-CGC tutorial](https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/progapi/bigqueryGUI/WalkthroughOfGoogleBigQuery.html)
  - Link to 6 minute screencast - [BigQuery Machine Learning](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-bigquery-ml)
-[![bq-ml-demo](/images/bq-ml-demo.png)](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-bigquery-ml)) 
+[![bq-ml-demo](/images/bq-ml-demo.png)](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-bigquery-ml) 
