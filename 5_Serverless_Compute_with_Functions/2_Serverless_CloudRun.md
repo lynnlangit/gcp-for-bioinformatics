@@ -33,6 +33,7 @@
 ### How to learn more
  - Link to [choosing a serverless option](https://cloud.google.com/serverless-options/)
  - Link to [Try Cloud Run from a GitHub Repo](https://github.com/lynnlangit/hello-cloud-run).  Shown below is the output in Cloud Shell after you click the 'try cloud run' button in the GitHub repo.  The following actions run -> CloudRun API enabled, Docker container image is built and registered at Google Container Registry and then deployed as a service to Cloud Run.  
+ - Link to "What is Cloud Run?" 3 minute demo video - [link](https://www.linkedin.com/learning/google-cloud-platform-essential-training-3/google-cloud-run)
 
  ![hello-cloud-run](/images/hello-cloud-run.png)
 --builds a docker container from the Dockerfile   
