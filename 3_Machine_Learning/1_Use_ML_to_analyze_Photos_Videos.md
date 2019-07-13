@@ -35,7 +35,7 @@
     - Call the model (predict)
     - Review the results
     - Link to 4 minute screencast - [AutoML Vision on GCP](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-using-a-trained-automl-vision-model)
-[![automl-vision-api](/images/automl-vision-api.png)](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-using-a-trained-automl-vision-model) 
+[![automl-predict](/images/automl-predict.png)](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-using-a-trained-automl-vision-model) 
 
 
 
