@@ -27,7 +27,7 @@ This repository covers using ☁️Google Cloud Platform public cloud services f
 
 [![Welcome to GCP for Bioinformatics](http://img.youtube.com/vi/YoFkSVDlN6k/0.jpg)](http://www.youtube.com/watch?v=YoFkSVDlN6k "Welcome to GCP for Bioinformatics")
 
-NOTE: Each page of this Repo [Topics list]() includes the following:  
+NOTE: Each page of this Repo [Topics list](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/TOPICS.md) includes the following:  
 1. A short description of why, what, how to use the ☁️GCP service
 2. A short linked screencast showing how to use the ☁️GCP service.   Here is the link to all of the screencasts for this Repo - as a [YouTube playlist](https://www.youtube.com/playlist?list=PL4Q4HssKcxYvcixWS08UFaYIH7y4IAV0z)
 
