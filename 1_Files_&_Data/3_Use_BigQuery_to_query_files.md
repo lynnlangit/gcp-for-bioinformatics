@@ -14,8 +14,6 @@
  - Each query will estimate the amount of data scanned (shown below on the bottom right)
  - Google provides many public reference datasets (including 1000 Genomes) which you can query (shown below)
 
-
-
 ### How to do this
  - Learn SQL syntax - [link](https://www.w3schools.com/sql/sql_intro.asp)
  - Request account from your organization -or- Setup free tier (testing) account
@@ -55,5 +53,6 @@
  - Link to [Example Genomics BQ queries](https://github.com/googlegenomics/bigquery-examples/tree/master/1000genomes)
  - Link to 60+ min Codelab [Analyze variants in BQ](https://codelabs.developers.google.com/codelabs/genomics-vcfbq/#0)
  - Link to [Example ISB-CGC tutorial](https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/progapi/bigqueryGUI/WalkthroughOfGoogleBigQuery.html)
+ - 📙Try out BigQuery and BQ ML using [example Jupyter notebooks](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/3_Machine_Learning/Jupyter_Notebook_Examples)
  - 📺Link to 6 minute screencast - [BigQuery Machine Learning](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-bigquery-ml)
 [![bq-ml-demo](/images/bq-ml-demo.png)](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-bigquery-ml) 
