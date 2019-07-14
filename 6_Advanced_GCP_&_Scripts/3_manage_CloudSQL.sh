@@ -1,3 +1,8 @@
+# To run in Cloud Shell, set to your login and project
+gcloud auth login
+# --or---
+gcloud init
+
 # Set the project of interest
 gcloud config set project hello-world-314
 

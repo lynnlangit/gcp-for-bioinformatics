@@ -1,3 +1,8 @@
+# To run in Cloud Shell, set to your login and project
+gcloud auth login
+# --or---
+gcloud init
+
 # Create a Cloud Storage bucket
 gsutil mb gs://{your-bucketname}
 

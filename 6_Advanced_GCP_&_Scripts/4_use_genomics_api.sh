@@ -4,6 +4,9 @@
 
 #   sign into your GCP account, enable billing and enable the Genomics API
 #   run all commands from the GCP shell
+gcloud auth login
+#   --or---
+gcloud init
 
 #   get data
 gsutil cp gs://genomics-public-data/platinum-genomes/vcf/NA1287*_S1.genome.vcf gs://my-genomics-bucket/platinum-genomes/vcf/

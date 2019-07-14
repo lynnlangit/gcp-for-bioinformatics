@@ -1,3 +1,8 @@
+# To run in Cloud Shell, set to your login and project
+gcloud auth login
+# --or---
+gcloud init
+
 # List all compute instances in the project
 gcloud compute instances list
 
