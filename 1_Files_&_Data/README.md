@@ -2,8 +2,8 @@
 
 In this section, you'll get information about using Google Cloud storage for file and data storage.  You'll use CloudStorage buckets.  Also you'll use Google BigQuery to query files.  Additionally you'll use CloudSQL to store data.
 
-### Click below to see Lynn's 1 minute intro to this section  
-📺[![Files or Data](http://img.youtube.com/vi/o5EpSQ43myQ/0.jpg)](http://www.youtube.com/watch?v=o5EpSQ43myQ "Intro GCP Services for Files and Data ")
+### 📺Click below to see Lynn's 1 minute intro to this section  
+[![Files or Data](http://img.youtube.com/vi/o5EpSQ43myQ/0.jpg)](http://www.youtube.com/watch?v=o5EpSQ43myQ "Intro GCP Services for Files and Data ")
 
 Here are the topic pages in this section:
 

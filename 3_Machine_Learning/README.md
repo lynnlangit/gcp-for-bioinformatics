@@ -14,8 +14,8 @@ Use AutoML for Text to analyze text and natural language
 - Use Jupyter notebook with BigQuery API
 - Use Jupyter notebook with BigQuery and BQ ML APIs
 
-### Click below to see Lynn's 2 minute intro to this section  
-📺[![GCP Machine Learning](http://img.youtube.com/vi/DMBDc4vMABk/0.jpg)](http://www.youtube.com/watch?v=DMBDc4vMABk "Intro GCP Services for Machine Learning")
+### 📺Click below to see Lynn's 2 minute intro to this section  
+[![GCP Machine Learning](http://img.youtube.com/vi/DMBDc4vMABk/0.jpg)](http://www.youtube.com/watch?v=DMBDc4vMABk "Intro GCP Services for Machine Learning")
 
 The sections of the reference architecture outlined in red will be covered.
 

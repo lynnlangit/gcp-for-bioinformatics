@@ -4,8 +4,8 @@ In this section, you'll get information about using Google Cloud tools for code 
 
 Also you'll use Google Container Registry to host docker container images.  Additionally you'll use Google Stackdriver to interpret service logs for monitoring.
 
-### Click below to see Lynn's 2 minute intro to this section  
-📺[![GCP Code Tools](http://img.youtube.com/vi/6QL1yyP2iGM/0.jpg)](http://www.youtube.com/watch?v=6QL1yyP2iGM "Intro GCP Services for Cool Tools")
+### 📺Click below to see Lynn's 2 minute intro to this section  
+[![GCP Code Tools](http://img.youtube.com/vi/6QL1yyP2iGM/0.jpg)](http://www.youtube.com/watch?v=6QL1yyP2iGM "Intro GCP Services for Cool Tools")
 
 Here are the topic pages in this section:
 
