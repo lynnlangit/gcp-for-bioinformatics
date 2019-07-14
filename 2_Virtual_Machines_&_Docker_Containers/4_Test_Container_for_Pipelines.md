@@ -47,7 +47,7 @@
       - Use `docker ps` to get the name of the running container
       - Use the command `docker exec -it <container name> /bin/bash` to get a bash shell in the container
 
-### Click to see Lynn's 6 minute exploration of this section  
+### 📺Click to see Lynn's 6 minute exploration of this section  
 [![Test Container on GCE for Bioinformatics](http://img.youtube.com/vi/Rq4wNbdylWs/0.jpg)](http://www.youtube.com/watch?v=Rq4wNbdylWs "Test Container on GCE for Bioinformatics")
 
 ### How to verify you've done it
@@ -76,4 +76,4 @@ NOTES:
  - Link to [Run a blastn container](https://biocontainers-edu.biocontainers.pro/en/latest/running_example.html)
  - Link to DOCKERFILE source code example - [Blastn container files](https://github.com/lynnlangit/blastn)
  - Link to [Create a docker image the easy way](https://software.broadinstitute.org/firecloud/documentation/article?id=9453)
- - Link to [Building a Container from scratch](https://www.youtube.com/watch?v=Utf-A4rODH8) ~20 min. screencast video, includes advanced concepts (namespaces, more)
+ - 📺Link to [Building a Container from scratch](https://www.youtube.com/watch?v=Utf-A4rODH8) ~20 min. screencast video, includes advanced concepts (namespaces, more)

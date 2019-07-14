@@ -77,7 +77,7 @@ Select Workflows to configure and run your Analysis Jobs
   Run your job and review the job history in Terra 
    [![verify-job](/images/verify-job.png)]()
 
-### Click to see Lynn's 10 minute exploration of this section  
+### 📺Click to see Lynn's 10 minute exploration of this section  
 [![Terra.bio Workflows on GCP for Bioinformatics](http://img.youtube.com/vi/tdpWXYcFSVA/0.jpg)](http://www.youtube.com/watch?v=tdpWXYcFSVA "Terra.bio Workflows on GCP for Bioinformatics")
 
 ### Other Things to Know

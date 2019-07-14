@@ -36,7 +36,7 @@ For complete directions see https://github.com/googlegenomics/gcp-variant-transf
    - replace all script params with your values
    - monitor job progress in GCP Cloud Dataflow (managed Apache Beam) console
 
- ### Click to see Google's 40 minute exploration of this section  
+ ### 📺Click to see Google's 40 minute exploration of this section  
 [![Genomics Analysis on GCP for Bioinformatics](http://img.youtube.com/vi/27tSivxnQ_E/0.jpg)](http://www.youtube.com/watch?v=27tSivxnQ_E "Genomics Analysis on GCP for Bioinformatics")
 
 #### Learn More

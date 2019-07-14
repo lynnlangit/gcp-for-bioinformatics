@@ -29,7 +29,7 @@
  - Run your analysis, monitor for correct results
  - Monitor for service cost, execution time and adjust to meet your requirements
 
- ### Click to see Lynn's 7 minute exploration of this section  
+ ### 📺Click to see Lynn's 7 minute exploration of this section  
 [![Orchestrate Containers on GKE for Bioinformatics](http://img.youtube.com/vi/yihR2wHTz4U/0.jpg)](http://www.youtube.com/watch?v=yihR2wHTz4U "Orchestrate Containers on GKE for Bioinformatics")
 
 ### Other Things to Know

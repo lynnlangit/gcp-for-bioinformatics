@@ -30,7 +30,7 @@
     - are located in the Google datacenter in us-east --and--
     - in my GCP Project named 'my-research-project'
 
-### Click below to see Lynn's 'Setup GCP account video' 6 min video
+### 📺Click below to see Lynn's 'Setup GCP account video' 6 min video
 [![Setup GCP Account - Google Cloud Platform for Bioinformatics](http://img.youtube.com/vi/oD8lD8v-Z14/0.jpg)](http://www.youtube.com/watch?v=oD8lD8v-Z14 "Setup GCP Account - Google Cloud Platform for Bioinformatics")
 
 ### How to verify you've done it

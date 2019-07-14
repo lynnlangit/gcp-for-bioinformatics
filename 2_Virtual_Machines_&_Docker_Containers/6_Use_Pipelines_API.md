@@ -24,7 +24,7 @@
  - Run your analysis, monitor for correct results (view files in your output bucket)
  - Monitor for service cost, execution time and adjust to meet your requirements
 
-### Click to see Lynn's 4 minute exploration of this section  
+### 📺Click to see Lynn's 4 minute exploration of this section  
 [![GCP Genomics Pipelines API for Bioinformatics](http://img.youtube.com/vi/B8RABR19n8Y/0.jpg)](http://www.youtube.com/watch?v=B8RABR19n8Y "GCP Genomics Pipelines API for Bioinformatics")
 
 

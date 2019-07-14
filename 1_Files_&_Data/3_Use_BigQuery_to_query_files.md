@@ -24,7 +24,7 @@
  - Execute the query by clicking the 'run' button, example results shown below
  - You can view the results and/or save the results into a new file in a storage bucket
 
- ### Click to see Lynn's 9 minute exploration of this section  
+ ### 📺Click to see Lynn's 9 minute exploration of this section  
 [![GCP BigQuery for Bioinformatics](http://img.youtube.com/vi/bWI8JPR9h0E/0.jpg)](http://www.youtube.com/watch?v=bWI8JPR9h0E "GCP BigQuery for Bioinformatics")
 
 -----
@@ -55,5 +55,5 @@
  - Link to [Example Genomics BQ queries](https://github.com/googlegenomics/bigquery-examples/tree/master/1000genomes)
  - Link to 60+ min Codelab [Analyze variants in BQ](https://codelabs.developers.google.com/codelabs/genomics-vcfbq/#0)
  - Link to [Example ISB-CGC tutorial](https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/progapi/bigqueryGUI/WalkthroughOfGoogleBigQuery.html)
- - Link to 6 minute screencast - [BigQuery Machine Learning](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-bigquery-ml)
+ - 📺Link to 6 minute screencast - [BigQuery Machine Learning](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-bigquery-ml)
 [![bq-ml-demo](/images/bq-ml-demo.png)](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-bigquery-ml) 

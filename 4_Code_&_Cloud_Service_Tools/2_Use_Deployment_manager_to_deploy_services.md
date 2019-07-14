@@ -16,9 +16,7 @@
 
 ### Key considerations
  - Use GCP Deployments to package GCP service for re-deployment on other GCP accounts
-  - Use [Terraform templates](https://www.terraform.io/docs/providers/template/d/file.html) rather than GCP Deployments for cross-cloud deploymens
-
- 
+  - Use [Terraform templates](https://www.terraform.io/docs/providers/template/d/file.html) rather than GCP Deployments for cross-cloud deployments  
  
 ### How to do this
  - Write and verify your Deployment (YAML) file
