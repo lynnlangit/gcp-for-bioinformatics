@@ -26,4 +26,6 @@
 
 ### How to learn more
  - Link to [choosing a serverless option](https://cloud.google.com/serverless-options/)
+ - 📺Link to "Use AppEngine Flex to host a WordPress site" 2 minute video - [link](
+https://www.youtube.com/watch?v=1h8jDeYQpPY)
  

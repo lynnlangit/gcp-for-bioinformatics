@@ -38,5 +38,5 @@
 
 ### How to learn more
  - Google Cloud Genomics scenarios, see this [link](https://cloud.google.com/genomics/docs/tutorials/)
- - Pipelines API example in a Jupyter notebook - [link](https://github.com/googlegenomics/datalab-examples/blob/master/datalab/genomics/Getting%20started%20with%20the%20Genomics%20API.ipynb)
+ - 4 GCP Pipelines API examples in Jupyter notebooks - [link](https://github.com/googlegenomics/datalab-examples/tree/master/datalab/genomics)
  - End-to-end pipeline patterns and documentation, see the Google Genomics Cookbook -- http://googlegenomics.readthedocs.io/en/latest/
