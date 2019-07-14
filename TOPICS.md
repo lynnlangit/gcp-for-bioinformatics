@@ -50,3 +50,5 @@
     - Use a docker command to start a container & run a genomic analysis with VariantTransforms on Cloud Dataflow
 
 ----
+
+📺Link to [YouTube playlist](https://www.youtube.com/playlist?list=PL4Q4HssKcxYvcixWS08UFaYIH7y4IAV0z) of all of the screencasts 
