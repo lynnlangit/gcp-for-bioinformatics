@@ -2,9 +2,9 @@
 
 ### Why do this
 
- - You would like to use bioinformatics tools (GATK, Hail...) & workflows on GCP
- - You would like to run scalable analysis on GCP without manually configuring Cloud Storage & VMs (or container clusters)
- - You'd like to use The Broad Institute's Terra.bio genomics analysis application (browser-based) 
+ - Use bioinformatics tools (GATK, Hail...) & workflows on GCP
+ - Run scalable analysis on GCP without manually configuring Cloud Storage & VMs (or container clusters)
+ - Read - [Getting Stated with GATK via Terra Workspaces](https://software.broadinstitute.org/gatk/blog?id=24102)
  - Terra's key capabilities are shown below 
 
  [![terra-features](/images/terra-features.png)]()
