@@ -2,9 +2,9 @@
 
 ### Why do this
 
- - You would like to use bioinformatics tools (GATK, Hail...) & workflows on Jupyter notebooks
- - You would like to run scalable analysis on GCP without manually configuring Jupyter Hub, Cloud Storage & VMs (or container clusters)
- - You'd like to use The Broad Institute's Terra.bio genomics analysis application (browser-based) 
+ - Use bioinformatics tools (GATK, Hail...) & workflows on Jupyter notebooks
+ - Run scalable analysis on GCP without manually configuring Jupyter Hub, Cloud Storage & VMs (or container clusters)
+ - Read - [The future of GATK tutorials is written in Notebooks](https://software.broadinstitute.org/gatk/blog?id=24167)
  - Terra's key capabilities are shown below 
 
  [![terra-features](/images/terra-features.png)]()
