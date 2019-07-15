@@ -3,7 +3,7 @@
 ### Why do this
  - You want to use [The Broad Institute's cromwell](https://github.com/broadinstitute/cromwell) orchestration engine to scale your analysis job(s)
  - You want to use [The Broad Institute's WDL (workflow definition language)](https://software.broadinstitute.org/wdl) to configure the cromwell orchestration engine by describing your tool/workflow inputs & outputs
- 
+
  Conceptual workflow pattern is shown below.  Note the use of docker container images as well.  It's common to use bioinformatics tools, such as GATK or Hail with cromwell in pipelines.
 
  [![wdl-cromwell](/images/wdl-cromwell.png)]()
@@ -22,6 +22,8 @@
 
 ### How to do this
  - Get started with this 5 minute intro to cromwell & WDL - [link](https://cromwell.readthedocs.io/en/stable/tutorials/FiveMinuteIntro/)
+     - Be sure to put the cromwell jar file and the WDL file in the same directory
+     - Verify that the cromwell version in the run command is the same as the version of the jar file you're using
  - [This tutorial](https://wdl-runner.readthedocs.io/en/latest/GettingStarted/TutorialOverview/#tutorial-scenario) shows running a multi-stage workflow on GCP
     - The workflow is **launched** with Google Pipelines API
     - The workflow is **defined** using WDL
