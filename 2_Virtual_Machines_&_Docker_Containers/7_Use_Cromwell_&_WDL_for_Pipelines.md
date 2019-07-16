@@ -10,9 +10,9 @@
 
 ### What is this
  - Scaling Compute Engine w/Google Pipelines API, cromwell orchestration using WDL language
- - You have a number of choices - this article covers the items highlighted in RED SQUARES
+ - WDL (Workflow Definition Language) script concepts are shown below - [link to WDL documentation](https://software.broadinstitute.org/wdl/documentation/quickstart)
 
-[![cromwell](/images/cromwell.png)]()
+[![wdl-concepts](/images/wdl-concepts.png)]()
 
 ### Key considerations
  - Use cromwell with Google Pipelines API to manage the GCE (VM) resources for your analysis job
