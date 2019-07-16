@@ -83,6 +83,7 @@ Click on your workspace and then the Notebooks menu to work with Jupyter Noteboo
 
 
 ### How to learn more
+ - 📺32 minute [Intro to Terra](https://www.youtube.com/watch?v=9kffTkK-B7g)
  - Link to [Terra resouces](https://support.terra.bio/hc/en-us)
  - Link to [Terra community forum](https://support.terra.bio/hc/en-us/community/topics/360000500432)
  - 📙Try out some example Terra notebooks (Jupyter_Notebook_Examples folder), includes using the [CSIRO Bioinformatics VariantSpark](https://bioinformatics.csiro.au/variantspark) library and other bioinformatics libraries.

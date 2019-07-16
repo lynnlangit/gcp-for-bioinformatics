@@ -102,5 +102,6 @@ Select Workflows to configure and run your Analysis Jobs
 
 
 ### How to learn more
+ - 📺32 minute [Intro to Terra](https://www.youtube.com/watch?v=9kffTkK-B7g)
  - Link to [Terra resouces](https://support.terra.bio/hc/en-us)
  - Link to [Terra community forum](https://support.terra.bio/hc/en-us/community/topics/360000500432)
