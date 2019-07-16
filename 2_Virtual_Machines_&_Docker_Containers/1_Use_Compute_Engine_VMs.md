@@ -7,10 +7,6 @@
 ### What is this
  - The ability to perform analysis (compute) on files and data at dynamic scale 
  - Running Google Compute Engine(GCE) Virtual Machine instances from within your GCP Project
- - You have a number of choices on exactly how to run bioinformatics analyasis jobs on GCP. This article covers the items highlighted in RED SQUARES in the detailed diagram below. 
-
-[![gce-path](/images/gce-path.png)]()
-
 
 ### Key considerations
  - If you choose to run your workload on GCE VMs that you start from within your project, then you must configure and size all instance **manually** for your analysis job

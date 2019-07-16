@@ -7,9 +7,6 @@
 
 ### What is this
  - Set up and use analysis using libraries and Jupyter notebooks on pre-configured Compute Engine VMs quickly
- - Running on services hosted by GCP - You have a number of choices - this article covers the items highlighted in RED SQUARES
-
-[![notebook-instance](/images/notebook-instance.png)]()
 
 ### Key considerations
  - Select the core library (i.e. R, Python, etc...) for your notebook instance

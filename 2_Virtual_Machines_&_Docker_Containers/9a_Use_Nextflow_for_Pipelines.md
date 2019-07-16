@@ -9,10 +9,6 @@
  - Nextflow can run on GCP in two ways:
    - Run jobs on Compute Engine
    - Run jobs on Compute Engine **& Genomics Pipelines API**
-  
- You have a number of choices to create and run workflows - this article covers the items highlighted in RED SQUARES
-
-[![nextflow](/images/nextflow.png)]()
 
 ### Key considerations
 - Understand core Nextflow features - [link](https://www.nextflow.io/index.html#Features)

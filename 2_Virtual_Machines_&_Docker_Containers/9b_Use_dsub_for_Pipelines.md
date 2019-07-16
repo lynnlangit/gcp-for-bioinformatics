@@ -10,9 +10,6 @@
  - The dsub user experience is modeled after traditional high-performance computing job schedulers like Grid Engine and Slurm. 
  - You write a script and then submit it to a job scheduler from a shell prompt on your local machine.
  - dsub supports GCP as the backend batch job runner, along with a local provider for development and testing - [more info](https://github.com/DataBiosphere/dsub/blob/master/docs/providers/README.md#google-v2-provider)
- - You have a number of choices in building job pipelines - this article covers the items highlighted in RED SQUARES
-
-[![dsub](/images/dsub.png)]()
 
 ### Key considerations
  - Configure your dsub to use your container image using the `--image` parameter

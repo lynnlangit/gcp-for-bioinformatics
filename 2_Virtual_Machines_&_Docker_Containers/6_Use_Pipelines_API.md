@@ -9,9 +9,6 @@
 ### What is this
  - Use Google Pipelines API to orchestrate scalable genomic analysis running Compute Engine **without** manually configuring scaling of your compute cluster
  - Use Cloud Storage + Pipelines API + BigQuery to create serverless end-to-end scalable genomic analysis jobs
- - You have a number of choices when scaling up pipelines - this article covers the items highlighted in RED SQUARES
-
-[![gcp-pipelines](/images/gcp-pipelines.png)]()
 
 ### Key considerations
  - This is a serverless solution because you work with services or API endpoints and you do NOT configure or manage VMs or containers

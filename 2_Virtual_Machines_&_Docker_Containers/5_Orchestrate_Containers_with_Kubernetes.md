@@ -8,9 +8,6 @@
 ### What is this
  - Using K8 as a container orchestration, coordination and scaling service
  - Use K8 to effectively scale up pipelines for large scale analysis jobs
- - You have a number of choices when scaling up pipelines - this article covers the items highlighted in RED SQUARES
-
-[![K8](/images/k8.png)]()
 
 ### Key considerations
  - Kubernetes is very powerful, but also very complex. It is typical to have a dedicated TEAM of K8 DevOps professionals to setup, manage and maintain pipelines.
