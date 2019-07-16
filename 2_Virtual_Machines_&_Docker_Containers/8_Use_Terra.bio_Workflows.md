@@ -5,11 +5,7 @@
  - Use bioinformatics tools (GATK, Hail...) & workflows on GCP
  - Run scalable analysis on GCP without manually configuring Cloud Storage & VMs (or container clusters)
  - Read - [Getting Stated with GATK via Terra Workspaces](https://software.broadinstitute.org/gatk/blog?id=24102)
- - Terra's key capabilities are shown below 
-
- [![terra-features](/images/terra-features.png)]()
-
-
+ 
 ### What is this
  
  - Use standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) or [Hail](https://hail.is/) to perform your analysis at scale.  GATK concepts are shown below
@@ -81,8 +77,11 @@ Select Workflows to configure and run your Analysis Jobs
 [![Terra.bio Workflows on GCP for Bioinformatics](http://img.youtube.com/vi/tdpWXYcFSVA/0.jpg)](http://www.youtube.com/watch?v=tdpWXYcFSVA "Terra.bio Workflows on GCP for Bioinformatics")
 
 ### Other Things to Know
- - Terra runs on GCE VMs & the GCP Genomics/Pipelines API
- - Terra is the next generation of The Broad Institute's Firecloud tool
+
+Terra runs on GCE VMs & the GCP Genomics/Pipelines API.
+Terra is the next generation of The Broad Institute's Firecloud tool. Shown below is a conceptual diagram of a Terra workspace.  
+ [![terra-concepts](/images/terra-concepts.png)]()
+
  - Terra terms:
     - **Workspace** -> container for workflow(s)
     - **Workflow** -> container for tool(s) and configuration, written in WDL for cromwell, JSON for parameters
