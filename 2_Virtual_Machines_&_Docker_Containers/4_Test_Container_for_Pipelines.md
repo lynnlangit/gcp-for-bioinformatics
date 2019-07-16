@@ -70,6 +70,7 @@ NOTES:
  - Container images can be run on GCP in GCE (VMs) or as part of a cluster of containers.  
    - If a cluster of container instances, then a container orchestration API or service is generally added.  
    - Kubernetes (K8) is the most popular open source container orchestrator.  GCP has GKE (Google Kubernetes Service).  Alternatively, there are a number of bioinformatics APIs that can orchestrate containers on GCP.  These include cromwell, dsub and Nextflow.
+ - Best practice is include only small, public example data in the Dockerfile (docker image).  Use Cloud Storage buckets to store your research data.
  - [Singularity containers](http://singularity.lbl.gov/) are used for specialized compute environments such as HPC (and mostly NOT used on GCP pipelines). 
 
 ### How to learn more
