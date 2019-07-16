@@ -2,39 +2,39 @@
 
 ### Why do this
 
- - Use bioinformatics tools (GATK, Hail...) & workflows on Jupyter notebooks
+ [![terra-features](/images/terra-features.png)]()
+
+ - Use bioinformatics tools (GATK, Hail...) & workflows on Jupyter notebooks running on Terra (capabilities shown above)
  - Run scalable analysis on GCP without manually configuring Jupyter Hub, Cloud Storage & VMs (or container clusters)
  - Read - [The future of GATK tutorials is written in Notebooks](https://software.broadinstitute.org/gatk/blog?id=24167)
- - Terra's key capabilities are shown below 
-
- [![terra-features](/images/terra-features.png)]()
 
 
 ### What is this
 
- Use Terra (Jupyter) notebooks for analysis - architecture and flow of researcher actions is shown belown
+ Use Terra (Jupyter) notebooks for analysis - the architecture and flow of researcher actions in this system is shown belown
 
 [![terra-nb-arch](/images/terra-nb-arch.png)]()
  
- Create your own Jupyter notebooks, or use example notebooks which implement standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) - shown below, or [Hail](https://hail.is/) in your analysis.  
+ Create and run your own Jupyter notebooks, or use example notebooks which implement standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) - shown below, or [Hail](https://hail.is/) in your analysis.  
 
   [![gatk-concepts](/images/gatk-concepts.png)]()
 
 
 ### Key considerations
-- Terra includes example notebooks using standard bioinformatics tools such as Hail
-- Import and run your existing notebooks into a Terra workspace
-- Configure Terra Notebook instances as needed - use the blue gear in the upper right of the Terra Notebook configuration interface
-- Configure & use GCP services via Terra Notebooks (Compute Engine, Cloud Storage, BigQuery...)
+- Use preconfigured, best-practice Terra notebooks using bioinformatics tools (GATK, Hail...) --OR--
+- Import and run your own notebooks in your Terra workspace
+- Configure Terra Notebook instances as needed - use the blue gear in the upper right of the Terra Notebook configuration interface to set the amount of CPU, RAM...
+- Utilize GCP services in your analysis with Terra Notebook interface. Common services include Cloud Storage, BigQuery and others.
 
 ### How to do this
 
 See screenshots below for general flow of working with Terra.  
-- **LOGIN** -> 
+- **LOGIN & SETUP** -> 
   - Navigate to [Terra.bio](https://terra.bio/) --> 'Try Terra' and authenticate with your email
-   - You can use $300 USD in GCP credit when you first try out Terra
+   - Use $300 USD in GCP credit when you first try out Terra
+   - Create a Terra workspace to hold your notebooks 
 - **REFERENCE DATA** -> 
-  - Use public reference data (Terra Library -> Data)
+  - Refer to public reference data (Terra Library -> Data) 
   - Upload your own research data for analysis (Your Terra Workspace -> Data Section)
   - Refer to data in Cloud Storage (use gs://{mybucket}/{my folder}) in your notebook
 - **START NOTEBOOK INSTANCE** -> 
@@ -56,7 +56,7 @@ Explore 1000 Genomes Public Dataset
  [![data](/images/data.png)]()
 Click the top left menu and Create a Workspace to get started
  [![workspace](/images/workspace.png)]()
-Click on your workspace and then the Notebooks menu to work with Jupyter Notebooks
+Click on your workspace, then the Notebooks menu to run Notebooks
  [![workspace-menu](/images/workspace-menu.png)]()
  
 ### How to verify you've done it
@@ -72,7 +72,7 @@ Click on your workspace and then the Notebooks menu to work with Jupyter Noteboo
  - Notebooks automatically pause after 30 minutes of no activity.  They can be restarted using the blue start button in in the upper right corner of the Terra UI
  - Terra terms:
     - **Workspace** -> Container for workflow(s)
-    - **Notebook** -> Jupyter notebook
+    - **Notebook** -> Jupyter notebook (*.ipynb file type)
     - **Reference Data** -> public reference data
     - **Workspace Data** -> your uploaded research data - the 'Data' tab in the Terra UI
       More about the Terra Data Model - [link](https://gatkforums.broadinstitute.org/firecloud/discussion/9769/data-model)
