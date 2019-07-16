@@ -8,14 +8,19 @@
  
 ### What is this
  
- - Use standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) or [Hail](https://hail.is/) to perform your analysis at scale.  GATK concepts are shown below
- - See also [GATK Dictionary](https://software.broadinstitute.org/gatk/documentation/topic?name=dictionary) for definitions of key terms 
+ Use Terra workflows for analysis - architecture and flow of researcher actions is shown belown
 
- [![gatk-concepts](/images/gatk-concepts.png)]()
+[![terra-wk-arch](/images/terra-wk-arch.png)]()
+ 
+ Create your own workflows, or use example workflows which implement standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) or [Hail](https://hail.is/) in your analysis.  GATK concepts are shown below 
+ 
+  [![gatk-concepts](/images/gatk-concepts.png)]()
+
+
+
+
  - Use best-practice workflows for bioinformatics that run on pre-configured GCP services (VMs and storage buckets)
- - This article covers the potential ways of running analysis on GCP for the items highlighted in RED SQUARES shown below
 
-[![terra](/images/terra.png)]()
 
 
 ### Key considerations
@@ -106,3 +111,4 @@ Terra is the next generation of The Broad Institute's Firecloud tool. Shown belo
  - 📺Watch [Intro to Terra](https://www.youtube.com/watch?v=9kffTkK-B7g) - 32 minute video from the Broad
  - 📺Watch [understanding Terra (GCP service) costs](https://www.youtube.com/watch?v=SRVrzXHkZKU) - 27 minute video from the Broad
  - 📺Watch [using Docker containers on Terra](https://www.youtube.com/watch?v=jv_HSFBYOJs) - 22 minute video from the Broad Institute
+  - See [GATK Dictionary](https://software.broadinstitute.org/gatk/documentation/topic?name=dictionary) for definitions of key terms used in GATK docs

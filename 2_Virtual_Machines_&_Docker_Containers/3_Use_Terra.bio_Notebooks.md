@@ -11,13 +11,14 @@
 
 
 ### What is this
- 
- - Use Jupyter notebooks and standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) or [Hail](https://hail.is/) in your analysis.  GATK concepts are shown below
- [![gatk-concepts](/images/gatk-concepts.png)]()
- - Use Terra (Jupyter) notebooks for analysis
- - This article covers the potential ways of running analysis on GCP for the items highlighted in RED SQUARES shown below
 
-[![terra-notebooks](/images/terra-notebooks.png)]()
+ Use Terra (Jupyter) notebooks for analysis - architecture and flow of researcher actions is shown belown
+
+[![terra-nb-arch](/images/terra-nb-arch.png)]()
+ 
+ Create your onw Jupyter notebooks, or use example notebooks which implement standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) or [Hail](https://hail.is/) in your analysis.  GATK concepts are shown below 
+
+  [![gatk-concepts](/images/gatk-concepts.png)]()
 
 
 ### Key considerations
@@ -88,3 +89,4 @@ Click on your workspace and then the Notebooks menu to work with Jupyter Noteboo
  - Link to [Terra community forum](https://support.terra.bio/hc/en-us/community/topics/360000500432)
  - 📙Try out some example Terra notebooks (Jupyter_Notebook_Examples folder), includes using the [CSIRO Bioinformatics VariantSpark](https://bioinformatics.csiro.au/variantspark) library and other bioinformatics libraries.
  - 📙Try out some of these bioinformatics tools using [example Jupyter notebooks](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/2_Virtual_Machines_%26_Docker_Containers/Jupyter_Notebook_Examples)
+ - See [GATK Dictionary](https://software.broadinstitute.org/gatk/documentation/topic?name=dictionary) for definitions of key terms used in GATK docs
