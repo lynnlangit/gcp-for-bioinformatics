@@ -101,7 +101,7 @@ Terra is the next generation of The Broad Institute's Firecloud tool. Shown belo
 
 
 ### How to learn more
- - 📺32 minute [Intro to Terra](https://www.youtube.com/watch?v=9kffTkK-B7g) video from the Broad
  - Link to [Terra resouces](https://support.terra.bio/hc/en-us)
  - Link to [Terra community forum](https://support.terra.bio/hc/en-us/community/topics/360000500432)
-  - 📺Understanding Terra (GCP service) costs - 27 minute video from the Broad - [link](https://www.youtube.com/watch?v=SRVrzXHkZKU)
+ - 📺Watch [Intro to Terra](https://www.youtube.com/watch?v=9kffTkK-B7g) - 32 minute video from the Broad
+ - 📺Watch [understanding Terra (GCP service) costs](https://www.youtube.com/watch?v=SRVrzXHkZKU) - 27 minute video from the Broad
