@@ -12,15 +12,9 @@
 
 [![terra-wk-arch](/images/terra-wk-arch.png)]()
  
- Create your own workflows, or use example workflows which implement standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) or [Hail](https://hail.is/) in your analysis.  GATK concepts are shown below 
+ Workflows use GCP Virtual Machine and Cloud Storage buckets.  Create your own workflows, or use example, pre-configured workflows. These can implement standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) - shown below, or [Hail](https://hail.is/). Workflows can also use your own custom tools.  
  
   [![gatk-concepts](/images/gatk-concepts.png)]()
-
-
-
-
- - Use best-practice workflows for bioinformatics that run on pre-configured GCP services (VMs and storage buckets)
-
 
 
 ### Key considerations

@@ -16,7 +16,7 @@
 
 [![terra-nb-arch](/images/terra-nb-arch.png)]()
  
- Create your onw Jupyter notebooks, or use example notebooks which implement standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) or [Hail](https://hail.is/) in your analysis.  GATK concepts are shown below 
+ Create your own Jupyter notebooks, or use example notebooks which implement standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) - shown below, or [Hail](https://hail.is/) in your analysis.  
 
   [![gatk-concepts](/images/gatk-concepts.png)]()
 
