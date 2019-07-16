@@ -29,11 +29,9 @@ Bioinformatics APIs include the following: dsub, cromwell, Terra.bio and Nextflo
 
 There are a number of possible ways to construct high volume data analysis workflows or pipelines on GCP with these purpose-built APIs.  In addition there is a specialized GCP API for Genomics workloads - it's called the Google Genomics/Pipelines API.  
 
-A representation for several of the possible build paths for bioinformatics workflows on GCP is shown below.
+An [interactive representation](https://atlas.mindmup.com/lynnlangit/bioinformatics_container_based_pipelines/index.htm) for several of the possible build paths for bioinformatics workflows on GCP is shown below.
 
-[![workflows](/images/workflows.png)]() xxx
-
-<iframe src="https://atlas.mindmup.com/lynnlangit/bioinformatics_container_based_pipelines/index.html"></iframe>
+[![workflows](/images/workflows.png)](https://atlas.mindmup.com/lynnlangit/bioinformatics_container_based_pipelines/index.htm) 
 
 For a perspective on different possible ways to run a bioinformatics tool, read my article **'Blast 10 Ways - Adventures in Bioinformatics Tool Deployments'** published on [Medium.](https://medium.com/@lynnlangit/blast-10-ways-3db78f881059)
 
