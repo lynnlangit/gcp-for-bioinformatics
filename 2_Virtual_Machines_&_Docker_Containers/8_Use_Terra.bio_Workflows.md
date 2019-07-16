@@ -2,7 +2,7 @@
 
 ### Why do this
 
- - Use bioinformatics tools (GATK, Hail...) & workflows on GCP
+ - Use bioinformatics tools (GATK, Hail...) in Terra workflows on GCP
  - Run scalable analysis on GCP without manually configuring Cloud Storage & VMs (or container clusters)
  - Read - [Getting Stated with GATK via Terra Workspaces](https://software.broadinstitute.org/gatk/blog?id=24102)
  

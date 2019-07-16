@@ -4,7 +4,7 @@
 
  [![terra-features](/images/terra-features.png)]()
 
- - Use bioinformatics tools (GATK, Hail...) & workflows on Jupyter notebooks running on Terra (capabilities shown above)
+ - Use bioinformatics tools (GATK, Hail...) & workflows on Jupyter notebooks running on Terra (capabilities shown above). Terra runs on GCP.
  - Run scalable analysis on GCP without manually configuring Jupyter Hub, Cloud Storage & VMs (or container clusters)
  - Read - [The future of GATK tutorials is written in Notebooks](https://software.broadinstitute.org/gatk/blog?id=24167)
 
