@@ -37,6 +37,7 @@
 
 --or--
 1. BUILD and TEST your own DOCKER CONTAINER IMAGE
+    - Link to [Create a docker image the easy way](https://software.broadinstitute.org/firecloud/documentation/article?id=9453)
  
 2. RUN YOUR CONTAINER IMAGE ON GCP
    - Select Compute Engine or Kubernetes Engine as a target environment to run your container image
@@ -76,6 +77,5 @@ NOTES:
 ### How to learn more
  - Link to [Run a blastn container](https://biocontainers-edu.biocontainers.pro/en/latest/running_example.html)
  - Link to DOCKERFILE source code example - [Blastn container files](https://github.com/lynnlangit/blastn)
- - Link to [Create a docker image the easy way](https://software.broadinstitute.org/firecloud/documentation/article?id=9453)
  - 📺Link to [Building a Container from scratch](https://www.youtube.com/watch?v=Utf-A4rODH8) ~20 min. screencast video, includes advanced concepts (namespaces, more)
   - 📺Watch [using Docker containers on Terra](https://www.youtube.com/watch?v=jv_HSFBYOJs) - 22 minute video from the Broad Institute. Terra runs on GCP
