@@ -1,19 +1,15 @@
 [![Chat on Gitter](https://img.shields.io/gitter/room/gcp-for-bioinformatics/nextflow.svg?colorB=26af64&style=popout)](https://gitter.im/gcp-for-bioinformatics)
 
 # Google Cloud Platform (GCP) for Bioinformatics
-This repository covers using ☁️Google Cloud Platform public cloud services for bioinformatics data analysis tasks.  The guidance is intended for researchers - in particular, this guide is for those who are **NEW to working with ☁️GCP**.  The info is based on advisory work my team has done with the following groups:
-
-1) The Broad Institute (Cambridge, MA) - [link](https://www.broadinstitute.org)
-2) CSIRO Bioinformatics (Sydney, Australia) - [link](https://bioinformatics.csiro.au/)
-3) Nextflow.io team (Barcelona, Spain) - [link](https://www.nextflow.io/about-us.html)
-4) EMBL-EBI (Cambridge, UK) - [link](https://www.ebi.ac.uk/)
-5) Galaxy Project (Europe) - [link](https://galaxyproject.org/cloud/)
+This repository covers using ☁️Google Cloud Platform public cloud services for bioinformatics data analysis tasks.  The guidance is intended for researchers - in particular, this guide is for those who are **NEW to working with ☁️GCP**.  The info is based on advisory work my team has done with the groups shown below:
 
 [![bioinformatics-groups](/images/logos.png)]() 
 
 ---
 
 ### Why should I use a public cloud vendor for bioinformatics?
+
+[![flow-cell](/images/flow-cell.jpg)]() 
 
 - ⭐️Top Reasons:
     - **Save Money** - run scaled analysis jobs exactly and only when you need to run them
