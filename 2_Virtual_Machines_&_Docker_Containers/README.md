@@ -31,7 +31,9 @@ There are a number of possible ways to construct high volume data analysis workf
 
 A representation for several of the possible build paths for bioinformatics workflows on GCP is shown below.
 
-[![workflows](/images/workflows.png)]()
+[![workflows](/images/workflows.png)]() xxx
+
+<iframe src="https://atlas.mindmup.com/lynnlangit/bioinformatics_container_based_pipelines/index.html"></iframe>
 
 For a perspective on different possible ways to run a bioinformatics tool, read my article **'Blast 10 Ways - Adventures in Bioinformatics Tool Deployments'** published on [Medium.](https://medium.com/@lynnlangit/blast-10-ways-3db78f881059)
 
