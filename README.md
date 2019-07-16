@@ -16,8 +16,8 @@ This repository covers using ☁️Google Cloud Platform public cloud services f
 ### Why should I use a public cloud vendor for bioinformatics?
 
 - ⭐️Top Reasons:
-    - Save Money - run scaled analysis jobs exactly only when you need to run them
-    - Save Time - use vendor-managed infrastructure -> get analysis results faster
+    - **Save Money** - run scaled analysis jobs exactly and only when you need to run them
+    - **Save Time** - use vendor-managed infrastructure and best-practice patterns for repeatable research -> get analysis results faster
 - 📗READ the [FAQ for GCP bioinformatics](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/FAQ.md) for this Repo
 - 📕READ Nature magazine: ["Cloud computing for genomic data analysis and collaboration"](https://www.nature.com/articles/nrg.2017.113)
 - 📗READ the top 4 most [common use cases](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/USING.md) for using the public cloud for bioinformatics researchers
