@@ -45,4 +45,5 @@ Nextflow RNAseq Dockerfile - uses bowtie, cufflinks and tophat tools
 ### How to learn more
  - Link to [Nextflow on GCP](https://www.nextflow.io/docs/latest/google.html)
  - Review featured Nextflow pipelines - [link](https://github.com/nextflow-io/awesome-nextflow)
+ - Read about [Pipeliner for Nextflow paper](https://www.biorxiv.org/content/biorxiv/early/2018/11/23/476515.full.pdf)
  - 📺Watch Nextflow presentations - [link](https://www.nextflow.io/presentations.html)
