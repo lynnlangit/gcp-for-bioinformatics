@@ -29,11 +29,11 @@ This repository covers using ☁️Google Cloud Platform public cloud services f
 [![Welcome to GCP for Bioinformatics](http://img.youtube.com/vi/YoFkSVDlN6k/0.jpg)](http://www.youtube.com/watch?v=YoFkSVDlN6k "Welcome to GCP for Bioinformatics")
 
 Read, watch or try out for **each ☁️GCP service**, ordered here by topic:  
-1. 📗READ - one page explaining why, what & how to use it  
-2. 📺WATCH -  short, linked screencast showing how to use it
-3. 📙TRY - run Jupyter notebook example using it  
+1. 📗READ - one page explaining why, what & how to use for each service
+2. 📺WATCH -  short, linked screencast showing how to use for most services
+3. 📙TRY - run Jupyter notebook example using for some services 
 4. 📘SCAN - a list of [all topics](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/TOPICS.md) covered in this Repo
-5. 📘SCAN - a GCP Genomics Pipeline reference architecture
+5. 📘SCAN - a diagrom showing a [GCP Genomics Pipeline](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/ARCHITECTURE.md) reference architecture
 
 -----
 
