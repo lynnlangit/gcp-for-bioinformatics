@@ -5,9 +5,7 @@ This page describes some common patterns and use cases for bioinformatic researc
 If you're new to working with public cloud services, including those available from ☁️GCP, you can start by considering the three main categories of services available for you to use in cloud computing:
 - 🔷**Storage** - for files or data - often referred to as 'buckets'
 - 🔶**Compute** - for calculation at scale - often called 'VMs or virtual machines'.  Docker container images are part of this category as well.
-- 🔴**Other Services** - other services, such as security configuration (permissions and encyrption) 
-
-
+- 🔴**Other Services** - other services, such as security configuration (permissions and encyrption)   
 
 ### 1. Using public Genomic Reference Datasets
 
@@ -35,6 +33,8 @@ For more information see 📗[this page for Notebook instances](https://github.c
 
 A key reason to move from local to cloud-based computing is the ability to scale out large-sized analysis jobs. Running on ☁️GCP can address the 'my job won't run on my laptop (or on my on-premise cluster)' problem. However, efficiently scaling compute services can be quite complex.   Also there are many different cloud services and methods available to do this on GCP (🔶Compute Engine VM auto-scalers, Kubernetes clusters for docker container images....).  
 
-These scaling patterns include everything from low-level virtual machine orchestration (where you needs to provide the majority of the configuration information) all the way to much higher-level tools that have been specifically designed to reduce the amount of manual configuration you need to do to run your jobs, such as [Terra.bio](https://terra.bio/) from The Broad Institute and others.
+These scaling patterns include everything from low-level virtual machine orchestration (where you needs to provide the majority of the configuration information) all the way to much higher-level tools that have been specifically designed to reduce the amount of manual configuration you need to do to run your jobs, such as [Terra.bio](https://terra.bio/) from The Broad Institute and others.  A conceptual view of Terra.bio is shown below.
+
+[![terra-4](/images/terra-4.png)]() 
 
 For more information see 📗[this section](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/2_Virtual_Machines_%26_Docker_Containers) of this repository.
