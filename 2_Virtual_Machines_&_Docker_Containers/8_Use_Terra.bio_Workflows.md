@@ -82,7 +82,7 @@ Terra runs on GCE VMs & the GCP Genomics/Pipelines API.
 Terra is the next generation of The Broad Institute's Firecloud tool. Shown below is a conceptual diagram of a Terra workspace.  
  [![terra-concepts](/images/terra-concepts.png)]()
 
- - Terra terms:
+ - Key Terra concepts:
     - **Workspace** -> container for workflow(s)
     - **Workflow** -> container for tool(s) and configuration, written in WDL for cromwell, JSON for parameters
     - **Tool** -> docker container image of your research script or binary tool and configuration in WDL
@@ -101,6 +101,7 @@ Terra is the next generation of The Broad Institute's Firecloud tool. Shown belo
 
 
 ### How to learn more
- - 📺32 minute [Intro to Terra](https://www.youtube.com/watch?v=9kffTkK-B7g)
+ - 📺32 minute [Intro to Terra](https://www.youtube.com/watch?v=9kffTkK-B7g) video from the Broad
  - Link to [Terra resouces](https://support.terra.bio/hc/en-us)
  - Link to [Terra community forum](https://support.terra.bio/hc/en-us/community/topics/360000500432)
+  - 📺Understanding Terra (GCP service) costs - 27 minute video from the Broad - [link](https://www.youtube.com/watch?v=SRVrzXHkZKU)

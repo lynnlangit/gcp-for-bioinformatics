@@ -44,6 +44,7 @@
  - Select the storage class that fits best for your analysis, i.e. multi-regional, regional....
  - Design file archiving processes, i.e. move to nearline or coldline if not accessing or over time (i.e. monthly...)
  - Delete files generated during processing (often called intermediate files) that are no longer needed when jobs complete
+ - Read about 'requestor pays' Cloud Storage feature - [link](https://cloud.google.com/storage/docs/requester-pays)
 
 ### How to learn more
  - Best practices for Google Cloud Storage - [link](https://cloud.google.com/storage/docs/best-practices)
