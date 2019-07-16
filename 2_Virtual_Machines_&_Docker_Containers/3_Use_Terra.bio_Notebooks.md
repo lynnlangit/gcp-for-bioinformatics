@@ -39,8 +39,9 @@ See screenshots below for general flow of working with Terra.
   - Refer to data in Cloud Storage (use gs://{mybucket}/{my folder}) in your notebook
 - **START NOTEBOOK INSTANCE** -> 
   - Use (or import) a Jupyter noteook - view your notebook
-  - Configure (GEAR) and start a Terra Notebook instance
-  - Execute the cells in your notebook  
+  - Configure and start a Terra Notebook instance
+  - Use the blue gear in the upper right to configure your notebook instnace size (CPU, memory, startup script...)
+  - Open your notebook and execute the cells in your notebook  
 
 
 ### Example Screenshots from Terra
@@ -68,6 +69,7 @@ Click on your workspace and then the Notebooks menu to work with Jupyter Noteboo
 [![Terra GCP Jupyter Notebook Instances for Bioinformatics](http://img.youtube.com/vi/ntQPiUuHihw/0.jpg)](http://www.youtube.com/watch?v=ntQPiUuHihw "Terra GCP Jupyter Notebook Instances for Bioinformatics")
 
 ### Other Things to Know
+ - Notebooks automatically pause after 30 minutes of no activity.  They can be restarted using the blue start button in in the upper right corner of the Terra UI
  - Terra terms:
     - **Workspace** -> Container for workflow(s)
     - **Notebook** -> Jupyter notebook
