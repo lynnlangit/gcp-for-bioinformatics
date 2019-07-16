@@ -2,11 +2,11 @@
 
 ### Why do this
  - You want to use [The Broad Institute's cromwell](https://github.com/broadinstitute/cromwell) orchestration engine to scale your analysis job(s)
- - You want to use [The Broad Institute's WDL (workflow definition language)](https://software.broadinstitute.org/wdl) to configure the cromwell orchestration engine by describing your tool/workflow inputs & outputs
+ - You want to use [The Broad Institute's WDL (workflow definition language)](https://software.broadinstitute.org/wdl) to configure the cromwell orchestration engine by describing your tool/workflow inputs & outputs  
 
- Conceptual workflow pattern is shown below.  Note the use of docker container images as well.  It's common to use bioinformatics tools, such as GATK or Hail with cromwell in pipelines.
+  <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/wdl-cromwell.png" width=300 align=right> 
 
- [![wdl-cromwell](/images/wdl-cromwell.png)]()
+ Conceptual workflow pattern is shown the the right.  Note the use of docker container images as well.  It's common to use bioinformatics tools, such as GATK or Hail with cromwell in pipelines. 
 
 ### What is this
  - Scaling Compute Engine w/Google Pipelines API, cromwell orchestration using WDL language
