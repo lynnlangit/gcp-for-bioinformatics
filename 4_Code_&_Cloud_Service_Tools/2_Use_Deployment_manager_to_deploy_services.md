@@ -1,8 +1,8 @@
 # Use Deployment Manager 
 
 ### Why do this
- - You want to script the service configuration of your research job(s) 
- - You want to reproduce your analysis on another GCP environment (or other public cloud)
+ - Script the service configuration of your research job(s) 
+ - Reproduce your analysis on another GCP environment (or other public cloud)
 
 ### What is this
  - A GCP Deployment is a YAML file which describe a set of GCP services and their configuration properties.  
@@ -35,3 +35,4 @@
 
 ### How to learn more
  - Link to [Example Deployments](https://github.com/GoogleCloudPlatform/deploymentmanager-samples)
+ - Link to [cromwell deployment for GCP](https://github.com/hall-lab/cromwell-deployment) - includes scripts to deploy cromwell server & database
