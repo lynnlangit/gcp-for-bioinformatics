@@ -7,7 +7,7 @@ This repository covers using ☁️Google Cloud Platform public cloud services f
 
 ---
 
-### Why should I use a public cloud vendor for bioinformatics?
+### Why would I choose to use a public cloud vendor for bioinformatics?
 
 [![flow-cell](/images/flow-cell.jpg)]() 
 
