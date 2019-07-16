@@ -38,6 +38,9 @@
 
 ### Other Things to Know
  - Link to general GATK tool usage best practice guidlines from The Broad - [link](https://software.broadinstitute.org/gatk/best-practices/)
+ - Cromwell is runnable in a variety of compute environments, see graphic below
+
+ [![cromwell-others](/images/cromwell-others.png)]()
 
 ### How to learn more
  - Step-by-step [run GATK cromwell pipeline locally and then on GCP](https://software.broadinstitute.org/gatk/documentation/article?id=12521)
