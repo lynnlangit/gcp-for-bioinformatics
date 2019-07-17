@@ -21,14 +21,16 @@
 
  [![notebook-vm](/images/notebook-vm.png)]()
 
+ -----
+
+ ### 📺Click to see Lynn's 4 minute exploration of this section  
+[![GCP Jupyter Notebook Instances for Bioinformatics](http://img.youtube.com/vi/tboCODz0IL4/0.jpg)](http://www.youtube.com/watch?v=tboCODz0IL4 "GCP Jupyter Notebook Instances for Bioinformatics")
+
 ### How to verify you've done it
  - Click the **'OPENJUPYTERLAB'** link on the GCP AI hub -> Notebook instances interface for your VM
  - Work with notebooks on your VM (example shown below)
 
  [![jupyter-sample](/images/jupyter-sample.png)]()
-
-### 📺Click to see Lynn's 4 minute exploration of this section  
-[![GCP Jupyter Notebook Instances for Bioinformatics](http://img.youtube.com/vi/tboCODz0IL4/0.jpg)](http://www.youtube.com/watch?v=tboCODz0IL4 "GCP Jupyter Notebook Instances for Bioinformatics")
 
 ### Other Things to Know
  - Notebook instances have libaries (such as R, Python...)  pre-installed

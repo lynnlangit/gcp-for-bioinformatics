@@ -65,6 +65,8 @@ Click on your workspace, then the Notebooks menu to run Notebooks
     
    [![terra-notebook](/images/terra-notebook.png)]()  
 
+----
+
 ### 📺Click to see Lynn's 7 minute exploration of this section  
 [![Terra GCP Jupyter Notebook Instances for Bioinformatics](http://img.youtube.com/vi/ntQPiUuHihw/0.jpg)](http://www.youtube.com/watch?v=ntQPiUuHihw "Terra GCP Jupyter Notebook Instances for Bioinformatics")
 

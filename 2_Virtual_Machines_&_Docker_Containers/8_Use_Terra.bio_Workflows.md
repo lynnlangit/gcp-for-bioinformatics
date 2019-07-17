@@ -42,7 +42,13 @@ See example screenshots below for Terra Workflows.
 
   - Run a [blastn WDL workflow](https://dockstore.org/workflows/dockstore.org/lynnlangit@gmail.com/blastn:5?tab=info) registered in Dockstore on a Terra Workspace.  See Dockstore screen below.
 
-  [![dockstore](/images/dockstore.png)](https://dockstore.org/workflows/dockstore.org/lynnlangit@gmail.com/blastn:5?tab=info)
+  [![dockstore](/images/dockstore.png)](https://dockstore.org/workflows/dockstore.org/lynnlangit@gmail.com/blastn:5?tab=info)  
+-----
+
+### 📺Click to see Lynn's 10 minute exploration of this section  
+[![Terra.bio Workflows on GCP for Bioinformatics](http://img.youtube.com/vi/tdpWXYcFSVA/0.jpg)](http://www.youtube.com/watch?v=tdpWXYcFSVA "Terra.bio Workflows on GCP for Bioinformatics")
+
+----
    
 
 ### Workflow Screenshots from Terra  
@@ -72,8 +78,6 @@ Select Workflows to configure and run your Analysis Jobs
   Run your job and review the job history in Terra 
    [![verify-job](/images/verify-job.png)]()
 
-### 📺Click to see Lynn's 10 minute exploration of this section  
-[![Terra.bio Workflows on GCP for Bioinformatics](http://img.youtube.com/vi/tdpWXYcFSVA/0.jpg)](http://www.youtube.com/watch?v=tdpWXYcFSVA "Terra.bio Workflows on GCP for Bioinformatics")
 
 ### Other Things to Know
 

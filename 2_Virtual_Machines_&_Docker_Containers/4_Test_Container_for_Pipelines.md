@@ -47,6 +47,7 @@
       - Use `docker run <image id>` to start your container instance
       - Use `docker ps` to get the name of the running container
       - Use the command `docker exec -it <container name> /bin/bash` to get a bash shell in the container
+----
 
 ### 📺Click to see Lynn's 6 minute exploration of this section  
 [![Test Container on GCE for Bioinformatics](http://img.youtube.com/vi/Rq4wNbdylWs/0.jpg)](http://www.youtube.com/watch?v=Rq4wNbdylWs "Test Container on GCE for Bioinformatics")

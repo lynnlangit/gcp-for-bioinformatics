@@ -18,6 +18,11 @@
  - Run RNAseq pipeline on GCP cloud shell instance - [link]()
  - Run RNAseq pipeline on Compute Engine and Cloud Storage - [link](https://cloud.google.com/genomics/docs/tutorials/nextflow)
  - Run VariantCalling pipeline w/GATK - [link](https://github.com/CRG-CNAG/CalliNGS-NF/)
+ ---
+  ### 📺Click to see Lynn's 4 minute exploration of this section  
+[![Nextflow on GCP for Bioinformatics](http://img.youtube.com/vi/YtUOCMiC7Dk/0.jpg)](http://www.youtube.com/watch?v=YtUOCMiC7Dk "Nextflow on GCP for Bioinformatics")
+
+-----
 
 Nextflow RNAseq Dockerfile - uses bowtie, cufflinks and tophat tools
  [![nextflow-docker](/images/nextflow-docker.png)](https://github.com/nextflow-io/rnatoy/blob/master/Dockerfile)
@@ -30,8 +35,7 @@ Nextflow RNAseq Dockerfile - uses bowtie, cufflinks and tophat tools
  - Verify the output files from the examples above
  - Nextflow examples produce files in a `results` folder
 
- ### 📺Click to see Lynn's 4 minute exploration of this section  
-[![Nextflow on GCP for Bioinformatics](http://img.youtube.com/vi/YtUOCMiC7Dk/0.jpg)](http://www.youtube.com/watch?v=YtUOCMiC7Dk "Nextflow on GCP for Bioinformatics")
+
 
 ### Other Things to Know
  - Test Netflow pipelines on your local machine or on GCP cloud shell 

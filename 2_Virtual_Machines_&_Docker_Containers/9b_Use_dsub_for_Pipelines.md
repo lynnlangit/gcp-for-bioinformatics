@@ -17,11 +17,16 @@
 ### How to do this
  - Use GCP Cloud Genomics tutorial - [link](https://cloud.google.com/genomics/docs/tutorials/dsub)
 
+ ---
+ ### 📺Click to see Lynn's 4 minute exploration of this section  
+[![dsub on GCP for Bioinformatics](http://img.youtube.com/vi/zWHspeEuPs0/0.jpg)](http://www.youtube.com/watch?v=zWHspeEuPs0 "dsub on GCP for Bioinformatics")
+----
+
+
 ### How to verify you've done it
  - Verify that the expected (files) output appears in the Cloud Storage bucket configured to get the job results
 
- ### 📺Click to see Lynn's 4 minute exploration of this section  
-[![dsub on GCP for Bioinformatics](http://img.youtube.com/vi/zWHspeEuPs0/0.jpg)](http://www.youtube.com/watch?v=zWHspeEuPs0 "dsub on GCP for Bioinformatics")
+ 
 
 ### Other Things to Know
  - Use dsub w/samtools - example - [link](https://github.com/DataBiosphere/dsub/tree/master/examples/samtools)

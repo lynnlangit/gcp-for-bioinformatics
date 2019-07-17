@@ -22,12 +22,15 @@
 
  [![K8 web ui](/images/k8-webui.png)]()
 
-### How to verify you've done it
- - Run your analysis, monitor for correct results
- - Monitor for service cost, execution time and adjust to meet your requirements
+ -----
 
  ### 📺Click to see Lynn's 7 minute exploration of this section  
 [![Orchestrate Containers on GKE for Bioinformatics](http://img.youtube.com/vi/yihR2wHTz4U/0.jpg)](http://www.youtube.com/watch?v=yihR2wHTz4U "Orchestrate Containers on GKE for Bioinformatics")
+
+### How to verify you've done it
+ - Run your analysis, monitor for correct results
+ - Monitor for service cost, execution time and adjust to meet your requirements
+ 
 
 ### Other Things to Know
  - Google is building many libraries to ease the complexity of K8 cluster management

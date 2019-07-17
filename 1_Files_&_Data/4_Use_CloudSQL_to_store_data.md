@@ -21,7 +21,7 @@
  - Create a database
  - Add data and verify (query it using the SQL language)
 
-### Click to see Lynn's 4 minute exploration of this section  
+### 📺Click to see Lynn's 4 minute exploration of this section  
 [![GCP CloudSQL for Bioinformatics](http://img.youtube.com/vi/ceqG90ZFstc/0.jpg)](http://www.youtube.com/watch?v=ceqG90ZFstc "GCP CloudSQL for Bioinformatics")
 
 ### How to verify you've done it
