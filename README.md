@@ -28,8 +28,13 @@ Read about, watch demo or try out **EACH ☁️GCP service**, ordered by topic i
 1. 📗READ - one page explaining why, what & how to use for each service
 2. 📺WATCH -  short, linked screencast showing how to use for most services
 3. 📙TRY - run Jupyter notebook example using for some services 
-4. 📘SCAN - a list of [all topics](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/TOPICS.md) covered in this Repo
-5. 📘SCAN - a diagrom showing a [GCP Genomics Pipeline](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/ARCHITECTURE.md) reference architecture
+4. :octocat: TRY - use code examples from linked GitHub Repos
+5. 📘EXPAND - go to linked resources to learn about advanced aspects of each service
+---
+
+### To Understand the Scope of Services covered in this Repo 
+1. 🔍SCAN - a list of [all topics](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/TOPICS.md) covered in this Repo
+2. 🔍SCAN - a diagram showing a [GCP Genomics Pipeline](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/ARCHITECTURE.md) reference architecture
 
 -----
 
