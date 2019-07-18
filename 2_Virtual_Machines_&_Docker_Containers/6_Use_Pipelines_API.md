@@ -40,4 +40,5 @@
 ### How to learn more
  - Google Cloud Genomics scenarios, see this [link](https://cloud.google.com/genomics/docs/tutorials/)
  - 4 GCP Pipelines API examples in Jupyter notebooks - [link](https://github.com/googlegenomics/datalab-examples/tree/master/datalab/genomics)
+ - :octocat: See example Pipelines API usage with genomics tools - [link](https://github.com/googlegenomics/pipelines-api-examples)
  - End-to-end pipeline patterns and documentation, see the Google Genomics Cookbook -- http://googlegenomics.readthedocs.io/en/latest/
