@@ -106,7 +106,8 @@ Terra is the next generation of The Broad Institute's Firecloud tool. Shown belo
 ### How to learn more
  - Link to [Terra resouces](https://support.terra.bio/hc/en-us)
  - Link to [Terra community forum](https://support.terra.bio/hc/en-us/community/topics/360000500432)
- - 📺Watch [Intro to Terra](https://www.youtube.com/watch?v=9kffTkK-B7g) - 32 minute video from the Broad
+ - 📺Watch [Intro to Terra](https://www.youtube.com/watch?v=9kffTkK-B7g) - 32 minute video from the Broad  
+ - 📙Try out the Terra notebook and workflows using Broad's [Terra quick start workspace](https://app.terra.bio/#workspaces/fc-product-demo/Terra_Quickstart_Workspace) includes both notebooks and workflows
  - 📺Watch [Case study using Terra](https://www.youtube.com/watch?v=xOzwWNLXdHc) - 28 minute video from the Broad covers how they created reproducible research using the results of published work around a condition called "tetralogy of fallot" (congential heart defect). Broad created a synthetic cohort, with NEATkit & BAMsurgeon (genomic data obfuscation tools) and then applied the methods in the paper using Terra workflows (Terra notebook shown below)
   [![terra-repro](/images/terra-repro.png)]()
  - 📙Try out the Terra notebook and workflows using Broad's [Terra example workspace](https://app.terra.bio/#workspaces/help-gatk/Reproducibility_Case_Study_Tetralogy_of_Fallot) for the example in the screencast shown above
