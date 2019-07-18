@@ -25,7 +25,7 @@
  - GAE (AppEngine) is a serverless service which can be used to host web sites and support common programming language.  Python example [here](https://cloud.google.com/appengine/docs/python/)
 
 ### How to learn more
- - Link to [choosing a serverless option](https://cloud.google.com/serverless-options/)
+ - 📘Link to [choosing a serverless option](https://cloud.google.com/serverless-options/)
  - 📺Link to "Use AppEngine Flex to host a WordPress site" 2 minute video - [link](
 https://www.youtube.com/watch?v=1h8jDeYQpPY)
  

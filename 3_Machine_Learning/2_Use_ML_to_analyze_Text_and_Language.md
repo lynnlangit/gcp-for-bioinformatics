@@ -30,4 +30,4 @@
  - AutoML also works with langauge translation
 
 ### How to learn more
- - Link to [Using AutoML for Natural Language on GCP](https://cloud.google.com/natural-language/)
+ - 📘Link to [Using AutoML for Natural Language on GCP](https://cloud.google.com/natural-language/)

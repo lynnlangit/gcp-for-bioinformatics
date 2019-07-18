@@ -34,5 +34,5 @@
 
 
 ### How to learn more
- - Link to [Example Deployments](https://github.com/GoogleCloudPlatform/deploymentmanager-samples)
- - Link to [cromwell deployment for GCP](https://github.com/hall-lab/cromwell-deployment) - includes scripts to deploy cromwell server & database
+ - :octocat: Link to [Example Deployments](https://github.com/GoogleCloudPlatform/deploymentmanager-samples)
+ - :octocat: Link to [cromwell deployment for GCP](https://github.com/hall-lab/cromwell-deployment) - includes scripts to deploy cromwell server & database

@@ -33,4 +33,4 @@
   [![ai-hub](/images/ai-hub.png)]()
 
 ### How to learn more
- - Link to [Create a Deep Learning Instance](https://cloud.google.com/deep-learning-vm/docs/cloud-marketplace)
+ - 📘Link to [Create a Deep Learning Instance](https://cloud.google.com/deep-learning-vm/docs/cloud-marketplace)

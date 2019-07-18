@@ -43,7 +43,7 @@ Nextflow RNAseq Dockerfile - uses bowtie, cufflinks and tophat tools
  - Nextflow is written in the [Groovy programming language](https://en.wikipedia.org/wiki/Apache_Groovy) & is designed to run on [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine) instances 
 
 ### How to learn more
- - Link to [Nextflow on GCP](https://www.nextflow.io/docs/latest/google.html)
- - Review featured Nextflow pipelines - [link](https://github.com/nextflow-io/awesome-nextflow)
- - Read about [Pipeliner for Nextflow paper](https://www.biorxiv.org/content/biorxiv/early/2018/11/23/476515.full.pdf)
+ - 📘Link to [Nextflow on GCP](https://www.nextflow.io/docs/latest/google.html)
+ - :octocat: Review featured Nextflow pipelines - [link](https://github.com/nextflow-io/awesome-nextflow)
+ - 📘Read about [Pipeliner for Nextflow paper](https://www.biorxiv.org/content/biorxiv/early/2018/11/23/476515.full.pdf)
  - 📺Watch Nextflow presentations - [link](https://www.nextflow.io/presentations.html)

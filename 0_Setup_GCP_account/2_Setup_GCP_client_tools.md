@@ -74,7 +74,7 @@ Cloud Shell provides the following:
  - IAM (Identity and Access Management) - IAM services include security objects, such as users, groups, roles and permissions
 
 ### How to learn more
- - Link to [Integrated Shell features](https://cloud.google.com/shell/docs/features)
- - Link to [Integrated Shell limits](https://cloud.google.com/shell/docs/limitations)
- - Link to [Scripting GCP examples](https://cloud.google.com/sdk/docs/scripting-gcloud)
- - Link to [How do I use the BASH command line?](https://www.youtube.com/watch?v=EMaFdfIlK58)
+ - 📘Link to [Integrated Shell features](https://cloud.google.com/shell/docs/features)
+ - 📘Link to [Integrated Shell limits](https://cloud.google.com/shell/docs/limitations)
+ - 📘Link to [Scripting GCP examples](https://cloud.google.com/sdk/docs/scripting-gcloud)
+ - 📺 Link to [How do I use the BASH command line?](https://www.youtube.com/watch?v=EMaFdfIlK58)

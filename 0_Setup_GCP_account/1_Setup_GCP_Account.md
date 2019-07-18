@@ -53,7 +53,7 @@
  
 
 ### How to learn more
- - Link to [how to set up a budget alert](https://cloud.google.com/billing/docs/how-to/budgets)
- - Link to [GCP Billing concepts](https://cloud.google.com/billing/docs/concepts)
- - Link to [GCP Service Pricing Calculator](https://cloud.google.com/products/calculator/)
-  - 📺Watch [understanding Terra (GCP service) costs](https://www.youtube.com/watch?v=SRVrzXHkZKU) - 27 minute video from the Broad
+ - 📘Link to [how to set up a budget alert](https://cloud.google.com/billing/docs/how-to/budgets)
+ - 📘Link to [GCP Billing concepts](https://cloud.google.com/billing/docs/concepts)
+ - 📘Link to [GCP Service Pricing Calculator](https://cloud.google.com/products/calculator/)
+ - 📺Watch [understanding Terra (GCP service) costs](https://www.youtube.com/watch?v=SRVrzXHkZKU) - 27 minute video from the Broad

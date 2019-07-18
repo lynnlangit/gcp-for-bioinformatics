@@ -30,4 +30,4 @@
  - AutoML Tables helps you detect and take care of missing values, outliers, and other common data issues
 
 ### How to learn more
- - Link to [Using AutoML for Tables on GCP](https://cloud.google.com/automl-tables/)
+ - 📘Link to [Using AutoML for Tables on GCP](https://cloud.google.com/automl-tables/)

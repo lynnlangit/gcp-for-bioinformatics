@@ -34,4 +34,4 @@
  [![dsub-code](/images/dsub-code.png)]()
 
 ### How to learn more
- - Read dsub documentation on GitHub - [link](https://github.com/DataBiosphere/dsub)
+ - :octocat: Read dsub documentation on GitHub - [link](https://github.com/DataBiosphere/dsub)

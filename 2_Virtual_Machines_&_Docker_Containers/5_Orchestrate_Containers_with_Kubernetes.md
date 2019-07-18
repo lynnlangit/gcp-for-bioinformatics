@@ -38,4 +38,4 @@
  - There are also tool vendors who are creating products to help you create, monitor and scale K8 clusters
 
 ### How to learn more
- - Link to [Best Practices for operating containers on GCP](https://cloud.google.com/solutions/best-practices-for-operating-containers)
+ - 📘Link to [Best Practices for operating containers on GCP](https://cloud.google.com/solutions/best-practices-for-operating-containers)

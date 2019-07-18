@@ -33,5 +33,5 @@
  - Google has another service, Cloud Spanner - [link](https://cloud.google.com/spanner/), which is designed to host massively-scalable, frequently updated, transactionaly consistant relational databases
 
 ### How to learn more
- - Link to [Best practices for importing data into Cloud SQL](https://cloud.google.com/sql/docs/mysql/import-export/)
- - Link to [20 minute Codelab for Cloud SQL](https://codelabs.developers.google.com/codelabs/cloud-create-cloud-sql-db/index.html)
+ - 📘Link to [Best practices for importing data into Cloud SQL](https://cloud.google.com/sql/docs/mysql/import-export/)
+ - 📘Link to [20 minute Codelab for Cloud SQL](https://codelabs.developers.google.com/codelabs/cloud-create-cloud-sql-db/index.html)

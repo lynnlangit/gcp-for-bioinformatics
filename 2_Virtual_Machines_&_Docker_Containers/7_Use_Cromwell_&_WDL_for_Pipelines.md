@@ -43,8 +43,8 @@
  [![cromwell-others](/images/cromwell-others.png)]()
 
 ### How to learn more
- - Step-by-step [run GATK cromwell pipeline locally and then on GCP](https://software.broadinstitute.org/gatk/documentation/article?id=12521)
- - Link to [run a GATK best practices pipeline](https://cloud.google.com/genomics/docs/tutorials/gatk) on GCP
- - Example WDL files for bioinformatics tools - [link](https://github.com/biowdl/tasks) to BioWDL
- - WDL pipeline template examples - [link](https://github.com/biowdl/pipeline-template) to BioWDL template
+ - 📘Step-by-step [run GATK cromwell pipeline locally and then on GCP](https://software.broadinstitute.org/gatk/documentation/article?id=12521)
+ - 📘Link to [run a GATK best practices pipeline](https://cloud.google.com/genomics/docs/tutorials/gatk) on GCP
+ - :octocat: Example WDL files for bioinformatics tools - [link](https://github.com/biowdl/tasks) to BioWDL
+ - :octocat: WDL pipeline template examples - [link](https://github.com/biowdl/pipeline-template) to BioWDL template
  - 📺Watch 38 minute [Intro to pipelining platforms](https://www.youtube.com/watch?v=HNONc2cmIO8&t=9s) screencast from the Broad, covers cromwell & WDL

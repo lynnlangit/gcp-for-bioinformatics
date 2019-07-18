@@ -29,4 +29,4 @@ manually generated credentials - [link](https://cloud.google.com/source-reposito
  - Source Repositories are integrated with Stackdriver activity log readers
 
 ### How to learn more
- - Read 'Gitops CI/CD with Cloud Build and Source Repositories' [link](https://cloud.google.com/kubernetes-engine/docs/tutorials/gitops-cloud-build)
+ - 📘Read 'Gitops CI/CD with Cloud Build and Source Repositories' [link](https://cloud.google.com/kubernetes-engine/docs/tutorials/gitops-cloud-build)

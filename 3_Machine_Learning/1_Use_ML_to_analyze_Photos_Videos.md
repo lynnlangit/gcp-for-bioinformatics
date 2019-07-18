@@ -49,4 +49,4 @@
  - GCP automatically selects the model type and parameters and then deploys the model for you
 
 ### How to learn more
- - Link to [Using AutoML for Photos/Video on GCP](https://cloud.google.com/automl/)
+ - 📘Link to [Using AutoML for Photos/Video on GCP](https://cloud.google.com/automl/)

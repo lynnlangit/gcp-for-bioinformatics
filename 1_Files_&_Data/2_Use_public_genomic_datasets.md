@@ -30,6 +30,6 @@
  - Learn about VCF file structure - [link](https://software.broadinstitute.org/gatk/documentation/article?id=11005)
 
 ### How to learn more
- - Link to [GCP Public Datasets](https://cloud.google.com/genomics/docs/public-datasets/)
+ - 📘Link to [GCP Public Datasets](https://cloud.google.com/genomics/docs/public-datasets/)
 
  [![public-datasets](/images/public-datasets.png)](https://cloud.google.com/genomics/docs/public-datasets/)

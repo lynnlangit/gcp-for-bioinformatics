@@ -39,7 +39,7 @@
  - Google Colabs are public Jupyter servers where you can try our small experiments FREE using Jupyter notebooks - [link](https://colab.research.google.com/notebooks/welcome.ipynb)
 
 ### How to learn more
- - Link to [Using Notebook Instances](https://cloud.google.com/ai-hub/docs/open-notebook)
- - Link to [Publish a Notebook on AI Hub](https://cloud.google.com/ai-hub/docs/publish-notebook)
+ - 📘Link to [Using Notebook Instances](https://cloud.google.com/ai-hub/docs/open-notebook)
+ - 📘Link to [Publish a Notebook on AI Hub](https://cloud.google.com/ai-hub/docs/publish-notebook)
  - 📙Try out some of these bioinformatics tools using [example Jupyter notebooks](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/2_Virtual_Machines_%26_Docker_Containers/Jupyter_Notebook_Examples)
 

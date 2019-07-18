@@ -31,4 +31,4 @@
 
 ### How to learn more
  
-  - Read about CI/CD concepts in this [article](https://read.acloud.guru/cloud-based-ci-cd-on-gcp-6b07fde7222d)
+  - 📘Read about CI/CD concepts in this [article](https://read.acloud.guru/cloud-based-ci-cd-on-gcp-6b07fde7222d)

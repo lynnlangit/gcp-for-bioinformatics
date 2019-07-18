@@ -31,11 +31,11 @@
  - GAE (AppEngine) is a serverless service which can be used to host web sites and support common programming language.  Python example [here](https://cloud.google.com/appengine/docs/python/)
 
 ### How to learn more
- - Link to [choosing a serverless option](https://cloud.google.com/serverless-options/)
- - Link to [Try Cloud Run from a GitHub Repo](https://github.com/lynnlangit/hello-cloud-run).  Shown below is the output in Cloud Shell after you click the 'try cloud run' button in the GitHub repo.  The following actions run -> CloudRun API enabled, Docker container image is built and registered at Google Container Registry and then deployed as a service to Cloud Run.  
- - 📺Link to "What is Cloud Run?" 3 minute demo video - [link](https://www.linkedin.com/learning/google-cloud-platform-essential-training-3/google-cloud-run)
+ - 📘Link to [choosing a serverless option](https://cloud.google.com/serverless-options/)
+ - :octocat: Link to [Try Cloud Run from a GitHub Repo](https://github.com/lynnlangit/hello-cloud-run).  Shown below is the output in Cloud Shell after you click the 'try cloud run' button in the GitHub repo.  The following actions run -> CloudRun API enabled, Docker container image is built and registered at Google Container Registry and then deployed as a service to Cloud Run.  
+ - 📺Watch to "What is Cloud Run?" 3 minute demo video - [link](https://www.linkedin.com/learning/google-cloud-platform-essential-training-3/google-cloud-run)
 [![cloud-run-api](/images/cloud-run-api.png)](https://www.linkedin.com/learning/google-cloud-platform-essential-training-3/google-cloud-run)
-- 📺Link to "What is Cloud run on GKE?" 4 minute demo video - [link](
+- 📺Watch to "What is Cloud run on GKE?" 4 minute demo video - [link](
 https://www.linkedin.com/learning/google-cloud-platform-essential-training-3/google-cloud-run-on-gke)
 [![cloud-run-on-gke](/images/cloud-run-on-gke.png)](https://www.linkedin.com/learning/google-cloud-platform-essential-training-3/google-cloud-run-on-gke)
 

@@ -61,5 +61,5 @@ Connect your instance to a Cloud Storage bucket when latency and throughput are 
    [![gce-monitor](/images/gce-monitor.png)]()
 
 ### How to learn more
- - Link to [GCE Pricing](https://cloud.google.com/compute/pricing#machinetype)
- - Link to video [GCE security best practices](https://www.youtube.com/watch?v=qDyjE1fIqkk)
+ - 📘Link to [GCE Pricing](https://cloud.google.com/compute/pricing#machinetype)
+ - 📺Link to video [GCE security best practices](https://www.youtube.com/watch?v=qDyjE1fIqkk)

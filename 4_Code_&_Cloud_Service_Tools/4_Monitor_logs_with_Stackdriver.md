@@ -29,4 +29,4 @@
  - Best practice for logging - [link](https://cloud.google.com/blog/products/gcp/best-practices-for-working-with-google-cloud-audit-logging)
 
 ### How to learn more
- - Link to [design patterns for Stackdriver](https://cloud.google.com/solutions/design-patterns-for-exporting-stackdriver-logging)
+ - 📘Link to [design patterns for Stackdriver](https://cloud.google.com/solutions/design-patterns-for-exporting-stackdriver-logging)

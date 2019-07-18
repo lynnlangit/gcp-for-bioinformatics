@@ -27,8 +27,6 @@
  - Monitor for service cost, execution time and adjust to meet your requirements
 
 
-
-
 ### Other Things to Know
  - Google Pipelines API was called Google Genomics API and still uses that name in some of the documentation
  - There are two major versions of the this API - v1 and v2
@@ -38,7 +36,7 @@
  - There are a number of bioinformatics libraries (cromwell, Nextflow....) that are designed to work WITH Pipelines API
 
 ### How to learn more
- - Google Cloud Genomics scenarios, see this [link](https://cloud.google.com/genomics/docs/tutorials/)
- - 4 GCP Pipelines API examples in Jupyter notebooks - [link](https://github.com/googlegenomics/datalab-examples/tree/master/datalab/genomics)
+ - 📘Google Cloud Genomics scenarios, see this [link](https://cloud.google.com/genomics/docs/tutorials/)
+ - :octocat: 4 GCP Pipelines API examples in Jupyter notebooks - [link](https://github.com/googlegenomics/datalab-examples/tree/master/datalab/genomics)
  - :octocat: See example Pipelines API usage with genomics tools - [link](https://github.com/googlegenomics/pipelines-api-examples)
- - End-to-end pipeline patterns and documentation, see the Google Genomics Cookbook -- http://googlegenomics.readthedocs.io/en/latest/
+ - 📘End-to-end pipeline patterns and documentation, see the Google Genomics Cookbook -- http://googlegenomics.readthedocs.io/en/latest/
