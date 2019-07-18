@@ -45,4 +45,5 @@
 
 ### How to learn more
  - 📘Link to [choosing a serverless option](https://cloud.google.com/serverless-options/)
+ - 📘Link to [serving a TensorFlow model on a Cloud Function endpoint](https://cloud.google.com/blog/products/ai-machine-learning/how-to-serve-deep-learning-models-using-tensorflow-2-0-with-cloud-functions)
  
