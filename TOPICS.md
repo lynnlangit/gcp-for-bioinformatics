@@ -37,9 +37,9 @@
     - Monitor log with Stackdriver
     - Setup CI/CD with GCP CloudBuild
 - [Serverless Compute with Functions](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/5_Serverless_Compute_with_Functions)
-    - Serverless Cloud Functions 
-    - Serverless Cloud Run
-    - Serverless websites with AppEngine
+    - Use Serverless Cloud Functions 
+    - Use Serverless Cloud Run
+    - Create Serverless websites with AppEngine
 - [Advanced GCP & Scripts](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/6_Advanced_GCP_%26_Scripts)
     - Get links to advanced GCP topics
     - Use gsutil to manage Cloud Storage
