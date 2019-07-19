@@ -77,6 +77,7 @@ NOTES:
 
 ### How to learn more
  - 📘Link to [Run a blastn container](https://biocontainers-edu.biocontainers.pro/en/latest/running_example.html)
+  - 📘Link to [Run a R Shiny app (in a container) on a GCE VM](https://cloudyr.github.io/googleComputeEngineR/articles/shiny-app.html)
  - :octocat: Link to DOCKERFILE source code example - [Blastn container files](https://github.com/lynnlangit/blastn)
  - 📺Link to [Building a Container from scratch](https://www.youtube.com/watch?v=Utf-A4rODH8) ~20 min. screencast video, includes advanced concepts (namespaces, more)
   - 📺Watch [using Docker containers on Terra](https://www.youtube.com/watch?v=jv_HSFBYOJs) - 22 minute video from the Broad Institute. Terra runs on GCP
