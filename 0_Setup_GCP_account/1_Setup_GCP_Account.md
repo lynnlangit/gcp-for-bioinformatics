@@ -15,28 +15,28 @@
     - **Use Your Organization's GCP Account** - service limits set by your company & Google
  - Understand the size & complexity of your analysis 
  - Review your budget / timeline
- - Determine the location (Google data center) for your project - [locations](https://cloud.google.com/about/locations/)
+ - Determine the location (Google data center) for your project - [GCP data center locations](https://cloud.google.com/about/locations/)
 
    [![GCP Locations](/images/all-regions.png)]()
 
  NOTE: There are many bioinformatics analysis workflow tools, libraries and solutions which can be run on top of core GCP services.  Examples include [Terra.bio (was Firecloud)](https://terra.bio/), [cromwell](https://cromwell.readthedocs.io/en/stable/), [Nextflow.io](https://www.nextflow.io/) and many others.
 
 ### How to do this
- - Request GCP account from your organization --OR-- set up GCP new (FREE Tier) account
- - Create a **GCP PROJECT** for your research project
- - Use **each** GCP Project as a container for your research project
- - Add GCP service instances to your GCP Project by location and project name
-    - my Virtual Machine instance and my Cloud Storage bucket 
+ - REQUEST an account -> either a) a GCP account from your organization or b) set up a GCP new (FREE Tier) account
+ - CREATE a **GCP PROJECT** for your research project
+ - USE **each** GCP Project as a container for your research project
+ - ADD GCP service instances to your GCP Project by data center location and GCP project name, for example...
+    - your Virtual Machine instance & your Cloud Storage bucket 
     - are located in the Google datacenter in us-east --and--
-    - in my GCP Project named 'my-research-project'
+    - in your GCP Project named 'my-research-project'
 
-### 📺Click below to see Lynn's 'Setup GCP account video' 6 min video
+### 📺 Click below to see Lynn's 'Setup GCP account video' 6 min video
 [![Setup GCP Account - Google Cloud Platform for Bioinformatics](http://img.youtube.com/vi/oD8lD8v-Z14/0.jpg)](http://www.youtube.com/watch?v=oD8lD8v-Z14 "Setup GCP Account - Google Cloud Platform for Bioinformatics")
 
 ### How to verify you've done it
- - Login to [GCP console](http://console.cloud.google.com)
- - View your account login (upper right of console)
- - View your project name, shown as 'gcp-for-bioinformatics' below
+ - LOGIN to [GCP console](http://console.cloud.google.com) or Web UI
+ - VIEW your account login (upper right of console)
+ - VIEW your project name, shown as 'gcp-for-bioinformatics' below
 
  [![gcp-account](/images/gcp-account.png)]()
 
@@ -53,7 +53,7 @@
  
 
 ### How to learn more
- - 📘Link to [how to set up a budget alert](https://cloud.google.com/billing/docs/how-to/budgets)
- - 📘Link to [GCP Billing concepts](https://cloud.google.com/billing/docs/concepts)
- - 📘Link to [GCP Service Pricing Calculator](https://cloud.google.com/products/calculator/)
- - 📺Watch [understanding Terra (GCP service) costs](https://www.youtube.com/watch?v=SRVrzXHkZKU) - 27 minute video from the Broad
+ - 📘 Link to [how to set up a budget alert](https://cloud.google.com/billing/docs/how-to/budgets)
+ - 📘 Link to [GCP Billing concepts](https://cloud.google.com/billing/docs/concepts)
+ - 📘 Link to [GCP Service Pricing Calculator](https://cloud.google.com/products/calculator/)
+ - 📺 Watch [understanding Terra (GCP service) costs](https://www.youtube.com/watch?v=SRVrzXHkZKU) - 27 minute video from the Broad

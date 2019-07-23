@@ -9,7 +9,7 @@
  
  One type runs in web browser, so there is nothing to install locally.
  
- The second type requires downloading, installing and configuring client tools. If you chose to download a client tool, then be sure to follow the installation instructions for your laptop OS.  
+ The second type requires downloading, installing and configuring client tools. If you chose to download a client tool, then be sure to follow the installation instructions for your particular type of laptop OS.  
 
  Available GCP client tools include the following:  
 
@@ -56,14 +56,14 @@ Cloud Shell provides the following:
  - Click in GCP console and/or use shell - no setup /install required
  - Download GCP SDK - use gcp cli and/or sdk for your language, requires installation and configuration
 
- ### 📺Click below to see Lynn's 'Use GCP client tools' 6 min video
+ ### 📺 Click below to see Lynn's 'Use GCP client tools' 6 min video
 [![GCP client tools - Google Cloud Platform for Bioinformatics](http://img.youtube.com/vi/ce1XZ68NdA8/0.jpg)](http://www.youtube.com/watch?v=ce1XZ68NdA8 "GCP client tools - Google Cloud Platform for Bioinformatics")
 
 ### How to verify you've done it
- - Login to GCP console
- - Verify your account
- - Verify that you can perform a 'hello world' task in your account.  Common examples are below:
-    - View your GCP project name and ID using the console --OR-- 
+ - LOGIN  to GCP console
+ - VERIFY your account
+ - VERIFY that you can perform a 'hello world' task in your account.  Common examples are below:
+    - View your GCP project name & ID using the console --OR-- 
     - Upload a file into a Cloud Storage bucket --OR--
     - Start a Compute Engine Virtual Machine Linux instance and connect to it using the ssh tool
 
@@ -74,7 +74,7 @@ Cloud Shell provides the following:
  - IAM (Identity and Access Management) - IAM services include security objects, such as users, groups, roles and permissions
 
 ### How to learn more
- - 📘Link to [Integrated Shell features](https://cloud.google.com/shell/docs/features)
- - 📘Link to [Integrated Shell limits](https://cloud.google.com/shell/docs/limitations)
- - 📘Link to [Scripting GCP examples](https://cloud.google.com/sdk/docs/scripting-gcloud)
+ - 📘 Link to [Integrated Shell features](https://cloud.google.com/shell/docs/features)
+ - 📘 Link to [Integrated Shell limits](https://cloud.google.com/shell/docs/limitations)
+ - 📘 Link to [Scripting GCP examples](https://cloud.google.com/sdk/docs/scripting-gcloud)
  - 📺 Link to [How do I use the BASH command line?](https://www.youtube.com/watch?v=EMaFdfIlK58)
