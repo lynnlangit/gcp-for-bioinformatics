@@ -6,9 +6,10 @@
     - Setup GCP project security
 - [Files & Data](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/1_Files_%26_Data) 
     - Use Google Cloud Storage for files
-    - Use public genomic datasets on GCP
+    - Use public Genomic Datasets on GCP
     - Use Big Query to query files
     - Use Cloud SQL to store data
+    - Use Terra.bio reference Genomic Datasets
 - [Compute with Virtual Machines & Docker Containers](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/2_Virtual_Machines_%26_Docker_Containers)
     - Use Google Compute Engine Virtual Machines
     - Use Jupyter Notebook Instances (specialty GCE VMs)
