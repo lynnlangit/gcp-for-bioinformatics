@@ -1,8 +1,8 @@
 # Use BigQuery to Query Files
 
 ### Why do this
- - You want to perform analysis on files using SQL statements
- - You want to pay by the query and to avoid setting up any infrastructure (VMs)
+ - PERFORM analysis on files using SQL statements
+ - PAY by the query and to avoid setting up any infrastructure (VMs)
 
 ### What is this
  - Ability to perform queries on file data at scale
@@ -10,27 +10,27 @@
 
 ### Key considerations
  - Understand how BQ billing works - you are charged by the amount of data scanned
- - Starts at $5/TB scanned
+ - Billing starts at $5/TB scanned
  - Each query will estimate the amount of data scanned (shown below on the bottom right)
  - Google provides many public reference datasets (including 1000 Genomes) which you can query (shown below)
 
 ### How to do this
- - Learn SQL syntax - [link](https://www.w3schools.com/sql/sql_intro.asp)
- - Request account from your organization -or- Setup free tier (testing) account
- - Open BigQuery from the GPP console, write and review cost for a SQL query referencing a BQ dataset - link to example [analyze genomic variants with BQ](https://cloud.google.com/genomics/docs/tutorials/analyze-variants-advanced)
- - BQ Dataset can be files stored in GCS or BQ storage
- - Execute the query by clicking the 'run' button, example results shown below
- - You can view the results and/or save the results into a new file in a storage bucket
+ - LEARN SQL syntax - [link](https://www.w3schools.com/sql/sql_intro.asp)
+ - REQUEST account from your organization -or- Setup free tier (testing) account
+ - USE BigQuery from the GPP console, write and review cost for a SQL query referencing a BQ dataset - link to example [analyze genomic variants with BQ](https://cloud.google.com/genomics/docs/tutorials/analyze-variants-advanced)
+ - WORK with BQ. Datasets are files, which can be stored in Cloud Storage or as a BigQuery dataset
+ - EXECUTE the query by clicking the 'run' button, example results shown below
+ - VIEW the results and/or save the results into a new file in a storage bucket
 
- ### 📺Click to see Lynn's 9 minute exploration of this section  
+ ### 📺 Click to see Lynn's 9 minute exploration of this section  
 [![GCP BigQuery for Bioinformatics](http://img.youtube.com/vi/bWI8JPR9h0E/0.jpg)](http://www.youtube.com/watch?v=bWI8JPR9h0E "GCP BigQuery for Bioinformatics")
 
 -----
 ### How to verify you've done it
- - Verify the query cost BEFORE you run it 
- - Validate the SQL syntax in the BQ web console
- - Execute your query and verify that the results match the expected output
- - Review the query 'Execution Details' (example shown below) to verify the actual query cost and execution ran as expected.  Example shown below  
+ - VERIFY the query cost BEFORE you run it 
+ - VALIDATE the SQL syntax in the BQ web console
+ - EXECUTE your query and verify that the results match the expected output
+ - REVIEW the query 'Execution Details' (example shown below) to verify the actual query cost and execution ran as expected.  Example shown below  
  
  RUN QUERY
  [![BigQuery query](/images/query.png)]()
@@ -51,14 +51,14 @@
 
 
 ### How to learn more
- - 📘Link to [Understand BQ pricing](https://cloud.google.com/bigquery/pricing)
- - 📘Link to [BQ Variants data schema](https://cloud.google.com/genomics/docs/how-tos/bigquery-variants-schema)
- - 📘Link to [Load Variants into BQ](https://cloud.google.com/genomics/docs/how-tos/load-variants#transform-pipeline)
- - 📘Link to [Analyze variants with BQ](https://cloud.google.com/genomics/docs/tutorials/analyze-variants-advanced)
+ - 📘 Link to [Understand BQ pricing](https://cloud.google.com/bigquery/pricing)
+ - 📘 Link to [BQ Variants data schema](https://cloud.google.com/genomics/docs/how-tos/bigquery-variants-schema)
+ - 📘 Link to [Load Variants into BQ](https://cloud.google.com/genomics/docs/how-tos/load-variants#transform-pipeline)
+ - 📘 Link to [Analyze variants with BQ](https://cloud.google.com/genomics/docs/tutorials/analyze-variants-advanced)
  - :octocat: Link to [Example Genomics BQ queries](https://github.com/googlegenomics/bigquery-examples/tree/master/1000genomes)
- - 📘Link to 60+ min Codelab [Analyze variants in BQ](https://codelabs.developers.google.com/codelabs/genomics-vcfbq/#0)
- - 📘Link to [Example ISB-CGC tutorial](https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/progapi/bigqueryGUI/WalkthroughOfGoogleBigQuery.html)
- - 📺Watch [working with BigQuery datasets in Terra (GCP service) ](https://www.youtube.com/watch?v=jOmCCo3EJr0) - 40 minute video from the Broad
- - 📙Try out BigQuery and BQ ML using [example Jupyter notebooks](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/3_Machine_Learning/Jupyter_Notebook_Examples)
- - 📺Link to 6 minute screencast - [BigQuery Machine Learning](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-bigquery-ml)
+ - 📘 Link to 60+ min Codelab [Analyze variants in BQ](https://codelabs.developers.google.com/codelabs/genomics-vcfbq/#0)
+ - 📘 Link to [Example ISB-CGC tutorial](https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/progapi/bigqueryGUI/WalkthroughOfGoogleBigQuery.html)
+ - 📺 Watch [working with BigQuery datasets in Terra (GCP service) ](https://www.youtube.com/watch?v=jOmCCo3EJr0) - 40 minute video from the Broad
+ - 📙 Try out BigQuery and BQ ML using [example Jupyter notebooks](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/3_Machine_Learning/Jupyter_Notebook_Examples)
+ - 📺 Link to 6 minute screencast - [BigQuery Machine Learning](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-bigquery-ml)
 [![bq-ml-demo](/images/bq-ml-demo.png)](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-bigquery-ml) 

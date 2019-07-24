@@ -9,8 +9,8 @@
 
 
 ### Why do this
- - You want to use a reference file in cloud-based analysis
- - You want to save time by using a reference file that is already available in the cloud (no need to upload)
+ - USE a reference file in cloud-based analysis
+ - SAVE time by using a reference file that is already available in the cloud (no need to upload)
 
 ### Key considerations
  - Google adds more reference files as they become available
@@ -21,15 +21,15 @@
  - File access is available from Cloud Storage. Files are available in BAM, VCF, and FASTA formats. Copy the files you need to local disk or a Compute Engine VM for access from your favorite bioinformatics tools. [GO TO THE CLOUD GENOMICS BUCKET IN CLOUD STORAGE](https://console.cloud.google.com/storage/genomics-public-data/)
 
 ### How to verify you've done it
- - Reference the file in a BigQuery query or a VM-based analysis
+ - REFERENCE the file in a BigQuery query or a VM-based analysis
 
-### 📺Click to see Lynn's 3 minute exploration of this section  
+### 📺 Click to see Lynn's 3 minute exploration of this section  
 [![Public Reference Genomic Datasets on GCP](http://img.youtube.com/vi/4jfY9LmgHJk/0.jpg)](http://www.youtube.com/watch?v=4jfY9LmgHJk "Public Reference Genomic Datasets on GCP")
 
 ### Other Things to Know
  - Learn about VCF file structure - [link](https://software.broadinstitute.org/gatk/documentation/article?id=11005)
 
 ### How to learn more
- - 📘Link to [GCP Public Datasets](https://cloud.google.com/genomics/docs/public-datasets/)
+ - 📘 Link to [GCP Public Datasets](https://cloud.google.com/genomics/docs/public-datasets/)
 
  [![public-datasets](/images/public-datasets.png)](https://cloud.google.com/genomics/docs/public-datasets/)
