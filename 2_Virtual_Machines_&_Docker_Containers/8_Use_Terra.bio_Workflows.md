@@ -38,7 +38,7 @@ See example screenshots below for Terra Workflows.
   - UPLOAD your own research data for analysis (Your Terra Workspace -> Data Section)
   - REFER to data in Cloud Storage (use gs://{mybucket}/{my folder}) in your job parameters
 - **IMPORT or CREATE WORKFLOW** ->  
-  IMPORT (or clone) and configure an existing workflow from Terra or from Dockstore.  Alternatively, you can create and configure your own workflow.
+  IMPORT (or clone) and configure an existing workflow from Terra or from [Dockstore](https://dockstore.org/).  Alternatively, you can create and configure your own workflow.
 
   - RUN a [blastn WDL workflow](https://dockstore.org/workflows/dockstore.org/lynnlangit@gmail.com/blastn:5?tab=info) registered in Dockstore on a Terra Workspace.  See Dockstore screen below.
 
@@ -114,3 +114,4 @@ Terra is the next generation of The Broad Institute's Firecloud tool. Shown belo
  - 📺 Watch [understanding Terra (GCP service) costs](https://www.youtube.com/watch?v=SRVrzXHkZKU) - 27 minute video from the Broad
  - 📺 Watch [using Docker containers on Terra](https://www.youtube.com/watch?v=jv_HSFBYOJs) - 22 minute video from the Broad Institute
   - See [GATK Dictionary](https://software.broadinstitute.org/gatk/documentation/topic?name=dictionary) for definitions of key terms used in GATK docs
+  - 📘 Link to tutorial to learn how to [register a custom bioinformatics tool or workflow](https://docs.dockstore.org/docs/prereqs/) in Dockstore

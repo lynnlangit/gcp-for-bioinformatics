@@ -41,6 +41,9 @@ Nextflow RNAseq Dockerfile - uses bowtie, cufflinks and tophat tools
  - Test Netflow pipelines on your local machine or on GCP cloud shell 
  - Use Nextflow pipelines with other cloud vendors: AWS - [link](https://www.nextflow.io/docs/latest/awscloud.html)
  - Nextflow is written in the [Groovy programming language](https://en.wikipedia.org/wiki/Apache_Groovy) & is designed to run on [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine) instances 
+ - Nextflow workflows can be registered in [Dockstore](https://docs.dockstore.org/docs/prereqs/getting-started-with-nextflow/) for use as workflows
+ - Nextflow on Dockstore is a bit different from CWL or WDL. Instead of having one type of descriptor file, Nextflow with Dockstore uses two different kinds of files: A config file, `nextflow.config` and a descriptor file, often, `main.nf`.
+ 
 
 ### How to learn more
  - 📘 Link to [Nextflow on GCP](https://www.nextflow.io/docs/latest/google.html)
