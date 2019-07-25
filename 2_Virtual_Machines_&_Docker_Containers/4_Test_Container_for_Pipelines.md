@@ -18,7 +18,7 @@
 
 ### Key considerations
 
-**Building containers is a complex skill set, prefer to find and reuse existing container images, rather than building your own container images** 
+IMPORTANT: Building containers is a complex skill set, **prefer to find and reuse existing container images**, rather than building your own container images
  - FIND existing containers by searching for a tool (i.e. 'gatk' etc... on public container registries - see list in next section & example below)
  - SEE Biocontainers for an intro to container technologies - [link](https://biocontainers-edu.readthedocs.io/en/latest/)
  
@@ -49,7 +49,7 @@
       - Use the command `docker exec -it <container name> /bin/bash` to get a bash shell in the container
 ----
 
-### 📺Click to see Lynn's 6 minute exploration of this section  
+### 📺 Click to see Lynn's 6 minute exploration of this section  
 [![Test Container on GCE for Bioinformatics](http://img.youtube.com/vi/Rq4wNbdylWs/0.jpg)](http://www.youtube.com/watch?v=Rq4wNbdylWs "Test Container on GCE for Bioinformatics")
 
 ### How to verify you've done it
@@ -76,8 +76,8 @@ NOTES:
  - [Singularity containers](http://singularity.lbl.gov/) are used for specialized compute environments such as HPC (and mostly NOT used on GCP pipelines). 
 
 ### How to learn more
- - 📘Link to [Run a blastn container](https://biocontainers-edu.biocontainers.pro/en/latest/running_example.html)
-  - 📘Link to [Run a R Shiny app (in a container) on a GCE VM](https://cloudyr.github.io/googleComputeEngineR/articles/shiny-app.html)
+ - 📘 Link to [Run a blastn container](https://biocontainers-edu.biocontainers.pro/en/latest/running_example.html)
+  - 📘 Link to [Run a R Shiny app (in a container) on a GCE VM](https://cloudyr.github.io/googleComputeEngineR/articles/shiny-app.html)
  - :octocat: Link to DOCKERFILE source code example - [Blastn container files](https://github.com/lynnlangit/blastn)
- - 📺Link to [Building a Container from scratch](https://www.youtube.com/watch?v=Utf-A4rODH8) ~20 min. screencast video, includes advanced concepts (namespaces, more)
-  - 📺Watch [using Docker containers on Terra](https://www.youtube.com/watch?v=jv_HSFBYOJs) - 22 minute video from the Broad Institute. Terra runs on GCP
+ - 📺 Link to [Building a Container from scratch](https://www.youtube.com/watch?v=Utf-A4rODH8) ~20 min. screencast video, includes advanced concepts (namespaces, more)
+  - 📺 Watch [using Docker containers on Terra](https://www.youtube.com/watch?v=jv_HSFBYOJs) - 22 minute video from the Broad Institute. Terra runs on GCP

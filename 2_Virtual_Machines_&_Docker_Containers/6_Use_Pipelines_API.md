@@ -2,13 +2,13 @@
 
 
 ### Why do this
- You want to scale your analysis using Google Pipelines (also called Genomics) API  
+ Scale your analysis using Google Pipelines (also called Genomics) API  
 
  [![gcp-pipelines-api](/images/gcp-pipelines-api.png)]()
 
 ### What is this
- - Use Google Pipelines API to orchestrate scalable genomic analysis running Compute Engine **without** manually configuring scaling of your compute cluster
- - Use Cloud Storage + Pipelines API + BigQuery to create serverless end-to-end scalable genomic analysis jobs
+ - USE Google Pipelines API to orchestrate scalable genomic analysis running Compute Engine **without** manually configuring scaling of your compute cluster
+ - USE Cloud Storage + Pipelines API + BigQuery to create serverless end-to-end scalable genomic analysis jobs
 
 ### Key considerations
  - This is a serverless solution because you work with services or API endpoints and you do NOT configure or manage VMs or containers
@@ -19,7 +19,7 @@
 
  -----
 
-### 📺Click to see Lynn's 4 minute exploration of this section  
+### 📺 Click to see Lynn's 4 minute exploration of this section  
 [![GCP Genomics Pipelines API for Bioinformatics](http://img.youtube.com/vi/B8RABR19n8Y/0.jpg)](http://www.youtube.com/watch?v=B8RABR19n8Y "GCP Genomics Pipelines API for Bioinformatics")
 
 ### How to verify you've done it
@@ -36,7 +36,7 @@
  - There are a number of bioinformatics libraries (cromwell, Nextflow....) that are designed to work WITH Pipelines API
 
 ### How to learn more
- - 📘Google Cloud Genomics scenarios, see this [link](https://cloud.google.com/genomics/docs/tutorials/)
+ - 📘 Google Cloud Genomics scenarios, see this [link](https://cloud.google.com/genomics/docs/tutorials/)
  - :octocat: 4 GCP Pipelines API examples in Jupyter notebooks - [link](https://github.com/googlegenomics/datalab-examples/tree/master/datalab/genomics)
  - :octocat: See example Pipelines API usage with genomics tools - [link](https://github.com/googlegenomics/pipelines-api-examples)
- - 📘End-to-end pipeline patterns and documentation, see the Google Genomics Cookbook -- http://googlegenomics.readthedocs.io/en/latest/
+ - 📘 End-to-end pipeline patterns and documentation, see the Google Genomics Cookbook -- http://googlegenomics.readthedocs.io/en/latest/

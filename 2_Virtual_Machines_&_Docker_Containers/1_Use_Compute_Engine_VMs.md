@@ -36,7 +36,7 @@ Connect your instance to a Cloud Storage bucket when latency and throughput are 
  - Monitor instance resource usage (CPU, RAM...)
  - Stop the instance (and/or delete it) when your analysis is complete.
 
- ### 📺Click to see Lynn's 9 minute exploration of this section  
+ ### 📺 Click to see Lynn's 9 minute exploration of this section  
 [![GCP GCE Virtual Machines for Bioinformatics](http://img.youtube.com/vi/Nb5Lb5uwbng/0.jpg)](http://www.youtube.com/watch?v=Nb5Lb5uwbng "GCP GCE Virtual Machines for Bioinformatics")
 
 ### How to verify you've done it
@@ -61,5 +61,5 @@ Connect your instance to a Cloud Storage bucket when latency and throughput are 
    [![gce-monitor](/images/gce-monitor.png)]()
 
 ### How to learn more
- - 📘Link to [GCE Pricing](https://cloud.google.com/compute/pricing#machinetype)
- - 📺Link to video [GCE security best practices](https://www.youtube.com/watch?v=qDyjE1fIqkk)
+ - 📘 Link to [GCE Pricing](https://cloud.google.com/compute/pricing#machinetype)
+ - 📺 Link to video [GCE security best practices](https://www.youtube.com/watch?v=qDyjE1fIqkk)

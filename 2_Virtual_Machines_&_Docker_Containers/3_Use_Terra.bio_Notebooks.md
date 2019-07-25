@@ -4,9 +4,9 @@
 
  [![terra-features](/images/terra-features.png)]()
 
- - Use bioinformatics tools (GATK, Hail...) & workflows on Jupyter notebooks running on Terra (capabilities shown above). Terra runs on GCP.
- - Run scalable analysis on GCP without manually configuring Jupyter Hub, Cloud Storage & VMs (or container clusters)
- - Read - [The future of GATK tutorials is written in Notebooks](https://software.broadinstitute.org/gatk/blog?id=24167)
+ - USE bioinformatics tools (GATK, Hail...) & workflows on Jupyter notebooks running on Terra (capabilities shown above). Terra runs on GCP.
+ - RUN scalable analysis on GCP without manually configuring Jupyter Hub, Cloud Storage & VMs (or container clusters)
+ - READ - [The future of GATK tutorials is written in Notebooks](https://software.broadinstitute.org/gatk/blog?id=24167)
 
 
 ### What is this
@@ -21,27 +21,27 @@
 
 
 ### Key considerations
-- Use preconfigured, best-practice Terra notebooks using bioinformatics tools (GATK, Hail...) --OR--
-- Import and run your own notebooks in your Terra workspace
-- Configure Terra Notebook instances as needed - use the blue gear in the upper right of the Terra Notebook configuration interface to set the amount of CPU, RAM...
-- Utilize GCP services in your analysis with Terra Notebook interface. Common services include Cloud Storage, BigQuery and others.
+- USE preconfigured, best-practice Terra notebooks using bioinformatics tools (GATK, Hail...) --OR--
+- IMPORT and run your own notebooks in your Terra workspace
+- CONFIGURE Terra Notebook instances as needed - use the blue gear in the upper right of the Terra Notebook configuration interface to set the amount of CPU, RAM...
+- USE GCP services in your analysis with Terra Notebook interface. Common services include Cloud Storage, BigQuery and others.
 
 ### How to do this
 
 See screenshots below for general flow of working with Terra.  
 - **LOGIN & SETUP** -> 
-  - Navigate to [Terra.bio](https://terra.bio/) --> 'Try Terra' and authenticate with your email
-   - Use $300 USD in GCP credit when you first try out Terra
-   - Create a Terra workspace to hold your notebooks 
+  - NAVIGATE to [Terra.bio](https://terra.bio/) --> 'Try Terra' and authenticate with your email
+   - USE $300 USD in GCP credit when you first try out Terra
+   - CREATE a Terra workspace to hold your notebooks 
 - **REFERENCE DATA** -> 
-  - Refer to public reference data (Terra Library -> Data) 
-  - Upload your own research data for analysis (Your Terra Workspace -> Data Section)
-  - Refer to data in Cloud Storage (use gs://{mybucket}/{my folder}) in your notebook
+  - REFERENCE public genomic datasets (Terra Library -> Data) 
+  - UPLOAD your own research data for analysis (Your Terra Workspace -> Data Section)
+  - REFER to data in Cloud Storage (use gs://{mybucket}/{my folder}) in your notebook
 - **START NOTEBOOK INSTANCE** -> 
-  - Use (or import) a Jupyter noteook - view your notebook
-  - Configure and start a Terra Notebook instance
-  - Use the blue gear in the upper right to configure your notebook instnace size (CPU, memory, startup script...)
-  - Open your notebook and execute the cells in your notebook  
+  - USE (or import) a Jupyter noteook - VIEW your notebook
+  - CONFIGURE and start a Terra Notebook instance
+  - USE the blue gear in the upper right to configure your notebook instnace size (CPU, memory, startup script...)
+  - OPEN your notebook and execute the cells in your notebook  
 
 
 ### Example Screenshots from Terra
@@ -67,7 +67,7 @@ Click on your workspace, then the Notebooks menu to run Notebooks
 
 ----
 
-### 📺Click to see Lynn's 7 minute exploration of this section  
+### 📺 Click to see Lynn's 7 minute exploration of this section  
 [![Terra GCP Jupyter Notebook Instances for Bioinformatics](http://img.youtube.com/vi/ntQPiUuHihw/0.jpg)](http://www.youtube.com/watch?v=ntQPiUuHihw "Terra GCP Jupyter Notebook Instances for Bioinformatics")
 
 ### Other Things to Know
@@ -88,13 +88,13 @@ Click on your workspace, then the Notebooks menu to run Notebooks
 
 
 ### How to learn more
- - 📙Try out some example Terra notebooks using the [Terra Notebooks Playground](https://app.terra.bio/#workspaces/help-gatk/Terra%20Notebooks%20Playground) workspace - examples using Python, R and also many bioinformatics tools
- - 📙Try out some example Terra notebooks (Jupyter_Notebook_Examples folder), includes using the [CSIRO Bioinformatics VariantSpark](https://bioinformatics.csiro.au/variantspark) library and other bioinformatics libraries.
- - 📙Try out some of these bioinformatics tools using [example Jupyter notebooks](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/2_Virtual_Machines_%26_Docker_Containers/Jupyter_Notebook_Examples)
-- 📘Links to [Terra articles](https://support.terra.bio/hc/en-us)
+ - 📙 Try out some example Terra notebooks using the [Terra Notebooks Playground](https://app.terra.bio/#workspaces/help-gatk/Terra%20Notebooks%20Playground) workspace - examples using Python, R and also many bioinformatics tools
+ - 📙 Try out some example Terra notebooks (Jupyter_Notebook_Examples folder), includes using the [CSIRO Bioinformatics VariantSpark](https://bioinformatics.csiro.au/variantspark) library and other bioinformatics libraries.
+ - 📙 Try out some of these bioinformatics tools using [example Jupyter notebooks](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/2_Virtual_Machines_%26_Docker_Containers/Jupyter_Notebook_Examples)
+- 📘 Links to [Terra articles](https://support.terra.bio/hc/en-us)
 or to [Terra community forum](https://support.terra.bio/hc/en-us/community/topics/360000500432) hosted by the Broad
-- 📘See [GATK Dictionary](https://software.broadinstitute.org/gatk/documentation/topic?name=dictionary) for definitions of key terms used in GATK docs
- - 📺Watch 32 minute [Intro to Terra](https://www.youtube.com/watch?v=9kffTkK-B7g) screencast by the Broad
- - 📺Watch 15 minute [Understand Notebooks in Terra](https://www.youtube.com/watch?v=qP-1xk02AS0) screencast by the Broad
- - 📺Watch 25 minute [Use Notebooks in Terra](https://www.youtube.com/watch?v=-wBohV_vj-o) screencast by the Broad
+- 📘 See [GATK Dictionary](https://software.broadinstitute.org/gatk/documentation/topic?name=dictionary) for definitions of key terms used in GATK docs
+ - 📺 Watch 32 minute [Intro to Terra](https://www.youtube.com/watch?v=9kffTkK-B7g) screencast by the Broad
+ - 📺 Watch 15 minute [Understand Notebooks in Terra](https://www.youtube.com/watch?v=qP-1xk02AS0) screencast by the Broad
+ - 📺 Watch 25 minute [Use Notebooks in Terra](https://www.youtube.com/watch?v=-wBohV_vj-o) screencast by the Broad
  

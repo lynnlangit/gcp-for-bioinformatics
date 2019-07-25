@@ -1,8 +1,8 @@
 # Use dsub & Google Genomics (Pipelines) API
 
 ### Why do this
- - You want to the dsub tool to scale your analysis job
- - You are using a docker container image to run your your bioinformatics script or tool
+ - USE the dsub tool to scale your analysis job
+ - USE a docker container image to run your your bioinformatics script or tool
 
 ### What is this
  - An alternative to the gcloud tool, dsub adds user interfaces and workflow definition features that supplement the GCP Pipelines API 
@@ -15,16 +15,16 @@
  - Configure your dsub to use your container image using the `--image` parameter
 
 ### How to do this
- - Use GCP Cloud Genomics tutorial - [link](https://cloud.google.com/genomics/docs/tutorials/dsub)
+ - USE GCP Cloud Genomics tutorial - [link](https://cloud.google.com/genomics/docs/tutorials/dsub)
 
  ---
- ### 📺Click to see Lynn's 4 minute exploration of this section  
+ ### 📺 Click to see Lynn's 4 minute exploration of this section  
 [![dsub on GCP for Bioinformatics](http://img.youtube.com/vi/zWHspeEuPs0/0.jpg)](http://www.youtube.com/watch?v=zWHspeEuPs0 "dsub on GCP for Bioinformatics")
 ----
 
 
 ### How to verify you've done it
- - Verify that the expected (files) output appears in the Cloud Storage bucket configured to get the job results
+ - VERIFY that the expected (files) output appears in the Cloud Storage bucket configured to get the job results
 
  
 

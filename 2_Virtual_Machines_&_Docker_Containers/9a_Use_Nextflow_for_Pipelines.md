@@ -1,7 +1,7 @@
 # Use Nextflow for Pipelines
 
 ### Why do this
- You want to use the Nextflow pipeline language to define and run your analysis workflow
+ USE the Nextflow pipeline language to define and run your analysis workflow
 
 ### What is this
  Nextflow is a reactive workflow framework & DSL for writing data-intensive computational pipelines.  Run jobs on GCE or GCE/Pipelines using container images.
@@ -15,11 +15,11 @@
 
 
 ### How to do this
- - Run RNAseq pipeline on GCP cloud shell instance - [link]()
- - Run RNAseq pipeline on Compute Engine and Cloud Storage - [link](https://cloud.google.com/genomics/docs/tutorials/nextflow)
- - Run VariantCalling pipeline w/GATK - [link](https://github.com/CRG-CNAG/CalliNGS-NF/)
+ - RUN RNAseq pipeline on GCP cloud shell instance - [link]()
+ - RUN RNAseq pipeline on Compute Engine and Cloud Storage - [link](https://cloud.google.com/genomics/docs/tutorials/nextflow)
+ - RUN VariantCalling pipeline w/GATK - [link](https://github.com/CRG-CNAG/CalliNGS-NF/)
  ---
-  ### 📺Click to see Lynn's 4 minute exploration of this section  
+  ### 📺 Click to see Lynn's 4 minute exploration of this section  
 [![Nextflow on GCP for Bioinformatics](http://img.youtube.com/vi/YtUOCMiC7Dk/0.jpg)](http://www.youtube.com/watch?v=YtUOCMiC7Dk "Nextflow on GCP for Bioinformatics")
 
 -----
@@ -32,8 +32,8 @@ Nextflow RNAseq Dockerfile - uses bowtie, cufflinks and tophat tools
 
 
 ### How to verify you've done it
- - Verify the output files from the examples above
- - Nextflow examples produce files in a `results` folder
+ - VERIFY the output files from the examples above
+ - REVIEW Nextflow examples whic produce files in a `results` folder
 
 
 
@@ -43,7 +43,7 @@ Nextflow RNAseq Dockerfile - uses bowtie, cufflinks and tophat tools
  - Nextflow is written in the [Groovy programming language](https://en.wikipedia.org/wiki/Apache_Groovy) & is designed to run on [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine) instances 
 
 ### How to learn more
- - 📘Link to [Nextflow on GCP](https://www.nextflow.io/docs/latest/google.html)
+ - 📘 Link to [Nextflow on GCP](https://www.nextflow.io/docs/latest/google.html)
  - :octocat: Review featured Nextflow pipelines - [link](https://github.com/nextflow-io/awesome-nextflow)
- - 📘Read about [Pipeliner for Nextflow paper](https://www.biorxiv.org/content/biorxiv/early/2018/11/23/476515.full.pdf)
- - 📺Watch Nextflow presentations - [link](https://www.nextflow.io/presentations.html)
+ - 📘 Read about [Pipeliner for Nextflow paper](https://www.biorxiv.org/content/biorxiv/early/2018/11/23/476515.full.pdf)
+ - 📺 Watch Nextflow presentations - [link](https://www.nextflow.io/presentations.html)
