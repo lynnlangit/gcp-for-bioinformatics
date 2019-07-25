@@ -1,8 +1,8 @@
 # Use ML to automatically analyze items in Photos or Videos
 
 ### Why do this
- - You want to analyze items found in photos or videos via machine learning models
- - You would like GCP to create the best-fit ML model for your data
+ - ANALYZE items found in photos or videos via machine learning models
+ - CREATE (with GCP) the best-fit ML model for your data
 
 ### What is this
  - Ability to use ML on photo/video data without manually creating/training an ML model
@@ -24,7 +24,7 @@
     - Provide the photo or video data
     - Call the API
     - Review the recommended labels (results)
-    - 📺Link to 4 minute screencast - [Vision API on GCP](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-the-cloud-vision-api-for-images)
+    - 📺 Link to 4 minute screencast - [Vision API on GCP](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-the-cloud-vision-api-for-images)
 [![automl-vision-api](/images/automl-vision-api.png)](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-the-cloud-vision-api-for-images) 
 
 
@@ -34,7 +34,7 @@
     - Review the mode quality
     - Call the model (predict)
     - Review the results
-    - 📺Link to 4 minute screencast - [AutoML Vision on GCP](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-using-a-trained-automl-vision-model)
+    - 📺 Link to 4 minute screencast - [AutoML Vision on GCP](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-using-a-trained-automl-vision-model)
 [![automl-predict](/images/automl-predict.png)](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-using-a-trained-automl-vision-model) 
 
 
@@ -49,4 +49,4 @@
  - GCP automatically selects the model type and parameters and then deploys the model for you
 
 ### How to learn more
- - 📘Link to [Using AutoML for Photos/Video on GCP](https://cloud.google.com/automl/)
+ - 📘 Link to [Using AutoML for Photos/Video on GCP](https://cloud.google.com/automl/)

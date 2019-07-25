@@ -1,9 +1,9 @@
 # Use a GCE ML Deep Learning Container
 
 ### Why do this
- - You want to create and run your own machine learning model(s) at scale
- - You want to work with GPUs and/or TPUs for TensorFlow without having to install drivers
- - You want to use containers
+ - CREATE and run your own machine learning model(s) at scale
+ - WORK with GPUs and/or TPUs for TensorFlow without having to install drivers
+ - USE machine learning containers
 
 ### What is this
  - Ability to quickly spin up a container on GCP with machine learning libraries pre-installed
@@ -33,6 +33,6 @@
 
 
 ### How to learn more
- - 📘Link to [Use a Deep Learning Container](https://cloud.google.com/blog/products/ai-machine-learning/introducing-deep-learning-containers-consistent-and-portable-environments)
- - 📘Create & deploy a custom ML model using CloudML engine - [link](https://cloud.google.com/blog/products/gcp/genomic-ancestry-inference-with-deep-learning)
- - 📘Link to [Use the 'What-if' Tool to help you understand custom Tensor Flow models](https://cloud.google.com/blog/products/ai-machine-learning/introducing-the-what-if-tool-for-cloud-ai-platform-models)
+ - 📘 Link to [Use a Deep Learning Container](https://cloud.google.com/blog/products/ai-machine-learning/introducing-deep-learning-containers-consistent-and-portable-environments)
+ - 📘 Create & deploy a custom ML model using CloudML engine - [link](https://cloud.google.com/blog/products/gcp/genomic-ancestry-inference-with-deep-learning)
+ - 📘 Link to [Use the 'What-if' Tool to help you understand custom Tensor Flow models](https://cloud.google.com/blog/products/ai-machine-learning/introducing-the-what-if-tool-for-cloud-ai-platform-models)

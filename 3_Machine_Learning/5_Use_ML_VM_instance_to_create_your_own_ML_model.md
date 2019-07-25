@@ -1,8 +1,8 @@
 # Use a GCE ML image for a VM 
 
 ### Why do this
- - You want to create and run your own machine learning model(s) at scale
- - You want to work with GPUs and/or TPUs for TensorFlow without having to install drivers
+ - CREATE and run your own machine learning model(s) at scale
+ - WORK with GPUs and/or TPUs for TensorFlow without having to install drivers
 
 ### What is this
  - Ability to quickly spin up a Virtual Machine on GCP with machine learning libraries pre-installed
@@ -33,4 +33,4 @@
   [![ai-hub](/images/ai-hub.png)]()
 
 ### How to learn more
- - 📘Link to [Create a Deep Learning Instance](https://cloud.google.com/deep-learning-vm/docs/cloud-marketplace)
+ - 📘 Link to [Create a Deep Learning Instance](https://cloud.google.com/deep-learning-vm/docs/cloud-marketplace)

@@ -1,8 +1,8 @@
 # Use ML to automatically analyze data in tables
 
 ### Why do this
- - You want to analyze structured data stored in tables via machine learning models
- - You would like GCP to create the best-fit ML model for your data
+ - ANALYZE structured data stored in tables via machine learning models
+ - USE GCP to create the best-fit ML model for your data
 
 ### What is this
  - Ability to use ML on tabular data without manually creating/training an ML model
@@ -30,4 +30,4 @@
  - AutoML Tables helps you detect and take care of missing values, outliers, and other common data issues
 
 ### How to learn more
- - 📘Link to [Using AutoML for Tables on GCP](https://cloud.google.com/automl-tables/)
+ - 📘 Link to [Using AutoML for Tables on GCP](https://cloud.google.com/automl-tables/)

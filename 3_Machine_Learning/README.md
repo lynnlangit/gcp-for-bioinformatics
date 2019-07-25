@@ -5,14 +5,14 @@ In this section, you'll get information about using Google Cloud services for ma
 
 Here are the topic pages in this section:
 
-- Use AutoML for Vision to analyze photos and videos
+- USE AutoML for Vision to analyze photos and videos
 Use AutoML for Text to analyze text and natural language
-- Use AutoML Tables to analyze tabular data
-- Use DeepVariant to perform variant analysis
-- Use Deep Learning VM image to create your own ML model 
-- Use Deep Learning container image to create your own ML model/container
-- Use Jupyter notebook with BigQuery API
-- Use Jupyter notebook with BigQuery and BQ ML APIs
+- USE AutoML Tables to analyze tabular data
+- USE DeepVariant to perform variant analysis
+- USE Deep Learning VM image to create your own ML model 
+- USE Deep Learning container image to create your own ML model/container
+- USE Jupyter notebook with BigQuery API
+- USE Jupyter notebook with BigQuery and BQ ML APIs
 
 ### 📺 Click below to see Lynn's 2 minute intro to this section  
 [![GCP Machine Learning](http://img.youtube.com/vi/DMBDc4vMABk/0.jpg)](http://www.youtube.com/watch?v=DMBDc4vMABk "Intro GCP Services for Machine Learning")

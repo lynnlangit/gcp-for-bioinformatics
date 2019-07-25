@@ -1,8 +1,8 @@
 # Use ML to automatically analyze text or language data
 
 ### Why do this
- - You want to analyze entities found in text or natural language via machine learning models
- - You would like GCP to create the best-fit ML model for your data
+ - ANALYZE entities found in text or natural language via machine learning models
+ - USE GCP to create the best-fit ML model for your data
 
 ### What is this
  - Ability to use ML on text or natural language data without manually creating/training an ML model
@@ -30,4 +30,4 @@
  - AutoML also works with langauge translation
 
 ### How to learn more
- - 📘Link to [Using AutoML for Natural Language on GCP](https://cloud.google.com/natural-language/)
+ - 📘 Link to [Using AutoML for Natural Language on GCP](https://cloud.google.com/natural-language/)
