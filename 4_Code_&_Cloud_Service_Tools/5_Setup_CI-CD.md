@@ -1,9 +1,9 @@
 # Setup Continuous Integration and Continuous Deployment
 
 ### Why do this
- - You want to use GCP to host to set up CI/CD pipeline
- - You want to build a GCP serverless and integrated CI/CD pipeline 
- - You want to create a blueprint for GCP infrastructure for reproducible research
+ - USE GCP to host to set up CI/CD pipeline
+ - BUILD a GCP serverless and integrated CI/CD pipeline 
+ - CREATE a blueprint for GCP infrastructure for reproducible research
 
 ### What is this
  - CI/CD services hosted on GCP - uses GCP CloudBuild service
@@ -14,15 +14,15 @@
  - CloudBuild will utilitze custom build triggers for CI/CD scenarios
 
 ### How to do this
- - Perform the steps in this article 'Gitops CI/CD with Cloud Build and Source Repositories' - [link](https://cloud.google.com/kubernetes-engine/docs/tutorials/gitops-cloud-build)
- - Use the mindmap to see (and be able to try out) the configuration steps needed to build a GCP serverless CI/CD pipeline - [link](https://app.mindmup.com/map/_v2/a4de55c088c511e9bbc6db11d9e2a10a)
+ - DO the steps in this article 'Gitops CI/CD with Cloud Build and Source Repositories' - [link](https://cloud.google.com/kubernetes-engine/docs/tutorials/gitops-cloud-build)
+ - USE the mindmap to see (and be able to try out) the configuration steps needed to build a GCP serverless CI/CD pipeline - [link](https://app.mindmup.com/map/_v2/a4de55c088c511e9bbc6db11d9e2a10a)
 
   [![ci-cd](/images/ci-cd.png)]()
 
 ### How to verify you've done it
- - Push updated application or configuration code to your Source Repo with a CloudBuild trigger
- - Verify updated service and application code works as expected via manual or automated tests
- - Review associated service logs
+ - PUSH updated application or configuration code to your Source Repo with a CloudBuild trigger
+ - VERIFY updated service and application code works as expected via manual or automated tests
+ - REVIEW associated service logs
 
 
 ### Other Things to Know
@@ -31,4 +31,4 @@
 
 ### How to learn more
  
-  - 📘Read about CI/CD concepts in this [article](https://read.acloud.guru/cloud-based-ci-cd-on-gcp-6b07fde7222d)
+  - 📘 Read about CI/CD concepts in this [article](https://read.acloud.guru/cloud-based-ci-cd-on-gcp-6b07fde7222d)

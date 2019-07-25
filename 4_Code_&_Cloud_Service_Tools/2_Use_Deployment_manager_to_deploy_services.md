@@ -1,8 +1,8 @@
 # Use Deployment Manager 
 
 ### Why do this
- - Script the service configuration of your research job(s) 
- - Reproduce your analysis on another GCP environment (or other public cloud)
+ - SCRIPT the service configuration of your research job(s) 
+ - REPRODUCE your analysis on another GCP environment (or other public cloud)
 
 ### What is this
  - A GCP Deployment is a YAML file which describe a set of GCP services and their configuration properties.  
@@ -19,12 +19,12 @@
   - Use [Terraform templates](https://www.terraform.io/docs/providers/template/d/file.html) rather than GCP Deployments for cross-cloud deployments  
  
 ### How to do this
- - Write and verify your Deployment (YAML) file
- - Use Deployment Manager to execute the deployment on your GCP account
+ - WRITE and verify your Deployment (YAML) file
+ - USE Deployment Manager to execute the deployment on your GCP account
 
 ### How to verify you've done it
- - Wait for  the GCP Deployment Manager to complete the deployment of your services
- - Review the service and log output in the console
+ - WAIT for the GCP Deployment Manager to complete the deployment of your services
+ - REVIEW the service and log output in the console
 
 ### Other Things to Know
  - GCP Marketplace executes service configurations via deployments for open source or commercial software

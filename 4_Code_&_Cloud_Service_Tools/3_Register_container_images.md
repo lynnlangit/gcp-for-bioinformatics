@@ -1,9 +1,9 @@
 # Register container images with GCR
 
 ### Why do this
- - You want to use docker container images on GCP
+ - USE docker container images on GCP
  - You want your images to be scanned for security vulnerabilities
- - Container images can be run on VMs, Kubernetes Clusters, Cloud Run or other GCP services
+ - RUN Container images on VMs, Kubernetes Clusters, Cloud Run or other GCP services
 
 ### What is this
  - Registering docker container images on GCP for use (execution) by GCP services, such as VMs or Kubernetes clusters
@@ -28,5 +28,5 @@
  - Integrates with CI/CD pipeline tools, such as Google CloudBuild and others/
 
 ### How to learn more
- - 📘Link to [Container Analysis](https://cloud.google.com/container-registry/docs/container-analysis)
- - 📘Link to [Push DockerHub image to GCR](https://gatkforums.broadinstitute.org/firecloud/discussion/11558/howto-publish-a-docker-container-image-to-google-container-registry-gcr)
+ - 📘 Link to [Container Analysis](https://cloud.google.com/container-registry/docs/container-analysis)
+ - 📘 Link to [Push DockerHub image to GCR](https://gatkforums.broadinstitute.org/firecloud/discussion/11558/howto-publish-a-docker-container-image-to-google-container-registry-gcr)
