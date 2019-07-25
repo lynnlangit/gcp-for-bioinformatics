@@ -1,9 +1,9 @@
 # Serverless Cloud Functions
 
 ### Why do this
- - You have stateless, short-term compute tasks
- - Your analysis job tasks can be run individually, or chained into a workflow (or pipeline)
- - You only want to pay **when a function is called (or invoked)**, rather than for a long-running VM or container
+ - RUN stateless, short-term compute tasks
+ - RUN Your analysis job tasks can be run individually, or chained into a workflow (or pipeline)
+ - PAY only  **when a function is called (or invoked)**, rather than for a long-running VM or container
 
 ### What is this
  - Use Google Cloud Functions (rather you managing containers or VMs) for compute
@@ -25,15 +25,15 @@
  - State is NOT automatically saved after the function is invoked.  If you need to persist information, then you must write the logic to save the output to files (bucket) or a database and then to retrieve that information in a later part of the workflow
 
 ### How to do this
- - Write your function code in the console or zip and upload to Cloud Functions
- - Configure Cloud Function instance parmeters (amount of memory...)  - screenshot below
- - Test and monitor your service
+ - WRITE your function code in the console or zip and upload to Cloud Functions
+ - CONFIGURE Cloud Function instance parmeters (amount of memory...)  - screenshot below
+ - TEST (invoke) and monitor your service
 
  [![function-config](/images/function-config.png)]()
 
 ### How to verify you've done it
- - Invoke the function manually or via a test script - see screenshot
- - Read the Stackdriver logs to see the result of the function invocation see screenshot below
+ - INVOKE the function manually or via a test script - see screenshot
+ - REVIEW the Stackdriver logs to see the result of the function invocation see screenshot below
 
 [![function-verify](/images/function-verify.png)]()
 [![function-logs](/images/function-logs.png)]()
@@ -44,6 +44,6 @@
  - GAE (AppEngine) is a serverless service which can be used to host web sites and support common programming language.  Python example [here](https://cloud.google.com/appengine/docs/python/)
 
 ### How to learn more
- - 📘Link to [choosing a serverless option](https://cloud.google.com/serverless-options/)
- - 📘Link to [serving a TensorFlow model on a Cloud Function endpoint](https://cloud.google.com/blog/products/ai-machine-learning/how-to-serve-deep-learning-models-using-tensorflow-2-0-with-cloud-functions)
+ - 📘 Link to [choosing a serverless option](https://cloud.google.com/serverless-options/)
+ - 📘 Link to [serving a TensorFlow model on a Cloud Function endpoint](https://cloud.google.com/blog/products/ai-machine-learning/how-to-serve-deep-learning-models-using-tensorflow-2-0-with-cloud-functions)
  

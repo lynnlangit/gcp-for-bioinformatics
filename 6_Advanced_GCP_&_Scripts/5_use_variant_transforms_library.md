@@ -24,19 +24,19 @@ For complete directions see https://github.com/googlegenomics/gcp-variant-transf
  [![bq-vcf-schema](/images/bq-vcf-schema.png)](https://github.com/googlegenomics/gcp-variant-transforms)
 
 #### Step 0
- - Enable the Genomics, Compute Engine, Cloud Storage, and GCP Dataflow (Apache Beam) APIs
- - Create a new BigQuery dataset using the BigQuery web UI  
-    - click on the down arrow icon next to your project name in the navigation
-    - click on 'Create new dataset' and name your dataset
+ - ENABLE the Genomics, Compute Engine, Cloud Storage, and GCP Dataflow (Apache Beam) APIs
+ - CREATE a new BigQuery dataset using the BigQuery web UI  
+    - CLICK on the down arrow icon next to your project name in the navigation
+    - CLICK on 'Create new dataset' and name your dataset
 
 #### Step 1  
- - Get VariantTransforms from a custom docker container image using the docker command below    
+ - GET VariantTransforms from a custom docker container image using the docker command below    
  `docker pull gcr.io/cloud-lifesciences/gcp-variant-transforms`  
- - Run VariantTransforms using the script named `6_run_variant_transforms.sh`
-   - replace all script params with your values
-   - monitor job progress in GCP Cloud Dataflow (managed Apache Beam) console
+ - RUN VariantTransforms using the script named `6_run_variant_transforms.sh`
+   - REPLACE all script params with your values
+   - MONITOR job progress in GCP Cloud Dataflow (managed Apache Beam) console
 
- ### 📺Click to see Google's 40 minute exploration of this section  
+ ### 📺 Click to see Google's 40 minute exploration of this section  
 [![Genomics Analysis on GCP for Bioinformatics](http://img.youtube.com/vi/27tSivxnQ_E/0.jpg)](http://www.youtube.com/watch?v=27tSivxnQ_E "Genomics Analysis on GCP for Bioinformatics")
 
 #### Learn More

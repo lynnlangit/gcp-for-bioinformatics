@@ -1,9 +1,9 @@
 # Serverless Cloud Run
 
 ### Why do this
- - You have stateless, short-term compute tasks
- - Your analysis job tasks can be run individually, or chained into a workflow (or pipeline)
- - You only want to pay **when a function is called (or invoked)**, rather than for a long-running VM or container
+ - RUN stateless, short-term compute tasks
+ - RUN your analysis job tasks individually, or chained into a workflow (or pipeline)
+ - PAY only **when a function is called (or invoked)**, rather than for a long-running VM or container
 
 ### What is this
  - Use functions where you supply your own containers, rather than GCP-supplied containers or VMs for compute
@@ -14,15 +14,15 @@
  - State is NOT automatically saved after the function is invoked.  If you need to persist information, then you must write the logic to save the output to files (bucket) or a database and then to retrieve that information in a later part of the workflow
 
 ### How to do this
- - Write and test your function code
- - Build a docker image w/that code by running 'docker build....' on a DOCKERFILE
- - Register your docker container image in Google Container Registry
- - Associate your image to CloudRun 
- - Test and monitor your service
+ - WRITE and test your function code
+ - BUILD a docker image w/that code by running 'docker build....' on a DOCKERFILE
+ - REGISTER your docker container image in Google Container Registry
+ - ASSOCIATE your image to CloudRun 
+ - TEST (invoke) and monitor your service
 
 ### How to verify you've done it
- - Invoke the function manually or via a test script
- - Read the Stackdriver logs to see the result of the function invocation
+ - INVOKE the function manually or via a test script
+ - REVIEW the Stackdriver logs to see the result of the function invocation
 
 ### Other Things to Know
  - Serverless patterns are often used for workloads that have spikes in demand
@@ -31,11 +31,11 @@
  - GAE (AppEngine) is a serverless service which can be used to host web sites and support common programming language.  Python example [here](https://cloud.google.com/appengine/docs/python/)
 
 ### How to learn more
- - 📘Link to [choosing a serverless option](https://cloud.google.com/serverless-options/)
+ - 📘 Link to [choosing a serverless option](https://cloud.google.com/serverless-options/)
  - :octocat: Link to [Try Cloud Run from a GitHub Repo](https://github.com/lynnlangit/hello-cloud-run).  Shown below is the output in Cloud Shell after you click the 'try cloud run' button in the GitHub repo.  The following actions run -> CloudRun API enabled, Docker container image is built and registered at Google Container Registry and then deployed as a service to Cloud Run.  
- - 📺Watch to "What is Cloud Run?" 3 minute demo video - [link](https://www.linkedin.com/learning/google-cloud-platform-essential-training-3/google-cloud-run)
+ - 📺 Watch to "What is Cloud Run?" 3 minute demo video - [link](https://www.linkedin.com/learning/google-cloud-platform-essential-training-3/google-cloud-run)
 [![cloud-run-api](/images/cloud-run-api.png)](https://www.linkedin.com/learning/google-cloud-platform-essential-training-3/google-cloud-run)
-- 📺Watch to "What is Cloud run on GKE?" 4 minute demo video - [link](
+- 📺 Watch to "What is Cloud run on GKE?" 4 minute demo video - [link](
 https://www.linkedin.com/learning/google-cloud-platform-essential-training-3/google-cloud-run-on-gke)
 [![cloud-run-on-gke](/images/cloud-run-on-gke.png)](https://www.linkedin.com/learning/google-cloud-platform-essential-training-3/google-cloud-run-on-gke)
 
