@@ -48,3 +48,7 @@
  - :octocat: Example WDL files for bioinformatics tools - [link](https://github.com/biowdl/tasks) to BioWDL
  - :octocat: WDL pipeline template examples - [link](https://github.com/biowdl/pipeline-template) to BioWDL template
  - 📺 Watch 38 minute [Intro to pipelining platforms](https://www.youtube.com/watch?v=HNONc2cmIO8&t=9s) screencast from the Broad, covers cromwell & WDL
+ - :octocat: [Miniwdl](https://github.com/chanzuckerberg/miniwdl) - miniwdl provides WDL developer productivity tools, a local runtime implementation, and a foundation for language experimentation in Python 3.6+. It includes the following tools:
+    - [miniwdl check](https://github.com/chanzuckerberg/miniwdl#miniwdl-check) - a WDL linter
+    - [miniwdl cromwell](https://github.com/chanzuckerberg/miniwdl#miniwdl-cromwell) - command-line interface for running a workflow locally using Cromwell
+    - [miniwdl run](https://github.com/chanzuckerberg/miniwdl#miniwdl-run) - Operation is nearly identical to miniwdl cromwell. The invoking user must have permission to control Docker.
