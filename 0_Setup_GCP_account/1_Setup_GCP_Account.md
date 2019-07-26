@@ -13,22 +13,26 @@
  - Use the best GCP Account type:
     - **Use GCP Free Tier** (get $ 300 USD in GCP credits for new users) minimal service limits set by Google - [link](https://cloud.google.com/free) --OR--
     - **Use Your Organization's GCP Account** - service limits set by your company & Google
- - Understand the size & complexity of your analysis 
+ - Understand the size & complexity of your analysis
  - Review your budget / timeline
- - Determine the location (Google data center) for your project - [GCP data center locations](https://cloud.google.com/about/locations/)
+ - Determine the location (Google data center) for your project - [GCP data center locations](https://cloud.google.com/about/locations/) shown below
 
    [![GCP Locations](/images/all-regions.png)]()
 
- NOTE: There are many bioinformatics analysis workflow tools, libraries and solutions which can be run on top of core GCP services.  Examples include [Terra.bio (was Firecloud)](https://terra.bio/), [cromwell](https://cromwell.readthedocs.io/en/stable/), [Nextflow.io](https://www.nextflow.io/) and many others.
+ NOTE: There are many bioinformatics analysis workflow tools, libraries & solutions which can be run on top of core GCP services.  Examples include [Terra.bio (was Firecloud)](https://terra.bio/), [cromwell](https://cromwell.readthedocs.io/en/stable/), [Nextflow.io](https://www.nextflow.io/) and many others.
 
 ### How to do this
- - REQUEST an account -> either a) a GCP account from your organization or b) set up a GCP new (FREE Tier) account
- - CREATE a **GCP PROJECT** for your research project
- - USE **each** GCP Project as a container for your research project
- - ADD GCP service instances to your GCP Project by data center location and GCP project name, for example...
-    - your Virtual Machine instance & your Cloud Storage bucket 
-    - are located in the Google datacenter in us-east --and--
-    - in your GCP Project named 'my-research-project'
+ - REQUEST an account -> either 
+   - a) a GCP account from your organization --OR--
+   - b) set up a GCP new (FREE Tier) account
+ - CREATE a GCP PROJECT 
+   - USE **each** GCP Project as a container  for **each** of your research projects
+   - CREATE separate GCP projects, as a best practice (this allows you to to more easilty manage security & service costs by grant)
+ - ADD GCP service instances to your GCP Project 
+    - Add servvices by data center location and GCP project name, for example...
+    - Add a Virtual Machine instance & a Cloud Storage bucket which are located...
+      - in the Google datacenter in `us-east` --AND--
+      - in your GCP Project named `my-research-project`
 
 ### 📺 Click below to see Lynn's 'Setup GCP account video' 6 min video
 [![Setup GCP Account - Google Cloud Platform for Bioinformatics](http://img.youtube.com/vi/oD8lD8v-Z14/0.jpg)](http://www.youtube.com/watch?v=oD8lD8v-Z14 "Setup GCP Account - Google Cloud Platform for Bioinformatics")
