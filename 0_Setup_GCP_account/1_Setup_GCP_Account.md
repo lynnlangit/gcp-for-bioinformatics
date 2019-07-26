@@ -22,12 +22,12 @@
  NOTE: There are many bioinformatics analysis workflow tools, libraries & solutions which can be run on top of core GCP services.  Examples include [Terra.bio (was Firecloud)](https://terra.bio/), [cromwell](https://cromwell.readthedocs.io/en/stable/), [Nextflow.io](https://www.nextflow.io/) and many others.
 
 ### How to do this
- - REQUEST an account -> either 
+ - REQUEST an account
    - a) a GCP account from your organization --OR--
    - b) set up a GCP new (FREE Tier) account
  - CREATE a GCP PROJECT 
    - USE **each** GCP Project as a container  for **each** of your research projects
-   - CREATE separate GCP projects, as a best practice (this allows you to to more easilty manage security & service costs by grant)
+   - CREATE separate GCP projects, as a best practice (this allows you to to more easily manage security & service costs by grant)
  - ADD GCP service instances to your GCP Project 
     - Add servvices by data center location and GCP project name, for example...
     - Add a Virtual Machine instance & a Cloud Storage bucket which are located...
@@ -48,6 +48,7 @@
  - GCP service costs are billed to **YOU** for FREE Tier (after you've spent your $300 credit)
  - GCP FREE tier account have built-in service usage limits - [link](https://cloud.google.com/free/docs/gcp-free-tier)
  - GCP service costs are billed to **YOUR COMPANY**  (or research group) for Organizational Accounts
+ - Set up a GCP Budget to get notified when GCP services exceed a service cost limit you set (this is useful for testing accounts)
  - Understand GCP Billing Accounts & Resources Hierachy (shown below)
     - A billing account can be linked to one or more GCP projects and the billing account specifies how you pay (credit card, invoice...) for GCP services
    - A billing account is linked to a payment profile (individual or corporate)
