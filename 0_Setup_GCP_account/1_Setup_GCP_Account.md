@@ -10,11 +10,11 @@
  - Preparation for running analysis on public cloud services hosted by GCP
 
 ### Key considerations
- - Use the best GCP Account type:
-    - **Use GCP Free Tier** (get $ 300 USD in GCP credits for new users) minimal service limits set by Google - [link](https://cloud.google.com/free) --OR--
+ - Use the best GCP Account type:  
+      - **Use GCP Free Tier** (get $ 300 USD in GCP credits for new users) minimal service limits set by Google - [link](https://cloud.google.com/free) --OR--
     - **Use Your Organization's GCP Account** - service limits set by your company & Google
- - Understand the size & complexity of your analysis
- - Review your budget / timeline
+ - Understand the size & complexity of your analysis  
+ - Review your budget / timeline  
  - Determine the location (Google data center) for your project - [GCP data center locations](https://cloud.google.com/about/locations/) shown below
 
    [![GCP Locations](/images/all-regions.png)]()
@@ -45,11 +45,11 @@
  [![gcp-account](/images/gcp-account.png)]()
 
 ### Other Things to Know
+  - GCP FREE tier account have built-in service usage limits - [link](https://cloud.google.com/free/docs/gcp-free-tier)
  - GCP service costs are billed to **YOU** for FREE Tier (after you've spent your $300 credit)
- - GCP FREE tier account have built-in service usage limits - [link](https://cloud.google.com/free/docs/gcp-free-tier)
  - GCP service costs are billed to **YOUR COMPANY**  (or research group) for Organizational Accounts
- - Set up a GCP Budget to get notified when GCP services exceed a service cost limit you set (this is useful for testing accounts)
- - Understand GCP Billing Accounts & Resources Hierachy (shown below)
+ - SET UP a **GCP Budget** to get notified when GCP services exceed a service cost limit you set (this is useful for testing accounts)
+ - REVIEW GCP Billing Accounts & Resources Hierachy (shown below)
     - A billing account can be linked to one or more GCP projects and the billing account specifies how you pay (credit card, invoice...) for GCP services
    - A billing account is linked to a payment profile (individual or corporate)
 

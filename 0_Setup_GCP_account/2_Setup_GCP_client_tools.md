@@ -7,9 +7,7 @@
 ### What is this
  Understand, select and configure GCP client tools. There are broadly two types of client tools.  
  
- One type runs in web browser, so there is nothing to install locally.
- 
- The second type requires downloading, installing and configuring client tools. If you chose to download a client tool, then be sure to follow the installation instructions for your particular type of laptop OS.  
+ One type runs in web browser, so there is nothing to install locally. The second type requires downloading, installing and configuring client tools. If you chose to download a client tool, then be sure to follow the installation instructions for your particular type of laptop OS.  
 
  Available GCP client tools include the following:  
 
@@ -53,8 +51,8 @@ Cloud Shell provides the following:
  - Use **GCP SDK language integration** (Python, Java... GCP SDK) to scale your analysis for large/huge jobs. Example of using the Python client libary - [link](https://cloud.google.com/compute/docs/tutorials/python-guide)
 
 ### How to do this
- - Click in GCP console and/or use shell - no setup /install required
- - Download GCP SDK - use gcp cli and/or sdk for your language, requires installation and configuration
+ - CLICK in GCP console and/or use shell - no setup /install required
+ - DOWNLOAD GCP SDK - use gcp cli and/or sdk for your language, requires installation and configuration
 
  ### 📺 Click below to see Lynn's 'Use GCP client tools' 6 min video
 [![GCP client tools - Google Cloud Platform for Bioinformatics](http://img.youtube.com/vi/ce1XZ68NdA8/0.jpg)](http://www.youtube.com/watch?v=ce1XZ68NdA8 "GCP client tools - Google Cloud Platform for Bioinformatics")
