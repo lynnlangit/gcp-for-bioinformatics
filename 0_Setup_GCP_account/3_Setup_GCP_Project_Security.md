@@ -27,8 +27,8 @@
 [![GCP IAM roles - Google Cloud Platform for Bioinformatics](http://img.youtube.com/vi/4oSA9bdwlPs/0.jpg)](http://www.youtube.com/watch?v=4oSA9bdwlPs "GCP IAM roles - Google Cloud Platform for Bioinformatics")
 
 ### Other Things to Know
- - Data is encrypted by default in Cloud Storage
- - You can use GCP service object labels to help you to indentify services instances that have different security requirements
+ - Data is encrypted by default in Cloud Storage using a Google-provided encryption key.  It is possible for you to supply your own encryption key when your requirements necessitate this.
+ - You can use GCP service object labels to help you to indentify services instances that have different security requirements.  They are implemented as key:value tag pairs, i.e. `"lab":"langit-lab"` etc...
 
 ### How to learn more
  - 📘 IAM Best practices - [link](https://cloud.google.com/iam/docs/using-iam-securely)
