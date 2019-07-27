@@ -27,7 +27,8 @@
 
 ### Other Things to Know
  - Use integrated search to intelligently search any Source Repository code - [link](https://cloud.google.com/source-repositories/docs/searching-code)
- - Source Repositories are integrated with Stackdriver activity log readers
+ - Understand Source Repositories by reviewing integrated Stackdriver activity log readers
+ - Use the open source [Spinnaker](https://www.spinnaker.io/) CI/CD service release for GCP GKE (Kubernetes) to build CI/CD for GKE clusters - [link](https://cloud.google.com/docs/ci-cd/spinnaker/spinnaker-for-gcp)
 
 ### How to learn more
  
