@@ -27,6 +27,7 @@
     - Use ML Text / Natural Language APIs
     - Use ML Table Analysis
     - Use Deep Variant
+    - Use TensorQTL
     - Use Google Compute Engine ML (deep learning) image to create a Virtual Machine
     - Use Google optimized Deep Learning container to create your own ML container
     - Use a Jupyter notebook in Google Colabs with BigQuery

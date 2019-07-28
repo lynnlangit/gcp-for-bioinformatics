@@ -11,6 +11,7 @@ Use AutoML for Text to analyze text and natural language
 - USE DeepVariant to perform variant analysis
 - USE Deep Learning VM image to create your own ML model 
 - USE Deep Learning container image to create your own ML model/container
+- USE TensorQTL for very fast GPU-based QTL mapping
 - USE Jupyter notebook with BigQuery API
 - USE Jupyter notebook with BigQuery and BQ ML APIs
 
