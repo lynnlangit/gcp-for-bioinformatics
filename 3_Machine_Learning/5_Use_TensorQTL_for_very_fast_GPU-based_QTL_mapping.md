@@ -2,7 +2,7 @@
 
 ### Why do this
  - ANALYZE structured data stored in tables via machine learning models
- - USE GCP to create the best-fit ML model for your data
+ - USE GCP & TensorFlow to create the best-fit ML model for your data
 
 ### What is this
  - TensorQTL is a GPU-based QTL mapper, enabling ~200-300 fold faster cis- and trans-QTL mapping compared to CPU-based implementations
@@ -10,25 +10,24 @@
 
 
 ### Key considerations
- - USE three input files: genotypes, phenotypes, and covariates
- - Phenotypes must be provided in BED format (phenotypes x samples), and covariates as a text file (covariates x samples)
+ - USE three input files: genotypes, phenotypes, & covariates
+ - Phenotypes must be provided in BED format (phenotypes x samples), & covariates as a text file (covariates x samples)
 
 ### How to do this
- - Install and Setup
- - Run
-    - Example  
+ - Install & Setup the library from GitHub (link at bottom)
+ - Run your Analysis (example below)   
     `python3 -m tensorqtl ${plink_prefix_path} ${expression_bed} ${prefix} \`
     `--covariates ${covariates_file} \`
     `--mode cis_nominal`
 
 ### How to verify you've done it
- - Review results (produced in `parquet` format)
+ - Review your results / output
+ - Produced in `parquet` file format
 
 ### Other Things to Know
- - TensorQTL can be run as a python module, when performing multiple analysis
-    - Example  
-    `import pandas as pd`
-    `import tensorqtl`
+ - TensorQTL can be run as a python module, when performing multiple analysis (example below)  
+    `import pandas as pd`  
+    `import tensorqtl`  
     `from tensorqtl import genotypeio`
  - Site the paper (listed below) if using TensorQTL in your research
  - TensorQTL uses TensorFlow v 1.13
