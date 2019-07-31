@@ -1,17 +1,19 @@
-# USE TensorQTL for very fast GPU-based QTL mapping
+# USE TensorQTL for GPU-optimized QTL mapping
 
 ### Why do this
  - ANALYZE structured data stored in tables via machine learning models
+   - via optimized QTL (quantitative trait loci) mapping
+   - via optimized Bayesian non-negative matrix factorization (named SignatureAnalyzer-GPU)
  - USE GCP & TensorFlow to create the best-fit ML model for your data
 
 ### What is this
- - TensorQTL is a GPU-based QTL mapper, enabling ~200-300 fold faster cis- and trans-QTL mapping compared to CPU-based implementations
+ - TensorQTL is a GPU-based QTL mapper, enabling **~200-300 fold faster** cis- and trans-QTL mapping (compared to CPU-based implementations)
  - Use a number of different commands for processing
-
 
 ### Key considerations
  - USE three input files: genotypes, phenotypes, & covariates
- - Phenotypes must be provided in BED format (phenotypes x samples), & covariates as a text file (covariates x samples)
+ - PROVIDE phenotypes in BED format (phenotypes x samples)
+ - PROVIDE covariates as a text file (covariates x samples)
 
 ### How to do this
  - Install & Setup the library from GitHub (link at bottom)
@@ -33,6 +35,6 @@
  - TensorQTL uses TensorFlow v 1.13
 
 ### How to learn more
- - :orange_book: Link to notebook [provides examples for running cis- and trans-QTL mapping with tensorQTL](https://github.com/broadinstitute/tensorqtl/blob/master/example/tensorqtl_examples.ipynb)
- - 📘 Link to paper ['Scaling computational genomics to millions of individuals with GPUs'](https://www.biorxiv.org/content/10.1101/470138v3)
- - :octocat: Link to [TensorQTL](https://github.com/broadinstitute/tensorqtl) GitHub Repo
+ - :orange_book: Link to notebook - [provides examples for running cis- & trans-QTL mapping with tensorQTL](https://github.com/broadinstitute/tensorqtl/blob/master/example/tensorqtl_examples.ipynb) 
+ - 📘 Link to paper - ['Scaling computational genomics to millions of individuals with GPUs'](https://www.biorxiv.org/content/10.1101/470138v3)
+ - :octocat: Link to [TensorQTL](https://github.com/broadinstitute/tensorqtl) GitHub Repo 
