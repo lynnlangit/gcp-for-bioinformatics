@@ -2,35 +2,44 @@
 
 ### Why do this
  - PERFORM analysis on files using SQL statements
- - PAY by the query and to avoid setting up any infrastructure (VMs)
+ - PAY by the query & avoid setting up any infrastructure (VMs or docker container image instance clusters)
 
 ### What is this
- - Ability to perform queries on file data at scale
- - Ability to execute ansi SQL queries on files stored in Cloud Storage or BQ Storage
+ - QUERY on file data (including genomic file formats, such as VCF files) at scale using [ansi-SQL](https://en.wikipedia.org/wiki/SQL) query commands
+ - QUERY on files stored in Big Query storage of other Google Services, such as [CloudStorage, Google Drive or Big Table](https://cloud.google.com/bigquery/external-data-sources)
 
 ### Key considerations
- - Understand how BQ billing works - you are charged by the amount of data scanned
+ - Understand how BQ billing works - you are charged by the amount of data scanned by your query
  - Billing starts at $5/TB scanned
  - Each query will estimate the amount of data scanned (shown below on the bottom right)
  - Google provides many public reference datasets (including 1000 Genomes) which you can query (shown below)
 
 ### How to do this
  - LEARN SQL syntax - [link](https://www.w3schools.com/sql/sql_intro.asp)
- - REQUEST account from your organization -or- Setup free tier (testing) account
- - USE BigQuery from the GPP console, write and review cost for a SQL query referencing a BQ dataset - link to example [analyze genomic variants with BQ](https://cloud.google.com/genomics/docs/tutorials/analyze-variants-advanced)
- - WORK with BQ. Datasets are files, which can be stored in Cloud Storage or as a BigQuery dataset
- - EXECUTE the query by clicking the 'run' button, example results shown below
- - VIEW the results and/or save the results into a new file in a storage bucket
+ - USE BigQuery from the GCP UI console
+    - SELECT your dataset to query, use included genomic reference datasets and/or upload your own file data
+    - WRITE your SQL query referencing a BQ (or external) dataset 
+    - REVIEW potential query costs, link to example [analyze genomic variants with BQ](https://cloud.google.com/genomics/docs/tutorials/analyze-variants-advanced)
+    - EXECUTE the query by clicking the 'run' button, example results shown below
+    - VIEW the results 
+      - save the results as a new file in a storage bucket
+      - create a report with Google Data Studio
 
  ### 📺 Click to see Lynn's 9 minute exploration of this section  
 [![GCP BigQuery for Bioinformatics](http://img.youtube.com/vi/bWI8JPR9h0E/0.jpg)](http://www.youtube.com/watch?v=bWI8JPR9h0E "GCP BigQuery for Bioinformatics")
 
 -----
 ### How to verify you've done it
+ - EXECUTE your query by clicking the blue 'Run' button 
+ - VERIFY that the query results match your expected output  
+ Examples shown in screenshots below
+
+ TIPS:
+ - WRITE a query on a small subset of your data to verify that you've written your query correctly before you run a query on your full dataset
  - VERIFY the query cost BEFORE you run it 
  - VALIDATE the SQL syntax in the BQ web console
- - EXECUTE your query and verify that the results match the expected output
- - REVIEW the query 'Execution Details' (example shown below) to verify the actual query cost and execution ran as expected.  Example shown below  
+  - REVIEW the query 'Execution Details' to verify the actual query cost and execution ran as expected. 
+
  
  RUN QUERY
  [![BigQuery query](/images/query.png)]()
@@ -41,7 +50,8 @@
 
 ### Other Things to Know
  - Estimate query cost before running the query using the '--dry_run' parameter 
- - Avoid using 'SELECT * ...' in queries
+ - Avoid using 'SELECT * ...' in queries to reduce the amount of data scanned, speed up the query execution time and potentially reduce the cost of running the query
+ - BQ is a type of 'serverless' service, because you do NOT setup VMs or docker container clusters to use this service.  You simply upload your data, write your query and execute the query.  You are charged for query run time and BQ storage.  You are NOT charged for VMs, etc...
  - Use BQ best practices to manage service costs - [link](https://cloud.google.com/bigquery/docs/best-practices-costs)
  - Example BQ SQL queries for genomics - [link](https://github.com/verilylifesciences/variant-qc/tree/master/sql)
  - BQ includes many genomic or annotation data sets, a list is shown below
