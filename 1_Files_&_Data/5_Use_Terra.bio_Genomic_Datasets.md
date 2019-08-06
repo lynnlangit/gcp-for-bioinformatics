@@ -5,7 +5,7 @@
  [![terra-features](/images/terra-features.png)]()
 
  - USE genomic reference data in cloud-based analysis. Terra runs on GCP (capabilities shown above).
-  - USE data with bioinformatics tools (GATK, Hail...) & workflows on Jupyter notebooks or run scalable analysis on GCP without manually configuring Jupyter Hub, Cloud Storage & VMs (or container clusters)
+  - USE data with bioinformatics tools ([GATK](https://software.broadinstitute.org/gatk/), [Hail](https://hail.is/)...) & workflows on Jupyter notebooks or run scalable analysis on GCP without manually configuring Jupyter Hub, Cloud Storage & VMs (or container clusters)
  - READ - [The future of GATK tutorials is written in Notebooks](https://software.broadinstitute.org/gatk/blog?id=24167)
 
 
@@ -30,11 +30,14 @@ See screenshots below for general flow of working with reference data and your o
 - **LOGIN & SETUP** -> 
   - Navigate to [Terra.bio](https://terra.bio/) --> 'Try Terra' and authenticate with your email
    - Use $300 USD in GCP credit when you first try out Terra
-   - Create a Terra workspace to hold your notebooks 
+   - Create a Terra workspace to hold your notebooks or workflows which is where you will define your analysis using selected data 
 - **REFERENCE DATA** -> 
-  - Refer to public reference data (Terra Library -> Data) 
-  - Upload your own research data for analysis (Your Terra Workspace -> Data Section)
-  - Refer to data in Cloud Storage (use gs://{mybucket}/{my folder}) in your notebook
+  - IMPORT any subset from your authorized Terra reference data (Terra Library -> Data)  
+   --AND/OR--
+  - UPLOAD your own research data for analysis in one or more of these locations
+      - Within your Terra Workspace -> Data Section
+      - In a Cloud Storage bucket with appropriate permissions
+         - i.e. use `gs://{mybucket}/{my folder})` in your notebook or workflow
 - **SETUP ANALYSIS** -> 
   - Use (or import) a Terra (Jupyter) noteook 
   - Use (or import) a Terra workflow
@@ -43,13 +46,19 @@ See screenshots below for general flow of working with reference data and your o
 
 Starter screen
  [![terra-start](/images/terra-start.png)]()
-Review Showcase & Tutorials (View Examples Section)
- [![all-data](/images/all-data.png)]()
-Explore 1000 Genomes Public Dataset
- [![data](/images/data.png)]()
+Review Showcase & Tutorials (View Datasets Section)
 Click the top left menu and Create a Workspace to get started
  [![workspace](/images/workspace.png)]()
-Click on your workspace, then the Data menu to work with data for your analysis
+ Review available reference data
+ [![all-data](/images/all-data.png)]()
+Explore 1000 Genomes Public Dataset. Click 'Save in Terra' to save your selection as a cohort in your Terra workspace
+ [![data](/images/data.png)]()
+ Import your selected data into your Terra workspace
+ [![import-data](/images/import-data.png)]()
+ Work with your selected data in your Terra workspace in the Data section
+ [![view-data](/images/view-data.png)]()
+
+Use the integrated Data Viewers to examine your reference data and analysis data
  [![data-workspace](/images/data-workspace.png)]()
  
 ### How to verify you've done it
@@ -62,7 +71,7 @@ Click on your workspace, then the Data menu to work with data for your analysis
 ----
 
 ### Other Things to Know
- - If you download data, you may incur GCP service charges.
+ - If you download data to your local laptop, you may incur GCP service charges.
 
 ### How to learn more
  - 📙 Try out some example Terra notebooks using the [Terra Notebooks Playground](https://app.terra.bio/#workspaces/help-gatk/Terra%20Notebooks%20Playground) workspace - examples using Python, R and also many bioinformatics tools
