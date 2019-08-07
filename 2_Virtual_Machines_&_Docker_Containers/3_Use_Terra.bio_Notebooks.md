@@ -54,7 +54,7 @@ Review Public Reference Data (Browse Data Section)
  [![all-data](/images/all-data.png)]()
 Explore 1000 Genomes Public Dataset
  [![data](/images/data.png)]()
-Click the top left menu and Create a Workspace to get started
+Click the top left menu to create or select your Workspace to get started
  [![workspace](/images/workspace.png)]()
 Click on your workspace, then the Notebooks menu to run Notebooks
  [![workspace-menu](/images/workspace-menu.png)]()
