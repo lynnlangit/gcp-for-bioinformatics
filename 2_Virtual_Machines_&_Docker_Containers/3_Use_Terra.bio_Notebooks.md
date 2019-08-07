@@ -46,17 +46,15 @@ See screenshots below for general flow of working with Terra.
 
 ### Example Screenshots from Terra
 
-Starter screen
- [![terra-start](/images/terra-start.png)]()
-Review Showcase & Tutorials (View Examples Section)
+Explore `Showcase & Tutorials` section -> includes example bioinformatics notebooks
  [![workspaces](/images/workspaces.png)]()
-Review Public Reference Data (Browse Data Section)
+Explore `Datasets` section -> contains reference datasets
  [![all-data](/images/all-data.png)]()
-Explore 1000 Genomes Public Dataset
+Explore 1000 Genomes Public Dataset using the built-in data browser tool
  [![data](/images/data.png)]()
-Click the top left menu to create or select your Workspace to get started
+Click the top left Terra menu to create or select your Workspace to start working with your own Terra Notebook
  [![workspace](/images/workspace.png)]()
-Click on your workspace, then the Notebooks menu to run Notebooks
+Click on your workspace, then the `Notebooks` menu to run Notebooks
  [![workspace-menu](/images/workspace-menu.png)]()
  
 ### How to verify you've done it

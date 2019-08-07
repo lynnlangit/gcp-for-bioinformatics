@@ -72,6 +72,20 @@ Use the integrated Data Viewers to examine your reference data and analysis data
 
 ### Other Things to Know
  - If you download data to your local laptop, you may incur GCP service charges.
+ - Terra terms:
+    - **Workspace** -> Container for workflow(s)
+    - **Notebook** -> Jupyter notebook (*.ipynb file type)
+    - **Tables** -> your imported reference datasets
+    - **Reference Data** -> public reference data
+    - **Workspace (Other) Data** -> your uploaded research data - the 'Data' tab in the Terra UI
+      More about the Terra Data Model - [link](https://gatkforums.broadinstitute.org/firecloud/discussion/9769/data-model)
+      - Participant -> a person enrolled in a study
+      - Sample -> a biological sample collected from a participant
+      - Pair -> represents a pair of biological samples collected from a participant
+      - Set -> group of Participants, Samples or Pairs
+
+  [![data-model](/images/data-model.png)]()  
+  Image of Terra Data Model from this [link](https://software.broadinstitute.org/firecloud/documentation/quickstart?page=data)
 
 ### How to learn more
  - 📙 Try out some example Terra notebooks using the [Terra Notebooks Playground](https://app.terra.bio/#workspaces/help-gatk/Terra%20Notebooks%20Playground) workspace - examples using Python, R and also many bioinformatics tools
