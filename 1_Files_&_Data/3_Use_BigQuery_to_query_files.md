@@ -6,7 +6,7 @@
 
 ### What is this
  - QUERY on file data (including genomic file formats, such as VCF files) at scale using [ansi-SQL](https://en.wikipedia.org/wiki/SQL) query commands
- - QUERY on files stored in Big Query storage of other Google Services, such as [CloudStorage, Google Drive or Big Table](https://cloud.google.com/bigquery/external-data-sources)
+ - QUERY on files stored in Big Query storage of other Google Services, such as [CloudStorage, Google Drive or Big Table](https://cloud.google.com/bigquery/external-data-sources) or [CloudSQL (MySQL or PostgreSQL)](https://cloud.google.com/bigquery/docs/cloud-sql-federated-queries)
 
 ### Key considerations
  - Understand how BQ billing works - you are charged by the amount of data scanned by your query
@@ -38,7 +38,9 @@
  - WRITE a query on a small subset of your data to verify that you've written your query correctly before you run a query on your full dataset
  - VERIFY the query cost BEFORE you run it 
  - VALIDATE the SQL syntax in the BQ web console
-  - REVIEW the query 'Execution Details' to verify the actual query cost and execution ran as expected. 
+  - REVIEW the query 'Execution Details' to verify the actual query cost and execution ran as expected
+  - ESTIMATE query cost before running the query using the `--dry_run` parameter 
+ - AVOID using `SELECT * ...` in queries to reduce the amount of data scanned, speed up the query execution time and potentially reduce the cost of running the query
 
  
  RUN QUERY
@@ -49,12 +51,11 @@
   [![BigQuery plan](/images/plan.png)]()
 
 ### Other Things to Know
- - Estimate query cost before running the query using the '--dry_run' parameter 
- - Avoid using 'SELECT * ...' in queries to reduce the amount of data scanned, speed up the query execution time and potentially reduce the cost of running the query
- - BQ is a type of 'serverless' service, because you do NOT setup VMs or docker container clusters to use this service.  You simply upload your data, write your query and execute the query.  You are charged for query run time and BQ storage.  You are NOT charged for VMs, etc...
+ 
+ - UNDERSTAND that BQ is a type of 'serverless' service, because you do NOT setup VMs or docker container clusters to use this service.  You simply upload your data, write your query and execute the query.  You are charged for query run time and BQ storage.  You are NOT charged for VMs, etc...
  - Use BQ best practices to manage service costs - [link](https://cloud.google.com/bigquery/docs/best-practices-costs)
- - Example BQ SQL queries for genomics - [link](https://github.com/verilylifesciences/variant-qc/tree/master/sql)
- - BQ includes many genomic or annotation data sets, a list is shown below
+ - SEE example BQ SQL queries for genomics - [link](https://github.com/verilylifesciences/variant-qc/tree/master/sql)
+ - USE BQ includes many genomic or annotation data sets, a list is shown below
  [![bq-public-data](/images/bq-public-data.png)]()
 
  -------
