@@ -24,9 +24,9 @@
       - The Deployment Manager system will interpret each template recursively & inline the results within the configuration file 
 
    - When you execute a deployment, each execution produces a manifest file. A manifest provides three views of a deployment:
-      - The initial configuration
-      - The fully-evaluated configuration after all templates and imports have been expanded
-      - The layout of the deployment, which describes all the resources for the deployment in a hierarchical structure.
+      - Initial configuration
+      - Fully-evaluated configuration after all templates and imports have been expanded
+      - Layout of the deployment, which describes all the resources for the deployment in a hierarchical structure.
  
 The relationship between GCP deployment file types is shown in the diagram below
   [![deployment-gcp](/images/deployment-gcp.png)]()
