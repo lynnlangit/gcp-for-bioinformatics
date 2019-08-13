@@ -1,0 +1,7 @@
+Type, Name
+FASTA, sequencer file
+FASTQ, sequencer file aligned
+SAM, sequence alignment file
+BAM, binary alignment file
+UBAM, unaligned binary alignment file
+VCF, variant file
