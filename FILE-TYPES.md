@@ -4,16 +4,16 @@ This page lists types of files used in genomic analysis.
 
 ## Summary Table
 
-|Type |Name                             |Phase                 |Notes                              |Link to example file                                                                                                                       |
+|Type |Name                             |Phase                 |Notes                              |Example File Image                                                                                                                     |
 |-----|---------------------------------|----------------------|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-|FASTA| sequencer file                  | 1a-from sequencer     | includes dictionary & index files | https://software.broadinstitute.org/gatk/documentation/article?id=11013                                                                   |
-|FASTQ| sequencer file w/quality        | 1b-from sequencer     | includes base quality PHRED score | https://support.illumina.com/bulletins/2016/04/fastq-files-explained.html                                                                  |
-|UBAM | unmapped binary alignment file  | 1c-from sequencer (processed)     | binary format                     | https://gatkforums.broadinstitute.org/gatk/discussion/5990/what-is-ubam-and-why-is-it-better-than-fastq-for-storing-unmapped-sequence-data|
-|SAM  | sequence alignment file         | 2a-align to reference | text format                       | https://software.broadinstitute.org/gatk/documentation/article?id=11014                                                                   |
-|BAM  | binary alignment file           | 2b-align to reference | binary format                     | https://software.broadinstitute.org/gatk/documentation/article?id=11014                                                                    |
-|CRAM | compressed binary alignment file| 2c-align to reference | binary format                     | https://software.broadinstitute.org/gatk/documentation/article?id=11014                                                                   |
-|VCF  | variant call format             | 3a-find variants      | plain text                        | https://software.broadinstitute.org/gatk/documentation/article?id=11005                                                                   |
-|GVCF | genomic variant call format     | 3b-find variants      |contains extra info                | https://software.broadinstitute.org/gatk/documentation/article?id=11004                                                                   |
+|[FASTA](https://software.broadinstitute.org/gatk/documentation/article?id=11013)| sequencer file                  | 1a-from sequencer     | includes dictionary & index files | ![FASTA](/images/fasta.png)                                                                   |
+|[FASTQ](https://support.illumina.com/bulletins/2016/04/fastq-files-explained.html)| sequencer file w/quality        | 1b-from sequencer     | includes base quality PHRED score | ![FASTQ](/images/fastq.png)                                                                  |
+|[UBAM](https://gatkforums.broadinstitute.org/gatk/discussion/5990/what-is-ubam-and-why-is-it-better-than-fastq-for-storing-unmapped-sequence-data)| unmapped binary alignment file  | 1c-from sequencer (processed)     | binary format                     | No Image
+|[SAM](https://software.broadinstitute.org/gatk/documentation/article?id=11014  )  | sequence alignment file         | 2a-align to reference | text format                       | ![SAM-format](/images/sam-format.png)  ![SAM](/images/sam.png)                                                                |
+|[BAM](https://software.broadinstitute.org/gatk/documentation/article?id=11014   )  | binary alignment file          | 2b-align to reference | binary format, being read with IGV viewer                     | ![BAM](/images/viz-bam.png)                                                                   |
+|[CRAM](https://software.broadinstitute.org/gatk/documentation/article?id=11014   ) | compressed binary alignment file| 2c-align to reference | binary format                     | no image                                                               |
+|[VCF](https://software.broadinstitute.org/gatk/documentation/article?id=11005   )  | variant call format             | 3a-find variants      | plain text                        | ![VCF](/images/vcf-file.png ) ![VCF-format](/images/vcf.png)                                                                  |
+|[GVCF](https://software.broadinstitute.org/gatk/documentation/article?id=11004    ) | genomic variant call format     | 3b-find variants      |contains extra info                | ![GVCF](/images/gvcf.png)                                                                   |
 
 ## Example Images
 
