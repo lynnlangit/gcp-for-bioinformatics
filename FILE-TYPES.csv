@@ -1,7 +1,9 @@
-Type, Name
-FASTA, sequencer file
-FASTQ, sequencer file aligned
-SAM, sequence alignment file
-BAM, binary alignment file
-UBAM, unaligned binary alignment file
-VCF, variant file
+Type, Name, Notes, Link
+FASTA, sequencer file, includes dictionary & index files, https://software.broadinstitute.org/gatk/documentation/article?id=11013
+FASTQ, sequencer file aligned, includes a base quality PHRED score,https://support.illumina.com/bulletins/2016/04/fastq-files-explained.html 
+SAM, sequence alignment file,xx, https://software.broadinstitute.org/gatk/documentation/article?id=11014
+BAM, binary alignment filexx, xx,https://software.broadinstitute.org/gatk/documentation/article?id=11014
+UBAM, unaligned binary alignment file,xx, https://software.broadinstitute.org/gatk/documentation/article?id=11008
+CRAM, compressed binary alignment file,xx, https://software.broadinstitute.org/gatk/documentation/article?id=11014
+VCF, variant call format, plain text, https://software.broadinstitute.org/gatk/documentation/article?id=11005
+GVCF, genomic variant call format, contains extra info, https://software.broadinstitute.org/gatk/documentation/article?id=11004
