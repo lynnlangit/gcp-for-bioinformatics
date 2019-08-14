@@ -1,6 +1,6 @@
 Type, Name, Phase, Notes, Link to example file
-FASTA, sequencer file, 1-from sequencer, includes dictionary & index files, [link](https://software.broadinstitute.org/gatk/documentation/article?id=11013)
-FASTQ, sequencer file w/quality, 1-from sequencer,includes a base quality PHRED score,[link](https://support.illumina.com/bulletins/2016/04/fastq-files-explained.html) 
+FASTA, sequencer file, 1-from sequencer, includes dictionary & index files, https://software.broadinstitute.org/gatk/documentation/article?id=11013
+FASTQ, sequencer file w/quality, 1-from sequencer,includes a base quality PHRED score,https://support.illumina.com/bulletins/2016/04/fastq-files-explained.html
 UBAM, unmapped binary alignment file,1-from sequencer,binary format, https://gatkforums.broadinstitute.org/gatk/discussion/5990/what-is-ubam-and-why-is-it-better-than-fastq-for-storing-unmapped-sequence-data
 SAM, sequence alignment file,2-align to reference, text format, https://software.broadinstitute.org/gatk/documentation/article?id=11014
 BAM, binary alignment file, 2-align to reference, binary format,https://software.broadinstitute.org/gatk/documentation/article?id=11014
