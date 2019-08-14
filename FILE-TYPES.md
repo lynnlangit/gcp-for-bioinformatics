@@ -15,20 +15,6 @@ This page lists types of files used in genomic analysis.
 |[VCF](https://software.broadinstitute.org/gatk/documentation/article?id=11005   )  | variant call format             | 3a-find variants      | plain text                        | ![VCF](/images/vcf-file.png ) ![VCF-format](/images/vcf.png)                                                                  |
 |[GVCF](https://software.broadinstitute.org/gatk/documentation/article?id=11004    ) | genomic variant call format     | 3b-find variants      |contains extra info                | ![GVCF](/images/gvcf.png)                                                                   |
 
-## Example Images
-
-1a. Fasta file![Fasta](/images/fasta.png)
-1b. Fastq file![Fastq](/images/fastq.png)
-
-1c. UBAM file - no image  
-
-2a1. SAM file format![SAM-format](/images/sam-format.png) 
-2a2. SAM file example![SAM](/images/sam.png)
-2b. BAM file being read with IGV viewer tool![BAM](/images/viz-bam.png)
-3a1. VCF file![VCF](/images/vcf-file.png)
-3a2. VCF file format![vcf](/images/vcf.png)
-3b. GVF file to VCF file comparison![GVCF](/images/gvcf.png)
-
 ### Image References and Links
  - FASTA/FASTQ images from [link](https://www.researchgate.net/publication/309134977_A_Survey_on_Data_Compression_Methods_for_Biological_Sequences)
  - BAM w/IGV from [link](https://gatkforums.broadinstitute.org/gatk/discussion/6491/howto-visualize-an-alignment-with-igv)
