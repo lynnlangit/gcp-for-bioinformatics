@@ -1,22 +1,22 @@
 # Use Terra.bio Genomic Data
 
 ### Why do this
-
- [![terra-features](/images/terra-features.png)]()
-
  - USE genomic reference data in cloud-based analysis. Terra runs on GCP (capabilities shown above).
   - USE data with bioinformatics tools ([GATK](https://software.broadinstitute.org/gatk/), [Hail](https://hail.is/)...) & workflows on Jupyter notebooks or run scalable analysis on GCP without manually configuring Jupyter Hub, Cloud Storage & VMs (or container clusters)
  - READ - [The future of GATK tutorials is written in Notebooks](https://software.broadinstitute.org/gatk/blog?id=24167)
 
+ Core Terra Capabilities
+ [![terra-features](/images/terra-features.png)]()
+
 
 ### What is this
 
- USE Terra reference data for analysis - the web ui in this system is shown belown
+ USE Terra reference data in your analysis jobs. Terra includes the ability to reference a number of datasets that are hosted in the cloud already.   
 
+Terra Datasets Web  UI
 [![data-view](/images/data-view.png)]()
  
- EXPLORE genomic reference datasets using the interactive data viewer --  shown below, to decide when they'll be useful in your analysis. 
-
+Explore Terra Datasets using the interactive data viewer
 [![data-viewer](/images/data-viewer.png)]()
 
 ### Key considerations
