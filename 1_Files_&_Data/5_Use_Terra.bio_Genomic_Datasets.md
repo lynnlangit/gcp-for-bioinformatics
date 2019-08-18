@@ -21,10 +21,10 @@ Explore Terra Datasets using the interactive data viewer
 
 ### Key considerations
 - Many Terra (GCP) datasets require authenticated access.  The '1000 Genomes' dataset has public access.
-- Import and use any subset of reference data in your Terra analysis (notebook or worflow)
+- Import and use any subset of reference data in your Terra analysis (notebook or workflow)
 
 
-### How to do this
+### How to do this and verify 
 
 See screenshots below for general flow of working with reference data and your own data in Terra.  
 - **LOGIN & SETUP** -> 
@@ -38,40 +38,38 @@ See screenshots below for general flow of working with reference data and your o
       - Within your Terra Workspace -> Data Section
       - In a Cloud Storage bucket with appropriate permissions
          - i.e. use `gs://{mybucket}/{my folder})` in your notebook or workflow
-- **SETUP ANALYSIS** -> 
+- **SETUP ANALYSIS with your data** -> 
   - Use (or import) a Terra (Jupyter) noteook 
-  - Use (or import) a Terra workflow
+  - Use (or import) a Terra (WDL) workflow
 
 ### Example Screenshots from Terra
 
-Starter screen
+1. Starter screen
  [![terra-start](/images/terra-start.png)]()
-Review Showcase & Tutorials (View Datasets Section)
+2. Review Showcase & Tutorials (View Datasets Section)
 Click the top left menu and Create a Workspace to get started
  [![workspace](/images/workspace.png)]()
- Review available reference data
+3. Review available reference data
  [![all-data](/images/all-data.png)]()
-Explore 1000 Genomes Public Dataset. Click 'Save in Terra' to save your selection as a cohort in your Terra workspace
+4. Explore 1000 Genomes Public Dataset. Click 'Save in Terra' to save your selection as a cohort in your Terra workspace
  [![data](/images/data.png)]()
- Import your selected data into your Terra workspace
+5. Import your selected data into your Terra workspace
  [![import-data](/images/import-data.png)]()
- Work with your selected data in your Terra workspace in the Data section
+6. Select the files in your Terra workspace Data section
  [![view-data](/images/view-data.png)]()
-
-Use the integrated Data Viewers to examine your reference data and analysis data
+7. Use the blue `+` buttons to add files to your workspace
+ [![add-files](/images/add-files.png)]()
+8. Use the data preview to examine your reference data in your workspace
  [![data-workspace](/images/data-workspace.png)]()
- 
-### How to verify you've done it
- You can preview or download your files if need be from the Terra data tab.
-
- For some file types, you can use the integrated IGV file viewer
-    
-[![data-igv](/images/data-igv.png)]()  
+9. Work with your selected data using the IGV viewer or WDL workflow
+ [![open-with](/images/open-with.png)]()
+10. Example of using the integrated IGV file viewer to view a files
+[![data-igv](/images/data-igv.png)]() 
 
 ----
 
 ### Other Things to Know
- - If you download data to your local laptop, you may incur GCP service charges.
+ - NOTE: If you download data to your local laptop, you may incur GCP service charges.
  - Terra terms:
     - **Workspace** -> Container for workflow(s)
     - **Notebook** -> Jupyter notebook (*.ipynb file type)
