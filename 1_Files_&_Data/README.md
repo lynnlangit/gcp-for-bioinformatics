@@ -11,7 +11,7 @@ Here are the topic pages in this section:
 - Use Public Genomic Datasets
 - Use Big Query to query files
 - Use Cloud SQL to store tabular data
-- Use Terra.bio reference Genomic Datasets
+- Use Terra.bio Data section and reference Genomic Datasets
 
 The sections of the reference architecture outlined in red will be covered.
 
