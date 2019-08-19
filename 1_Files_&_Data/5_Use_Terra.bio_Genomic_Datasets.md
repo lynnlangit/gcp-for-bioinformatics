@@ -8,21 +8,13 @@
  Core Terra Capabilities
  [![terra-features](/images/terra-features.png)]()
 
-
 ### What is this
 
  USE Terra reference data in your analysis jobs. Terra includes the ability to reference a number of datasets that are hosted in the cloud already.   
 
-Terra Datasets Web  UI
-[![data-view](/images/data-view.png)]()
- 
-Explore Terra Datasets using the interactive data viewer
-[![data-viewer](/images/data-viewer.png)]()
-
 ### Key considerations
 - Many Terra (GCP) datasets require authenticated access.  The '1000 Genomes' dataset has public access.
 - Import and use any subset of reference data in your Terra analysis (notebook or workflow)
-
 
 ### How to do this and verify 
 
@@ -42,9 +34,9 @@ See screenshots below for general flow of working with reference data and your o
   - Use (or import) a Terra (Jupyter) noteook 
   - Use (or import) a Terra (WDL) workflow
 
-### Example Screenshots from Terra
+### Data Workflow Screens from Terra
 
-1. Starter screen
+1. Starter screen - select 'Browse Data'
  [![terra-start](/images/terra-start.png)]()
 2. Review Showcase & Tutorials (View Datasets Section)
 Click the top left menu and Create a Workspace to get started
