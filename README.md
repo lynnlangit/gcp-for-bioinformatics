@@ -32,9 +32,10 @@ Read about, watch demo or try out **EACH ☁️GCP service**, ordered by topic i
 5. 📘EXPAND - go to linked resources to learn about advanced aspects of each service
 ---
 
-### To Understand the Scope of Services covered in this Repo 
+### To Understand the scope of services in this Repo 
 1. 🔍SCAN - a list of [all topics](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/TOPICS.md) covered in this Repo
 2. 🔍SCAN - a diagram showing a [GCP Genomics Pipeline](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/ARCHITECTURE.md) reference architecture
+3. 🔍SCAN - a list of a [Genomics file types](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/FILE-TYPES.md) with examples shown 
 
 -----
 
