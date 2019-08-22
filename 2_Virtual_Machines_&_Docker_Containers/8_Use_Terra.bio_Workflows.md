@@ -5,6 +5,7 @@
  - USE bioinformatics tools (GATK, Hail...) in Terra workflows on GCP
  - RUN scalable analysis on GCP without manually configuring Cloud Storage & VMs (or container clusters)
  - READ - [Getting Stated with GATK via Terra Workspaces](https://software.broadinstitute.org/gatk/blog?id=24102)
+ - UNDERSTAND job overhead on GCP using Job Manager tools in Terra
  
 ### What is this
  
@@ -26,6 +27,7 @@
 - CONSIDER costs 
     - Terra workflows use resources from GCP and The Broad Institute 
     - From GCP, Terra uses Compute Engine, Google Pipelines/Genomics API, Cloud Storage and other services
+    - Terra includes a UI called `Job Manager` that helps you understand the overhead on GCP of running your jobs
 
 ### How to do this
 
