@@ -16,7 +16,9 @@
  - Interactive access is available in the BigQuery console. You can explore variant calls in case/control & cohort analysis. There are sample queries to help you get started. [GO TO CLOUD GENOMICS DATASETS IN BIGQUERY](https://bigquery.cloud.google.com/project/genomics-public-data)
 
  - File access is available from Cloud Storage. Files are available in BAM, VCF, or FASTA formats. 
- - To access these public files, you can use a number of GCP services (such as Compute Engine VMs), or tools such as Terra.bio from The Broad or others. [GO TO THE CLOUD GENOMICS BUCKET IN CLOUD STORAGE](https://console.cloud.google.com/storage/genomics-public-data/)
+ - To access these public files, you can use a number of GCP services (such as Compute Engine VMs), or tools such as Terra.bio from The Broad or others.
+    - Go to the [public REFERENCE Files](https://console.cloud.google.com/storage/genomics-public-data/) cloud storage bucket
+    - Go to the [public ANNOTATION Files](https://console.cloud.google.com/storage/browser/gcs-public-data--genomics/human-variant-annotation) cloud storage bucket
 
 ### How to verify you've done it
  - REFERENCE the file in a BigQuery query or a VM-based analysis
