@@ -20,6 +20,7 @@ This page lists types of files used in genomic analysis.
   - :octocat: Learning how to work with VCF (Variant Call Format) files 
  [link](https://github.com/davetang/learning_vcf_file)
  - 📘General reference 'How sequencing works' - [link](https://learn.gencore.bio.nyu.edu/ngs-file-formats/how-sequencing-works/)
+ - 📘GATK tools (from The Broad) to convert genomic files - [link](https://support.terra.bio/hc/en-us/articles/360029577711-Converting-common-genomics-file-formats-) - from/to common formats (i.e. paired FASTQ to unmapped BAM, etc...)
  - 📘How to generate a BAM - [link](https://gatkforums.broadinstitute.org/gatk/discussion/5969/how-to-generate-a-bam-for-variant-discovery-long) & image below from The Broad
 
  ![Generate-BAM](/images/generate-BAM.png)
