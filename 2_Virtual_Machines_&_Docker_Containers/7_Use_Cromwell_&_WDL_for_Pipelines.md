@@ -15,7 +15,7 @@
 [![wdl-concepts](/images/wdl-concepts.png)]()
 
 ### Key considerations
- - USE cromwell with Google Pipelines API to manage the GCE (VM) resources for your analysis job
+ - USE cromwell with Google Pipelines API to manage the GCE (VM) resources for your analysis job with fewer manual configuaration steps
  - USE WDL scripts to configure the workflow inputs and outputs (for each bioinformatics tool used)
  - REFERENCE your scripts, jar files or docker container images for each of the bioinformatics tool used in your workflow
  - USE JSON files to configure the input/output parameters for each tool and also for EACH job execution
@@ -37,7 +37,12 @@
  - USE GCP Stackdriver to monitor the overhead (CPU, memory etc...usage) for the Compute Engine VMs during job executions
 
 ### Other Things to Know
- - Link to general GATK tool usage best practice guidlines from The Broad - [link](https://software.broadinstitute.org/gatk/best-practices/)
+ - General GATK tool usage best practice guidlines from The Broad - [link](https://software.broadinstitute.org/gatk/best-practices/)
+ - Cromwell can be run in 'stand-alone' or '(persistent) server mode'
+    - VERIFY the version of Cromwell, WDL and tools when creating workflows (i.e. v44) - [link](https://github.com/broadinstitute/cromwell/releases/download/44/cromwell-44.jar)
+    - USE the 'wdl_runner' tool to run/test Cromwell workflows locally - [link](https://github.com/broadinstitute/wdl-runner)
+    - USE the Broad's 'WOM tool' to validate WDL workflow syntax - [link](https://github.com/broadinstitute/cromwell/releases/download/44/womtool-44.jar)
+    - USE the Broad's Terra platform to run your workflow on a persistent Cromwell server using a web UI - [link](https:/terra.bio)
  - Cromwell is runnable in a variety of compute environments, see graphic below
 
  [![cromwell-others](/images/cromwell-others.png)]()
