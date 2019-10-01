@@ -117,3 +117,4 @@ Terra is the next generation of The Broad Institute's Firecloud tool. Shown belo
  - 📺 Watch [using Docker containers on Terra](https://www.youtube.com/watch?v=jv_HSFBYOJs) - 22 minute video from the Broad Institute
   - See [GATK Dictionary](https://software.broadinstitute.org/gatk/documentation/topic?name=dictionary) for definitions of key terms used in GATK docs
   - 📘 Link to tutorial to learn how to [register a custom bioinformatics tool or workflow](https://docs.dockstore.org/docs/prereqs/) in Dockstore
+   - 📘 Link to article to learn how to [request to feature your workspace](https://support.terra.bio/hc/en-us/articles/360033599791-Feature-Your-Workspace-) in Terra
