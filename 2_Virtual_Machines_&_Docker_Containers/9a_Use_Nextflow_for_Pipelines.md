@@ -40,11 +40,12 @@ Nextflow RNAseq Dockerfile - uses bowtie, cufflinks and tophat tools
 ### Other Things to Know
  - Test Netflow pipelines on your local machine or on GCP cloud shell 
  - Use Nextflow pipelines with other cloud vendors: AWS - [link](https://www.nextflow.io/docs/latest/awscloud.html)
- - Nextflow is written in the [Groovy programming language](https://en.wikipedia.org/wiki/Apache_Groovy) & is designed to run on [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine) instances 
- - Nextflow example bioinformatics pipelines (such as one for 'rnaseq jobs') can be found at the nf-core site - [link](https://nf-co.re/rnaseq/docs)
- - Nextflow workflows can be registered in [Dockstore](https://docs.dockstore.org/docs/prereqs/getting-started-with-nextflow/) for use as workflows
- - Nextflow on Dockstore is a bit different from CWL or WDL. Instead of having one type of descriptor file, Nextflow with Dockstore uses two different kinds of files: A config file, `nextflow.config` and a descriptor file, often, `main.nf`.
- - To use The Broad's GATK 4 with Nextflow.io use this command `nextflow run CRG-CNAG/CalliNGS-NF -r gatk4 -with-docker`
+ - Get and run example Nextflow bioinformatics pipelines (such as one for 'rnaseq jobs') at the nf-core site - [link](https://nf-co.re/rnaseq/docs)
+ - Monitor running Nextflow pipelines using the visual Nextflow Tower tool - [link](https://tower.nf/)
+ - Register Nextflow workflows for distribution and reuse in [Dockstore](https://docs.dockstore.org/docs/prereqs/getting-started-with-nextflow/) 
+ - Note that Nextflow on Dockstore is a bit different from CWL or WDL. Instead of having one type of descriptor file, Nextflow with Dockstore uses two different kinds of files: A config file, `nextflow.config` and a descriptor file, often, `main.nf`.
+ - Use The Broad's GATK 4 with Nextflow.io use this command `nextflow run CRG-CNAG/CalliNGS-NF -r gatk4 -with-docker`
+ - Understand that Nextflow is written in the [Groovy programming language](https://en.wikipedia.org/wiki/Apache_Groovy) & is designed to run on [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine) instances 
  
 
 ### How to learn more
