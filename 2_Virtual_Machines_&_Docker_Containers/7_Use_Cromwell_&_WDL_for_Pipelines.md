@@ -10,7 +10,9 @@
 
 ### What is this
  - Scaling Compute Engine w/Google Pipelines API, cromwell orchestration using WDL language
- - WDL (Workflow Definition Language) script concepts are shown below - [link to WDL documentation](https://software.broadinstitute.org/wdl/documentation/quickstart)
+ - WDL (Workflow Definition Language) script concepts are shown below 
+   - READ WDL documentation - [link](https://software.broadinstitute.org/wdl/documentation/quickstart)
+   - VIEW 'Using WDL' MindMap - [link](https://atlas.mindmup.com/lynnlangit/wdl/index.html)
 
 [![wdl-concepts](/images/wdl-concepts.png)]()
 
