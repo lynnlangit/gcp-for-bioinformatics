@@ -3,6 +3,7 @@
 
 ### Why do this
  Scale your analysis using Google Pipelines (also called Genomics) API  
+ NOTE: Google expanded and RENAMED this set of services to ['Google Cloud Life Sciences'](https://cloud.google.com/life-sciences/) in late 2019
 
  [![gcp-pipelines-api](/images/gcp-pipelines-api.png)]()
 
@@ -40,3 +41,6 @@
  - :octocat: 4 GCP Pipelines API examples in Jupyter notebooks - [link](https://github.com/googlegenomics/datalab-examples/tree/master/datalab/genomics)
  - :octocat: See example Pipelines API usage with genomics tools - [link](https://github.com/googlegenomics/pipelines-api-examples)
  - 📘 End-to-end pipeline patterns and documentation, see the Google Genomics Cookbook -- http://googlegenomics.readthedocs.io/en/latest/
+ - Google Cloud Life Sciences includes a number of Google Cloud services, such as Compute Engine, Dataflow, BigQuery and more.  A reference architecture is shown below.  See the [Google Life Sciences](https://cloud.google.com/life-sciences/) documentation for more information.
+
+ [![life-sciences](/images/life-sciences.png)]()
