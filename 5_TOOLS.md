@@ -1,6 +1,6 @@
-# Genomic Tools and Pipelines 
+# Genomic Tools
 
-This page lists tools and pipelines used genomic analysis.  
+This page lists some common genomics tools used in bioinformatics analysis pipelines.  
 
 ## Tools Summary Table
 

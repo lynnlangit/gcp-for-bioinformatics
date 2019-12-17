@@ -47,7 +47,7 @@
  - Read about 'requestor pays' Cloud Storage feature - [link](https://cloud.google.com/storage/docs/requester-pays)
 
 ### How to learn more
-  - 📘 See examples of common genomic file types (i.e. FASTQ, BAM, VCF... ) - [link](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/FILE-TYPES.md)
+  - 📘 See examples of common genomic file types (i.e. FASTQ, BAM, VCF... ) - [link](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/4_FILE-TYPES.md)
  - 📘 Best practices for Google Cloud Storage - [link](https://cloud.google.com/storage/docs/best-practices)
  - 📘 Hosting a static website on Cloud Storage - [link](https://cloud.google.com/storage/docs/hosting-static-website)
  - 📘 Using Parallel Composite File Uploads - [link](https://cloud.google.com/storage/docs/gsutil/commands/cp#parallel-composite-uploads)

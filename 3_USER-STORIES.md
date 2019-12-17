@@ -1,5 +1,5 @@
 
-## Usage Patterns in GCP for Bioinformatics
+## User Stories in GCP for Bioinformatics
 
 This page describes some common patterns & use cases for bioinformatic research on the ☁️ Google Cloud Platform.
 If you're new to working with public cloud services, including those available from ☁️ GCP, you can start by considering the 3 main categories of services available for you to use in cloud computing:

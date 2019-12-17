@@ -14,9 +14,9 @@ This repository covers using ☁️Google Cloud Platform public cloud services f
 - ⭐️Top Reasons:
     - **Save Money** - run scaled analysis jobs exactly & only when you need to run them
     - **Save Time** - use vendor-managed infrastructure & best-practice patterns for repeatable research -> get analysis results faster
-- 📗READ the [FAQ for GCP bioinformatics](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/FAQ.md) for this Repo
+- 📗READ the [FAQ for GCP bioinformatics](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_FAQ.md) for this Repo
 - 📕READ Nature magazine: ["Cloud computing for genomic data analysis and collaboration"](https://www.nature.com/articles/nrg.2017.113)
-- 📗READ the top 4 most [common use cases](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/USING.md) for using the public cloud for bioinformatics researchers
+- 📗READ the top 4 most [common use cases](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/3_USER-STORIES.md) for using the public cloud for bioinformatics researchers
 
 ----
 
@@ -33,9 +33,9 @@ Read about, watch demo or try out **EACH ☁️GCP service**, ordered by topic i
 ---
 
 ### To Understand the scope of services in this Repo 
-1. 🔍SCAN - a list of [all topics](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/TOPICS.md) covered in this Repo
-2. 🔍SCAN - a diagram showing a [GCP Genomics Pipeline](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/ARCHITECTURE.md) reference architecture
-3. 🔍SCAN - a list of a [Genomics file types](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/FILE-TYPES.md) with examples shown 
+1. 🔍SCAN - a list of [all topics](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/2_TOPICS.md) covered in this Repo
+2. 🔍SCAN - a diagram showing a [GCP Genomics Pipeline](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/6_ARCHITECTURE.md) reference architecture
+3. 🔍SCAN - a list of a [Genomics file types](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/4_FILE-TYPES.md) with examples shown 
 
 -----
 
