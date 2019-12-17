@@ -62,6 +62,12 @@
 
 
 ### How to learn more
+SQL Links
+ - 📘 Link to [learn SQL - 12 questions](https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises)
+ - 📘 Link to [standard SQL syntax](https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax) used in Google BigQuery  
+  - 📘 Link to [example genomics SQL queries](https://codelabs.developers.google.com/codelabs/genomics-vcfbq/#4) shown using Google BigQuery  
+ 
+BigQuery Links
  - 📘 Link to [Understand BQ pricing](https://cloud.google.com/bigquery/pricing)
  - 📘 Link to [BQ Variants data schema](https://cloud.google.com/genomics/docs/how-tos/bigquery-variants-schema)
  - 📘 Link to [Load Variants into BQ](https://cloud.google.com/genomics/docs/how-tos/load-variants#transform-pipeline)
