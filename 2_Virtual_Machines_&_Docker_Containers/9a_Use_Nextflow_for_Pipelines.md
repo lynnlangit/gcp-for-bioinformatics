@@ -4,18 +4,17 @@
  USE the Nextflow pipeline language to define and run your analysis workflow
 
 ### What is this
- Nextflow is a reactive workflow framework & DSL for writing data-intensive computational pipelines.  Run jobs on GCE or GCE/Pipelines using container images.
+ Nextflow is a reactive workflow framework & DSL for writing data-intensive computational pipelines.  Run jobs on GCE Virtual Machines or GCE/Pipelines using container images.
  - Nextflow can run on GCP or many other providers
  - Nextflow can run on GCP in two ways:
-   - Run jobs on Compute Engine
-   - Run jobs on Compute Engine **& Genomics Pipelines API**
+   - Run jobs on Compute Engine VMs (can run bioinformatics tools from Docker)
+   - Run jobs on Compute Engine VMS **& Genomics Pipelines API**
 
 ### Key considerations
 - Understand core Nextflow features - [link](https://www.nextflow.io/index.html#Features)
 
 
 ### How to do this
- - RUN RNAseq pipeline on GCP cloud shell instance - [link]()
  - RUN RNAseq pipeline on Compute Engine and Cloud Storage - [link](https://cloud.google.com/genomics/docs/tutorials/nextflow)
  - RUN VariantCalling pipeline w/GATK - [link](https://github.com/CRG-CNAG/CalliNGS-NF/)
  ---
@@ -38,7 +37,7 @@ Nextflow RNAseq Dockerfile - uses bowtie, cufflinks and tophat tools
 
 
 ### Other Things to Know
- - Test Netflow pipelines on your local machine or on GCP cloud shell 
+ - Short example using Nextflow and the blastn tool, running in Docker on a custom GCE VM image - [link](https://medium.com/@lynnlangit/cloud-native-hello-world-for-bioinformatics-7831aecc8d1a)
  - Use Nextflow pipelines with other cloud vendors: AWS - [link](https://www.nextflow.io/docs/latest/awscloud.html)
  - Get and run example Nextflow bioinformatics pipelines (such as one for 'rnaseq jobs') at the nf-core site - [link](https://nf-co.re/rnaseq/docs)
  - Monitor running Nextflow pipelines using the visual Nextflow Tower tool - [link](https://tower.nf/)
