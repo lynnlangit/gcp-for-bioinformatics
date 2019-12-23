@@ -1,0 +1,6 @@
+category|parent_category|rank
+antioxidant|molecular function| 1
+binding|molecular function| 2
+glutathione|antioxidant| 3
+glycine binding|amino acid binding| 4
+amino acid binding|binding| 5
