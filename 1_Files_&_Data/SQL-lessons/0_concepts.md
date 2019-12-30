@@ -1,16 +1,16 @@
 # SQL Concepts
 
 
-### Why do this
- - Learn SQL concepts so that you can use the Google Cloud BigQuery service
-
-### What is this
- - SQL concepts - keywords and query syntax
-
-### Key considerations
- - SQL is used widely for querying data stored in relational tables
+### What is this & why do this
+- SQL concepts - keywords and query syntax
+- Learn SQL concepts so that you can use the Google Cloud BigQuery service
+- SQL is used widely for querying data stored in relational tables
 
 ### How to do this
+1. **READ** this page to review SQL concepts
+2. **DO** the SQL Lessons (write queries as practice)  
+
+The process to prepare to query data using Google Cloud Big Query is as follows:
  - Get data (can be in files)
     - Format and clean data
     - Convert file-based data to tabular style 
