@@ -4,7 +4,7 @@
 --Q1: Return the names of experiments performed by Tommy Student after Jan 1, 2004.
 
 SELECT name
-FROM experiments
+FROM `sql_genomics_examples.experiments` 
 WHERE whoperformed = 'Tommy Student'
 AND date > '2004-01-01';
 
