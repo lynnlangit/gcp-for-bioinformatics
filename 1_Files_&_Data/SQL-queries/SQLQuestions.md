@@ -1,5 +1,7 @@
-###SQL Queries  
-[Original Source:]( https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises) from wikibooks
+### SQL Queries  
+[Original Source]( https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises) from wikibooks - I modified both the example dataset and the queries to work with Google BigQuery
+
+---
 
 Q1: Return the names of experiments performed by Tommy Student after Jan 1, 2004.  
 
