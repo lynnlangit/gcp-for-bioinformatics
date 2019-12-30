@@ -1,19 +1,14 @@
 # SQL Lessons
 
 
-### Why do this
- - Learn SQL query concepts so that you can use Google Cloud Big Query service
-
-### What is this
- - SQL query concepts
-
-### Key considerations
- - SQL is used widely for querying data stored in relational tables
+### What is this & why do this
+ - **Learn** SQL query concepts so that you can use Google Cloud Big Query service 
+ - **Practice** SQL query concepts by writing and executing queries against BigQuery datasets
 
 ### How to do this
 - Sign up for a Google Cloud account (can use free trial credits if new account)
-- Create a Google Cloud Project and then enable the BigQuery service for that project
-- Navigate to the BigQuery Web UI for your Google Cloud Project
+  - Create a Google Cloud Project and then enable the BigQuery service for that project
+  - Navigate to the BigQuery Web UI for your Google Cloud Project
 - Review the example BigQuery dataset schema and example data (graphic below)
 
   [![SQL Keywords](/1_Files_&_Data/SQL-concept-graphics/sql-data-model.png)]()
