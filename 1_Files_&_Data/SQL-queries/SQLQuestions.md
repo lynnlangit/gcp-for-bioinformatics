@@ -1,6 +1,13 @@
 # SQL Query Lessons  
 [Original Source]( https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises) from wikibooks - I modified both the example dataset and the queries to work with Google BigQuery and also added more intermediate queries to enable students to 'level-up' their query writing more deliberately.
 
+### To Get Started
+
+- Sign up for a Google Cloud account (you can use $ 300 USD free trial credits if creating a new GCP account)
+  - Create a Google Cloud Project and then enable the BigQuery service for that project
+  - Navigate to the BigQuery Web UI for your Google Cloud Project
+  - Write and execute your queries in the BigQuery Web UI Query Window
+
 ---
 ### Part 1 - Single Table Queries
 
