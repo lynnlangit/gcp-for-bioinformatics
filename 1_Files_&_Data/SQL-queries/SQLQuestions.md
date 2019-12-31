@@ -2,6 +2,8 @@
 [Original Source]( https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises) from wikibooks - I modified both the example dataset and the queries to work with Google BigQuery
 ### Part 1 - Single Table Queries
 
+  [![Select-From](/1_Files_&_Data/SQL-concept-graphics/select-from.png)]()
+
 ---
 - Q0: Return all data (rows) in the experiments table  
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.<tableName>`
@@ -9,7 +11,10 @@
     - SQL Keywords/Pattern: 
 
         *SELECT *  
-        FROM table1 AS t1* 
+        FROM table1 AS t1*   
+
+[![expression](/1_Files_&_Data/SQL-concept-graphics/expression.png)]()
+
 ---
 
 - Q1: Return the names of experiments performed by Tommy Student after Jan 1, 2004.  
