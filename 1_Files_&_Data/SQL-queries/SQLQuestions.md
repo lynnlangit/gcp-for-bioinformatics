@@ -1,5 +1,7 @@
 # SQL Query Lessons  
-[Original Source]( https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises) from wikibooks - I modified both the example dataset and the queries to work with Google BigQuery and also added more intermediate queries to enable students to 'level-up' their query writing more deliberately.
+The original source bioinformatics Dataset and base SQL queries used in this open source course are from [wikibooks](https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises). 
+
+I significantly modified both the example dataset (table structure and data) and also the example queries to work with the Google BigQuery service.  I also added more intermediate SQL queries to enable students to 'level-up' their query writing more deliberately.
 
 ### To Get Started
 
@@ -11,15 +13,20 @@
 ![BigQuery WebUI](/1_Files_&_Data/SQL-concept-graphics/bq-webui.png)
 
 ---
+---
 ### Part 1 - Single Table Queries
 
-In this section you will write and execute SQL queries against a single table in a public Google Cloud BigQuery bioinformatics dataset.  The table was created from a single CSV (text) file. 
+In this section you will write and execute SQL queries against a single table in the public Google Cloud BigQuery bioinformatics dataset that I created for these lessons.  This first table was created from a single CSV (text) file.  
+
+*(Optional) If you wish to create your own Google BigQuery dataset, I've included instructions on how to create your own copy of this dataset using the CSV source files in this repository. Directions [here](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-lessons/1_lessons.md#other-things-to-know)*
 
 Possible query answers are on this page - https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQueries.sql
 
 Below is a list of SQL keywords and query patterns.
 
   [![Select-From](/1_Files_&_Data/SQL-concept-graphics/select-from.png)]()
+
+---
 
 
 **Q0a: Write a SQL query to return all data (rows) in the experiments table from the example GCP BigQuery public dataset**   
