@@ -30,6 +30,10 @@
         AND t1.c2 > 'dateValue'
 ---
 
+### Part 2 - Two Table Queries
+
+[![Joins](/1_Files_&_Data/SQL-concept-graphics/joins.png)]()
+
 **Q2: Return the names of genes that were either positively expressed twofold or more with a 
 significance of at least 1.0, in some experiment, or negatively expressed twofold or less with a significance of at least 1.0, in some experiment. List them alongside their organisms in a two-column format**  
     - TABLES: `expression, genes`  
@@ -40,6 +44,17 @@ significance of at least 1.0, in some experiment, or negatively expressed twofol
         WHERE t1.col1 = t2.col1
         AND t.c1 = 'stringValue'  
         AND t2.c2 > floatValue' 
+
+-OR-
+
+        SELECT column1 AS c1, column2 AS c2, ...   
+        FROM table1 AS t1 (INNER) JOIN table2 AS t2  
+        ON t1.col1 = t2.col1
+        WHERE t.c1 = 'stringValue'  
+        AND t2.c2 > floatValue'   
+
+![expression-genes](/1_Files_&_Data/SQL-concept-graphics/expression-genes.png)
+
 ---
 
 **Q3: Return the grandparent category of 'glycine binding'**  
