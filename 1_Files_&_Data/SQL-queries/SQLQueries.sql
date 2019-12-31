@@ -47,7 +47,7 @@ WHERE
   whoperformed = 'Tommy Student'
   AND date > '2004-01-01';
 
---Q2: Return the names of genes that were either positively expressed twofold or more with a 
+--Q2a: Return the names of genes that were either positively expressed twofold or more with a 
 --significance of at least 1.0, in some experiment, or negatively expressed twofold or 
 --less with a significance of at least 1.0, in some experiment. List them alongside their organisms in a two-column format
 --TABLES: expression, genes
@@ -66,7 +66,7 @@ WHERE
   AND (level >= 2.0
     OR level <= 2.0);
 
---JOIN Syntax
+--2b: Formal JOIN Syntax
 SELECT
   genes.gid,
   name,

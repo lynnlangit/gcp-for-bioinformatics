@@ -52,9 +52,16 @@ Below is a list of SQL keywords and query patterns.
 
 ### Part 2 - Two Table Queries
 
+In this section, you will be writing and executing SQL queries that retrieve data from two tables.  In order to do this, you will have to do the following:
+1. Identify & use a JOIN COLUMN from each of the tables in the join. These columns are often identity (id or key) values (i.e. table1.idCol, table2.idCol)
+2. Determine and use the appropriate type of JOIN (i.e. Inner, Outer...) - see diagram below
+3. Determine the JOIN syntax 
+    - formal  `...tl JOIN t2 on t1.idCol = t2.idCol` --or-- 
+    - concise `...FROM t1,t2 WHERE t1.idCol = t2.idCol`
+
 [![Joins](/1_Files_&_Data/SQL-concept-graphics/joins.png)]()
 
-**Q2: Write a SQL query to return the names of genes that were either positively expressed twofold or more with a 
+**Q2a: Write a SQL query to return the names of genes that were either positively expressed twofold or more with a 
 significance of at least 1.0, in some experiment, or negatively expressed twofold or less with a significance of at least 1.0, in some experiment. List them alongside their organisms in a two-column format**    
     - TABLES: `expression, genes`  
     - SQL Keywords: SELECT, AS, FROM, WHERE, AND, (INNNER) JOIN
