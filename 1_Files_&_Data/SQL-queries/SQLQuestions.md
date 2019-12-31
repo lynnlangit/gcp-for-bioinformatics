@@ -1,4 +1,4 @@
-## SQL Queries  
+# SQL Query Lessons  
 [Original Source]( https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises) from wikibooks - I modified both the example dataset and the queries to work with Google BigQuery
 
 ---
@@ -7,7 +7,7 @@
   [![Select-From](/1_Files_&_Data/SQL-concept-graphics/select-from.png)]()
 
 
-**Q0: Return all data (rows) in the experiments table from the example GCP BigQuery public dataset**   
+**Q0: Write a SQL query to return all data (rows) in the experiments table from the example GCP BigQuery public dataset**   
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.<tableName>`  
     - TABLE: `experiments` - experiments table schema & data shown below    
     - SQL Keywords/Pattern: 
@@ -19,7 +19,7 @@
 
 ---
 
-**Q1: Return the names of experiments performed by Tommy Student after Jan 1, 2004**   
+**Q1: Write a SQL query to return the names of experiments performed by Tommy Student after Jan 1, 2004**   
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.experiments`  
     - TABLE: `experiments`  
     - SQL Keywords/Pattern: 
@@ -35,8 +35,8 @@
 
 [![Joins](/1_Files_&_Data/SQL-concept-graphics/joins.png)]()
 
-**Q2: Return the names of genes that were either positively expressed twofold or more with a 
-significance of at least 1.0, in some experiment, or negatively expressed twofold or less with a significance of at least 1.0, in some experiment. List them alongside their organisms in a two-column format**  
+**Q2: Write a SQL query to return the names of genes that were either positively expressed twofold or more with a 
+significance of at least 1.0, in some experiment, or negatively expressed twofold or less with a significance of at least 1.0, in some experiment. List them alongside their organisms in a two-column format**    
     - TABLES: `expression, genes`  
     - SQL Keywords: SELECT, AS, FROM, WHERE, AND, (INNNER) JOIN
 
@@ -58,7 +58,7 @@ significance of at least 1.0, in some experiment, or negatively expressed twofol
 
 ---
 
-**Q3: Return the grandparent category of 'glycine binding'**  
+**Q3: Write a SQL query to return the grandparent category of 'glycine binding'**  
     - TABLES: `gotree`  
     - SQL Keywords: SELECT, AS, FROM, WHERE, AND, (SELF) JOIN 
 
@@ -70,71 +70,71 @@ significance of at least 1.0, in some experiment, or negatively expressed twofol
 
 ---
 
-**Q5: Return the names of pine genes that were positively expressed more than 0.5-fold (with a significance of 1.0 or more) in at least two experiments**  
+**Q5: Write a SQL query to return the names of pine genes that were positively expressed more than 0.5-fold (with a significance of 1.0 or more) in at least two experiments**  
     - TABLES: `expression, genes`  
     - SQL Keywords: SELECT, DISTINCT, AS, FROM, WHERE, AND, GROUP BY, HAVING, COUNT, VIEW --or-- SUBQUERY
 
-    - Use VIEWS Answer
-        - 5a. Straightforward Answer: First, we must find the experiments where genes are upreglated and significant.
-            - Next, we must determine the genes which were upregulated in at least two experiments. We do this by taking the product of the upregulated genes and selecting rows where the gene ID is the same but the experiment ID is different.
-            - Finally, we determine which of these genes come from pine, and project their names.
+- Use VIEWS Answer  
+    - 5a. First find the experiments where genes are upreglated and significant.  
+        - Next determine the genes which were upregulated in at least two experiments. We do this by taking the product of the upregulated genes and selecting rows where the gene ID is the same but the experiment ID is different.  
+        - Finally, we determine which of these genes come from pine, and project their names.
 
-        - 5b. We can alternatively do these steps all in one single query:
+    - 5b. We can alternatively do these steps all in one single query:
 
-        - 5c. Subquery Answer: As another approach, we can make use of subqueries to find the answer. The key to this is to make a correlated subquery where the subquery depends on some property (in this case the gene ID) of the parent query. Note that we'll still need to make use of the Upregulated view created above to reduce code redundancy.
+    - 5c. Subquery Answer: As another approach, we can make use of subqueries to find the answer. The key to this is to make a correlated subquery where the subquery depends on some property (in this case the gene ID) of the parent query. Note that we'll still need to make use of the Upregulated view created above to reduce code redundancy.
 
-        - 5d. GROUP BY Answer: We can make use of advanced features for certain database systems such as PostgreSQL and MySQL to make these queries in slightly more convenient ways via the GROUP BY and COUNT.
+    - 5d. GROUP BY Answer: We can make use of advanced features for certain database systems such as PostgreSQL and MySQL to make these queries in slightly more convenient ways via the GROUP BY and COUNT.
 ---
 
-**Q6: Return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1.0 or more) in at least three experiments**  
+**Q6: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1.0 or more) in at least three experiments**  
     - TABLES: `expression, genes`  
     - SQL Keywords: SELECT, DISTINCT, AS, FROM, WHERE, AND, GROUP BY, HAVING, COUNT, VIEW --or-- SUBQUERY
 
-    - VIEWS Answer
-        - 6a. Straightforward Answer: Similar to the answer for question 5. The caveat here is that while the equality evaluations are transitive, while inequality evaluations are not, and so every case must be covered.
+- VIEWS Answer  
+    - 6a. Similar to the answer for question 5. The caveat here is that while the equality evaluations are transitive, while inequality evaluations are not, and so every case must be covered.
 
-        - 6b. Alternatively:Subquery Answer - We need to build in another correlated subquery for our original correlated subquery to make this work.  
+    - 6b. Alternatively:Subquery Answer - build in another correlated subquery for our original correlated subquery to make this work.  
 
-    - GROUP BY Answer - Simply adjust the count evaluation.
+- GROUP BY Answer - Simply adjust the count evaluation.
 ---
 
-**Q7: Return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1.0 or more) in at exactly two experiments**  
+**Q7: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1.0 or more) in at exactly two experiments**  
     - TABLES: `expression, genes`  
     - SQL Keywords: SELECT, DISTINCT, FROM, WHERE, EXCEPT, GROUP BY, HAVING, COUNT, VIEW --or-- SUBQUERY
 
-    - VIEWS Answer
-        - 7a. Straightforward Answer: The key here is identifying that taking the set of genes upregulated in two or more experiments and subtracting the set of genes upregulated in three or mor experiments gives the set of genes upregulated in precisely two experiments. Thus, our answer is the answer to question 5 subtracted by the answer to question 6.
+- VIEWS Answer  
+        - 7a. The key here is identifying that taking the set of genes upregulated in two or more experiments and subtracting the set of genes upregulated in three or mor experiments gives the set of genes upregulated in precisely two experiments. The answer is the answer to question 5 subtracted by the answer to question 6.
 
-        - 7b. GROUP BY Answer
+- 7b. GROUP BY Answer
 ---
 ---
 ### Part 3 - Three Table Queries
 
-**Q8: Return the experiment names, genes & their levels in order, for genes that showed positive expression in every experiment recorded for it**  
+**Q8: Write a SQL query to return the experiment names, genes & their expression levels in order, for genes that showed positive expression in every experiment recorded for it**  
     - TABLES: `experiments, expression, genes`  
     - SQL Keywords: SELECT, FROM, WHERE, ORDER BY  
 
 ---
 
-**Q9: Return the name of the gene that was most positively expressed in experiment exp23. Assume a minimum significance of 1.0**  
+**Q9: Write a SQL query to return the name of the gene that was most positively expressed in experiment exp23. Assume a minimum significance of 1.0**  
     - TABLES: `experiments, expression, genes`  
     - SQL Keywords: SELECT, FROM, WHERE, LIMIT, GROUP BY
 
 ---
 
-**Q10: Return the name of the gene that was "second most positively expressed". Assume again a minimum significance of 1.0**  
+**Q10: Write a SQL query to return the name of the gene that was second most positively expressed. Assume a minimum significance of 1.0**  
     - TABLES: `experiments, expression, genes`  
     - SQL Keywords: SELECT, FROM, WHERE, LIMIT, GROUP BY, ORDER BY
 
 ---
 
-**Q11: Return the gene(s) were positively expressed in ALL the experiments listed in the Experiments table in order of level**  
+**Q11: Write a SQL query to return the gene(s) were positively expressed in ALL the experiments listed in the experiments table in order of level**  
     - TABLES: `experiments, expression, genes`  
     - SQL Keywords: SELECT, FROM, WHERE, ORDER BY
 
 ---
 
-**Q12: Return a table of genes, their annotation, and any experiment in which they were either the highest or lowest expressed (of any significance level). Include a fourth column to say if they were the highest or lowest**  
+**Q12: Write a SQL query to return a table of genes, their annotation, and any experiment in which they were either the highest or lowest expressed (of any significance level). Include a new, 4th column to say if they were the highest or lowest**  
     - TABLES: `experiments, expression, genes`  
     - SQL Keywords: SELECT, FROM, WHERE, ORDER BY, GROUP BY, CASE, WHEN...THEN, CONCAT, DESC
 
