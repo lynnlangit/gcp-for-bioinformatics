@@ -6,7 +6,9 @@
 - Sign up for a Google Cloud account (you can use $ 300 USD free trial credits if creating a new GCP account)
   - Create a Google Cloud Project and then enable the BigQuery service for that project
   - Navigate to the BigQuery Web UI for your Google Cloud Project
-  - Write and execute your queries in the BigQuery Web UI Query Window
+  - Write and execute your queries in the BigQuery Web UI Query Window, shown below
+
+![BigQuery WebUI](/1_Files_&_Data/SQL-concept-graphics/bq-webui.png)
 
 ---
 ### Part 1 - Single Table Queries
