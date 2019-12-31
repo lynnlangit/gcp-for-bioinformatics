@@ -276,10 +276,19 @@ AND organism = 'pine';
 --Q8: Return the genes that showed positive expression in every experiment recorded for it.
 
 SELECT expression.gid, level 
-FROM expression 
+FROM `gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression 
 WHERE level>1.0;
 
 --Q9: Return the name of the gene that was most positively expressed in experiment exp23? Assume a minimum significance of 1.0.
+
+SELECT expression.gid, level, genes.name, expression.experimentid
+FROM `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes, 
+`gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression,
+`gcp-for-bioinformatics.sql_genomics_examples.experiments` AS experiments
+WHERE genes.gid = expression.gid 
+AND experiments.experimentid = expression.experimentid
+AND experiments.experimentid = 'exp23'
+AND level>1.0
 
 --Q10: Return the name of the gene that was "second most positively expressed"? Assume again a minimum significance of 1.0. NOTE: See Q8 for hint.
 
