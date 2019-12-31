@@ -273,33 +273,111 @@ FROM genes, upInTwo
 WHERE genes.gid = upInTwo.gid
 AND organism = 'pine';
 
---Q8: Return the experiment names, genes & their levels in order of level, for genes
+--Q8: Return the experiment names, genes & their levels in order, for genes
 --that showed positive expression in every experiment recorded for it.
 
-SELECT expression.gid, level, genes.name AS gene, experiments.name AS experiment
-FROM `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes, 
-`gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression,
-`gcp-for-bioinformatics.sql_genomics_examples.experiments` AS experiments
-WHERE genes.gid = expression.gid 
-AND experiments.experimentid = expression.experimentid
-AND level>0.0
-ORDER BY level
+SELECT
+  expression.gid,
+  level,
+  genes.name AS gene,
+  experiments.name AS experiment
+FROM
+  `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes,
+  `gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression,
+  `gcp-for-bioinformatics.sql_genomics_examples.experiments` AS experiments
+WHERE
+  genes.gid = expression.gid
+  AND experiments.experimentid = expression.experimentid
+  AND level>0.0
+ORDER BY
+  level
 
 --Q9: Return the name of the gene that was most positively expressed in experiment exp23? 
 --Assume a minimum significance of 1.0.
-
-SELECT expression.gid, level, genes.name, expression.experimentid
-FROM `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes, 
-`gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression,
-`gcp-for-bioinformatics.sql_genomics_examples.experiments` AS experiments
-WHERE genes.gid = expression.gid 
-AND experiments.experimentid = expression.experimentid
-AND experiments.experimentid = 'exp23'
-AND level>1.0
+SELECT
+  genes.name,
+  level
+FROM
+  `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes,
+  `gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression,
+  `gcp-for-bioinformatics.sql_genomics_examples.experiments` AS experiments
+WHERE
+  genes.gid = expression.gid
+  AND experiments.experimentid = expression.experimentid
+  AND experiments.experimentid = 'exp23'
+  AND level>1.0
+GROUP BY
+  genes.name,
+  level
+LIMIT
+  1
 
 --Q10: Return the name of the gene that was "second most positively expressed"? 
 --Assume again a minimum significance of 1.0. NOTE: See Q8 for hint.
 
---Q11: Return the gene(s) were positively expressed in ALL the experiments listed in the Experiments table? No constraints on significance level.
+SELECT
+  genes.name,
+  level
+FROM
+  `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes,
+  `gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression,
+  `gcp-for-bioinformatics.sql_genomics_examples.experiments` AS experiments
+WHERE
+  genes.gid = expression.gid
+  AND experiments.experimentid = expression.experimentid
+  AND experiments.experimentid = 'exp23'
+  AND level>1.0
+GROUP BY
+  genes.name,
+  level
+ORDER BY
+  level ASC
+LIMIT
+  1
 
---Q12: Return a table of genes, their annotation, and any experiment in which they were either the highest or lowest expressed (of any significance level). Include a fourth column to say if they were the highest or lowest.
+--Q11: Return the gene(s) were positively expressed in ALL the experiments listed 
+--in the Experiments table in order of level. No constraints on significance level.
+
+SELECT
+  expression.gid,
+  level,
+  genes.name AS gene,
+  experiments.name AS experiment
+FROM
+  `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes,
+  `gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression,
+  `gcp-for-bioinformatics.sql_genomics_examples.experiments` AS experiments
+WHERE
+  genes.gid = expression.gid
+  AND experiments.experimentid = expression.experimentid
+  AND level>0.0
+ORDER BY
+  level
+
+--Q12: Return a table of genes, their annotation, and any experiment in which 
+--they were either the highest or lowest expressed (of any significance level). 
+--Include a fourth column to say if they were the highest or lowest.
+
+SELECT
+  genes.name AS gene,
+  genes.annotation AS annotation,
+  experiments.name AS experimentName,
+  expression.gid,
+  level,
+  'highest' AS result
+FROM
+  `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes,
+  `gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression,
+  `gcp-for-bioinformatics.sql_genomics_examples.experiments` AS experiments
+WHERE
+  genes.gid = expression.gid
+  AND experiments.experimentid = expression.experimentid
+  AND level>0.0
+GROUP BY
+  experiments.name,
+  level,
+  genes.name,
+  genes.annotation,
+  expression.gid
+ORDER BY
+  level
