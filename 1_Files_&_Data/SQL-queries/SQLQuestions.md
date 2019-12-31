@@ -47,7 +47,10 @@ In this section you will write and execute SQL queries against a single table in
         FROM `gcp-for-bioinformatics`.sql_genomics_examples.INFORMATION_SCHEMA.COLUMNS
         WHERE table_name="experiments"
 
-*TIP: Examine both the table schema and table when you are writing SQL queries.  Table in this example are very small, so you can use `SELECT *...` to see all data.  When you are working with larger tables, you may want to add `LIMIT 10` to return only 10 sample data rows.*
+TIP: Examine both the table schema and table when you are writing SQL queries.  Table in this example are very small, so you can use `SELECT *...` to see all data.
+
+- When you are working with tables that contain a large amount of data, you may want to add a limit clause, such as `LIMIT 10` to return only a subset of the data from table.  
+- In this example, that would be 10 sample data rows.
 
 ---
 **Q1a: Write a SQL query to return the names of experiments performed by Tommy Student**   
