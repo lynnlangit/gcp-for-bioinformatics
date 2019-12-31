@@ -119,38 +119,41 @@ significance of at least 1.0, in some experiment, or negatively expressed twofol
     - TABLES: `expression, genes`  
     - SQL Keywords: SELECT, DISTINCT, AS, FROM, WHERE, AND, GROUP BY, HAVING, COUNT, VIEW --or-- SUBQUERY
 
-- Use VIEWS Answer  
-    - 5a. First find the experiments where genes are upreglated and significant.  
-        - Next determine the genes which were upregulated in at least two experiments. Do this by taking the product of the upregulated genes and selecting rows where the gene ID is the same but the experiment ID is different.  
+    - 5a. VIEW Answer: First find the experiments where genes are upreglated and significant.  
+        - Next determine the genes which were upregulated in at least two experiments. Take the product of the upregulated genes and selecting rows where the gene ID is the same but the experiment ID is different.  
         - Finally, determine which of these genes come from pine, and project their names.
 
-    - 5b. Alternatively do these steps all in one single query:
+    --OR--
 
-    - 5c. Subquery Answer: As another approach, we can make use of subqueries to find the answer. The key to this is to make a correlated subquery where the subquery depends on some property (in this case the gene ID) of the parent query. Note that we'll still need to make use of the Upregulated view created above to reduce code redundancy.
+    - 5b. Self-join Answer: can be written one single query
 
-    - 5d. GROUP BY Answer: We can make use of advanced features for certain database systems such as PostgreSQL and MySQL to make these queries in slightly more convenient ways via the GROUP BY and COUNT.
+    - 5c. Subquery Answer: Make a correlated subquery where the subquery depends on some property (in this case the gene ID) of the parent query. You'll still need to make use of the `Upregulated` view created above to reduce code redundancy.
+
+    - 5d. GROUP BY Answer: use GROUP BY & COUNT
 ---
 
 **Q6: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1.0 or more) in at least three experiments**  
     - TABLES: `expression, genes`  
     - SQL Keywords: SELECT, DISTINCT, AS, FROM, WHERE, AND, GROUP BY, HAVING, COUNT, VIEW --or-- SUBQUERY
+ 
+    - 6a. VIEW Answer: Similar to the answer for question 5. The caveat here is that while the equality evaluations are transitive, while inequality evaluations are not, and so every case must be covered.
 
-- VIEWS Answer  
-    - 6a. Similar to the answer for question 5. The caveat here is that while the equality evaluations are transitive, while inequality evaluations are not, and so every case must be covered.
+    --OR--
 
-    - 6b. Alternatively:Subquery Answer - build in another correlated subquery for our original correlated subquery to make this work.  
+    - 6b. Subquery Answer: Build in another correlated subquery for our original correlated subquery to make this work.  
 
-- GROUP BY Answer - Simply adjust the count evaluation.
+    - 6c. GROUP BY Answer: Simply adjust the count evaluation.
 ---
 
 **Q7: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1.0 or more) in at exactly two experiments**  
     - TABLES: `expression, genes`  
     - SQL Keywords: SELECT, DISTINCT, FROM, WHERE, EXCEPT, GROUP BY, HAVING, COUNT, VIEW --or-- SUBQUERY
+  
+    - 7a. VIEW Answer: The key here is identifying that taking the set of genes upregulated in two or more experiments and subtracting the set of genes upregulated in three or mor experiments gives the set of genes upregulated in precisely two experiments. The answer is the answer to question 5 subtracted by the answer to question 6.
 
-- VIEWS Answer  
-        - 7a. The key here is identifying that taking the set of genes upregulated in two or more experiments and subtracting the set of genes upregulated in three or mor experiments gives the set of genes upregulated in precisely two experiments. The answer is the answer to question 5 subtracted by the answer to question 6.
+    --OR--
 
-- 7b. GROUP BY Answer
+    - 7b. GROUP BY Answer
 ---
 ---
 ### Part 3 - Three Table Queries
