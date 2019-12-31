@@ -1,31 +1,33 @@
 ## SQL Queries  
 [Original Source]( https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises) from wikibooks - I modified both the example dataset and the queries to work with Google BigQuery
+
+---
 ### Part 1 - Single Table Queries
 
   [![Select-From](/1_Files_&_Data/SQL-concept-graphics/select-from.png)]()
 
----
-- Q0: Return all data (rows) in the experiments table  
-    - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.<tableName>`
-    - TABLE: `experiments`
+
+Q0: Return all data (rows) in the experiments table  
+    - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.<tableName>`  
+    - TABLE: `experiments`  
     - SQL Keywords/Pattern: 
 
-        *SELECT *  
-        FROM table1 AS t1*   
+        SELECT *  
+        FROM table1 AS t1  
 
-[![expression](/1_Files_&_Data/SQL-concept-graphics/expression.png)]()
+![expression](/1_Files_&_Data/SQL-concept-graphics/expression.png)expression table schema & data shown above
 
 ---
 
-- Q1: Return the names of experiments performed by Tommy Student after Jan 1, 2004.  
-    - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.experiments`
-    - TABLE: `experiments`
+Q1: Return the names of experiments performed by Tommy Student after Jan 1, 2004.  
+    - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.experiments`  
+    - TABLE: `experiments`  
     - SQL Keywords/Pattern: 
 
-        *SELECT column1 AS c1, column2 AS c2   
+        SELECT column1 AS c1, column2 AS c2   
         FROM table1 AS t1  
         WHERE t1.c1 = 'stringValue'  
-        AND t1.c2 > 'dateValue'* 
+        AND t1.c2 > 'dateValue'
 ---
 
 - Q2: Return the names of genes that were either positively expressed twofold or more with a 
