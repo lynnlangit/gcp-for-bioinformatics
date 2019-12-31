@@ -7,19 +7,19 @@
   [![Select-From](/1_Files_&_Data/SQL-concept-graphics/select-from.png)]()
 
 
-Q0: Return all data (rows) in the experiments table  
+**Q0: Return all data (rows) in the experiments table from the example GCP BigQuery public dataset**   
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.<tableName>`  
     - TABLE: `experiments` - experiments table schema & data shown below    
     - SQL Keywords/Pattern: 
 
         SELECT *  
-        FROM table1 AS t1  
+        FROM <gcp-project-name>.<bq-dataset-name>.table1 AS t1  
 
 ![experiments](/1_Files_&_Data/SQL-concept-graphics/experiments.png)
 
 ---
 
-Q1: Return the names of experiments performed by Tommy Student after Jan 1, 2004.  
+**Q1: Return the names of experiments performed by Tommy Student after Jan 1, 2004**   
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.experiments`  
     - TABLE: `experiments`  
     - SQL Keywords/Pattern: 
@@ -30,30 +30,32 @@ Q1: Return the names of experiments performed by Tommy Student after Jan 1, 2004
         AND t1.c2 > 'dateValue'
 ---
 
-- Q2: Return the names of genes that were either positively expressed twofold or more with a 
-significance of at least 1.0, in some experiment, or negatively expressed twofold or less with a significance of at least 1.0, in some experiment. List them alongside their organisms in a two-column format
-    - TABLES: `expression, genes`
+**Q2: Return the names of genes that were either positively expressed twofold or more with a 
+significance of at least 1.0, in some experiment, or negatively expressed twofold or less with a significance of at least 1.0, in some experiment. List them alongside their organisms in a two-column format**  
+    - TABLES: `expression, genes`  
     - SQL Keywords: SELECT, AS, FROM, WHERE, AND, (INNNER) JOIN
 
-        *SELECT column1 AS c1, column2 AS c2, ...   
+        SELECT column1 AS c1, column2 AS c2, ...   
         FROM table1 AS t1, table2 AS t2  
         WHERE t1.col1 = t2.col1
         AND t.c1 = 'stringValue'  
-        AND t2.c2 > floatValue'*  
+        AND t2.c2 > floatValue' 
 ---
 
-- Q3: Return the grandparent category of 'glycine binding'
-    - TABLES: `gotree`
+**Q3: Return the grandparent category of 'glycine binding'**  
+    - TABLES: `gotree`  
     - SQL Keywords: SELECT, AS, FROM, WHERE, AND, (SELF) JOIN 
+
 ---
 
-- Q4: Return the names of experiments that were performed before some Gasch experiment.
-    - TABLES: `experiments`
+**Q4: Return the names of experiments that were performed before some Gasch experiment**  
+    - TABLES: `experiments`  
     - SQL Keywords: SELECT, AS, FROM, WHERE, AND, MAX, (SELF) JOIN --or-- SUBQUERY
+
 ---
 
-- Q5: Return the names of pine genes that were positively expressed more than 0.5-fold (with a significance of 1.0 or more) in at least two experiments.
-    - TABLES: `expression, genes`
+**Q5: Return the names of pine genes that were positively expressed more than 0.5-fold (with a significance of 1.0 or more) in at least two experiments**  
+    - TABLES: `expression, genes`  
     - SQL Keywords: SELECT, DISTINCT, AS, FROM, WHERE, AND, GROUP BY, HAVING, COUNT, VIEW --or-- SUBQUERY
 
     - Use VIEWS Answer
@@ -68,8 +70,8 @@ significance of at least 1.0, in some experiment, or negatively expressed twofol
         - 5d. GROUP BY Answer: We can make use of advanced features for certain database systems such as PostgreSQL and MySQL to make these queries in slightly more convenient ways via the GROUP BY and COUNT.
 ---
 
-- Q6: Return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1.0 or more) in at least three experiments.
-    - TABLES: `expression, genes`
+**Q6: Return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1.0 or more) in at least three experiments**  
+    - TABLES: `expression, genes`  
     - SQL Keywords: SELECT, DISTINCT, AS, FROM, WHERE, AND, GROUP BY, HAVING, COUNT, VIEW --or-- SUBQUERY
 
     - VIEWS Answer
@@ -80,8 +82,8 @@ significance of at least 1.0, in some experiment, or negatively expressed twofol
     - GROUP BY Answer - Simply adjust the count evaluation.
 ---
 
-- Q7: Return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1.0 or more) in at exactly two experiments.
-    - TABLES: `expression, genes`
+**Q7: Return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1.0 or more) in at exactly two experiments**  
+    - TABLES: `expression, genes`  
     - SQL Keywords: SELECT, DISTINCT, FROM, WHERE, EXCEPT, GROUP BY, HAVING, COUNT, VIEW --or-- SUBQUERY
 
     - VIEWS Answer
@@ -90,27 +92,32 @@ significance of at least 1.0, in some experiment, or negatively expressed twofol
         - 7b. GROUP BY Answer
 ---
 
-- Q8: Return the experiment names, genes & their levels in order, for genes that showed positive expression in every experiment recorded for it.
-    - TABLES: `experiments, expression, genes`
+**Q8: Return the experiment names, genes & their levels in order, for genes that showed positive expression in every experiment recorded for it**  
+    - TABLES: `experiments, expression, genes`  
     - SQL Keywords: SELECT, FROM, WHERE, ORDER BY  
+
 ---
 
-- Q9: Return the name of the gene that was most positively expressed in experiment exp23. Assume a minimum significance of 1.0.
-    - TABLES: `experiments, expression, genes`
-    - SQL Keywords: SELECT, FROM, WHERE, LIMIT, GROUP BY 
+**Q9: Return the name of the gene that was most positively expressed in experiment exp23. Assume a minimum significance of 1.0**  
+    - TABLES: `experiments, expression, genes`  
+    - SQL Keywords: SELECT, FROM, WHERE, LIMIT, GROUP BY
+
 ---
 
-- Q10: Return the name of the gene that was "second most positively expressed". Assume again a minimum significance of 1.0. 
-    - TABLES: `experiments, expression, genes`
+**Q10: Return the name of the gene that was "second most positively expressed". Assume again a minimum significance of 1.0**  
+    - TABLES: `experiments, expression, genes`  
     - SQL Keywords: SELECT, FROM, WHERE, LIMIT, GROUP BY, ORDER BY
+
 ---
 
-- Q11: Return the gene(s) were positively expressed in ALL the experiments listed in the Experiments table in order of level. 
-    - TABLES: `experiments, expression, genes`
+**Q11: Return the gene(s) were positively expressed in ALL the experiments listed in the Experiments table in order of level**  
+    - TABLES: `experiments, expression, genes`  
     - SQL Keywords: SELECT, FROM, WHERE, ORDER BY
+
 ---
 
-- Q12: Return a table of genes, their annotation, and any experiment in which they were either the highest or lowest expressed (of any significance level). Include a fourth column to say if they were the highest or lowest.
-    - TABLES: `experiments, expression, genes`
+**Q12: Return a table of genes, their annotation, and any experiment in which they were either the highest or lowest expressed (of any significance level). Include a fourth column to say if they were the highest or lowest**  
+    - TABLES: `experiments, expression, genes`  
     - SQL Keywords: SELECT, FROM, WHERE, ORDER BY, GROUP BY, CASE, WHEN...THEN, CONCAT, DESC
+
 ---
