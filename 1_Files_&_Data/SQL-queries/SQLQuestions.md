@@ -5,13 +5,24 @@
 
 - Q1: Return the names of experiments performed by Tommy Student after Jan 1, 2004.  
     - TABLE: experiments
-    - SQL Keywords: SELECT, AS, FROM, WHERE, AND 
+    - SQL Keywords/Pattern: 
+
+        *SELECT column1 AS c1, column2 AS c2   
+        FROM table1 AS t1  
+        WHERE t1.c1 = 'stringValue'  
+        AND t1.c2 > 'dateValue'*  
 ---
 
 - Q2: Return the names of genes that were either positively expressed twofold or more with a 
 significance of at least 1.0, in some experiment, or negatively expressed twofold or less with a significance of at least 1.0, in some experiment. List them alongside their organisms in a two-column format
     - TABLES: expression, genes
     - SQL Keywords: SELECT, AS, FROM, WHERE, AND, (INNNER) JOIN
+
+        *SELECT column1 AS c1, column2 AS c2, ...   
+        FROM table1 AS t1, table2 AS t2  
+        WHERE t1.col1 = t2.col1
+        AND t.c1 = 'stringValue'  
+        AND t2.c2 > floatValue'*  
 ---
 
 - Q3: Return the grandparent category of 'glycine binding'
