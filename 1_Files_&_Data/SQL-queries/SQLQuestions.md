@@ -134,7 +134,6 @@ significance of at least 1.0, in some experiment, or negatively expressed twofol
             FROM <table1b>
             WHERE <column> = 'Gasch' );
 
-
 ---
 
 **Q5: Write a SQL query to return the names of pine genes that were positively expressed more than 0.5-fold (with a significance of 1.0 or more) in at least two experiments**  
@@ -148,6 +147,17 @@ significance of at least 1.0, in some experiment, or negatively expressed twofol
     --OR--
 
     - 5b. Self-join Answer: can be written one single query
+
+    SELECT DISTINCT <column>
+    FROM <t1> AS genes, <t2a> AS e1,<t2b> AS e2
+    WHERE <t1>.<id> = <t2a>.<id>
+    AND e1.<id> = e2.<id>
+    AND e1.<column> >= 0.5
+    AND e2.<column> >= 0.5
+    AND e1.<column> >= 1.0
+    AND e2.<column> >= 1.0
+    AND e1.<id> <> e2.<id>
+    AND <column> = 'pine';
 
     - 5c. Subquery Answer: Make a correlated subquery where the subquery depends on some property (in this case the gene ID) of the parent query. You'll still need to make use of the `Upregulated` view created above to reduce code redundancy.
 
