@@ -359,12 +359,14 @@ ORDER BY
 --Include a fourth column to say if they were the highest or lowest.
 
 SELECT
-  genes.name AS gene,
-  genes.annotation AS annotation,
-  experiments.name AS experimentName,
-  expression.gid,
+  experiments.name AS experiment_Name,
+  CONCAT(genes.name, " - ", genes.annotation) AS gene_Info,
   level,
-  'highest' AS result
+  CASE
+    WHEN level > 0.0 THEN 'postive'
+    WHEN level < 0.0 THEN 'negative'
+  END
+   AS results
 FROM
   `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes,
   `gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression,
@@ -372,12 +374,10 @@ FROM
 WHERE
   genes.gid = expression.gid
   AND experiments.experimentid = expression.experimentid
-  AND level>0.0
 GROUP BY
   experiments.name,
-  level,
   genes.name,
   genes.annotation,
-  expression.gid
-ORDER BY
   level
+ORDER BY
+  experiments.name, level DESC
