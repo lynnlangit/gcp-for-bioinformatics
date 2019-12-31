@@ -47,6 +47,8 @@ In this section you will write and execute SQL queries against a single table in
         FROM `gcp-for-bioinformatics`.sql_genomics_examples.INFORMATION_SCHEMA.COLUMNS
         WHERE table_name="experiments"
 
+*TIP: Examine both the table schema and table when you are writing SQL queries.  Table in this example are very small, so you can use `SELECT *...` to see all data.  When you are working with larger tables, you may want to add `LIMIT 10` to return only 10 sample data rows.*
+
 ---
 **Q1a: Write a SQL query to return the names of experiments performed by Tommy Student**   
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.experiments`  
@@ -192,7 +194,14 @@ significance of at least 1.0, in some experiment, or negatively expressed twofol
 
 **Q8: Write a SQL query to return the experiment names, genes & their expression levels in order, for genes that showed positive expression in every experiment recorded for it**  
     - TABLES: `experiments, expression, genes`  
-    - SQL Keywords: SELECT, FROM, WHERE, ORDER BY  
+    - SQL Keywords: SELECT, FROM, WHERE, ORDER BY 
+
+    SELECT <columns...>
+    FROM <t1> AS genes,<t2> AS expression,<t3> AS experiments
+    WHERE genes.<id> = expression.<id>
+    AND experiments.<id> = expression.<id>
+    AND <column>0.0
+    ORDER BY <column> 
 
 ---
 
