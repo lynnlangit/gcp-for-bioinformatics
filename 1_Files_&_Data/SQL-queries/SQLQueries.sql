@@ -1,6 +1,15 @@
 ---SQL Query Answers
 ---Source: https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises
 
+--Q0: Return all data from the experiments table
+--TABLE: experiments
+--SQL Keywords: SELECT, AS, FROM
+
+SELECT
+  *
+FROM
+  `gcp-for-bioinformatics.sql_genomics_examples.experiments` AS experiments
+
 --Q1: Return the names of experiments performed by Tommy Student after Jan 1, 2004.
 --TABLE: experiments
 --SQL Keywords: SELECT, AS, FROM, WHERE, AND

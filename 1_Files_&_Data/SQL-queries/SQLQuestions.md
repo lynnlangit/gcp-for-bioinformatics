@@ -4,6 +4,10 @@
 ---
 ### Part 1 - Single Table Queries
 
+In this section you will write and execute SQL queries against a single table in a public Google Cloud BigQuery bioinformatics dataset.  Possible query answers are on this page - https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQueries.sql
+
+Below is a list of SQL keywords and query patterns.
+
   [![Select-From](/1_Files_&_Data/SQL-concept-graphics/select-from.png)]()
 
 
@@ -14,7 +18,6 @@
 
         SELECT *  
         FROM <gcp-project-name>.<bq-dataset-name>.table1 AS t1  
-        [answer](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQueries.sql)
 
 ![experiments](/1_Files_&_Data/SQL-concept-graphics/experiments.png)
 
