@@ -9,13 +9,13 @@
 
 Q0: Return all data (rows) in the experiments table  
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.<tableName>`  
-    - TABLE: `experiments`  
+    - TABLE: `experiments` - experiments table schema & data shown below    
     - SQL Keywords/Pattern: 
 
         SELECT *  
         FROM table1 AS t1  
 
-![expression](/1_Files_&_Data/SQL-concept-graphics/expression.png)expression table schema & data shown above
+![experiments](/1_Files_&_Data/SQL-concept-graphics/experiments.png)
 
 ---
 
