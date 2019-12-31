@@ -109,14 +109,31 @@ significance of at least 1.0, in some experiment, or negatively expressed twofol
 
         SELECT <tableName>.<parentColumn>
         FROM <t1a> AS children, <t1b> AS parents
-        WHERE <t1a>.<column> = 'glycine binding'
-        AND <t1a>.<parentColumn> = <t1b>.<parentColumn>
+        WHERE children.<column> = 'glycine binding'
+        AND children.<parentColumn> = parents.<parentColumn>
 
 ---
 
 **Q4: Return the names of experiments that were performed before some Gasch experiment**  
     - TABLES: `experiments`  
     - SQL Keywords: SELECT, AS, FROM, WHERE, AND, MAX, (SELF) JOIN --or-- SUBQUERY
+
+    - 4a. Self-join answer
+
+        SELECT e1.<column>
+        FROM <t1a> AS e1,<t1b> AS e2
+        WHERE e1.<column> < e2.<column>
+        AND e2.<column> = 'Gasch';
+
+    - 4b. Subquery with aggregate (MAX) answer
+
+        SELECT <column>
+        FROM <table1a> AS experiments
+        WHERE experiments.<column> < (
+            SELECT MAX(<column>)
+            FROM <table1b>
+            WHERE <column> = 'Gasch' );
+
 
 ---
 
