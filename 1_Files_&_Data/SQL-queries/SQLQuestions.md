@@ -11,7 +11,7 @@ Below is a list of SQL keywords and query patterns.
   [![Select-From](/1_Files_&_Data/SQL-concept-graphics/select-from.png)]()
 
 
-**Q0: Write a SQL query to return all data (rows) in the experiments table from the example GCP BigQuery public dataset**   
+**Q0a: Write a SQL query to return all data (rows) in the experiments table from the example GCP BigQuery public dataset**   
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.<tableName>`  
     - TABLE: `experiments` - experiments table schema & data shown below    
     - SQL Keywords/Pattern: 
@@ -20,6 +20,13 @@ Below is a list of SQL keywords and query patterns.
         FROM <gcp-project-name>.<bq-dataset-name>.table1 AS t1  
 
 ![experiments](/1_Files_&_Data/SQL-concept-graphics/experiments.png)
+
+**Q0b: Run a SQL query to return the table structure of the experiments table from the example GCP BigQuery public dataset**     
+    - SQL Example Query: 
+
+        SELECT * EXCEPT(is_generated,generation_expression,is_stored, is_updatable)
+        FROM `gcp-for-bioinformatics`.sql_genomics_examples.INFORMATION_SCHEMA.COLUMNS
+        WHERE table_name="experiments"
 
 ---
 
