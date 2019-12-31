@@ -14,6 +14,7 @@
 
         SELECT *  
         FROM <gcp-project-name>.<bq-dataset-name>.table1 AS t1  
+        [answer](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQueries.sql)
 
 ![experiments](/1_Files_&_Data/SQL-concept-graphics/experiments.png)
 
