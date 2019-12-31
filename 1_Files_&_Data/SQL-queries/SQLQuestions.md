@@ -107,6 +107,11 @@ significance of at least 1.0, in some experiment, or negatively expressed twofol
     - TABLES: `gotree`  
     - SQL Keywords: SELECT, AS, FROM, WHERE, AND, (SELF) JOIN 
 
+        SELECT <tableName>.<parentColumn>
+        FROM <t1a> AS children, <t1b> AS parents
+        WHERE <t1a>.<column> = 'glycine binding'
+        AND <t1a>.<parentColumn> = <t1b>.<parentColumn>
+
 ---
 
 **Q4: Return the names of experiments that were performed before some Gasch experiment**  
