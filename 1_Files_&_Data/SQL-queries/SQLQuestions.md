@@ -1,10 +1,12 @@
 # SQL Query Lessons  
-[Original Source]( https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises) from wikibooks - I modified both the example dataset and the queries to work with Google BigQuery
+[Original Source]( https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises) from wikibooks - I modified both the example dataset and the queries to work with Google BigQuery and also added more intermediate queries to enable students to 'level-up' their query writing more deliberately.
 
 ---
 ### Part 1 - Single Table Queries
 
-In this section you will write and execute SQL queries against a single table in a public Google Cloud BigQuery bioinformatics dataset.  Possible query answers are on this page - https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQueries.sql
+In this section you will write and execute SQL queries against a single table in a public Google Cloud BigQuery bioinformatics dataset.  The table was created from a single CSV (text) file. 
+
+Possible query answers are on this page - https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQueries.sql
 
 Below is a list of SQL keywords and query patterns.
 
@@ -13,11 +15,11 @@ Below is a list of SQL keywords and query patterns.
 
 **Q0a: Write a SQL query to return all data (rows) in the experiments table from the example GCP BigQuery public dataset**   
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.<tableName>`  
-    - TABLE: `experiments` - experiments table schema & data shown below    
-    - SQL Keywords/Pattern: 
+    - TABLE: `experiments` - the experiments table structure (schema) & table data is shown in the graphic below    
+    - SQL Keywords/Query Pattern: 
 
         SELECT *  
-        FROM <gcp-project-name>.<bq-dataset-name>.table1 AS t1  
+        FROM <gcp-project-name>.<bq-dataset-name>.<table-name> AS t1  
 
 ![experiments](/1_Files_&_Data/SQL-concept-graphics/experiments.png)
 
