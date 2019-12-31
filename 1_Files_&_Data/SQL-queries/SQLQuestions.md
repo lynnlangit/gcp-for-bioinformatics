@@ -1,5 +1,6 @@
-### SQL Queries  
+## SQL Queries  
 [Original Source]( https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises) from wikibooks - I modified both the example dataset and the queries to work with Google BigQuery
+### Part 1 - Single Table Queries
 
 ---
 - Q0: Return all data (rows) in the experiments table  
