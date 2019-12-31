@@ -24,7 +24,18 @@ FROM
 WHERE
   table_name="experiments"
 
---Q1: Return the names of experiments performed by Tommy Student after Jan 1, 2004.
+--Q1a: Return the names of experiments performed by Tommy Student.
+--TABLE: experiments
+--SQL Keywords: SELECT, AS, FROM, WHERE
+
+SELECT
+  name
+FROM
+  `gcp-for-bioinformatics.sql_genomics_examples.experiments` AS experiments
+WHERE
+  whoperformed = 'Tommy Student'
+
+--Q1b: Return the names of experiments performed by Tommy Student after Jan 1, 2004.
 --TABLE: experiments
 --SQL Keywords: SELECT, AS, FROM, WHERE, AND
 

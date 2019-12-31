@@ -29,8 +29,16 @@ Below is a list of SQL keywords and query patterns.
         WHERE table_name="experiments"
 
 ---
+**Q1a: Write a SQL query to return the names of experiments performed by Tommy Student**   
+    - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.experiments`  
+    - TABLE: `experiments`  
+    - SQL Keywords/Pattern: 
 
-**Q1: Write a SQL query to return the names of experiments performed by Tommy Student after Jan 1, 2004**   
+        SELECT column1 AS c1, column2 AS c2   
+        FROM table1 AS t1  
+        WHERE t1.c1 = 'stringValue'  
+
+**Q1b: Write a SQL query to return the names of experiments performed by Tommy Student after Jan 1, 2004**   
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.experiments`  
     - TABLE: `experiments`  
     - SQL Keywords/Pattern: 
