@@ -2,26 +2,65 @@
 ---Source: https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises
 
 --Q1: Return the names of experiments performed by Tommy Student after Jan 1, 2004.
+--TABLE: experiments
+--SQL Keywords: SELECT, FROM, WHERE
 
-SELECT name
-FROM `sql_genomics_examples.experiments` 
-WHERE whoperformed = 'Tommy Student'
-AND date > '2004-01-01';
+SELECT
+  name
+FROM
+  `sql_genomics_examples.experiments`
+WHERE
+  whoperformed = 'Tommy Student'
+  AND date > '2004-01-01';
 
---Q2: Return the names of genes that were either positively expressed twofold or more with a significance of at least 1.0, in some experiment, or negatively expressed twofold or less with a significance of at least 1.0, in some experiment. List them alongside their organisms in a two-column format.
+--Q2: Return the names of genes that were either positively expressed twofold or more with a 
+--significance of at least 1.0, in some experiment, or negatively expressed twofold or 
+--less with a significance of at least 1.0, in some experiment. List them alongside their organisms in a two-column format
+--TABLES: expression, genes
+--SQL Keywords: SELECT, FROM, WHERE, (INNNER) JOIN
+SELECT
+  genes.gid,
+  name,
+  level,
+  significance
+FROM
+  `gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression,
+  `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes
+WHERE
+  expression.gid = genes.gid
+  AND significance >= 1.0
+  AND (level >= 2.0
+    OR level <= 2.0);
 
-SELECT genes.gid, name, level, significance
-FROM expression, genes
-WHERE expression.gid = genes.gid
-AND significance >= 1.0
-AND (level >= 2.0 OR level <= 2.0);
+--JOIN Syntax
+SELECT
+  genes.gid,
+  name,
+  level,
+  significance
+FROM
+  `gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression
+JOIN
+  `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes
+ON
+  expression.gid = genes.gid
+WHERE
+  significance >= 1.0
+  AND (level >= 2.0
+    OR level <= 2.0);
 
 --Q3: Return the grandparent category of 'glycine binding'?
+--TABLES: gotree
+--SQL Keywords: SELECT, FROM, WHERE, (SELF) JOIN
 
-SELECT parents.parent_category
-FROM gotree as children gotree as parents
-WHERE children.category = 'glycine binding'
-AND children.parent_category = parents.category;
+SELECT
+  parents.parent_category
+FROM
+  `gcp-for-bioinformatics.sql_genomics_examples.gotree` AS children,
+  `gcp-for-bioinformatics.sql_genomics_examples.gotree` AS parents
+WHERE
+  children.category = 'glycine binding'
+  AND children.parent_category = parents.category;
 
 --Q4: Return the names of experiments that were performed before some Gasch experiment.
 
@@ -336,7 +375,7 @@ LIMIT
   1
 
 --Q11: Return the gene(s) were positively expressed in ALL the experiments listed 
---in the Experiments table in order of level. No constraints on significance level.
+--in the Experiments table in order of level. 
 
 SELECT
   expression.gid,
