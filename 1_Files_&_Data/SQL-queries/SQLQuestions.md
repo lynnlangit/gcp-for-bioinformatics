@@ -16,15 +16,16 @@ I significantly modified both the example dataset (table structure and data) and
 ---
 ### Part 1 - Single Table Queries
 
-In this section you will write and execute SQL queries against a single table in the public Google Cloud BigQuery bioinformatics dataset that I created for these lessons.  This first table was created from a single CSV (text) file.  
+In this section you will write and execute SQL queries against a single table in the **public** Google Cloud BigQuery bioinformatics dataset that I created for these lessons.  This first table was created from a single CSV (text) file.  
 
-*(Optional) If you wish to create your own Google BigQuery dataset, I've included instructions on how to create your own copy of this dataset using the CSV source files in this repository. Directions [here](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-lessons/1_lessons.md#other-things-to-know)*
+- Possible query answers are on this page - https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQueries.sql
 
-Possible query answers are on this page - https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQueries.sql
-
-Below is a list of SQL keywords and query patterns.
 
   [![Select-From](/1_Files_&_Data/SQL-concept-graphics/select-from.png)]()
+- Shown above is list of SQL Keywords and query patterns used in this section.
+
+- *(Optional) If you wish to create your own Google BigQuery dataset, I've included instructions on how to create your own copy of this dataset using the CSV source files in this repository. Directions [here](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-lessons/1_lessons.md#other-things-to-know)*
+
 
 ---
 
