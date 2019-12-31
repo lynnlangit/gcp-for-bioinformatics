@@ -121,10 +121,10 @@ significance of at least 1.0, in some experiment, or negatively expressed twofol
 
 - Use VIEWS Answer  
     - 5a. First find the experiments where genes are upreglated and significant.  
-        - Next determine the genes which were upregulated in at least two experiments. We do this by taking the product of the upregulated genes and selecting rows where the gene ID is the same but the experiment ID is different.  
-        - Finally, we determine which of these genes come from pine, and project their names.
+        - Next determine the genes which were upregulated in at least two experiments. Do this by taking the product of the upregulated genes and selecting rows where the gene ID is the same but the experiment ID is different.  
+        - Finally, determine which of these genes come from pine, and project their names.
 
-    - 5b. We can alternatively do these steps all in one single query:
+    - 5b. Alternatively do these steps all in one single query:
 
     - 5c. Subquery Answer: As another approach, we can make use of subqueries to find the answer. The key to this is to make a correlated subquery where the subquery depends on some property (in this case the gene ID) of the parent query. Note that we'll still need to make use of the Upregulated view created above to reduce code redundancy.
 
