@@ -38,7 +38,6 @@ In this section you will write and execute SQL queries against a single table in
         SELECT *  
         FROM <gcp-project-name>.<bq-dataset-name>.<table-name> AS t1  
 
-![experiments](/1_Files_&_Data/SQL-concept-graphics/experiments.png)
 
 **Q0b: Run a SQL query to return the table structure of the experiments table from the example GCP BigQuery public dataset**     
     - SQL Example Query: 
