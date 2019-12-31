@@ -14,7 +14,7 @@ I significantly modified both the example dataset (table structure and data) and
 
 ---
 ---
-### Part 1 - Single Table Queries
+## Part 1 - Single Table Queries
 
 In this section you will write and execute SQL queries against a single table in the **public** Google Cloud BigQuery bioinformatics dataset that I created for these lessons.  This first table was created from a single CSV (text) file.  
 
@@ -28,7 +28,7 @@ In this section you will write and execute SQL queries against a single table in
 
 
 ---
-
+### Understand the Table Structure and Data
 
 **Q0a: Write a SQL query to return all data (rows) in the experiments table from the example GCP BigQuery public dataset**   
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.<tableName>`  
@@ -52,6 +52,8 @@ TIP: Examine both the table schema and table when you are writing SQL queries.  
 - In this example, that would be 10 sample data rows.
 
 ---
+### Write and Execute Single-Table SQL Queries
+
 **Q1a: Write a SQL query to return the names of experiments performed by Tommy Student**   
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.experiments`  
     - TABLE: `experiments`  
@@ -73,7 +75,7 @@ TIP: Examine both the table schema and table when you are writing SQL queries.  
 ---
 ---
 
-### Part 2 - Two Table Queries
+## Part 2 - Two Table Queries
 
 In this section, you will be writing and executing SQL queries that retrieve data from two tables.  In order to do this, you will have to do the following:
 1. Identify & use a JOIN COLUMN from each of the tables in the join. These columns are often identity (id or key) values (i.e. table1.idCol, table2.idCol)
@@ -83,6 +85,9 @@ In this section, you will be writing and executing SQL queries that retrieve dat
     - concise `...FROM t1,t2 WHERE t1.idCol = t2.idCol`
 
 [![Joins](/1_Files_&_Data/SQL-concept-graphics/joins.png)]()
+
+---
+### Write and Execute Two-Table SQL (JOIN) Queries
 
 **Q2a: Write a SQL query to return the names of genes that were either positively expressed twofold or more with a 
 significance of at least 1.0, in some experiment, or negatively expressed twofold or less with a significance of at least 1.0, in some experiment. List them alongside their organisms in a two-column format**    
@@ -192,7 +197,9 @@ significance of at least 1.0, in some experiment, or negatively expressed twofol
     - 7b. GROUP BY Answer
 ---
 ---
-### Part 3 - Three Table Queries
+## Part 3 - Three Table Queries
+
+### Write and Execute Three-Table SQL (JOIN) Queries
 
 **Q8: Write a SQL query to return the experiment names, genes & their expression levels in order, for genes that showed positive expression in every experiment recorded for it**  
     - TABLES: `experiments, expression, genes`  
