@@ -29,6 +29,7 @@
         WHERE t1.c1 = 'stringValue'  
         AND t1.c2 > 'dateValue'
 ---
+---
 
 ### Part 2 - Two Table Queries
 
@@ -106,6 +107,8 @@ significance of at least 1.0, in some experiment, or negatively expressed twofol
 
         - 7b. GROUP BY Answer
 ---
+---
+### Part 3 - Three Table Queries
 
 **Q8: Return the experiment names, genes & their levels in order, for genes that showed positive expression in every experiment recorded for it**  
     - TABLES: `experiments, expression, genes`  
