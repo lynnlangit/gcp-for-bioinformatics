@@ -98,9 +98,13 @@ In this section, you will be writing and executing SQL queries that retrieve dat
 ---
 ### Write and Execute Two-Table SQL (JOIN) Queries
 
-**Q2a: Write a SQL query to return the ids and names of genes that were either positively expressed with a significance of at least 2.0, in some experiment.  
+In addition to using SQL join concepts, in this section, you'll use additional SQL keywords to further refine your results by filtering, sorting, etc...  A summary chart is shown below.
 
-To start, query the `genes` and `expression` tables to review the data in each table.  Look for a common data columns which can serve as the "join key" in the your query.  See the diagram below.
+[![all keywords](/1_Files_&_Data/SQL-concept-graphics/all-keywords.png)]()
+
+**Q2a: Write a SQL query to return the ids and names of genes that were either positively expressed with a significance of at least 2.0, in some experiment.** 
+
+To start, query the `genes` and `expression` tables to review the all of the data in each table.  Look for a common data columns which can serve as the "join key" in the your query.  See the diagram below.
 
 [![Join columns](/1_Files_&_Data/SQL-concept-graphics/join-cols.png)]()
     - TABLES: `expression`, `genes`  
