@@ -21,7 +21,8 @@ In this section you will write and execute SQL queries against a single table in
 
 To get started, I suggest that you run a couple of SQL queries to list all of the table data and also the table schema for the `experiments` table.  Simply copy and paste each queries in this section into your Google Cloud BigQuery query editor window and then click the blue 'run' button to execute each query and see the query results.
 
-Q0a: Run a SQL query which returns all data (rows) in the `experiments` table from my example GCP BigQuery public dataset   
+Q0a: Run a SQL query which returns all data (rows) in the `experiments` table from my example GCP BigQuery public dataset  
+
     - SQL Example Query: 
 
         SELECT *
@@ -29,7 +30,8 @@ Q0a: Run a SQL query which returns all data (rows) in the `experiments` table fr
  
 
 
-Q0b: Run a SQL query to return the table structure of the `experiments` table from my example GCP BigQuery public dataset     
+Q0b: Run a SQL query to return the table structure of the `experiments` table from my example GCP BigQuery public dataset  
+
     - SQL Example Query: 
 
         SELECT * EXCEPT(is_generated,generation_expression,is_stored, is_updatable)
@@ -59,6 +61,7 @@ In this section, you use the SQL Pattern Queries as a starter templates for you 
 Q1a: Write a SQL query to return the names of experiments performed by Tommy Student   
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.experiments`  
     - TABLE: `experiments`  
+
     - SQL Pattern: 
 
         SELECT <column1>  
@@ -109,6 +112,7 @@ To start, query the `genes` and `expression` tables to review the all of the dat
 
 [![Join columns](/1_Files_&_Data/SQL-concept-graphics/join-cols.png)]()
     - TABLES: `expression`, `genes`  
+
     - SQL Query Pattern: 
 
     SELECT <table>.<id>,<table>.name, <table>.significance
@@ -119,6 +123,7 @@ To start, query the `genes` and `expression` tables to review the all of the dat
 **Q2b: Write a SQL query to return the names of genes that were either positively expressed twofold or more with a 
 significance of at least 2.0, in some experiment, or negatively expressed twofold or less with a significance of at least 2.0, in some experiment.**    
     - TABLES: `expression, genes`  
+
     - SQL Query Pattern: 
 
         SELECT column1 AS c1, column2 AS c2, ...   
@@ -144,6 +149,7 @@ Use a **self-join** by creating two instances of the same table, to derive a hie
 
 Q3: Write a SQL query to return the grandparent category of 'glycine binding'  
     - TABLES: `gotree`  
+
     - SQL Query Pattern: 
 
         SELECT <tableName>.<parentColumn>
@@ -165,6 +171,7 @@ Both approaches yield the correct result.  There are two factors in determining 
 
 Q4: Return the names of experiments that were performed before some Gasch experiment  
     - TABLES: `experiments`  
+
     - SQL Query Pattern:
 
     - 4a. Self-join answer
@@ -190,9 +197,16 @@ For some queries, you have a number of choices of how you write your query.  For
 3. Use subqueries
 4. Use other SQL capabilities - in this case the `GROUP BY` (aggregate) and `HAVING` (filter aggregates) keywords. The SQL function `COUNT` is used here as well.
 
-**Q5: Write a SQL query to return the names of pine genes that were positively expressed more than 0.5-fold (with a significance of 1 or more) in at least two experiments**  
-    - TABLES: `expression, genes`  
-    - SQL Query Patterns
+**SECTION in PROGRESS**
+
+Q5: Write a SQL query to return the names of pine genes that were positively expressed more than 0.5-fold (with a significance of 1 or more) in at least two experiments  
+    - TABLES: `expression, genes`
+
+    - SQL Query Pattern
+
+    SELECT <column>
+    FROM <table1a> AS expressions
+    WHERE experiments.<column> 
 
     - 5a. VIEW Answer: First find the experiments where genes are upreglated and significant.  
         - Next determine the genes which were upregulated in at least two experiments. Take the product of the upregulated genes and selecting rows where the gene ID is the same but the experiment ID is different.  
@@ -201,6 +215,8 @@ For some queries, you have a number of choices of how you write your query.  For
     --OR--
 
     - 5b. Self-join Answer: can be written one single query
+
+    - SQL Query Pattern
 
     SELECT DISTINCT <column>
     FROM <t1> AS genes, <t2a> AS e1,<t2b> AS e2
@@ -215,31 +231,73 @@ For some queries, you have a number of choices of how you write your query.  For
 
     - 5c. Subquery Answer: Make a correlated subquery where the subquery depends on some property (in this case the gene ID) of the parent query. You'll still need to make use of the `Upregulated` view created above to reduce code redundancy.
 
+     - SQL Query Pattern
+
+    SELECT <column>
+    FROM <table1a> AS expressions
+    WHERE experiments.<column> 
+
     - 5d. GROUP BY Answer: use GROUP BY & COUNT
+
+     - SQL Query Pattern
+
+    SELECT <column>
+    FROM <table1a> AS expressions
+    WHERE experiments.<column> 
 ---
 
-**Q6: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in at least three experiments**  
+Q6: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in at least three experiments  
     - TABLES: `expression, genes`  
     - SQL Keywords: SELECT, DISTINCT, AS, FROM, WHERE, AND, GROUP BY, HAVING, COUNT, VIEW --or-- SUBQUERY
  
     - 6a. VIEW Answer: The caveat here is that while the equality evaluations are transitive, while inequality evaluations are not, and so every case must be covered.
 
+    - SQL Query Pattern
+
+    SELECT <column>
+    FROM <table1a> AS expressions
+    WHERE experiments.<column> 
+
     --OR--
 
     - 6b. Subquery Answer: Build in another correlated subquery for your original correlated subquery.  
 
+    - SQL Query Pattern
+
+    SELECT <column>
+    FROM <table1a> AS expressions
+    WHERE experiments.<column> 
+
     - 6c. GROUP BY Answer: Adjust the count evaluation.
+
+    - SQL Query Pattern
+
+    SELECT <column>
+    FROM <table1a> AS expressions
+    WHERE experiments.<column> 
 ---
 
-**Q7: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in at exactly two experiments**  
+Q7: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in at exactly two experiments 
     - TABLES: `expression, genes`  
     - SQL Keywords: SELECT, DISTINCT, FROM, WHERE, EXCEPT, GROUP BY, HAVING, COUNT, VIEW --or-- SUBQUERY
   
     - 7a. VIEW Answer: The key here is identifying that taking the set of genes upregulated in two or more experiments and subtracting the set of genes upregulated in three or mor experiments gives the set of genes upregulated in precisely two experiments. The answer is the answer to question 5 subtracted by the answer to question 6.
 
+    - SQL Query Pattern
+
+    SELECT <column>
+    FROM <table1a> AS expressions
+    WHERE experiments.<column> 
+
     --OR--
 
     - 7b. GROUP BY Answer
+
+    - SQL Query Pattern
+
+    SELECT <column>
+    FROM <table1a> AS expressions
+    WHERE experiments.<column> 
 ---
 ---
 ## Part 3 - Three Table Queries
@@ -248,8 +306,9 @@ For some queries, you have a number of choices of how you write your query.  For
 
 In three table joins, you identify the join columns (or keys) from each of the table in the query.  As with two-table joins, you can use either the more formal SQL     `JOIN ... ON....` syntax or the more concise `FROM t1, t2, t3 WHERE t1.key1 = t2.key1 AND t2.key2 = t3.key2` syntax.  The most common join type is a SQL inner join, however you can use other SQL join types, i.e. outer joins... as needed.
 
-**Q8: Write a SQL query to return the experiment names, genes & their expression levels in order, for genes that showed positive expression in every experiment recorded for it**  
-    - TABLES: `experiments, expression, genes`  
+Q8: Write a SQL query to return the experiment names, genes & their expression levels in order, for genes that showed positive expression in every experiment recorded for it  
+    - TABLES: `experiments, expression, genes` 
+
     - SQL Query Pattern:
 
     SELECT <columns...>
@@ -261,27 +320,60 @@ In three table joins, you identify the join columns (or keys) from each of the t
 
 ---
 
-**Q9: Write a SQL query to return the name of the gene that was most positively expressed in experiment exp23. Assume a minimum level of 1.0**  
+Q9: Write a SQL query to return the name of the gene that was most positively expressed in experiment exp23. Assume a minimum level of 1.0   
     - TABLES: `experiments, expression, genes`  
-    - SQL Keywords: SELECT, FROM, WHERE, LIMIT, GROUP BY
+
+
+    - SQL Query Pattern:
+
+    SELECT <columns...>
+    FROM <t1> AS genes,<t2> AS expression,<t3> AS experiments
+    WHERE genes.<id> = expression.<id>
+    AND experiments.<id> = expression.<id>
+    AND <column>0.0
+    ORDER BY <column>
 
 ---
 
-**Q10: Write a SQL query to return the name of the gene that was second most positively expressed. Assume a minimum level of 1.0**  
+Q10: Write a SQL query to return the name of the gene that was second most positively expressed. Assume a minimum level of 1.0  
     - TABLES: `experiments, expression, genes`  
-    - SQL Keywords: SELECT, FROM, WHERE, LIMIT, GROUP BY, ORDER BY
+
+    - SQL Query Pattern:
+
+    SELECT <columns...>
+    FROM <t1> AS genes,<t2> AS expression,<t3> AS experiments
+    WHERE genes.<id> = expression.<id>
+    AND experiments.<id> = expression.<id>
+    AND <column>0.0
+    ORDER BY <column>
 
 ---
 
-**Q11: Write a SQL query to return the gene(s) were positively expressed in ALL the experiments listed in the experiments table in order of level**  
+Q11: Write a SQL query to return the gene(s) were positively expressed in ALL the experiments listed in the experiments table in order of level 
     - TABLES: `experiments, expression, genes`  
-    - SQL Keywords: SELECT, FROM, WHERE, ORDER BY
+   
+   - SQL Query Pattern:
+
+    SELECT <columns...>
+    FROM <t1> AS genes,<t2> AS expression,<t3> AS experiments
+    WHERE genes.<id> = expression.<id>
+    AND experiments.<id> = expression.<id>
+    AND <column>0.0
+    ORDER BY <column>
 
 ---
 
-**Q12: Write a SQL query to return a table of genes, their annotation, and any experiment in which they were either the highest or lowest expressed (of any significance level). Include a new column saying if they were the highest or lowest**  
-    - TABLES: `experiments, expression, genes`  
-    - SQL Keywords: SELECT, FROM, WHERE, ORDER BY, GROUP BY, CASE, WHEN...THEN, CONCAT, DESC
+Q12: Write a SQL query to return a table of genes, their annotation, and any experiment in which they were either the highest or lowest expressed (of any significance level). Include a new column saying if they were the highest or lowest   
+    - TABLES: `experiments, expression, genes` 
+     
+    - SQL Query Pattern:
+
+    SELECT <columns...>
+    FROM <t1> AS genes,<t2> AS expression,<t3> AS experiments
+    WHERE genes.<id> = expression.<id>
+    AND experiments.<id> = expression.<id>
+    AND <column>0.0
+    ORDER BY <column>
 
 ---
 
