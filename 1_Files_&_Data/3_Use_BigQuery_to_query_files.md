@@ -15,6 +15,7 @@
  - Google provides many public reference datasets (including 1000 Genomes) which you can query (shown below)
 
 ### How to do this
+ - PRACTICE SQL queries using a small, public GCP bioinformatics dataset - [link](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQuestions.md)
  - LEARN SQL syntax - [link](https://www.w3schools.com/sql/sql_intro.asp)
  - USE BigQuery from the GCP UI console
     - SELECT your dataset to query, use included genomic reference datasets and/or upload your own file data
@@ -63,6 +64,7 @@
 
 ### How to learn more
 SQL Links
+ - 📘 Link to lessons, [practice SQL queries using a small, public GCP bioinformatics dataset](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQuestions.md)
  - 📘 Link to [learn SQL - 12 questions](https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises)
  - 📘 Link to [standard SQL syntax](https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax) used in Google BigQuery  
   - 📘 Link to [example genomics SQL queries](https://codelabs.developers.google.com/codelabs/genomics-vcfbq/#4) shown using Google BigQuery  
