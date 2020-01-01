@@ -30,13 +30,14 @@ In this section you will write and execute SQL queries against a single table in
 ---
 ### Understand the Table Structure and Data
 
-**Q0a: Write a SQL query to return all data (rows) in the experiments table from the example GCP BigQuery public dataset**   
+**Q0a: Write a SQL query to return all data (rows) in the experiments table from my example GCP BigQuery public dataset**   
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.<tableName>`  
-    - TABLE: `experiments` - the experiments table structure (schema) & table data is shown in the graphic below    
-    - SQL Keywords/Query Pattern: 
+    - TABLE: `experiments` 
+    - SQL Example Query: 
 
-        SELECT *  
-        FROM <gcp-project-name>.<bq-dataset-name>.<table-name> AS t1  
+        SELECT *
+        FROM `gcp-for-bioinformatics.sql_genomics_examples.experiments` AS experiments
+ 
 
 
 **Q0b: Run a SQL query to return the table structure of the experiments table from the example GCP BigQuery public dataset**     
@@ -56,24 +57,26 @@ TIP: Examine both the table schema and table when you are writing SQL queries.  
 ---
 ### Write and Execute Single-Table SQL Queries
 
+In this section, use the SQL Patterns as a starter template for you to write your queries.  Copy and paste the SQL Pattern code into the Google BigQuery query editor window.  Modify the starter code to fill in the values so that the query returns the expected result set after you execute (or run) it.
+
 **Q1a: Write a SQL query to return the names of experiments performed by Tommy Student**   
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.experiments`  
     - TABLE: `experiments`  
-    - SQL Keywords/Pattern: 
+    - SQL Pattern: 
 
-        SELECT column1 AS c1, column2 AS c2   
-        FROM table1 AS t1  
-        WHERE t1.c1 = 'stringValue'  
+        SELECT <column1> AS c1, <column2> AS c2   
+        FROM <table1> AS t1  
+        WHERE t1.c1 = <'stringValue'>  
 
 **Q1b: Write a SQL query to return the names of experiments performed by Tommy Student after Jan 1, 2004**   
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.experiments`  
     - TABLE: `experiments`  
-    - SQL Keywords/Pattern: 
+    - SQL Pattern: 
 
-        SELECT column1 AS c1, column2 AS c2   
-        FROM table1 AS t1  
-        WHERE t1.c1 = 'stringValue'  
-        AND t1.c2 > 'dateValue'
+        SELECT <column1> AS c1, <column2> AS c2   
+        FROM <table1> AS t1  
+        WHERE t1.c1 = <'stringValue'>  
+        AND t1.c2 > <'dateValue'>
 ---
 ---
 
@@ -97,7 +100,7 @@ To start, query the `genes` and `expression` tables to review the data in each t
 
 [![Join columns](/1_Files_&_Data/SQL-concept-graphics/join-cols.png)]()
     - TABLES: `expression`, `genes`  
-    - SQL Keywords/Query Pattern: SELECT, AS, FROM, WHERE, AND, (INNNER) JOIN
+    - SQL Query Pattern: 
 
     SELECT <table>.<id>,<table>.name, <table>.significance
     FROM <table1> AS expression,<table2> AS genes
@@ -130,7 +133,7 @@ Use a self-join, by creating two instances of the same table, to derive a hierar
 
 **Q3: Write a SQL query to return the grandparent category of 'glycine binding'**  
     - TABLES: `gotree`  
-    - SQL Keywords/Query Pattern: 
+    - SQL Query Pattern: 
 
         SELECT <tableName>.<parentColumn>
         FROM <t1a> AS children, <t1b> AS parents
@@ -149,7 +152,7 @@ Both approaches yield the correct result.  There are two factors in determining 
 
 **Q4: Return the names of experiments that were performed before some Gasch experiment**  
     - TABLES: `experiments`  
-    - SQL Keywords/Query Pattern:
+    - SQL Query Pattern:
 
     - 4a. Self-join answer
 
@@ -176,7 +179,7 @@ For some queries, you have a number of choices of how you write your query.  For
 
 **Q5: Write a SQL query to return the names of pine genes that were positively expressed more than 0.5-fold (with a significance of 1 or more) in at least two experiments**  
     - TABLES: `expression, genes`  
-    - SQL Keywords/Query Patterns
+    - SQL Query Patterns
 
     - 5a. VIEW Answer: First find the experiments where genes are upreglated and significant.  
         - Next determine the genes which were upregulated in at least two experiments. Take the product of the upregulated genes and selecting rows where the gene ID is the same but the experiment ID is different.  
@@ -234,7 +237,7 @@ In three table joins, you identify the join columns (or keys) from each of the t
 
 **Q8: Write a SQL query to return the experiment names, genes & their expression levels in order, for genes that showed positive expression in every experiment recorded for it**  
     - TABLES: `experiments, expression, genes`  
-    - SQL Keywords/Query Pattern:
+    - SQL Query Pattern:
 
     SELECT <columns...>
     FROM <t1> AS genes,<t2> AS expression,<t3> AS experiments
