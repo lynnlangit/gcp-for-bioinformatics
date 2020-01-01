@@ -12,6 +12,13 @@ The original source bioinformatics Dataset and base SQL queries used in this ope
 ![BigQuery WebUI](/1_Files_&_Data/SQL-concept-graphics/bq-webui.png)
 
 ---
+
+# Course Contents
+ - Part 1 - Single table core SQL Queries  
+ - Part 2 - Two-table SQL join Queries  
+ - Part 3 - Three-table complex SQL Queries
+
+---
 ---
 ## Part 1 - Single Table Queries
 
