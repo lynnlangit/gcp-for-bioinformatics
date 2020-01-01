@@ -45,6 +45,8 @@ In this section you will write and execute SQL queries against a single table in
         SELECT * EXCEPT(is_generated,generation_expression,is_stored, is_updatable)
         FROM `gcp-for-bioinformatics`.sql_genomics_examples.INFORMATION_SCHEMA.COLUMNS
         WHERE table_name="experiments"
+        
+![experiments table](/1_Files_&_Data/SQL-concept-graphics/experiments.png)
 
 TIP: Examine both the table schema and table when you are writing SQL queries.  Table in this example are very small, so you can use `SELECT *...` to see all data.
 
