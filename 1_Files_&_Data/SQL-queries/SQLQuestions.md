@@ -308,7 +308,7 @@ Q7: Write a SQL query to return the names of pine genes that were up-regulated 0
 
 In three table joins, you identify the join columns (or keys) from each of the table in the query.  As with two-table joins, you can use either the more formal SQL     `JOIN ... ON....` syntax or the more concise `FROM t1, t2, t3 WHERE t1.key1 = t2.key1 AND t2.key2 = t3.key2` syntax.  The most common join type is a SQL inner join, however you can use other SQL join types, i.e. outer joins... as needed.
 
-Q8: Write a SQL query to return the experiment names, genes & their expression levels in order, for genes that showed positive expression in every experiment recorded for it  
+Q8: Write a SQL query to return the experiment names, gene names & their expression levels in order, for genes that showed positive expression in every experiment recorded for it  
     - TABLES: `experiments, expression, genes` 
 
     - SQL Query Pattern:
@@ -322,8 +322,7 @@ Q8: Write a SQL query to return the experiment names, genes & their expression l
 
 ---
 
-Q9: Write a SQL query to return the name of the gene that was most positively expressed in experiment exp23. Assume a minimum level of 1.0   
-    - TABLES: `experiments, expression, genes`  
+Q9: Write a SQL query to return the name of the gene that was most positively expressed in experiment exp23. Assume a minimum level of 1.0    
 
 
     - SQL Query Pattern:
@@ -332,13 +331,13 @@ Q9: Write a SQL query to return the name of the gene that was most positively ex
     FROM <t1> AS genes,<t2> AS expression,<t3> AS experiments
     WHERE genes.<id> = expression.<id>
     AND experiments.<id> = expression.<id>
-    AND <column>0.0
-    ORDER BY <column>
+    AND <column>1.0
+    GROUP BY <column1>, <column2>
+    LIMIT <number>
 
 ---
 
-Q10: Write a SQL query to return the name of the gene that was second most positively expressed. Assume a minimum level of 1.0  
-    - TABLES: `experiments, expression, genes`  
+Q10: Write a SQL query to return the name of the gene that was second most positively expressed. Assume a minimum level of 1.0   
 
     - SQL Query Pattern:
 
@@ -346,13 +345,14 @@ Q10: Write a SQL query to return the name of the gene that was second most posit
     FROM <t1> AS genes,<t2> AS expression,<t3> AS experiments
     WHERE genes.<id> = expression.<id>
     AND experiments.<id> = expression.<id>
-    AND <column>0.0
-    ORDER BY <column>
+    AND <column>1.0
+    GROUP BY <column1>, <column2>
+    ORDER BY <column1> ASC|DESC
+    LIMIT <number>
 
 ---
 
-Q11: Write a SQL query to return the gene(s) were positively expressed in ALL the experiments listed in the experiments table in order of level 
-    - TABLES: `experiments, expression, genes`  
+Q11: Write a SQL query to return the gene(s) were positively expressed in ALL the experiments listed in the experiments table in order of level    
    
    - SQL Query Pattern:
 
@@ -366,7 +366,6 @@ Q11: Write a SQL query to return the gene(s) were positively expressed in ALL th
 ---
 
 Q12: Write a SQL query to return a table of genes, their annotation, and any experiment in which they were either the highest or lowest expressed (of any significance level). Include a new column saying if they were the highest or lowest   
-    - TABLES: `experiments, expression, genes` 
 
     - SQL Query Pattern:
 

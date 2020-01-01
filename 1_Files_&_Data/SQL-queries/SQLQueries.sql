@@ -366,7 +366,7 @@ FROM genes, upInTwo
 WHERE genes.gid = upInTwo.gid
 AND organism = 'pine';
 
---Q8: Return the experiment names, genes & their levels in order, for genes that showed positive expression in every experiment recorded for it.
+--Q8: Return the experiment names, genes names & their levels in order, for genes that showed positive expression in every experiment recorded for it.
 SELECT
   expression.gid,
   level,
