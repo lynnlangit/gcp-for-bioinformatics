@@ -137,7 +137,7 @@ significance of at least 2.0, in some experiment, or negatively expressed twofol
 
 ---
 
-Use a self-join, by creating two instances of the same table, to derive a hierarchy of information from data in that table.  Use an equality operator in the WHERE clause.  Note how the copies of table are aliased and which columns are joined.
+Use a **self-join** by creating two instances of the same table, to derive a hierarchy of information from data in that table.  Use an equality operator in the WHERE clause.  Note how the copies of table are aliased and which columns are joined.
 
 [![Self-join for hierarchy](/1_Files_&_Data/SQL-concept-graphics/self-hierarchy.png)]()
 
@@ -152,7 +152,7 @@ Use a self-join, by creating two instances of the same table, to derive a hierar
 
 ---
 
-Use a **self-join**, by creating two instances of the same table, to derive a hierarchy of information from data in that table.  Use a less than operator in the WHERE clause.
+Use a **self-join** by creating two instances of the same table, to compare information from data in that table.  Use a less than operator in the WHERE clause.
 
 Alternatively, you can use a **subquery** (nested `SELECT` statement with the aggregate function `MAX`).  
 
