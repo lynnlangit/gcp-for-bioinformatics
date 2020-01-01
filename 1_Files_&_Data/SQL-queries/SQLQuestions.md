@@ -137,7 +137,9 @@ significance of at least 2.0, in some experiment, or negatively expressed twofol
 
 ---
 
-Use a self-join, by creating two instances of the same table, to derive a hierarchy of information from data in that table.  Use an equality operator in the WHERE clause.
+Use a self-join, by creating two instances of the same table, to derive a hierarchy of information from data in that table.  Use an equality operator in the WHERE clause.  Note how the copies of table are aliased and which columns are joined.
+
+[![Self-join for hierarchy](/1_Files_&_Data/SQL-concept-graphics/self-hierarchy.png)]()
 
 **Q3: Write a SQL query to return the grandparent category of 'glycine binding'**  
     - TABLES: `gotree`  
