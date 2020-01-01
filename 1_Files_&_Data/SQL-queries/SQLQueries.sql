@@ -438,8 +438,9 @@ ORDER BY
 LIMIT
   1
 
---Q12: Return a table of genes, their annotation, and any experiment in which they were either the highest or lowest expressed (of any significance level). 
---Include a fourth column to say if they were the highest or lowest.
+--Q12: Return a table of experiments, genes names and their annotation shown as one value, 
+--and their levels listed by experiment and level in descending order
+--Create a new fourth column which prints "positive" or "negative", based on level value.  
 SELECT
   experiments.name AS experiment_Name,
   CONCAT(genes.name, " - ", genes.annotation) AS gene_Info,
@@ -456,10 +457,5 @@ FROM
 WHERE
   genes.gid = expression.gid
   AND experiments.experimentid = expression.experimentid
-GROUP BY
-  experiments.name,
-  genes.name,
-  genes.annotation,
-  level
 ORDER BY
   experiments.name, level DESC

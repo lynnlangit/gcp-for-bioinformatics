@@ -375,16 +375,20 @@ Use the SQL keyword `ASC` or `DESC` to order the result.
     LIMIT <number>
 
 ---
-
-Q12: Write a SQL query to return a table of genes, their annotation, and any experiment in which they were either the highest or lowest expressed (of any significance level). Include a new column saying if they were the highest or lowest   
+  
+Q12: Return a table of experiments, genes names and their annotation shown as one value (use SQL `CONCAT`), and their levels.
+listed by experiment and level in descending order.  Create a new fourth column which prints "positive" or "negative", based on level value.  Use a SQL conditional statement to test level value, i.e. `CASE`... 
 
     - SQL Query Pattern:
 
-    SELECT <columns...>
+    SELECT <columns...>, CONCAT(col1, "-", col2) as NewCol, ...
+       CASE 
+          WHEN <c1> 0.0 THEN '<value1'>
+          WHEN <c1> 0.0 THEN '<value2'>
+        END AS <newColumn>
     FROM <t1> AS genes,<t2> AS expression,<t3> AS experiments
     WHERE genes.<id> = expression.<id>
     AND experiments.<id> = expression.<id>
-    AND <column>0.0
     ORDER BY <column>
 
 ---
