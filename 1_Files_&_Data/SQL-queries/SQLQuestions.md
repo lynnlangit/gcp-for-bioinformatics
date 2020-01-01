@@ -333,7 +333,20 @@ Q8: Write a SQL query to return the experiment names, gene names & their express
 
 ---
 
-Q9: Write a SQL query to return the name of the gene that was most positively expressed in experiment exp23. Assume a minimum level of 1.0    
+Q9: Write a SQL query to return the gene(s) were positively expressed in ALL the experiments listed in the experiments table in order of level    
+   
+   - SQL Query Pattern:
+
+    SELECT <columns...>
+    FROM <t1> AS genes,<t2> AS expression,<t3> AS experiments
+    WHERE genes.<id> = expression.<id>
+    AND experiments.<id> = expression.<id>
+    AND <column>0.0
+    ORDER BY <column>
+
+---
+
+Q10: Write a SQL query to return the name of the gene that was most positively expressed in experiment exp23. Assume a minimum level of 1.0    
 
 
     - SQL Query Pattern:
@@ -348,7 +361,7 @@ Q9: Write a SQL query to return the name of the gene that was most positively ex
 
 ---
 
-Q10: Write a SQL query to return the name of the gene that was second most positively expressed. Assume a minimum level of 1.0   
+Q11: Write a SQL query to return the name of the gene that was second most positively expressed. Assume a minimum level of 1.0   
 
     - SQL Query Pattern:
 
@@ -360,19 +373,6 @@ Q10: Write a SQL query to return the name of the gene that was second most posit
     GROUP BY <column1>, <column2>
     ORDER BY <column1> ASC|DESC
     LIMIT <number>
-
----
-
-Q11: Write a SQL query to return the gene(s) were positively expressed in ALL the experiments listed in the experiments table in order of level    
-   
-   - SQL Query Pattern:
-
-    SELECT <columns...>
-    FROM <t1> AS genes,<t2> AS expression,<t3> AS experiments
-    WHERE genes.<id> = expression.<id>
-    AND experiments.<id> = expression.<id>
-    AND <column>0.0
-    ORDER BY <column>
 
 ---
 
@@ -391,8 +391,8 @@ Q12: Write a SQL query to return a table of genes, their annotation, and any exp
 
 ### Other Notes
 
-- Possible query answers are on this page - https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQueries.sql
+- SQL query answers to these lesson are on this Repo page - https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQueries.sql
 
 - *(Optional) If you wish to create your own Google BigQuery dataset rather than querying my public dataset, then you must create your own BigQuery dataset.* 
     - *I've included instructions on how to create your own copy of this dataset using the CSV source files in this repository.* 
-    - *Directions are [here](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-lessons/1_lessons.md#other-things-to-know).*
+    - *Directions are [here](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-lessons/1_lessons.md#other-things-to-know) on how to set up your own copy of my public BigQuery dataset.*

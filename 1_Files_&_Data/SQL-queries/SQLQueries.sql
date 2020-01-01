@@ -383,7 +383,24 @@ WHERE
 ORDER BY
   level
 
---Q9: Return the name of the gene that was most positively expressed in experiment exp23. Assume a minimum level of 1.0.
+--Q9: Return the gene(s) were positively expressed in ALL the experiments listed in the Experiments table in order of level. 
+SELECT
+  expression.gid,
+  level,
+  genes.name AS gene,
+  experiments.name AS experiment
+FROM
+  `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes,
+  `gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression,
+  `gcp-for-bioinformatics.sql_genomics_examples.experiments` AS experiments
+WHERE
+  genes.gid = expression.gid
+  AND experiments.experimentid = expression.experimentid
+  AND level>0.0
+ORDER BY
+  level
+
+--Q10: Return the name of the gene that was most positively expressed in experiment exp23. Assume a minimum level of 1.0.
 SELECT
   genes.name,
   level
@@ -402,7 +419,7 @@ GROUP BY
 LIMIT
   1
 
---Q10: Return the name of the gene that was "second most positively expressed". Assume a minimum level of 1.0. 
+--Q11: Return the name of the gene that was "second most positively expressed". Assume a minimum level of 1.0. 
 SELECT
   genes.name,
   level
@@ -422,23 +439,6 @@ ORDER BY
   level ASC
 LIMIT
   1
-
---Q11: Return the gene(s) were positively expressed in ALL the experiments listed in the Experiments table in order of level. 
-SELECT
-  expression.gid,
-  level,
-  genes.name AS gene,
-  experiments.name AS experiment
-FROM
-  `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes,
-  `gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression,
-  `gcp-for-bioinformatics.sql_genomics_examples.experiments` AS experiments
-WHERE
-  genes.gid = expression.gid
-  AND experiments.experimentid = expression.experimentid
-  AND level>0.0
-ORDER BY
-  level
 
 --Q12: Return a table of genes, their annotation, and any experiment in which they were either the highest or lowest expressed (of any significance level). 
 --Include a fourth column to say if they were the highest or lowest.
