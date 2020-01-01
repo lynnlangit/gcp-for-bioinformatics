@@ -329,7 +329,6 @@ Q8: Write a SQL query to return the experiment names, gene names & their express
     WHERE genes.<id> = expression.<id>
     AND experiments.<id> = expression.<id>
     AND <column>0.0
-    ORDER BY <column> 
 
 ---
 
@@ -346,7 +345,7 @@ Q9: Write a SQL query to return the gene(s) were positively expressed in ALL the
 
 ---
 
-Q10: Write a SQL query to return the name of the gene that was most positively expressed in experiment exp23. Assume a minimum level of 1.0    
+Q10: Write a SQL query to return the name of the gene that was most positively expressed in experiment exp23. Assume a minimum level of 1.0. Use the SQL `LIMIT` keyword to return the top value.    
 
 
     - SQL Query Pattern:
@@ -361,7 +360,8 @@ Q10: Write a SQL query to return the name of the gene that was most positively e
 
 ---
 
-Q11: Write a SQL query to return the name of the gene that was second most positively expressed. Assume a minimum level of 1.0   
+Q11: Write a SQL query to return the name of the gene that was second most positively expressed. Assume a minimum level of 1.0.
+Use the SQL keyword `ASC` or `DESC` to order the result.   
 
     - SQL Query Pattern:
 

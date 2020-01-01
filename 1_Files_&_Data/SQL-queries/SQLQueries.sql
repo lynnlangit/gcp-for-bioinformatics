@@ -380,8 +380,6 @@ WHERE
   genes.gid = expression.gid
   AND experiments.experimentid = expression.experimentid
   AND level>0.0
-ORDER BY
-  level
 
 --Q9: Return the gene(s) were positively expressed in ALL the experiments listed in the Experiments table in order of level. 
 SELECT
