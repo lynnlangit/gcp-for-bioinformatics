@@ -22,13 +22,13 @@ The original source bioinformatics Dataset and base SQL queries used in this ope
 ---
 ## Part 1 - Single Table Queries
 
-In this section you will write and execute SQL queries against a single table in the **public** Google Cloud BigQuery bioinformatics dataset that I created for these lessons.  This first table that you will be using was created from a single CSV (text) file from the resource references at the beginning of this article.
+In this section you will execute or write (and execute) SQL queries against a single table in a **public** Google Cloud BigQuery bioinformatics dataset that I created for these lessons.  The first table that you will be using was created from a CSV (text) file from the wikibook source referenced at the beginning of this article.  To be able to use the BigQuery 'auto-detect schema' feature when uploading the CSV file, I modified the original source file structure by removing a row, all white space and by adding a column with numbers (numeric data type).
 
 ### Understand the Table Structure and Data
 
 To get started, I suggest that you run a couple of SQL queries to list all of the table data and also the table schema for the `experiments` table.  Simply copy and paste each queries in this section into your Google Cloud BigQuery query editor window and then click the blue 'run' button to execute each query and see the query results.
 
-Q0a: Run a SQL query which returns all data (rows) in the `experiments` table from my example GCP BigQuery public dataset  
+### Q0a: Run a SQL query which returns all data (rows) in the `experiments` table from my example GCP BigQuery public dataset  
 
     - SQL Example Query: 
 
@@ -36,8 +36,7 @@ Q0a: Run a SQL query which returns all data (rows) in the `experiments` table fr
         FROM `gcp-for-bioinformatics.sql_genomics_examples.experiments` AS experiments
  
 
-
-Q0b: Run a SQL query to return the table structure of the `experiments` table from my example GCP BigQuery public dataset  
+#### Q0b: Run a SQL query to return the table structure of the `experiments` table from my example GCP BigQuery public dataset  
 
     - SQL Example Query: 
 
