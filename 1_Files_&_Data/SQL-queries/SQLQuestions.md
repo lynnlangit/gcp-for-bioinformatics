@@ -91,8 +91,8 @@ In this section, you will be writing and executing SQL queries that retrieve dat
 ---
 ### Write and Execute Two-Table SQL (JOIN) Queries
 
-**Q2a: Return the ids and names of genes that were either positively expressed with a significance of at least 2.0, in some experiment.
-    - TABLES: expression, genes
+**Q2a: Return the ids and names of genes that were either positively expressed with a significance of at least 2.0, in some experiment.  
+    - TABLES: expression, genes  
     - SQL Keywords: SELECT, AS, FROM, WHERE, AND, (INNNER) JOIN
 
     SELECT <table>.<id>,<table>.name, <table>.significance
