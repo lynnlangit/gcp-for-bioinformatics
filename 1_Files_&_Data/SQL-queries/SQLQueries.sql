@@ -2,18 +2,12 @@
 ---Source: https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises
 
 --Q0a: Return all data from the experiments table
---TABLE: experiments
---SQL Keywords: SELECT, AS, FROM
-
 SELECT
   *
 FROM
   `gcp-for-bioinformatics.sql_genomics_examples.experiments` AS experiments
 
 --Q0b: Return the structure of the experiments table
---TABLE: experiments
---SQL Keywords: SELECT, EXCEPT, FROM, WHERE
-
 SELECT
   * EXCEPT(is_generated,
     generation_expression,
@@ -25,9 +19,6 @@ WHERE
   table_name="experiments"
 
 --Q1a: Return the names of experiments performed by Tommy Student.
---TABLE: experiments
---SQL Keywords: SELECT, AS, FROM, WHERE
-
 SELECT
   name
 FROM
@@ -36,9 +27,6 @@ WHERE
   whoperformed = 'Tommy Student'
 
 --Q1b: Return the names of experiments performed by Tommy Student after Jan 1, 2004.
---TABLE: experiments
---SQL Keywords: SELECT, AS, FROM, WHERE, AND
-
 SELECT
   name
 FROM
@@ -47,11 +35,20 @@ WHERE
   whoperformed = 'Tommy Student'
   AND date > '2004-01-01';
 
---Q2a: Return the names of genes that were either positively expressed twofold or more with a 
---significance of at least 1.0, in some experiment, or negatively expressed twofold or 
---less with a significance of at least 1.0, in some experiment. List them alongside their organisms in a two-column format
---TABLES: expression, genes
---SQL Keywords: SELECT, AS, FROM, WHERE, AND, (INNNER) JOIN
+--Q2a: Return the ids and names of genes that were either positively expressed with a significance of at least 2.0, in some experiment.
+SELECT
+  genes.gid,
+  name,
+  significance
+FROM
+  `gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression,
+  `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes
+WHERE
+  expression.gid = genes.gid
+  AND significance >= 2
+
+--Q2b: Return the names of genes that were either positively expressed twofold or more with a significance of at least 2.0, 
+--in some experiment, or negatively expressed twofold or less with a significance of at least 2.0, in some experiment. 
 SELECT
   genes.gid,
   name,
@@ -62,11 +59,11 @@ FROM
   `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes
 WHERE
   expression.gid = genes.gid
-  AND significance >= 1.0
+  AND significance >= 2
   AND (level >= 2.0
     OR level <= 2.0);
 
---2b: Formal JOIN Syntax
+--2c: Formal JOIN Syntax
 SELECT
   genes.gid,
   name,
@@ -79,14 +76,11 @@ JOIN
 ON
   expression.gid = genes.gid
 WHERE
-  significance >= 1.0
+  significance >= 2
   AND (level >= 2.0
     OR level <= 2.0);
 
 --Q3: Return the grandparent category of 'glycine binding'
---TABLES: gotree
---SQL Keywords: SELECT, AS, FROM, WHERE, AND, (SELF) JOIN
-
 SELECT
   parents.parent_category
 FROM
@@ -97,8 +91,6 @@ WHERE
   AND children.parent_category = parents.category;
 
 --Q4: Return the names of experiments that were performed before some Gasch experiment.
---TABLES: experiments
---SQL Keywords: SELECT, AS, FROM, WHERE, AND, MAX, (SELF) JOIN --or-- SUBQUERY
 
 --Self Join Answer
 SELECT
@@ -126,15 +118,13 @@ WHERE
 
 --Q5: Return the names of pine genes that were positively expressed more than 0.5-fold (with a significance of 1.0 or more) 
 --in at least two experiments.
---TABLES: expression, genes
---SQL Keywords: SELECT, DISTINCT, AS, FROM, WHERE, AND, GROUP BY, HAVING, COUNT, VIEW --or-- SUBQUERY
 
 --Use VIEWS Answer
 --First, we must find the experiments where genes are upreglated and significant.
 CREATE VIEW upregulated AS
 SELECT gid, experimentid
 FROM expression
-WHERE significance >= 1.0
+WHERE significance >= 1
 AND level >= 0.5;
 
 --Next, we must determine the genes which were upregulated in at least two experiments. 
@@ -164,8 +154,8 @@ WHERE
   AND e1.gid = e2.gid
   AND e1.level >= 0.5
   AND e2.level >= 0.5
-  AND e1.significance >= 1.0
-  AND e2.significance >= 1.0
+  AND e1.significance >= 1
+  AND e2.significance >= 1
   AND e1.experimentid <> e2.experimentid
   AND organism = 'pine';
 
@@ -189,7 +179,7 @@ CREATE VIEW UpInTwoOrMore AS
 SELECT gid
 FROM expression
 WHERE level >= 0.5
-AND significance >= 1.0
+AND significance >= 1
 GROUP BY gid
 HAVING COUNT(*) > 1;
 
@@ -228,9 +218,9 @@ AND e1.gid = e3.gid
 AND e1.level >= 0.5
 AND e2.level >= 0.5
 AND e3.level >= 0.5
-AND e1.significance >= 1.0
-AND e2.significance >= 1.0
-AND e3.significance >= 1.0
+AND e1.significance >= 1
+AND e2.significance >= 1
+AND e3.significance >= 1
 AND e1.experimentid <> e2.experimentid
 AND e1.experimentid <> e3.experimentid
 AND e2.experimentid <> e3.experimentid
@@ -263,7 +253,7 @@ CREATE VIEW upInThreeOrMore AS
 SELECT gid
 FROM expression
 WHERE level >= 0.5
-AND significance >= 1.0
+AND significance >= 1
 GROUP BY gid
 HAVING COUNT(*) > 2;
 
@@ -299,8 +289,8 @@ WHERE genes.gid = e1.gid
 AND e1.gid = e2.gid
 AND e1.level >= 0.5
 AND e2.level >= 0.5
-AND e1.significance >= 1.0
-AND e2.significance >= 1.0
+AND e1.significance >= 1
+AND e2.significance >= 1
 AND e1.experimentid <> e2.experimentid
 AND organism = 'pine'
 EXCEPT
@@ -312,9 +302,9 @@ AND e1.gid = e3.gid
 AND e1.level >= 0.5
 AND e2.level >= 0.5
 AND e3.level >= 0.5
-AND e1.significance >= 1.0
-AND e2.significance >= 1.0
-AND e3.significance >= 1.0
+AND e1.significance >= 1
+AND e2.significance >= 1
+AND e3.significance >= 1
 AND e1.experimentid <> e2.experimentid
 AND e1.experimentid <> e3.experimentid
 AND e2.experimentid <> e3.experimentid
@@ -364,10 +354,7 @@ FROM genes, upInTwo
 WHERE genes.gid = upInTwo.gid
 AND organism = 'pine';
 
---Q8: Return the experiment names, genes & their levels in order, for genes
---that showed positive expression in every experiment recorded for it.
---TABLES: experiments, expression, genes
---SQL Keywords: SELECT, FROM, WHERE, ORDER BY 
+--Q8: Return the experiment names, genes & their levels in order, for genes that showed positive expression in every experiment recorded for it.
 SELECT
   expression.gid,
   level,
@@ -384,10 +371,7 @@ WHERE
 ORDER BY
   level
 
---Q9: Return the name of the gene that was most positively expressed in experiment exp23? 
---Assume a minimum significance of 1.0.
---TABLES: experiments, expression, genes
---SQL Keywords: SELECT, FROM, WHERE, LIMIT, GROUP BY
+--Q9: Return the name of the gene that was most positively expressed in experiment exp23. Assume a minimum level of 1.0.
 SELECT
   genes.name,
   level
@@ -406,10 +390,7 @@ GROUP BY
 LIMIT
   1
 
---Q10: Return the name of the gene that was "second most positively expressed"? 
---Assume again a minimum significance of 1.0. 
---TABLES: experiments, expression, genes
---SQL Keywords: SELECT, FROM, WHERE, LIMIT, GROUP BY, ORDER BY
+--Q10: Return the name of the gene that was "second most positively expressed". Assume a minimum level of 1.0. 
 SELECT
   genes.name,
   level
@@ -430,10 +411,7 @@ ORDER BY
 LIMIT
   1
 
---Q11: Return the gene(s) were positively expressed in ALL the experiments listed 
---in the Experiments table in order of level. 
---TABLES: experiments, expression, genes
---SQL Keywords: SELECT, FROM, WHERE, ORDER BY
+--Q11: Return the gene(s) were positively expressed in ALL the experiments listed in the Experiments table in order of level. 
 SELECT
   expression.gid,
   level,
@@ -450,11 +428,8 @@ WHERE
 ORDER BY
   level
 
---Q12: Return a table of genes, their annotation, and any experiment in which 
---they were either the highest or lowest expressed (of any significance level). 
+--Q12: Return a table of genes, their annotation, and any experiment in which they were either the highest or lowest expressed (of any significance level). 
 --Include a fourth column to say if they were the highest or lowest.
---TABLES: experiments, expression, genes
---SQL Keywords: SELECT, FROM, WHERE, ORDER BY, GROUP BY, CASE, WHEN...THEN, CONCAT, DESC
 SELECT
   experiments.name AS experiment_Name,
   CONCAT(genes.name, " - ", genes.annotation) AS gene_Info,

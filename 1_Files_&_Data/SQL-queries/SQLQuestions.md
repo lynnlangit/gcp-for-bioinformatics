@@ -45,10 +45,10 @@ In this section you will write and execute SQL queries against a single table in
         SELECT * EXCEPT(is_generated,generation_expression,is_stored, is_updatable)
         FROM `gcp-for-bioinformatics`.sql_genomics_examples.INFORMATION_SCHEMA.COLUMNS
         WHERE table_name="experiments"
-        
+
 ![experiments table](/1_Files_&_Data/SQL-concept-graphics/experiments.png)
 
-TIP: Examine both the table schema and table when you are writing SQL queries.  Table in this example are very small, so you can use `SELECT *...` to see all data.
+TIP: Examine both the table schema and table when you are writing SQL queries.  Tables in this example dataset are very small, so you can use `SELECT *...` to see all data.
 
 - When you are working with tables that contain a large amount of data, you may want to add a limit clause, such as `LIMIT 10` to return only a subset of the data from table.  
 - In this example, that would be 10 sample data rows.
@@ -91,15 +91,24 @@ In this section, you will be writing and executing SQL queries that retrieve dat
 ---
 ### Write and Execute Two-Table SQL (JOIN) Queries
 
-**Q2a: Write a SQL query to return the names of genes that were either positively expressed twofold or more with a 
-significance of at least 1.0, in some experiment, or negatively expressed twofold or less with a significance of at least 1.0, in some experiment. List them alongside their organisms in a two-column format**    
+**Q2a: Return the ids and names of genes that were either positively expressed with a significance of at least 2.0, in some experiment.
+    - TABLES: expression, genes
+    - SQL Keywords: SELECT, AS, FROM, WHERE, AND, (INNNER) JOIN
+
+    SELECT <table>.<id>,<table>.name, <table>.significance
+    FROM <table1> AS expression,<table2> AS genes
+    WHERE <table1>.<id> = <table1>.<id>
+    AND <table>.significance >= integerValue
+
+**Q2b: Write a SQL query to return the names of genes that were either positively expressed twofold or more with a 
+significance of at least 2.0, in some experiment, or negatively expressed twofold or less with a significance of at least 2.0, in some experiment.**    
     - TABLES: `expression, genes`  
     - SQL Keywords: SELECT, AS, FROM, WHERE, AND, (INNNER) JOIN
 
         SELECT column1 AS c1, column2 AS c2, ...   
         FROM table1 AS t1, table2 AS t2  
         WHERE t1.col1 = t2.col1
-        AND t.c1 = 'stringValue'  
+        AND t.c1 = integerValue 
         AND t2.c2 > floatValue' 
 
 -OR-
@@ -107,7 +116,7 @@ significance of at least 1.0, in some experiment, or negatively expressed twofol
         SELECT column1 AS c1, column2 AS c2, ...   
         FROM table1 AS t1 (INNER) JOIN table2 AS t2  
         ON t1.col1 = t2.col1
-        WHERE t.c1 = 'stringValue'  
+        WHERE t.c1 = integerValue  
         AND t2.c2 > floatValue'   
 
 ![expression-genes](/1_Files_&_Data/SQL-concept-graphics/expression-genes.png)
@@ -120,7 +129,7 @@ significance of at least 1.0, in some experiment, or negatively expressed twofol
 
         SELECT <tableName>.<parentColumn>
         FROM <t1a> AS children, <t1b> AS parents
-        WHERE children.<column> = 'glycine binding'
+        WHERE children.<column> = 'stringValue'
         AND children.<parentColumn> = parents.<parentColumn>
 
 ---
@@ -147,7 +156,7 @@ significance of at least 1.0, in some experiment, or negatively expressed twofol
 
 ---
 
-**Q5: Write a SQL query to return the names of pine genes that were positively expressed more than 0.5-fold (with a significance of 1.0 or more) in at least two experiments**  
+**Q5: Write a SQL query to return the names of pine genes that were positively expressed more than 0.5-fold (with a significance of 1 or more) in at least two experiments**  
     - TABLES: `expression, genes`  
     - SQL Keywords: SELECT, DISTINCT, AS, FROM, WHERE, AND, GROUP BY, HAVING, COUNT, VIEW --or-- SUBQUERY
 
@@ -175,20 +184,20 @@ significance of at least 1.0, in some experiment, or negatively expressed twofol
     - 5d. GROUP BY Answer: use GROUP BY & COUNT
 ---
 
-**Q6: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1.0 or more) in at least three experiments**  
+**Q6: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in at least three experiments**  
     - TABLES: `expression, genes`  
     - SQL Keywords: SELECT, DISTINCT, AS, FROM, WHERE, AND, GROUP BY, HAVING, COUNT, VIEW --or-- SUBQUERY
  
-    - 6a. VIEW Answer: Similar to the answer for question 5. The caveat here is that while the equality evaluations are transitive, while inequality evaluations are not, and so every case must be covered.
+    - 6a. VIEW Answer: The caveat here is that while the equality evaluations are transitive, while inequality evaluations are not, and so every case must be covered.
 
     --OR--
 
-    - 6b. Subquery Answer: Build in another correlated subquery for our original correlated subquery to make this work.  
+    - 6b. Subquery Answer: Build in another correlated subquery for your original correlated subquery.  
 
-    - 6c. GROUP BY Answer: Simply adjust the count evaluation.
+    - 6c. GROUP BY Answer: Adjust the count evaluation.
 ---
 
-**Q7: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1.0 or more) in at exactly two experiments**  
+**Q7: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in at exactly two experiments**  
     - TABLES: `expression, genes`  
     - SQL Keywords: SELECT, DISTINCT, FROM, WHERE, EXCEPT, GROUP BY, HAVING, COUNT, VIEW --or-- SUBQUERY
   
@@ -216,13 +225,13 @@ significance of at least 1.0, in some experiment, or negatively expressed twofol
 
 ---
 
-**Q9: Write a SQL query to return the name of the gene that was most positively expressed in experiment exp23. Assume a minimum significance of 1.0**  
+**Q9: Write a SQL query to return the name of the gene that was most positively expressed in experiment exp23. Assume a minimum level of 1.0**  
     - TABLES: `experiments, expression, genes`  
     - SQL Keywords: SELECT, FROM, WHERE, LIMIT, GROUP BY
 
 ---
 
-**Q10: Write a SQL query to return the name of the gene that was second most positively expressed. Assume a minimum significance of 1.0**  
+**Q10: Write a SQL query to return the name of the gene that was second most positively expressed. Assume a minimum level of 1.0**  
     - TABLES: `experiments, expression, genes`  
     - SQL Keywords: SELECT, FROM, WHERE, LIMIT, GROUP BY, ORDER BY
 
@@ -234,7 +243,7 @@ significance of at least 1.0, in some experiment, or negatively expressed twofol
 
 ---
 
-**Q12: Write a SQL query to return a table of genes, their annotation, and any experiment in which they were either the highest or lowest expressed (of any significance level). Include a new, 4th column to say if they were the highest or lowest**  
+**Q12: Write a SQL query to return a table of genes, their annotation, and any experiment in which they were either the highest or lowest expressed (of any significance level). Include a new column saying if they were the highest or lowest**  
     - TABLES: `experiments, expression, genes`  
     - SQL Keywords: SELECT, FROM, WHERE, ORDER BY, GROUP BY, CASE, WHEN...THEN, CONCAT, DESC
 
