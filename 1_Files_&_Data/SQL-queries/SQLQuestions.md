@@ -18,6 +18,8 @@ The original source bioinformatics Dataset and base SQL queries used in this ope
  - Part 2 - Two-table SQL join Queries  
  - Part 3 - Three-table complex SQL Queries
 
+ For each section READ the section, then COPY the SQL query example or pattern into your Google Cloud Big Query query editor window.  MODIFY the query so that there are no errors (red lines).  RUN the query and review the results.  If you get stuck - here is a [link](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQueries.sql) to completed queries for each quesiton.
+
 ---
 ---
 ## Part 1 - Single Table Queries
