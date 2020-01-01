@@ -21,7 +21,7 @@ In this section you will write and execute SQL queries against a single table in
 
 To get started, I suggest that you run a couple of SQL queries to list all of the table data and also the table schema for the `experiments` table.  Simply copy and paste each queries in this section into your Google Cloud BigQuery query editor window and then click the blue 'run' button to execute each query and see the query results.
 
-**Q0a: Run a SQL query which returns all data (rows) in the `experiments` table from my example GCP BigQuery public dataset**    
+Q0a: Run a SQL query which returns all data (rows) in the `experiments` table from my example GCP BigQuery public dataset   
     - SQL Example Query: 
 
         SELECT *
@@ -29,7 +29,7 @@ To get started, I suggest that you run a couple of SQL queries to list all of th
  
 
 
-**Q0b: Run a SQL query to return the table structure of the `experiments` table from my example GCP BigQuery public dataset**     
+Q0b: Run a SQL query to return the table structure of the `experiments` table from my example GCP BigQuery public dataset     
     - SQL Example Query: 
 
         SELECT * EXCEPT(is_generated,generation_expression,is_stored, is_updatable)
@@ -56,16 +56,26 @@ In this section, you use the SQL Pattern Queries as a starter templates for you 
 
 [![Select-From](/1_Files_&_Data/SQL-concept-graphics/select-from.png)]()
 
-**Q1a: Write a SQL query to return the names of experiments performed by Tommy Student**   
+Q1a: Write a SQL query to return the names of experiments performed by Tommy Student   
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.experiments`  
     - TABLE: `experiments`  
     - SQL Pattern: 
 
-        SELECT <column1> AS c1, <column2> AS c2   
+        SELECT <column1>  
         FROM <table1> AS t1  
-        WHERE t1.c1 = <'stringValue'>  
+        WHERE t1.<column1> = <'stringValue'>  
 
-**Q1b: Write a SQL query to return the names of experiments performed by Tommy Student after Jan 1, 2004**   
+Q1b: Write a SQL query to return the names of experiments performed by Tommy Student after Jan 1, 2004
+
+    - SQL Pattern: 
+
+        SELECT <column1>   
+        FROM <table1> AS t1  
+        WHERE t1.<column1> = <'stringValue'>  
+        AND t1.<column2> > <'dateValue'>
+
+Q1c: Return the names and ids of experiments performed by Tommy Student after Jan 1, 2004. Rename the column `name` to Experiment and `experimentId` to ExperimentID.
+
     - SQL Pattern: 
 
         SELECT <column1> AS c1, <column2> AS c2   
@@ -93,7 +103,7 @@ In addition to using SQL join concepts, in this section, you'll use additional S
 
 [![all keywords](/1_Files_&_Data/SQL-concept-graphics/all-keywords.png)]()
 
-**Q2a: Write a SQL query to return the ids and names of genes that were either positively expressed with a significance of at least 2.0, in some experiment.** 
+Q2a: Write a SQL query to return the ids and names of genes that were either positively expressed with a significance of at least 2.0, in some experiment. 
 
 To start, query the `genes` and `expression` tables to review the all of the data in each table.  Look for a common data columns which can serve as the "join key" in the your query.  See the diagram below.
 
@@ -132,7 +142,7 @@ Use a **self-join** by creating two instances of the same table, to derive a hie
 
 [![Self-join for hierarchy](/1_Files_&_Data/SQL-concept-graphics/self-hierarchy.png)]()
 
-**Q3: Write a SQL query to return the grandparent category of 'glycine binding'**  
+Q3: Write a SQL query to return the grandparent category of 'glycine binding'  
     - TABLES: `gotree`  
     - SQL Query Pattern: 
 
@@ -153,7 +163,7 @@ Both approaches yield the correct result.  There are two factors in determining 
 1. Are you more comfortable writing set-based queries? Then use the self-join approach.
 2. Performance overhead in BigQuery.  At these small example amounts, query performance won't differ.  However, with production-sized tables, performance can differ due to other factors (table partitioning for example)
 
-**Q4: Return the names of experiments that were performed before some Gasch experiment**  
+Q4: Return the names of experiments that were performed before some Gasch experiment  
     - TABLES: `experiments`  
     - SQL Query Pattern:
 

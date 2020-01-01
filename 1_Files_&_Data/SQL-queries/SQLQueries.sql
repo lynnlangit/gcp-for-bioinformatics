@@ -35,6 +35,17 @@ WHERE
   whoperformed = 'Tommy Student'
   AND date > '2004-01-01';
 
+  --Q1c: Return the names and ids of experiments performed by Tommy Student after Jan 1, 2004
+  --Rename the column name to Experiment and experimentId to ExperimentID
+  SELECT
+  name AS Experiment,
+  experimentId AS ExperimentID
+FROM
+  `gcp-for-bioinformatics.sql_genomics_examples.experiments` AS experiments
+WHERE
+  whoperformed = 'Tommy Student'
+  AND date > '2004-01-01'
+
 --Q2a: Return the ids and names of genes that were either positively expressed with a significance of at least 2.0, in some experiment.
 SELECT
   genes.gid,
