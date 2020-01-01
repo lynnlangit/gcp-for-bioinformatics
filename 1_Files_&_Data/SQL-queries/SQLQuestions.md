@@ -77,24 +77,24 @@ In this section, you use the SQL Pattern Queries as a starter templates for you 
         WHERE <column1> = <'stringValue'>  
 
 ### ❓Q1b: Write a SQL query to return the names of experiments performed by Tommy Student after Jan 1, 2004.
-Rename the referenced table name to "expermients" using the SQL `AS` keyword in the `FROM` clause.
+Rename the referenced table name to "experiments" using the SQL `AS` keyword in the `FROM` clause.
 
     - SQL Pattern: 
 
         SELECT <column1>   
-        FROM <table1> AS t1  
-        WHERE t1.<column1> = <'stringValue'>  
-        AND t1.<column2> > <'dateValue'>
+        FROM <table1> AS experiments  
+        WHERE <column1> = <'stringValue'>  
+        AND <column2> > <'dateValue'>
 
 ### ❓Q1c: Write a SQL query to return the names and ids of experiments performed by Tommy Student after Jan 1, 2004. 
 Rename the column `name` to "Experiment" and `experimentId` to "ExperimentID" using the `AS` keyword in the `SELECT` clause.
 
     - SQL Pattern: 
 
-        SELECT <column1> AS c1, <column2> AS c2   
-        FROM <table1> AS t1  
-        WHERE t1.c1 = <'stringValue'>  
-        AND t1.c2 > <'dateValue'>
+        SELECT <column1> AS <c1>, <column2> AS <c2>   
+        FROM <table1> AS <t1>  
+        WHERE <t1>.<c1> = <'stringValue'>  
+        AND <t1>.<c2> <'dateValue'>
 ---
 ---
 
@@ -120,19 +120,17 @@ In addition to using SQL join concepts, in this section, you'll use additional S
 
 To start, query the `genes` and `expression` tables to review all of the data in each table.  Look for a common data columns which can serve as the "join key" in the your query.  See the diagram below.
 
-[![Join columns](/1_Files_&_Data/SQL-concept-graphics/join-cols.png)]()
-    - TABLES: `expression`, `genes`  
+[![Join columns](/1_Files_&_Data/SQL-concept-graphics/join-cols.png)]() 
 
     - SQL Query Pattern: 
 
-    SELECT <table>.<id>,<table>.name, <table>.significance
+    SELECT columns...
     FROM <table1> AS expression,<table2> AS genes
-    WHERE <table1>.<id> = <table1>.<id>
-    AND <table>.significance >= integerValue
+    WHERE <table1>.<id> = <table2>.<id>
+    AND <table1>.significance >= integerValue
 
 ### ❓Q2b: Write a SQL query to return the names of genes that were either positively expressed twofold or more with a 
 significance of at least 2.0, in some experiment, or negatively expressed twofold or less with a significance of at least 2.0, in some experiment.   
-    - TABLES: `expression, genes`  
 
     - SQL Query Pattern: 
 
@@ -153,12 +151,11 @@ significance of at least 2.0, in some experiment, or negatively expressed twofol
 
 ---
 
-Use a **self-join** by creating two instances of the same table, to derive a hierarchy of information from data in that table.  Use an equality operator in the WHERE clause.  Note how the copies of table are aliased and which columns are joined.
+Use a **self-join** by creating two instances of the same table, to derive a hierarchy of information from data in that table. Use the `gotree` table. Use an equality operator in the WHERE clause.  Note how the copies of table are aliased and which columns are joined.
 
 [![Self-join for hierarchy](/1_Files_&_Data/SQL-concept-graphics/self-hierarchy.png)]()
 
-### ❓Q3: Write a SQL query to return the grandparent category of 'glycine binding'  
-    - TABLES: `gotree`  
+### ❓Q3: Write a SQL query to return the grandparent category of 'glycine binding'    
 
     - SQL Query Pattern: 
 
@@ -173,14 +170,13 @@ Use a **self-join** by creating two instances of the same table, to compare info
 
 [![Self-join for comparison](/1_Files_&_Data/SQL-concept-graphics/self-compare.png)]()
 
-As an alternative to using a self-join, you could use a SQL **subquery**. In this case, that subquery would be a nested `SELECT` statement using the SQL aggregate function `MAX` to filter the date values.
+As an alternative to using a self-join, you could use a SQL **subquery**. In this case, that subquery would be a nested `SELECT` statement using the SQL aggregate function `MAX` to filter the date values.  Use the `experiments` table.
 
 Both approaches yield the correct result.  There are two factors in determining which query approach is best.  Those factors are the following:  
 1. Are you more comfortable writing set-based queries? Then use the self-join approach.  Alternatively, you can use the subquery approach if that is more natural for you.
 2. Performance overhead in BigQuery.  At these small example amounts, query performance won't differ.  However, with production-sized tables, performance can differ due to other factors (table partitioning for example). Query performance tuning is a complex topic is beyond the scope of this course.
 
 ### ❓Q4: Return the names of experiments that were performed before some Gasch experiment  
-    - TABLES: `experiments`  
 
     - SQL Query Pattern:
 
@@ -210,9 +206,8 @@ Because it's helpful to 'see' table structure when writing queries, I'll link a 
 
 
 ### ❓Q5: Write a SQL query to return the names of pine genes that were positively expressed more than 0.5-fold (with a significance of 1 or more) in at least two experiments  
-    - TABLES: `expression, genes`
 
-- 5a. Self-join Answer: can be written one single query. However using a self-join with another table join, which is, in effect, a three table join, is complex to write and to read.
+- 5a. Self-join Answer: can be written one single query. However using a self-join with another table join, which is, in effect, a three table join, is complex to write and to read.  Join the `genes` table to two copies of the `expression` table.
 
         - SQL Query Pattern:
 
@@ -336,7 +331,7 @@ The most common join type is a SQL inner join (which returns only rows matched i
 [![Three table join](/1_Files_&_Data/SQL-concept-graphics/3-tables.png)]()
 
 ### ❓Q8: Write a SQL query to return the experiment names, gene names & their expression levels in order, for genes that showed positive expression in every experiment recorded for it  
-    - TABLES: `experiments, expression, genes` 
+Join these tables: `experiments, expression, genes` 
 
     - SQL Query Pattern:
 
