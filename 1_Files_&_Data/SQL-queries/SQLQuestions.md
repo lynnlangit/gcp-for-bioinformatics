@@ -200,60 +200,72 @@ Q4: Return the names of experiments that were performed before some Gasch experi
             WHERE <column> = 'Gasch' );
 
 ---
-For some queries, you have a number of choices of how you write your query.  For this example you have at least 4 options.  They are as follows:
-1. Use VIEWS - SQL Views are saved, named `SELECT` queries.  They are a convenience, that allows you to refer to subsets in subsequent queries.
-2. Use self-joins
-3. Use subqueries
-4. Use other SQL capabilities - in this case the `GROUP BY` (aggregate) and `HAVING` (filter aggregates) keywords. The SQL function `COUNT` is used here as well.
+For some types of queries, you cab have a significant number of choices in how you write your query.  For the next example I will show 2 options.  The reason for showing these options is that you may have to work with queries that other researcher's have written - and they could use any of these styles.  The styles used here are as follows:
+1. Use VIEWS - SQL Views are saved, named `SELECT` queries.  They are a convenience that allows you to refer to subsets in subsequent queries.  A view is referenced like a table in the `FROM` clause of a SQL statement.
+2. Use self-joins - as in the previous examples, simply more practice here.  Also uses the VIEWS created in the first answer to this question.
 
-**SECTION in PROGRESS**
 
 Q5: Write a SQL query to return the names of pine genes that were positively expressed more than 0.5-fold (with a significance of 1 or more) in at least two experiments  
     - TABLES: `expression, genes`
 
-    - SQL Query Pattern
+- 5a. Self-join Answer: can be written one single query. However using a self-join with another table join, which is, in effect, a three table join, is complex to write and to read.
 
-    SELECT <column>
-    FROM <table1a> AS expressions
-    WHERE experiments.<column> 
+        - SQL Query Pattern:
 
-    - 5a. VIEW Answer: First find the experiments where genes are upreglated and significant.  
-        - Next determine the genes which were upregulated in at least two experiments. Take the product of the upregulated genes and selecting rows where the gene ID is the same but the experiment ID is different.  
-        - Finally, determine which of these genes come from pine, and project their names.
+        SELECT DISTINCT <column>
+        FROM <t1> AS genes, <t2a> AS e1,<t2b> AS e2
+        WHERE <t1>.<id> = <t2a>.<id>
+        AND e1.<id> = e2.<id>
+        AND e1.<column> >= 0.5
+        AND e2.<column> >= 0.5
+        AND e1.<column> >= 1.0
+        AND e2.<column> >= 1.0
+        AND e1.<id> <> e2.<id>
+        AND <column> = 'pine';
 
     --OR--
 
-    - 5b. Self-join Answer: can be written one single query
+- 5b. VIEW Answer:  To improve query readability, I'll create two views.  The first view (`upregulated`) finds the experiments where genes are upreglated and significant.   The second view is created using the first view as a table source.  
 
-    - SQL Query Pattern
+    The second view (`uprInTwoOrMore`)is used to determine the genes which were upregulated in at least two experiments. This is done by by taking the product of the upregulated genes & selecting rows where the gene ID is the same but the experiment ID is different.The SQL queries which I used to create these views is shown below. 
 
-    SELECT DISTINCT <column>
-    FROM <t1> AS genes, <t2a> AS e1,<t2b> AS e2
-    WHERE <t1>.<id> = <t2a>.<id>
-    AND e1.<id> = e2.<id>
-    AND e1.<column> >= 0.5
-    AND e2.<column> >= 0.5
-    AND e1.<column> >= 1.0
-    AND e2.<column> >= 1.0
-    AND e1.<id> <> e2.<id>
-    AND <column> = 'pine';
+        - SQL Query Pattern:
 
-    - 5c. Subquery Answer: Make a correlated subquery where the subquery depends on some property (in this case the gene ID) of the parent query. You'll still need to make use of the `Upregulated` view created above to reduce code redundancy.
+        CREATE VIEW upregulated AS
+        SELECT gid, experimentid
+        FROM `gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression
+        WHERE significance >= 1
+        AND level >= 0.5;
 
-     - SQL Query Pattern
+        --SELECT all rows using the view name as a table source to see the results
+        SELECT * 
+        FROM `gcp-for-bioinformatics.sql_genomics_examples.upregulated`
+  
+        CREATE VIEW upInTwoOrMore AS
+        SELECT DISTINCT u1.gid AS gid
+        FROM 
+        `gcp-for-bioinformatics.sql_genomics_examples.upregulated` AS u1, 
+        `gcp-for-bioinformatics.sql_genomics_examples.upregulated` AS u2
+        WHERE u1.gid = u2.gid
+        AND u1.experimentid <> u2.experimentid;
 
-    SELECT <column>
-    FROM <table1a> AS expressions
-    WHERE experiments.<column> 
+        --Select using the view name as a table source to see the results
+        SELECT * 
+        FROM `gcp-for-bioinformatics.sql_genomics_examples.upInTwoOrMore`
 
-    - 5d. GROUP BY Answer: use GROUP BY & COUNT
+--Use the views by determining which of these genes come from pine, and then returning their names.  You'll need to join the second view to the `gene` table  
 
-     - SQL Query Pattern
+        - SQL Query Pattern:
 
-    SELECT <column>
-    FROM <table1a> AS expressions
-    WHERE experiments.<column> 
+        SELECT <column>
+        FROM 
+        `gcp-for-bioinformatics.sql_genomics_examples.<table>` AS genes, 
+        `gcp-for-bioinformatics.sql_genomics_examples.<view>` AS upInTwoOrMore
+        WHERE genes.<id> = upInTwoOrMore.<id>
+        AND <column> = <stringValue>;
+
 ---
+**SECTION in PROGRESS**
 
 Q6: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in at least three experiments  
     - TABLES: `expression, genes`  

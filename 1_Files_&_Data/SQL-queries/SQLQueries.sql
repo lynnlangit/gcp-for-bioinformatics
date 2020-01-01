@@ -128,31 +128,7 @@ WHERE
   WHERE
     whoperformed = 'Gasch' );
 
---Q5: Return the names of pine genes that were positively expressed more than 0.5-fold (with a significance of 1.0 or more) 
---in at least two experiments.
-
---Use VIEWS Answer
---First, we must find the experiments where genes are upreglated and significant.
-CREATE VIEW upregulated AS
-SELECT gid, experimentid
-FROM expression
-WHERE significance >= 1
-AND level >= 0.5;
-
---Next, we must determine the genes which were upregulated in at least two experiments. 
---We do this by taking the product of the upregulated genes and selecting rows where the gene ID 
---is the same but the experiment ID is different.
-CREATE VIEW upInTwoOrMore AS
-SELECT DISTINCT u1.gid AS gid
-FROM upregulated AS u1, upregulated AS u2
-WHERE u1.gid = u2.gid
-AND u1.experimentid <> u2.experimentid;
-
---Finally, we determine which of these genes come from pine, and project their names.
-SELECT name
-FROM genes, upInTwoOrMore
-WHERE genes.gid = upInTwoOrMore.gid
-AND organism = 'pine';
+--Q5: Return the names of pine genes that were positively expressed more than 0.5-fold (significance of 1.0+) in at least two experiments.
 
 --Self-join answer
 SELECT
@@ -171,32 +147,37 @@ WHERE
   AND e1.experimentid <> e2.experimentid
   AND organism = 'pine';
 
---Subquery Answer
---As another approach, we can make use of subqueries to find the answer. The key to this is to 
---make a correlated subquery where the subquery depends on some property (in this case the gene ID) 
---of the parent query. Note that we'll still need to make use of the Upregulated view created above to reduce code redundancy.
-SELECT DISTINCT name
-FROM genes, Upregulated AS u1
-WHERE genes.gid = u1.gid
-AND organism = 'pine'
-AND U1.gid = (
-    SELECT DISTINCT u1.gid
-    FROM upregulated AS u2
-    WHERE u1.gid = u2.gid
-    AND u1.experimentid <> u2.experimentid
-);
+--Use VIEWS Answer
+--First, create the "upregulated" view to return the experiments where genes are upreglated and significant.
+CREATE VIEW upregulated AS
+SELECT gid, experimentid
+FROM `gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression
+WHERE significance >= 1
+AND level >= 0.5;
 
---GROUP BY Answer
-CREATE VIEW UpInTwoOrMore AS
-SELECT gid
-FROM expression
-WHERE level >= 0.5
-AND significance >= 1
-GROUP BY gid
-HAVING COUNT(*) > 1;
+--Select using the view name as a table source to see the results
+SELECT * 
+FROM `gcp-for-bioinformatics.sql_genomics_examples.upregulated`
 
+--Next, determine the genes which were upregulated in at least two experiments. 
+--Do this by taking the product of the upregulated genes & selecting rows where the gene ID is the same but the experiment ID is different.
+CREATE VIEW upInTwoOrMore AS
+SELECT DISTINCT u1.gid AS gid
+FROM 
+  `gcp-for-bioinformatics.sql_genomics_examples.upregulated` AS u1, 
+  `gcp-for-bioinformatics.sql_genomics_examples.upregulated` AS u2
+WHERE u1.gid = u2.gid
+AND u1.experimentid <> u2.experimentid;
+
+--Select using the view name as a table source to see the results
+SELECT * 
+FROM `gcp-for-bioinformatics.sql_genomics_examples.upInTwoOrMore`
+
+--Then determine which of these genes come from pine, and return their names.  You'll need to join the view to the `gene` table
 SELECT name
-FROM genes, upInTwoOrMore
+FROM 
+  `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes, 
+  `gcp-for-bioinformatics.sql_genomics_examples.upInTwoOrMore` AS upInTwoOrMore
 WHERE genes.gid = upInTwoOrMore.gid
 AND organism = 'pine';
 
