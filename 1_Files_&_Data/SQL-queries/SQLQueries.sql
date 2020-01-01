@@ -27,7 +27,6 @@ WHERE
   whoperformed = 'Tommy Student'
 
 --Q1b: Return the names of experiments performed by Tommy Student after Jan 1, 2004.
---Rename the referenced table name to "expermients" using the SQL `AS` keyword in the `FROM` clause
 SELECT
   name
 FROM
@@ -36,8 +35,7 @@ WHERE
   whoperformed = 'Tommy Student'
   AND date > '2004-01-01';
 
-  --Q1c: Return the names and ids of experiments performed by Tommy Student after Jan 1, 2004
-  --Rename the column name to Experiment and experimentId to ExperimentID
+--Q1c: Return the names and ids of experiments performed by Tommy Student after Jan 1, 2004
   SELECT
   name AS Experiment,
   experimentId AS ExperimentID
@@ -148,19 +146,18 @@ WHERE
   AND organism = 'pine';
 
 --Use VIEWS Answer
---First, create the "upregulated" view to return the experiments where genes are upreglated and significant.
+--This view returns the experiments where genes are upregulated and significant.
 CREATE VIEW upregulated AS
 SELECT gid, experimentid
 FROM `gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression
 WHERE significance >= 1
 AND level >= 0.5;
 
---Select using the view name as a table source to see the results
+--Select * using the view name as a table source to see the query results
 SELECT * 
 FROM `gcp-for-bioinformatics.sql_genomics_examples.upregulated`
 
---Next, determine the genes which were upregulated in at least two experiments. 
---Do this by taking the product of the upregulated genes & selecting rows where the gene ID is the same but the experiment ID is different.
+--This view determines the genes which were upregulated in at least two experiments. 
 CREATE VIEW upInTwoOrMore AS
 SELECT DISTINCT u1.gid AS gid
 FROM 
@@ -169,11 +166,11 @@ FROM
 WHERE u1.gid = u2.gid
 AND u1.experimentid <> u2.experimentid;
 
---Select using the view name as a table source to see the results
+--Select * using the view name as a table source to see the query results
 SELECT * 
 FROM `gcp-for-bioinformatics.sql_genomics_examples.upInTwoOrMore`
 
---Then determine which of these genes come from pine, and return their names.  You'll need to join the view to the `gene` table
+--Then determine which of these genes come from pine, and return their names. 
 SELECT name
 FROM 
   `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes, 
@@ -181,26 +178,10 @@ FROM
 WHERE genes.gid = upInTwoOrMore.gid
 AND organism = 'pine';
 
---Q6: Return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1.0 or more) in at least three experiments.
---TABLES: expression, genes
---SQL Keywords: SELECT, DISTINCT, AS, FROM, WHERE, AND, GROUP BY, HAVING, COUNT, VIEW --or-- SUBQUERY
-
---VIEWS Answer
---Similar to the answer for question 5. The caveat here is that while the equality evaluations are transitive, 
---while inequality evaluations are not, and so every case must be covered.
-CREATE VIEW upInThreeOrMore AS
-SELECT DISTINCT u1.gid AS gid
-FROM upregulated AS u1, upregulated AS u2, upregulated as u3
-WHERE u1.gid = u2.gid
-AND u1.gid = u3.gid
-AND u1.experimentid <> u2.experimentid
-AND u1.experimentid <> u3.experimentid
-AND u2.experimentid <> u3.experimentid;
-
-SELECT name
-FROM genes, upInThreeOrMore
-WHERE genes.gid = upInThreeOrMore.gid
-AND organism = 'pine';
+--Q6: Return the names of pine genes that were 
+--up-regulated 0.5-fold or more 
+--with a significance of 1.0 or more) 
+--in at least three experiments.
 
 --Self-join Answer:
 SELECT DISTINCT name
@@ -219,29 +200,24 @@ AND e1.experimentid <> e3.experimentid
 AND e2.experimentid <> e3.experimentid
 AND organism = 'pine';
 
---Subquery Answer
---We need to build in another correlated subquery for our original correlated subquery to make this work.
-SELECT DISTINCT name
-FROM genes, upregulated AS u1
-WHERE genes.gid = u1.gid
-AND organism = 'pine'
-AND u1.gid = (
-    SELECT DISTINCT u1.gid
-    FROM upregulated AS u2
-    WHERE u1.gid = u2.gid
-    AND u1.gid = (
-        SELECT DISTINCT u1.gid
-        FROM upregulated AS u3
-        WHERE u1.gid = u2.gid
-        AND u1.gid = u3.gid
-        AND u1.experimentid <> u2.experimentid
-        AND u1.experimentid <> u3.experimentid
-        AND u2.experimentid <> u3.experimentid
-    )
-);
+--VIEWS Answer
+--The caveat here is that while the equality evaluations are transitive, 
+--while inequality evaluations are not, and so every case must be covered.
+CREATE VIEW upInThreeOrMore AS
+SELECT DISTINCT u1.gid AS gid
+FROM upregulated AS u1, upregulated AS u2, upregulated as u3
+WHERE u1.gid = u2.gid
+AND u1.gid = u3.gid
+AND u1.experimentid <> u2.experimentid
+AND u1.experimentid <> u3.experimentid
+AND u2.experimentid <> u3.experimentid;
 
---GROUP BY Answer
---Simply adjust the count evaluation.
+SELECT name
+FROM genes, upInThreeOrMore
+WHERE genes.gid = upInThreeOrMore.gid
+AND organism = 'pine';
+
+--GROUP BY Answer--Simply adjust the count evaluation.
 CREATE VIEW upInThreeOrMore AS
 SELECT gid
 FROM expression
@@ -257,23 +233,6 @@ AND organism = 'pine';
 
 --Q7: Return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1.0 or more) 
 --in at exactly two experiments.
---TABLES: expression, genes
---SQL Keywords: SELECT, DISTINCT, FROM, WHERE, EXCEPT, GROUP BY, HAVING, COUNT, VIEW --or-- SUBQUERY
-
---VIEWS Answer
---The key here is identifying that taking the set of genes upregulated in two or more experiments 
---and subtracting the set of genes upregulated in three or mor experiments gives the set of genes upregulated in precisely two experiments. Thus, our answer is the answer to question 5 subtracted by the answer to question 6.
-CREATE VIEW upInTwo AS
-SELECT *
-FROM upInTwoOrMore
-EXCEPT
-SELECT *
-FROM upInThreeOrMore;
-
-SELECT name
-FROM genes, upInTwo
-WHERE genes.gid = upInTwo.gid
-AND organism = 'pine';
 
 --Self-join answer
 SELECT DISTINCT name
@@ -303,36 +262,22 @@ AND e1.experimentid <> e3.experimentid
 AND e2.experimentid <> e3.experimentid
 AND organism = 'pine';
 
---Subquery Answer
-SELECT DISTINCT name
-FROM genes, upregulated AS u1
-WHERE genes.gid = u1.gid
-AND organism = 'pine'
-AND u1.gid = (
-    SELECT DISTINCT u1.gid
-    FROM upregulated AS u2
-    WHERE u1.gid = u2.gid
-    AND u1.experimentid <> u2.experimentid
-)
+--VIEWS Answer
+--The key here is identifying that taking the set of genes upregulated in two or more experiments 
+--and subtracting the set of genes upregulated in three or mor experiments gives the set of genes 
+--upregulated in precisely two experiments. Thus, our answer is the answer to question 5 subtracted by the answer to question 6.
+CREATE VIEW upInTwo AS
+SELECT *
+FROM upInTwoOrMore
 EXCEPT
-SELECT DISTINCT name
-FROM genes, upregulated AS u1
-WHERE genes.gid = U1.gid
-AND organism = 'pine'
-AND u1.gid = (
-    SELECT DISTINCT u1.gid
-    FROM upregulated AS u2
-    WHERE u1.gid = u2.gid
-    AND u1.gid = (
-        SELECT DISTINCT u1.gid
-        FROM upregulated AS u3
-        WHERE u1.gid = u2.gid
-        AND u1.gid = u3.gid
-        AND u1.experimentid <> u2.experimentid
-        AND u1.experimentid <> u3.experimentid
-        AND u2.experimentid <> u3.experimentid
-    )
-);
+SELECT *
+FROM upInThreeOrMore;
+
+SELECT name
+FROM genes, upInTwo
+WHERE genes.gid = upInTwo.gid
+AND organism = 'pine';
+
 
 --GROUP BY Answer
 CREATE VIEW upInTwo AS
@@ -347,7 +292,8 @@ FROM genes, upInTwo
 WHERE genes.gid = upInTwo.gid
 AND organism = 'pine';
 
---Q8: Return the experiment names, genes names & their levels in order, for genes that showed positive expression in every experiment recorded for it.
+--Q8: Return the experiment names, genes names & their levels in order, for genes that 
+--showed positive expression in every experiment recorded for it.
 SELECT
   expression.gid,
   level,
