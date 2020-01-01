@@ -204,6 +204,9 @@ For some types of queries, you can have choices in how you write your query.  Fo
 1. Use self-joins - as in the previous examples, simply more practice here.  You'll note that there are two copies of a table, which is joined to another table.  This is, in effect, a three-table join.
 2. Use VIEWS - SQL Views are saved, named `SELECT` queries.  They are a language convenience that allows you to refer to subsets of table data by name in subsequent queries.  A view is referenced like a table in the `FROM` clause of a SQL statement.
 
+Because it's helpful to 'see' table structure when writing queries, I'll link a diagram of the two tables queried in this section below.
+[![Join columns](/1_Files_&_Data/SQL-concept-graphics/join-cols.png)]()
+
 
 Q5: Write a SQL query to return the names of pine genes that were positively expressed more than 0.5-fold (with a significance of 1 or more) in at least two experiments  
     - TABLES: `expression, genes`
@@ -227,7 +230,7 @@ Q5: Write a SQL query to return the names of pine genes that were positively exp
 
 - 5b. VIEW Answer:  To improve query readability, I'll create two views.  The first view (`upregulated`) finds the experiments where genes are upreglated and significant.   The second view is created using the first view as a table source.  
 
-    The second view (`uprInTwoOrMore`)is used to determine the genes which were upregulated in at least two experiments. This is done by by taking the product of the upregulated genes & selecting rows where the gene ID is the same but the experiment ID is different.The SQL queries which I used to create these views is shown below. 
+    The second view (`upInTwoOrMore`)is used to determine the genes which were upregulated in at least two experiments. This is done by by taking the product of the upregulated genes & selecting rows where the gene ID is the same but the experiment ID is different.The SQL queries which I used to create these views is shown below. 
 
         - SQL Query Pattern:
 
@@ -253,7 +256,7 @@ Q5: Write a SQL query to return the names of pine genes that were positively exp
         SELECT * 
         FROM `gcp-for-bioinformatics.sql_genomics_examples.upInTwoOrMore`
 
---Use the views by determining which of these genes come from pine, and then returning their names.  You'll need to join the second view to the `gene` table  
+--Use the views by determining which of these genes come from pine, and then returning their names.  You'll need to join the second view to the `gene` table to retrieve the required information.
 
         - SQL Query Pattern:
 
