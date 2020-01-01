@@ -267,10 +267,24 @@ Because it's helpful to 'see' table structure when writing queries, I'll link a 
 **SECTION in PROGRESS**
 
 ### ❓Q6: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in at least three experiments  
-    - TABLES: `expression, genes`  
-    - SQL Keywords: SELECT, DISTINCT, AS, FROM, WHERE, AND, GROUP BY, HAVING, COUNT, VIEW --or-- SUBQUERY
- 
-    - 6a. VIEW Answer: The caveat here is that while the equality evaluations are transitive, while inequality evaluations are not, and so every case must be covered.
+
+- 6a. Self-join Answer: can be written one single query. However using a self-join with another table join, which is, in effect, a three table join, is complex to write and to read.  Join the `genes` table to two copies of the `expression` table.
+
+        - SQL Query Pattern:
+
+        SELECT DISTINCT <column>
+        FROM <t1> AS genes, <t2a> AS e1,<t2b> AS e2
+        WHERE <t1>.<id> = <t2a>.<id>
+        AND e1.<id> = e2.<id>
+        AND e1.<column> >= 0.5
+        AND e2.<column> >= 0.5
+        AND e1.<column> >= 1.0
+        AND e2.<column> >= 1.0
+        AND e1.<id> <> e2.<id>
+        AND <column> = 'pine';
+
+    --OR-- 
+- 6b. VIEW Answer: The caveat here is that while the equality evaluations are transitive, while inequality evaluations are not, and so every case must be covered.
 
     - SQL Query Pattern
 
@@ -280,15 +294,7 @@ Because it's helpful to 'see' table structure when writing queries, I'll link a 
 
     --OR--
 
-    - 6b. Subquery Answer: Build in another correlated subquery for your original correlated subquery.  
-
-    - SQL Query Pattern
-
-    SELECT <column>
-    FROM <table1a> AS expressions
-    WHERE experiments.<column> 
-
-    - 6c. GROUP BY Answer: Adjust the count evaluation.
+- 6c. GROUP BY Answer: Adjust the count evaluation.
 
     - SQL Query Pattern
 
@@ -298,10 +304,24 @@ Because it's helpful to 'see' table structure when writing queries, I'll link a 
 ---
 
 ### ❓Q7: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in at exactly two experiments 
-    - TABLES: `expression, genes`  
-    - SQL Keywords: SELECT, DISTINCT, FROM, WHERE, EXCEPT, GROUP BY, HAVING, COUNT, VIEW --or-- SUBQUERY
   
-    - 7a. VIEW Answer: The key here is identifying that taking the set of genes upregulated in two or more experiments and subtracting the set of genes upregulated in three or mor experiments gives the set of genes upregulated in precisely two experiments. The answer is the answer to question 5 subtracted by the answer to question 6.
+- 7a. Self-join Answer: can be written one single query. However using a self-join with another table join, which is, in effect, a three table join, is complex to write and to read.  Join the `genes` table to two copies of the `expression` table.
+
+        - SQL Query Pattern:
+
+        SELECT DISTINCT <column>
+        FROM <t1> AS genes, <t2a> AS e1,<t2b> AS e2
+        WHERE <t1>.<id> = <t2a>.<id>
+        AND e1.<id> = e2.<id>
+        AND e1.<column> >= 0.5
+        AND e2.<column> >= 0.5
+        AND e1.<column> >= 1.0
+        AND e2.<column> >= 1.0
+        AND e1.<id> <> e2.<id>
+        AND <column> = 'pine';
+
+    --OR-- 
+- 7b. VIEW Answer: The key here is identifying that taking the set of genes upregulated in two or more experiments and subtracting the set of genes upregulated in three or mor experiments gives the set of genes upregulated in precisely two experiments. The answer is the answer to question 5 subtracted by the answer to question 6.
 
     - SQL Query Pattern
 
@@ -311,14 +331,13 @@ Because it's helpful to 'see' table structure when writing queries, I'll link a 
 
     --OR--
 
-    - 7b. GROUP BY Answer
+- 6c. GROUP BY Answer: Adjust the count evaluation.
 
     - SQL Query Pattern
 
     SELECT <column>
     FROM <table1a> AS expressions
     WHERE experiments.<column> 
----
 ---
 ## Part 3 - Three Table Queries
 
