@@ -91,9 +91,13 @@ In this section, you will be writing and executing SQL queries that retrieve dat
 ---
 ### Write and Execute Two-Table SQL (JOIN) Queries
 
-**Q2a: Return the ids and names of genes that were either positively expressed with a significance of at least 2.0, in some experiment.  
-    - TABLES: expression, genes  
-    - SQL Keywords: SELECT, AS, FROM, WHERE, AND, (INNNER) JOIN
+**Q2a: Write a SQL query to return the ids and names of genes that were either positively expressed with a significance of at least 2.0, in some experiment.  
+
+To start, query the `genes` and `expression` tables to review the data in each table.  Look for a common data columns which can serve as the "join key" in the your query.  See the diagram below.
+
+[![Join columns](/1_Files_&_Data/SQL-concept-graphics/join-cols.png)]()
+    - TABLES: `expression`, `genes`  
+    - SQL Keywords/Query Pattern: SELECT, AS, FROM, WHERE, AND, (INNNER) JOIN
 
     SELECT <table>.<id>,<table>.name, <table>.significance
     FROM <table1> AS expression,<table2> AS genes
@@ -103,7 +107,7 @@ In this section, you will be writing and executing SQL queries that retrieve dat
 **Q2b: Write a SQL query to return the names of genes that were either positively expressed twofold or more with a 
 significance of at least 2.0, in some experiment, or negatively expressed twofold or less with a significance of at least 2.0, in some experiment.**    
     - TABLES: `expression, genes`  
-    - SQL Keywords: SELECT, AS, FROM, WHERE, AND, (INNNER) JOIN
+    - SQL Query Pattern: 
 
         SELECT column1 AS c1, column2 AS c2, ...   
         FROM table1 AS t1, table2 AS t2  
@@ -119,13 +123,14 @@ significance of at least 2.0, in some experiment, or negatively expressed twofol
         WHERE t.c1 = integerValue  
         AND t2.c2 > floatValue'   
 
-![expression-genes](/1_Files_&_Data/SQL-concept-graphics/expression-genes.png)
 
 ---
 
+Use a self-join, by creating two instances of the same table, to derive a hierarchy of information from data in that table.  Use an equality operator in the WHERE clause.
+
 **Q3: Write a SQL query to return the grandparent category of 'glycine binding'**  
     - TABLES: `gotree`  
-    - SQL Keywords: SELECT, AS, FROM, WHERE, AND, (SELF) JOIN 
+    - SQL Keywords/Query Pattern: 
 
         SELECT <tableName>.<parentColumn>
         FROM <t1a> AS children, <t1b> AS parents
@@ -134,9 +139,17 @@ significance of at least 2.0, in some experiment, or negatively expressed twofol
 
 ---
 
+Use a **self-join**, by creating two instances of the same table, to derive a hierarchy of information from data in that table.  Use a less than operator in the WHERE clause.
+
+Alternatively, you can use a **subquery** (nested `SELECT` statement with the aggregate function `MAX`).  
+
+Both approaches yield the correct result.  There are two factors in determining which query approach is best.  Those factors are the following:  
+1. Are you more comfortable writing set-based queries? Then use the self-join approach.
+2. Performance overhead in BigQuery.  At these small example amounts, query performance won't differ.  However, with production-sized tables, performance can differ due to other factors (table partitioning for example)
+
 **Q4: Return the names of experiments that were performed before some Gasch experiment**  
     - TABLES: `experiments`  
-    - SQL Keywords: SELECT, AS, FROM, WHERE, AND, MAX, (SELF) JOIN --or-- SUBQUERY
+    - SQL Keywords/Query Pattern:
 
     - 4a. Self-join answer
 
@@ -155,10 +168,15 @@ significance of at least 2.0, in some experiment, or negatively expressed twofol
             WHERE <column> = 'Gasch' );
 
 ---
+For some queries, you have a number of choices of how you write your query.  For this example you have at least 4 options.  They are as follows:
+1. Use VIEWS - SQL Views are saved, named `SELECT` queries.  They are a convenience, that allows you to refer to subsets in subsequent queries.
+2. Use self-joins
+3. Use subqueries
+4. Use other SQL capabilities - in this case the `GROUP BY` (aggregate) and `HAVING` (filter aggregates) keywords. The SQL function `COUNT` is used here as well.
 
 **Q5: Write a SQL query to return the names of pine genes that were positively expressed more than 0.5-fold (with a significance of 1 or more) in at least two experiments**  
     - TABLES: `expression, genes`  
-    - SQL Keywords: SELECT, DISTINCT, AS, FROM, WHERE, AND, GROUP BY, HAVING, COUNT, VIEW --or-- SUBQUERY
+    - SQL Keywords/Query Patterns
 
     - 5a. VIEW Answer: First find the experiments where genes are upreglated and significant.  
         - Next determine the genes which were upregulated in at least two experiments. Take the product of the upregulated genes and selecting rows where the gene ID is the same but the experiment ID is different.  
@@ -212,9 +230,11 @@ significance of at least 2.0, in some experiment, or negatively expressed twofol
 
 ### Write and Execute Three-Table SQL (JOIN) Queries
 
+In three table joins, you identify the join columns (or keys) from each of the table in the query.  As with two-table joins, you can use either the more formal SQL     `JOIN ... ON....` syntax or the more concise `FROM t1, t2, t3 WHERE t1.key1 = t2.key1 AND t2.key2 = t3.key2` syntax.  The most common join type is a SQL inner join, however you can use other SQL join types, i.e. outer joins... as needed.
+
 **Q8: Write a SQL query to return the experiment names, genes & their expression levels in order, for genes that showed positive expression in every experiment recorded for it**  
     - TABLES: `experiments, expression, genes`  
-    - SQL Keywords: SELECT, FROM, WHERE, ORDER BY 
+    - SQL Keywords/Query Pattern:
 
     SELECT <columns...>
     FROM <t1> AS genes,<t2> AS expression,<t3> AS experiments
