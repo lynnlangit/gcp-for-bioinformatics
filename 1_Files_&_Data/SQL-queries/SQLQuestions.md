@@ -306,7 +306,11 @@ Q7: Write a SQL query to return the names of pine genes that were up-regulated 0
 
 ### Write and Execute Three-Table SQL (JOIN) Queries
 
-In three table joins, you identify the join columns (or keys) from each of the table in the query.  As with two-table joins, you can use either the more formal SQL     `JOIN ... ON....` syntax or the more concise `FROM t1, t2, t3 WHERE t1.key1 = t2.key1 AND t2.key2 = t3.key2` syntax.  The most common join type is a SQL inner join, however you can use other SQL join types, i.e. outer joins... as needed.
+In three (or more) table joins, you identify the join columns (or keys) from each of the tables in the query.  As with two-table joins, you can use either the more formal SQL     `JOIN ... ON....` syntax or the more concise `FROM t1, t2, t3 WHERE t1.key1 = t2.key1 AND t2.key2 = t3.key2` syntax.  
+
+The most common join type is a SQL inner join (which returns only rows matched in BOTH tables), however you can use other SQL join types, i.e. outer joins... as needed.
+
+[![Three table join](/1_Files_&_Data/SQL-concept-graphics/3-tables.png)]()
 
 Q8: Write a SQL query to return the experiment names, gene names & their expression levels in order, for genes that showed positive expression in every experiment recorded for it  
     - TABLES: `experiments, expression, genes` 
