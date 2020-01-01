@@ -154,7 +154,9 @@ Use a **self-join** by creating two instances of the same table, to derive a hie
 
 Use a **self-join** by creating two instances of the same table, to compare information from data in that table.  Use a less than operator in the WHERE clause.
 
-Alternatively, you can use a **subquery** (nested `SELECT` statement with the aggregate function `MAX`).  
+[![Self-join for comparison](/1_Files_&_Data/SQL-concept-graphics/self-compare.png)]()
+
+As an alternative to using a self-join, you could use a SQL **subquery**. In this case, that subquery would be a nested `SELECT` statement using the SQL aggregate function `MAX` to filter the date values.
 
 Both approaches yield the correct result.  There are two factors in determining which query approach is best.  Those factors are the following:  
 1. Are you more comfortable writing set-based queries? Then use the self-join approach.
