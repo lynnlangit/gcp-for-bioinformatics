@@ -18,19 +18,17 @@ I significantly modified both the example dataset (table structure and data) and
 
 In this section you will write and execute SQL queries against a single table in the **public** Google Cloud BigQuery bioinformatics dataset that I created for these lessons.  This first table was created from a single CSV (text) file.  
 
-- Possible query answers are on this page - https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQueries.sql
-
-
-  [![Select-From](/1_Files_&_Data/SQL-concept-graphics/select-from.png)]()
-- Shown above is list of SQL Keywords and query patterns used in this section.
-
-- *(Optional) If you wish to create your own Google BigQuery dataset, I've included instructions on how to create your own copy of this dataset using the CSV source files in this repository. Directions [here](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-lessons/1_lessons.md#other-things-to-know)*
+- *(Optional) If you wish to create your own Google BigQuery dataset rather than querying my public dataset, then you must create your own BigQuery dataset.* 
+    - *I've included instructions on how to create your own copy of this dataset using the CSV source files in this repository.* 
+    - *Directions are [here](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-lessons/1_lessons.md#other-things-to-know).*
 
 
 ---
 ### Understand the Table Structure and Data
 
-**Q0a: Write a SQL query to return all data (rows) in the experiments table from my example GCP BigQuery public dataset**   
+First, run SQL queries to list all of the table data and also the table schema for the `experiments` table.
+
+**Q0a: Run a SQL query which returns all data (rows) in the `experiments` table from my example GCP BigQuery public dataset**   
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.<tableName>`  
     - TABLE: `experiments` 
     - SQL Example Query: 
@@ -58,6 +56,12 @@ TIP: Examine both the table schema and table when you are writing SQL queries.  
 ### Write and Execute Single-Table SQL Queries
 
 In this section, use the SQL Patterns as a starter template for you to write your queries.  Copy and paste the SQL Pattern code into the Google BigQuery query editor window.  Modify the starter code to fill in the values so that the query returns the expected result set after you execute (or run) it.
+
+  [![Select-From](/1_Files_&_Data/SQL-concept-graphics/select-from.png)]()
+- Shown above is list of SQL Keywords and query patterns used in this section.
+
+- Possible query answers are on this page - https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQueries.sql
+
 
 **Q1a: Write a SQL query to return the names of experiments performed by Tommy Student**   
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.experiments`  
