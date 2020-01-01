@@ -18,7 +18,23 @@ The original source bioinformatics Dataset and base SQL queries used in this ope
  - Part 2 - Two-table SQL join Queries  
  - Part 3 - Three-table complex SQL Queries
 
- For each section READ the section, then COPY the SQL query example or pattern into your Google Cloud Big Query query editor window.  MODIFY the query so that there are no errors (red lines).  RUN the query and review the results.  If you get stuck - here is a [link](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQueries.sql) to completed queries for each quesiton.
+ To do this course for each section in this document:  
+ - READ the section
+ - COPY the SQL query example (or pattern) into your Google Cloud Big Query query editor window
+ - MODIFY the query so that there are no errors (red lines
+ - RUN the query and review the results.  
+ 
+ #### What could go wrong?
+
+ Shown below is the BigQuery query editor window with an error (in red). The error is that the table name is spelled incorrectly as `experiment`, when it should be `experiments`
+ 
+ ![BigQuery error](/1_Files_&_Data/SQL-concept-graphics/error-bq.png)
+
+ After you correct a query-time error, then the editor will update and show 'valid syntax' in green (shown below).
+
+ ![BigQuery error](/1_Files_&_Data/SQL-concept-graphics/correct-bq.png)
+
+  If you get stuck - here is a [link](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQueries.sql) to completed queries for each question.
 
 ---
 ---
