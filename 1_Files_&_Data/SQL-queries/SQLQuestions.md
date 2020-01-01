@@ -22,13 +22,15 @@ The original source bioinformatics Dataset and base SQL queries used in this ope
 ---
 ## Part 1 - Single Table Queries
 
-In this section you will execute or write (and execute) SQL queries against a single table in a **public** Google Cloud BigQuery bioinformatics dataset that I created for these lessons.  The first table that you will be using was created from a CSV (text) file from the wikibook source referenced at the beginning of this article.  To be able to use the BigQuery 'auto-detect schema' feature when uploading the CSV file, I modified the original source file structure by removing a row, all white space and by adding a column with numbers (numeric data type).
+In this section you will execute or write (and execute) SQL queries against a single table in a **public** Google Cloud BigQuery bioinformatics dataset that I created for these lessons.  
+
+The first table that you will be using was created from a CSV (text) file from the wikibook source referenced at the beginning of this article.  To be able to use the BigQuery 'auto-detect schema' feature when uploading the CSV file, I modified the original source file structure by removing a row, all white space and by adding a column with numbers (numeric data type).
 
 ### Understand the Table Structure and Data
 
 To get started, I suggest that you run a couple of SQL queries to list all of the table data and also the table schema for the `experiments` table.  Simply copy and paste each queries in this section into your Google Cloud BigQuery query editor window and then click the blue 'run' button to execute each query and see the query results.
 
-### Q0a: Run a SQL query which returns all data (rows) in the `experiments` table from my example GCP BigQuery public dataset  
+### ❓Q0a: Run a SQL query which returns all data (rows) in the `experiments` table from my example GCP BigQuery public dataset  
 
     - SQL Example Query: 
 
@@ -36,7 +38,7 @@ To get started, I suggest that you run a couple of SQL queries to list all of th
         FROM `gcp-for-bioinformatics.sql_genomics_examples.experiments` AS experiments
  
 
-### Q0b: Run a SQL query to return the table structure of the `experiments` table from my example GCP BigQuery public dataset  
+### ❓Q0b: Run a SQL query to return the table structure of the `experiments` table from my example GCP BigQuery public dataset  
 
     - SQL Example Query: 
 
@@ -64,7 +66,7 @@ In this section, you use the SQL Pattern Queries as a starter templates for you 
 
 [![Select-From](/1_Files_&_Data/SQL-concept-graphics/select-from.png)]()
 
-### Q1a: Write a SQL query to return the names of experiments performed by Tommy Student.   
+### ❓Q1a: Write a SQL query to return the names of experiments performed by Tommy Student.   
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.experiments`  
     - TABLE: `experiments`  
 
@@ -74,7 +76,7 @@ In this section, you use the SQL Pattern Queries as a starter templates for you 
         FROM <table1>  
         WHERE <column1> = <'stringValue'>  
 
-### Q1b: Write a SQL query to return the names of experiments performed by Tommy Student after Jan 1, 2004.
+### ❓Q1b: Write a SQL query to return the names of experiments performed by Tommy Student after Jan 1, 2004.
 Rename the referenced table name to "expermients" using the SQL `AS` keyword in the `FROM` clause.
 
     - SQL Pattern: 
@@ -84,7 +86,7 @@ Rename the referenced table name to "expermients" using the SQL `AS` keyword in 
         WHERE t1.<column1> = <'stringValue'>  
         AND t1.<column2> > <'dateValue'>
 
-### Q1c: Return the names and ids of experiments performed by Tommy Student after Jan 1, 2004. 
+### ❓Q1c: Write a SQL query to return the names and ids of experiments performed by Tommy Student after Jan 1, 2004. 
 Rename the column `name` to "Experiment" and `experimentId` to "ExperimentID" using the `AS` keyword in the `SELECT` clause.
 
     - SQL Pattern: 
@@ -114,7 +116,7 @@ In addition to using SQL join concepts, in this section, you'll use additional S
 
 [![all keywords](/1_Files_&_Data/SQL-concept-graphics/all-keywords.png)]()
 
-### Q2a: Write a SQL query to return the ids and names of genes that were either positively expressed with a significance of at least 2.0, in some experiment. 
+### ❓Q2a: Write a SQL query to return the ids and names of genes that were either positively expressed with a significance of at least 2.0, in some experiment. 
 
 To start, query the `genes` and `expression` tables to review all of the data in each table.  Look for a common data columns which can serve as the "join key" in the your query.  See the diagram below.
 
@@ -128,7 +130,7 @@ To start, query the `genes` and `expression` tables to review all of the data in
     WHERE <table1>.<id> = <table1>.<id>
     AND <table>.significance >= integerValue
 
-### Q2b: Write a SQL query to return the names of genes that were either positively expressed twofold or more with a 
+### ❓Q2b: Write a SQL query to return the names of genes that were either positively expressed twofold or more with a 
 significance of at least 2.0, in some experiment, or negatively expressed twofold or less with a significance of at least 2.0, in some experiment.   
     - TABLES: `expression, genes`  
 
@@ -155,7 +157,7 @@ Use a **self-join** by creating two instances of the same table, to derive a hie
 
 [![Self-join for hierarchy](/1_Files_&_Data/SQL-concept-graphics/self-hierarchy.png)]()
 
-### Q3: Write a SQL query to return the grandparent category of 'glycine binding'  
+### ❓Q3: Write a SQL query to return the grandparent category of 'glycine binding'  
     - TABLES: `gotree`  
 
     - SQL Query Pattern: 
@@ -177,7 +179,7 @@ Both approaches yield the correct result.  There are two factors in determining 
 1. Are you more comfortable writing set-based queries? Then use the self-join approach.  Alternatively, you can use the subquery approach if that is more natural for you.
 2. Performance overhead in BigQuery.  At these small example amounts, query performance won't differ.  However, with production-sized tables, performance can differ due to other factors (table partitioning for example). Query performance tuning is a complex topic is beyond the scope of this course.
 
-### Q4: Return the names of experiments that were performed before some Gasch experiment  
+### ❓Q4: Return the names of experiments that were performed before some Gasch experiment  
     - TABLES: `experiments`  
 
     - SQL Query Pattern:
@@ -207,7 +209,7 @@ Because it's helpful to 'see' table structure when writing queries, I'll link a 
 [![Join columns](/1_Files_&_Data/SQL-concept-graphics/join-cols.png)]()
 
 
-### Q5: Write a SQL query to return the names of pine genes that were positively expressed more than 0.5-fold (with a significance of 1 or more) in at least two experiments  
+### ❓Q5: Write a SQL query to return the names of pine genes that were positively expressed more than 0.5-fold (with a significance of 1 or more) in at least two experiments  
     - TABLES: `expression, genes`
 
 - 5a. Self-join Answer: can be written one single query. However using a self-join with another table join, which is, in effect, a three table join, is complex to write and to read.
@@ -269,7 +271,7 @@ Because it's helpful to 'see' table structure when writing queries, I'll link a 
 ---
 **SECTION in PROGRESS**
 
-### Q6: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in at least three experiments  
+### ❓Q6: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in at least three experiments  
     - TABLES: `expression, genes`  
     - SQL Keywords: SELECT, DISTINCT, AS, FROM, WHERE, AND, GROUP BY, HAVING, COUNT, VIEW --or-- SUBQUERY
  
@@ -300,7 +302,7 @@ Because it's helpful to 'see' table structure when writing queries, I'll link a 
     WHERE experiments.<column> 
 ---
 
-### Q7: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in at exactly two experiments 
+### ❓Q7: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in at exactly two experiments 
     - TABLES: `expression, genes`  
     - SQL Keywords: SELECT, DISTINCT, FROM, WHERE, EXCEPT, GROUP BY, HAVING, COUNT, VIEW --or-- SUBQUERY
   
@@ -333,7 +335,7 @@ The most common join type is a SQL inner join (which returns only rows matched i
 
 [![Three table join](/1_Files_&_Data/SQL-concept-graphics/3-tables.png)]()
 
-### Q8: Write a SQL query to return the experiment names, gene names & their expression levels in order, for genes that showed positive expression in every experiment recorded for it  
+### ❓Q8: Write a SQL query to return the experiment names, gene names & their expression levels in order, for genes that showed positive expression in every experiment recorded for it  
     - TABLES: `experiments, expression, genes` 
 
     - SQL Query Pattern:
@@ -346,7 +348,7 @@ The most common join type is a SQL inner join (which returns only rows matched i
 
 ---
 
-### Q9: Write a SQL query to return the gene(s) were positively expressed in ALL the experiments listed in the experiments table in order of level    
+### ❓Q9: Write a SQL query to return the gene(s) were positively expressed in ALL the experiments listed in the experiments table in order of level    
    
    - SQL Query Pattern:
 
@@ -359,7 +361,7 @@ The most common join type is a SQL inner join (which returns only rows matched i
 
 ---
 
-### Q10: Write a SQL query to return the name of the gene that was most positively expressed in experiment exp23. Assume a minimum level of 1.0. Use the SQL `LIMIT` keyword to return the top value.    
+### ❓Q10: Write a SQL query to return the name of the gene that was most positively expressed in experiment exp23. Assume a minimum level of 1.0. Use the SQL `LIMIT` keyword to return the top value.    
 
 
     - SQL Query Pattern:
@@ -374,7 +376,7 @@ The most common join type is a SQL inner join (which returns only rows matched i
 
 ---
 
-### Q11: Write a SQL query to return the name of the gene that was second most positively expressed. Assume a minimum level of 1.0.
+### ❓Q11: Write a SQL query to return the name of the gene that was second most positively expressed. Assume a minimum level of 1.0.
 Use the SQL keyword `ASC` or `DESC` to order the result.   
 
     - SQL Query Pattern:
@@ -390,7 +392,7 @@ Use the SQL keyword `ASC` or `DESC` to order the result.
 
 ---
   
-### ❓Q12: Return a table of experiments, genes names and their annotation shown as one value (use SQL `CONCAT`), and their levels.
+### ❓Q12: Write a SQL query to return a table of experiments, genes names and their annotation shown as one value (use SQL `CONCAT`), and their levels.
 listed by experiment and level in descending order.  Create a new fourth column which prints "positive" or "negative", based on level value.  Use a SQL conditional statement to test level value, i.e. `CASE`... 
 
     - SQL Query Pattern:
