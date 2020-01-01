@@ -58,17 +58,18 @@ In this section, you use the SQL Pattern Queries as a starter templates for you 
 
 [![Select-From](/1_Files_&_Data/SQL-concept-graphics/select-from.png)]()
 
-Q1a: Write a SQL query to return the names of experiments performed by Tommy Student   
+Q1a: Write a SQL query to return the names of experiments performed by Tommy Student.   
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.experiments`  
     - TABLE: `experiments`  
 
     - SQL Pattern: 
 
         SELECT <column1>  
-        FROM <table1> AS t1  
-        WHERE t1.<column1> = <'stringValue'>  
+        FROM <table1>  
+        WHERE <column1> = <'stringValue'>  
 
-Q1b: Write a SQL query to return the names of experiments performed by Tommy Student after Jan 1, 2004
+Q1b: Write a SQL query to return the names of experiments performed by Tommy Student after Jan 1, 2004.
+Rename the referenced table name to "expermients" using the SQL `AS` keyword in the `FROM` clause.
 
     - SQL Pattern: 
 
@@ -77,7 +78,8 @@ Q1b: Write a SQL query to return the names of experiments performed by Tommy Stu
         WHERE t1.<column1> = <'stringValue'>  
         AND t1.<column2> > <'dateValue'>
 
-Q1c: Return the names and ids of experiments performed by Tommy Student after Jan 1, 2004. Rename the column `name` to Experiment and `experimentId` to ExperimentID.
+Q1c: Return the names and ids of experiments performed by Tommy Student after Jan 1, 2004. 
+Rename the column `name` to "Experiment" and `experimentId` to "ExperimentID" using the `AS` keyword in the `SELECT` clause.
 
     - SQL Pattern: 
 
@@ -108,7 +110,7 @@ In addition to using SQL join concepts, in this section, you'll use additional S
 
 Q2a: Write a SQL query to return the ids and names of genes that were either positively expressed with a significance of at least 2.0, in some experiment. 
 
-To start, query the `genes` and `expression` tables to review the all of the data in each table.  Look for a common data columns which can serve as the "join key" in the your query.  See the diagram below.
+To start, query the `genes` and `expression` tables to review all of the data in each table.  Look for a common data columns which can serve as the "join key" in the your query.  See the diagram below.
 
 [![Join columns](/1_Files_&_Data/SQL-concept-graphics/join-cols.png)]()
     - TABLES: `expression`, `genes`  
@@ -120,8 +122,8 @@ To start, query the `genes` and `expression` tables to review the all of the dat
     WHERE <table1>.<id> = <table1>.<id>
     AND <table>.significance >= integerValue
 
-**Q2b: Write a SQL query to return the names of genes that were either positively expressed twofold or more with a 
-significance of at least 2.0, in some experiment, or negatively expressed twofold or less with a significance of at least 2.0, in some experiment.**    
+Q2b: Write a SQL query to return the names of genes that were either positively expressed twofold or more with a 
+significance of at least 2.0, in some experiment, or negatively expressed twofold or less with a significance of at least 2.0, in some experiment.   
     - TABLES: `expression, genes`  
 
     - SQL Query Pattern: 
@@ -166,8 +168,8 @@ Use a **self-join** by creating two instances of the same table, to compare info
 As an alternative to using a self-join, you could use a SQL **subquery**. In this case, that subquery would be a nested `SELECT` statement using the SQL aggregate function `MAX` to filter the date values.
 
 Both approaches yield the correct result.  There are two factors in determining which query approach is best.  Those factors are the following:  
-1. Are you more comfortable writing set-based queries? Then use the self-join approach.
-2. Performance overhead in BigQuery.  At these small example amounts, query performance won't differ.  However, with production-sized tables, performance can differ due to other factors (table partitioning for example)
+1. Are you more comfortable writing set-based queries? Then use the self-join approach.  Alternatively, you can use the subquery approach if that is more natural for you.
+2. Performance overhead in BigQuery.  At these small example amounts, query performance won't differ.  However, with production-sized tables, performance can differ due to other factors (table partitioning for example). Query performance tuning is a complex topic is beyond the scope of this course.
 
 Q4: Return the names of experiments that were performed before some Gasch experiment  
     - TABLES: `experiments`  
@@ -365,7 +367,7 @@ Q11: Write a SQL query to return the gene(s) were positively expressed in ALL th
 
 Q12: Write a SQL query to return a table of genes, their annotation, and any experiment in which they were either the highest or lowest expressed (of any significance level). Include a new column saying if they were the highest or lowest   
     - TABLES: `experiments, expression, genes` 
-     
+
     - SQL Query Pattern:
 
     SELECT <columns...>

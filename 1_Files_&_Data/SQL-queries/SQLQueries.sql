@@ -22,11 +22,12 @@ WHERE
 SELECT
   name
 FROM
-  `gcp-for-bioinformatics.sql_genomics_examples.experiments` AS experiments
+  `gcp-for-bioinformatics.sql_genomics_examples.experiments` 
 WHERE
   whoperformed = 'Tommy Student'
 
 --Q1b: Return the names of experiments performed by Tommy Student after Jan 1, 2004.
+--Rename the referenced table name to "expermients" using the SQL `AS` keyword in the `FROM` clause
 SELECT
   name
 FROM
