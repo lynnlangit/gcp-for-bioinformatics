@@ -200,9 +200,9 @@ Q4: Return the names of experiments that were performed before some Gasch experi
             WHERE <column> = 'Gasch' );
 
 ---
-For some types of queries, you cab have a significant number of choices in how you write your query.  For the next example I will show 2 options.  The reason for showing these options is that you may have to work with queries that other researcher's have written - and they could use any of these styles.  The styles used here are as follows:
-1. Use VIEWS - SQL Views are saved, named `SELECT` queries.  They are a convenience that allows you to refer to subsets in subsequent queries.  A view is referenced like a table in the `FROM` clause of a SQL statement.
-2. Use self-joins - as in the previous examples, simply more practice here.  Also uses the VIEWS created in the first answer to this question.
+For some types of queries, you can have choices in how you write your query.  For the next example I will show 2 options.  The reason for showing these options is that you may have to work with queries that other researcher's have written - and they could use any of these styles.  The styles used here are as follows:
+1. Use self-joins - as in the previous examples, simply more practice here.  You'll note that there are two copies of a table, which is joined to another table.  This is, in effect, a three-table join.
+2. Use VIEWS - SQL Views are saved, named `SELECT` queries.  They are a language convenience that allows you to refer to subsets of table data by name in subsequent queries.  A view is referenced like a table in the `FROM` clause of a SQL statement.
 
 
 Q5: Write a SQL query to return the names of pine genes that were positively expressed more than 0.5-fold (with a significance of 1 or more) in at least two experiments  
