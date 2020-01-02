@@ -219,7 +219,7 @@ For some types of queries, you can have choices in how you write your query.  Fo
 1. Use self-joins - as in the previous examples, simply more practice here.  You'll note that there are two copies of a table, which is joined to another table.  This is, in effect, a three-table join.
 2. Use VIEWS - SQL Views are saved, named `SELECT` queries.  They are a language convenience that allows you to refer to subsets of table data by name in subsequent queries.  A view is referenced like a table in the `FROM` clause of a SQL statement.
 
-Because it's helpful to 'see' table structure when writing queries, I'll link a diagram of the two tables queried in this section below.
+Because it's helpful to 'see' table structure when writing queries, I'll link a diagram of the two tables queried in this section below again.
 [![Join columns](/1_Files_&_Data/SQL-concept-graphics/join-cols.png)]()
 
 
@@ -282,7 +282,6 @@ Because it's helpful to 'see' table structure when writing queries, I'll link a 
         AND <column> = <stringValue>;
 
 ---
-**SECTION in PROGRESS**
 
 ### ❓Q6: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in at least three experiments 
 
@@ -358,6 +357,7 @@ The caveat here is that while the equality evaluations are transitive, while ine
         AND <column> = <stringValue>;
 
 ---
+***NOTE: This Section is in Progress***
 
 ### ❓Q7: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in at exactly two experiments 
   
