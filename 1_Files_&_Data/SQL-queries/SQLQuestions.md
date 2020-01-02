@@ -359,41 +359,48 @@ The caveat here is that while the equality evaluations are transitive, while ine
 ---
 ***NOTE: This Section is in Progress***
 
-### ❓Q7: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in at exactly two experiments 
+### ❓Q7: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in exactly two experiments 
   
-- 7a. Self-join Answer: can be written one single query. However using a self-join with another table join, which is, in effect, a three table join, is complex to write and to read.  Join the `genes` table to two copies of the `expression` table.
+- 7a. Self-join Answer: can be written one single query. However using a self-join with another table join, which is, in effect, a three table join, is complex to write and to read.  Join the `genes` table to two copies of the `expression` table.  Then to meet the 'exactly two' requirement, create a copy of the first query and add a THIRD self-join on the `expression` table.  Also adjust the conditions to account for the third copy of the table.  
+
+Because this query is quite verbose, the completed query is shown below.  You can just copy and paste it into the editor window and then run it.  As with question 6, you could create views and/or use the SQL query `GROUP BY / HAVING` keywords as an arguably more readable version of this query.
 
         - SQL Query Pattern:
 
-        SELECT DISTINCT <column>
-        FROM <t1> AS genes, <t2a> AS e1,<t2b> AS e2
-        WHERE <t1>.<id> = <t2a>.<id>
-        AND e1.<id> = e2.<id>
-        AND e1.<column> >= 0.5
-        AND e2.<column> >= 0.5
-        AND e1.<column> >= 1.0
-        AND e2.<column> >= 1.0
-        AND e1.<id> <> e2.<id>
-        AND <column> = 'pine';
+        SELECT DISTINCT name
+        FROM 
+        `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes, 
+        `gcp-for-bioinformatics.sql_genomics_examples.expression` AS e1,
+        `gcp-for-bioinformatics.sql_genomics_examples.expression` AS e2
+        WHERE genes.gid = e1.gid
+        AND e1.gid = e2.gid
+        AND e1.level >= 0.5
+        AND e2.level >= 0.5
+        AND e1.significance >= 1
+        AND e2.significance >= 1
+        AND e1.experimentid <> e2.experimentid
+        AND organism = 'pine'
+        EXCEPT DISTINCT 
+        SELECT name
+        FROM 
+        `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes, 
+        `gcp-for-bioinformatics.sql_genomics_examples.expression` AS e1,
+        `gcp-for-bioinformatics.sql_genomics_examples.expression` AS e2,
+        `gcp-for-bioinformatics.sql_genomics_examples.expression` AS e3
+        WHERE genes.gid = e1.gid
+        AND e1.gid = e2.gid
+        AND e1.gid = e3.gid
+        AND e1.level >= 0.5
+        AND e2.level >= 0.5
+        AND e3.level >= 0.5
+        AND e1.significance >= 1
+        AND e2.significance >= 1
+        AND e3.significance >= 1
+        AND e1.experimentid <> e2.experimentid
+        AND e1.experimentid <> e3.experimentid
+        AND e2.experimentid <> e3.experimentid
+        AND organism = 'pine';
 
-    --OR-- 
-- 7b. VIEW Answer: The key here is identifying that taking the set of genes upregulated in two or more experiments and subtracting the set of genes upregulated in three or mor experiments gives the set of genes upregulated in precisely two experiments. The answer is the answer to question 5 subtracted by the answer to question 6.
-
-    - SQL Query Pattern
-
-    SELECT <column>
-    FROM <table1a> AS expressions
-    WHERE experiments.<column> 
-
-    --OR--
-
-- 6c. GROUP BY Answer: Adjust the count evaluation.
-
-    - SQL Query Pattern
-
-    SELECT <column>
-    FROM <table1a> AS expressions
-    WHERE experiments.<column> 
 ---
 ## Part 3 - Three Table Queries
 

@@ -240,11 +240,14 @@ WHERE genes.gid = upInThreeOrMoreGrouped.gid
 AND organism = 'pine';
 
 --Q7: Return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1.0 or more) 
---in at exactly two experiments.
+--in exactly two experiments.
 
 --Self-join answer
 SELECT DISTINCT name
-FROM genes, expression AS e1, expression AS e2
+FROM 
+`gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes, 
+`gcp-for-bioinformatics.sql_genomics_examples.expression` AS e1,
+`gcp-for-bioinformatics.sql_genomics_examples.expression` AS e2
 WHERE genes.gid = e1.gid
 AND e1.gid = e2.gid
 AND e1.level >= 0.5
@@ -253,9 +256,13 @@ AND e1.significance >= 1
 AND e2.significance >= 1
 AND e1.experimentid <> e2.experimentid
 AND organism = 'pine'
-EXCEPT
-SELECT DISTINCT name
-FROM genes, expression AS e1, expression AS e2, expression AS e3
+EXCEPT DISTINCT 
+SELECT name
+FROM 
+`gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes, 
+`gcp-for-bioinformatics.sql_genomics_examples.expression` AS e1,
+`gcp-for-bioinformatics.sql_genomics_examples.expression` AS e2,
+`gcp-for-bioinformatics.sql_genomics_examples.expression` AS e3
 WHERE genes.gid = e1.gid
 AND e1.gid = e2.gid
 AND e1.gid = e3.gid
@@ -270,35 +277,6 @@ AND e1.experimentid <> e3.experimentid
 AND e2.experimentid <> e3.experimentid
 AND organism = 'pine';
 
---VIEWS Answer
---The key here is identifying that taking the set of genes upregulated in two or more experiments 
---and subtracting the set of genes upregulated in three or mor experiments gives the set of genes 
---upregulated in precisely two experiments. Thus, our answer is the answer to question 5 subtracted by the answer to question 6.
-CREATE VIEW upInTwo AS
-SELECT *
-FROM upInTwoOrMore
-EXCEPT
-SELECT *
-FROM upInThreeOrMore;
-
-SELECT name
-FROM genes, upInTwo
-WHERE genes.gid = upInTwo.gid
-AND organism = 'pine';
-
-
---GROUP BY Answer
-CREATE VIEW upInTwo AS
-SELECT *
-FROM upInTwoOrMore
-EXCEPT
-SELECT *
-FROM upInThreeOrMore;
-
-SELECT name
-FROM genes, upInTwo
-WHERE genes.gid = upInTwo.gid
-AND organism = 'pine';
 
 --Q8: Return the experiment names, genes names & their levels in order, for genes that 
 --showed positive expression in every experiment recorded for it.
