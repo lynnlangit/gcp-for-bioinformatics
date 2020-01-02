@@ -312,56 +312,51 @@ The caveat here is that while the equality evaluations are transitive, while ine
 
 - 6b. VIEW Answer: As in Q5, you can alternately use a view to improve query readability.  To do this I created a view which returns the ids from the `upregulated` view that was created previously.
 
-    - SQL Query Pattern
-
     Extract logic from the subquery (above) to create a view
 
-    CREATE VIEW `gcp-for-bioinformatics.sql_genomics_examples.upInThreeOrMore` AS
-    SELECT DISTINCT u1.gid AS gid
-    FROM 
-    `gcp-for-bioinformatics.sql_genomics_examples.upregulated` AS u1, 
-    `gcp-for-bioinformatics.sql_genomics_examples.upregulated` AS u2, 
-    `gcp-for-bioinformatics.sql_genomics_examples.upregulated` AS u3 
-    WHERE u1.gid = u2.gid
-    AND u1.gid = u3.gid
-    AND u1.experimentid <> u2.experimentid
-    AND u1.experimentid <> u3.experimentid
-    AND u2.experimentid <> u3.experimentid;
+         - SQL Query Pattern
+
+        CREATE VIEW `gcp-for-bioinformatics.sql_genomics_examples.upInThreeOrMore` AS
+        SELECT DISTINCT u1.gid AS gid
+        FROM 
+        `gcp-for-bioinformatics.sql_genomics_examples.upregulated` AS u1, 
+        `gcp-for-bioinformatics.sql_genomics_examples.upregulated` AS u2, 
+        `gcp-for-bioinformatics.sql_genomics_examples.upregulated` AS u3 
+        WHERE u1.gid = u2.gid
+        AND u1.gid = u3.gid
+        AND u1.experimentid <> u2.experimentid
+        AND u1.experimentid <> u3.experimentid
+        AND u2.experimentid <> u3.experimentid;
 
     Then query the view, joined to the `genes` table
 
-    SELECT name
-    FROM
-    `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes, 
-    `gcp-for-bioinformatics.sql_genomics_examples.upInThreeOrMore` AS upInThreeOrMore
-    WHERE genes.gid = upInThreeOrMore.gid
-    AND organism = 'pine';
+        SELECT <column>
+        FROM <t1> AS genes, <t2> AS upInThreeOrMore
+        WHERE genes.gid = upInThreeOrMore.gid
+        AND <column> = <stringValue>;
 
     --OR--
 
 - 6c. GROUP BY Answer: 
 
-    - SQL Query Pattern
+   Create a view using SQL keywords GROUP BY and HAVING to filter by COUNT evaluation.  Many peole find this more readable than self-joins.
 
-    Create a view using SQL keywords GROUP BY and HAVING to filter by COUNT evaluation.  Many peole find this more readable than self-joins.
-
-    CREATE VIEW `gcp-for-bioinformatics.sql_genomics_examples.upInThreeOrMoreGrouped` AS
-    SELECT gid
-    FROM `gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression
-    WHERE level >= 0.5
-    AND significance >= 1
-    GROUP BY gid
-    HAVING COUNT(*) > 2;
+        - SQL Query Pattern
+        CREATE VIEW `gcp-for-bioinformatics.sql_genomics_examples.upInThreeOrMoreGrouped` AS
+        SELECT gid
+        FROM `gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression
+        WHERE level >= 0.5
+        AND significance >= 1
+        GROUP BY gid
+        HAVING COUNT(*) > 2;
 
     Then query the view, joined to the `genes` table
 
-    SELECT name
-    FROM 
-    `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes,  
-    `gcp-for-bioinformatics.sql_genomics_examples.upInThreeOrMoreGrouped` AS upInThreeOrMoreGrouped
-    WHERE genes.gid = upInThreeOrMoreGrouped.gid
-    AND organism = 'pine';
-    
+        SELECT <column>
+        FROM <t1> AS genes, <t2> AS upInThreeOrMoreGrouped
+        WHERE genes.gid = upInThreeOrMoreGrouped.gid
+        AND <column> = <stringValue>;
+
 ---
 
 ### ❓Q7: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in at exactly two experiments 
