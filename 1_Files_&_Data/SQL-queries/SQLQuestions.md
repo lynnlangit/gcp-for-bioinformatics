@@ -361,9 +361,9 @@ The caveat here is that while the equality evaluations are transitive, while ine
 
 ### ❓Q7: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in exactly two experiments 
   
-- 7a. Self-join Answer: can be written one single query. However using a self-join with another table join, which is, in effect, a three table join, is complex to write and to read.  Join the `genes` table to two copies of the `expression` table.  Then to meet the 'exactly two' requirement, create a copy of the first query and add a THIRD self-join on the `expression` table.  Also adjust the conditions to account for the third copy of the table.  
+Self-join Answer: can be written one single query. However using a self-join with another table join, which is, in effect, a three table join, is complex to write and to read.  Join the `genes` table to two copies of the `expression` table.  Then to meet the 'exactly two' requirement, create a copy of the first query and add a THIRD self-join on the `expression` table.  Also adjust the conditions to account for the third copy of the table.  
 
-Because this query is quite verbose, the completed query is shown below.  You can just copy and paste it into the editor window and then run it.  As with question 6, you could create views and/or use the SQL query `GROUP BY / HAVING` keywords as an arguably more readable version of this query.
+Because this query is quite verbose, the completed query is shown below.  You can just copy and paste it into the editor window and then run it.  As with question 6, you could create views and/or use the SQL query `GROUP BY / HAVING` keywords as an arguably more readable version of this query, rather than using all of the self-joins shown below.
 
         - SQL Query Pattern:
 
