@@ -14,15 +14,14 @@ The original source bioinformatics Dataset and base SQL queries used in this ope
 ---
 
 # Course Contents
- - Part 1 - Single table core SQL Queries  
- - Part 2 - Two-table SQL join Queries  
- - Part 3 - Three-table complex SQL Queries
-
- To do this course for each section in this document:  
- - READ the section
- - COPY the SQL query example (or pattern) into your Google Cloud Big Query query editor window
- - MODIFY the query so that there are no errors (red lines
- - RUN the query and review the results.  
+- Part 1 - Single table core SQL Queries
+- Part 2 - Two-table SQL join Queries  
+- Part 3 - Three-table complex SQL Queries
+- General Instructions - to complete this course for each part in this document:  
+    - READ the entire section
+    - COPY the SQL query example (or pattern) into your Google Cloud Big Query query editor window
+    - MODIFY the query so that there are no errors (red underlines or warnings)
+    - RUN the query and review the results 
  
  #### What could go wrong?
 
@@ -147,8 +146,7 @@ To start, query the `genes` and `expression` tables to review all of the data in
     WHERE <table1>.<id> = <table2>.<id>
     AND <table1>.significance >= integerValue
 
-### ❓Q2b: Write a SQL query to return the names of genes that were either positively expressed twofold or more with a 
-significance of at least 2.0, in some experiment, or negatively expressed twofold or less with a significance of at least 2.0, in some experiment.   
+### ❓Q2b: Write a SQL query to return the names of genes that were either positively expressed twofold or more with a significance of at least 2.0, in some experiment, or negatively expressed twofold or less with a significance of at least 2.0, in some experiment.   
 
     - SQL Query Pattern: 
 
@@ -188,7 +186,7 @@ Use a **self-join** by creating two instances of the same table, to compare info
 
 [![Self-join for comparison](/1_Files_&_Data/SQL-concept-graphics/self-compare.png)]()
 
-As an alternative to using a self-join, you could use a SQL **subquery**. In this case, that subquery would be a nested `SELECT` statement using the SQL aggregate function `MAX` to filter the date values.  Use the `experiments` table.
+As an alternative to using a SQL **self-join**, you could use a SQL **subquery**. In this case, that subquery would be a nested `SELECT` statement using the SQL aggregate function `MAX` to filter the date values.  Use the `experiments` table.
 
 Both approaches yield the correct result.  There are two factors in determining which query approach is best.  Those factors are the following:  
 1. Are you more comfortable writing set-based queries? Then use the self-join approach.  Alternatively, you can use the subquery approach if that is more natural for you.
@@ -242,9 +240,9 @@ Because it's helpful to 'see' table structure when writing queries, I'll link a 
 
     --OR--
 
-- 5b. VIEW Answer:  To improve query readability, I'll create two views.  The first view (`upregulated`) finds the experiments where genes are upreglated and significant.   The second view is created using the first view as a table source.  
+- 5b. VIEW Answer:  To improve query readability, I'll create two views.  The first view (`upregulated`) finds the experiments where genes are upregulated and significant.   The second view is created using the first view as a table source.  
 
-    The second view (`upInTwoOrMore`)is used to determine the genes which were upregulated in at least two experiments. This is done by by taking the product of the upregulated genes & selecting rows where the gene ID is the same but the experiment ID is different.The SQL queries which I used to create these views is shown below. 
+    The second view (`upInTwoOrMore`)is used to determine the genes which were upregulated in at least two experiments. This is done by by taking the product of the upregulated genes & selecting rows where the gene ID is the same but the experiment ID is different. The SQL queries which I used to create these views is shown below. 
 
         - SQL Query Pattern:
 
@@ -357,7 +355,6 @@ The caveat here is that while the equality evaluations are transitive, while ine
         AND <column> = <stringValue>;
 
 ---
-***NOTE: This Section is in Progress***
 
 ### ❓Q7: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in exactly two experiments 
   
@@ -438,7 +435,8 @@ Join these tables: `experiments, expression, genes`
 
 ---
 
-### ❓Q10: Write a SQL query to return the name of the gene that was most positively expressed in experiment exp23. Assume a minimum level of 1.0. Use the SQL `LIMIT` keyword to return the top value.    
+### ❓Q10: Write a SQL query to return the name of the gene that was most positively expressed in experiment exp23. Assume a minimum level of 1.0. 
+Use the SQL `LIMIT` keyword to return the top value.    
 
 
     - SQL Query Pattern:
@@ -469,8 +467,8 @@ Use the SQL keyword `ASC` or `DESC` to order the result.
 
 ---
   
-### ❓Q12: Write a SQL query to return a table of experiments, genes names and their annotation shown as one value (use SQL `CONCAT`), and their levels.
-listed by experiment and level in descending order.  Create a new fourth column which prints "positive" or "negative", based on level value.  Use a SQL conditional statement to test level value, i.e. `CASE`... 
+### ❓Q12: Write a SQL query to return a table of experiments, genes names and their annotation shown as one value (use SQL `CONCAT`), and their levels listed by experiment and level in descending order.  Create a new fourth column which prints "positive" or "negative", based on level value.  
+Use a SQL conditional statement to test level value, i.e. `CASE`... 
 
     - SQL Query Pattern:
 
@@ -491,7 +489,8 @@ listed by experiment and level in descending order.  Create a new fourth column 
 - SQL query answers to these lesson are on [this Repo page](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQueries.sql)
 
 - *(Optional) If you wish to create your own Google BigQuery dataset rather than querying my public dataset, then you must create your own BigQuery dataset.* 
-    - *I've included instructions on how to create your own copy of this dataset using the CSV source files in this repository.* 
+    - *Create both the dataset TABLES and VIEWS*
+    - *I've included instructions on how to create your own copy of this dataset using the modified CSV source files in this repository.* 
     - *Directions are [here](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-lessons/1_lessons.md#other-things-to-know) on how to set up your own copy of my public BigQuery dataset.*
 
 - To learn more about using BigQuery optimally, see this [link](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/3_Use_BigQuery_to_query_files.md)
