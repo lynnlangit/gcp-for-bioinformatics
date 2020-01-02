@@ -179,14 +179,16 @@ FROM
 WHERE genes.gid = upInTwoOrMore.gid
 AND organism = 'pine';
 
---Q6: Return the names of pine genes that were 
---up-regulated 0.5-fold or more 
---with a significance of 1.0 or more) 
---in at least three experiments.
+--Q6: Return the names of pine genes that were up-regulated 0.5-fold or more 
+--with a significance of 1.0 or more) in at least three experiments
 
 --Self-join Answer:
 SELECT DISTINCT name
-FROM genes, gxpression AS e1, expression AS e2, expression AS e3
+FROM
+ `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes,
+ `gcp-for-bioinformatics.sql_genomics_examples.expression` AS e1,
+ `gcp-for-bioinformatics.sql_genomics_examples.expression` AS e2,
+ `gcp-for-bioinformatics.sql_genomics_examples.expression` AS e3
 WHERE genes.gid = e1.gid
 AND e1.gid = e2.gid
 AND e1.gid = e3.gid
@@ -202,11 +204,12 @@ AND e2.experimentid <> e3.experimentid
 AND organism = 'pine';
 
 --VIEWS Answer
---The caveat here is that while the equality evaluations are transitive, 
---while inequality evaluations are not, and so every case must be covered.
-CREATE VIEW upInThreeOrMore AS
+CREATE VIEW `gcp-for-bioinformatics.sql_genomics_examples.upInThreeOrMore` AS
 SELECT DISTINCT u1.gid AS gid
-FROM upregulated AS u1, upregulated AS u2, upregulated as u3
+FROM 
+`gcp-for-bioinformatics.sql_genomics_examples.upregulated` AS u1, 
+`gcp-for-bioinformatics.sql_genomics_examples.upregulated` AS u2, 
+`gcp-for-bioinformatics.sql_genomics_examples.upregulated` AS u3 
 WHERE u1.gid = u2.gid
 AND u1.gid = u3.gid
 AND u1.experimentid <> u2.experimentid
@@ -214,22 +217,26 @@ AND u1.experimentid <> u3.experimentid
 AND u2.experimentid <> u3.experimentid;
 
 SELECT name
-FROM genes, upInThreeOrMore
+FROM
+`gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes, 
+`gcp-for-bioinformatics.sql_genomics_examples.upInThreeOrMore` AS upInThreeOrMore
 WHERE genes.gid = upInThreeOrMore.gid
 AND organism = 'pine';
 
 --GROUP BY Answer--Simply adjust the count evaluation.
-CREATE VIEW upInThreeOrMore AS
+CREATE VIEW `gcp-for-bioinformatics.sql_genomics_examples.upInThreeOrMoreGrouped` AS
 SELECT gid
-FROM expression
+FROM `gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression
 WHERE level >= 0.5
 AND significance >= 1
 GROUP BY gid
 HAVING COUNT(*) > 2;
 
 SELECT name
-FROM genes, upInThreeOrMore
-WHERE genes.gid = upInThreeOrMore.gid
+FROM 
+ `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes,  
+ `gcp-for-bioinformatics.sql_genomics_examples.upInThreeOrMoreGrouped` AS upInThreeOrMoreGrouped
+WHERE genes.gid = upInThreeOrMoreGrouped.gid
 AND organism = 'pine';
 
 --Q7: Return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1.0 or more) 

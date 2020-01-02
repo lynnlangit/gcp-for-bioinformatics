@@ -1,4 +1,4 @@
-# SQL Query Lessons  
+# BigQuery Bioinformatics SQL Query Lessons 
 The original source bioinformatics Dataset and base SQL queries used in this open source course are from [wikibooks](https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises). I significantly modified both the example dataset (table structure and data) and also the example queries to work with the Google BigQuery service.  I also added more intermediate SQL queries to enable students to 'level-up' their query writing more deliberately.
 
 ### To Get Started
@@ -235,8 +235,8 @@ Because it's helpful to 'see' table structure when writing queries, I'll link a 
         AND e1.<id> = e2.<id>
         AND e1.<column> >= 0.5
         AND e2.<column> >= 0.5
-        AND e1.<column> >= 1.0
-        AND e2.<column> >= 1.0
+        AND e1.<column> >= 1
+        AND e2.<column> >= 1
         AND e1.<id> <> e2.<id>
         AND <column> = 'pine';
 
@@ -284,41 +284,84 @@ Because it's helpful to 'see' table structure when writing queries, I'll link a 
 ---
 **SECTION in PROGRESS**
 
-### ❓Q6: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in at least three experiments  
+### ❓Q6: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in at least three experiments 
 
-- 6a. Self-join Answer: can be written one single query. However using a self-join with another table join, which is, in effect, a three table join, is complex to write and to read.  Join the `genes` table to two copies of the `expression` table.
+The caveat here is that while the equality evaluations are transitive, while inequality evaluations are not, and so every case must be covered.
+
+- 6a. Self-join Answer: can be written one single query. However using a self-join with another table join, which is, in effect, a four table join, is complex to write and to read.  Join the `genes` table to THREE copies of the `expression` table.
 
         - SQL Query Pattern:
 
         SELECT DISTINCT <column>
-        FROM <t1> AS genes, <t2a> AS e1,<t2b> AS e2
+        FROM <t1> AS genes, <t2a> AS e1,<t2b> AS e2, <t2c> AS e3
         WHERE <t1>.<id> = <t2a>.<id>
         AND e1.<id> = e2.<id>
+        AND e1.<id> = e3.<id>
         AND e1.<column> >= 0.5
         AND e2.<column> >= 0.5
-        AND e1.<column> >= 1.0
-        AND e2.<column> >= 1.0
+        AND e3.<column> >= 0.5
+        AND e1.<column> >= 1
+        AND e2.<column> >= 1
+        AND e3.<column> >= 1
         AND e1.<id> <> e2.<id>
+        AND e1.<id> <> e3.<id>
+        AND e2.<id> <> e3.<id>
         AND <column> = 'pine';
 
     --OR-- 
-- 6b. VIEW Answer: The caveat here is that while the equality evaluations are transitive, while inequality evaluations are not, and so every case must be covered.
+
+- 6b. VIEW Answer: As in Q5, you can alternately use a view to improve query readability.  To do this I created a view which returns the ids from the `upregulated` view that was created previously.
 
     - SQL Query Pattern
 
-    SELECT <column>
-    FROM <table1a> AS expressions
-    WHERE experiments.<column> 
+    Extract logic from the subquery (above) to create a view
+
+    CREATE VIEW `gcp-for-bioinformatics.sql_genomics_examples.upInThreeOrMore` AS
+    SELECT DISTINCT u1.gid AS gid
+    FROM 
+    `gcp-for-bioinformatics.sql_genomics_examples.upregulated` AS u1, 
+    `gcp-for-bioinformatics.sql_genomics_examples.upregulated` AS u2, 
+    `gcp-for-bioinformatics.sql_genomics_examples.upregulated` AS u3 
+    WHERE u1.gid = u2.gid
+    AND u1.gid = u3.gid
+    AND u1.experimentid <> u2.experimentid
+    AND u1.experimentid <> u3.experimentid
+    AND u2.experimentid <> u3.experimentid;
+
+    Then query the view, joined to the `genes` table
+
+    SELECT name
+    FROM
+    `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes, 
+    `gcp-for-bioinformatics.sql_genomics_examples.upInThreeOrMore` AS upInThreeOrMore
+    WHERE genes.gid = upInThreeOrMore.gid
+    AND organism = 'pine';
 
     --OR--
 
-- 6c. GROUP BY Answer: Adjust the count evaluation.
+- 6c. GROUP BY Answer: 
 
     - SQL Query Pattern
 
-    SELECT <column>
-    FROM <table1a> AS expressions
-    WHERE experiments.<column> 
+    Create a view using SQL keywords GROUP BY and HAVING to filter by COUNT evaluation.  Many peole find this more readable than self-joins.
+
+    CREATE VIEW `gcp-for-bioinformatics.sql_genomics_examples.upInThreeOrMoreGrouped` AS
+    SELECT gid
+    FROM `gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression
+    WHERE level >= 0.5
+    AND significance >= 1
+    GROUP BY gid
+    HAVING COUNT(*) > 2;
+
+    Then query the view, joined to the `genes` table
+
+    SELECT name
+    FROM 
+    `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes,  
+    `gcp-for-bioinformatics.sql_genomics_examples.upInThreeOrMoreGrouped` AS upInThreeOrMoreGrouped
+    WHERE genes.gid = upInThreeOrMoreGrouped.gid
+    AND organism = 'pine';
+    
 ---
 
 ### ❓Q7: Write a SQL query to return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1 or more) in at exactly two experiments 
