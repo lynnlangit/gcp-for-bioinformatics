@@ -1,5 +1,6 @@
 ---SQL Query Answers
----Source: https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises
+---Original Source: https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises
+---IMPORTANT: I significantly modified the original exercise to work with Google BigQuery, by changing table structure, data, query questions and answers
 
 --Q0a: Return all data from the experiments table
 SELECT
