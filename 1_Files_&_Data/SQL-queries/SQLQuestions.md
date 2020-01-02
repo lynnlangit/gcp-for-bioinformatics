@@ -26,11 +26,11 @@ The original source bioinformatics Dataset and base SQL queries used in this ope
  
  #### What could go wrong?
 
- Shown below is the BigQuery query editor window with an error (in red). The error is that the table name is spelled incorrectly as `experiment`, when it should be `experiments`
+ Shown below is the BigQuery query editor window with an error - indicated in RED. The error (on line 4) is that the table name is spelled incorrectly as `experiment`, when it should be `experiments`
 
  ![BigQuery error](/1_Files_&_Data/SQL-concept-graphics/error-bq.png)
 
- After you correct a query-time error, then the editor will update and show 'valid syntax' in green (shown below).
+ After you correct a query-time error, then the editor will update and show 'valid syntax' in GREEN (shown below).
 
  ![BigQuery error](/1_Files_&_Data/SQL-concept-graphics/correct-bq.png)
 
