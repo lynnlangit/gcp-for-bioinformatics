@@ -312,7 +312,7 @@ The caveat here is that while the equality evaluations are transitive, while ine
 
 - 6b. VIEW Answer: As in Q5, you can alternately use a view to improve query readability.  To do this I created a view which returns the ids from the `upregulated` view that was created previously.
 
-    Extract logic from the subquery (above) to create a view
+    I extracted logic from the subquery (above) to create a view
 
          - SQL Query Pattern
 
@@ -339,7 +339,7 @@ The caveat here is that while the equality evaluations are transitive, while ine
 
 - 6c. GROUP BY Answer: 
 
-   Create a view using SQL keywords GROUP BY and HAVING to filter by COUNT evaluation.  Many peole find this more readable than self-joins.
+   I also created a view using SQL keywords GROUP BY and HAVING to filter by COUNT evaluation.  Some people find this type of query syntax more readable than self-joins.
 
         - SQL Query Pattern
         CREATE VIEW `gcp-for-bioinformatics.sql_genomics_examples.upInThreeOrMoreGrouped` AS
