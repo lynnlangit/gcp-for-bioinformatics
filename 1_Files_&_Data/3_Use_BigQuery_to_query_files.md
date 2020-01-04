@@ -71,6 +71,7 @@ SQL Links
  
 BigQuery Links
  - 📘 Link to [Understand BQ pricing](https://cloud.google.com/bigquery/pricing)
+ - 📘 Link to [Save money when using BQ](https://www.linkedin.com/pulse/5-ways-save-money-google-bigquery-rob-larter/)
  - 📘 Link to [BQ Variants data schema](https://cloud.google.com/genomics/docs/how-tos/bigquery-variants-schema)
  - 📘 Link to [Load Variants into BQ](https://cloud.google.com/genomics/docs/how-tos/load-variants#transform-pipeline)
  - 📘 Link to [Analyze variants with BQ](https://cloud.google.com/genomics/docs/tutorials/analyze-variants-advanced)
