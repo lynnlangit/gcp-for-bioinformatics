@@ -1,0 +1,1067 @@
+{
+    "a_galaxy_workflow": "true", 
+    "annotation": "", 
+    "format-version": "0.1", 
+    "name": "AmrPlusPlus Paired Workflow", 
+    "steps": {
+        "0": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 0, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Host Genome"
+                }
+            ], 
+            "label": "Host Genome", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 200, 
+                "top": 200
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Host Genome\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "96c8f450-cb64-4641-884a-c1dabceeff5d", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "2fb141c8-5d0b-4044-906d-adaa7a07f66e"
+                }
+            ]
+        }, 
+        "1": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 1, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "FASTQ Forward"
+                }
+            ], 
+            "label": "FASTQ Forward", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 200, 
+                "top": 285
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"FASTQ Forward\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "f1e841db-6f7a-4f32-bd87-8d0d934c4cc1", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "ad47f164-7e7a-4d22-a967-551b2378427a"
+                }
+            ]
+        }, 
+        "2": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 2, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "FASTQ Reverse"
+                }
+            ], 
+            "label": "FASTQ Reverse", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 200, 
+                "top": 370.00001525878906
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"FASTQ Reverse\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "a24ee7c0-b919-4426-8866-7d9939536e12", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "edba093d-cdda-4530-916e-a566d94e2040"
+                }
+            ]
+        }, 
+        "3": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 3, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Annotation Database"
+                }
+            ], 
+            "label": "Annotation Database", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 200, 
+                "top": 540
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Annotation Database\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "4c16c659-a507-4d85-8ad6-e9bd4991b793", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "d9f3afa2-b03f-40f5-9640-1f80ef25ed14"
+                }
+            ]
+        }, 
+        "4": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 4, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "AMR Database"
+                }
+            ], 
+            "label": "AMR Database", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 2018, 
+                "top": 371
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"AMR Database\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "2615ede9-3d0a-422b-b04d-829157475d47", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "32fcc9ba-8864-4fa7-a337-917a9612844a"
+                }
+            ]
+        }, 
+        "5": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.32.3", 
+            "id": 5, 
+            "input_connections": {
+                "paired_end|paired_input_type_conditional|fastq_r1_in": {
+                    "id": 1, 
+                    "output_name": "output"
+                }, 
+                "paired_end|paired_input_type_conditional|fastq_r2_in": {
+                    "id": 2, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "Trimmomatic", 
+            "outputs": [
+                {
+                    "name": "fastq_out_paired", 
+                    "type": "input"
+                }, 
+                {
+                    "name": "fastq_out_unpaired", 
+                    "type": "input"
+                }, 
+                {
+                    "name": "fastq_out_r1_paired", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "fastq_out_r2_paired", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "fastq_out_r1_unpaired", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "fastq_out_r2_unpaired", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "fastq_out", 
+                    "type": "fastqsanger"
+                }
+            ], 
+            "position": {
+                "left": 428, 
+                "top": 200
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionfastq_out": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "fastq_out"
+                }, 
+                "HideDatasetActionfastq_out_paired": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "fastq_out_paired"
+                }, 
+                "HideDatasetActionfastq_out_r1_unpaired": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "fastq_out_r1_unpaired"
+                }, 
+                "HideDatasetActionfastq_out_r2_unpaired": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "fastq_out_r2_unpaired"
+                }, 
+                "HideDatasetActionfastq_out_unpaired": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "fastq_out_unpaired"
+                }
+            }, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.32.3", 
+            "tool_shed_repository": {
+                "changeset_revision": "f8a9a5eaca8a", 
+                "name": "trimmomatic", 
+                "owner": "pjbriggs", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"operations\": \"[{\\\"__index__\\\": 0, \\\"operation\\\": {\\\"window_size\\\": \\\"4\\\", \\\"name\\\": \\\"SLIDINGWINDOW\\\", \\\"__current_case__\\\": 0, \\\"required_quality\\\": \\\"20\\\"}}]\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"paired_end\": \"{\\\"is_paired_end\\\": \\\"true\\\", \\\"paired_input_type_conditional\\\": {\\\"paired_input_type\\\": \\\"pair_of_files\\\", \\\"fastq_r1_in\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"fastq_r2_in\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, \\\"__current_case__\\\": 1}\", \"illuminaclip\": \"{\\\"do_illuminaclip\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\"}", 
+            "tool_version": "0.32.3", 
+            "type": "tool", 
+            "uuid": "c943ae63-aa6c-4d42-9088-b08335b8b6c6", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "fastq_out_r1_paired", 
+                    "uuid": "e5cb04a2-09b6-41e5-b93d-54c4c6c8e488"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "fastq_out_r2_paired", 
+                    "uuid": "ada191c5-9f20-4052-aa5e-03f73f9587ad"
+                }
+            ]
+        }, 
+        "6": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.12.1", 
+            "id": 6, 
+            "input_connections": {
+                "input_type|fastq_input1": {
+                    "id": 5, 
+                    "output_name": "fastq_out_r1_paired"
+                }, 
+                "input_type|fastq_input2": {
+                    "id": 5, 
+                    "output_name": "fastq_out_r2_paired"
+                }, 
+                "reference_source|ref_file": {
+                    "id": 0, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Map with BWA", 
+                    "name": "input_type"
+                }, 
+                {
+                    "description": "runtime parameter for tool Map with BWA", 
+                    "name": "input_type"
+                }, 
+                {
+                    "description": "runtime parameter for tool Map with BWA", 
+                    "name": "reference_source"
+                }
+            ], 
+            "label": null, 
+            "name": "Map with BWA", 
+            "outputs": [
+                {
+                    "name": "bam_output", 
+                    "type": "bam"
+                }
+            ], 
+            "position": {
+                "left": 754, 
+                "top": 200
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.12.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "546ada4a9f43", 
+                "name": "bwa", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"input_type\": \"{\\\"adv_pe_options\\\": {\\\"__current_case__\\\": 1, \\\"adv_pe_options_selector\\\": \\\"do_not_set\\\"}, \\\"fastq_input2\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"input_type_selector\\\": \\\"paired\\\", \\\"fastq_input1\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"__rerun_remap_job_id__\": null, \"rg\": \"{\\\"rg_selector\\\": \\\"do_not_set\\\", \\\"__current_case__\\\": 3}\", \"analysis_type\": \"{\\\"analysis_type_selector\\\": \\\"illumina\\\", \\\"__current_case__\\\": 0}\", \"reference_source\": \"{\\\"ref_file\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"reference_source_selector\\\": \\\"history\\\", \\\"__current_case__\\\": 1, \\\"index_a\\\": \\\"auto\\\"}\"}", 
+            "tool_version": "0.7.12.1", 
+            "type": "tool", 
+            "uuid": "3c509fb7-aef9-4e6d-bbb7-f6099d71f15e", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "bam_output", 
+                    "uuid": "d7011177-89c7-48ac-928e-935c6eecf92d"
+                }
+            ]
+        }, 
+        "7": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/brenninc/samtools_flag_filter_1_2/samtools_flag_filter/0.1", 
+            "id": 7, 
+            "input_connections": {
+                "input": {
+                    "id": 6, 
+                    "output_name": "bam_output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Samtools flag_filter", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "Samtools flag_filter", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "bam"
+                }
+            ], 
+            "position": {
+                "left": 1082, 
+                "top": 200
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/brenninc/samtools_flag_filter_1_2/samtools_flag_filter/0.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "97bb72be07f9", 
+                "name": "samtools_flag_filter_1_2", 
+                "owner": "brenninc", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"bits\": \"[{\\\"__index__\\\": 0, \\\"flag\\\": \\\"0x0004\\\", \\\"state\\\": \\\"f\\\"}, {\\\"__index__\\\": 1, \\\"flag\\\": \\\"0x0008\\\", \\\"state\\\": \\\"f\\\"}, {\\\"__index__\\\": 2, \\\"flag\\\": \\\"0x0001\\\", \\\"state\\\": \\\"f\\\"}]\", \"__page__\": 0}", 
+            "tool_version": "0.1", 
+            "type": "tool", 
+            "uuid": "e31b4dcc-9623-4c50-8139-214e40fe29d0", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "c9c36760-d2a9-4c05-808c-05a092260670"
+                }
+            ]
+        }, 
+        "8": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_sort/samtools_sort/2.0", 
+            "id": 8, 
+            "input_connections": {
+                "input1": {
+                    "id": 7, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Sort", 
+                    "name": "input1"
+                }
+            ], 
+            "label": null, 
+            "name": "Sort", 
+            "outputs": [
+                {
+                    "name": "output1", 
+                    "type": "bam"
+                }
+            ], 
+            "position": {
+                "left": 1373, 
+                "top": 200
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_sort/samtools_sort/2.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "a430da4f04cd", 
+                "name": "samtools_sort", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"sort_mode\": \"\\\"-n\\\"\"}", 
+            "tool_version": "2.0", 
+            "type": "tool", 
+            "uuid": "92aa5f6b-5eb7-43ec-8eb9-dafcb7f1047e", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output1", 
+                    "uuid": "425d9e49-8cb3-4d05-9960-0c9d038c800a"
+                }
+            ]
+        }, 
+        "9": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.12.1", 
+            "id": 9, 
+            "input_connections": {
+                "input_type|bam_input": {
+                    "id": 8, 
+                    "output_name": "output1"
+                }, 
+                "reference_source|ref_file": {
+                    "id": 4, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Map with BWA", 
+                    "name": "input_type"
+                }, 
+                {
+                    "description": "runtime parameter for tool Map with BWA", 
+                    "name": "reference_source"
+                }
+            ], 
+            "label": null, 
+            "name": "Map with BWA", 
+            "outputs": [
+                {
+                    "name": "bam_output", 
+                    "type": "bam"
+                }
+            ], 
+            "position": {
+                "left": 1601, 
+                "top": 200
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.12.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "546ada4a9f43", 
+                "name": "bwa", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"input_type\": \"{\\\"bam_input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 3, \\\"input_type_selector\\\": \\\"paired_bam\\\", \\\"adv_bam_pe_options\\\": {\\\"__current_case__\\\": 1, \\\"adv_pe_options_selector\\\": \\\"do_not_set\\\"}}\", \"__rerun_remap_job_id__\": null, \"rg\": \"{\\\"rg_selector\\\": \\\"do_not_set\\\", \\\"__current_case__\\\": 3}\", \"analysis_type\": \"{\\\"analysis_type_selector\\\": \\\"illumina\\\", \\\"__current_case__\\\": 0}\", \"reference_source\": \"{\\\"ref_file\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"reference_source_selector\\\": \\\"history\\\", \\\"__current_case__\\\": 1, \\\"index_a\\\": \\\"auto\\\"}\"}", 
+            "tool_version": "0.7.12.1", 
+            "type": "tool", 
+            "uuid": "4dff04dd-4331-4390-a21d-64140a177ce4", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "bam_output", 
+                    "uuid": "341955c7-7ae9-4872-a52a-f6b2f298cba1"
+                }
+            ]
+        }, 
+        "10": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_sort/samtools_sort/2.0", 
+            "id": 10, 
+            "input_connections": {
+                "input1": {
+                    "id": 9, 
+                    "output_name": "bam_output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Sort", 
+                    "name": "input1"
+                }
+            ], 
+            "label": null, 
+            "name": "Sort", 
+            "outputs": [
+                {
+                    "name": "output1", 
+                    "type": "bam"
+                }
+            ], 
+            "position": {
+                "left": 1929, 
+                "top": 200
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_sort/samtools_sort/2.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "a430da4f04cd", 
+                "name": "samtools_sort", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"sort_mode\": \"\\\"-n\\\"\"}", 
+            "tool_version": "2.0", 
+            "type": "tool", 
+            "uuid": "97ca7254-d03b-4cf3-810c-7dbaa6f65e72", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output1", 
+                    "uuid": "7b4416a5-ff90-4d1a-83c3-24c44e77f640"
+                }
+            ]
+        }, 
+        "11": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/bam_to_sam/bam_to_sam/2.0", 
+            "id": 11, 
+            "input_connections": {
+                "input1": {
+                    "id": 10, 
+                    "output_name": "output1"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool BAM-to-SAM", 
+                    "name": "input1"
+                }
+            ], 
+            "label": null, 
+            "name": "BAM-to-SAM", 
+            "outputs": [
+                {
+                    "name": "output1", 
+                    "type": "sam"
+                }
+            ], 
+            "position": {
+                "left": 2157, 
+                "top": 200
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bam_to_sam/bam_to_sam/2.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "af7c50162f0b", 
+                "name": "bam_to_sam", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"header\": \"\\\"-h\\\"\", \"__rerun_remap_job_id__\": null, \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0}", 
+            "tool_version": "2.0", 
+            "type": "tool", 
+            "uuid": "5196c387-3fad-46dc-9e6f-63af7ffae562", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output1", 
+                    "uuid": "a4536845-4aaa-4a65-bc1b-e235f762a742"
+                }
+            ]
+        }, 
+        "12": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/chrisd/snpfinder/snpfinder/0.1.0", 
+            "id": 12, 
+            "input_connections": {
+                "reference": {
+                    "id": 4, 
+                    "output_name": "output"
+                }, 
+                "sam_type|sampe_input": {
+                    "id": 11, 
+                    "output_name": "output1"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool SNPFinder", 
+                    "name": "sam_type"
+                }, 
+                {
+                    "description": "runtime parameter for tool SNPFinder", 
+                    "name": "reference"
+                }
+            ], 
+            "label": null, 
+            "name": "SNPFinder", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "tabular"
+                }
+            ], 
+            "position": {
+                "left": 2397, 
+                "top": 179.5
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/chrisd/snpfinder/snpfinder/0.1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "7073825e4338", 
+                "name": "snpfinder", 
+                "owner": "chrisd", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"sam_type\": \"{\\\"best\\\": \\\"false\\\", \\\"sampe_input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"mode\\\": \\\"paired_end\\\", \\\"__current_case__\\\": 1}\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"reference\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "0.1.0", 
+            "type": "tool", 
+            "uuid": "57a866b1-9ee5-42b4-9928-cc493c5a39e2", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "8fa27476-3910-4a56-a9ff-e8bcde087030"
+                }
+            ]
+        }, 
+        "13": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/chrisd/resistome_analyzer/resistome_analyzer/0.1.0", 
+            "id": 13, 
+            "input_connections": {
+                "annotation": {
+                    "id": 3, 
+                    "output_name": "output"
+                }, 
+                "reference": {
+                    "id": 4, 
+                    "output_name": "output"
+                }, 
+                "sam": {
+                    "id": 11, 
+                    "output_name": "output1"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool ResistomeAnalyzer", 
+                    "name": "sam"
+                }, 
+                {
+                    "description": "runtime parameter for tool ResistomeAnalyzer", 
+                    "name": "annotation"
+                }, 
+                {
+                    "description": "runtime parameter for tool ResistomeAnalyzer", 
+                    "name": "reference"
+                }
+            ], 
+            "label": null, 
+            "name": "ResistomeAnalyzer", 
+            "outputs": [
+                {
+                    "name": "gene", 
+                    "type": "tabular"
+                }, 
+                {
+                    "name": "mech", 
+                    "type": "tabular"
+                }, 
+                {
+                    "name": "class", 
+                    "type": "tabular"
+                }, 
+                {
+                    "name": "group", 
+                    "type": "tabular"
+                }
+            ], 
+            "position": {
+                "left": 2385, 
+                "top": 340
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/chrisd/resistome_analyzer/resistome_analyzer/0.1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "c9fbf44a96f7", 
+                "name": "resistome_analyzer", 
+                "owner": "chrisd", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"sam\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"reference\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"threshold\": \"\\\"1\\\"\", \"annotation\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "0.1.0", 
+            "type": "tool", 
+            "uuid": "7e7d2118-0d65-41ca-a92e-8574a727fc64", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "gene", 
+                    "uuid": "f431b25b-4a3f-464b-bf3e-655fe351d529"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "group", 
+                    "uuid": "d3e1e500-03b5-4998-b5e0-631d5fb6adfd"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "class", 
+                    "uuid": "85d84faf-cbd5-4848-81ad-4f9c1b5a1da1"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "mech", 
+                    "uuid": "9390ce51-a57a-4cb5-b0fb-4a87f753c087"
+                }
+            ]
+        }, 
+        "14": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/chrisd/rarefaction_analyzer/rarefaction_analyzer/0.1.0", 
+            "id": 14, 
+            "input_connections": {
+                "annotation": {
+                    "id": 3, 
+                    "output_name": "output"
+                }, 
+                "reference": {
+                    "id": 4, 
+                    "output_name": "output"
+                }, 
+                "sam": {
+                    "id": 11, 
+                    "output_name": "output1"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool RarefactionAnalyzer", 
+                    "name": "reference"
+                }, 
+                {
+                    "description": "runtime parameter for tool RarefactionAnalyzer", 
+                    "name": "sam"
+                }, 
+                {
+                    "description": "runtime parameter for tool RarefactionAnalyzer", 
+                    "name": "annotation"
+                }
+            ], 
+            "label": null, 
+            "name": "RarefactionAnalyzer", 
+            "outputs": [
+                {
+                    "name": "gene", 
+                    "type": "tabular"
+                }, 
+                {
+                    "name": "mech", 
+                    "type": "tabular"
+                }, 
+                {
+                    "name": "class", 
+                    "type": "tabular"
+                }, 
+                {
+                    "name": "group", 
+                    "type": "tabular"
+                }
+            ], 
+            "position": {
+                "left": 2385, 
+                "top": 588
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionclass": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "class"
+                }, 
+                "HideDatasetActiongene": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "gene"
+                }, 
+                "HideDatasetActiongroup": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "group"
+                }, 
+                "HideDatasetActionmech": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "mech"
+                }, 
+                "RenameDatasetActionclass": {
+                    "action_arguments": {
+                        "newname": "Rarefaction Class"
+                    }, 
+                    "action_type": "RenameDatasetAction", 
+                    "output_name": "class"
+                }, 
+                "RenameDatasetActiongene": {
+                    "action_arguments": {
+                        "newname": "Rarefaction Gene Class"
+                    }, 
+                    "action_type": "RenameDatasetAction", 
+                    "output_name": "gene"
+                }, 
+                "RenameDatasetActiongroup": {
+                    "action_arguments": {
+                        "newname": "Rarefaction Group Class"
+                    }, 
+                    "action_type": "RenameDatasetAction", 
+                    "output_name": "group"
+                }, 
+                "RenameDatasetActionmech": {
+                    "action_arguments": {
+                        "newname": "Rarefaction Mechanism Class"
+                    }, 
+                    "action_type": "RenameDatasetAction", 
+                    "output_name": "mech"
+                }
+            }, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/chrisd/rarefaction_analyzer/rarefaction_analyzer/0.1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "5ec8b052e389", 
+                "name": "rarefaction_analyzer", 
+                "owner": "chrisd", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"reference\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"sam\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"min\": \"\\\"1\\\"\", \"max\": \"\\\"100\\\"\", \"__rerun_remap_job_id__\": null, \"samples\": \"\\\"1\\\"\", \"skip\": \"\\\"1\\\"\", \"threshold\": \"\\\"1\\\"\", \"annotation\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "0.1.0", 
+            "type": "tool", 
+            "uuid": "a7e406aa-bc69-44d8-a6e3-abac45506bb1", 
+            "workflow_outputs": []
+        }, 
+        "15": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/xy_plot/XY_Plot_1/1.0.1", 
+            "id": 15, 
+            "input_connections": {
+                "series_0|input": {
+                    "id": 14, 
+                    "output_name": "gene"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "Plotting tool", 
+            "outputs": [
+                {
+                    "name": "out_file1", 
+                    "type": "pdf"
+                }
+            ], 
+            "position": {
+                "left": 2640, 
+                "top": 200
+            }, 
+            "post_job_actions": {
+                "RenameDatasetActionout_file1": {
+                    "action_arguments": {
+                        "newname": "Rarefaction Gene Plot"
+                    }, 
+                    "action_type": "RenameDatasetAction", 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/xy_plot/XY_Plot_1/1.0.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "23657fcaaa5c", 
+                "name": "xy_plot", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"xlab\": \"\\\"Proportion of Reads Sampled\\\"\", \"series\": \"[{\\\"__index__\\\": 0, \\\"xcol\\\": \\\"1\\\", \\\"series_type\\\": {\\\"lty\\\": \\\"1\\\", \\\"lwd\\\": \\\"3.0\\\", \\\"type\\\": \\\"line\\\", \\\"col\\\": \\\"1\\\", \\\"__current_case__\\\": 0}, \\\"ycol\\\": \\\"2\\\", \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}]\", \"__rerun_remap_job_id__\": null, \"ylab\": \"\\\"Number of Genes Identified\\\"\", \"main\": \"\\\"Gene Level\\\"\"}", 
+            "tool_version": "1.0.1", 
+            "type": "tool", 
+            "uuid": "7baeac13-2992-4e8a-8e0f-8dbe815b7c86", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "out_file1", 
+                    "uuid": "d43a0b10-5a3d-465d-a59e-9316e7940985"
+                }
+            ]
+        }, 
+        "16": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/xy_plot/XY_Plot_1/1.0.1", 
+            "id": 16, 
+            "input_connections": {
+                "series_0|input": {
+                    "id": 14, 
+                    "output_name": "group"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "Plotting tool", 
+            "outputs": [
+                {
+                    "name": "out_file1", 
+                    "type": "pdf"
+                }
+            ], 
+            "position": {
+                "left": 2640, 
+                "top": 313
+            }, 
+            "post_job_actions": {
+                "RenameDatasetActionout_file1": {
+                    "action_arguments": {
+                        "newname": "Rarefaction Group Plot"
+                    }, 
+                    "action_type": "RenameDatasetAction", 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/xy_plot/XY_Plot_1/1.0.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "23657fcaaa5c", 
+                "name": "xy_plot", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"xlab\": \"\\\"Proportion of Reads Sampled\\\"\", \"series\": \"[{\\\"__index__\\\": 0, \\\"xcol\\\": \\\"1\\\", \\\"series_type\\\": {\\\"lty\\\": \\\"1\\\", \\\"lwd\\\": \\\"3.0\\\", \\\"type\\\": \\\"line\\\", \\\"col\\\": \\\"1\\\", \\\"__current_case__\\\": 0}, \\\"ycol\\\": \\\"2\\\", \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}]\", \"__rerun_remap_job_id__\": null, \"ylab\": \"\\\"Number of Groups Identified\\\"\", \"main\": \"\\\"Group Level\\\"\"}", 
+            "tool_version": "1.0.1", 
+            "type": "tool", 
+            "uuid": "56c3bac1-1f6d-4f23-bff1-b12d1bb77c69", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "out_file1", 
+                    "uuid": "634c3cbf-6e4e-4c86-873b-7317594d347a"
+                }
+            ]
+        }, 
+        "17": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/xy_plot/XY_Plot_1/1.0.1", 
+            "id": 17, 
+            "input_connections": {
+                "series_0|input": {
+                    "id": 14, 
+                    "output_name": "class"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "Plotting tool", 
+            "outputs": [
+                {
+                    "name": "out_file1", 
+                    "type": "pdf"
+                }
+            ], 
+            "position": {
+                "left": 2640, 
+                "top": 426.0000305175781
+            }, 
+            "post_job_actions": {
+                "RenameDatasetActionout_file1": {
+                    "action_arguments": {
+                        "newname": "Rarefaction Class Plot"
+                    }, 
+                    "action_type": "RenameDatasetAction", 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/xy_plot/XY_Plot_1/1.0.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "23657fcaaa5c", 
+                "name": "xy_plot", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"xlab\": \"\\\"Proportion of Reads Sampled\\\"\", \"series\": \"[{\\\"__index__\\\": 0, \\\"xcol\\\": \\\"1\\\", \\\"series_type\\\": {\\\"lty\\\": \\\"1\\\", \\\"lwd\\\": \\\"3.0\\\", \\\"type\\\": \\\"line\\\", \\\"col\\\": \\\"1\\\", \\\"__current_case__\\\": 0}, \\\"ycol\\\": \\\"2\\\", \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}]\", \"__rerun_remap_job_id__\": null, \"ylab\": \"\\\"Number of Classes Identified\\\"\", \"main\": \"\\\"Class Level\\\"\"}", 
+            "tool_version": "1.0.1", 
+            "type": "tool", 
+            "uuid": "df80193f-ddc8-42d9-af14-a9209b269023", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "out_file1", 
+                    "uuid": "a66ba9db-0566-4cba-a8ea-5e1ac319eda1"
+                }
+            ]
+        }, 
+        "18": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/xy_plot/XY_Plot_1/1.0.1", 
+            "id": 18, 
+            "input_connections": {
+                "series_0|input": {
+                    "id": 14, 
+                    "output_name": "mech"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "Plotting tool", 
+            "outputs": [
+                {
+                    "name": "out_file1", 
+                    "type": "pdf"
+                }
+            ], 
+            "position": {
+                "left": 2640, 
+                "top": 539
+            }, 
+            "post_job_actions": {
+                "RenameDatasetActionout_file1": {
+                    "action_arguments": {
+                        "newname": "Rarefaction Mechanism Plot"
+                    }, 
+                    "action_type": "RenameDatasetAction", 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/xy_plot/XY_Plot_1/1.0.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "23657fcaaa5c", 
+                "name": "xy_plot", 
+                "owner": "devteam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"xlab\": \"\\\"Proportion of Reads Sampled\\\"\", \"series\": \"[{\\\"__index__\\\": 0, \\\"xcol\\\": \\\"1\\\", \\\"series_type\\\": {\\\"lty\\\": \\\"1\\\", \\\"lwd\\\": \\\"3.0\\\", \\\"type\\\": \\\"line\\\", \\\"col\\\": \\\"1\\\", \\\"__current_case__\\\": 0}, \\\"ycol\\\": \\\"2\\\", \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}]\", \"__rerun_remap_job_id__\": null, \"ylab\": \"\\\"Number of Mechanisms Identified\\\"\", \"main\": \"\\\"Mechanism Level\\\"\"}", 
+            "tool_version": "1.0.1", 
+            "type": "tool", 
+            "uuid": "2b01d036-6314-487f-80b6-96b13bb39bf4", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "out_file1", 
+                    "uuid": "5bac0688-f939-4d3b-8142-9730097366fc"
+                }
+            ]
+        }
+    }, 
+    "uuid": "92c028e6-f04c-44c8-ae2f-7c26034d1a53"
+}

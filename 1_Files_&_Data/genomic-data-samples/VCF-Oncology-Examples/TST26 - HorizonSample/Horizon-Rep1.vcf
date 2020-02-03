@@ -1,0 +1,88 @@
+##fileformat=VCFv4.1
+##FORMAT=<ID=AD,Number=.,Type=Integer,Description="Allele Depth">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=GQX,Number=1,Type=Integer,Description="Minimum of {Genotype quality assuming variant position,Genotype quality assuming non-variant position}">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=NL,Number=1,Type=Integer,Description="Applied BaseCall Noise Level">
+##FORMAT=<ID=PB,Number=1,Type=Float,Description="Probe-pool bias.  Values closer to 0 indicate more bias toward one probe pool (and less confidence in a variant call)">
+##FORMAT=<ID=SB,Number=1,Type=Float,Description="StrandBias Score">
+##FORMAT=<ID=VF,Number=1,Type=Float,Description="Variant Frequency">
+##INFO=<ID=AA,Number=1,Type=String,Description="The inferred allele ancestral to the chimpanzee/human lineage">
+##INFO=<ID=AF1000G,Number=1,Type=String,Description="The allele frequency from all populations of 1000 genomes data">
+##INFO=<ID=clinvar,Number=.,Type=String,Description="Clinical significance">
+##INFO=<ID=cosmic,Number=.,Type=String,Description="The numeric identifier for the variant in the Catalogue of Somatic Mutations in Cancer (COSMIC) database">
+##INFO=<ID=CSQR,Number=.,Type=String,Description="Regulatory consequence type as predicted by VEP version 72. Feature source: Ensembl.  Format: RegulatoryID|Consequence">
+##INFO=<ID=CSQT,Number=.,Type=String,Description="Transcript consequence as predicted by VEP version 72. Transcript source: refseq.  Format: HGNC|TranscriptID|Consequence">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total Depth">
+##INFO=<ID=EVS,Number=.,Type=String,Description="Allele frequency, sample count and coverage taken from the Exome Variant Server (EVS). Format:  AlleleFreqEVS|EVSCoverage|EVSSamples">
+##INFO=<ID=EXON,Number=0,Type=Flag,Description="Exon Region">
+##INFO=<ID=FC,Number=.,Type=String,Description="Functional Consequence">
+##INFO=<ID=GI,Number=.,Type=String,Description="Gene ID">
+##INFO=<ID=GMAF,Number=.,Type=String,Description="Global minor allele frequency (GMAF); technically, the frequency of the second most frequent allele.  Format: GlobalMinorAllele|AlleleFreqGlobalMinor">
+##INFO=<ID=phastCons,Number=0,Type=Flag,Description="Denotes if the variant is an identical or similar sequence that occurs between species and maintained between species throughout evolution">
+##INFO=<ID=TI,Number=.,Type=String,Description="Transcript ID">
+##FILTER=<ID=LowDP,Description="Low coverage (DP tag), therefore no genotype called">
+##FILTER=<ID=LowGQ,Description="GQ below < 30.00">
+##FILTER=<ID=LowVariantFreq,Description="Low variant frequency < 0.030">
+##FILTER=<ID=PB,Description="Probe pool bias - variant not found, or found with low frequency, in one of two probe pools">
+##FILTER=<ID=R8,Description="IndelRepeatLength is greater than 8">
+##FILTER=<ID=SB,Description="Variant strand bias too high">
+##contig=<ID=chr1,length=249250621>
+##contig=<ID=chr2,length=243199373>
+##contig=<ID=chr3,length=198022430>
+##contig=<ID=chr4,length=191154276>
+##contig=<ID=chr5,length=180915260>
+##contig=<ID=chr7,length=159138663>
+##contig=<ID=chr9,length=141213431>
+##contig=<ID=chr10,length=135534747>
+##contig=<ID=chr12,length=133851895>
+##contig=<ID=chr14,length=107349540>
+##contig=<ID=chr15,length=102531392>
+##contig=<ID=chr16,length=90354753>
+##contig=<ID=chr17,length=81195210>
+##contig=<ID=chr18,length=78077248>
+##contig=<ID=chr19,length=59128983>
+##contig=<ID=chr20,length=63025520>
+##annotator=IlluminaAnnotationService
+##annotationserviceuri=http://annotation.basespace.illumina.com
+##annotationserviceversion=v3
+##annotationcollectionversion=72.5
+##fileDate=20151008
+##source=CallSomaticVariants 3.5.2.1
+##CallSomaticVariants_cmdline=" -B /data/scratch/workspace/RunFolder/Data/Intensities/BaseCalls/Alignment -g [/genomes/Homo_sapiens/UCSC/hg19/Sequence/WholeGenomeFasta,] -f 0.01 -fo False -b 20 -q 100 -c 300 -s 0.5 -a 20 -F 20 -gVCF True -i true -PhaseSNPs true -MaxPhaseSNPLength 100 -r /data/scratch/workspace/RunFolder"
+##reference=/genomes/Homo_sapiens/UCSC/hg19/Sequence/WholeGenomeFasta/genome.fa
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	Horizon_PoolA_Rep1
+chr1	115256530	rs121913254	G	T	100.00	PASS	DP=85786;cosmic=COSM580,COSM581;EVS=0|164.0|6503;phastCons;CSQT=CSDE1|NM_001242891.1|downstream_gene_variant,NRAS|NM_002524.4|missense_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:75322,10335:0.1205:20:-100:-100.0000:100
+chr2	48030639	rs63750431	AC	A	100.00	PASS	DP=52369;cosmic=COSM330655;EVS=0|120.0|6503;CSQT=MSH6|NM_000179.2|frameshift_variant:feature_truncation,FBXO11|NM_001190274.1|downstream_gene_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:49832,2537:0.0484:20:-100:-100.0000:100
+chr2	48030639	rs63749866,rs63750431	A	AC	100.00	PASS	DP=49270;cosmic=COSM308681;CSQT=MSH6|NM_000179.2|frameshift_variant:feature_elongation,FBXO11|NM_001190274.1|downstream_gene_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:41002,8268:0.1678:20:-100:-100.0000:100
+chr3	41266101	rs121913400	C	A	100.00	PASS	DP=42617;cosmic=COSM5669,COSM5673,COSM5677;EVS=0|82.0|6503;clinvar=other;phastCons;CSQT=CTNNB1|NM_001098210.1|missense_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:30166,12382:0.2905:20:-100:-100.0000:100
+chr3	41266133	.	CCTT	C	100.00	PASS	DP=21085;cosmic=COSM33668;phastCons;CSQT=CTNNB1|NM_001098210.1|inframe_deletion	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:19339,1746:0.0828:20:-100:-100.0000:100
+chr3	178936091	rs104886003	G	A	100.00	PASS	DP=65811;cosmic=COSM125370,COSM27133,COSM295672,COSM763;EVS=0|60.0|5885;clinvar=other;phastCons;CSQT=PIK3CA|NM_006218.2|missense_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:61578,4220:0.0641:20:-100:-100.0000:100
+chr3	178952085	rs121913279	A	G	100.00	PASS	DP=46506;cosmic=COSM249874,COSM775,COSM776,COSM94986,COSM94987;EVS=0|92.0|6042;clinvar=other;phastCons;CSQT=PIK3CA|NM_006218.2|missense_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:38286,8186:0.1760:20:-100:-100.0000:100
+chr4	55141055	rs1873778	A	G	100.00	PASS	DP=44731;AA=G;AF1000G=0.9600;cosmic=COSM1430082;EVS=0.9589|89.0|6503;GMAF=A|0.0366;phastCons;CSQR=ENSR00001241308|regulatory_region_variant;CSQT=PDGFRA|NM_006206.4|synonymous_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	1/1:100:60,44641:0.9980:20:-20:-100.0000:100
+chr4	55152040	rs2228230	C	T	100.00	PASS	DP=41691;AA=C;AF1000G=0.2100;cosmic=COSM22413;EVS=0.1983|174.0|6503;GMAF=T|0.2088;phastCons;CSQT=PDGFRA|NM_006206.4|synonymous_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:35473,6194:0.1486:20:-100:-100.0000:100
+chr4	55599321	rs121913507	A	T	100.00	PASS	DP=28802;cosmic=COSM12711,COSM1314,COSM24675;EVS=0|145.0|6503;clinvar=pathogenic;phastCons;CSQT=KIT|NM_000222.2|missense_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:26201,2512:0.0872:20:-100:-100.0000:100
+chr4	55602765	rs3733542	G	C	100.00	PASS	DP=33364;AF1000G=0.1400;cosmic=COSM1325,COSM1430189;EVS=0.1931|143.0|6503;GMAF=C|0.1433;phastCons;CSQT=KIT|NM_000222.2|synonymous_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:30979,2347:0.0703:20:-100:-100.0000:100
+chr4	153244155	.	TC	T	100.00	PASS	DP=13145;cosmic=COSM1427622,COSM1427623,COSM1427624,COSM1427625,COSM34018;EVS=0|174.0|6503;phastCons;CSQT=FBXW7|NM_033632.3|frameshift_variant:feature_truncation	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:8926,4219:0.3210:20:-100:-100.0000:100
+chr4	153244263	.	A	G	100.00	PB	DP=54711;EVS=0|82.0|6503;phastCons;CSQT=FBXW7|NM_033632.3|missense_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:52821,1761:0.0322:20:-100:0.0000:100
+chr4	153245534	.	G	A	100.00	PB	DP=13285;EVS=0|78.0|6501;phastCons;CSQT=FBXW7|NM_033632.3|missense_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:12728,542:0.0408:20:-100:0.0000:100
+chr5	112175323	.	A	G	100.00	PB	DP=65874;EVS=0|60.0|6502;phastCons;CSQR=ENSR00001412834|regulatory_region_variant;CSQT=APC|NM_000038.5|synonymous_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:63257,2119:0.0322:20:-100:0.0000:100
+chr5	112175770	rs41115	G	A	100.00	PASS	DP=63588;AA=G;AF1000G=0.6600;EVS=0.5862|72.0|6501;GMAF=G|0.3384;clinvar=non-pathogenic;phastCons;CSQT=APC|NM_000038.5|synonymous_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:50245,13249:0.2084:20:-100:-100.0000:100
+chr7	55241707	rs28929495	G	A	100.00	PASS	DP=36711;cosmic=COSM6252,COSM6253;EVS=0|70.0|6503;clinvar=other:pathogenic;phastCons;CSQT=EGFR|NM_005228.3|missense_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:26504,9680:0.2637:20:-3.2874:-100.0000:100
+chr7	55241707	.	GGCTCCGGTGCG	AGCTCCGGTGCA	100.00	PB	DP=13801;phastCons;CSQT=EGFR|NM_005228.3|missense_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:13286,515:0.0373:20:-3.2874:0.0000:100
+chr7	55249063	rs1050171	G	A	100.00	PASS	DP=39606;AA=G;AF1000G=0.4200;cosmic=COSM1451600;EVS=0.5424|97.0|6503;GMAF=A|0.4185;phastCons;CSQR=ENSR00001049722|regulatory_region_variant;CSQT=EGFR|NM_005228.3|synonymous_variant,EGFR-AS1|NR_047551.1|non_coding_exon_variant:nc_transcript_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:32392,7196:0.1817:20:-100:-100.0000:100
+chr7	55259515	rs121434568	T	G	100.00	PASS	DP=68110;cosmic=COSM29578,COSM6224;EVS=0|101.0|6503;clinvar=other;phastCons;CSQT=EGFR|NM_005228.3|missense_variant,EGFR-AS1|NR_047551.1|upstream_gene_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:65118,2722:0.0400:20:-100:-100.0000:100
+chr7	116339847	.	GT	G	100.00	PASS	DP=120465;EVS=0|203.0|5994;phastCons;CSQT=MET|NM_001127500.1|frameshift_variant:feature_truncation	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:111711,8754:0.0727:20:-100:-100.0000:100
+chr7	116340270	.	G	A	100.00	PB	DP=69744;EVS=0|99.0|6065;phastCons;CSQT=MET|NM_001127500.1|missense_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:67399,2301:0.0330:20:-100:0.0000:100
+chr7	116436022	rs2023748	G	A	100.00	PASS	DP=131364;AA=G;AF1000G=0.3700;cosmic=COSM150378;EVS=0.3225|133.0|6110;GMAF=A|0.3736;phastCons;CSQT=MET|NM_001127500.1|synonymous_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:122716,8522:0.0649:20:-100:-100.0000:100
+chr7	116436097	rs41737	G	A	100.00	PASS	DP=82142;AA=A;AF1000G=0.3800;cosmic=COSM150379;EVS=0.3210|181.0|6200;GMAF=A|0.3759;phastCons;CSQT=MET|NM_001127500.1|synonymous_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:77393,4718:0.0574:20:-100:-100.0000:100
+chr7	140453136	rs113488022	A	T	100.00	PASS	DP=119147;cosmic=COSM18443,COSM476,COSM6137;EVS=0|107.0|6503;clinvar=other:pathogenic;phastCons;CSQT=BRAF|NM_004333.4|missense_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:112033,6704:0.0563:20:-100:-100.0000:100
+chr9	80343586	.	GGAA	G	100.00	PASS	DP=38258;CSQT=GNAQ|NM_002072.3|splice_region_variant:intron_variant:feature_truncation	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:36897,1361:0.0356:20:-100:-100.0000:100
+chr9	80343586	.	GGA	G	100.00	PASS	DP=31378;CSQT=GNAQ|NM_002072.3|splice_region_variant:intron_variant:feature_truncation	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:29054,2324:0.0741:20:-100:-100.0000:100
+chr12	25362777	rs1137282	A	G	100.00	PASS	DP=43410;AA=A;AF1000G=0.1700;EVS=0.2008|65.0|6490;GMAF=G|0.1658;phastCons;CSQT=LYRM5|NM_001001660.2|downstream_gene_variant,KRAS|NM_033360.2|3_prime_UTR_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:29936,13431:0.3094:20:-100:-100.0000:100
+chr12	25398281	rs112445441	C	T	100.00	PASS	DP=33732;cosmic=COSM1140132,COSM1152504,COSM532,COSM533,COSM534;EVS=0|82.0|6503;clinvar=other:pathogenic;phastCons;CSQT=KRAS|NM_033360.2|missense_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:26065,7649:0.2268:20:-100:-100.0000:100
+chr15	66727451	.	A	C	100.00	PASS	DP=32462;cosmic=COSM371527;EVS=0|158.0|6500;phastCons;CSQT=MAP2K1|NM_002755.3|missense_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:22987,9392:0.2893:20:-100:-100.0000:100
+chr17	7577105	.	G	T	100.00	PB	DP=59570;cosmic=COSM10863,COSM10887,COSM129831,COSM300205,COSM333585,COSM43755;EVS=0|66.0|6503;phastCons;CSQT=TP53|NM_000546.5|missense_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:57486,2015:0.0338:20:-100:0.0000:100
+chr17	7579472	rs1042522	G	C	100.00	PASS	DP=60433;AA=G;AF1000G=0.6000;cosmic=COSM45985;EVS=0.6300|92.0|6502;GMAF=G|0.3979;clinvar=non-pathogenic;CSQT=TP53|NM_000546.5|missense_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:868,59504:0.9846:20:-100:-100.0000:100
+chr17	37881082	.	G	A	100.00	PASS	DP=20024;EVS=0|70.0|6503;phastCons;CSQT=ERBB2|NM_004448.2|missense_variant,MIEN1|NM_032339.3|downstream_gene_variant,MIR4728|NR_039881.2|upstream_gene_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:19377,638:0.0319:20:-100:-100.0000:100
+chr19	1207029	.	C	T	100.00	PB	DP=16547;EVS=0|35.0|6262;phastCons;CSQR=ENSR00000213849|regulatory_region_variant;CSQT=STK11|NM_000455.4|synonymous_variant	GT:GQ:AD:VF:NL:SB:PB:GQX	0/1:100:15877,657:0.0397:20:-100:0.0000:100
