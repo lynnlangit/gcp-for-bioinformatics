@@ -87,6 +87,7 @@ Click on your workspace, then the `Notebooks` menu to run Notebooks
 
 ### How to learn more
  - 📙 Try out some example Terra notebooks using the [Terra Notebooks Playground](https://app.terra.bio/#workspaces/help-gatk/Terra%20Notebooks%20Playground) workspace - examples using Python, R and also many bioinformatics tools
+ - 📙 Try out the scenario-based [Terra Jupyter Notebooks QuickStart Workspace](https://app.terra.bio/#workspaces/fc-product-demo/Terra-Notebooks-Quickstart) this uses Google BigQuery as well
  - 📙 Try out some example Terra notebooks (Jupyter_Notebook_Examples folder), includes using the [CSIRO Bioinformatics VariantSpark](https://bioinformatics.csiro.au/variantspark) library and other bioinformatics libraries.
  - 📙 Try out some of these bioinformatics tools using [example Jupyter notebooks](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/2_Virtual_Machines_%26_Docker_Containers/Jupyter_Notebook_Examples)
 - 📘 Links to [Terra articles](https://support.terra.bio/hc/en-us)
