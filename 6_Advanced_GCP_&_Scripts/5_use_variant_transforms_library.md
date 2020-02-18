@@ -2,11 +2,11 @@
 
 ### What is it?
 
-VariantTransforms is a tool (open source library, written in Python) for transforming & processing VCF files in a scalable manner. 
+VariantTransforms is a tool (open source library, written in Python) for transforming & processing VCF files in a scalable manner. Here is the [source code on GitHub](https://github.com/googlegenomics/gcp-variant-transforms).
 
 It supports working with hundreds of thousands of files, millions of samples, and billions of records
 
-VariantTransforms uses GCP Dataflow. Dataflow implements an optimized version of the open source Apache Beam library on GCP.
+VariantTransforms uses GCP Dataflow. Dataflow implements an optimized version of the open source Apache Beam library on GCP.  
 
 ### Why use it?
 
