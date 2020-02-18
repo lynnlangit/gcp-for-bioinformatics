@@ -1,4 +1,4 @@
-# Use Google Cloud Services for Virtual Machines & Docker Containers
+# Use GCP for Virtual Machines & Docker Containers
 
 In this section, you'll get information about using Google Cloud services to run VMs or docker container images.  You'll use Google Compute Engine VMs.  Also you'll use services for docker containers including Google Kubernetes Engine (or K8).  
 
@@ -37,5 +37,11 @@ An interactive representation (one view shown below) for several of the possible
 
 ### Read Examples
 
-For a perspective on different possible ways to run a bioinformatics tool, read my article **'Blast 10 Ways - Adventures in Bioinformatics Tool Deployments'** published on [Medium.](https://medium.com/@lynnlangit/blast-10-ways-3db78f881059)
+- For a perspective on different possible ways to run a bioinformatics tool, read my article
+- Review Article 
+    - `Blast 10 Ways - Adventures in Bioinformatics Tool Deployments` 
+    - published on [Medium.](https://medium.com/@lynnlangit/blast-10-ways-3db78f881059)
+- Read a new book 
+    - `Genomics in the Cloud -  using Docker, GATK, and WDL in Terra`
+    - published [link](http://shop.oreilly.com/product/0636920058182.do) to preview this book on O'Reilly
 
