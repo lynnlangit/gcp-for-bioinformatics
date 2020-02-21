@@ -9,6 +9,7 @@ This page lists some common genomics tools used in bioinformatics analysis pipel
 |[GATK](https://software.broadinstitute.org/gatk/)| comprehensive set of analysis tools                | all   | example pipelines on Terra.bio | The Broad Institute |                                                                  |
 |[HAIL](https://hail.is/)| analysis        | end    | runs on Spark for scalability | The Broad Institute   |
 |[IGV](http://www.broadinstitute.org/igv/)| visualization      | all    | can embed in Jupyter notebooks | The Broad Institute   |
+|[Variant Transforms](https://github.com/googlegenomics/gcp-variant-transforms)| transform and load vcf files into BigQuery    | end    | can embed in Jupyter notebooks | Google Cloud   |
 |[VariantSpark](https://bioinformatics.csiro.au/variantspark/)| variant discovery  | end    | binary format                     | CSIRO Bioinformatics |
 |[GT-Scan](https://bioinformatics.csiro.au/gt-scan/)| variant analysis    | end  | none                  | CSIRO Bioinformatics |
 
