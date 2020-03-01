@@ -1,6 +1,6 @@
 ## Genomic-scale Pipeline Reference Architecture
 
-Five common patterns used in creating reproducible genomic-scale data analysis pipelines include the following:
+Five common patterns used in creating reproducible genomic-scale cloud analysis pipelines include the following:
 
 1.  **Functional programming** for side-effect free parallel processing (rather than OOP)
 
@@ -8,7 +8,7 @@ Five common patterns used in creating reproducible genomic-scale data analysis p
 
 3. **Use of Docker** to contain Bioinformatics tools (scripts or jar files) included in one or more docker images for compute (rather than VMs) which expose tool parameters for configuration
 
-4. **Data stored as files in buckets**, i.e. Data Lake pattern (rather than relational or NoSQL databases) 
+4. **Data stored as files in buckets**, i.e. Data Lake pattern (rather than in relational or NoSQL databases) 
 
 5. **Use of domain-specific pipeline configuration languages**, such as WDL, Nextflow, CWL (rather than cloud vendor scripts or templates, such as AWS CloudFormation, or GCP Deployments) 
 
