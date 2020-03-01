@@ -1,6 +1,6 @@
 ## Genomic-scale Pipeline Reference Architecture
 
-Five common patterns used in creating reproducible genomic-scale cloud analysis pipelines include the following:
+Five key patterns used in creating reproducible genomic-scale cloud analysis pipelines include the following:
 
 1.  **Functional programming** for side-effect free parallel processing (rather than OOP)
 
