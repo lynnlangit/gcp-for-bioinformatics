@@ -9,7 +9,7 @@ If you're new to working with public cloud services, including those available f
 
 ### 1. Use public Genomic Reference Datasets
 
-☁️ GCP hosts a number of genomic reference datasets.  You can view the files by using a ☁️ GCP client (Web UI or script) to **browse** to publicaly availablefiles in ☁️ GCP Cloud Storage buckets.  Alternatively, you can write a SQL query to **view any subset** of the public genomic datasets available in ☁️ GCP BigQuery storage.  For more information see 📗[this page](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/2_Use_public_genomic_datasets.md) of this repository. A key advantage to using these datasets in your cloud-based research, is that you do not have to upload these large (or huge) files to GCP.  You can simply refer to the gcp location, i.e. `gs://{public-bucket-name}/{folder-name}/file....` in your research job configuration.
+☁️ GCP hosts a number of genomic reference datasets.  You can view the files by using a ☁️ GCP client (Web UI or script) to **browse** to publicaly available files in ☁️ GCP Cloud Storage buckets.  Alternatively, you can write a SQL query to **view any subset** of the public genomic datasets available in ☁️ GCP BigQuery storage.  For more information see 📗[this page](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/2_Use_public_genomic_datasets.md) of this repository. A key advantage to using these datasets in your cloud-based research, is that you do not have to upload these large (or huge) files to GCP.  You can simply refer to the gcp location, i.e. `gs://{public-bucket-name}/{folder-name}/file....` in your research job configuration.
 
 ###  2. Try out bioinformatics tools
 
