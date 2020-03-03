@@ -40,6 +40,7 @@
 
 ### Other Things to Know
  - Serverless patterns are often used for workloads that have spikes in demand
+ - Using 'Advanced Options' you can set an upper limit for 'maximum function instances' in scenarios with spikes in demand
  - Serverless autoscales (to your GCP account limits) by default
  - GAE (AppEngine) is a serverless service which can be used to host web sites and support common programming language.  Python example [here](https://cloud.google.com/appengine/docs/python/)
 

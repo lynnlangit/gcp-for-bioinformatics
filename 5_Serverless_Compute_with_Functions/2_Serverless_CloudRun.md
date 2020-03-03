@@ -26,8 +26,9 @@
 
 ### Other Things to Know
  - Serverless patterns are often used for workloads that have spikes in demand
+ - Using the 'revision settings' you can set a min/max number of instances for autoscaling for your deployment.  You can also set the 'maximum requests per container'
  - Serverless auto-scales (to your GCP account limits) by default
- - Cloud Run has two execution modes - within CloudRun and CloudRun for Kubernetes (GKE)
+ - Cloud Run has two execution modes - within CloudRun and CloudRun for Anthos using Kubernetes (GKE)
  - GAE (AppEngine) is a serverless service which can be used to host web sites and support common programming language.  Python example [here](https://cloud.google.com/appengine/docs/python/)
 
 ### How to learn more
