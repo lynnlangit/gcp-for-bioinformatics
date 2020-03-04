@@ -1,6 +1,6 @@
 # Genomic File Types
 
-This page lists types of files used in genomic analysis.  
+This page lists types of files used in genomic analysis.  To work with actual (sub-sampled size) example genomic files of the types listed below go to this [link](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/1_Files_%26_Data/genomic-data-samples)
 
 ## Summary Table
 
@@ -14,6 +14,7 @@ This page lists types of files used in genomic analysis.
 |[CRAM](https://software.broadinstitute.org/gatk/documentation/article?id=11014   ) | compressed binary alignment file| 2c-align to reference | binary format                     | no image                                                               |
 |[VCF](https://software.broadinstitute.org/gatk/documentation/article?id=11005   )  | variant call format             | 3a-find variants      | plain text                        | ![VCF](/images/vcf-file.png ) ![VCF-format](/images/vcf.png)                                                                  |
 |[GVCF](https://software.broadinstitute.org/gatk/documentation/article?id=11004    ) | genomic variant call format     | 3b-find variants      |contains extra info                | ![GVCF](/images/gvcf.png)                                                                   |
+|[Other text files - TSV, CSV, BZ2 (compressed text)](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/1_Files_%26_Data/genomic-data-samples/TSV    ) | text files for genomics     | 4-any phase      |contains extra info                | no image                                                                   |
 
 ### Learn More -> Links
  - 📘IGV (Integrative Genomics Viewer) tool - [link](http://software.broadinstitute.org/software/igv/) from The Broad
