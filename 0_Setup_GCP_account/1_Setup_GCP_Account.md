@@ -27,7 +27,7 @@
    - b) set up a GCP new (FREE Tier) account
  - CREATE a GCP PROJECT 
    - USE **each** GCP Project as a container  for **each** of your research projects
-   - CREATE separate GCP projects, as a best practice (this allows you to to more easily manage security & service costs by grant)
+   - CREATE separate GCP projects, as a best practice (this allows you to more easily manage security & service costs by grant)
  - ADD GCP service instances to your GCP Project 
     - Add servvices by data center location and GCP project name, for example...
     - Add a Virtual Machine instance & a Cloud Storage bucket which are located...
