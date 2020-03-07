@@ -63,19 +63,20 @@
 
 
 ### How to learn more
-Learn more about SQL Language  
+Learn more about SQL Language for BigQuery
  - 📘 Link to lessons, [practice SQL queries using a small, public GCP bioinformatics dataset](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQuestions.md)
  - 📘 Link to [learn SQL - 12 questions](https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises)
  - 📘 Link to [standard SQL syntax](https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax) used in Google BigQuery  
-  - 📘 Link to [example genomics SQL queries](https://codelabs.developers.google.com/codelabs/genomics-vcfbq/#4) shown using Google BigQuery  
+  - 📘 Link to [example genomics SQL queries](https://codelabs.developers.google.com/codelabs/genomics-vcfbq/#4) shown using Google BigQuery 
+  - 📘 Link to [best practices](https://cloud.google.com/bigquery/docs/best-practices-performance-compute) optimization patterns for using Google BigQuery, including how to optimize `JOIN` and other types of queries  
  
    
-Learn more about controlling costs for  BigQuery   
+Learn more about controlling costs for BigQuery   
  - 📘 Link to [Understand BQ pricing](https://cloud.google.com/bigquery/pricing)
  - 📘 Link to [Save money when using BQ](https://www.linkedin.com/pulse/5-ways-save-money-google-bigquery-rob-larter/)
  - 📘 Link to [Use BQ slots](https://cloud.google.com/blog/products/data-analytics/introducing-bigquery-flex-slots)
 
- Learn more about using BigQuery 
+ Learn more about using BigQuery for Genomic Analysis
  - 📘 Link to [BQ Variants data schema](https://cloud.google.com/genomics/docs/how-tos/bigquery-variants-schema)
  - 📘 Link to [Load Variants into BQ](https://cloud.google.com/genomics/docs/how-tos/load-variants#transform-pipeline)
  - 📘 Link to [Analyze variants with BQ](https://cloud.google.com/genomics/docs/tutorials/analyze-variants-advanced)
