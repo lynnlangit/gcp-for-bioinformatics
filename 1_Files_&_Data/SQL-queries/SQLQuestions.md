@@ -54,7 +54,9 @@ To get started, I suggest that you run a couple of SQL queries to list all of th
         SELECT *
         FROM `gcp-for-bioinformatics.sql_genomics_examples.experiments` AS experiments
 
-**IMPORTANT: You must enclose the fully qualified table name in the backtick charachter (NOT a single quote) so that BigQuery can parse the table statement**
+**IMPORTANT: You must enclose the fully qualified table name in the backtick charachter (NOT a single quote) so that BigQuery can parse the table statement**  
+
+![backtick](/images/backtick.png)  
  
 
 ### ❓Q0b: Run a SQL query to return the table structure of the `experiments` table from my example GCP BigQuery public dataset  
