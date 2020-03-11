@@ -97,6 +97,8 @@ In this section, you use the SQL Pattern Queries as a starter templates for you 
         FROM <table1>  
         WHERE <column1> = <'stringValue'>  
 
+**IMPORTANT: In WHERE clauses, you must enclose string values in the single (or double) quote charachter (NOT a backtick) so that BigQuery can parse the string equality statement. Also strings in WHERE clauses are case sensitive** 
+
 ### ❓Q1b: Write a SQL query to return the names of experiments performed by Tommy Student after Jan 1, 2004.
 Rename the referenced table name to "experiments" using the SQL `AS` keyword in the `FROM` clause.
 
