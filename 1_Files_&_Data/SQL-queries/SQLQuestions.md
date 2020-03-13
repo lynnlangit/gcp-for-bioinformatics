@@ -79,8 +79,8 @@ TIP: Examine both the table schema and table data when you are writing SQL queri
 
     - SQL Example Query: 
 
-        SELECT COUNT(*) 
-        FROM `gcp-for-bioinformatics`.sql_genomics_examples.experiments`
+        SELECT COUNT(*) AS NumberOfRows
+        FROM `gcp-for-bioinformatics.sql_genomics_examples.experiments`
 
 ---
 
