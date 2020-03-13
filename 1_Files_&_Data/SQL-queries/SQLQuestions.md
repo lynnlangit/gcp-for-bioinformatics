@@ -139,7 +139,7 @@ In addition to using SQL join concepts, in this section, you'll use additional S
 
 [![all keywords](/1_Files_&_Data/SQL-concept-graphics/all-keywords.png)]()
 
-### ❓Q2a: Write a SQL query to return the ids and names of genes that were either positively expressed with a significance of at least 2.0, in some experiment. 
+### ❓Q2a: Return the ids and names of genes that were named hsp70 in some experiment. 
 
 To start, query the `genes` and `expression` tables to review all of the data in each table.  Look for a common data columns which can serve as the "join key" in the your query.  See the diagram below.
 
@@ -150,7 +150,7 @@ To start, query the `genes` and `expression` tables to review all of the data in
     SELECT columns...
     FROM <table1> AS expression,<table2> AS genes
     WHERE <table1>.<id> = <table2>.<id>
-    AND <table1>.significance >= integerValue
+    AND <table1>.name >= <stringValue>
 
 ### ❓Q2b: Write a SQL query to return the names of genes that were either positively expressed twofold or more with a significance of at least 2.0, in some experiment, or negatively expressed twofold or less with a significance of at least 2.0, in some experiment.   
 

@@ -46,17 +46,18 @@ WHERE
   whoperformed = 'Tommy Student'
   AND date > '2004-01-01'
 
---Q2a: Return the ids and names of genes that were either positively expressed with a significance of at least 2.0, in some experiment.
+--Q2a: Return the ids and names of genes that were named hsp70 in some experiment.
 SELECT
-  genes.gid,
+  expression.gid,
   name,
   significance
 FROM
   `gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression,
   `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes
 WHERE
-  expression.gid = genes.gid
-  AND significance >= 2
+  expression.gid = genes.gid 
+AND
+  name = 'hsp70'
 
 --Q2b: Return the names of genes that were either positively expressed twofold or more with a significance of at least 2.0, 
 --in some experiment, or negatively expressed twofold or less with a significance of at least 2.0, in some experiment. 
