@@ -19,6 +19,12 @@ FROM
 WHERE
   table_name="experiments"
 
+--Q0c: Count the rows in the experiments table
+SELECT
+  COUNT(*) AS NumOfRows
+FROM
+  `gcp-for-bioinformatics.sql_genomics_examples.experiments`
+
 --Q1a: Return the names of experiments performed by Tommy Student.
 SELECT
   name

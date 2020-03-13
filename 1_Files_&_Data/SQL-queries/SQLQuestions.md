@@ -74,7 +74,16 @@ TIP: Examine both the table schema and table data when you are writing SQL queri
 - When you are working with tables that contain a large amount of data, you may want to add a limit clause, such as `LIMIT 10` to return only a subset of the data from table.  
 - In this example, that would be 10 sample data rows.
 
+
+### ❓Q0c: Run a SQL query to return a count of the number of rows in the table of the `experiments` table from my example GCP BigQuery public dataset  
+
+    - SQL Example Query: 
+
+        SELECT COUNT(*) 
+        FROM `gcp-for-bioinformatics`.sql_genomics_examples.experiments`
+
 ---
+
 ### Write and Execute Single-Table SQL Queries
 
 In this section, you use the SQL Pattern Queries as a starter templates for you to write your own queries.  To do this
