@@ -12,10 +12,7 @@ FROM
 
 --Q0b: Return the structure of the experiments table
 SELECT
-  * EXCEPT(is_generated,
-    generation_expression,
-    is_stored,
-    is_updatable)
+  *
 FROM
   `gcp-for-bioinformatics`.sql_genomics_examples.INFORMATION_SCHEMA.COLUMNS
 WHERE

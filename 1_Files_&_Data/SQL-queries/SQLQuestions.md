@@ -54,7 +54,7 @@ To get started, I suggest that you run a couple of SQL queries to list all of th
         SELECT *
         FROM `gcp-for-bioinformatics.sql_genomics_examples.experiments` AS experiments
 
-**IMPORTANT: You must enclose the fully qualified table name in the backtick charachter (NOT a single quote) so that BigQuery can parse the table statement**  
+**IMPORTANT: You must enclose the fully qualified table name in the backtick charachter (NOT a single quote) so that BigQuery can parse the table statement. Note the use of the `AS` keyword to alias the table name.**  
 
 ![backtick](/images/backtick.png)  
  
@@ -63,13 +63,13 @@ To get started, I suggest that you run a couple of SQL queries to list all of th
 
     - SQL Example Query: 
 
-        SELECT * EXCEPT(is_generated,generation_expression,is_stored, is_updatable)
+        SELECT * 
         FROM `gcp-for-bioinformatics`.sql_genomics_examples.INFORMATION_SCHEMA.COLUMNS
         WHERE table_name="experiments"
 
 ![experiments table](/1_Files_&_Data/SQL-concept-graphics/experiments.png)
 
-TIP: Examine both the table schema and table data when you are writing SQL queries.  Tables in this example dataset are very small, so you can use `SELECT *...` to see all data.
+TIP: Examine both the table schema and table data when you are writing SQL queries.  Tables in this example dataset are very small, so you can use `SELECT * FROM {tableName}` to see all data.
 
 - When you are working with tables that contain a large amount of data, you may want to add a limit clause, such as `LIMIT 10` to return only a subset of the data from table.  
 - In this example, that would be 10 sample data rows.
@@ -102,9 +102,9 @@ In this section, you use the SQL Pattern Queries as a starter templates for you 
 
     - SQL Pattern: 
 
-        SELECT <column1>  
-        FROM <table1>  
-        WHERE <column1> = <'stringValue'>  
+        SELECT {column1}  
+        FROM {table1} AS {tableAlias} 
+        WHERE {column1} = {'stringValue'}  
 
 **IMPORTANT: In WHERE clauses, you must enclose string values in the single (or double) quote charachter (NOT a backtick) so that BigQuery can parse the string equality statement. Also strings in WHERE clauses are case sensitive** 
 
@@ -113,10 +113,10 @@ Rename the referenced table name to "experiments" using the SQL `AS` keyword in 
 
     - SQL Pattern: 
 
-        SELECT <column1>   
-        FROM <table1> AS experiments  
-        WHERE <column1> = <'stringValue'>  
-        AND <column2> < <'dateValue'>
+        SELECT {column1}   
+        FROM {table1} AS experiments  
+        WHERE {column1} = {'stringValue'}  
+        AND {column2} < {'dateValue'}
 
 **IMPORTANT: In WHERE clauses using date data types, dates must be formatted 'YYYY/MM/DD' with single quotes.** 
 
@@ -125,10 +125,10 @@ Rename the column `name` to "Experiment" and `experimentId` to "ExperimentID" us
 
     - SQL Pattern: 
 
-        SELECT <column1> AS <c1>, <column2> AS <c2>   
-        FROM <table1> AS <t1>  
-        WHERE <t1>.<c1> = <'stringValue'>  
-        AND <t1>.<c2> < <'dateValue'>
+        SELECT {column1} AS {c1}, {column2} AS {c2}   
+        FROM {table1} AS {t1}  
+        WHERE {t1}.{c1} = {'stringValue'}  
+        AND {t1}.{c2} < {'dateValue'}
 ---
 ---
 
@@ -159,9 +159,9 @@ To start, query the `genes` and `expression` tables to review all of the data in
     - SQL Query Pattern: 
 
     SELECT columns...
-    FROM <table1> AS expression,<table2> AS genes
-    WHERE <table1>.<id> = <table2>.<id>
-    AND <table1>.name >= <stringValue>
+    FROM {table1} AS expression,{table2} AS genes
+    WHERE {table1}.{id} = {table2}.{id}
+    AND {table1}.{name} = {stringValue}
 
 ### ❓Q2b: Write a SQL query to return the names of genes that were either positively expressed twofold or more with a significance of at least 2.0, in some experiment, or negatively expressed twofold or less with a significance of at least 2.0, in some experiment.   
 
@@ -171,7 +171,7 @@ To start, query the `genes` and `expression` tables to review all of the data in
         FROM table1 AS t1, table2 AS t2  
         WHERE t1.col1 = t2.col1
         AND t.c1 = integerValue 
-        AND t2.c2 > floatValue' 
+        AND t2.c2 < floatValue' 
 
 -OR-
 
@@ -179,7 +179,7 @@ To start, query the `genes` and `expression` tables to review all of the data in
         FROM table1 AS t1 (INNER) JOIN table2 AS t2  
         ON t1.col1 = t2.col1
         WHERE t.c1 = integerValue  
-        AND t2.c2 > floatValue'   
+        AND t2.c2 < floatValue'   
 
 
 ---
@@ -192,10 +192,10 @@ Use a **self-join** by creating two instances of the same table, to derive a hie
 
     - SQL Query Pattern: 
 
-        SELECT <tableName>.<parentColumn>
-        FROM <t1a> AS children, <t1b> AS parents
-        WHERE children.<column> = 'stringValue'
-        AND children.<parentColumn> = parents.<parentColumn>
+        SELECT {tableName}.{parentColumn}
+        FROM {t1a} AS children, {t1b} AS parents
+        WHERE children.{column} = 'stringValue'
+        AND children.{parentColumn} = parents.{parentColumn}
 
 ---
 
@@ -215,19 +215,19 @@ Both approaches yield the correct result.  There are two factors in determining 
 
     - 4a. Self-join answer
 
-        SELECT e1.<column>
-        FROM <t1a> AS e1,<t1b> AS e2
-        WHERE e1.<column> < e2.<column>
-        AND e2.<column> = 'Gasch';
+        SELECT {e1}.{column}
+        FROM {t1a} AS {e1},{t1b} AS {e2}
+        WHERE {e1}.{column}  < {e2}.{column}
+        AND {e2}.{column} = 'Gasch';
 
     - 4b. Subquery with aggregate (MAX) answer
 
-        SELECT <column>
-        FROM <table1a> AS experiments
-        WHERE experiments.<column> < (
-            SELECT MAX(<column>)
-            FROM <table1b>
-            WHERE <column> = 'Gasch' );
+        SELECT {column}
+        FROM {table1a} AS experiments
+        WHERE experiments.{column} { (
+            SELECT MAX({column})
+            FROM {table1b}
+            WHERE {column} = 'Gasch' );
 
 ---
 For some types of queries, you can have choices in how you write your query.  For the next example I will show 2 options.  The reason for showing these options is that you may have to work with queries that other researcher's have written - and they could use any of these styles.  The styles used here are as follows:
@@ -244,16 +244,16 @@ Because it's helpful to 'see' table structure when writing queries, I'll link a 
 
         - SQL Query Pattern:
 
-        SELECT DISTINCT <column>
-        FROM <t1> AS genes, <t2a> AS e1,<t2b> AS e2
-        WHERE <t1>.<id> = <t2a>.<id>
-        AND e1.<id> = e2.<id>
-        AND e1.<column> >= 0.5
-        AND e2.<column> >= 0.5
-        AND e1.<column> >= 1
-        AND e2.<column> >= 1
-        AND e1.<id> <> e2.<id>
-        AND <column> = 'pine';
+        SELECT DISTINCT {column}
+        FROM {t1} AS genes, {t2a} AS e1,{t2b} AS e2
+        WHERE {t1}.{id} = {t2a}.{id}
+        AND e1.{id} = e2.{id}
+        AND e1.{column} >= 0.5
+        AND e2.{column} >= 0.5
+        AND e1.{column} >= 1
+        AND e2.{column} >= 1
+        AND e1.{id} <> e2.{id}
+        AND {column} = 'pine';
 
     --OR--
 
@@ -289,12 +289,12 @@ Because it's helpful to 'see' table structure when writing queries, I'll link a 
 
         - SQL Query Pattern:
 
-        SELECT <column>
+        SELECT {column}
         FROM 
-        `gcp-for-bioinformatics.sql_genomics_examples.<table>` AS genes, 
-        `gcp-for-bioinformatics.sql_genomics_examples.<view>` AS upInTwoOrMore
-        WHERE genes.<id> = upInTwoOrMore.<id>
-        AND <column> = <stringValue>;
+        `gcp-for-bioinformatics.sql_genomics_examples.{table}` AS genes, 
+        `gcp-for-bioinformatics.sql_genomics_examples.{view}` AS upInTwoOrMore
+        WHERE genes.{id} = upInTwoOrMore.{id}
+        AND {column} = {stringValue};
 
 ---
 
@@ -306,21 +306,21 @@ The caveat here is that while the equality evaluations are transitive, while ine
 
         - SQL Query Pattern:
 
-        SELECT DISTINCT <column>
-        FROM <t1> AS genes, <t2a> AS e1,<t2b> AS e2, <t2c> AS e3
-        WHERE <t1>.<id> = <t2a>.<id>
-        AND e1.<id> = e2.<id>
-        AND e1.<id> = e3.<id>
-        AND e1.<column> >= 0.5
-        AND e2.<column> >= 0.5
-        AND e3.<column> >= 0.5
-        AND e1.<column> >= 1
-        AND e2.<column> >= 1
-        AND e3.<column> >= 1
-        AND e1.<id> <> e2.<id>
-        AND e1.<id> <> e3.<id>
-        AND e2.<id> <> e3.<id>
-        AND <column> = 'pine';
+        SELECT DISTINCT {column}
+        FROM {t1} AS genes, {t2a} AS e1,{t2b} AS e2, {t2c} AS e3
+        WHERE {t1}.{id} = {t2a}.{id}
+        AND e1.{id} = e2.{id}
+        AND e1.{id} = e3.{id}
+        AND e1.{column} >= 0.5
+        AND e2.{column} >= 0.5
+        AND e3.{column} >= 0.5
+        AND e1.{column} >= 1
+        AND e2.{column} >= 1
+        AND e3.{column} >= 1
+        AND e1.{id} <> e2.{id}
+        AND e1.{id} <> e3.{id}
+        AND e2.{id} <> e3.{id}
+        AND {column} = 'pine';
 
     --OR-- 
 
@@ -344,10 +344,10 @@ The caveat here is that while the equality evaluations are transitive, while ine
 
     Then query the view, joined to the `genes` table
 
-        SELECT <column>
-        FROM <t1> AS genes, <t2> AS upInThreeOrMore
+        SELECT {column}
+        FROM {t1} AS genes, {t2} AS upInThreeOrMore
         WHERE genes.gid = upInThreeOrMore.gid
-        AND <column> = <stringValue>;
+        AND {column} = {stringValue};
 
     --OR--
 
@@ -362,14 +362,14 @@ The caveat here is that while the equality evaluations are transitive, while ine
         WHERE level >= 0.5
         AND significance >= 1
         GROUP BY gid
-        HAVING COUNT(*) > 2;
+        HAVING COUNT(*) } 2;
 
     Then query the view, joined to the `genes` table
 
-        SELECT <column>
-        FROM <t1> AS genes, <t2> AS upInThreeOrMoreGrouped
+        SELECT {column}
+        FROM {t1} AS genes, {t2} AS upInThreeOrMoreGrouped
         WHERE genes.gid = upInThreeOrMoreGrouped.gid
-        AND <column> = <stringValue>;
+        AND {column} = {stringValue};
 
 ---
 
@@ -431,11 +431,11 @@ Join these tables: `experiments, expression, genes`
 
     - SQL Query Pattern:
 
-    SELECT <columns...>
-    FROM <t1> AS genes,<t2> AS expression,<t3> AS experiments
-    WHERE genes.<id> = expression.<id>
-    AND experiments.<id> = expression.<id>
-    AND <column>0.0
+    SELECT {columns...}
+    FROM {t1} AS genes,{t2} AS expression,{t3} AS experiments
+    WHERE genes.{id} = expression.{id}
+    AND experiments.{id} = expression.{id}
+    AND {column} > 0.0
 
 ---
 
@@ -443,12 +443,12 @@ Join these tables: `experiments, expression, genes`
    
    - SQL Query Pattern:
 
-    SELECT <columns...>
-    FROM <t1> AS genes,<t2> AS expression,<t3> AS experiments
-    WHERE genes.<id> = expression.<id>
-    AND experiments.<id> = expression.<id>
-    AND <column>0.0
-    ORDER BY <column>
+    SELECT {columns...}
+    FROM {t1} AS genes,{t2} AS expression,{t3} AS experiments
+    WHERE genes.{id} = expression.{id}
+    AND experiments.{id} = expression.{id}
+    AND {column} > 0.0
+    ORDER BY {column}
 
 ---
 
@@ -458,13 +458,13 @@ Use the SQL `LIMIT` keyword to return the top value.
 
     - SQL Query Pattern:
 
-    SELECT <columns...>
-    FROM <t1> AS genes,<t2> AS expression,<t3> AS experiments
-    WHERE genes.<id> = expression.<id>
-    AND experiments.<id> = expression.<id>
-    AND <column>1.0
-    GROUP BY <column1>, <column2>
-    LIMIT <number>
+    SELECT {columns...}
+    FROM {t1} AS genes,{t2} AS expression,{t3} AS experiments
+    WHERE genes.{id} = expression.{id}
+    AND experiments.{id} = expression.{id}
+    AND {column} > 1.0
+    GROUP BY {column1}, {column2}
+    LIMIT {number}
 
 ---
 
@@ -473,14 +473,14 @@ Use the SQL keyword `ASC` or `DESC` to order the result.
 
     - SQL Query Pattern:
 
-    SELECT <columns...>
-    FROM <t1> AS genes,<t2> AS expression,<t3> AS experiments
-    WHERE genes.<id> = expression.<id>
-    AND experiments.<id> = expression.<id>
-    AND <column>1.0
-    GROUP BY <column1>, <column2>
-    ORDER BY <column1> ASC|DESC
-    LIMIT <number>
+    SELECT {columns...}
+    FROM {t1} AS genes,{t2} AS expression,{t3} AS experiments
+    WHERE genes.{id} = expression.{id}
+    AND experiments.{id} = expression.{id}
+    AND {column} > 1.0
+    GROUP BY {column1}, {column2}
+    ORDER BY {column1} ASC|DESC
+    LIMIT {number}
 
 ---
   
@@ -489,15 +489,15 @@ Use a SQL conditional statement to test level value, i.e. `CASE`...
 
     - SQL Query Pattern:
 
-    SELECT <columns...>, CONCAT(col1, "-", col2) as NewCol, ...
+    SELECT {columns...}, CONCAT(col1, "-", col2) as NewCol, ...
        CASE 
-          WHEN <c1> 0.0 THEN '<value1'>
-          WHEN <c1> 0.0 THEN '<value2'>
-        END AS <newColumn>
-    FROM <t1> AS genes,<t2> AS expression,<t3> AS experiments
-    WHERE genes.<id> = expression.<id>
-    AND experiments.<id> = expression.<id>
-    ORDER BY <column>
+          WHEN {c1} > 0.0 THEN '{value1'}
+          WHEN {c1} < 0.0 THEN '{value2'}
+        END AS {newColumn}
+    FROM {t1} AS genes,{t2} AS expression,{t3} AS experiments
+    WHERE genes.{id} = expression.{id}
+    AND experiments.{id} = expression.{id}
+    ORDER BY {column}
 
 ---
 
