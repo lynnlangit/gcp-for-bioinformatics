@@ -56,6 +56,8 @@ WHERE
   whoperformed = 'Tommy Student'
   AND date > '2004-01-01'
 
+________________________________________2__________________________________________
+
 --Q2a: Return the ids and names of genes that were named hsp70 in some experiment.
 SELECT
   expression.gid,
@@ -102,6 +104,8 @@ WHERE
   AND (level >= 2.0
     OR level <= 2.0);
 
+________________________________________3__________________________________________
+
 --Q3: Return the grandparent category of 'glycine binding'
 SELECT
   parents.parent_category
@@ -111,6 +115,8 @@ FROM
 WHERE
   children.category = 'glycine binding'
   AND children.parent_category = parents.category;
+
+________________________________________4__________________________________________
 
 --Q4: Return the names of experiments that were performed before some Gasch experiment.
 
@@ -137,6 +143,8 @@ WHERE
     `gcp-for-bioinformatics.sql_genomics_examples.experiments`
   WHERE
     whoperformed = 'Gasch' );
+
+________________________________________5__________________________________________
 
 --Q5: Return the names of pine genes that were positively expressed more than 0.5-fold (significance of 1.0+) in at least two experiments.
 
@@ -189,6 +197,8 @@ FROM
   `gcp-for-bioinformatics.sql_genomics_examples.upInTwoOrMore` AS upInTwoOrMore
 WHERE genes.gid = upInTwoOrMore.gid
 AND organism = 'pine';
+
+________________________________________6__________________________________________
 
 --Q6: Return the names of pine genes that were up-regulated 0.5-fold or more 
 --with a significance of 1.0 or more) in at least three experiments
@@ -250,6 +260,8 @@ FROM
 WHERE genes.gid = upInThreeOrMoreGrouped.gid
 AND organism = 'pine';
 
+________________________________________7__________________________________________
+
 --Q7: Return the names of pine genes that were up-regulated 0.5-fold or more (with a significance of 1.0 or more) 
 --in exactly two experiments.
 
@@ -288,6 +300,8 @@ AND e1.experimentid <> e3.experimentid
 AND e2.experimentid <> e3.experimentid
 AND organism = 'pine';
 
+________________________________________8__________________________________________
+
 
 --Q8: Return the experiment names, genes names & their levels in order, for genes that 
 --showed positive expression in every experiment recorded for it.
@@ -305,6 +319,8 @@ WHERE
   AND experiments.experimentid = expression.experimentid
   AND level>0.0
 
+________________________________________9__________________________________________
+
 --Q9: Return the gene(s) were positively expressed in ALL the experiments listed in the Experiments table in order of level. 
 SELECT
   expression.gid,
@@ -321,6 +337,8 @@ WHERE
   AND level>0.0
 ORDER BY
   level
+
+________________________________________10__________________________________________
 
 --Q10: Return the name of the gene that was most positively expressed in experiment exp23. Assume a minimum level of 1.0.
 SELECT
@@ -340,6 +358,8 @@ GROUP BY
   level
 LIMIT
   1
+
+_______________________________________11__________________________________________
 
 --Q11: Return the name of the gene that was "second most positively expressed". Assume a minimum level of 1.0. 
 SELECT
@@ -361,6 +381,8 @@ ORDER BY
   level ASC
 LIMIT
   1
+
+________________________________________12__________________________________________
 
 --Q12: Return a table of experiments, genes names and their annotation shown as one value, 
 --and their levels listed by experiment and level in descending order
