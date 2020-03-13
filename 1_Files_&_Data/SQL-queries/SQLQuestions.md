@@ -107,7 +107,9 @@ Rename the referenced table name to "experiments" using the SQL `AS` keyword in 
         SELECT <column1>   
         FROM <table1> AS experiments  
         WHERE <column1> = <'stringValue'>  
-        AND <column2> > <'dateValue'>
+        AND <column2> < <'dateValue'>
+
+**IMPORTANT: In WHERE clauses using date data types, dates must be formatted 'YYYY/MM/DD' with single quotes.** 
 
 ### ❓Q1c: Write a SQL query to return the names and ids of experiments performed by Tommy Student after Jan 1, 2004. 
 Rename the column `name` to "Experiment" and `experimentId` to "ExperimentID" using the `AS` keyword in the `SELECT` clause.
@@ -117,7 +119,7 @@ Rename the column `name` to "Experiment" and `experimentId` to "ExperimentID" us
         SELECT <column1> AS <c1>, <column2> AS <c2>   
         FROM <table1> AS <t1>  
         WHERE <t1>.<c1> = <'stringValue'>  
-        AND <t1>.<c2> <'dateValue'>
+        AND <t1>.<c2> < <'dateValue'>
 ---
 ---
 
