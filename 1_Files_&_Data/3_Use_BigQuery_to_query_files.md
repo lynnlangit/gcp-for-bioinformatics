@@ -2,27 +2,36 @@
 
 ### Why do this
  - PERFORM analysis on files using SQL statements
- - PAY by the query & avoid setting up any infrastructure (VMs or docker container image instance clusters)
+ - PAY by the query (amount of data scanned)
+ - AVOID setting up any infrastructure 
+    - VMs and controllers --or-- 
+    - Docker container image instance clusters
 
 ### What is this
  - QUERY on file data (including genomic file formats, such as VCF files) at scale using [ansi-SQL](https://en.wikipedia.org/wiki/SQL) query commands
  - QUERY on files stored in Big Query storage of other Google Services, such as [CloudStorage, Google Drive or Big Table](https://cloud.google.com/bigquery/external-data-sources) or [CloudSQL (MySQL or PostgreSQL)](https://cloud.google.com/bigquery/docs/cloud-sql-federated-queries)
 
 ### Key considerations
- - Understand how BQ billing works - you are charged by the amount of data scanned by your query
- - Billing starts at $5/TB scanned
- - Each query will estimate the amount of data scanned (shown below on the bottom right)
- - Google provides many public reference datasets (including 1000 Genomes) which you can query (shown below)
+ - Understand how BQ billing works 
+    - you are charged by the **amount of data scanned** by your query
+ - Billing starts at $5/TB of data scanned
+ - Each query will estimate the amount of data scanned 
+    - shown below on the bottom right of the WebUI
+ - GCP hosts many public genomic reference datasets
+   - including `1000 Genomes` and more
+   - including these public datasets is fast
+      - the data is already in the Google Cloud
+      - the data is properly secured, via access control 
 
 ### How to do this
  - PRACTICE SQL queries using a small, public GCP bioinformatics dataset - [link](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQuestions.md)
- - LEARN SQL syntax - [link](https://www.w3schools.com/sql/sql_intro.asp)
+ - LEARN SQL query syntax - [link](https://www.w3schools.com/sql/sql_intro.asp)
  - USE BigQuery from the GCP UI console
-    - SELECT your dataset to query, use included genomic reference datasets and/or upload your own file data
-    - WRITE your SQL query referencing a BQ (or external) dataset 
-    - REVIEW potential query costs, link to example [analyze genomic variants with BQ](https://cloud.google.com/genomics/docs/tutorials/analyze-variants-advanced)
-    - EXECUTE the query by clicking the 'run' button, example results shown below
-    - VIEW the results 
+    - **SELECT** your dataset to query, use included genomic reference datasets and/or upload your own file data
+    - **WRITE** your SQL query referencing a BQ (or external) dataset 
+    - **REVIEW** potential query costs, link to example [analyze genomic variants with BQ](https://cloud.google.com/genomics/docs/tutorials/analyze-variants-advanced)
+    - **EXECUTE** the query by clicking the 'run' button, example results shown below
+    - **VIEW** the results 
       - save the results as a new file in a storage bucket
       - create a report with Google Data Studio
 
@@ -31,17 +40,16 @@
 
 -----
 ### How to verify you've done it
- - EXECUTE your query by clicking the blue 'Run' button 
- - VERIFY that the query results match your expected output  
- Examples shown in screenshots below
+ - **EXECUTE** your query by clicking the blue 'Run' button 
+ - **VERIFY** that the query results match your expected output. Examples shown in screenshots below
 
  TIPS:
- - WRITE a query on a small subset of your data to verify that you've written your query correctly before you run a query on your full dataset
- - VERIFY the query cost BEFORE you run it 
- - VALIDATE the SQL syntax in the BQ web console
-  - REVIEW the query 'Execution Details' to verify the actual query cost and execution ran as expected
-  - ESTIMATE query cost before running the query using the `--dry_run` parameter 
- - AVOID using `SELECT * ...` in queries to reduce the amount of data scanned, speed up the query execution time and potentially reduce the cost of running the query
+ - **WRITE** a query on a small subset of your data to verify that you've written your query correctly before you run a query on your full dataset
+ - **VERIFY** the query cost BEFORE you run it 
+ - **VALIDATE** the SQL syntax in the BQ web console
+  - **REVIEW** the query 'Execution Details' to verify the actual query cost and execution ran as expected
+  - **ESTIMATE** query cost before running the query using the `--dry_run` parameter 
+ - **AVOID** using `SELECT * ...` in queries to reduce the amount of data scanned, speed up the query execution time and potentially reduce the cost of running the query
 
  
  RUN QUERY

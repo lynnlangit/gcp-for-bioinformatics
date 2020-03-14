@@ -507,9 +507,9 @@ Use a SQL conditional statement to test level value, i.e. `CASE`...
 
 - SQL query answers to these lesson are on [this Repo page](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQueries.sql)
 
-- *(Optional) If you wish to create your own Google BigQuery dataset rather than querying my public dataset, then you must create your own BigQuery dataset.* 
+- (Optional) If you wish to create your own Google BigQuery dataset rather than querying my public dataset, then you must create your own BigQuery dataset.* 
     - *Create both the dataset TABLES and VIEWS*
     - *I've included instructions on how to create your own copy of this dataset using the modified CSV source files in this repository.* 
-    - *Directions are [here](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-lessons/1_lessons.md#other-things-to-know) on how to set up your own copy of my public BigQuery dataset.*
+    - *Directions are [here](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-lessons/1_lessons.md#other-things-to-know) on how to set up your own copy of my public BigQuery dataset.
 
 - To learn more about using BigQuery optimally, see this [link](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/3_Use_BigQuery_to_query_files.md)
