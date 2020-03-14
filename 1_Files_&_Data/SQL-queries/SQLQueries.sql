@@ -57,9 +57,9 @@ ________________________________________2_______________________________________
 
 --Q2a: Return the ids and names of genes that were named hsp70 in some experiment.
 SELECT
-  expression.gid,
+  genes.gid,
   name,
-  significance
+  experimentId
 FROM
   `gcp-for-bioinformatics.sql_genomics_examples.expression` AS expression,
   `gcp-for-bioinformatics.sql_genomics_examples.genes` AS genes
