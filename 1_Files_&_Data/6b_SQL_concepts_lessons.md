@@ -23,7 +23,7 @@ The process to prepare to query data using Google Cloud Big Query is as follows:
     - Review query results for accuracy
 
 
- [![SQL Keywords](/1_Files_&_Data/SQL-concept-graphics/keywords.png)]()
+ [![SQL Keywords](/images/keywords.png)]()
 
 
 ### Steps to do this
@@ -46,7 +46,7 @@ The process to prepare to query data using Google Cloud Big Query is as follows:
  - SQL is a set-based query language for data tables 
  - Joining table rows is a key concept. The graphic below shows join concepts
 
-[![SQL Keywords](/images/SQL-concept-graphics/joins.png)]()
+[![SQL Keywords](/images/joins.png)]()
 
 ### Create your own BigQuery Dataset Example
 
