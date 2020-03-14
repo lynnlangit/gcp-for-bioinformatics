@@ -90,11 +90,7 @@ In this section, you use the SQL Pattern Queries as a starter templates for you 
 - Copy and paste the SQL Pattern code into the Google BigQuery query editor window
 - Modify the starter code to fill in the values so that the query returns the expected result set after you execute (or run) it
 - Run your query and verify that the results are correct
-
-  
-- Shown below is list of SQL Keywords and query patterns used in this section.
-
-[![Select-From](/images/select-from.png)]()
+---
 
 ### ❓Q1a: Write a SQL query to return the names of experiments performed by Tommy Student.   
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.experiments`  
@@ -136,12 +132,9 @@ Rename the column `name` to "Experiment" and `experimentId` to "ExperimentID" us
 
 In this section, you will be writing and executing SQL queries that retrieve data from two tables.  In order to do this, you will have to do the following:
 1. Identify & use a JOIN COLUMN from each of the tables in the join. These columns are often identity (id or key) values (i.e. table1.idCol, table2.idCol)
-2. Determine and use the appropriate type of JOIN (i.e. Inner, Outer...) - see diagram below
-3. Determine the JOIN syntax 
+2. Determine the JOIN syntax 
     - formal  `...tl JOIN t2 on t1.idCol = t2.idCol` --or-- 
     - concise `...FROM t1,t2 WHERE t1.idCol = t2.idCol`
-
-[![Joins](/images/joins.png)]()
 
 ---
 ### Write and Execute Two-Table SQL (JOIN) Queries
