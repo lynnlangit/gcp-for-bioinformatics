@@ -172,16 +172,15 @@ To start, query the `genes` and `expression` tables to review all of the data in
         SELECT column1 AS c1, column2 AS c2, ...   
         FROM table1 AS t1, table2 AS t2  
         WHERE t1.col1 = t2.col1
-        AND t.c1 = integerValue 
-        AND t2.c2 < floatValue' 
+        AND other conditions....
 
 -OR-
 
         SELECT column1 AS c1, column2 AS c2, ...   
         FROM table1 AS t1 (INNER) JOIN table2 AS t2  
         ON t1.col1 = t2.col1
-        WHERE t.c1 = integerValue  
-        AND t2.c2 < floatValue'   
+        WHERE other conditions...  
+        AND other conditions... 
 
 
 ---
@@ -196,7 +195,7 @@ Use a **self-join** by creating two instances of the same table, to derive a hie
 
         SELECT {tableName}.{parentColumn}
         FROM {t1a} AS children, {t1b} AS parents
-        WHERE children.{column} = 'stringValue'
+        WHERE children.{column} = {'stringValue'}
         AND children.{parentColumn} = parents.{parentColumn}
 
 ---
@@ -364,7 +363,7 @@ The caveat here is that while the equality evaluations are transitive, while ine
         WHERE level >= 0.5
         AND significance >= 1
         GROUP BY gid
-        HAVING COUNT(*) } 2;
+        HAVING COUNT(*) > 2;
 
     Then query the view, joined to the `genes` table
 
@@ -481,7 +480,7 @@ Use the SQL keyword `ASC` or `DESC` to order the result.
     AND experiments.{id} = expression.{id}
     AND {column} > 1.0
     GROUP BY {column1}, {column2}
-    ORDER BY {column1} ASC|DESC
+    ORDER BY {column1} {ASC|DESC}
     LIMIT {number}
 
 ---
