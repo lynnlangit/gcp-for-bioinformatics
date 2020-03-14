@@ -1,10 +1,8 @@
-# SQL Concepts
-
+# SQL Concepts & Practice 
 
 ### What is this & why do this
-- SQL concepts - keywords and query syntax
-- Learn SQL concepts so that you can use the Google Cloud BigQuery service
-- SQL is used widely for querying data stored in relational tables
+ - **Learn** SQL query concepts so that you can use Google Cloud Big Query service 
+ - **Practice** SQL query concepts by writing and executing queries against BigQuery datasets
 
 ### How to do this
 1. **READ** this page to review SQL concepts
@@ -27,7 +25,18 @@ The process to prepare to query data using Google Cloud Big Query is as follows:
 
  [![SQL Keywords](/1_Files_&_Data/SQL-concept-graphics/keywords.png)]()
 
+
+### Steps to do this
+- Sign up for a Google Cloud account (can use free trial credits if new account)
+  - Create a Google Cloud Project and then enable the BigQuery service for that project
+  - Navigate to the BigQuery Web UI for your Google Cloud Project
+- Review the example BigQuery dataset schema and example data (graphic below)
+
+  [![SQL Keywords](/1_Files_&_Data/SQL-concept-graphics/sql-data-model.png)]()
+
 ### How to verify you've done it
+ - Write and execute your queries in the BigQuery interface
+  TIP: You can review the provided query answers, run those queries and compare query results
  - Query to verify schema and data uploaded  
   TIP: Can do row count total queries
 
@@ -39,35 +48,9 @@ The process to prepare to query data using Google Cloud Big Query is as follows:
 
 [![SQL Keywords](/1_Files_&_Data/SQL-concept-graphics/joins.png)]()
 
+### Create your own BigQuery Dataset Example
 
-### How to learn more
- - 📘 Link to [learn SQL - 12 questions](https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises)
- - 📘 Link to [standard SQL syntax](https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax) used in Google BigQuery  
-  - 📘 Link to [example genomics SQL queries](https://codelabs.developers.google.com/codelabs/genomics-vcfbq/#4) shown using Google BigQuery 
-
-
-  # SQL Lessons
-
-
-### What is this & why do this
- - **Learn** SQL query concepts so that you can use Google Cloud Big Query service 
- - **Practice** SQL query concepts by writing and executing queries against BigQuery datasets
-
-### How to do this
-- Sign up for a Google Cloud account (can use free trial credits if new account)
-  - Create a Google Cloud Project and then enable the BigQuery service for that project
-  - Navigate to the BigQuery Web UI for your Google Cloud Project
-- Review the example BigQuery dataset schema and example data (graphic below)
-
-  [![SQL Keywords](/1_Files_&_Data/SQL-concept-graphics/sql-data-model.png)]()
-
-### How to verify you've done it
- - Write and execute your queries in the BigQuery interface
-  TIP: You can review the provided query answers, run those queries and compare query results
-
-
-### Other Things to Know
- - If you want to set up your own copy of the example BigQuery dataset, use the CSV files provided in this Repository
+ If you want to set up your own copy of the example BigQuery dataset, use the CSV files provided in this Repository
   - Get your source files or data - I used a set of CSV files
     - Review the structure and the data -> format and clean data
   - Create a BigQuery dataset using the Web UI
@@ -80,6 +63,9 @@ The process to prepare to query data using Google Cloud Big Query is as follows:
 
 
 ### How to learn more
+ - 📘 Link to [learn SQL - 12 questions](https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises)
+ - 📘 Link to [standard SQL syntax](https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax) used in Google BigQuery  
+  - 📘 Link to [example genomics SQL queries](https://codelabs.developers.google.com/codelabs/genomics-vcfbq/#4) shown using Google BigQuery
  - 📘 Link to [learn SQL - 12 questions](https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises)
  - 📘 Link to [standard SQL syntax](https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax) used in Google BigQuery  
   - 📘 Link to [example genomics SQL queries](https://codelabs.developers.google.com/codelabs/genomics-vcfbq/#4) shown using Google BigQuery 
