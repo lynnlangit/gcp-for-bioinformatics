@@ -1,0 +1,13 @@
+gid|experimentid|level|significance
+g1|exp12|   3.5 |            1
+g2|exp23|    -3 |            1
+g3|exp12|     1 |            2
+g3|exp13|  -1.5 |            2
+g3|exp23|   1.7 |            4
+g4|exp12|   1.5 |            2
+g4|exp13|   1.5 |            2
+g4|exp23|   1.5 |            2
+g4|exp6|   1.5 |            2
+g5|exp6|     2 |            1
+g5|exp13|   2.5 |            2
+g6|exp6| -3.86 |            3
