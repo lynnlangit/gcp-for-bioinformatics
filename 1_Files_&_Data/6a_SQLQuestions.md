@@ -4,10 +4,10 @@ The original source bioinformatics Dataset and base SQL queries used in this ope
 ### To Get Started
 
 - Sign up for a Google Cloud account (you can use $ 300 USD free trial credits if creating a new GCP account)
-  - Create a Google Cloud Project and then enable the BigQuery service for that project
-  - Navigate to the BigQuery Web UI for your Google Cloud Project
-  - Write and execute your queries in the BigQuery Web UI Query Window, shown below
-  - Because of the tiny size of my example dataset, I can make this tutorial FREE for you 
+  - **CREATE** a Google Cloud Project & then enable the BigQuery service for that project
+  - **NAVIGATE** to the BigQuery Web UI for your Google Cloud Project
+  - **WRITE & EXECUTE** your queries in the BigQuery Web UI Query Window, shown below
+    - Because of the tiny size of my example dataset, I can make this tutorial FREE for you 
 
 ![BigQuery WebUI](/images/bq-webui.png)
 
