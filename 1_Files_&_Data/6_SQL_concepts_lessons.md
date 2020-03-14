@@ -32,7 +32,7 @@ The process to prepare to query data using Google Cloud Big Query is as follows:
   - Navigate to the BigQuery Web UI for your Google Cloud Project
 - Review the example BigQuery dataset schema and example data (graphic below)
 
-  [![SQL Keywords](/1_Files_&_Data/SQL-concept-graphics/sql-data-model.png)]()
+  [![SQL Keywords](/images/sql-data-model.png)]()
 
 ### How to verify you've done it
  - Write and execute your queries in the BigQuery interface
@@ -46,7 +46,7 @@ The process to prepare to query data using Google Cloud Big Query is as follows:
  - SQL is a set-based query language for data tables 
  - Joining table rows is a key concept. The graphic below shows join concepts
 
-[![SQL Keywords](/1_Files_&_Data/SQL-concept-graphics/joins.png)]()
+[![SQL Keywords](/images/SQL-concept-graphics/joins.png)]()
 
 ### Create your own BigQuery Dataset Example
 

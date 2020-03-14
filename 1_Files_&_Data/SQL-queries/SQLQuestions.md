@@ -9,7 +9,7 @@ The original source bioinformatics Dataset and base SQL queries used in this ope
   - Write and execute your queries in the BigQuery Web UI Query Window, shown below
   - Because of the tiny size of my example dataset, I can make this tutorial FREE for you 
 
-![BigQuery WebUI](/1_Files_&_Data/SQL-concept-graphics/bq-webui.png)
+![BigQuery WebUI](/images/bq-webui.png)
 
 ---
 
@@ -27,11 +27,11 @@ The original source bioinformatics Dataset and base SQL queries used in this ope
 
  Shown below is the BigQuery query editor window with an error - indicated in RED. The error (on line 4) is that the table name is spelled incorrectly as `experiment`, when it should be `experiments`
 
- ![BigQuery error](/1_Files_&_Data/SQL-concept-graphics/error-bq.png)
+ ![BigQuery error](/images/error-bq.png)
 
  After you correct a query-time error, then the editor will update and show 'valid syntax' in GREEN (shown below).
 
- ![BigQuery error](/1_Files_&_Data/SQL-concept-graphics/correct-bq.png)
+ ![BigQuery error](/images/correct-bq.png)
 
   If you get stuck - here is a [link](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQueries.sql) to completed queries for each question.
 
@@ -67,7 +67,7 @@ To get started, I suggest that you run a couple of SQL queries to list all of th
         FROM `gcp-for-bioinformatics`.sql_genomics_examples.INFORMATION_SCHEMA.COLUMNS
         WHERE table_name="experiments"
 
-![experiments table](/1_Files_&_Data/SQL-concept-graphics/experiments.png)
+![experiments table](/images/experiments.png)
 
 **TIP: Examine both the table schema and table data when you are writing SQL queries.  Tables in this example dataset are very small, so you can use `SELECT * FROM {tableName}` to see all data.**
 
@@ -94,7 +94,7 @@ In this section, you use the SQL Pattern Queries as a starter templates for you 
   
 - Shown below is list of SQL Keywords and query patterns used in this section.
 
-[![Select-From](/1_Files_&_Data/SQL-concept-graphics/select-from.png)]()
+[![Select-From](/images/select-from.png)]()
 
 ### ❓Q1a: Write a SQL query to return the names of experiments performed by Tommy Student.   
     - GCP BigQuery DATASET: `gcp-for-bioinformatics.sql_genomics_examples.experiments`  
@@ -141,20 +141,20 @@ In this section, you will be writing and executing SQL queries that retrieve dat
     - formal  `...tl JOIN t2 on t1.idCol = t2.idCol` --or-- 
     - concise `...FROM t1,t2 WHERE t1.idCol = t2.idCol`
 
-[![Joins](/1_Files_&_Data/SQL-concept-graphics/joins.png)]()
+[![Joins](/images/joins.png)]()
 
 ---
 ### Write and Execute Two-Table SQL (JOIN) Queries
 
 In addition to using SQL join concepts, in this section, you'll use additional SQL keywords to further refine your results by filtering, sorting, etc...  A summary chart is shown below.
 
-[![all keywords](/1_Files_&_Data/SQL-concept-graphics/all-keywords.png)]()
+[![all keywords](/images/all-keywords.png)]()
 
 ### ❓Q2a: Return the gene ids and names and experiment ids that were named hsp70 in some experiment. 
 
 To start, query the `genes` and `expression` tables to review all of the data in each table.  Look for a common data columns which can serve as the "join key" in the your query.  See the diagram below.
 
-[![Join columns](/1_Files_&_Data/SQL-concept-graphics/join-cols.png)]() 
+[![Join columns](/images/join-cols.png)]() 
 
     - SQL Query Pattern: 
 
@@ -188,7 +188,7 @@ To start, query the `genes` and `expression` tables to review all of the data in
 
 Use a **self-join** by creating two instances of the same table, to derive a hierarchy of information from data in that table. Use the `gotree` table. Use an equality operator in the WHERE clause.  Note how the copies of table are aliased and which columns are joined.
 
-[![Self-join for hierarchy](/1_Files_&_Data/SQL-concept-graphics/self-hierarchy.png)]()
+[![Self-join for hierarchy](/images/self-hierarchy.png)]()
 
 ### ❓Q3: Write a SQL query to return the grandparent category of 'glycine binding'    
 
@@ -203,7 +203,7 @@ Use a **self-join** by creating two instances of the same table, to derive a hie
 
 Use a **self-join** by creating two instances of the same table, to compare information from data in that table.  Use a less than operator in the WHERE clause.
 
-[![Self-join for comparison](/1_Files_&_Data/SQL-concept-graphics/self-compare.png)]()
+[![Self-join for comparison](/images/self-compare.png)]()
 
 As an alternative to using a SQL **self-join**, you could use a SQL **subquery**. In this case, that subquery would be a nested `SELECT` statement using the SQL aggregate function `MAX` to filter the date values.  Use the `experiments` table.
 
@@ -237,7 +237,7 @@ For some types of queries, you can have choices in how you write your query.  Fo
 2. Use VIEWS - SQL Views are saved, named `SELECT` queries.  They are a language convenience that allows you to refer to subsets of table data by name in subsequent queries.  A view is referenced like a table in the `FROM` clause of a SQL statement.
 
 Because it's helpful to 'see' table structure when writing queries, I'll link a diagram of the two tables queried in this section below again.
-[![Join columns](/1_Files_&_Data/SQL-concept-graphics/join-cols.png)]()
+[![Join columns](/images/join-cols.png)]()
 
 
 ### ❓Q5: Write a SQL query to return the names of pine genes that were positively expressed more than 0.5-fold (with a significance of 1 or more) in at least two experiments  
@@ -426,7 +426,7 @@ In three (or more) table joins, you identify the join columns (or keys) from eac
 
 The most common join type is a SQL inner join (which returns only rows matched in BOTH tables), however you can use other SQL join types, i.e. outer joins... as needed.
 
-[![Three table join](/1_Files_&_Data/SQL-concept-graphics/3-tables.png)]()
+[![Three table join](/images/3-tables.png)]()
 
 ### ❓Q8: Write a SQL query to return the experiment names, gene names & their expression levels in order, for genes that showed positive expression in every experiment recorded for it  
 Join these tables: `experiments, expression, genes` 
