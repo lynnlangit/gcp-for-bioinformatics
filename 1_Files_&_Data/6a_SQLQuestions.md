@@ -498,7 +498,7 @@ Use a SQL conditional statement to test level value, i.e. `CASE`...
 
 ### Other Notes
 
-- SQL query answers to these lesson are on [this Repo page](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQueries.sql)
+- SQL query answers to these lesson are on [this Repo page](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/6c_SQLQueries.sql)
 
 - (Optional) If you wish to create your own Google BigQuery dataset rather than querying my public dataset, then you must create your own BigQuery dataset.* 
     - *Create both the dataset TABLES and VIEWS*
