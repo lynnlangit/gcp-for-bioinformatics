@@ -69,7 +69,7 @@ To get started, I suggest that you run a couple of SQL queries to list all of th
 
 ![experiments table](/1_Files_&_Data/SQL-concept-graphics/experiments.png)
 
-TIP: Examine both the table schema and table data when you are writing SQL queries.  Tables in this example dataset are very small, so you can use `SELECT * FROM {tableName}` to see all data.
+**TIP: Examine both the table schema and table data when you are writing SQL queries.  Tables in this example dataset are very small, so you can use `SELECT * FROM {tableName}` to see all data.**
 
 - When you are working with tables that contain a large amount of data, you may want to add a limit clause, such as `LIMIT 10` to return only a subset of the data from table.  
 - In this example, that would be 10 sample data rows.
@@ -182,6 +182,7 @@ To start, query the `genes` and `expression` tables to review all of the data in
         WHERE other conditions...  
         AND other conditions... 
 
+**TIP: Build up this query - first write the `SELECT...FROM` portion joining the two tables. Run that query to see how many rows are returned.  Then add the first `WHERE` filter to remove some rows from the results. Run that query to see the results.  Then add the `AND` clauses (you will need to add TWO `AND` clauses) to the `WHERE` filter to remove additional rows from result set.**
 
 ---
 
