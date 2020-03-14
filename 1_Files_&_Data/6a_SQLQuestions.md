@@ -33,7 +33,7 @@ The original source bioinformatics Dataset and base SQL queries used in this ope
 
  ![BigQuery error](/images/correct-bq.png)
 
-  If you get stuck - here is a [link](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/SQL-queries/SQLQueries.sql) to completed queries for each question.
+  If you get stuck - here is a [link](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/6b_SQLQueries.sql) to completed queries for each question.
 
 ---
 ---

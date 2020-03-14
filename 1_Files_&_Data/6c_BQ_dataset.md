@@ -1,4 +1,4 @@
-# SQL Concepts & Practice 
+# BigQuery SQL Datasets and Queries
 
 ### What is this & why do this
  - **Learn** SQL query concepts so that you can use Google Cloud Big Query service 
@@ -39,8 +39,6 @@ The process to prepare to query data using Google Cloud Big Query is as follows:
   TIP: You can review the provided query answers, run those queries and compare query results
  - Query to verify schema and data uploaded  
   TIP: Can do row count total queries
-
-
 
 ### Other Things to Know
  - SQL is a set-based query language for data tables 
