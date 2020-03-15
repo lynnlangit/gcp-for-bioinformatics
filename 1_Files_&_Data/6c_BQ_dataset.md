@@ -1,50 +1,27 @@
-# BigQuery SQL Datasets and Queries
+# BigQuery SQL Queries & Datasets
 
 ### What is this & why do this
  - **Learn** SQL query concepts so that you can use Google Cloud Big Query service 
- - **Practice** SQL query concepts by writing and executing queries against BigQuery datasets
+ - **Practice** SQL query concepts by writing & executing queries against BigQuery datasets
 
 ### How to do this
 1. **READ** this page to review SQL concepts
-2. **DO** the SQL Lessons (write queries as practice)  
+2. **DO** the SQL Lessons (write queries as practice) 
+3. **CREATE** your own copy of my public BQ dataset (optional) 
+    - Get the source data (my example uses CSV files)
+      - Format & clean data
+        - Convert file-based data to tabular style 
+        - use delimieters, i.e. tabs, commas, pipes
+        - add headers
+        - consider data types, i.e. strings, integers, floats
+      - Upload & Convert file data to tables in BQ dataset
+        - can use auto-detect schema if at least one numeric column per table
+        - verify upload 
+        - NOTE: watch out for white space in string columns in BigQuery!
 
-The process to prepare to query data using Google Cloud Big Query is as follows:
- - Get data (can be in files)
-    - Format and clean data
-    - Convert file-based data to tabular style 
-      - use delimieters, i.e. tabs, commas, pipes
-      - add headers
-      - consider data types, i.e. strings, integers, floats
-    - Select database or data query service (such as Google Big Query)
-      - upload and convert file data to tables in database or dataset
-      - can use auto-detect schema if at least one numeric column per table
-      - verify upload NOTE: watch out for white space in string columns in BigQuery!
- - USE SQL Keywords to query data
-    - Review query results for accuracy
+Review the example BigQuery dataset schema and example data (graphic below)
 
-
- [![SQL Keywords](/images/keywords.png)]()
-
-
-### Steps to do this
-- Sign up for a Google Cloud account (can use free trial credits if new account)
-  - Create a Google Cloud Project and then enable the BigQuery service for that project
-  - Navigate to the BigQuery Web UI for your Google Cloud Project
-- Review the example BigQuery dataset schema and example data (graphic below)
-
-  [![SQL Keywords](/images/sql-data-model.png)]()
-
-### How to verify you've done it
- - Write and execute your queries in the BigQuery interface
-  TIP: You can review the provided query answers, run those queries and compare query results
- - Query to verify schema and data uploaded  
-  TIP: Can do row count total queries
-
-### Other Things to Know
- - SQL is a set-based query language for data tables 
- - Joining table rows is a key concept. The graphic below shows join concepts
-
-[![SQL Keywords](/images/joins.png)]()
+  [![SQL example schema](/images/sql-data-model.png)]()
 
 ### Create your own BigQuery Dataset Example
 
@@ -59,6 +36,15 @@ The process to prepare to query data using Google Cloud Big Query is as follows:
       - you can set to skip 1 row if your source data has headers
       - be aware that BigQuery INCLUDES all white space in string fields, so if you want to remove that white space you must remove it in the source file before you create your BigQuery tables
 
+### How to verify you've done it
+ - View the dataset in your Bigquery tree (see below)
+ - Click on each table to verify schema and data
+
+### Other Things to Know
+ - SQL is a set-based query language for data tables 
+ - Joining table rows is a key concept. The graphic below shows join concepts
+
+[![SQL Keywords](/images/joins.png)]()
 
 ### How to learn more
  - 📘 Link to [learn SQL - 12 questions](https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises)
