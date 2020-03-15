@@ -1,46 +1,39 @@
-# BigQuery SQL Queries & Datasets
+# BigQuery SQL Datasets & More Query Info
 
-### What is this & why do this
- - **Learn** SQL query concepts so that you can use Google Cloud Big Query service 
+### Why do this
+ - **Learn** SQL query concepts so that you can use Google Cloud Big Query service using your own version of my source data (CSV files)
  - **Practice** SQL query concepts by writing & executing queries against BigQuery datasets
 
-### How to do this
-1. **READ** this page to review SQL concepts
-2. **DO** the SQL Lessons (write queries as practice) 
-3. **CREATE** your own copy of my public BQ dataset (optional) 
-    - Get the source data (my example uses CSV files)
-      - Format & clean data
-        - Convert file-based data to tabular style 
-        - use delimieters, i.e. tabs, commas, pipes
-        - add headers
-        - consider data types, i.e. strings, integers, floats
-      - Upload & Convert file data to tables in BQ dataset
-        - can use auto-detect schema if at least one numeric column per table
-        - verify upload 
-        - NOTE: watch out for white space in string columns in BigQuery!
+### Create your own example BigQuery Dataset
+
+ If you want to set up your own copy of the example BigQuery dataset, use the CSV files provided [in this Repository](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/1_Files_%26_Data/genomic-data-samples/CSV-or-TXT/CSV-for-BigQuery-lessons)
+  - GET your source files or use my CSV files
+  - OPEN each CSV files to... 
+    - review/update the file structure 
+    - review/update the data 
+    - SAVE each file
+  - CREATE a BigQuery dataset using the Web UI
+    - CREATE one BigQuery table for each CSV file inside of your BQ Dataset
+      - To create table schema
+        - enter each column name and data type manually --or-- 
+        - use BigQuery 'auto-detect' table schema IF all of the following conditions are met:
+          - DELIMETERS - your source files use tab, comma or pipe delimeters 
+          - DATA TYPES - each file must have at least one non-string column, i.e. integer, float, date
+          - HEADERS - you can set to skip 1 row if your source data has headers
+          - WHITE SPACE (in string data type columns)BigQuery INCLUDES all white space in string fields, so if you want to remove that white space you must remove it in the source file before you create your BigQuery tables
 
 Review the example BigQuery dataset schema and example data (graphic below)
 
   [![SQL example schema](/images/sql-data-model.png)]()
 
-### Create your own BigQuery Dataset Example
-
- If you want to set up your own copy of the example BigQuery dataset, use the CSV files provided in this Repository
-  - Get your source files or data - I used a set of CSV files
-    - Review the structure and the data -> format and clean data
-  - Create a BigQuery dataset using the Web UI
-    - In your BigQuery dataset, create a BigQuery table for each CSV file 
-    - you can use BigQuery 'auto-detect' table schema IF
-      - your source files use tab, comma or pipe delimeters 
-      - each file must have at least one non-string column, i.e. integer, float, date
-      - you can set to skip 1 row if your source data has headers
-      - be aware that BigQuery INCLUDES all white space in string fields, so if you want to remove that white space you must remove it in the source file before you create your BigQuery tables
-
 ### How to verify you've done it
  - View the dataset in your Bigquery tree (see below)
  - Click on each table to verify schema and data
 
+[![BQ Dataset](/images/bq-dataset.png)]()
+
 ### Other Things to Know
+ - Your BQ dataset is set by default to only be accessible by you within your GCP project.  If you want to make this dataset available to other GCP others, then you must manually set the access permissions on your BQ dataset.
  - SQL is a set-based query language for data tables 
  - Joining table rows is a key concept. The graphic below shows join concepts
 
