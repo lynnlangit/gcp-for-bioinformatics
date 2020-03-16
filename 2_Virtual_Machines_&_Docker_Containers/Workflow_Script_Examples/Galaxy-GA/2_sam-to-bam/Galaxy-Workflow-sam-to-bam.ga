@@ -1,1 +1,65 @@
-{"uuid": "b82459b0-007f-45e7-a8b8-3336c7b8def4", "tags": ["helloworld"], "format-version": "0.1", "name": "sam-to-bam", "version": 1, "steps": {"0": {"tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/sam_to_bam/sam_to_bam/2.1.1", "tool_version": "2.1.1", "outputs": [{"type": "bam", "name": "output1"}], "workflow_outputs": [{"output_name": "output1", "uuid": "db891741-e0a4-4618-ae97-f17b11cc7116", "label": null}], "input_connections": {}, "tool_state": "{\"source\": \"{\\\"__current_case__\\\": 0, \\\"index\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"index_source\\\": \\\"cached\\\", \\\"input1\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"__rerun_remap_job_id__\": null, \"__page__\": null}", "id": 0, "tool_shed_repository": {"owner": "devteam", "changeset_revision": "cf1ffd88f895", "name": "sam_to_bam", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "a6b3f327-7686-4968-9861-4527b04c01a0", "errors": null, "name": "SAM-to-BAM", "post_job_actions": {}, "label": "sam-to-bam", "inputs": [{"name": "source", "description": "runtime parameter for tool SAM-to-BAM"}, {"name": "source", "description": "runtime parameter for tool SAM-to-BAM"}], "position": {"top": 339.47918701171875, "left": 356.4757385253906}, "annotation": "first step", "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/sam_to_bam/sam_to_bam/2.1.1", "type": "tool"}}, "annotation": "demo", "a_galaxy_workflow": "true"}
+{
+   "uuid":"b82459b0-007f-45e7-a8b8-3336c7b8def4",
+   "tags":[
+      "helloworld"
+   ],
+   "format-version":"0.1",
+   "name":"sam-to-bam",
+   "version":1,
+   "steps":{
+      "0":{
+         "tool_id":"toolshed.g2.bx.psu.edu/repos/devteam/sam_to_bam/sam_to_bam/2.1.1",
+         "tool_version":"2.1.1",
+         "outputs":[
+            {
+               "type":"bam",
+               "name":"output1"
+            }
+         ],
+         "workflow_outputs":[
+            {
+               "output_name":"output1",
+               "uuid":"db891741-e0a4-4618-ae97-f17b11cc7116",
+               "label":null
+            }
+         ],
+         "input_connections":{
+
+         },
+         "tool_state":"{\"source\": \"{\\\"__current_case__\\\": 0, \\\"index\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"index_source\\\": \\\"cached\\\", \\\"input1\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"__rerun_remap_job_id__\": null, \"__page__\": null}",
+         "id":0,
+         "tool_shed_repository":{
+            "owner":"devteam",
+            "changeset_revision":"cf1ffd88f895",
+            "name":"sam_to_bam",
+            "tool_shed":"toolshed.g2.bx.psu.edu"
+         },
+         "uuid":"a6b3f327-7686-4968-9861-4527b04c01a0",
+         "errors":null,
+         "name":"SAM-to-BAM",
+         "post_job_actions":{
+
+         },
+         "label":"sam-to-bam",
+         "inputs":[
+            {
+               "name":"source",
+               "description":"runtime parameter for tool SAM-to-BAM"
+            },
+            {
+               "name":"source",
+               "description":"runtime parameter for tool SAM-to-BAM"
+            }
+         ],
+         "position":{
+            "top":339.47918701171875,
+            "left":356.4757385253906
+         },
+         "annotation":"first step",
+         "content_id":"toolshed.g2.bx.psu.edu/repos/devteam/sam_to_bam/sam_to_bam/2.1.1",
+         "type":"tool"
+      }
+   },
+   "annotation":"demo",
+   "a_galaxy_workflow":"true"
+}
