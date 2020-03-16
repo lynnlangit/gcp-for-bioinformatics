@@ -1,0 +1,21 @@
+{
+  "title": "Hello World Galaxy Project",
+  "steps": [
+    {
+      "file": "2_Virtual_Machines_&_Docker_Containers/Workflow_Script_Examples/Galaxy-GA/0_helloWorld/helloWorld.ga",
+      "line": 5,
+      "description": "Galaxy Project Workflow name"
+    },
+    {
+      "file": "2_Virtual_Machines_&_Docker_Containers/Workflow_Script_Examples/Galaxy-GA/0_helloWorld/helloWorld.ga",
+      "line": 9,
+      "description": "Location of Galaxy Toolshed tool used in workflow"
+    },
+    {
+      "file": "2_Virtual_Machines_&_Docker_Containers/Workflow_Script_Examples/Galaxy-GA/0_helloWorld/helloWorld.ga",
+      "line": 30,
+      "description": "Name of tool used in workflow"
+    }
+  ],
+  "ref": "79c744106d3c08dc75038c6be30a0aea9c607da0"
+}
