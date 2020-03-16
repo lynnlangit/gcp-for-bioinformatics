@@ -1,0 +1,50 @@
+{
+    "a_galaxy_workflow": "true",
+    "annotation": "demo",
+    "format-version": "0.1",
+    "name": "helloWorld",
+    "steps": {
+        "0": {
+            "annotation": "demo of hello world",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_text_file_with_recurring_lines/1.1.0",
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [],
+            "label": "sayHello",
+            "name": "Create text file",
+            "outputs": [
+                {
+                    "name": "outfile",
+                    "type": "txt"
+                }
+            ],
+            "position": {
+                "left": 355.9895935058594,
+                "top": 339.47918701171875
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_text_file_with_recurring_lines/1.1.0",
+            "tool_shed_repository": {
+                "changeset_revision": "0a8c6b61f0f4",
+                "name": "text_processing",
+                "owner": "bgruening",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"token_set\": [{\"__index__\": 0, \"line\": \"Hello Galaxy Project\", \"repeat_select\": {\"repeat_select_opts\": \"user\", \"__current_case__\": 0, \"times\": \"10\"}}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.1.0",
+            "type": "tool",
+            "uuid": "087cd4b7-add0-4b0f-96a1-5de3bd65302d",
+            "workflow_outputs": [
+                {
+                    "label": "helloOut",
+                    "output_name": "outfile",
+                    "uuid": "8c6a4ad4-260a-460b-a21a-a1aa2bfa37c5"
+                }
+            ]
+        }
+    },
+    "tags": [],
+    "uuid": "5b302b6d-3bbf-4ce8-868a-679e69f39bca",
+    "version": 1
+}
