@@ -3,7 +3,7 @@
 ### What is this
 - Google Cloud Genomics provides a variety of public datasets that you can access for free and integrate into your research jobs
     - An example is the 1000 Genomes dataset - [link](https://cloud.google.com/genomics/docs/public-datasets/1000-genomes)
-    - Google hosts these datasets and proves public access to the data via as BigQuery datasets or Cloud Storage buckets.
+    - Google hosts these datasets and provides public access to the data via as BigQuery datasets or Cloud Storage buckets.
 
 ### Why do this
  - USE a reference file in cloud-based analysis
