@@ -6,7 +6,7 @@
     - Google hosts these datasets and provides public access to the data via as BigQuery datasets or Cloud Storage buckets.
 
 ### Why do this
- - USE a reference file in cloud-based analysis
+ - USE a reference file in genomic cloud-based analysis
  - SAVE time by using a reference file that is already available in the cloud (no need to upload)
 
 ### Key considerations
