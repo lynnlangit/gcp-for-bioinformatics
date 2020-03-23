@@ -1,12 +1,12 @@
 # Setup GCP Project Security
 
 
-### Why do this
- - Secure your analysis data
- - Secure your GCP project resources
+### Objective
+ - Learn how to secure your analysis data
+ - Learn how to secure your GCP project resources
 
-### What is this
- - GCP uses IAM (Identity and Access Management) objects to allow you to configure security
+### Intro
+ - Google Cloud provides  uses IAM (Identity and Access Management) objects to allow you to configure security
  - GCP makes services available as either services, APIs or services which include APIs
 
 ### Key considerations
