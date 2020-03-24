@@ -1,8 +1,8 @@
 # Use Cromwell & WDL for Pipelines
 
 ### Why do this
- - USE [The Broad Institute's cromwell](https://github.com/broadinstitute/cromwell) orchestration engine to scale your analysis job(s)
- - USE [The Broad Institute's WDL (workflow definition language)](https://software.broadinstitute.org/wdl) to configure the cromwell orchestration engine by describing your tool/workflow inputs & outputs  
+ - USE the [cromwell](https://github.com/broadinstitute/cromwell) orchestration engine to scale your analysis job(s) - used at The Broad Institute and many other organizations world-wdie.  
+ - USE the [open source WDL (workflow definition language)](https://software.broadinstitute.org/wdl) to configure the cromwell orchestration engine by describing your tool/workflow inputs & outputs - used at The Broad Institute and many other organizations world-wdie.  
 
   <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/wdl-cromwell.png" width=500 align=right> 
 
@@ -55,6 +55,7 @@
  - :octocat: Source WDL for 5 Dollar Genome Analysis Pipeline - [link](https://github.com/gatk-workflows/five-dollar-genome-analysis-pipeline) includes JSON inputs, all data accessed from GCS public buckets
  - :octocat: Example WDL files for bioinformatics tools - [link](https://github.com/biowdl/tasks) to BioWDL
  - :octocat: WDL pipeline template examples - [link](https://github.com/biowdl/pipeline-template) to BioWDL template
+  - :octocat: OpenWDL source code - [link](https://github.com/openwdl/wdl) on Github
  - 📺 Watch 38 minute [Intro to pipelining platforms](https://www.youtube.com/watch?v=HNONc2cmIO8&t=9s) screencast from the Broad, covers cromwell & WDL
  - :octocat: [Miniwdl](https://github.com/chanzuckerberg/miniwdl) - miniwdl provides WDL developer productivity tools, a local runtime implementation, and a foundation for language experimentation in Python 3.6+. It includes the following tools:
     - [miniwdl check](https://github.com/chanzuckerberg/miniwdl#miniwdl-check) - a WDL linter
