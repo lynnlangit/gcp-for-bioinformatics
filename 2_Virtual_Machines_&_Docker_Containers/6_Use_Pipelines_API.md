@@ -2,8 +2,8 @@
 
 
 ### Why do this
- Scale your analysis using Google Pipelines (also called Genomics) API  
- NOTE: Google expanded and RENAMED this set of services to ['Google Cloud Life Sciences'](https://cloud.google.com/life-sciences/) in late 2019
+ - Scale your analysis using Google Pipelines (also called Genomics) API  
+ - NOTE: Google expanded and RENAMED this set of services to ['Google Cloud Life Sciences'](https://cloud.google.com/life-sciences/) in late 2019
 
  [![gcp-pipelines-api](/images/gcp-pipelines-api.png)]()
 
