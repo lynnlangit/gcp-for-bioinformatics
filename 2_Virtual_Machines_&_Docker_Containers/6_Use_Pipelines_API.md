@@ -8,8 +8,8 @@
  [![gcp-pipelines-api](/images/gcp-pipelines-api.png)]()
 
 ### What is this
- - USE Google Pipelines API to orchestrate scalable genomic analysis running Compute Engine **without** manually configuring scaling of your compute cluster
- - USE Cloud Storage + Pipelines API + BigQuery to create serverless end-to-end scalable genomic analysis jobs
+ - USE Cloud Life Sciences API to orchestrate scalable genomic analysis running Compute Engine **without** manually configuring scaling of your compute cluster. The API is designed to be a backend for bionformatics tools (ex. dsub) or systems (cromwell), by providing job scheduling for Docker-based tasks that perform secondary genomic analysis on Compute Engine containers
+ - USE Cloud Storage (file storage) + Pipelines API + BigQuery to create serverless end-to-end scalable genomic analysis jobs
 
 ### Key considerations
  - This is a serverless solution because you work with services or API endpoints and you do NOT configure or manage VMs or containers
