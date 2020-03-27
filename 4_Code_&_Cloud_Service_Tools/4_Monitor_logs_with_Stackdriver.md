@@ -18,10 +18,10 @@
  - NAVIGAGE to the Operations console to see standard service metrics and to perfrom custom actions
 
 ### How to verify you've done it
- - START and run a service, click to view the service execution log in Stackdriver 
- - FILTER, sort or search within logs using the Stackdriver interface
+ - START and run a service, click to view the service execution log in Operations 
+ - FILTER, sort or search within logs using the Operations interface
 
-Click the button highlighted in red to open the Stackdriver logs.
+Click the button highlighted in red to open the Operations logs.
  [![to-logs](/images/to-logs.png)]()
 View, filter and read the logs, to understand the service execution details. 
  [![logs](/images/logs.png)]()
@@ -30,4 +30,4 @@ View, filter and read the logs, to understand the service execution details.
  - Best practice for logging - [link](https://cloud.google.com/blog/products/gcp/best-practices-for-working-with-google-cloud-audit-logging)
 
 ### How to learn more
- - 📘 Link to [design patterns for Operations](https://cloud.google.com/solutions/design-patterns-for-exporting-stackdriver-logging)
+ - 📘 Link to [design patterns for Operations](https://cloud.google.com/solutions/design-patterns-for-exporting-Operations-logging)
