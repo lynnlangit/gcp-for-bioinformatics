@@ -8,6 +8,8 @@
  - Ability to use ML on tabular data without manually creating/training an ML model
  - Simply provide the tabular data, labels and pay for ML training hours on GCP
 
+ ![Auto ML Tables](/images/auto-ml-tables.png)
+
 ### Key considerations
  - ML model accuracy improves with billable training time
  - Google uses auto-grid and hyperparameter clusters to select, train and tune the best ML model 
