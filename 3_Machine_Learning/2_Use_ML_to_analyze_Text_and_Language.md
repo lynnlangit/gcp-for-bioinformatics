@@ -9,7 +9,7 @@
  - Simply provide the natural language data, labels and pay for ML training hours on GCP
  - Product names are `AutoML for Natural Language` or `Natural Language API` - features list [link](https://cloud.google.com/natural-language/)
 
-
+![Auto ML Natural Language](/images/natural-language.png)
 
 ### Key considerations
  - ML model accuracy improves with billable training time
