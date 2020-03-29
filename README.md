@@ -20,7 +20,7 @@ This repository covers using ☁️Google Cloud Platform public cloud services f
 
 ----
 
-### 📺Click below to WATCH 'Lynn's Welcome Video' (4 min) 
+### 📺Click below to WATCH 'Lynn's Welcome Video' (4 min) on YouTube
 
 [![Welcome to GCP for Bioinformatics](http://img.youtube.com/vi/YoFkSVDlN6k/0.jpg)](http://www.youtube.com/watch?v=YoFkSVDlN6k "Welcome to GCP for Bioinformatics")
 
