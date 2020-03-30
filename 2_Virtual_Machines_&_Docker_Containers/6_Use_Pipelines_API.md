@@ -1,11 +1,11 @@
-# Use Google Pipelines API
+# Use Google Life Sciences API
 
 
 ### Why do this
- - Scale your analysis using Google Pipelines (also called Genomics) API  
- - NOTE: Google expanded and RENAMED this set of services to ['Google Cloud Life Sciences'](https://cloud.google.com/life-sciences/) in late 2019
+ - Scale your analysis using [`Google Cloud Life Sciences API`](https://cloud.google.com/life-sciences/) to manage compute resources
+ - Google Cloud Life Sciences API was previously nameed Google Cloud Genomics/Pipelines API
 
- [![gcp-pipelines-api](/images/gcp-pipelines-api.png)]()
+ [![GCP Life Sciences Reference Architecture](/images/gcp-life-sciences-arch.png)]()
 
 ### What is this
  - USE Cloud Life Sciences API to orchestrate scalable genomic analysis running Compute Engine **without** manually configuring scaling of your compute cluster. The API is designed to be a backend for bionformatics tools (ex. dsub) or systems (cromwell), by providing job scheduling for Docker-based tasks that perform secondary genomic analysis on Compute Engine containers
@@ -29,17 +29,18 @@
 
 
 ### Other Things to Know
- - Google Pipelines API was called Google Genomics API and still uses that name in some of the documentation
+ - Google Life Sciences API is still called Google Pipelines/Genomics API in some of the documentation
  - There are two major versions of the this API - v1 and v2
  - The pipeline can run with unaligned BAM files stored in Cloud Storage
     - If your files are in an aligned BAM or FASTQ format, then you must convert them to BAM
-    - You can convert your input files locally, or you can use the Pipelines API to convert them in the cloud
- - There are a number of bioinformatics libraries (cromwell, Nextflow....) that are designed to work WITH Pipelines API
+    - You can convert your input files locally, or you can use the Life Sciences API to convert them in the cloud
+ - There are a number of bioinformatics libraries (cromwell, Nextflow....) that are designed to work WITH Life Sciences API
 
 ### How to learn more
- - 📘 Google Cloud Genomics scenarios, see this [link](https://cloud.google.com/genomics/docs/tutorials/)
- - :octocat: 4 GCP Pipelines API examples in Jupyter notebooks - [link](https://github.com/googlegenomics/datalab-examples/tree/master/datalab/genomics)
- - :octocat: See example Pipelines API usage with genomics tools - [link](https://github.com/googlegenomics/pipelines-api-examples)
+ - 📘 Google Cloud Life Sciences API reference architecture, see this [link](https://cloud.google.com/solutions/genomic-data-processing-reference-architecture)
+ - 📘 Google Cloud Life Sciences scenarios, see this [link](https://cloud.google.com/genomics/docs/tutorials/)
+ - :octocat: 4 GCP Life Sciences API examples in Jupyter notebooks - [link](https://github.com/googlegenomics/datalab-examples/tree/master/datalab/genomics)
+ - :octocat: See example Life Sciences API usage with genomics tools - [link](https://github.com/googlegenomics/pipelines-api-examples)
  - 📘 End-to-end pipeline patterns and documentation, see the Google Genomics Cookbook -- http://googlegenomics.readthedocs.io/en/latest/
  - Google Cloud Life Sciences includes a number of Google Cloud services, such as Compute Engine, Dataflow, BigQuery and more.  A reference architecture is shown below.  See the [Google Life Sciences](https://cloud.google.com/life-sciences/) documentation for more information.
 
