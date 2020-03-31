@@ -62,3 +62,8 @@
     - [miniwdl cromwell](https://github.com/chanzuckerberg/miniwdl#miniwdl-cromwell) - command-line interface for running a workflow locally using Cromwell
     - [miniwdl run](https://github.com/chanzuckerberg/miniwdl#miniwdl-run) - Operation is nearly identical to miniwdl cromwell. The invoking user must have permission to control Docker.
     - :octocat: [Cromwell source code](https://github.com/broadinstitute/cromwell) on GitHub
+
+ - 📘 Link to [Google Life Sciences Reference Architecture](https://cloud.google.com/solutions/genomic-data-processing-reference-architecture) on GCP.  
+   - Shown below is a reference architure using `cromwell` running with `Google Cloud Life Sciences` on GCP  
+
+    [![life-sciences-cromwell](/images/life-sciences-cromwell.png)]()
