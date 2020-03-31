@@ -11,6 +11,6 @@ Here are the topic pages in this section:
 - Setup GCP Client Tools
 - Setup GCP IAM role-based Security
 
-The sections of the reference architecture outlined in red will be covered.
+The sections of the reference architecture outlined in red will be covered here.
 
 [![gcp-iam](/images/iam.png)]()
