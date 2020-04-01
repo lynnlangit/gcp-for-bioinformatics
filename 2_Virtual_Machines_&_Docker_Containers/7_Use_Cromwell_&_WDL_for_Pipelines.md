@@ -1,4 +1,4 @@
-# Use Cromwell & WDL for Pipelines
+# Use Cromwell & WDL to build workflows
 
 ### Why do this
  - USE the [cromwell](https://github.com/broadinstitute/cromwell) orchestration engine to scale your analysis job(s) - used at The Broad Institute and many other organizations world-wdie.  
@@ -9,7 +9,8 @@
  Conceptual workflow pattern is shown the the right.  Note the use of docker container images as well.  It's common to use bioinformatics tools, such as GATK or Hail with cromwell in pipelines. 
 
 ### What is this
- - Scaling Compute Engine w/Google Pipelines API, cromwell orchestration using WDL language
+ - Scaling Compute Engine w/Google Life Sciences API, cromwell orchestration using WDL language. NOTE: Google Life Sciences API was called Google Genomics/Pipelines API previously.
+ - NOTE: WDL/Cromwell documentation uses the words 'workflow' or 'pipeline' to define a series of tasks run for an analysis
  - WDL (Workflow Definition Language) script concepts are shown below 
    - READ WDL documentation - [link](https://software.broadinstitute.org/wdl/documentation/quickstart)
    - VIEW 'Using WDL' MindMap - [link](https://atlas.mindmup.com/lynnlangit/wdl/index.html)
@@ -17,7 +18,7 @@
 [![wdl-concepts](/images/wdl-concepts.png)]()
 
 ### Key considerations
- - USE cromwell with Google Pipelines API to manage the GCE (VM) resources for your analysis job with fewer manual configuaration steps
+ - USE cromwell with Google Life Sciences API to manage the GCE (VM) resources for your analysis job with fewer manual configuaration steps
  - USE WDL scripts to configure the workflow inputs and outputs (for each bioinformatics tool used)
  - REFERENCE your scripts, jar files or docker container images for each of the bioinformatics tool used in your workflow
  - USE JSON files to configure the input/output parameters for each tool and also for EACH job execution
@@ -27,7 +28,7 @@
      - Be sure to put the cromwell jar file and the WDL file in the same directory
      - Verify that the cromwell version in the run command is the same as the version of the jar file you're using
  - [This tutorial](https://wdl-runner.readthedocs.io/en/latest/GettingStarted/TutorialOverview/#tutorial-scenario) shows running a multi-stage workflow on GCP
-    - The workflow is **launched** with Google Pipelines API
+    - The workflow is **launched** with Google Life Sciences API
     - The workflow is **defined** using WDL
     - The workflow stages are **orchestrated** by cromwell
     - The workflow **runs** on multiple Compute Engine VMs
