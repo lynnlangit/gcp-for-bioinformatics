@@ -2,7 +2,7 @@
 
 ### Why do this
  - USE the open source [cromwell](https://github.com/broadinstitute/cromwell) orchestration engine to scale your analysis job(s) 
- - USE the [open source WDL (workflow definition language)](https://software.broadinstitute.org/wdl) to configure the cromwell orchestration engine by describing your tool/workflow inputs & outputs - used at The Broad Institute and many other organizations world-wide.  
+ - USE the open source [WDL (workflow definition language)](https://software.broadinstitute.org/wdl) to configure the cromwell orchestration engine by describing your tool/workflow inputs & outputs. WDL scripts also allow you to configure execution environments (i.e. local, public cloud...) and resources allocated for each execution.  These resources include Docker container images, batch sizes, VM configuration and many other settings.
 
   <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/wdl-cromwell.png" width=500 align=right> 
 
