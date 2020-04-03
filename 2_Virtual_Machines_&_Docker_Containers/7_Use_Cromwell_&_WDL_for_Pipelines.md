@@ -1,15 +1,15 @@
 # Use Cromwell & WDL to build workflows
 
 ### Why do this
- - USE the [cromwell](https://github.com/broadinstitute/cromwell) orchestration engine to scale your analysis job(s) - used at The Broad Institute and many other organizations world-wdie.  
- - USE the [open source WDL (workflow definition language)](https://software.broadinstitute.org/wdl) to configure the cromwell orchestration engine by describing your tool/workflow inputs & outputs - used at The Broad Institute and many other organizations world-wdie.  
+ - USE the open source [cromwell](https://github.com/broadinstitute/cromwell) orchestration engine to scale your analysis job(s) 
+ - USE the [open source WDL (workflow definition language)](https://software.broadinstitute.org/wdl) to configure the cromwell orchestration engine by describing your tool/workflow inputs & outputs - used at The Broad Institute and many other organizations world-wide.  
 
   <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/wdl-cromwell.png" width=500 align=right> 
 
  Conceptual workflow pattern is shown the the right.  Note the use of docker container images as well.  It's common to use bioinformatics tools, such as GATK or Hail with cromwell in pipelines. 
 
 ### What is this
- - Scaling Compute Engine w/Google Life Sciences API, cromwell orchestration using WDL language. NOTE: Google Life Sciences API was called Google Genomics/Pipelines API previously.
+ - Scaling Compute Engine Virtual Machine instances w/Google Life Sciences API, cromwell orchestration using WDL language. NOTE: Google Life Sciences API was called Google Genomics/Pipelines API previously.
  - NOTE: WDL/Cromwell documentation uses the words 'workflow' or 'pipeline' to define a series of tasks run for an analysis
  - WDL (Workflow Definition Language) script concepts are shown below 
    - READ WDL documentation - [link](https://software.broadinstitute.org/wdl/documentation/quickstart)
@@ -37,11 +37,11 @@
 
 ### How to verify you've done it
  - REVIEW the files in the output destinations (Cloud Storage buckets) to check they match the expected results
- - USE GCP Stackdriver to monitor the overhead (CPU, memory etc...usage) for the Compute Engine VMs during job executions
+ - USE GCP Cloud Monitoring to monitor the overhead (CPU, memory etc...usage) for the Compute Engine VMs during job executions
 
 ### Other Things to Know
  - General GATK tool usage best practice guidlines from The Broad - [link](https://software.broadinstitute.org/gatk/best-practices/)
- - Cromwell can be run in 'stand-alone' or '(persistent) server mode'
+ - Cromwell can be run in '(run) stand-alone' or '(persistent) server mode'
     - VERIFY the version of Cromwell, WDL and tools when creating workflows (i.e. v44) - [link](https://github.com/broadinstitute/cromwell/releases/download/44/cromwell-44.jar)
     - USE the 'wdl_runner' tool to run/test Cromwell workflows locally - [link](https://github.com/broadinstitute/wdl-runner)
     - USE the Broad's 'WOM tool' to validate WDL workflow syntax - [link](https://github.com/broadinstitute/cromwell/releases/download/44/womtool-44.jar)
