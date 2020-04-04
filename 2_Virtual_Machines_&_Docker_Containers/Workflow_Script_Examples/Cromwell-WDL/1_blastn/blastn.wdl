@@ -1,3 +1,12 @@
+version 1.0
+
+workflow blastnWorkflow {
+   String path
+   call blastn {
+      input: path=path
+   }
+}
+
 task blastn {
    String path
 
@@ -14,10 +23,5 @@ task blastn {
    }
 }
 
-workflow blastnWorkflow {
-   String path
-   call blastn {
-      input: path=path
-   }
-}
+
 

@@ -1,3 +1,5 @@
+version 1.0
+
 workflow HelloWorld {
   call WriteGreeting
 }
