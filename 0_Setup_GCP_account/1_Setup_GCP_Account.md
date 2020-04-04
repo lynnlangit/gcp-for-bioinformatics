@@ -25,12 +25,12 @@
  - REQUEST an account
    - a) a GCP account from your organization --OR--
    - b) set up a GCP new (FREE Tier) account [here](https://cloud.google.com/free) 
- - CREATE your GCP PROJECT - Think of them as a folders where your project resources will be oreganized
-   - USE **each** GCP Project as a container  for **each** of your research projects
+ - CREATE your GCP PROJECT - Think of them as a folders where project resources will are organized
+   - USE **each** GCP Project as a container for **each** of your research projects
    - As a best practice, CREATE separate GCP projects for different workflows. This allows you to more easily manage security, service costs and other settings in the project. You could group resources by grant for example. 
  - ADD GCP service instances to your GCP Project 
-    - Add services by data center location and GCP project name, for example... TODO: add example here
-    - Add a Virtual Machine instance & a Cloud Storage bucket which are located... TODO: add location 
+    - Add services by data center location and GCP project name.
+    - Add a Virtual Machine instance & a Cloud Storage bucket which are located.
       - in the Google datacenter in `us-east` --AND--
       - in your GCP Project named `my-research-project`
 
@@ -48,7 +48,7 @@
   - GCP FREE tier account have built-in service [usage limits](https://cloud.google.com/free/docs/gcp-free-tier)
  - For FREE Tier, after you've spent your $300, GCP service costs are billed to **YOU** (via the credit information provided on account creation)
  - GCP service costs are billed to **YOUR COMPANY**  (or research group) for Organizational Accounts
- - SET UP a **GCP Budget** to get notified when GCP services exceed a service cost limit you set (this is useful for testing accounts). TODO: Add link [more info here](https://cloud.google.com/billing/docs/how-to/budgets)
+ - SET UP a **GCP Budget** to get notified when GCP services exceed a service cost limit you set (this is useful for testing accounts) [more info here](https://cloud.google.com/billing/docs/how-to/budgets)
  - REVIEW GCP Billing Accounts & Resources Hierachy (shown below)
     - A billing account can be linked to one or more GCP projects and the billing account specifies how you pay (credit card, invoice...) for GCP services
    - A billing account is linked to a payment profile (individual or corporate)

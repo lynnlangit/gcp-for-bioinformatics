@@ -8,31 +8,25 @@
  To understand, select and configure GCP client tools to setup. 
  
 ### Intro
+GCP Client tools are provided by Google Cloud Platform to help manage cloud resources. They provide functionality such as security, billing management, resource monitoring, analytics and others.
+More informatin on GCP tools can be found [here](https://cloud.google.com/products/tools)
+During this tutorial I will be using tools and examples targeted towarss bioinformatics.
 
- TODO:Possibly reword 
- 
- GCP Client tools are tools provided by Google Cloud Platform to enable you control and manage your resources. GCP tools provide functionality from management to analytics to ...? TODO: complete this
-More informatin on GCP tools can be found here TODO: add link here
-For the purposes of thie bioinformatics learning session we will be focusing on GCP Cloud COmpute platform tool provided by google
-    
-
- There are broadly three kinds of management tools to manage GCP resources.  
+There are broadly three kinds of management tools used to manage GCP resources.  
     - Cloud Console
     - CLoud shell
     - Cloud SDK
 
 1. **Cloud Console (Web UI)** - [learn more](https://cloud.google.com/cloud-console) 
 
-the GCP console is the management console you see as soon as you log into GCP cloud navigate to your project folder. You should firstly see a dashboard containing summary inforamtion on your availible resources. This dashboard could be customized to ...TODO: see and enter here more information on dashboard features.
+The GCP console is the management interface that appears once logged into to your google cloud account. Next navigate to your project folder. Once selected, you should see a dashboard containing summary reports on the status of resources associated with the selected project. The dashboard can be customized to display relevant information on project resources.
 
-  
-example screen shown below
-    - Usage Tips:
-        - ZERO INSTALL
-        - Use Google chrome browser to access the GCP console
-        - Use the search box within the GCP console to quickly jump within the console (shown in the screen below with 'iam')
+[   ![GCP integrated search](/images/jump.png)]() 
 
-   [   ![GCP integrated search](/images/jump.png)]() 
+- Usage Tips:
+    - ZERO INSTALL
+    - Use Google chrome browser to access the GCP console
+    - Use the search box within the GCP console to quickly jump within the console (shown in the screen below with 'iam')
 
 2. **Cloud Shell** [learn more](https://cloud.google.com/shell) 
 
