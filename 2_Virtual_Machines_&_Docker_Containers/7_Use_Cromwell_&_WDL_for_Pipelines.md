@@ -53,21 +53,20 @@
 ### How to learn more
 
 #### Finding WDL Scripts for Reuse
- - :octocat: Example WDL files for bioinformatics tools - [link](https://github.com/biowdl/tasks) to BioWDL
- - :octocat: WDL pipeline template examples - [link](https://github.com/biowdl/pipeline-template) to BioWDL template
+ - :octocat: Example WDL scripts using bioinformatics tools which can be used in workflows - [link](https://github.com/biowdl/tasks) to BioWDL
+ - :octocat: WDL pipeline (workflow) template examples - [link](https://github.com/biowdl/pipeline-template) to BioWDL template
+  - :octocat: Source WDL for 5 Dollar Genome Analysis Pipeline - [link](https://github.com/gatk-workflows/five-dollar-genome-analysis-pipeline) includes JSON inputs, all data accessed from GCS public buckets
 
 #### Best practices for running WDL Workflows
 
  - 📘 Step-by-step [run GATK cromwell pipeline locally and then on GCP](https://software.broadinstitute.org/gatk/documentation/article?id=12521)
  - 📘 Link to [run a GATK best practices pipeline](https://cloud.google.com/genomics/docs/tutorials/gatk) on GCP
- - :octocat: Source WDL for 5 Dollar Genome Analysis Pipeline - [link](https://github.com/gatk-workflows/five-dollar-genome-analysis-pipeline) includes JSON inputs, all data accessed from GCS public buckets
  - 📺 Watch 38 minute [Intro to pipelining platforms](https://www.youtube.com/watch?v=HNONc2cmIO8&t=9s) screencast from the Broad, covers cromwell & WDL
- - 📘 Link to [Google Life Sciences Reference Architecture](https://cloud.google.com/solutions/genomic-data-processing-reference-architecture) on GCP.  
-   - Shown below is a reference architure using `cromwell` running with `Google Cloud Life Sciences` on GCP  
+ - 📘 Link to [Google Life Sciences Reference Architecture](https://cloud.google.com/solutions/genomic-data-processing-reference-architecture) using Google Cloud Platform services.  Shown below is a reference architure using `cromwell` running with `Google Cloud Life Sciences API` on GCP  
 
     [![life-sciences-cromwell](/images/life-sciences-cromwell.png)]()  
 
-#### Source code WDL, Cromwell and MiniWDL runner
+#### Source code for WDL, Cromwell & MiniWDL runner
  - :octocat: OpenWDL source code for WDL itself - [link](https://github.com/openwdl/wdl) on Github
  - :octocat: [Cromwell source code](https://github.com/broadinstitute/cromwell) on GitHub
  - :octocat: [Miniwdl](https://github.com/chanzuckerberg/miniwdl) - miniwdl provides WDL developer productivity tools, a local runtime implementation, and a foundation for language experimentation in Python 3.6+. It includes the following tools:
