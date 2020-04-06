@@ -1,10 +1,10 @@
 version 1.0
 
-workflow test {
-  call hello
+workflow HelloInput {
+  call Hello
 }
 
-task hello {
+task Hello {
   input {
     String name
   }

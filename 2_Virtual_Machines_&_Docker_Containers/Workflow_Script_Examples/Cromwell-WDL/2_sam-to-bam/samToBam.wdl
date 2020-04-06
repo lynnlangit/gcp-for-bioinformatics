@@ -22,7 +22,9 @@
 ## LICENSING : This script is released under the WDL source code license (BSD-3) (see LICENSE in https://github.com/broadinstitute/wdl). 
 ## Note however that the programs it calls may be subject to different licenses. Users are responsible for checking that they are authorized to run all programs before running this script. 
 ## Please see the docker for detailed licensing information pertaining to the included programs.
-##
+
+version 1.0
+
 #WORKFLOW DEFINITION
 workflow CramToBamFlow {
 Int cram_to_bam_disk_size
@@ -32,7 +34,6 @@ String validate_sam_file_mem_size
 
 String? gotc_docker_override
 String gotc_docker = select_first([gotc_docker_override, "broadinstitute/genomes-in-the-cloud:2.3.1-1500064817"])
-
 
 #converts CRAM to SAM to BAM and makes BAI
 call CramToBamTask{
