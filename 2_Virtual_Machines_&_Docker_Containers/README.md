@@ -14,7 +14,7 @@ Here are the topic pages in this section:
 - Use Terra.bio Notebook
 - Test Docker Container Image for Pipeline
 - Orchestrate Containers with GKE (Kubernetes)
-- Use Pipelines API
+- Use Google Life Sciences API (was Genomics API or Pipelines API)
 - Use Cromwell and WDL for Pipeline
 - Use Terra.bio Workflow
 - Use Nextflow for Pipeline

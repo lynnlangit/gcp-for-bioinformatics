@@ -62,8 +62,11 @@
 ### Other Things to Know
  
  - UNDERSTAND that BQ is a type of 'serverless' service, because you do NOT setup VMs or docker container clusters to use this service.  You simply upload your data, write your query and execute the query.  You are charged for query run time and BQ storage.  You are NOT charged for VMs, etc...
- - Use BQ best practices to manage service costs - [link](https://cloud.google.com/blog/products/data-analytics/cost-optimization-best-practices-for-bigquery) & one more [link](https://cloud.google.com/bigquery/docs/best-practices-costs) on the same topic
+
+ - USE BQ best practices to manage service costs - [link](https://cloud.google.com/blog/products/data-analytics/cost-optimization-best-practices-for-bigquery) & one more [link](https://cloud.google.com/bigquery/docs/best-practices-costs) on the same topic
  - SEE example BQ SQL queries for genomics - [link](https://github.com/verilylifesciences/variant-qc/tree/master/sql)
+ - USE the open source `Variant Transforms` tool to transform and load hundreds of thousands of files, millions of samples, and billions of records in a scalable manner. The tool also has a preprocessor which you can use to validate VCF files and identify inconsistencies. Variant Transforms is based on Apache Beam and uses GCP Dataflow - [link](https://cloud.google.com/life-sciences/docs/how-tos/variant-transforms)
+
  - USE BQ includes many genomic or annotation data sets, a list is shown below
  [![bq-public-data](/images/bq-public-data.png)]()
 
