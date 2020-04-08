@@ -1,24 +1,7 @@
 [![Chat on Gitter](https://img.shields.io/gitter/room/gcp-for-bioinformatics/nextflow.svg?colorB=26af64&style=popout)](https://gitter.im/gcp-for-bioinformatics)
 
 # Google Cloud Platform (GCP) for Bioinformatics
-This repository covers using ☁️Google Cloud Platform public cloud services for bioinformatics data analysis tasks.  The guidance is intended for researchers - in particular, this guide is for those who are **NEW to working with GCP**.  The info is based on advisory work my team has done with the groups shown below:
-
-[![bioinformatics-groups](/images/logos.png)]() 
-
----
-
-### Why would I choose to use a public cloud vendor for bioinformatics?
-
-[![flow-cell](/images/flow-cell.jpg)]() 
-
-- ⭐️Top Reasons:
-    - **Save Money** - run scaled analysis jobs exactly & only when you need to run them
-    - **Save Time** - use vendor-managed infrastructure & best-practice patterns for repeatable research -> get analysis results faster
-- 📗READ the [FAQ for GCP bioinformatics](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_FAQ.md) for this Repo
-- 📕READ Nature magazine: ["Cloud computing for genomic data analysis and collaboration"](https://www.nature.com/articles/nrg.2017.113)
-- 📗READ the top 4 most [common use cases](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/3_USER-STORIES.md) for using the public cloud for bioinformatics researchers
-
-----
+This repository covers using ☁️Google Cloud Platform public cloud services for bioinformatics data analysis tasks.  The guidance is intended for researchers - in particular, this guide is for those who are **NEW to working with GCP**.  
 
 ### 📺Click below to WATCH 'Lynn's Welcome Video' (4 min) on YouTube
 
@@ -38,4 +21,17 @@ Read about, watch demo or try out **EACH ☁️GCP service**, ordered by topic i
 3. 🔍SCAN - a list of a [Genomics file types](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/4_FILE-TYPES.md) with examples shown 
 
 -----
+
+### Why would I choose to use a public cloud vendor for bioinformatics?
+
+[![flow-cell](/images/flow-cell.jpg)]() 
+
+- ⭐️Top Reasons:
+    - **Save Money** - run scaled analysis jobs exactly & only when you need to run them
+    - **Save Time** - use vendor-managed infrastructure & best-practice patterns for repeatable research -> get analysis results faster
+- 📗READ the [FAQ for GCP bioinformatics](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_FAQ.md) for this Repo
+- 📕READ Nature magazine: ["Cloud computing for genomic data analysis and collaboration"](https://www.nature.com/articles/nrg.2017.113)
+- 📗READ the top 4 most [common use cases](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/3_USER-STORIES.md) for using the public cloud for bioinformatics researchers
+----
+
 
