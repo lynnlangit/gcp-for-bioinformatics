@@ -74,5 +74,6 @@ Tip: Connect your instance to a Cloud Storage bucket when latency and throughput
 
 ### How to learn more
  - 📘 Link to [GCE Pricing](https://cloud.google.com/compute/pricing#machinetype)
-  - 📘 Link to [GCP Configuration](https://cloud.google.com/deployment-manager/docs/configuration/create-basic-configuration) YAML file example
+ - 📘 Link to [GCP Configuration](https://cloud.google.com/deployment-manager/docs/configuration/create-basic-configuration) YAML file example
+ - 📘 Link to [Joint genotyping 10K whole genome sequences using Sentieon on Google Cloud](https://blog.dnastack.com/joint-genotyping-10k-whole-genome-sequences-using-sentieon-on-google-cloud-strategies-for-7ac77645d96d) Strategies for analyzing large sample sets
  - 📺 Link to video [GCE security best practices](https://www.youtube.com/watch?v=qDyjE1fIqkk)
