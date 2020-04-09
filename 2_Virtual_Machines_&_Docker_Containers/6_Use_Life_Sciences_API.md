@@ -8,7 +8,7 @@
  [![GCP Life Sciences Reference Architecture](/images/gcp-life-sciences-arch.png)]()
 
 ### What is this
- - USE Cloud Life Sciences API to orchestrate scalable genomic analysis running Compute Engine **without** manually configuring scaling of your compute cluster. The API is designed to be a backend for bionformatics tools (ex. dsub) or systems (cromwell), by providing job scheduling for Docker-based tasks that perform secondary genomic analysis on Compute Engine containers
+ - USE Cloud Life Sciences API to orchestrate scalable genomic analysis running Compute Engine **without** manually configuring scaling of your compute cluster. The API is designed to be a backend for bionformatics tools (ex. dsub) or systems (cromwell), by providing job scheduling for Docker-based tasks that perform secondary genomic analysis on Compute Engine containers. Secondary analysis includes, but is not limited to, filtering raw reads, aligning and assembling sequence reads, and QA and variant calling on aligned reads
  - USE Cloud Storage (file storage) + Pipelines API + BigQuery to create serverless end-to-end scalable genomic analysis jobs
 
 ### Key considerations
