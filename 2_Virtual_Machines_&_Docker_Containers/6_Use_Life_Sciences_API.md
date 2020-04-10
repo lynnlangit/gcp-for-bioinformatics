@@ -8,8 +8,13 @@
  [![GCP Life Sciences Reference Architecture](/images/gcp-life-sciences-arch.png)]()
 
 ### What is this
- - USE Cloud Life Sciences API to orchestrate scalable genomic analysis running Compute Engine **without** manually configuring scaling of your compute cluster. The API is designed to be a backend for bionformatics tools (ex. dsub) or systems (cromwell), by providing job scheduling for Docker-based tasks that perform secondary genomic analysis on Compute Engine containers. Secondary analysis includes, but is not limited to, filtering raw reads, aligning and assembling sequence reads, and QA and variant calling on aligned reads
- - USE Cloud Storage (file storage) + Pipelines API + BigQuery to create serverless end-to-end scalable genomic analysis jobs
+ - USE Google Cloud Storage + LifeSciences API + Variant Transforms API + BigQuery to create **serverless** end-to-end scalable genomic analysis jobs
+
+   - USE **Cloud Life Sciences API** to orchestrate scalable genomic analysis running Compute Engine **without** manually configuring scaling of your compute cluster. The API is designed to be a backend for bionformatics tools (ex. dsub) or systems (cromwell), by providing job scheduling for Docker-based tasks that perform secondary genomic analysis on Compute Engine containers. Secondary analysis includes, but is not limited to, filtering raw reads, aligning and assembling sequence reads, and QA and variant calling on aligned reads
+
+   - USE **Variant Transforms Tool** (an open-source tool) is based on Apache Beam and uses GCP Dataflow. Using the tool allows you to transform and load hundreds of thousands of files, millions of samples, and billions of records in a scalable manner into BigQuery. The tool also has a preprocessor which you can use to validate VCF files and identify inconsistencies.
+
+   - USE **BigQuery** to analyze variants using the SQL query language.
 
 ### Key considerations
  - This is a serverless solution because you work with services or API endpoints and you do NOT configure or manage VMs or containers
