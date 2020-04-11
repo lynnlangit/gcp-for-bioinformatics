@@ -25,3 +25,5 @@
 - See BEST PRATICES - [Use GCP security best practices](https://cloud.google.com/iam/docs/using-iam-securely) via GCP info page
 - Automate GCP services - [Learn more about automating GCP services](https://www.linkedin.com/learning/google-cloud-platform-essential-training-3) via my LinkedIn Learning GCP Essentials course
 - Script GCP tasks - [See examples of scripting GCP services](https://github.com/lynnlangit/gcp-essentials) via my LinkedIn Learning GCP Essentials course
+
+test
