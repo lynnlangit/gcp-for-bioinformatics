@@ -15,7 +15,7 @@
 
 ### TOOLS: Use Bioinformatics Research Tools from The Broad Institute
 - Use TERRA - [Run an example analysis on Terra.bio (on GCP)](https://app.terra.bio/#library/showcase) via Terra.bio info page
-- Use GATK - [Use GATK Quick Start Guide](https://software.broadinstitute.org/gatk/documentation/quickstart.php) via GATK info page
+- Use GATK - [Use GATK Quick Start Guide](https://software.broadinstitute.org/gatk/documentation/quickstart.php) via GATK (genomic analysis toolkit) info page
 - Use HAIL - [Use Hail](https://hail.is/) via Hail.is info page
 - Use IGV - [Use IGV](https://igv.org/) via IGV.org info page
 - Use the Tumor Portal - [Use Tumor Portal](http://www.tumorportal.org/) via TumorPortal.org info page
@@ -25,5 +25,3 @@
 - See BEST PRATICES - [Use GCP security best practices](https://cloud.google.com/iam/docs/using-iam-securely) via GCP info page
 - Automate GCP services - [Learn more about automating GCP services](https://www.linkedin.com/learning/google-cloud-platform-essential-training-3) via my LinkedIn Learning GCP Essentials course
 - Script GCP tasks - [See examples of scripting GCP services](https://github.com/lynnlangit/gcp-essentials) via my LinkedIn Learning GCP Essentials course
-
-test
