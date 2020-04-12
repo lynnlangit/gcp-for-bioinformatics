@@ -19,6 +19,7 @@
  - To access these public files, you can use a number of GCP services (such as Compute Engine VMs), or tools such as Terra.bio from The Broad or others.
     - Go to the [public REFERENCE Files](https://console.cloud.google.com/storage/genomics-public-data/) cloud storage bucket
     - Go to the [public ANNOTATION Files](https://console.cloud.google.com/storage/browser/gcs-public-data--genomics/human-variant-annotation) cloud storage bucket
+    -  USE the `htsget` protocol to access genomic datasets stored in GCS - [link](https://cloud.google.com/life-sciences/docs/how-tos/reading-data-htsget), used for larger-sized datasets (optimization for access speeds)
 
 ### How to verify you've done it
  - REFERENCE the file in a BigQuery query or a VM-based analysis
