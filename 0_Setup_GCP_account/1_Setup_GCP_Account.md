@@ -49,7 +49,7 @@
  - For FREE Tier, after you've spent your $300, GCP service costs are billed to **YOU** (via the credit information provided on account creation)
  - GCP service costs are billed to **YOUR COMPANY**  (or research group) for Organizational Accounts
  - SET UP a **GCP Budget** to get notified when GCP services exceed a service cost limit you set (this is useful for testing accounts) [more info here](https://cloud.google.com/billing/docs/how-to/budgets)
- - REVIEW GCP Billing Accounts & Resources Hierachy (shown below)
+ - REVIEW GCP Billing Accounts & Resources Hierarchy (shown below)
   - A billing account can be linked to one or more GCP projects and the billing account specifies how you pay (credit card, invoice...) for GCP services
   - A billing account is linked to a payment profile (individual or corporate)
 
