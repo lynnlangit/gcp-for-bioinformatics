@@ -27,9 +27,9 @@
 
 ### Other Things to Know
  - Data is encrypted by default in Cloud Storage using a Google-provided encryption key.  It is possible for you to supply your own encryption key when your requirements necessitate this.
- - You can use GCP service object labels to help you to indentify services instances that have different security requirements.  They are implemented as key:value tag pairs, i.e. `"lab":"langit-lab"` etc...
+ - You can use GCP service object labels to help you to identify services instances that have different security requirements.  They are implemented as key:value tag pairs, i.e. `"lab":"langit-lab"` etc...
 
-### How to learn more
+### Learn More
  - 📘 IAM Best practices - [link](https://cloud.google.com/iam/docs/using-iam-securely)
  - 📘 HIPPA compliant GCP services - [link](https://cloud.google.com/security/compliance/hipaa/)
  - 📘 GCP Security Whitepapers - [link](https://services.google.com/fh/files/misc/security_whitepapers_march2018.pdf)
