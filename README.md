@@ -34,4 +34,13 @@ Read about, watch demo or try out **EACH ☁️GCP service**, ordered by topic i
 - 📗READ the top 4 most [common use cases](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/3_USER-STORIES.md) for using the public cloud for bioinformatics researchers
 ----
 
+### Contibutions
+
+We love contributions! 
+
+See this [short style guide](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/7_CONTRIBUTING.md) when making pull requests to this repo.
+
+---
+
+
 
