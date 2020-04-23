@@ -1,16 +1,16 @@
 # Use Google Cloud File Storage
 
 
-### When to use Google Cloud File Storage?
+### Why do this
  - When your workload and data files are too big to run on your laptop
  - When you don't want to wait for time on your organization's shared cluster
 
-### Intro
-  Google Cloud Platform Cloud Storage is an online file storage webservice for storing, accessing and transferring data on the Google Cloud platform. 
+### What is this
+  Google Cloud Platform Cloud Storage is an online file storage web service for storing, accessing and transferring data files on the Google Cloud platform. 
   
-  GCP Cloud storage is the ideal location for input and output files when performing analysis (GCP Compute services) and workflows.
+  GCP Cloud Storage (or GCS) is frequently used as the input and output location for files when you run analysis (workflows or pipelines).
 
-  Files are organized in buckets. Think of buckets as basically folders in the root of the storage directory of your project. Buckets must have a globally unique name and subsequent folders in buckets are called folders and not buckets.  Below are a couple of considerations to have in mind when creating a bucket
+  Files are stored in buckets. Bucket usually contain folders for orgnaziation as well. Each bucket must have a globally unique name.  
 
 ### Key considerations
  - Understand costs and selecting the best fit type of storage for your data [here](https://cloud.google.com/storage/docs/locations)
