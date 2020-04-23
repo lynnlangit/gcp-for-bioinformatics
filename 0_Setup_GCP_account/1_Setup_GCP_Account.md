@@ -11,11 +11,11 @@
 
 ### Key considerations
  - Use the best GCP Account type:  
-      - **Use GCP Free Tier** (get $ 300 USD in GCP credits for new users) minimal service limits set by Google - [link](https://cloud.google.com/free) --OR--
+    - **Use GCP Free Tier** (get $ 300 USD in GCP credits for new users) minimal service limits set by Google - [link](https://cloud.google.com/free) --OR--
     - **Use Your Organization's GCP Account** - service limits set by your company & Google
  - Understand the size & complexity of your analysis  
  - Review your budget / timeline  
- - Determine the location (Google data center) for your project - [GCP data center locations](https://cloud.google.com/about/locations/) shown below
+ - Determine the best location (Google data center) for your project - [GCP data center locations](https://cloud.google.com/about/locations/) shown below
 
    [![GCP Locations](/images/all-regions.png)]()
 
@@ -29,7 +29,7 @@
    - USE **each** GCP Project as a container for **each** of your research projects
    - CREATE separate GCP projects, as a best practice (this allows you to more easily manage security & service costs by grant)
  - **ADD** GCP service instances to your GCP Project 
-    - Add servvices by data center location and GCP project name, for example...
+    - Add services by data center location and GCP project name, for example...
     - Add a Virtual Machine instance & a Cloud Storage bucket which are located...
       - in the Google datacenter in `us-east` --AND--
       - in your GCP Project named `my-research-project`
@@ -48,8 +48,8 @@
   - GCP FREE tier account have built-in service usage limits - [link](https://cloud.google.com/free/docs/gcp-free-tier)
  - GCP service costs are billed to **YOU** for FREE Tier (after you've spent your $300 credit)
  - GCP service costs are billed to **YOUR COMPANY**  (or research group) for Organizational Accounts
- - SET UP a **GCP Budget** to get notified when GCP services exceed a service cost limit you set (this is useful for testing accounts)
- - REVIEW GCP Billing Accounts & Resources Hierachy (shown below)
+ - SET UP a **GCP Budget** to get notified when GCP services exceed a service cost limit you set (this is useful for testing accounts) - [link](https://cloud.google.com/billing/docs/how-to/budgets)
+ - REVIEW GCP Billing Accounts & Resources Hierarchy (shown below)
     - A billing account can be linked to one or more GCP projects and the billing account specifies how you pay (credit card, invoice...) for GCP services
    - A billing account is linked to a payment profile (individual or corporate)
 
@@ -68,7 +68,7 @@
  - 📘 Link to [how to set up a budget alert](https://cloud.google.com/billing/docs/how-to/budgets)
  - 📘 Link to [GCP Billing concepts](https://cloud.google.com/billing/docs/concepts)
  - 📘 Link to [GCP Service Pricing Calculator](https://cloud.google.com/products/calculator/)
-  - 📘 Link to [Article on GCP Billing Accounts](https://medium.com/google-cloud/managing-billing-permissions-in-google-cloud-31906aa626a0)
+- 📘 Link to [Article on GCP Billing Accounts](https://medium.com/google-cloud/managing-billing-permissions-in-google-cloud-31906aa626a0)
 
 #### GCP Billing on Terra.bio
  - 📘 Link to [Tips for controlling costs](https://support.terra.bio/hc/en-us/articles/360029748111-Understanding-and-controlling-cloud-costs-) article written by team at The Broad
