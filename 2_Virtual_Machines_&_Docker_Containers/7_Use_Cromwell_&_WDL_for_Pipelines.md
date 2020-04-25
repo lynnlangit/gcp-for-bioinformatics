@@ -53,9 +53,10 @@
 ### How to learn more
 
 #### Finding WDL Scripts for Reuse
- - :octocat: Example WDL scripts using bioinformatics tools which can be used in workflows - [link](https://github.com/biowdl/tasks) to BioWDL
- - :octocat: WDL pipeline (workflow) template examples - [link](https://github.com/biowdl/pipeline-template) to BioWDL template
-  - :octocat: Source WDL for 5 Dollar Genome Analysis Pipeline - [link](https://github.com/gatk-workflows/five-dollar-genome-analysis-pipeline) includes JSON inputs, all data accessed from GCS public buckets
+- 📘RUN example WDL workflows on Terra (on GCP) using the Quickstart Workspace [link](https://app.terra.bio/#workspaces/fc-product-demo/Terra-Workflows-Quickstart)
+- :octocat: Example WDL scripts using bioinformatics tools which can be used in workflows - [link](https://github.com/biowdl/tasks) to BioWDL
+- :octocat: WDL pipeline (workflow) template examples - [link](https://github.com/biowdl/pipeline-template) to BioWDL template
+- :octocat: Source WDL for 5 Dollar Genome Analysis Pipeline - [link](https://github.com/gatk-workflows/five-dollar-genome-analysis-pipeline) includes JSON inputs, all data accessed from GCS public buckets
 
 #### Best practices for running WDL Workflows
 
