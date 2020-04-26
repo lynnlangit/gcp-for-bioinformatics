@@ -1,18 +1,21 @@
 [![Chat on Gitter](https://img.shields.io/gitter/room/gcp-for-bioinformatics/nextflow.svg?colorB=26af64&style=popout)](https://gitter.im/gcp-for-bioinformatics)
 
 # Google Cloud Platform (GCP) for Bioinformatics
-This repository covers using ☁️Google Cloud Platform public cloud services for bioinformatics data analysis tasks.  The guidance is intended for researchers - in particular, this guide is for those who are **NEW to working with GCP**.  
+This repository shows how to use ☁️Google Cloud Platform public cloud services for **bioinformatics data analysis** tasks at scale.  This type of use is also called workflows or pipelines.
+
+This content is intended for researchers - in particular, this guide is for those who are **NEW to working with GCP**.  This Repo includes content you can read, watch or run:  
+  1. 📗READ - one page of this Repo (MD page)
+  2. 📺WATCH -  linked YouTube screencasts
+  3. 📙TRY - Jupyter Notebook example
+  4. :octocat: TRY - linked GitHub Repos
+  5. 📘EXPAND - linked (external) resources
+  6. 🔍SCAN - search a list in this Repo
 
 ### 📺Click below to WATCH 'Lynn's Welcome Video' (4 min) on YouTube
 
 [![Welcome to GCP for Bioinformatics](http://img.youtube.com/vi/YoFkSVDlN6k/0.jpg)](http://www.youtube.com/watch?v=YoFkSVDlN6k "Welcome to GCP for Bioinformatics")
 
-Read about, watch demo or try out **EACH ☁️GCP service**, ordered by topic in this Repo:  
-1. 📗READ - one page explaining why, what & how to use for each service
-2. 📺WATCH -  short, linked screencast showing how to use for most services
-3. 📙TRY - run Jupyter notebook example using for some services 
-4. :octocat: TRY - use code examples from linked GitHub Repos
-5. 📘EXPAND - go to linked resources to learn about advanced aspects of each service
+
 ---
 
 ### To Understand the scope of services in this Repo 
