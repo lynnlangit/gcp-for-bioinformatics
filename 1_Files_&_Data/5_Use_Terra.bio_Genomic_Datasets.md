@@ -1,16 +1,26 @@
-# Use Terra.bio Genomic Data
+# Use Terra.bio Genomic Reference Datasets
 
 ### Why do this
- - USE genomic reference data in cloud-based analysis. GCP hosts a number of genomic reference datasets in GCS buckets. Terra runs on GCP (capabilities shown above).
-  - USE data with bioinformatics tools ([GATK](https://software.broadinstitute.org/gatk/), [Hail](https://hail.is/)...) & workflows on Jupyter notebooks or run scalable analysis on GCP without manually configuring Jupyter Hub, Cloud Storage & VMs (or container clusters)
- - READ - [The future of GATK tutorials is written in Notebooks](https://software.broadinstitute.org/gatk/blog?id=24167)
+ - USE genomic reference datasets in cloud-based analysis  
+    - GCP hosts a number of genomic reference datasets in GCS buckets. 
+    - Many of these datasets can be accessed by the Terra.bio platform (which runs on GCP).
+  - USE GCP reference data with bioinformatics tools without having to upload any reference data to the cloud
+    - [GATK](https://software.broadinstitute.org/gatk/) - genomic analysis toolkit
+    - [Hail](https://hail.is/) - variant discovery library 
+    - Your custom workflow 
+      - Run Jupyter notebooks on Terra --or-- 
+      - Run scalable workflows Terra
+ 
 
  Core Terra Capabilities
  [![terra-features](/images/terra-features.png)]()
 
 ### What is this
 
- USE Terra reference data in your analysis jobs. Terra includes the ability to reference a number of datasets that are hosted in the cloud already.   
+ USE Terra reference data in your analysis jobs. Terra includes the ability to reference a number of datasets that are hosted in the cloud already. 
+
+ Terra Reference Datasets
+ [![ref-datasets](/images/ref-datasets.png)]()  
 
 ### Key considerations
 - Many Terra (GCP) datasets require authenticated access.  The **'1000 Genomes' dataset** has public access.
@@ -65,8 +75,8 @@ Click the top left menu and Create a Workspace to get started
  - Terra terms:
     - **Workspace** -> Container for workflow(s)
     - **Notebook** -> Jupyter notebook (*.ipynb file type)
-    - **Tables** -> your imported reference datasets
-    - **Reference Data** -> public reference data
+    - **Tables** -> .tsv files which include file identifier and URI to your input data files. Input data is stored in GCS buckets. These metadata files create aliases and pointers to your input files. These aliases are referenced in Terra worflows (as variables)
+    - **Reference Data** -> public reference data, such as 'hg38'.
     - **Workspace (Other) Data** -> your uploaded research data - the 'Data' tab in the Terra UI
       More about the Terra Data Model - [link](https://gatkforums.broadinstitute.org/firecloud/discussion/9769/data-model)
       - Participant -> a person enrolled in a study
@@ -81,6 +91,7 @@ Click the top left menu and Create a Workspace to get started
  - 📙 Try out some example Terra notebooks using the [Terra Notebooks Playground](https://app.terra.bio/#workspaces/help-gatk/Terra%20Notebooks%20Playground) workspace - examples using Python, R and also many bioinformatics tools
  - 📙 Try out some example Terra notebooks (Jupyter_Notebook_Examples folder), includes using the [CSIRO Bioinformatics VariantSpark](https://bioinformatics.csiro.au/variantspark) library and other bioinformatics libraries.
  - 📙 Try out some of these bioinformatics tools using [example Jupyter notebooks](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/2_Virtual_Machines_%26_Docker_Containers/Jupyter_Notebook_Examples)
+- 📘 Link to [The future of GATK tutorials is written in Notebooks](https://software.broadinstitute.org/gatk/blog?id=24167)
 - 📘 Links to [Terra articles](https://support.terra.bio/hc/en-us)
 or to [Terra community forum](https://support.terra.bio/hc/en-us/community/topics/360000500432) hosted by the Broad
  - 📺  Watch 32 minute [Intro to Terra](https://www.youtube.com/watch?v=9kffTkK-B7g) screencast by the Broad
