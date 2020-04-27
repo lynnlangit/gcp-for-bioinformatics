@@ -44,11 +44,13 @@ Cloud Shell provides the following:
 3.  **Google Colabs** - [link to site](https://colab.research.google.com) example shown to the left:
 This is also called GCP Colaboratory.  It started as a project at Google Research.
     - Colabs features ZERO INSTALL, Jupyter-style notebooks 
-    - Colabs includes many samples for connecting to key GCP services (storage, BigQuery, Machine Learning and others)
+    - Colabs includes many samples for connecting to key GCP services 
+        - GCS storage, BigQuery, Machine Learning w/TensorFlow and other services)
         - hosted for free on GCP Cloud Infrastructure
         - resources (CPUs, Memory, etc...) are constrained by GCP
         - you can add GPU or TPU (specialized processors) to your Jupyter notebook computation
-    - NOTE: It is also possible to connect to GCP service with standard [Jupyter notebooks](https://jupyter.org/).  These notebooks can be run remotely (on GCP) or installed on your local machine
+    - NOTE: It is also possible to connect to GCP service with standard [Jupyter notebooks](https://jupyter.org/).  
+    - These notebooks can be run remotely (on GCP) or installed on your local machine
 
 ---
 
