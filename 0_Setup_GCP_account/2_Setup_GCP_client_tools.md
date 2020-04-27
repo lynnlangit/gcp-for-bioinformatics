@@ -19,6 +19,8 @@
 
 [   ![GCP integrated search](/images/jump.png)]()    
 
+---
+
 2. **GCP cloud shell** (integrated GCP client from withing the GCP console) - shown below in animated image.   
 Cloud Shell provides the following:
     - ZERO INSTALL, runs in GCP Web UI
@@ -35,14 +37,23 @@ Cloud Shell provides the following:
 
 [   ![GCP integrated shell](/images/shellstart-update.gif)]()
 
+---
+
  <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/colabs.png" width="460" align="left"> 
 
 3.  **Google Colabs** - [link to site](https://colab.research.google.com) example shown below
     - ZERO INSTALL, Jupyter-style notebooks with many samples for connecting to key GCP services (storage, BigQuery, Machine Learning and others)
     - NOTE: It is also possible to connect to GCP service with standard [Jupyter notebooks](https://jupyter.org/).  These notebooks can be run remotely (on GCP) or installed on your local machine
 
+---
+
 4.  **GCP cli** - part of GCP SDK (gcloud, gsutil, bq... script tools) - REQUIRES INSTALLATION - [download](https://cloud.google.com/sdk/)
+
+---
+
 5.  **GCP SDK** - available in many programming languages, Python, Go, Java... - REQUIRES INSTALLATION - [download](https://cloud.google.com/sdk/)
+
+---
 
 ### Key considerations
  - Use the **GCP console** when you are LEARNING about GCP Services
