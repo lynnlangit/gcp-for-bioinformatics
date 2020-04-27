@@ -35,4 +35,4 @@
 ### How to learn more
  - 📘 Link to [GCP Public Datasets](https://cloud.google.com/genomics/docs/public-datasets/) image shown below lists currently available datasets
 
- [![public-datasets](/images/public-datasets.png)](https://cloud.google.com/genomics/docs/public-datasets/)
+ <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/public-datasets.png" width="460" align="left"> 
