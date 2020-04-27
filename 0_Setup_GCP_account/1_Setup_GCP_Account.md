@@ -23,7 +23,7 @@
     - GCP cloud has regional data centers which are further divded into zones within the physical data center location
     - global [GCP data center locations](https://cloud.google.com/about/locations/) shown below
 
-   [![GCP Locations](/images/all-regions.png)]()
+   [![GCP Locations](/images/regions.png)]()
 
  NOTE: There are many bioinformatics analysis workflow tools, libraries & solutions which can be run on top of core GCP services.  Examples include [Terra.bio (was Firecloud)](https://terra.bio/), [cromwell](https://cromwell.readthedocs.io/en/stable/), [Nextflow.io](https://www.nextflow.io/) and many others.
 
