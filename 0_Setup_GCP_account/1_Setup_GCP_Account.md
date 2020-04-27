@@ -11,12 +11,16 @@
 
 ### Key considerations
  - Use the best fit GCP Account type:  
-    - **Use GCP Free Tier** (get $ 300 USD in GCP credits for new users) minimal service limits set by Google - [link](https://cloud.google.com/free) --OR--
+    - **Use GCP Free Tier** - get $ 300 USD in GCP credits for new users. Use GCP with minimal-sized service limits set by Google (i.e max number of CPUs for VMs...) - [link to free tier](https://cloud.google.com/free) 
+
+    --OR--  
+
     - **Use Your Organization's GCP Account** - service limits set by your company & Google
  - Understand your project scope:
     - the size & complexity of your analysis  
     - your project budget / timeline  
  - Determine the best location (Google data center):
+    - GCP cloud has regional data centers which are further divded into zones within the physical data center location
     - global [GCP data center locations](https://cloud.google.com/about/locations/) shown below
 
    [![GCP Locations](/images/all-regions.png)]()
