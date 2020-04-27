@@ -10,12 +10,14 @@
  - Preparation for running analysis on public cloud services hosted by GCP
 
 ### Key considerations
- - Use the best GCP Account type:  
+ - Use the best fit GCP Account type:  
     - **Use GCP Free Tier** (get $ 300 USD in GCP credits for new users) minimal service limits set by Google - [link](https://cloud.google.com/free) --OR--
     - **Use Your Organization's GCP Account** - service limits set by your company & Google
- - Understand the size & complexity of your analysis  
- - Review your budget / timeline  
- - Determine the best location (Google data center) for your project - [GCP data center locations](https://cloud.google.com/about/locations/) shown below
+ - Understand your project scope:
+    - the size & complexity of your analysis  
+    - your project budget / timeline  
+ - Determine the best location (Google data center):
+    - global [GCP data center locations](https://cloud.google.com/about/locations/) shown below
 
    [![GCP Locations](/images/all-regions.png)]()
 
@@ -66,6 +68,7 @@
 #### GCP Billing
 
  - 📘 Link to [how to set up a budget alert](https://cloud.google.com/billing/docs/how-to/budgets)
+- 📘 Link to [best practices for optimizing cloud costs](https://cloud.google.com/blog/products/gcp/best-practices-for-optimizing-your-cloud-costs)
  - 📘 Link to [GCP Billing concepts](https://cloud.google.com/billing/docs/concepts)
  - 📘 Link to [GCP Service Pricing Calculator](https://cloud.google.com/products/calculator/)
 - 📘 Link to [Article on GCP Billing Accounts](https://medium.com/google-cloud/managing-billing-permissions-in-google-cloud-31906aa626a0)
