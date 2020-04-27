@@ -1,12 +1,19 @@
 # Setup GCP Project Security
 
 ### Why do this
- - Learn how to secure your analysis data
- - Learn how to secure your GCP project resources
-
+ - Learn how to secure your GCP project resources (Virtual machine instances, Cloud storage buckets,...)
+ - Learn how to secure your analysis data via assigned access permissions and/or data encryption
+ 
 ### What is this
- - Google Cloud provides  uses IAM (Identity and Access Management) objects to allow you to configure security
- - GCP makes services available as either services, APIs or services which include APIs
+ - Google Cloud provides uses IAM (Identity and Access Management) objects to allow you to configure security
+ - GCP IAM objects includes members, roles, permissions, keys and other security objects
+ - GCP allows you to enable the use of selected cloud services in your account in one of three ways:
+    - using enabled **services** (such as 'create VM using Google Compute Engine service' by clicking on GCP 
+    console or using `gcloud create...`)
+    - using enabled **APIs** (such as 'create VM instance' using GCP Cloud SDK) --or--
+    - using enabled services which include API access
+
+NOTE: Most GCP services are disabled by default.  You must first explicitly enable a service in your account, then you can create service instances of that service (such as VM instances in Google Compute Engine)
 
 ### Key considerations
  - Only enable services/APIs that you are using in your GCP Project
