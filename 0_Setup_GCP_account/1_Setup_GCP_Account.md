@@ -48,7 +48,7 @@
  - VIEW your account login (upper right of console)
  - VIEW your project name, shown as 'gcp-for-bioinformatics' below
 
- <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/gcp-account.png" width="460" align="left">  
+ <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/gcp-account.png" width="460" align="right">  
 
 
 ### Other Things to Know
