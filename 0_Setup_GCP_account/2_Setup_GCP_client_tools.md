@@ -41,11 +41,11 @@ NOTE: You can download the GCP SDK(https://cloud.google.com/sdk/) and use `gclou
 
 ---
 
- <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/colabs.png" width="460" align="left"> 
+ <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/colabs.png" width="460" align="right"> 
 
-3.  **Google Colabs** - [link to site](https://colab.research.google.com) example shown to the left:
+3.  **Google Colabs** - [link to site](https://colab.research.google.com) example shown to the right:
 
-This is also called GCP Colaboratory.  Colabs was originally a project at Google Research.  
+This service is also called GCP Colaboratory.  Colabs was originally a project at Google Research.  
     - Colabs features ZERO INSTALL, Jupyter-style notebooks   
     - Colabs includes many samples for connecting to key GCP services   
         - GCS storage, BigQuery, Machine Learning w/TensorFlow and other services)  
