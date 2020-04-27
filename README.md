@@ -27,7 +27,7 @@ This content is intended for researchers - in particular, this guide is for thos
 
 ### Why would I choose to use a public cloud vendor for bioinformatics?
 
-[![flow-cell](/images/flow-cell.jpg)]() 
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/flow-cell.jpg" width="460" align="left">
 
 - ⭐️Top Reasons:
     - **Save Money** - run scaled analysis jobs exactly & only when you need to run them
