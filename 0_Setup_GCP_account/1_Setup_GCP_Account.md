@@ -48,7 +48,8 @@
  - VIEW your account login (upper right of console)
  - VIEW your project name, shown as 'gcp-for-bioinformatics' below
 
- [![gcp-account](/images/gcp-account.png)]()
+ <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/gcp-account.png" width="460" align="left">  
+
 
 ### Other Things to Know
   - GCP FREE tier account have built-in service usage limits - [link](https://cloud.google.com/free/docs/gcp-free-tier)
