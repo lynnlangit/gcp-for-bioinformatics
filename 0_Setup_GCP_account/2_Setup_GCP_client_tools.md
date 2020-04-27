@@ -41,8 +41,10 @@ Cloud Shell provides the following:
 
  <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/colabs.png" width="460" align="left"> 
 
-3.  **Google Colabs** - [link to site](https://colab.research.google.com) example shown to the left
-    - ZERO INSTALL, Jupyter-style notebooks with many samples for connecting to key GCP services (storage, BigQuery, Machine Learning and others)
+3.  **Google Colabs** - [link to site](https://colab.research.google.com) example shown to the left:
+This is also called GCP Colaboratory.  It started as a project at Google Research.
+    - Colabs features ZERO INSTALL, Jupyter-style notebooks 
+    - Colabs includes many samples for connecting to key GCP services (storage, BigQuery, Machine Learning and others)
         - hosted for free on GCP Cloud Infrastructure
         - resources (CPUs, Memory, etc...) are constrained by GCP
         - you can add GPU or TPU (specialized processors) to your Jupyter notebook computation
