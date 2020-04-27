@@ -37,6 +37,8 @@ Cloud Shell provides the following:
 
 [   ![GCP integrated shell](/images/shellstart-update.gif)]()
 
+NOTE: You can download the GCP SDK(https://cloud.google.com/sdk/) and use `gcloud` commands from your local laptop. 
+
 ---
 
  <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/colabs.png" width="460" align="left"> 
@@ -52,14 +54,6 @@ This is also called GCP Colaboratory.  Colabs was originally a project at Google
         - you can add GPU or TPU (specialized processors) to your Jupyter notebook computation  
     - NOTE: It is also possible to connect to GCP service with standard [Jupyter notebooks](https://jupyter.org/).    
     - These notebooks can be run remotely (on GCP) or installed on your local machine  
-
----
-
-4.  **GCP cli** - part of GCP SDK (gcloud, gsutil, bq... script tools) - REQUIRES INSTALLATION - [download](https://cloud.google.com/sdk/)
-
----
-
-5.  **GCP SDK** - available in many programming languages, Python, Go, Java... - REQUIRES INSTALLATION - [download](https://cloud.google.com/sdk/)
 
 ---
 
