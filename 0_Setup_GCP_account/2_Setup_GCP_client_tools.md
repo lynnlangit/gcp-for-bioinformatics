@@ -44,16 +44,15 @@ NOTE: You can download the GCP SDK(https://cloud.google.com/sdk/) and use `gclou
  <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/colabs.png" width="460" align="right"> 
 
 3.  **Google Colabs** - [link to site](https://colab.research.google.com) example shown to the right:
-
 This service is also called GCP Colaboratory.  Colabs was originally a project at Google Research.  
-    - Colabs features ZERO INSTALL, Jupyter-style notebooks   
-    - Colabs includes many samples for connecting to key GCP services   
+    - Colabs features ZERO INSTALL, Jupyter-style notebooks 
+        - Notebooks can be run for FREE on GCP Cloud Infrastructure 
+        - resources (CPUs, Memory, etc...) are constrained by GCP 
+    - Colabs includes many samples for connecting to key GCP services such as these:
         - GCS storage, BigQuery, Machine Learning w/TensorFlow and other services)  
-        - hosted for free on GCP Cloud Infrastructure  
-        - resources (CPUs, Memory, etc...) are constrained by GCP  
         - you can add GPU or TPU (specialized processors) to your Jupyter notebook computation  
     - NOTE: It is also possible to connect to GCP service with standard [Jupyter notebooks](https://jupyter.org/).    
-    - These notebooks can be run remotely (on GCP) or installed on your local machine  
+    - These notebooks can be run remotely (on GCP) or downloaded and run on your local machine w/Jupyter installed
 
 ---
 
