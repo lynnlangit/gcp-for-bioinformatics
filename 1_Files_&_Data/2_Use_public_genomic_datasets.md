@@ -11,6 +11,7 @@
 
 ### Key considerations
  - Google adds more reference files as they become available
+ - Many public healthcare or genomic datasets are listed in the [GCP Marketplace](https://console.cloud.google.com/marketplace/browse?filter=solution-type:dataset&filter=category:health)
 
 ### How to do this
  - Interactive access is available in the BigQuery console. You can explore variant calls in case/control & cohort analysis. There are sample queries to help you get started. [GO TO CLOUD GENOMICS DATASETS IN BIGQUERY](https://bigquery.cloud.google.com/project/genomics-public-data)
