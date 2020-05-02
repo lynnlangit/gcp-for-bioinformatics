@@ -25,9 +25,9 @@ The sections of the reference architecture outlined in red will be covered.
 
 [![gcp-compute](/images/compute.png)]()
 
-Bioinformatics APIs include the following: dsub, cromwell, Terra.bio and Nextflow. 
+Bioinformatics APIs (or workflow languages) include the following: dsub, cromwell, Terra.bio and Nextflow. 
 
-There are a number of possible ways to construct high volume data analysis workflows or pipelines on GCP with these purpose-built APIs.  In addition there is a specialized GCP API for Genomics workloads - it's called the Google Genomics/Pipelines API.  
+There are a number of possible ways to construct high volume data analysis workflows or pipelines on GCP with these purpose-built APIs.  In addition there is a specialized GCP API for Genomics workloads - it's called the Google Cloud Life Sciences API(was Genomics/Pipelines API).  
 
 ### Use a Map
 
