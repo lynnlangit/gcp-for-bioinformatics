@@ -1,14 +1,15 @@
 version 1.0
 
 workflow HelloInput {
-  call Hello
+  call WriteGreeting
 }
 
-task Hello {
+task WriteGreeting {
   input {
     String name
   }
-
+  
+  # specify parameter value (name) in `helloInput.json` file
   command {
     echo 'hello ${name}!'
   }

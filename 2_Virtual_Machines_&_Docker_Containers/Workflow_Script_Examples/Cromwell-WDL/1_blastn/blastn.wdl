@@ -1,15 +1,20 @@
 version 1.0
 
 workflow blastnWorkflow {
-   String path
+   input {
+      String path
+   }
+   
    call blastn {
       input: path=path
    }
 }
 
 task blastn {
-   String path
 
+   input{
+      String path
+   }
    command {
       bash blast.sh ${path}
    }
@@ -19,7 +24,7 @@ task blastn {
    }
 
    runtime {
-      docker: "registry.dockerhub.com/lynnlangit/blastn:latest"
+      docker: "lynnlangit/blastn:latest"
    }
 }
 

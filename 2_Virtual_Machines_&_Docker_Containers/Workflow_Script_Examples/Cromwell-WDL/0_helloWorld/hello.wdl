@@ -6,13 +6,11 @@ workflow HelloWorld {
 
 task WriteGreeting {
   command {
-     echo "Hello World"
+     echo "Hello"
   }
   output {
+     # Write output to standard out
      File output_greeting = stdout()
   }
-  runtime {
-      docker: "lynnlangit/blastn:latest"
-   }
 }
 
