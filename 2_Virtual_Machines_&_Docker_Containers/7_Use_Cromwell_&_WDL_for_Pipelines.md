@@ -1,16 +1,15 @@
-# Use Cromwell & WDL to build workflows
+# Use Cromwell & WDL 
 
 ### Why do this
- - USE the open source [cromwell](https://github.com/broadinstitute/cromwell) orchestration engine to scale your analysis job(s) on the public cloud or to other locations (i.e. HPC...)
- - USE the open source [WDL (workflow definition language)](https://software.broadinstitute.org/wdl) to configure the cromwell orchestration engine 
-   - Use WDL scripts to configure your tool/workflow inputs & outputs
-      - Common tools include the following:
+ - USE cromwell & WDL to create and run analysis at scale in your choice of location
+   - USE [cromwell](https://github.com/broadinstitute/cromwell) orchestration engine to scale your analysis job(s) on the public cloud or to other locations (i.e. HPC...). Cromwell is a open source Workflow Management System geared towards scientific workflows.
+   - USE [WDL (workflow definition language)](https://software.broadinstitute.org/wdl) to define and configure cromwell workflows. WDL is an open source languge.
+      - Use WDL scripts to configure your tool/workflow inputs & outputs. Configurable tools include the following:
          - GATK
          - HAIL
          - Picard
          - Custom tools or scripts
-   - Use WDL scripts to configure execution environments (i.e. local, public cloud...) & resources allocated for each execution.  
-      - Configurable resources include the following:
+      - Use WDL scripts to configure execution environments (i.e. local, public cloud...) & resources allocated for each execution.  Configurable resources include the following:
          - Docker container image locations
          - Task batch sizes
          - VM configuration (CPU, RAM, pre-emptible..)
@@ -18,7 +17,7 @@
 
   <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/wdl-cromwell.png" width=500 align=right> 
 
- Conceptual workflow pattern is shown the the right.  Note the use of docker container images as well.  It's common to use bioinformatics tools, such as GATK or Hail with cromwell in pipelines. 
+ A conceptual workflow pattern for WDL + cromwell is shown the the right.  Note the use of docker container images as well.  As mentioned, tt's common to use standard bioinformatics tools, such as GATK or Hail as tasks in cromwell pipelines. 
 
 ### What is this
  - Scaling Compute Engine Virtual Machine instances w/Google Life Sciences API, cromwell orchestration using WDL language. NOTE: Google Life Sciences API was called Google Genomics/Pipelines API previously.
@@ -37,8 +36,7 @@
 
 ### How to do this
  - START with this 5 minute intro to cromwell & WDL - [link](https://cromwell.readthedocs.io/en/stable/tutorials/FiveMinuteIntro/)
-     - Be sure to put the cromwell jar file and the WDL file in the same directory
-     - Verify that the cromwell version in the run command is the same as the version of the jar file you're using
+ - LEARN WDL syntax by example in this set of lessons - [link](https://github.com/openwdl/learn-wdl)
  - [This tutorial](https://wdl-runner.readthedocs.io/en/latest/GettingStarted/TutorialOverview/#tutorial-scenario) shows running a multi-stage workflow on GCP
     - The workflow is **launched** with Google Life Sciences API
     - The workflow is **defined** using WDL
@@ -53,10 +51,12 @@
 
 ### Other Things to Know
  - General GATK tool usage best practice guidlines from The Broad - [link](https://software.broadinstitute.org/gatk/best-practices/)
- - Cromwell can be run in '(run) stand-alone' or '(persistent) server mode'
-    - VERIFY the version of Cromwell, WDL and tools when creating workflows (i.e. v44) - [link](https://github.com/broadinstitute/cromwell/releases/download/44/cromwell-44.jar)
+ - Cromwell workflows can be run in one of two modes:
+  - '(run) stand-alone'(to run a single workflow) --or-- 
+  - '(server) persistent-mode'(to run multiple workflows)
+    - VERIFY the version of Cromwell, WDL and tools when creating workflows (i.e. v50) - [link](https://github.com/broadinstitute/cromwell/releases/download/50/cromwell-50.jar)
     - USE the 'wdl_runner' tool to run/test Cromwell workflows locally - [link](https://github.com/broadinstitute/wdl-runner)
-    - USE the Broad's 'WOM tool' to validate WDL workflow syntax - [link](https://github.com/broadinstitute/cromwell/releases/download/44/womtool-44.jar)
+    - USE the Broad's 'WOM tool' to validate WDL workflow syntax - [link](https://github.com/broadinstitute/cromwell/releases/download/50/womtool-50.jar)
     - USE the Broad's Terra platform to run your workflow on a persistent Cromwell server using a web UI - [link](https:/terra.bio)
  - Cromwell is runnable in a variety of compute environments, see graphic below
 
