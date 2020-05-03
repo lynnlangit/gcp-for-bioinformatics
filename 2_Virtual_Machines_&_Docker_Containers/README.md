@@ -1,8 +1,10 @@
 # Use GCP for Virtual Machines & Docker Containers
 
-In this section, you'll get information about using Google Cloud services to run VMs or docker container images.  You'll use Google Compute Engine VMs.  Also you'll use services for docker containers including Google Kubernetes Engine (or K8).  
+In this section, you'll get information about using Google Cloud services to run Virtual Machines (VMs) or docker container images on GCP.  You'll use Google Compute Engine VMs or GCE instance (Google Compute Engine.  Additionally you can use services to orchestrate clusters of VMs or docker containers such as Google Kubernetes Engine (or K8).  
 
-Additionally you'll use bioinformatics pipeline & workflow APIs to coordinate VMs & containers.  You'll also see how to create a Notebook instance VM using a GCP template, so that you can use a Jupyter notebook for your analysis job.
+Alternatively you can use bioinformatics pipeline & workflow language (APIs) to coordinate groups of VMs or containers.  These languages include WDL, Nextflow and others.
+
+You'll also see how to create a Notebook instance VM using a GCP template, so that you can use a Jupyter notebook for your analysis job.
 
 ### 📺 Click below to see Lynn's 3 minute intro to this section  
 [![GCP Compute](http://img.youtube.com/vi/hTdBDlrf80w/0.jpg)](http://www.youtube.com/watch?v=hTdBDlrf80w "Intro GCP Services for Compute")
@@ -25,9 +27,9 @@ The sections of the reference architecture outlined in red will be covered.
 
 [![gcp-compute](/images/compute.png)]()
 
-Bioinformatics APIs (or workflow languages) include the following: dsub, cromwell, Terra.bio and Nextflow. 
+Bioinformatics APIs (or workflow languages) include the following: dsub, cromwell/WDL, Terra.bio (which implements cromwell/WDL on GCP) and Nextflow. 
 
-There are a number of possible ways to construct high volume data analysis workflows or pipelines on GCP with these purpose-built APIs.  In addition there is a specialized GCP API for Genomics workloads - it's called the Google Cloud Life Sciences API (was Genomics/Pipelines API).  
+There are a number of possible ways to construct high volume data analysis workflows or pipelines on GCP with these purpose-built APIs.  In addition there is a specialized GCP API for scaling Genomics workloads on the Google Cloud. This API is named the Google Cloud Life Sciences API (was Genomics/Pipelines API).  
 
 ### Use a Map
 
