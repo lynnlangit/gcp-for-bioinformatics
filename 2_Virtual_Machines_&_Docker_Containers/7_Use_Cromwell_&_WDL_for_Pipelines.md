@@ -1,19 +1,11 @@
 # Use Cromwell & WDL 
 
 ### Why do this
- - USE cromwell & WDL to create and run analysis at scale in your choice of location
-   - USE [cromwell](https://github.com/broadinstitute/cromwell) orchestration engine to scale your analysis job(s) on the public cloud or to other locations (i.e. HPC...). Cromwell is a open source Workflow Management System geared towards scientific workflows.
-   - USE [WDL (workflow definition language)](https://software.broadinstitute.org/wdl) to define and configure cromwell workflows. WDL is an open source languge.
-      - Use WDL scripts to configure your tool/workflow inputs & outputs. Configurable tools include the following:
-         - GATK
-         - HAIL
-         - Picard
-         - Custom tools or scripts
-      - Use WDL scripts to configure execution environments (i.e. local, public cloud...) & resources allocated for each execution.  Configurable resources include the following:
-         - Docker container image locations
-         - Task batch sizes
-         - VM configuration (CPU, RAM, pre-emptible..)
-         - and many other settings
+ USE cromwell & WDL to create and run analysis at scale in your choice of location (cloud, HPC...)
+- USE [cromwell](https://github.com/broadinstitute/cromwell) orchestration engine to scale your analysis job(s) on the public cloud or to other locations (i.e. HPC...). Cromwell is a open source Workflow Management System geared towards scientific workflows.
+- USE [WDL (workflow definition language)](https://software.broadinstitute.org/wdl) to define and configure cromwell workflows. WDL is an open source languge.
+   - Use WDL scripts to configure your tool/workflow inputs & outputs. Examples of configurable tools include GATK, Hail, Picard and others
+   - Use WDL scripts to configure execution environments (i.e. local, public cloud...) & resources allocated for each execution.  Examples of configurable resources include Docker container image locations, task batch sizes, VM configuration (CPU, RAM, pre-emptible..) and others
 
   <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/wdl-cromwell.png" width=500 align=right> 
 
