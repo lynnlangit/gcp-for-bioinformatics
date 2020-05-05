@@ -8,7 +8,7 @@
  - Nextflow can run on GCP or many other providers
  - Nextflow can run on GCP in two ways:
    - Run jobs on Compute Engine VMs (can run bioinformatics tools from Docker)
-   - Run jobs on Compute Engine VMS **& Genomics Pipelines API**
+   - Run jobs on Compute Engine VMS **& Life Sciences (Genomics Pipelines) API**
 
 ### Key considerations
 - Understand core Nextflow features - [link](https://www.nextflow.io/index.html#Features)
@@ -49,6 +49,8 @@ Nextflow RNAseq Dockerfile - uses bowtie, cufflinks and tophat tools
 
 ### How to learn more
  - 📘 Link to [Nextflow on GCP](https://www.nextflow.io/docs/latest/google.html)
+ - 📘 Link to [Nextflow on GCP Life Sciences API tutorial](https://cloud.google.com/life-sciences/docs/tutorials/nextflow)
+ - TIP: If you are doing this tutorial create a GCS bucket name with letters or numbers only (no underscores)
  - :octocat: Review featured Nextflow pipelines - [link](https://github.com/nextflow-io/awesome-nextflow)
  - 📘 Read about [Pipeliner for Nextflow paper](https://www.biorxiv.org/content/biorxiv/early/2018/11/23/476515.full.pdf)
  - 📺 Watch Nextflow presentations - [link](https://www.nextflow.io/presentations.html)
