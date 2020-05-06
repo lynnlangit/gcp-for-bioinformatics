@@ -56,15 +56,4 @@ All written content should follow these principles:
 
 Content should maintain a quickly scanable tone. This course is meant as an introduction to using GCP services for those who are new to cloud and working in bioinformatics research.
 
-## Mentions
-
-When referring to people that use GitHub, use @mentions of their username instead of their full name.
-
-- :smile: As @jessfraz put it...
-- :cry: As [Jess Frazelle](https://github.com/jessfraz) put it...
-
-When referring to a project on GitHub, link to the repository so others can dive deeper, if they choose.
-
-- :smile: @maxogden took a similar approach to [Dat](https://github.com/datproject/dat)...
-- :cry: @maxogden took a similar approach to Dat...
 
