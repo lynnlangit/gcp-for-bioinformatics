@@ -41,7 +41,7 @@ We love contributions!  Here are some tips for creating contributions to this op
 
 ----
 
-Keep Pull Requests small
+## Keep Pull Requests small  
 - one PR per page at minimum
 - if correcting typos 
     - make that one PR 
