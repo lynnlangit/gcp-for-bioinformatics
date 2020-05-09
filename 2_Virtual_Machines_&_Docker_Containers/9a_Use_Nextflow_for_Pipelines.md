@@ -4,7 +4,7 @@
  USE the Nextflow pipeline language to define and run your analysis workflow at scale
 
 ### What is this
- Nextflow is a reactive workflow framework & DSL for writing data-intensive computational pipelines.  Run jobs on GCE Virtual Machines or GCE/Pipelines using container images.
+ Nextflow is a reactive workflow framework & DSL for writing data-intensive computational pipelines.  Run jobs on a single GCE Virtual Machine or a cluster of VMs. You can use GCE + Pipelines API using container images on VMs as well.
  - Nextflow can run on GCP or many other providers
  - Nextflow can run on GCP in two ways:
    - Run jobs on Compute Engine VMs (can run bioinformatics tools from Docker)
