@@ -1,4 +1,4 @@
-## FAQ: "How do I..."
+## FAQ: "How do I work with..."
 
 ### ACCOUNT: Setup and Costs
 - Setup ACCOUNT - [Setup my GCP account](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/0_Setup_GCP_account/1_Setup_GCP_Account.md) using a page from this repository
