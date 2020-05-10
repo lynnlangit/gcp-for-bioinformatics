@@ -42,7 +42,9 @@ We love contributions!  Here are some tips for creating contributions to this op
 ----
 
 ## Keep Pull Requests small  
-- one PR per page at minimum
+- one PR per page of this repo 
+    - do not combine PRs, i.e. one big PR with updates x multiple pages
+    - follow the style and structure of each page - add new or updated info only
 - if correcting typos 
     - make that one PR 
     - separate it from additions to the text
