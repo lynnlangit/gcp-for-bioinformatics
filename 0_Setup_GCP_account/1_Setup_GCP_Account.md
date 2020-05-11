@@ -2,7 +2,7 @@
 
 ### Why do this
  - Your workload is too big to run on your laptop
- - You don't want to wait for compute time on your organization's shared compute cluster
+ - You don't want to wait for compute time on your organization's shared, on-premise compute cluster
  - You want to use Google Cloud Platform services to run large (or huge) genomic analysis jobs
 
 ### What is this
@@ -19,24 +19,24 @@
  - Understand your project scope:
     - the size & complexity of your analysis  
     - your project budget / timeline  
- - Determine the best location (Google data center):
+ - Determine the best location (GCP data center):
     - GCP cloud has regional data centers which are further divded into zones within the physical data center location
     - global [GCP data center locations](https://cloud.google.com/about/locations/) shown below
 
    [![GCP Locations](/images/regions.png)]()
 
- NOTE: There are many bioinformatics analysis workflow tools, libraries & solutions which can be run on top of core GCP services.  Examples include [Terra.bio (was Firecloud)](https://terra.bio/), [cromwell](https://cromwell.readthedocs.io/en/stable/), [Nextflow.io](https://www.nextflow.io/) and many others.
+ NOTE: There are many bioinformatics analysis workflow tools, libraries & solutions which can be run on top of core GCP services.  Examples include [Terra.bio (was Firecloud)](https://terra.bio/), [cromwell](https://cromwell.readthedocs.io/en/stable/), [Nextflow.io](https://www.nextflow.io/) and many others. 
 
 ### How to do this
  - **REQUEST** an account
-   - a) a GCP account from your organization --OR--
-   - b) set up a GCP new (FREE Tier) account
+   - a) USE a GCP account from your organization --OR--
+   - b) SETUP a GCP new (FREE Tier) account
  - **CREATE** a GCP PROJECT 
    - USE **each** GCP Project as a container for **each** of your research projects
    - CREATE separate GCP projects, as a best practice (this allows you to more easily manage security & service costs by grant)
  - **ADD** GCP service instances to your GCP Project 
-    - Add services by data center location and GCP project name, for example...
-    - Add a Virtual Machine instance & a Cloud Storage bucket which are located...
+    - ADD services by data center location and GCP project name, for example...
+    - ADD a Virtual Machine instance & a Cloud Storage bucket which are located...
       - in the Google datacenter in `us-east` --AND--
       - in your GCP Project named `my-research-project`
 
