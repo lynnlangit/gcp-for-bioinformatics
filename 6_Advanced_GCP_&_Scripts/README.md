@@ -14,10 +14,14 @@ In addition to a list of links to advanced GCP topics, here are the script examp
 -------
 ### More Information
 
- - See the [Advanced-GCP-concepts.csv](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/6_Advanced_GCP_concepts_and_Scripts/Advanced-GCP-concepts.csv) file in this folder for a list of links to advanced GCP concepts.  
+#### GCP General
 
- - For many more examples GCP scripts using the GCP SDK command line tools (gcloud, gsutil, bq,...) - see the 'gcp-essentials' repository at this [link](https://github.com/lynnlangit/gcp-essentials).
+ - 📘- See the [Advanced-GCP-concepts.csv](https://github.com/lynnlangit/gcp-essentials/blob/master/GCP-Essentials-Links.csv) file in this folder for a list of links to advanced GCP concepts.  
 
- - For many more examples of GCP Machine Learning tools, libaries and example GCP SDK ML scripts, see the 'gcp-ml-essentials' repository at this [link](https://github.com/lynnlangit/gcp-ml)
+ - :octocat: - Find GCP enterprise usages patterns and examples scripts using the GCP SDK command line tools (gcloud, gsutil, bq,...) - see the 'gcp-essentials' repository at this [link](https://github.com/lynnlangit/gcp-essentials)
+
+ - :octocat: - For many more examples of GCP Machine Learning tools, libaries and example GCP SDK ML scripts, see the 'gcp-ml-essentials' repository at this [link](https://github.com/lynnlangit/gcp-ml)
+
+#### GCP Life Sciences / Genomics
 
  - See Google Genomics Organization on GitHub - [link](https://github.com/googlegenomics)
