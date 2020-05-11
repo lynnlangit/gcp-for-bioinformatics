@@ -10,15 +10,15 @@
 ### What is this
  - USE Google Cloud Storage + LifeSciences API + Variant Transforms API + BigQuery to create **serverless** end-to-end scalable genomic analysis jobs
 
-   - USE **Cloud Life Sciences API** to orchestrate scalable genomic analysis running Compute Engine **without** manually configuring scaling of your compute cluster. The API is designed to be a backend for bionformatics tools (ex. dsub) or systems (cromwell), by providing job scheduling for Docker-based tasks that perform secondary genomic analysis on Compute Engine containers. Secondary analysis includes, but is not limited to, filtering raw reads, aligning and assembling sequence reads, and QA and variant calling on aligned reads
+   - USE **Cloud Life Sciences API** to orchestrate scalable genomic analysis running Compute Engine **without** manually configuring scaling of your compute cluster. The API is designed to be a backend for bioinformatics tools (ex. dsub) or systems (cromwell), by providing job scheduling for Docker-based tasks that perform secondary genomic analysis by running container images on one or more GCE Virtual Machines. Typical secondary analysis jobs include filtering raw reads, aligning and assembling sequence reads, and QA and variant calling on aligned reads.
 
    - USE **Variant Transforms Tool** (an open-source tool) is based on Apache Beam and uses GCP Dataflow. Using the tool allows you to transform and load hundreds of thousands of files, millions of samples, and billions of records in a scalable manner into BigQuery. The tool also has a preprocessor which you can use to validate VCF files and identify inconsistencies.
 
    - USE **BigQuery** to analyze variants using the SQL query language.
 
 ### Key considerations
- - This is a serverless solution because you work with services or API endpoints and you do NOT configure or manage VMs or containers
- - Understand (forecast) service costs for this solution, particularly for BigQuery is important so that you can inadvertently avoid overspending 
+ - This is a serverless solution because you work with services or API endpoints and you do NOT configure or manage clusters of VMs or containers
+ - Forecast & verify service costs for your analysis jobs --particularly for BigQuery. This is important so that you can inadvertently avoid overspending, which can hapen based on both the data size and computational complexity of your analysis
 
 ### How to do this
  USE the [Quick Start](https://cloud.google.com/genomics/quickstart) to run a pipeline that uses the Pipelines API to create an index file (BAI file) from a large binary file containing DNA sequences (BAM file)
