@@ -7,9 +7,9 @@
   - USE GCP reference data with bioinformatics tools without having to upload any reference data to the cloud
     - [GATK](https://software.broadinstitute.org/gatk/) - genomic analysis toolkit
     - [Hail](https://hail.is/) - variant discovery library 
-    - Your custom workflow 
-      - Run Jupyter notebooks on Terra --or-- 
-      - Run scalable workflows Terra
+    - Your custom analysis 
+      - Interactive analysis with Jupyter notebooks on the GCP/Terra.bio platform --or-- 
+      - Scalable, batch workflows with WDL scripts/cromwell engine on the GCP/Terra.bio platform 
  
 
  Core Terra Capabilities
@@ -17,14 +17,14 @@
 
 ### What is this
 
- USE Terra reference data in your analysis jobs. Terra includes the ability to reference a number of datasets that are hosted in the cloud already. 
+ USE Terra reference data in your analysis jobs. Terra includes the ability to reference a number of datasets that are hosted in the cloud (on GCP) already. 
 
  Terra Reference Datasets
  [![ref-datasets](/images/ref-datasets.png)]()  
 
 ### Key considerations
 - Many Terra (GCP) datasets require authenticated access.  The **'1000 Genomes' dataset** has public access.
-- Import and use any subset of reference data in your Terra analysis (notebook or workflow)
+- Import and use any subset of this reference data in your Terra analysis (notebook or workflow)
 
 ### How to do this and verify 
 
