@@ -69,6 +69,7 @@
 #### GCP Enterprise Account Setup Guidance
  - 📘 Link to [Enterprise Onboarding Checklist](https://cloud.google.com/docs/enterprise/onboarding-checklist)
  - 📘 Link to [best practices for Enterprise Organizations](https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations)
+ - 📘 Link to general best practices via [Cloud Architecture Framework](https://cloud.google.com/architecture/framework)
 
 #### GCP Billing
 
