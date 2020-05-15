@@ -17,7 +17,7 @@ NOTE: Most GCP services are disabled by default.  You must first explicitly enab
 
 ### Key considerations
  - Only enable services/APIs that you are using in your GCP Project
- - Consider auditing service usage by using Stackdriver logs - [link](https://cloud.google.com/solutions/exporting-stackdriver-logging-for-security-and-access-analytics)
+ - Consider auditing service usage by using Cloud Monitoring logs - [link](https://cloud.google.com/solutions/exporting-stackdriver-logging-for-security-and-access-analytics)
 
 ### How to do this
  - Associate GCP IAM User accounts to GCP Roles (BigQuery User role shown below)
