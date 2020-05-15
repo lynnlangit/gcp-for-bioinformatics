@@ -37,7 +37,7 @@ Cloud Shell provides the following:
 
 [   ![GCP integrated shell](/images/shellstart-update.gif)]()
 
-NOTE: As an alternative to using the GCP integrated cloud shell, you use a locally-installed GCP client.  To do this you  download and configure the GCP SDK(https://cloud.google.com/sdk/). Then you can use `gcloud` commands from your local laptop to start, control or stop GCP service instances.  An example, which would start three GCE (Google Compute Engine) virtual machines is shown below. For a complete list of command parameters, see [link](https://cloud.google.com/sdk/gcloud/reference/compute/instances/create)
+NOTE: As an alternative to using the GCP integrated cloud shell, you could use a locally-installed GCP client.  To do this you  download and configure the GCP SDK(https://cloud.google.com/sdk/). Then you can use `gcloud` commands from your local laptop to start, control or stop GCP service instances.  An example, which would start three GCE (Google Compute Engine) virtual machines is shown below. For a complete list of command parameters, see [link](https://cloud.google.com/sdk/gcloud/reference/compute/instances/create)
 
 `gcloud compute instances create example-instance-1 example-instance-2 example-instance-3 --zone=us-central1-a` 
 
