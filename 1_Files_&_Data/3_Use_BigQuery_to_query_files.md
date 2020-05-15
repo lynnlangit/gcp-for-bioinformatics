@@ -9,7 +9,9 @@
 
 ### What is this
  - QUERY on file data (including genomic file formats, such as VCF files) at scale using [ansi-SQL](https://en.wikipedia.org/wiki/SQL) query commands
- - QUERY on files stored in Big Query storage of other Google Services, such as [CloudStorage, Google Drive or Big Table](https://cloud.google.com/bigquery/external-data-sources) or [CloudSQL (MySQL or PostgreSQL)](https://cloud.google.com/bigquery/docs/cloud-sql-federated-queries)
+ - QUERY on files stored in Big Query storage of other Google Services, such as [CloudStorage, Google Drive or Big Table](https://cloud.google.com/bigquery/external-data-sources) or [CloudSQL (MySQL or PostgreSQL)](https://cloud.google.com/bigquery/docs/cloud-sql-federated-queries). Example of public data in BigQuery shown below
+
+ ![Big Query Public Genomics Dataset Example](/images/bq-public-genomics-data.png)
 
 ### Key considerations
  - Understand how BQ billing works 
