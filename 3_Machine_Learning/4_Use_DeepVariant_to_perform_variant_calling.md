@@ -11,7 +11,10 @@
 
 ### What is this
 - USE GCP Genomics API + a purpose-built deep neural network machine learning model for genomic variant analysis (SNPs and Indels variant calling)
-- RUN 'optimzed for (run) time' or 'optimized for (run) cost'
+- RUN 'optimzed for (run) time' or 'optimized for (run) cost'.  Shown below is a typical GCP architecture for workloads using Deep Variant.
+
+![Deep Variant Architecture](/images/deep-variant-arch.png)
+
 ### Key considerations
  - The following configuration is optimized to run DeepVariant at low cost. The total for the runtime and cost varies depending on the number of instances that get preempted, but you can expect that for a 30x whole genome sample, the pipeline will complete in 1 to 2 hours and cost between $3.00 and $4.00.
 
