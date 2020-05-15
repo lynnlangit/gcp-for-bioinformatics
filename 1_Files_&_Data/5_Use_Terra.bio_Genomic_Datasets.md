@@ -75,7 +75,10 @@ Click the top left menu and Create a Workspace to get started
  - Terra terms:
     - **Workspace** -> Container for workflow(s)
     - **Notebook** -> Jupyter notebook (*.ipynb file type)
-    - **Tables** -> .tsv files which include file identifier and URI to your input data files. Input data is stored in GCS buckets. These metadata files create aliases and pointers to your input files. These aliases are referenced in Terra worflows (as variables)
+    - **Tables** -> .tsv files which include file identifier and URI to your input data files. Input data is stored in GCS buckets. These metadata files create aliases and pointers to your input files. These aliases are referenced in Terra worflows (as variables). TSV files for Terra.bio require the following structure - example [link](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/genomic-data-samples/TSV/terra_sample.tsv):
+      - First column includes the entity: with an id, i.e. 'entity:name_id', etc...
+      - Each column is tab delimeted
+      - Generally each column header refers to its rows whic have links to the files for those column names in GCS buckets
     - **Reference Data** -> public reference data, such as 'hg38'.
     - **Workspace (Other) Data** -> your uploaded research data - the 'Data' tab in the Terra UI
       More about the Terra Data Model - [link](https://gatkforums.broadinstitute.org/firecloud/discussion/9769/data-model)
