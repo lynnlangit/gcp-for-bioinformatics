@@ -2,15 +2,19 @@
 # Use Jupyter Notebook Instances
 
 ### Why do this
- - Use Jupyter notebooks and data analysis libraries for your reseach
+ - Use [Jupyter notebooks](https://jupyter.org/) with data analysis script and libraries for interactive reseach
  - Use libraries (such as TensorFlow) and hardware (such as GPUs) which are pre-installed and pre-configured on a Compute Engine VM hosted in your GCP project
 
 ### What is this
  - Set up and use analysis using libraries and Jupyter notebooks on pre-configured Compute Engine VMs quickly
+ - View an example Jupyter Notebook which uses GATK for an analysis - [link](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/2_Virtual_Machines_%26_Docker_Containers/Jupyter_Notebook_Examples/GATK_IGV_Tutorial.ipynb)
 
 ### Key considerations
  - SELECT the core library (i.e. R, Python, etc...) for your notebook instance
  - CONFIGURE the hardware for your VM based on your expected workload - can include GPUs
+ - SELECT the mode of working with your notebook.  Notebooks can be...
+    - VIEW-only - this can include the results of running each code cell or not (used when publishing results of analysis). This requires a rendering environment, GitHub can render most notebooks (view only), also [NBViewer](https://nbviewer.jupyter.org/) and others.
+    - RUNNABLE - this mode requires an execution environment, in GCP this is a VM (GCE) with the Jupyter libraries AND any language runtime libraries (i.e. R, Python...).  NOTE: For quick prototyping, you can use [Google Colabs](https://colab.research.google.com/) to execute Jupyter noteboks without setting up GCE VMs.  However, the free version of Colabs includes significant CPU/RAM etc. caps.
 
 ### How to do this
  - CREATE notebook instance from AI Platform -> Notebooks
