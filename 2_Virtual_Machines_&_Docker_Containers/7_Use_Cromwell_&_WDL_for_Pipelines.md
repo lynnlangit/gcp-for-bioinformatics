@@ -1,18 +1,20 @@
 # Use Cromwell & WDL 
 
 ### Why do this
+ [![cromwell-others](/images/cromwell-others.png)]()
  USE cromwell & WDL to create and run analysis at scale in your choice of location (cloud, HPC...)
-- USE [cromwell](https://github.com/broadinstitute/cromwell) orchestration engine to scale your analysis job(s) on the public cloud or to other locations (i.e. HPC...). Cromwell is a open source Workflow Management System geared towards scientific workflows.
+- USE [cromwell (orchestration engine)](https://github.com/broadinstitute/cromwell) to scale your analysis job(s) on the public cloud or to other locations (i.e. HPC...). Cromwell is a open source Workflow Management System geared towards scientific workflows.
 - USE [WDL (workflow definition language)](https://software.broadinstitute.org/wdl) to define and configure cromwell workflows. WDL is an open source languge.
    - Use WDL scripts to configure your tool/workflow inputs & outputs. Examples of configurable tools include GATK, Hail, Picard and others
    - Use WDL scripts to configure execution environments (i.e. local, public cloud...) & resources allocated for each execution.  Examples of configurable resources include Docker container image locations, task batch sizes, VM configuration (CPU, RAM, pre-emptible..) and others
-
-  <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/wdl-cromwell.png" width=500 align=right> 
-
- A conceptual workflow pattern for WDL + cromwell is shown the the right.  Note the use of docker container images as well.  As mentioned, tt's common to use standard bioinformatics tools, such as GATK or Hail as tasks in cromwell pipelines. 
-
+ 
 ### What is this
- - Scaling Compute Engine Virtual Machine instances w/Google Life Sciences API, cromwell orchestration using WDL language. NOTE: Google Life Sciences API was called Google Genomics/Pipelines API previously.
+
+Shown below is the relationship between WDL (scripts), cromwell and typical execution environments (data, docker images and compute clusters).
+
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/wdl-cromwell.png" width=500 align=right> 
+
+ - Scaling GCE VM instances out (by dynamically adding instances to a cluster as needed) using the Google Life Sciences API, using cromwell. Cromwell orchestrations are defined by WDL scripts. NOTE: Google Life Sciences API was called Google Genomics/Pipelines API previously.
  - NOTE: WDL/Cromwell documentation uses the words 'workflow' or 'pipeline' to define a series of tasks run for an analysis
  - WDL (Workflow Definition Language) script concepts are shown below 
    - READ WDL documentation - [link](https://software.broadinstitute.org/wdl/documentation/quickstart)
@@ -21,7 +23,7 @@
 [![wdl-concepts](/images/wdl-concepts.png)]()
 
 ### Key considerations
- - USE cromwell with Google Life Sciences API to manage the GCE (VM) resources for your analysis job with fewer manual configuaration steps
+ - USE cromwell with Google Life Sciences API to manage the GCE (VM) resources for your analysis job with fewer manual configuaration steps. You define the resources for your cluster of VMs and Life Sciences API starts and stops VMs as needed. You can configure use of pre-emptible VMs to save on service costs as well.
  - USE WDL scripts to configure the workflow inputs and outputs (for each bioinformatics tool used)
  - REFERENCE your scripts, jar files or docker container images for each of the bioinformatics tool used in your workflow
  - USE JSON files to configure the input/output parameters for each tool and also for EACH job execution
@@ -50,9 +52,9 @@
     - USE the 'wdl_runner' tool to run/test Cromwell workflows locally - [link](https://github.com/broadinstitute/wdl-runner)
     - USE the Broad's 'WOM tool' to validate WDL workflow syntax - [link](https://github.com/broadinstitute/cromwell/releases/download/50/womtool-50.jar)
     - USE the Broad's Terra platform to run your workflow on a persistent Cromwell server using a web UI - [link](https:/terra.bio)
- - Cromwell is runnable in a variety of compute environments, see graphic below
-
- [![cromwell-others](/images/cromwell-others.png)]()
+ - WDL is an open source scripting language. To learn more and see source code, see these links
+   - Go to the 'learn-wdl' repo for lessons and example WDL scripts - [link](https://github.com/openwdl/learn-wdl)
+   - Go to the 'open-wdl' repo to see the source code for WDL - [link](https://github.com/openwdl/wdl)
 
 ### How to learn more
 
