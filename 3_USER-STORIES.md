@@ -41,6 +41,4 @@ For more information see 📗[this section](https://github.com/lynnlangit/gcp-fo
 
 ## General User Story Map for Bioinformatics
 
-Shown below is a general USER STORY map
-
-[![User Stories](/images/user-stories.pdf)]() 
+Here is a link to a general USER STORY map - [link](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/user-stories.pdf)
