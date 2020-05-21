@@ -46,7 +46,7 @@ Nextflow RNAseq DOCKERFILE - uses bowtie, cufflinks and tophat tools
 
 Shown below is a reference architecture for running Nextflow analysis on GCP using the Life Sciences (PAPI/Genomics)API.
 
-
+![Nextflow Architecture using GCP Genomics/Life Sciences API](/images/nf-gcp.png)
 
 #### General Nextflow
  - 📘 Link to [Nextflow code patterns](http://nextflow-io.github.io/patterns/index.html)
