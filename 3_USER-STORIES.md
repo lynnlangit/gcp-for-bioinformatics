@@ -43,4 +43,4 @@ For more information see 📗[this section](https://github.com/lynnlangit/gcp-fo
 
 Shown below is a general USER STORY map
 
-[![terra-4](/images/terra-4.png)]() 
+[![User Stories](/images/user-stories.pdf)]() 
