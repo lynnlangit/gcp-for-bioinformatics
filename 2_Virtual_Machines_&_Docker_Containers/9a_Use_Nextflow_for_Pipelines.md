@@ -44,11 +44,16 @@ Nextflow RNAseq DOCKERFILE - uses bowtie, cufflinks and tophat tools
  
 ### How to learn more
 
+Shown below is a reference architecture for running Nextflow analysis on GCP using the Life Sciences (PAPI/Genomics)API.
+
+
+
 #### General Nextflow
  - 📘 Link to [Nextflow code patterns](http://nextflow-io.github.io/patterns/index.html)
  - 📘 Read about [Pipeliner for Nextflow paper](https://www.biorxiv.org/content/biorxiv/early/2018/11/23/476515.full.pdf)
  - 📺 Watch Nextflow presentations - [link](https://www.nextflow.io/presentations.html)
  - 📘 Link to [using caching with Nextflow](https://www.nextflow.io/blog/2019/demystifying-nextflow-resume.html)
+ - 📘 Link to paper on [containerized approaches to workflows(includes Nextflow)](https://www.preprints.org/manuscript/202001.0378/v1/download)
 #### Nextflow on GCP
  - 📘 Link to [Nextflow on GCP](https://www.nextflow.io/docs/latest/google.html)
  - 📘 Link to [Nextflow on GCP Life Sciences API tutorial](https://cloud.google.com/life-sciences/docs/tutorials/nextflow)
