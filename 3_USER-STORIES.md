@@ -38,3 +38,9 @@ These scaling patterns include everything from low-level virtual machine orchest
 [![terra-4](/images/terra-4.png)]() 
 
 For more information see 📗[this section](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/2_Virtual_Machines_%26_Docker_Containers) of this repository.
+
+## General User Story Map for Bioinformatics
+
+Shown below is a general USER STORY map
+
+[![terra-4](/images/terra-4.png)]() 
