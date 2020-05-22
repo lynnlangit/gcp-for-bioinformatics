@@ -46,7 +46,7 @@
  - 📘 read Google Cloud Life Sciences scenarios - [link](https://cloud.google.com/genomics/docs/tutorials/)
  - :octocat: 4 GCP Life Sciences API examples in Jupyter notebooks - [link](https://github.com/googlegenomics/datalab-examples/tree/master/datalab/genomics)
  - 📘 use QwikLabs to try out Google Cloud Life Sciences API - [link](https://www.qwiklabs.com/focuses/589?parent=catalog)
- - :octocat: - see example Life Sciences API usage with genomics tools - [link](https://github.com/googlegenomics/pipelines-api-examples)
+ - :octocat: see example Life Sciences API usage with genomics tools - [link](https://github.com/googlegenomics/pipelines-api-examples)
  - 📘 read End-to-end pipeline patterns and documentation - see the Google Genomics Cookbook -- http://googlegenomics.readthedocs.io/en/latest/
  - 📘 see Google Cloud Life Sciences includes a number of Google Cloud services, such as Compute Engine, Dataflow, BigQuery and more.  A reference architecture is shown below.  See the [Google Life Sciences](https://cloud.google.com/life-sciences/) documentation for more information.
 
