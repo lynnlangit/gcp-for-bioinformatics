@@ -16,7 +16,7 @@
     - Use Terra.bio Notebooks
     - Test Docker container image for Pipelines
     - Orchestrate containers with Kubernetes
-    - Use Google Pipelines API
+    - Use Google Pipelines API (or PAPI - also called Life Sciences or Genomics API)
     - Use cromwell & WDL for pipelines
     - Use Terra.bio Workflows
     - Use Nextflow.io for pipelines
