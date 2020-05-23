@@ -22,6 +22,10 @@
 
 ### How to do this
  - Run a [DeepVariant analysis on GCP](https://cloud.google.com/genomics/docs/tutorials/deepvariant)
+ - Running DeepVariant consists of three stages:
+    - Making examples: DeepVariant pre-processes the input data and saves examples from the data using an internal TensorFlow format. You can run this stage in parallel where the input shards are processed independently.
+    - Calling variants: DeepVariant runs a deep neural network that makes inferences from the examples and saves them into shared files using an internal TensorFlow format.
+    - Post-processing variants: DeepVariant converts variants from the internal TensorFlow format to VCF or gVCF files. This stage runs on a single thread.
 
 ### How to verify you've done it
  - Verify results in output bucket
