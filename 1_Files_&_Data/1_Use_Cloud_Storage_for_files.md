@@ -40,6 +40,10 @@
 
 
 ### Other Things to Know
+ - Work with files in buckets in a number of ways:
+   - Click in GCS WebUI / console --or--
+   - Authorized clients connect via `gsutil`, ex. `gs://demo-for-github` --or--
+   - Authorized clients connect via an http call, ex. `https://console.cloud.google.com/storage/browser/demo-for-github`
  - Design file archiving processes, i.e. move to nearline or coldline if not accessing or over time (i.e. monthly...)
  - Delete files generated during processing (often called intermediate files) that are no longer needed when jobs complete
  - Read about 'requestor pays' Cloud Storage feature - [link](https://cloud.google.com/storage/docs/requester-pays)
