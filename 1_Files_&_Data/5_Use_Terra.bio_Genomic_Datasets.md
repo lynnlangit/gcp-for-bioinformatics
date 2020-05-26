@@ -85,11 +85,11 @@ Click the top left menu and Create a Workspace to get started
           - Each column is tab delimeted
           - Generally each column header refers to its rows which have links to the files for those column names in GCS buckets
 
-      - More about the Terra Data Model - [link](https://gatkforums.broadinstitute.org/firecloud/discussion/9769/data-model)
-        - Participant -> a person enrolled in a study
-        - Sample -> a biological sample collected from a participant
-        - Pair -> represents a pair of biological samples collected from a participant
-        - Set -> group of Participants, Samples or Pairs
+        - More about the Terra Data Inputs Model - [link](https://gatkforums.broadinstitute.org/firecloud/discussion/9769/data-model)
+          - Participant -> a person enrolled in a study
+          - Sample -> a biological sample collected from a participant
+          - Pair -> represents a pair of biological samples collected from a participant
+          - Set -> group of Participants, Samples or Pairs
 
       - **Reference Data** -> genomic reference data, i.e. `b37human` or `hg38`
       - **Workspace** -> workspace parameters, i.e. path to dockerfile, variable values, etc..., i.e. (`worskpace.myDocker`)
