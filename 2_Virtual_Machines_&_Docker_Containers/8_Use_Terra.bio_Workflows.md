@@ -98,7 +98,7 @@ Terra is the next generation of The Broad Institute's Firecloud tool. Shown belo
       - **Table Inputs** -> this is the data (files) that you will be analyzing in your pipeline
         - You can reference this data using the path to the GCS bucket, (i.e. `gs://<bucketName>/<fileName>) --or--
         - You can reference this data using a pointer to the GCS bucket path, i.e. (`this.myInputFile`)
-        - More about the Terra Data Model - [link](https://gatkforums.broadinstitute.org/firecloud/discussion/9769/data-model)
+        - More about the Terra Data Inputs Model - [link](https://gatkforums.broadinstitute.org/firecloud/discussion/9769/data-model)
           - Participant -> a person enrolled in a study
           - Sample -> a biological sample collected from a participant
           - Pair -> represents a pair of biological samples collected from a participant
