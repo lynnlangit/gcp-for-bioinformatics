@@ -71,22 +71,32 @@ Click the top left menu and Create a Workspace to get started
 ----
 
 ### Other Things to Know
- - NOTE: If you download data to your local laptop, you may incur GCP service charges.
- - Terra terms:
-    - **Workspace** -> Container for workflow(s)
-    - **Notebook** -> Jupyter notebook (*.ipynb file type)
-    - **Tables** -> .tsv files which include file identifier and URI to your input data files. Input data is stored in GCS buckets. These metadata files create aliases and pointers to your input files. These aliases are referenced in Terra worflows (as variables). TSV files for Terra.bio require the following structure - example [link](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/genomic-data-samples/TSV/terra_sample.tsv):
+ - Terra Workspace sections:
+    - **Notebooks** -> Jupyter notebooks -`*.ipynb` files 
+    - **Workspace** -> Container for WDL workflow(s)
+    - **Dashboard** -> Wiki describing WDL workflow(s) in a workspace
+    - **Data** -> there are serveral types of data, when you create a workspace Terra creates an associated GCS bucket (name starts with `gs://fc-nnnnnn-nnnnnn-nnnnn...` . Also you can reference data in any GCS bucket to which you assign GCS IAM permissions (i.e. `gs://<myBucket>/...`)
+    NOTE: Before you download data locally, note estimated costs in the popup window. 
+    - **Table Inputs** -> this is the data (files) that you will be analyzing in your pipeline
+       - You can reference this data using the path to the GCS bucket, (i.e. `gs://<bucketName>/<fileName>) --or--
+       - You can reference this data using a pointer to the GCS bucket path, i.e. (`this.myInputFile`)
+    - Defined by a structured .tsv metadata file creates aliases & pointers to your input files locations on GCS. These aliases are referenced in Terra worflows (as variables). TSV files for Terra.bio require the following structure - example [link](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/genomic-data-samples/TSV/terra_sample.tsv):
       - First column includes the entity: with an id, i.e. 'entity:name_id', etc...
       - Each column is tab delimeted
       - Generally each column header refers to its rows which have links to the files for those column names in GCS buckets
-    - **Reference Data** -> public reference data, such as 'hg38'.
-    - **Workspace (Other) Data** -> your uploaded research data - the 'Data' tab in the Terra UI
-      More about the Terra Data Model - [link](https://gatkforums.broadinstitute.org/firecloud/discussion/9769/data-model)
+
+    More about the Terra Data Model - [link](https://gatkforums.broadinstitute.org/firecloud/discussion/9769/data-model)
       - Participant -> a person enrolled in a study
       - Sample -> a biological sample collected from a participant
       - Pair -> represents a pair of biological samples collected from a participant
       - Set -> group of Participants, Samples or Pairs
 
+    - **Reference Data** -> genomic reference data, i.e. `b37human` or `hg38`
+    - **Workspace** -> workspace parameters, i.e. path to dockerfile, variable values, etc..., i.e. (`worskpace.myDocker`)
+    - **Files** -> links to workspace files (in the associated GCS bucket at `gs://fc-nnnn....`)
+    - **Workflow Data** -> WDL scripts & `input.json` files (variable configuration files)
+    
+  
   [![data-model](/images/data-model.png)]()  
   Image of Terra Data Model from this [link](https://software.broadinstitute.org/firecloud/documentation/quickstart?page=data)
 
