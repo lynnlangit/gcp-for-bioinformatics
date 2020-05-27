@@ -11,7 +11,7 @@ This content is intended for researchers - in particular, this guide is for thos
   6. 🔍SCAN - search a list in this Repo
 
 ---
-You have a number of options on how you choose to use the materials provided in this course.  A summary is shown below.
+You have a number of options on how to use the materials provided in this course.  A summary is shown below left.
 <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/learn-gcp.png" width="400" align="left">
 
 
