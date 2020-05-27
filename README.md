@@ -10,6 +10,8 @@ This content is intended for researchers - in particular, this guide is for thos
   5. 📘EXPAND - linked (external) resources
   6. 🔍SCAN - search a list in this Repo
 
+---
+
 <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/learn-gcp.png" width="400" align="left">
 
 
