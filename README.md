@@ -4,14 +4,16 @@ This repository shows how to use ☁️Google Cloud Platform public cloud servic
 
 This content is intended for researchers - in particular, this guide is for those who are **NEW to working with GCP**.  
 You have a number of options on how to use the materials provided in this course.  A summary is shown below left.
+
+
 <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/learn-gcp.png" width="400" align="left">
 This Repo includes content you can read, watch or run:  
-  1. 📗READ - one page of this Repo (MD page)
-  2. 📺WATCH -  linked YouTube screencasts
-  3. 📙TRY - Jupyter Notebook example
-  4. :octocat: TRY - linked GitHub Repos
-  5. 📘EXPAND - linked (external) resources
-  6. 🔍SCAN - search a list in this Repo
+  - 📗READ - one page of this Repo (MD page)
+  - 📺WATCH -  linked YouTube screencasts
+  - 📙TRY - Jupyter Notebook example
+  - :octocat: TRY - linked GitHub Repos
+  - 📘EXPAND - linked (external) resources
+  - 🔍SCAN - search a list in this Repo
 
 ---
 
