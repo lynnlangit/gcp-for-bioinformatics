@@ -8,12 +8,13 @@ You have a number of options on how to use the materials provided in this course
 
 <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/learn-gcp.png" width="400" align="left">
 This Repo includes content you can read, watch or run:  
-  -📗READ - one page of this Repo (MD page)
-  -📺WATCH -  linked YouTube screencasts
-  -📙TRY - Jupyter Notebook example
-  -:octocat: TRY - linked GitHub Repos
-  -📘EXPAND - linked (external) resources
-  -🔍SCAN - search a list in this Repo
+
+- 📗READ - one page of this Repo (MD page)
+- 📺WATCH -  linked YouTube screencasts
+- 📙TRY - Jupyter Notebook example
+- :octocat: TRY - linked GitHub Repos
+- 📘EXPAND - linked (external) resources
+- 🔍SCAN - search a list in this Repo
 
 ---
 
