@@ -75,8 +75,8 @@ Click on your workspace, then the `Notebooks` menu to run Notebooks
     - **Dashboard** -> Wiki describing WDL workflow(s)
     - **Notebooks** -> container for Jupyter notebooks -`*.ipynb` files
     - **Workflow** -> container for tool(s)/scripts (GATK, Hail...) and configuration, written in WDL for cromwell, JSON for parameters  
-    - **Tool** -> docker container image of your research script or binary tool and configuration in WDL
-    - **WDL** -> [workflow definition language](https://software.broadinstitute.org/wdl), dialect required for configuring [cromwell orchestration engine](https://github.com/broadinstitute/cromwell), as in 'a WDL file'
+      - **Tool** -> docker container image of your research script or binary tool and configuration in WDL
+      - **WDL** -> [workflow definition language](https://software.broadinstitute.org/wdl), dialect required for configuring [cromwell orchestration engine](https://github.com/broadinstitute/cromwell), as in 'a WDL file'
     - **Data** -> there are serveral types of data, when you create a workspace Terra creates an associated GCS bucket (name starts with `gs://fc-nnnnnn-nnnnnn-nnnnn...` . Also you can reference data in any GCS bucket to which you assign GCS IAM permissions (i.e. `gs://<myBucket>/...`) 
       - **Table Inputs** -> this is the data (files) that you will be analyzing in your pipeline
         - You can reference this data using the path to the GCS bucket, (i.e. `gs://<bucketName>/<fileName>) --or--
@@ -89,7 +89,7 @@ Click on your workspace, then the `Notebooks` menu to run Notebooks
       - **Reference Data** -> genomic reference data, i.e. `b37human` or `hg38`
       - **Workspace** -> workspace parameters, i.e. path to dockerfile, variable values, etc..., i.e. (`worskpace.myDocker`)
       - **Workflow Data** -> WDL scripts & `input.json` files 
-      
+
   [![data-model](/images/data-model.png)]()  
   Image of Terra Data Model from this [link](https://software.broadinstitute.org/firecloud/documentation/quickstart?page=data)
 
