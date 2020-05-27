@@ -92,7 +92,7 @@ Click the top left menu and Create a Workspace to get started
           - Set -> group of Participants, Samples or Pairs
 
       - **Reference Data** -> genomic reference data, i.e. `b37human` or `hg38`
-      - **Workspace** -> workspace parameters, i.e. path to dockerfile, variable values, etc..., i.e. (`worskpace.myDocker`)
+      - **Workspace Data** -> workspace parameters, i.e. path to dockerfile, variable values, etc..., i.e. (`worskpace.myDocker`)
       - **Files** -> links to workspace files (in the associated GCS bucket at `gs://fc-nnnn....`)
       - **Workflow Data** -> WDL scripts & `input.json` files (variable configuration files)
     
