@@ -1,7 +1,7 @@
 # Google Cloud Platform (GCP) for Bioinformatics
 
 This repository shows how to use ☁️Google Cloud Platform public cloud services to scale **bioinformatics data analysis** tasks using cloud best practices for GCP.  This use cases featured as exampled are called any and all of the following: genomic-scale data workflows, pipelines, analysis or batch jobs.
-<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/learn-gcp.png" width="390" align="left">
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/learn-gcp.png" width="390" align="right">
 
 This content is intended for researchers - in particular, this guide is for those who are **NEW to working with GCP**.  
 You have a number of options on how to use the materials provided in this course.  A summary is shown below left.
@@ -18,7 +18,7 @@ This Repo includes content you can read, watch or run:
 
 ---
 
-## 📺Click below to WATCH 'Lynn's Welcome Video' (4 min) on YouTube
+### 📺Click below to WATCH 'Lynn's Welcome Video' (4 min) on YouTube
 
 [![Welcome to GCP for Bioinformatics](http://img.youtube.com/vi/YoFkSVDlN6k/0.jpg)](http://www.youtube.com/watch?v=YoFkSVDlN6k "Welcome to GCP for Bioinformatics")
 
