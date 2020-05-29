@@ -118,7 +118,7 @@ Terra is the next generation of The Broad Institute's Firecloud tool. Shown belo
 - 📺 Watch [understanding Terra (GCP service) costs](https://www.youtube.com/watch?v=SRVrzXHkZKU) - 27 minute video from the Broad
 - 📘 Link to [Terra community forum](https://support.terra.bio/hc/en-us/community/topics/360000500432)
 - 📘 Link to [Terra support forums](https://support.terra.bio/hc/en-us)
-- See [GATK Dictionary](https://software.broadinstitute.org/gatk/documentation/topic?name=dictionary) for definitions of key terms used in GATK docs
+- 📘 Link to [GATK Dictionary](https://software.broadinstitute.org/gatk/documentation/topic?name=dictionary) for definitions of key terms used in GATK docs
 
 ### Using Terra Workflows
 - 📺 Watch [Intro to Terra](https://www.youtube.com/watch?v=9kffTkK-B7g) - 32 minute video from the Broad  
