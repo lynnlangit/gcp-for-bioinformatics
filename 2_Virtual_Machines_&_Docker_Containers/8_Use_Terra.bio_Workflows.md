@@ -110,18 +110,23 @@ Terra is the next generation of The Broad Institute's Firecloud tool. Shown belo
 [![data-model](/images/data-model.png)]()  
   Image of Terra Data Model from this [link](https://software.broadinstitute.org/firecloud/documentation/quickstart?page=data)
 
+---  
 
-### How to learn more
- - 📘 Link to [Terra resouces](https://support.terra.bio/hc/en-us)
- - 📘 Link to [Terra community forum](https://support.terra.bio/hc/en-us/community/topics/360000500432)
- - 📺 Watch [Intro to Terra](https://www.youtube.com/watch?v=9kffTkK-B7g) - 32 minute video from the Broad  
- - 📙 Try out the Terra workflows using Broad's [Terra quick start workspace](https://app.terra.bio/#workspaces/fc-product-demo/Terra-Workflows-Quickstart) 
- - 📺 Watch short [using Terra](https://www.youtube.com/channel/UCkXAqpR5Hk1ZmNd2-1K2l5Q/videos) screencasts by the Broad
- - 📺 Watch [Case study using Terra](https://www.youtube.com/watch?v=xOzwWNLXdHc) - 28 minute video from the Broad covers how they created reproducible research using the results of published work around a condition called "tetralogy of fallot" (congential heart defect). Broad created a synthetic cohort, with NEATkit & BAMsurgeon (genomic data obfuscation tools) and then applied the methods in the paper using Terra workflows (Terra notebook shown below)
+## How to learn more
+
+### Using Terra 
+- 📺 Watch [understanding Terra (GCP service) costs](https://www.youtube.com/watch?v=SRVrzXHkZKU) - 27 minute video from the Broad
+- 📘 Link to [Terra community forum](https://support.terra.bio/hc/en-us/community/topics/360000500432)
+- 📘 Link to [Terra support forums](https://support.terra.bio/hc/en-us)
+- See [GATK Dictionary](https://software.broadinstitute.org/gatk/documentation/topic?name=dictionary) for definitions of key terms used in GATK docs
+
+### Using Terra Workflows
+- 📺 Watch [Intro to Terra](https://www.youtube.com/watch?v=9kffTkK-B7g) - 32 minute video from the Broad  
+- 📙 Try out the Terra workflows using Broad's [Terra quick start workspace](https://app.terra.bio/#workspaces/fc-product-demo/Terra-Workflows-Quickstart) 
+- 📺 Watch short [using Terra](https://www.youtube.com/channel/UCkXAqpR5Hk1ZmNd2-1K2l5Q/videos) screencasts by the Broad
+- 📺 Watch [using Docker containers on Terra](https://www.youtube.com/watch?v=jv_HSFBYOJs) - 22 minute video from the Broad Institute
+- 📺 Watch [Case study using Terra](https://www.youtube.com/watch?v=xOzwWNLXdHc) - 28 minute video from the Broad covers how they created reproducible research using the results of published work around a condition called "tetralogy of fallot" (congential heart defect). Broad created a synthetic cohort, with NEATkit & BAMsurgeon (genomic data obfuscation tools) and then applied the methods in the paper using Terra workflows (Terra notebook shown below)
   [![terra-repro](/images/terra-repro.png)]()
- - 📙 Try out the Terra notebook and workflows using Broad's [Terra example workspace](https://app.terra.bio/#workspaces/help-gatk/Reproducibility_Case_Study_Tetralogy_of_Fallot) for the example in the screencast shown above
- - 📺 Watch [understanding Terra (GCP service) costs](https://www.youtube.com/watch?v=SRVrzXHkZKU) - 27 minute video from the Broad
- - 📺 Watch [using Docker containers on Terra](https://www.youtube.com/watch?v=jv_HSFBYOJs) - 22 minute video from the Broad Institute
-  - See [GATK Dictionary](https://software.broadinstitute.org/gatk/documentation/topic?name=dictionary) for definitions of key terms used in GATK docs
-  - 📘 Link to tutorial to learn how to [register a custom bioinformatics tool or workflow](https://docs.dockstore.org/docs/prereqs/) in Dockstore
-   - 📘 Link to article to learn how to [request to feature your workspace](https://support.terra.bio/hc/en-us/articles/360033599791-Feature-Your-Workspace-) in Terra
+- 📘 Link to tutorial to learn how to [register a custom bioinformatics tool or workflow](https://docs.dockstore.org/docs/prereqs/) in Dockstore
+- 📘 Link to article to learn how to [request to feature your workspace](https://support.terra.bio/hc/en-us/articles/360033599791-Feature-Your-Workspace-) in Terra
+- 📙 Try out the Terra notebook and workflows using Broad's [Terra example workspace](https://app.terra.bio/#workspaces/help-gatk/Reproducibility_Case_Study_Tetralogy_of_Fallot) for the example in the screencast shown above
