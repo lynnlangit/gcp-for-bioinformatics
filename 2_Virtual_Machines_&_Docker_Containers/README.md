@@ -11,17 +11,17 @@ You'll also see how to create a Notebook VM instance using a GCP template, so th
 
 Here are the topic pages in this section:
 
-- Use Compute Engine Virtual Machines
+- Use Google Compute Engine Virtual Machines
 - Use Jupyter Notebook VM Instance
-- Use Terra.bio Notebook
+- Use Terra.bio Jupyter Notebook
 - Test Docker Container Image for Pipeline
 - Orchestrate Containers with GKE (Kubernetes)
 - Use Google Life Sciences API (was Genomics API or Pipelines API)
-- Use Cromwell and WDL for Pipeline
+- Use Cromwell and WDL for Pipelines API (PAPI)
 - Use Terra.bio Workflow
-- Use Nextflow for Pipeline
-- Use dsub for Pipeline
-- Use Galaxy Project for Pipeline
+- Use Nextflow for Pipelines API
+- Use dsub for Pipelines API
+- Use Galaxy Project for Pipelines API
 
 The sections of the reference architecture outlined in red will be covered.
 
