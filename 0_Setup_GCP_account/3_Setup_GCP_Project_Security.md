@@ -24,7 +24,7 @@ NOTE: Most GCP services are disabled by default.  You must first explicitly enab
  - Best Practice: Use GCP-created roles.  Service-level roles include individual service permissions
  - You can create custom IAM (or security) roles if needed
 
- [![GCP roles](/images/roles.png)]()
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/roles.png" width="460" align="right"> 
 
 ### How to verify you've done it
  - Test permissions assigned to roles/users
