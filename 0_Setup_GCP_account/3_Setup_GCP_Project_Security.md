@@ -19,12 +19,12 @@ NOTE: Most GCP services are disabled by default.  You must first explicitly enab
  - Only enable services/APIs that you are using in your GCP Project
  - Consider auditing service usage by using Cloud Monitoring logs - [link](https://cloud.google.com/solutions/exporting-stackdriver-logging-for-security-and-access-analytics)
 
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/roles.png" width="460" align="right"> 
+
 ### How to do this
  - Associate GCP IAM User accounts to GCP Roles (BigQuery User role shown below)
  - Best Practice: Use GCP-created roles.  Service-level roles include individual service permissions
  - You can create custom IAM (or security) roles if needed
-
-<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/roles.png" width="460" align="right"> 
 
 ### How to verify you've done it
  - Test permissions assigned to roles/users
