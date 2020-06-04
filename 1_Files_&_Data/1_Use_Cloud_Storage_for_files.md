@@ -31,7 +31,7 @@
 
  [![Cloud Storage types](/images/storage.png)]()
 
- Shown below is the GCP WebUI to set 'access control model' for a bucket
+ Shown to the right is the GCP WebUI to set 'access control model' for a bucket. Note that you can set model for access control and also the type of encyrption key storage for your bucket.
 
  <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/bucket.png" width="460" align="right"> 
 
