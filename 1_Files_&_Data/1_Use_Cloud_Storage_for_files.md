@@ -25,15 +25,24 @@
  - CONFIGURE the bucket access control, encryption & retention
  - List of key [bucket operations](https://cloud.google.com/storage/docs/how-to)
 
+ ----
+
+ GCP WebUI to 'create a (storage) bucket
+
  [![Cloud Storage types](/images/storage.png)]()
+
+ GCP WebUI to set 'access control model' for a bucket
 
  [![Cloud Storage config](/images/bucket.png)]()
 
+ -----
 
 ### How to verify you've done it
  - UPLOAD file(s) to the bucket using the web console or the 'gsutil' tool - [link](https://cloud.google.com/storage/docs/gsutil) - example shown below
 
  [![upload](/images/upload.png)]()
+
+----
 
 ### 📺 Click below to see Lynn's 'Use Cloud Storage buckets' 10 min video
 [![Cloud Storage Buckets - Google Cloud Platform for Bioinformatics](http://img.youtube.com/vi/_O2Lxc0UsNc/0.jpg)](http://www.youtube.com/watch?v=_O2Lxc0UsNc "Cloud Storage buckets - Google Cloud Platform for Bioinformatics")
