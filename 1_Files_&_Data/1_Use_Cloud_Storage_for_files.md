@@ -27,13 +27,13 @@
 
  ----
 
- GCP WebUI to 'create a (storage) bucket
+ Shown below is the GCP WebUI to 'create a (storage) bucket
 
  [![Cloud Storage types](/images/storage.png)]()
 
- GCP WebUI to set 'access control model' for a bucket
+ Shown below is the GCP WebUI to set 'access control model' for a bucket
 
- [![Cloud Storage config](/images/bucket.png)]()
+ <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/bucket.png" width="460" align="right"> 
 
  -----
 
