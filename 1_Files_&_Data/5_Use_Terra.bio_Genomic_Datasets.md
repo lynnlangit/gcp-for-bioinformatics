@@ -11,16 +11,19 @@
       - Interactive analysis with Jupyter notebooks on the GCP/Terra.bio platform --or-- 
       - Scalable, batch workflows with WDL scripts/cromwell engine on the GCP/Terra.bio platform 
  
+ ---
 
- Core Terra Capabilities
+### Core Terra Capabilities
  [![terra-features](/images/terra-features.png)]()
 
 ### What is this
 
  USE Terra reference data in your analysis jobs. Terra includes the ability to reference a number of datasets that are hosted in the cloud (on GCP) already. 
 
- Terra Reference Datasets
+ ### Terra Reference Datasets
  [![ref-datasets](/images/ref-datasets.png)]()  
+
+---
 
 ### Key considerations
 - Many Terra (GCP) datasets require authenticated access.  The **'1000 Genomes' dataset** has public access.
@@ -86,10 +89,10 @@ Click the top left menu and Create a Workspace to get started
           - Generally each column header refers to its rows which have links to the files for those column names in GCS buckets
 
         - More about the Terra Data Inputs Model - [link](https://gatkforums.broadinstitute.org/firecloud/discussion/9769/data-model)
-          - Participant -> a person enrolled in a study
-          - Sample -> a biological sample collected from a participant
-          - Pair -> represents a pair of biological samples collected from a participant
-          - Set -> group of Participants, Samples or Pairs
+          - **Participant** -> a person enrolled in a study
+          - **Sample** -> a biological sample collected from a participant
+          - **Pair** -> represents a pair of biological samples collected from a participant
+          - **Set** -> group of Participants, Samples or Pairs
 
       - **Reference Data** -> genomic reference data, i.e. `b37human` or `hg38`
       - **Workspace Data** -> workspace parameters, i.e. path to dockerfile, variable values, etc..., i.e. (`worskpace.myDocker`)
