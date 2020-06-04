@@ -49,24 +49,23 @@ See screenshots below for general flow of working with reference data and your o
 
 ### Data Workflow Screens from Terra
 
-1. Starter screen - select 'Browse Data'
+1. View Terra.bio welcome page -> click 'Browse Data'
  [![terra-start](/images/terra-start.png)]()
-2. Review Showcase & Tutorials (View Datasets Section)
-Click the top left menu and Create a Workspace to get started
+2. Review Showcase & Tutorials (View Datasets Section) -> click the top left menu and Create a Workspace to get started
  [![workspace](/images/workspace.png)]()
 3. Review available reference data
  [![all-data](/images/all-data.png)]()
-4. Explore 1000 Genomes Public Dataset. Click 'Save in Terra' to save your selection as a cohort in your Terra workspace
+4. Explore 1000 Genomes Public Dataset -> click 'Save in Terra' to save your selection as a cohort in your Terra workspace
  [![data](/images/data.png)]()
 5. Import your selected data into your Terra workspace
  [![import-data](/images/import-data.png)]()
 6. Select the files in your Terra workspace Data section
  [![view-data](/images/view-data.png)]()
-7. Use the blue `+` buttons to add files to your workspace
+7. Click the blue `+` buttons to add files to your workspace
  [![add-files](/images/add-files.png)]()
 8. Use the data preview to examine your reference data in your workspace
  [![data-workspace](/images/data-workspace.png)]()
-9. Work with your selected data using the IGV viewer or WDL workflow
+9. View your selected data using the IGV viewer (or perform analysis using a WDL/cromwell Terra workflow)
  [![open-with](/images/open-with.png)]()
 10. Example of using the integrated IGV file viewer to view a files
 [![data-igv](/images/data-igv.png)]() 
