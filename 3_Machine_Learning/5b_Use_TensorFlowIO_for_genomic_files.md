@@ -20,10 +20,10 @@
    - this function `tfio.genome.sequences_to_onehot(fastq_data.sequences)`
 
 ### How to do this
- - Run the example in Google Colbabs - [link](https://www.tensorflow.org/io/tutorials/genome)
+ - Run the example in Google Colabs - [link](https://www.tensorflow.org/io/tutorials/genome)
 
 ### How to verify you've done it
- - Run the Notebook 
+ - Run the example Colabs Notebook linked above
 
 ### Other Things to Know
  - none
