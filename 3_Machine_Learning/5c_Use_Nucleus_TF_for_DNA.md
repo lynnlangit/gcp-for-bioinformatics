@@ -15,7 +15,9 @@ Nucleus is a library developed for processing genomics data by the Genomics team
 - Query a BAM file for all reads mapping to a given genomic range
 - Query a FASTA file for the reference sequence starting at a given position
 
-Nucleus is used to write data out to TFRecords, a binary file format that consists of protocol buffer messages and can be easily read by TensorFlow. After reading in the TFRecords, TensorFlow Keras API is used to train and evaluate a convolutional neural network.
+Nucleus is used to write data out to TFRecords, a binary file format that consists of protocol buffer messages and can be easily read by TensorFlow. After reading in the TFRecords, TensorFlow Keras API is used to train and evaluate a convolutional neural network.  The key steps are shown below.
+
+![Nucleus and TF for DNA sequencing error correction](/images/nucleus.png)
 
 ### How to do this
  - Run the example in Google Colabs - [link](https://colab.research.google.com/github/google/nucleus/blob/master/nucleus/examples/dna_sequencing_error_correction.ipynb)
