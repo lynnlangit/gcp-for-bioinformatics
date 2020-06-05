@@ -29,6 +29,5 @@ Nucleus is used to write data out to TFRecords, a binary file format that consis
  - none
 
 ### How to learn more
- - :orange_book: Link to notebook - [provides examples](https://colab.research.google.com/github/tensorflow/io/blob/master/docs/tutorials/genome.ipynb) 
- - 📘 Link to paper - ['Scaling computational genomics to millions of individuals with GPUs'](https://www.biorxiv.org/content/10.1101/470138v3)
+- 📘 Link examples - ['Examples'](https://github.com/google/nucleus/blob/master/docs/examples.md)
  
