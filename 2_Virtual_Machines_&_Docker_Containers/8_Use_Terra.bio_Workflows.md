@@ -115,6 +115,7 @@ Terra is the next generation of The Broad Institute's Firecloud tool. Shown belo
 ## How to learn more
 
 ### Using Terra 
+- 📺 Watch [use a MindMap to understand where data is stored on GCP with Terra](https://www.youtube.com/watch?v=tYmJ2n8YqNc) - 20 minute video covering GCP services (GCS and BigQuery) with Terra
 - 📺 Watch [understanding Terra (GCP service) costs](https://www.youtube.com/watch?v=SRVrzXHkZKU) - 27 minute video from the Broad
 - 📘 Link to [Terra community forum](https://support.terra.bio/hc/en-us/community/topics/360000500432)
 - 📘 Link to [Terra support forums](https://support.terra.bio/hc/en-us)
