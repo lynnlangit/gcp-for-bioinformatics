@@ -104,8 +104,8 @@ Terra is the next generation of The Broad Institute's Firecloud tool. Shown belo
           - Pair -> represents a pair of biological samples collected from a participant
           - Set -> group of Participants, Samples or Pairs
       - **Reference Data** -> genomic reference data, i.e. `b37human` or `hg38`
-      - **Workspace Data** -> workspace parameters, i.e. path to dockerfile, variable values, etc..., i.e. (`worskpace.myDocker`)
-      - **Workflow Data** -> WDL scripts & `input.json` files
+      - **Workspace Data** -> workspace parameters, i.e. path to dockerfile, variable values, etc..., i.e. (`worskpace.myDocker`), in the form of a single `*.tsv` file.  NOTE: all variable values are strongly typed.  Workspace data types are a subset of WDL data types (ex. Workspace `string` can be WDL `File` or `String`) - see WDL documentation for detail - [link](https://github.com/openwdl/wdl/blob/master/versions/1.0/SPEC.md#types)
+      - **Workflow Data** -> WDL script files (i.e. `myWorkflow.wdl`) & workflow parameter configuration (i.e. `input.json`) files
 
 [![data-model](/images/data-model.png)]()  
   Image of Terra Data Model from this [link](https://software.broadinstitute.org/firecloud/documentation/quickstart?page=data)
