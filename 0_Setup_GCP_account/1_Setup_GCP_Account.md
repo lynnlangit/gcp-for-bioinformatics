@@ -82,7 +82,7 @@
 - 📘 Link to [Article on GCP Billing Accounts](https://medium.com/google-cloud/managing-billing-permissions-in-google-cloud-31906aa626a0)
 - 📘 Link to [Using GCP Virtual Machine Sizing Recomendations](https://cloud.google.com/compute/docs/instances/apply-sizing-recommendations-for-instances) to save money on GCP service costs.  See screen below
 
-
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/recomendations.png" width="460" align="right"> 
 
 #### GCP Billing on Terra.bio
  - 📘 Link to [Tips for controlling costs](https://support.terra.bio/hc/en-us/articles/360029748111-Understanding-and-controlling-cloud-costs-) article written by team at The Broad
