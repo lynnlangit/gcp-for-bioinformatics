@@ -64,7 +64,8 @@
 
  [![billing](/images/billing.png)]()
  [![GCP Resource Hierarchy](/images/resources.png)]()
- 
+
+---
 
 ### How to learn more
 
@@ -73,9 +74,9 @@
  - 📘 Link to [best practices for Enterprise Organizations](https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations)
  - 📘 Link to general best practices via [Cloud Architecture Framework](https://cloud.google.com/architecture/framework)
 
-#### GCP Billing
-
 <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/recommendations.png" width="460" align="right"> 
+
+#### GCP Billing
 
 - 📘 Link to [how to set up a budget alert](https://cloud.google.com/billing/docs/how-to/budgets)
 - 📘 Link to [best practices for optimizing cloud costs](https://cloud.google.com/blog/products/gcp/best-practices-for-optimizing-your-cloud-costs)
