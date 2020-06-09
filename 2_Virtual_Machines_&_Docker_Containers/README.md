@@ -33,7 +33,7 @@ There are a number of possible ways to construct high volume data analysis workf
 
 ### Use a Map
 
-An interactive representation (one view shown below) for several of the possible build paths for bioinformatics workflows on GCP (and in other environments, including AWS, HPC and more) is shown below.  To work with the interactive MinMap, **open this link in a NEW web page** -- https://atlas.mindmup.com/lynnlangit/bioinformatics_container_based_pipelines/index.html
+An interactive representation (one view shown below) for several of the possible build paths for bioinformatics workflows on GCP (and in other environments, including AWS, HPC and more) is shown below.  To work with the interactive MindMap, **open this link in a NEW web page** -- https://atlas.mindmup.com/lynnlangit/bioinformatics_container_based_pipelines/index.html
 
 [![workflows](/images/workflows.png)]() 
 
