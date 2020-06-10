@@ -4,7 +4,7 @@
  - USE genomic reference datasets in cloud-based analysis  
     - GCP hosts a number of genomic reference datasets in GCS buckets. 
     - Many of these datasets can be accessed by the Terra.bio platform (which runs on GCP).
-  - USE GCP reference data with bioinformatics tools without having to upload any reference data to the cloud
+  - USE genomic reference data in your analysis **without having to upload any reference data** to the cloud. Examples of standard analysis tools (and other usages) are listed below:
     - [GATK](https://software.broadinstitute.org/gatk/) - genomic analysis toolkit
     - [Hail](https://hail.is/) - variant discovery library 
     - Your custom analysis 
@@ -18,7 +18,7 @@
 
 ### What is this
 
- USE Terra reference data in your analysis jobs. Terra includes the ability to reference a number of datasets that are hosted in the cloud (on GCP) already. 
+ USE Terra reference data in your analysis jobs. Terra interactive or batch analysis jobs include the ability to reference a number of datasets that are hosted in the cloud (on GCP) already. 
 
  ### Terra Reference Datasets
  [![ref-datasets](/images/ref-datasets.png)]()  
@@ -26,7 +26,7 @@
 ---
 
 ### Key considerations
-- Many Terra (GCP) datasets require authenticated access.  The **'1000 Genomes' dataset** has public access.
+- Many Terra (GCP) reference datasets require authenticated access because they consist of human health data.  To explore this feature, all users can use the **'1000 Genomes' dataset** because it has public access.
 - Import and use any subset of this reference data in your Terra analysis (notebook or workflow)
 
 ### How to do this and verify 
@@ -35,17 +35,17 @@ See screenshots below for general flow of working with reference data and your o
 - **LOGIN & SETUP** -> 
   - Navigate to [Terra.bio](https://terra.bio/) --> 'Try Terra' and authenticate with your email
    - Use $300 USD in GCP credit when you first try out Terra
-   - Create a Terra workspace to hold your notebooks or workflows which is where you will define your analysis using selected data 
+   - Create a Terra workspace to run your Jupyter notebooks or WDL/cromwell workflows. These areas are where you will define your analysis using selected refernce datasets 
 - **REFERENCE DATA** -> 
   - IMPORT any subset from your authorized Terra reference data (Terra Library -> Data)  
    --AND/OR--
   - UPLOAD your own research data for analysis in one or more of these locations
-      - Within your Terra Workspace -> Data Section
+      - Within your Terra Workspace -> Data tab -> Files section on the Data page
       - In a Cloud Storage bucket with appropriate permissions
          - i.e. use `gs://{mybucket}/{my folder})` in your notebook or workflow
 - **SETUP ANALYSIS with your data** -> 
-  - Use (or import) a Terra (Jupyter) noteook 
-  - Use (or import) a Terra (WDL) workflow
+  - Use (or import) a Terra (Jupyter) noteook which includes a path to your selected reference dataset
+  - Use (or import) a Terra (WDL) workflow which includes a path to your selected reference dataset
 
 ### Data Workflow Screens from Terra
 
@@ -53,9 +53,9 @@ See screenshots below for general flow of working with reference data and your o
  [![terra-start](/images/terra-start.png)]()
 2. Review Showcase & Tutorials (View Datasets Section) -> click the top left menu and Create a Workspace to get started
  [![workspace](/images/workspace.png)]()
-3. Review available reference data
+3. Review available reference datasets (based on permissions assigned to your Terra user login account)
  [![all-data](/images/all-data.png)]()
-4. Explore 1000 Genomes Public Dataset -> click 'Save in Terra' to save your selection as a cohort in your Terra workspace
+4. Explore 1000 Genomes Public Dataset, (optionally) click on one or more blue bars to create a filter for this dataset -> click 'Save in Terra' to save your selection as a cohort in your Terra workspace
  [![data](/images/data.png)]()
 5. Import your selected data into your Terra workspace
  [![import-data](/images/import-data.png)]()
@@ -75,8 +75,8 @@ See screenshots below for general flow of working with reference data and your o
 ### Other Things to Know
  - Terra Workspace sections:
     - **Notebooks** -> Jupyter notebooks -`*.ipynb` files 
-    - **Workspace** -> Container for WDL workflow(s)
-    - **Dashboard** -> Wiki describing WDL workflow(s) in a workspace
+    - **Workspace** -> Container for WDL workflow(s), uses WDL syntax for the workflow script
+    - **Dashboard** -> Wiki describing WDL workflow(s) in a workspace, uses Markdown syntax
     - **Data** -> there are serveral types of data, when you create a workspace Terra creates an associated GCS bucket (name starts with `gs://fc-nnnnnn-nnnnnn-nnnnn...` . Also you can reference data in any GCS bucket to which you assign GCS IAM permissions (i.e. `gs://<myBucket>/...`)
     NOTE: Before you download data locally, note estimated costs in the popup window. 
       - **Table Inputs** -> this is the data (files) that you will be analyzing in your pipeline
