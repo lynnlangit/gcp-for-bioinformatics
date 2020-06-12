@@ -88,7 +88,7 @@ Terra is the next generation of The Broad Institute's Firecloud tool. Shown belo
  [![terra-concepts](/images/terra-concepts.png)]()
 
  - Key Terra concepts:
-    - **Workspace** -> container for WDL workflow(s)
+    - **Workspace** -> container for WDL workflow(s), Jupyter notebooks and your data (research and reference).  Your data, which includes your input data as well as your job run output data, is stored in a GCS bucket.  You can find that bucket name on the middle right of the first page (Dashboard) of your workspace.
     - **Dashboard** -> Wiki describing WDL workflow(s)
     - **Notebooks** -> container for Jupyter notebooks -`*.ipynb` files
     - **Workflows** -> container for tool(s)/scripts (GATK, Hail...) and configuration, written in WDL for cromwell, JSON for parameters  
