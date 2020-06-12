@@ -86,7 +86,7 @@
 - 📘 Link to [Using GCP Virtual Machine Sizing Recomendations](https://cloud.google.com/compute/docs/instances/apply-sizing-recommendations-for-instances) to save money on GCP service costs.  See screen to the right
 
 #### GCP Billing on Terra.bio
- - 📘 Link to [How to set link a GCP Billing Account to a Terra Project](https://support.terra.bio/hc/en-us/articles/360026182251)
+ - 📘 Link to [How to link a GCP Billing Account to a Terra Project](https://support.terra.bio/hc/en-us/articles/360026182251)
  - 📘 Link to [Tips for controlling costs](https://support.terra.bio/hc/en-us/articles/360029748111-Understanding-and-controlling-cloud-costs-) article written by team at The Broad
  - 📘 Link to [Understanding costs by analysis type](https://support.terra.bio/hc/en-us/articles/360029772212) - using Terra for GCP for work at The Broad
  - 📺 Watch [understanding Terra (GCP service) costs](https://www.youtube.com/watch?v=SRVrzXHkZKU) - 27 minute video from the Broad
