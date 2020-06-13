@@ -98,9 +98,9 @@ Terra is the next generation of The Broad Institute's Firecloud tool. Shown belo
     - **Tool** -> docker container image of your research script or binary tool and configuration in WDL
     - **WDL** -> [workflow definition language](https://software.broadinstitute.org/wdl), dialect required for configuring [cromwell orchestration engine](https://github.com/broadinstitute/cromwell), as in 'a WDL file'
     - **Data** -> there are serveral types of data, when you create a workspace Terra creates an associated GCS bucket (name starts with `gs://fc-nnnnnn-nnnnnn-nnnnn...` . Also you can reference data in any GCS bucket to which you assign GCS IAM permissions (i.e. `gs://<myBucket>/...`) 
-      - **Table Inputs** -> this is the data (files) that you will be analyzing in your pipeline
-        - You can reference this data using the path to the GCS bucket, (i.e. `gs://<bucketName>/<fileName>) --or--
-        - You can reference this data using a pointer to the GCS bucket path, i.e. (`this.myInputFile`)
+      - **Table Inputs** -> this is the data (files) that you will be analyzing in your pipeline, both WDL inputs and outputs
+        - You can reference your data using the path to your GCS bucket, (i.e. `gs://<bucketName>/<fileName>) --or--
+        - You can reference your data using a pointer to your GCS bucket path, i.e. (`this.myInputFile`, `this.myOutputFile`)
         - More about the Terra Data Inputs Model - [link](https://gatkforums.broadinstitute.org/firecloud/discussion/9769/data-model)
           - Participant -> a person enrolled in a study
           - Sample -> a biological sample collected from a participant
