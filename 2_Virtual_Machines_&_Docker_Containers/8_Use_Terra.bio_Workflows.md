@@ -5,15 +5,15 @@
  - USE bioinformatics tools (GATK, Hail...) in Terra workflows on GCP
  - RUN scalable analysis on GCP without manually configuring Cloud Storage & VMs (or container clusters)
  - READ - [Getting Stated with GATK via Terra Workspaces](https://software.broadinstitute.org/gatk/blog?id=24102)
- - UNDERSTAND job overhead on GCP using Job Manager tools in Terra
+ - UNDERSTAND the GCP services used for your workflow (analysis) job using Terra Job Manager tools
  
 ### What is this
  
- Use Terra workflows for analysis - architecture and flow of researcher actions is shown belown
+ Use Terra workflows for scaling your analysis - architecture and flow of researcher actions is shown belown
 
 [![terra-wk-arch](/images/terra-wk-arch.png)]()
  
- Workflows use GCP Virtual Machine and Cloud Storage buckets.  Create your own workflows, or use example, pre-configured workflows. These can implement standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) - shown below, or [Hail](https://hail.is/). Workflows can also use your own custom tools.  
+ Terra Workflows are written with WDL scripts.  Terra implements a persisent cromwell server cluster on GCP.  Terra workflows run using Google Cloud Storage buckets, GCP Virtual Machines and the Cloud Life Sciences API (also called PAPI for pipelines API).  You can configure existing workflows or create your own workflows.  Terra includes examples - these are runnable pre-configured workflows. Workflows can implement standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) - shown below, or [Hail](https://hail.is/). Workflows can also run your own custom tools or scripts.
  
   [![gatk-concepts](/images/gatk-concepts.png)]()
 
