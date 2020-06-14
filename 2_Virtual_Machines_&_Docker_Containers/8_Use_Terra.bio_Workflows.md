@@ -13,7 +13,7 @@
 
 [![terra-wk-arch](/images/terra-wk-arch.png)]()
  
- Terra Workflows are written with WDL scripts.  Terra implements a persisent cromwell server cluster on GCP.  Terra workflows run using Google Cloud Storage buckets, GCP Virtual Machines and the Cloud Life Sciences API (also called PAPI for pipelines API).  You can configure existing workflows or create your own workflows.  Terra includes examples - these are runnable pre-configured workflows. Workflows can implement standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) - shown below, or [Hail](https://hail.is/). Workflows can also run your own custom tools or scripts.
+ Terra Workflows are written with WDL scripts.  Terra implements a persistent cromwell server cluster on GCP.  Terra workflows run using Google Cloud Storage buckets, GCP Virtual Machines and the Cloud Life Sciences API (also called PAPI for pipelines API).  You can configure existing workflows or create your own workflows.  Terra includes examples - these are runnable pre-configured workflows. Workflows can implement standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) - shown below, or [Hail](https://hail.is/). Workflows can also run your own custom tools or scripts.
  
   [![gatk-concepts](/images/gatk-concepts.png)]()
 
@@ -30,8 +30,7 @@
     - Terra includes a UI called `Job Manager` that helps you understand the overhead on GCP of running your jobs
 
 ### How to do this
-
-See example screenshots below for Terra Workflows.    
+ 
 - **LOGIN** -> 
   - NAVIGATE to [Terra.bio](https://terra.bio/) --> 'Try Terra' and authenticate with your email
    - USE $300 USD in GCP credit when you first try out Terra
@@ -67,7 +66,7 @@ Select Workflows to configure and run your Analysis Jobs
 
 ### How to verify you've done it
  For a Terra Workflow/Tool run do the following:  
-    - CLONE an existing workflow or import a workflow (using **'Find a Tool'**) that you created from Dockstore or Broad Methods Repository, shown below  
+    - CLONE an existing workflow or import a workflow (using **'Find a Workflow'**) that you created from Dockstore or Broad Methods Repository, shown below  
      - ADD your data  
      - CONFIGURE the workflow / tool - shown below  
      - CLICK 'run analysis'  
