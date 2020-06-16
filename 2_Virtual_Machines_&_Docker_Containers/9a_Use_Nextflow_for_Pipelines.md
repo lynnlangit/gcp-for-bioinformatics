@@ -1,10 +1,10 @@
 # Use Nextflow for Pipelines
 
 ### Why do this
- USE the Nextflow pipeline language to define and run your analysis workflow at scale
+ USE the Nextflow pipeline language to define and run your analysis workflow at scale 
 
 ### What is this
- Nextflow is a reactive workflow framework & DSL for writing data-intensive computational pipelines.  Run jobs on a single GCE Virtual Machine or a cluster of VMs. You can use GCE + Pipelines API using container images on VMs as well.
+ Nextflow is a reactive workflow framework & DSL for writing data-intensive computational pipelines.  Run jobs on a single GCE Virtual Machine or a cluster of VMs. You can use GCE + Pipelines API (PAPI) using docker images on VMs as well.
  - Nextflow can run on GCP or many other providers
  - Nextflow can run on GCP in two ways:
    - Run jobs on Compute Engine VMs (can run bioinformatics tools from Docker)
@@ -37,8 +37,8 @@ Nextflow RNAseq DOCKERFILE - uses bowtie, cufflinks and tophat tools
  - Use Nextflow pipelines with other cloud vendors: AWS - [link](https://www.nextflow.io/docs/latest/awscloud.html)
  - Get and run example Nextflow bioinformatics pipelines (such as one for 'rnaseq jobs') at the nf-core site - [link](https://nf-co.re/rnaseq/docs)
  - Monitor running Nextflow pipelines using the visual Nextflow Tower tool - [link](https://tower.nf/)
- - Register Nextflow workflows for distribution and reuse in [Dockstore](https://docs.dockstore.org/docs/prereqs/getting-started-with-nextflow/) 
- - Note that Nextflow on Dockstore is a bit different from CWL or WDL. Instead of having one type of descriptor file, Nextflow with Dockstore uses two different kinds of files: A config file, `nextflow.config` and a descriptor file, often, `main.nf`.
+ - Register Nextflow workflows for distribution and reuse in the [Dockstore](https://docs.dockstore.org/docs/prereqs/getting-started-with-nextflow/) genomics workflow registry
+ - Note that Nextflow (NF) on Dockstore is a bit different from CWL or WDL. Instead of having one workflow descriptor file, Nextflow with Dockstore uses two different kinds of files: A config file, `nextflow.config` and a descriptor file, generally called, `main.nf`.
  - Use The Broad's GATK 4 with Nextflow.io use this command `nextflow run CRG-CNAG/CalliNGS-NF -r gatk4 -with-docker`
  - Understand that Nextflow is written in the [Groovy programming language](https://en.wikipedia.org/wiki/Apache_Groovy) & is designed to run on [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine) instances 
  
