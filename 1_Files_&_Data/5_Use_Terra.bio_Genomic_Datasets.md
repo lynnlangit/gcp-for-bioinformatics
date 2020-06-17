@@ -77,9 +77,9 @@ See screenshots below for general flow of working with reference data and your o
     - **Notebooks** -> Jupyter notebooks -`*.ipynb` files 
     - **Workspace** -> Container for WDL workflow(s), uses WDL syntax for the workflow script
     - **Dashboard** -> Wiki describing WDL workflow(s) in a workspace, uses Markdown syntax
-    - **Data** -> there are serveral types of data, when you create a workspace Terra creates an associated GCS bucket (name starts with `gs://fc-nnnnnn-nnnnnn-nnnnn...` . Also you can reference data in any GCS bucket to which you assign GCS IAM permissions (i.e. `gs://<myBucket>/...`)
+    - **Data** -> Container for the types of data you will analyze. This includes your sample data, as well reference datasets.  When you create a workspace Terra creates an associated GCS bucket (name starts with `gs://fc-nnnnnn-nnnnnn-nnnnn...` . Also you can reference data in any GCS bucket to which you assign GCS IAM permissions (i.e. `gs://<myBucket>/...`)
     NOTE: Before you download data locally, note estimated costs in the popup window. 
-      - **Table Inputs** -> this is the data (files) that you will be analyzing in your pipeline
+      - **Table Inputs** -> this is the metadata for the input/output files that you will be analyzing in your pipeline
         - You can reference this data using the path to the GCS bucket, (i.e. `gs://<bucketName>/<fileName>) --or--
         - You can reference this data using a pointer to the GCS bucket path, i.e. (`this.myInputFile`)
         - Defined by a structured .tsv metadata file creates aliases & pointers to your input files locations on GCS. These aliases are referenced in Terra worflows (as variables). TSV files for Terra.bio require the following structure - example [link](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/genomic-data-samples/TSV/terra_sample.tsv):
@@ -103,13 +103,19 @@ See screenshots below for general flow of working with reference data and your o
   Image of Terra Data Model from this [link](https://software.broadinstitute.org/firecloud/documentation/quickstart?page=data)
 
 ### How to learn more
- - 📙 Try out some example Terra notebooks using the [Terra Notebooks Playground](https://app.terra.bio/#workspaces/help-gatk/Terra%20Notebooks%20Playground) workspace - examples using Python, R and also many bioinformatics tools
- - 📙 Try out some example Terra notebooks (Jupyter_Notebook_Examples folder), includes using the [CSIRO Bioinformatics VariantSpark](https://bioinformatics.csiro.au/variantspark) library and other bioinformatics libraries.
+
+#### Learn about Terra Data Tab
+ - 📺 Watch 5 minute [Intro to Data Tables](https://www.youtube.com/watch?v=IeLywroCNNA) screencast by the Broad 
+ - 📺 Watch 5 minute [Making and Uploading a Data Table in Terra](https://www.youtube.com/watch?v=2MxSlKhIrFY) screencast by the Broad
+- 📺 Watch 32 minute [Intro to Terra](https://www.youtube.com/watch?v=9kffTkK-B7g) screencast by the Broad
+
+ #### Learn about Terra Data Analysis 
+- 📺 Watch 15 minute [Understand Notebooks in Terra](https://www.youtube.com/watch?v=qP-1xk02AS0) screencast by the Broad
+ - 📙 Try out some example Terra Jupyter notebooks using the [Terra Notebooks Quickstart](https://app.terra.bio/#workspaces/fc-product-demo/Terra-Notebooks-Quickstart) workspace - examples using R, BigQuery and also many bioinformatics tools
+ - 📙 Try out some example Terra workflows includes using the [Terra Workflows Quickstart](https://app.terra.bio/#workspaces/fc-product-demo/Terra-Workflows-Quickstart) and other bioinformatics libraries.
  - 📙 Try out some of these bioinformatics tools using [example Jupyter notebooks](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/2_Virtual_Machines_%26_Docker_Containers/Jupyter_Notebook_Examples)
 - 📘 Link to [The future of GATK tutorials is written in Notebooks](https://software.broadinstitute.org/gatk/blog?id=24167)
 - 📘 Links to [Terra articles](https://support.terra.bio/hc/en-us)
 or to [Terra community forum](https://support.terra.bio/hc/en-us/community/topics/360000500432) hosted by the Broad
- - 📺  Watch 32 minute [Intro to Terra](https://www.youtube.com/watch?v=9kffTkK-B7g) screencast by the Broad
- - 📺 Watch 15 minute [Understand Notebooks in Terra](https://www.youtube.com/watch?v=qP-1xk02AS0) screencast by the Broad
- - 📺 Watch 25 minute [Use Notebooks in Terra](https://www.youtube.com/watch?v=-wBohV_vj-o) screencast by the Broad
+- 📺 Watch 25 minute [Use Notebooks in Terra](https://www.youtube.com/watch?v=-wBohV_vj-o) screencast by the Broad
  
