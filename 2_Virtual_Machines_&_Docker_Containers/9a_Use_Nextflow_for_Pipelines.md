@@ -56,6 +56,8 @@ Shown below is a reference architecture for running Nextflow analysis on GCP usi
  - 📘 Link to paper on [containerized approaches to workflows(includes Nextflow)](https://www.preprints.org/manuscript/202001.0378/v1/download)
  - 📘 Link to using [Nextflow Tower](https://www.seqera.io/blog/introducing-nextflow-tower/) for monitoring - screenshot shown below
 
+![Nextflow Tower](/images/nf-tower.png)
+
 #### Nextflow on GCP
  - 📘 Link to [Nextflow on GCP](https://www.nextflow.io/docs/latest/google.html)
  - 📘 Link to [Nextflow on GCP Life Sciences API tutorial](https://cloud.google.com/life-sciences/docs/tutorials/nextflow)
