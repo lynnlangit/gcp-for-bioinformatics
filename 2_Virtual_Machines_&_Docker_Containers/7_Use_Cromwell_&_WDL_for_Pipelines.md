@@ -21,8 +21,6 @@ Shown below is the relationship between WDL (scripts), cromwell and typical exec
    - READ WDL documentation - [link](https://software.broadinstitute.org/wdl/documentation/quickstart)
    - VIEW 'Using WDL' MindMap - [link](https://atlas.mindmup.com/lynnlangit/wdl/index.html)
 
-[![wdl-concepts](/images/wdl-concepts.png)]()
-
 ### Key considerations
  - USE cromwell with Google Life Sciences API to manage the GCE (VM) resources for your analysis job with fewer manual configuaration steps. You define the resources for your cluster of VMs and Life Sciences API starts and stops VMs as needed. You can configure use of pre-emptible VMs to save on service costs as well.
  - USE WDL scripts to configure the workflow inputs and outputs (for each bioinformatics tool used)
@@ -30,6 +28,9 @@ Shown below is the relationship between WDL (scripts), cromwell and typical exec
  - USE JSON files to configure the input/output parameters for each tool and also for EACH job execution
 
 ### How to do this
+
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/wdl-concepts.png" width=500 align=right> 
+
  - START with this 5 minute intro to cromwell & WDL - [link](https://cromwell.readthedocs.io/en/stable/tutorials/FiveMinuteIntro/)
  - LEARN WDL syntax by example in this set of lessons - [link](https://github.com/openwdl/learn-wdl)
  - [This tutorial](https://wdl-runner.readthedocs.io/en/latest/GettingStarted/TutorialOverview/#tutorial-scenario) shows running a multi-stage workflow on GCP
