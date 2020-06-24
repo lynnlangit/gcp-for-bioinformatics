@@ -30,6 +30,7 @@
  - Serverless auto-scales (to your GCP account limits) by default
  - Cloud Run has two execution modes - within CloudRun and CloudRun for Anthos using Kubernetes (GKE)
  - GAE (AppEngine) is a serverless service which can be used to host web sites and support common programming language.  Python example [here](https://cloud.google.com/appengine/docs/python/)
+ - Cloud Build (for serverless continuous deployment) is integratable into CloudRun functions.  Use it for CD in building updated Docker images 
 
 ### How to learn more
  - 📘 Link to [choosing a serverless option](https://cloud.google.com/serverless-options/)
