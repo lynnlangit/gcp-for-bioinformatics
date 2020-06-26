@@ -9,12 +9,12 @@ You have a number of options on how to use the materials provided in this course
 
 This Repo includes content you can read, watch or run:  
 
-- 📗READ - one page of this Repo (MD page)
-- 📺WATCH -  linked YouTube screencasts
-- 📙TRY - Jupyter Notebook example
+- 📗 READ - one page of this Repo (MD page)
+- 📺 WATCH -  linked YouTube screencasts
+- 📙 TRY - Jupyter Notebook example
 - :octocat: TRY - linked GitHub Repos
-- 📘EXPAND - linked (external) resources
-- 🔍SCAN - search a list in this Repo
+- 📘 EXPAND - linked (external) resources
+- 🔍 SCAN - search a list in this Repo
 
 ---
 
