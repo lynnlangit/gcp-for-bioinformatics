@@ -32,12 +32,12 @@ We love contributions!  Here are some tips for creating contributions to this op
 ...  
 - **How to learn more**
     - Text here...(links - use icons by content type, shown below)  
-        1. 📗READ - one page of this Repo (MD page)
-        2. 📺WATCH -  linked YouTube screencasts
-        3. 📙TRY - Jupyter Notebook example
+        1. 📗 READ - one page of this Repo (MD page)
+        2. 📺 WATCH -  linked YouTube screencasts
+        3. 📙 TRY - Jupyter Notebook example
         4. :octocat: TRY - linked GitHub Repos
-        5. 📘EXPAND - linked (external) resources
-        6. 🔍SCAN - search a list in this Repo
+        5. 📘 EXPAND - linked (external) resources
+        6. 🔍 SCAN - search a list in this Repo
 
 ----
 
