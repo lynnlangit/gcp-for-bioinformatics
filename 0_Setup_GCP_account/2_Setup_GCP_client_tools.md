@@ -89,4 +89,5 @@ This service is also called GCP Colaboratory.  Colabs was originally a project a
  - 📘 Link to [Integrated Shell features](https://cloud.google.com/shell/docs/features)
  - 📘 Link to [Integrated Shell limits](https://cloud.google.com/shell/docs/limitations)
  - 📘 Link to [Scripting GCP examples](https://cloud.google.com/sdk/docs/scripting-gcloud)
+ - 📘 Link to [7 gcloud tips](https://medium.com/google-cloud/7-gcloud-tricks-you-probably-didnt-know-7f64a16869e7)
  - 📺 Link to [How do I use the BASH command line?](https://www.youtube.com/watch?v=EMaFdfIlK58)
