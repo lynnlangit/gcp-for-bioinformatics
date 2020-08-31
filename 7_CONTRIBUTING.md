@@ -2,11 +2,11 @@
 
 We love contributions!  Here are some tips for creating contributions to this open source course.
 
-> Use active voice, i.e. 'you will click..., you learn to create..., etc...' rather than passive voice 'clicking x results in y...'  
+## General Approaches
 
-> Start blocks with active VERBS in all caps, i.e. 'USE..., LEARN...' , rather than 'using x does y' or 'x results in z'
-
-> Use hierarchies and lists to convey structure, i.e. 
+Use **active voice**, i.e. 'you will click..., you learn to create..., etc...' rather than passive voice 'clicking x results in y...'  
+Start blocks with active **VERBS in ALL CAPS**, i.e. 'USE..., LEARN...' , rather than 'using x does y' or 'x results in z'.  
+Use **hierarchies and lists** to convey structure, i.e...
 - 1 DO something...
     - 1a DO this task to do this thing
     - 1b DO the next task to do this thing
@@ -17,8 +17,12 @@ We love contributions!  Here are some tips for creating contributions to this op
 - 3 DO something else again...
     - 3a DO this task to do this thing
     - 3b DO the next task to do this thing
+    
+---
 
-> The section headings on each page are the same by design, i.e. 
+## Sections Headings
+
+The section headings on each page are the same by design, i.e. 
 
 - **Why do this**  
     - Text here...(reasons to use this service for researchers)
