@@ -41,4 +41,5 @@ For complete directions see https://github.com/googlegenomics/gcp-variant-transf
 
 #### Learn More
  - 📺 Watch this video with tips on optimizing both Variant Transforms and also BigQuery queries from GCP:Next 2019 - [link](https://www.youtube.com/watch?v=27tSivxnQ_E)
+ - 📘 Learn how Mayo Clinic uses Variant Transforms - [link](https://cloud.google.com/blog/products/data-analytics/genome-data-analytics-with-google-cloud)
 
