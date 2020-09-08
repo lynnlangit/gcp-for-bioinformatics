@@ -17,7 +17,7 @@
 
 ### How to verify you've done it
  - NAVIGATE to the website using a browser and test web page functionality
- - REVIEW the Stackdriver logs to verify the result of the web page function invocations 
+ - REVIEW the Cloud logs to verify the result of the web page function invocations 
 
 ### Other Things to Know
  - If hosting a static website, you could also consider serving the page content directly from a Cloud Storage bucket - [link](https://cloud.google.com/storage/docs/hosting-static-website)
