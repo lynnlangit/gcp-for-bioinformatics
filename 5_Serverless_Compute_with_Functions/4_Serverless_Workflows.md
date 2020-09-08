@@ -24,9 +24,11 @@
 ### Other Things to Know
  - Workflow features - [link](https://cloud.google.com/workflows#section-8)
  - Serverless autoscales (to your GCP account limits) by default
+ - USE GCP Secrets Manager to store secrets (API keys, etc...) with GCP Workflows
 
 ### How to learn more
  - :octocat: Link to [code example](https://github.com/meteatamel/workflow-samples)
  - 📺 Link to "How to build Serverless Workflows" 16 minute video - [link](
 https://cloud.withgoogle.com/next/sf/sessions?session=SVR101#application-modernization)
+- 📘 Link to [pricing example](https://cloud.google.com/workflows/pricing#price-tables)
  
