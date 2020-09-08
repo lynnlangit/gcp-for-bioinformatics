@@ -5,8 +5,8 @@
 
 ### What is this
  - USE GCP Workflows to create a serverless workflow using a YAML file which defines workflow steps
-- GCP Workflows allows you to orchestrate and automate GCP and HTTP-based API services into serverless workflows
- - GCP Workflows commonly 'string together' the outputs from such as GCP Functions, CloudRun and other GCP Serverless services
+- GCP Workflows allows you to orchestrate and automate both your GCP and external HTTP-based API services into serverless workflows
+ - GCP Workflows commonly 'string together' the outputs from such as GCP Functions, CloudRun, Firestore and other GCP Serverless services
 
 ### Key considerations
  - SETUP a GCP Service account with the "roles/run.invoker" permission
