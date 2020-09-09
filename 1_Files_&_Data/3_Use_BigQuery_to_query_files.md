@@ -100,8 +100,11 @@
  - 📘 Link to 60+ min Codelab [Analyze variants in BQ](https://codelabs.developers.google.com/codelabs/genomics-vcfbq/#0)
  - 📘 Link to [Example ISB-CGC tutorial](https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/Tutorials/KidneyCancerDemo/KidneyCancerDemo.html)
  - 📘 Link to [Example BigQuery Syntax ISB-CGC tutorial](https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/progapi/bigqueryGUI/GettingStartedWithGoogleBigQuery.html)
-  - 📘 Link to [Example NCBI-Sequence Read Archive (SRA) in BigQuery](https://www.ncbi.nlm.nih.gov/sra/docs/sra-bigquery/)
+ - 📘 Link to [Example NCBI-Sequence Read Archive (SRA) in BigQuery](https://www.ncbi.nlm.nih.gov/sra/docs/sra-bigquery/)
  - 📺 Watch [working with BigQuery datasets in Terra (GCP service) ](https://www.youtube.com/watch?v=jOmCCo3EJr0) - 40 minute video from the Broad
+ 
+ #### BigQuery Integrations
+ - :octocat: Utility code for [Spark-to-BigQuery-connector](https://github.com/GoogleCloudDataproc/spark-bigquery-connector)
  - 📙 Try out BigQuery and BQ ML using [example Jupyter notebooks](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/3_Machine_Learning/Jupyter_Notebook_Examples)
  - 📺 Link to 6 minute screencast - [BigQuery Machine Learning](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-bigquery-ml)
 [![bq-ml-demo](/images/bq-ml-demo.png)](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-bigquery-ml) 
