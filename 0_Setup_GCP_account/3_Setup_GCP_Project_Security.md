@@ -28,6 +28,7 @@ NOTE: Most GCP services are disabled by default.  You must first explicitly enab
 
 ### How to verify you've done it
  - Test permissions assigned to roles/users
+ - TIP: You can use the GCP IAM & Admin -> `Policy Troubleshooter` tool to verify that an account has been assigned the appropriate permissions.  This tools shows the (policy) bindings assigned to one or more (service account) resources.
 
 ### 📺 Click below to see Lynn's 'Use GCP IAM security roles' 6 min video
 [![GCP IAM roles - Google Cloud Platform for Bioinformatics](http://img.youtube.com/vi/4oSA9bdwlPs/0.jpg)](http://www.youtube.com/watch?v=4oSA9bdwlPs "GCP IAM roles - Google Cloud Platform for Bioinformatics")
