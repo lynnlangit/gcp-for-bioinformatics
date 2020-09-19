@@ -115,6 +115,7 @@ See screenshots below for general flow of working with reference data and your o
  - 📙 Try out some example Terra workflows includes using the [Terra Workflows Quickstart](https://app.terra.bio/#workspaces/fc-product-demo/Terra-Workflows-Quickstart) and other bioinformatics libraries.
  - 📙 Try out some of these bioinformatics tools using [example Jupyter notebooks](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/2_Virtual_Machines_%26_Docker_Containers/Jupyter_Notebook_Examples)
 - 📘 Link to [The future of GATK tutorials is written in Notebooks](https://software.broadinstitute.org/gatk/blog?id=24167)
+- 📙 Try out an [example using Terra workflows on the controlled access TARGET dataset](https://app.terra.bio/#workspaces/help-gatk/Introduction-to-Target-Dataset)
 - 📘 Links to [Terra articles](https://support.terra.bio/hc/en-us)
 or to [Terra community forum](https://support.terra.bio/hc/en-us/community/topics/360000500432) hosted by the Broad
 - 📺 Watch 25 minute [Use Notebooks in Terra](https://www.youtube.com/watch?v=-wBohV_vj-o) screencast by the Broad
