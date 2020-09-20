@@ -55,15 +55,15 @@
 ### Workflow Screenshots from Terra  
 
  <img src='https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/terra-start.png' width="600" align="left">  
-Terra Starter Screen - View Examples or View (Your)Workspaces. Use Best Practice GATK4 Examples or Featured Workspaces
- [![workspaces](/images/workspaces.png)]()  
+Terra Starter Screens shown below - First view Examples or View (Your)Workspaces, then use Best Practice GATK4 Examples or Featured Workspaces 
+<img src='https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/workspaces.png' width="600" align="left">   
 Browse Reference Data
- [![all-data](/images/all-data.png)]()
-Select Workflows to configure and run your Analysis Jobs
- [![workspace-menu](/images/workspace-menu.png)]()
- 
+ <img src='https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/all-data.png' width="600" align="left">  
+Select Workflows to configure and run your Analysis Jobs  
+ <img src='https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/workspace-menu.png' width="600" align="left">  
 
 ### How to verify you've done it
+
  For a Terra Workflow/Tool run do the following:  
     - CLONE an existing workflow or import a workflow (using **'Find a Workflow'**) that you created from Dockstore or Broad Methods Repository, shown below  
      - ADD your data  
