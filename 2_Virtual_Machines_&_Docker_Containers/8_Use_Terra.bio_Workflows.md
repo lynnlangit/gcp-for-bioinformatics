@@ -50,25 +50,6 @@
 [![Terra.bio Workflows on GCP for Bioinformatics](http://img.youtube.com/vi/tdpWXYcFSVA/0.jpg)](http://www.youtube.com/watch?v=tdpWXYcFSVA "Terra.bio Workflows on GCP for Bioinformatics")
 
 ----
-   
-
-### Workflow Screenshots from Terra  
-  
-Terra Starter Screens shown below:   
-- View Examples or View (Your)Workspaces
-- Use Best Practice GATK4 Examples or Featured Workspaces 
-- Browse Reference Data
-- Select Workflows to configure and run your Analysis Jobs
-
-<img src='https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/terra-start.png' width="800" align="left">  
-
-<img src='https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/workspaces.png' width="800" align="left">  
-
-<img src='https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/all-data.png' width="800" align="left">  
-
-<img src='https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/workspace-menu.png' width="800" align="left"> 
-
----
 
 ### How to verify you've done it
 
