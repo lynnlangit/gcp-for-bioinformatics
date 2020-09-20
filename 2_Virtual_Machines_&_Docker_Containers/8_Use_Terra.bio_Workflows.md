@@ -54,10 +54,9 @@
 
 ### Workflow Screenshots from Terra  
 
-Terra Starter Screen - View Examples or View (Your)Workspaces
- [![terra-start](/images/terra-start.png)]()
-Use Best Practice GATK4 Examples or Featured Workspaces
- [![workspaces](/images/workspaces.png)]()
+ <img src='https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/terra-start.png' width="600" align="left">  
+Terra Starter Screen - View Examples or View (Your)Workspaces. Use Best Practice GATK4 Examples or Featured Workspaces
+ [![workspaces](/images/workspaces.png)]()  
 Browse Reference Data
  [![all-data](/images/all-data.png)]()
 Select Workflows to configure and run your Analysis Jobs
