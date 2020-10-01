@@ -77,8 +77,10 @@
 
 ### How to learn more
 
-#### About BigQuery Architecture
+#### About BigQuery Query Features & Architecture
+ - 📘 Link to [explanation of BigQuery query features](https://medium.com/google-cloud/bigquery-explained-querying-your-data-9e017f2714a3)
  - 📘 Link to [explanation of BigQuery architecture](https://medium.com/google-cloud/bigquery-explained-overview-357055ecfda3)
+
 
 #### About SQL Language for BigQuery
  - 📘 Link to lessons, [practice SQL queries using a small, public GCP bioinformatics dataset](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/6a_SQLQuestions.md)
