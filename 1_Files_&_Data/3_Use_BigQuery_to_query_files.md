@@ -79,6 +79,7 @@
 
 #### About BigQuery Query Features & Architecture
  - 📘 Link to [explanation of BigQuery query features](https://medium.com/google-cloud/bigquery-explained-querying-your-data-9e017f2714a3)
+ - 📘 Link to [explanation of BigQuery JOINS](https://medium.com/google-cloud/bigquery-explained-working-with-joins-nested-repeated-data-1941646ccb5b)
  - 📘 Link to [explanation of BigQuery architecture](https://medium.com/google-cloud/bigquery-explained-overview-357055ecfda3)
 
 
@@ -86,8 +87,8 @@
  - 📘 Link to lessons, [practice SQL queries using a small, public GCP bioinformatics dataset](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/6a_SQLQuestions.md)
  - 📘 Link to [learn SQL - 12 questions](https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises)
  - 📘 Link to [standard SQL syntax](https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax) used in Google BigQuery  
-  - 📘 Link to [example genomics SQL queries](https://codelabs.developers.google.com/codelabs/genomics-vcfbq/#4) shown using Google BigQuery 
-  - 📘 Link to [best practices](https://cloud.google.com/bigquery/docs/best-practices-performance-compute) optimization patterns for using Google BigQuery, including how to optimize `JOIN` and other types of queries  
+ - 📘 Link to [example genomics SQL queries](https://codelabs.developers.google.com/codelabs/genomics-vcfbq/#4) shown using Google BigQuery 
+ - 📘 Link to [best practices](https://cloud.google.com/bigquery/docs/best-practices-performance-compute) optimization patterns for using Google BigQuery, including how to optimize `JOIN` and other types of queries  
    
 #### About controlling costs for BigQuery   
  - 📘 Link to [Understand BQ pricing](https://cloud.google.com/bigquery/pricing)
