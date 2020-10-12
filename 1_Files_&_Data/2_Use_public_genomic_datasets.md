@@ -40,5 +40,6 @@
 
 ### How to learn more
  - 📘 Link to [GCP Public Datasets](https://cloud.google.com/genomics/docs/public-datasets/) image shown below lists currently available datasets
+ - 📘 Link to information about how to query data in the [genome AD project](https://cloud.google.com/blog/topics/healthcare-life-sciences/google-cloud-providing-free-access-to-genome-aggregation-database)
 
  <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/public-datasets.png" width="460" align="left"> 
