@@ -1,7 +1,7 @@
 # Use Google Cloud Services for Machine Learning
 
 
-In this section, you'll get information about using Google Cloud services for machine learning.  You'll use BigQuery Machine Learning.  Also you'll use Google ML APIs and services.  Additionally you'll use Google Colabs to run BigQuery ML jobs in a Jupyter notebook.
+In this section, you'll get information about using Google Cloud services for machine learning.  You'll use BigQuery Machine Learning.  Also you'll use Google ML APIs and services.  Additionally you'll use Google Colabs to run BigQuery ML jobs in a Jupyter notebook.  Useful presentation on notebook options for GCP - https://mco.dev/so-many-notebooks-so-little-time.../
 
 Here are the topic pages in this section:
 
