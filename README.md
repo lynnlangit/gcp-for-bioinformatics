@@ -27,7 +27,6 @@ This Repo includes content you can read, watch or run:
 
 ### Why would I choose to use a public cloud vendor for bioinformatics?
 
-<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/flow-cell.jpg" width="400" align="left">
 
 ⭐️ **SAVE MONEY** run (and pay for) scalable analysis jobs only when you need to run them  
 ⭐️ **SAVE TIME** use vendor-managed infrastructure & best-practice patterns for fast repeatable research   
