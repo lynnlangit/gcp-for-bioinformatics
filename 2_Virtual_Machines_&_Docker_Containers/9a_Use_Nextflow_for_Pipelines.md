@@ -54,6 +54,7 @@ Shown below is a reference architecture for running Nextflow analysis on GCP usi
  - 📺 Watch Nextflow presentations - [link](https://www.nextflow.io/presentations.html)
  - 📘 Link to [using caching with Nextflow](https://www.nextflow.io/blog/2019/demystifying-nextflow-resume.html)
  - 📘 Link to paper on [containerized approaches to workflows(includes Nextflow)](https://www.preprints.org/manuscript/202001.0378/v1/download)
+   - 📘 Link to using [Nextflow cli](https://www.nextflow.io/docs/edge/cli.html) for scripting 
  - 📘 Link to using [Nextflow Tower](https://www.seqera.io/blog/introducing-nextflow-tower/) for monitoring - screenshot shown below
 
 ![Nextflow Tower](/images/nf-tower.png)
