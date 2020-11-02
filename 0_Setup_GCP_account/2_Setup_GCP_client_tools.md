@@ -41,6 +41,14 @@ NOTE: As an alternative to using the GCP integrated cloud shell, you could use a
 
 `gcloud compute instances create example-instance-1 example-instance-2 example-instance-3 --zone=us-central1-a` 
 
+**NEW** - Google Cloud Shell editor
+
+Google Cloud recently previewed a new version of their Cloud Shell Editor, immediately available in preview on ide.cloud.google.com and powered by the Eclipse Theia IDE platform. This new version extends Cloud Shell with an online development environment that includes:
+
+- Cloud-native development via Cloud Code plugin support
+- Rich language support for Go, Java, .Net, Python and NodeJS 
+- Additional features such as integrated source control and support for multiple projects
+
 ---
 
  <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/colabs.png" width="460" align="right"> 
