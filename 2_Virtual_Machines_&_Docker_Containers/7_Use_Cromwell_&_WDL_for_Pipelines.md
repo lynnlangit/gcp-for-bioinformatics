@@ -86,3 +86,4 @@ Shown below is the relationship between WDL (scripts), cromwell and typical exec
     - [miniwdl check](https://github.com/chanzuckerberg/miniwdl#miniwdl-check) - a WDL linter
     - [miniwdl cromwell](https://github.com/chanzuckerberg/miniwdl#miniwdl-cromwell) - command-line interface for running a workflow locally using Cromwell
     - [miniwdl run](https://github.com/chanzuckerberg/miniwdl#miniwdl-run) - Operation is nearly identical to miniwdl cromwell. The invoking user must have permission to control Docker.
+- 📘 EXAMPLE using a set of scripts and tools for the analysis of viral NGS data via a WDL workflow [on Dockstore with miniwdl](https://dockstore.org/workflows/github.com/broadinstitute/viral-pipelines/isnvs_merge_to_vcf:master?tab=info)
