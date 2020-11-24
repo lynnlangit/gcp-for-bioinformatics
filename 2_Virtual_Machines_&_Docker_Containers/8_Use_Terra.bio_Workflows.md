@@ -120,6 +120,7 @@ Terra is the next generation of The Broad Institute's Firecloud tool. Shown belo
 - 📺 Watch short [using Terra](https://www.youtube.com/channel/UCkXAqpR5Hk1ZmNd2-1K2l5Q/videos) screencasts by the Broad
 - 📺 Watch [using Docker containers on Terra](https://www.youtube.com/watch?v=jv_HSFBYOJs) - 22 minute video from the Broad Institute
 - 📙 Try out the Terra workflows using Broad's [Genomics-in-the-cloud workspace](https://app.terra.bio/#workspaces/help-gatk/Genomics-in-the-Cloud-v1) 
+- 📺 Watch short video showing how to import existing workflows into Terra from Dockstore or by [directly uploading WDL files](https://www.youtube.com/watch?v=VtKlYqWBW6A)
 
 
 #### Learning More
