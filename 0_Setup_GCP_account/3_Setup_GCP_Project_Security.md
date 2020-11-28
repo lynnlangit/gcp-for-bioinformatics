@@ -42,4 +42,5 @@ NOTE: Most GCP services are disabled by default.  You must first explicitly enab
  - 📘 GCP Security Best Practice from The Broad - [link](https://dsp-security.broadinstitute.org/cloud-security/google-cloud-platform)
  - 📘 HIPPA compliant GCP services - [link](https://cloud.google.com/security/compliance/hipaa/)
  - 📘 GCP Security Whitepapers - [link](https://services.google.com/fh/files/misc/security_whitepapers_march2018.pdf)
-  - 📺 Watch [understanding Terra security roles and other topics](https://www.youtube.com/watch?v=SRVrzXHkZKU) - 27 minute video from the Broad Institute, security discussion starts at 10:00 in the video. Terra.bio runs on GCP.
+ - 📺 Watch [understanding Terra security roles and other topics](https://www.youtube.com/watch?v=SRVrzXHkZKU) - 27 minute video from the Broad Institute, security discussion starts at 10:00 in the video. Terra.bio runs on GCP.
+ - 📘 IAM release updates, adding more granular control via service improvements - [link](https://cloud.google.com/iam/docs/release-notes)
