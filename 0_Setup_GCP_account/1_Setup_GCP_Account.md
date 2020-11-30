@@ -84,6 +84,7 @@
 - 📘 Link to [GCP Service Pricing Calculator](https://cloud.google.com/products/calculator/)
 - 📘 Link to [Article on GCP Billing Accounts](https://medium.com/google-cloud/managing-billing-permissions-in-google-cloud-31906aa626a0)
 - 📘 Link to [Using GCP Virtual Machine Sizing Recomendations](https://cloud.google.com/compute/docs/instances/apply-sizing-recommendations-for-instances) to save money on GCP service costs.  See screen to the right
+- 📘 Link to [Article of example of setting up billing actions](https://cloud.google.com/billing/docs/how-to/notify)
 
 #### GCP Billing on Terra.bio
  - 📘 Link to [How to link a GCP Billing Account to a Terra Project](https://support.terra.bio/hc/en-us/articles/360026182251)
