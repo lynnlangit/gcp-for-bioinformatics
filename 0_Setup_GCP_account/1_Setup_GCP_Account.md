@@ -86,6 +86,8 @@
 - 📘 Link to [Using GCP Virtual Machine Sizing Recomendations](https://cloud.google.com/compute/docs/instances/apply-sizing-recommendations-for-instances) to save money on GCP service costs.  See screen to the right
 - 📘 Link to [Article of example of setting up billing actions](https://cloud.google.com/billing/docs/how-to/notify). See screen below for reference example
 
+---
+
 ![billing-actions](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/billing-actions.png)
 
 #### GCP Billing on Terra.bio
