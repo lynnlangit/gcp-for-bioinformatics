@@ -49,6 +49,7 @@ Shown below is a reference architecture for running Nextflow analysis on GCP usi
 ![Nextflow Architecture using GCP Genomics/Life Sciences API](/images/nf-gcp.png)
 
 #### General Nextflow
+ - 📘 Link to [Nextflow guide](https://www.nextflow.io/blog/2020/learning-nextflow-in-2020.html)
  - 📘 Link to [Nextflow code patterns](http://nextflow-io.github.io/patterns/index.html)
  - 📘 Read about [Pipeliner for Nextflow paper](https://www.biorxiv.org/content/biorxiv/early/2018/11/23/476515.full.pdf)
  - 📺 Watch Nextflow presentations - [link](https://www.nextflow.io/presentations.html)
