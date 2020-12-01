@@ -65,11 +65,10 @@
  [![billing](/images/billing.png)]()
 
 ---
- #### Enterprise GCP Setup
+### GCP Enterprise Account Setup Guidance
 
 Enterprises will generally set up a GCP Organizational Hierarchy, to enforce policy over the business units and/or projects.  This policy can include GCP service usage limits which impacts security and billing.
 
-### GCP Enterprise Account Setup Guidance
  - 📘 Link to [Enterprise Onboarding Checklist](https://cloud.google.com/docs/enterprise/onboarding-checklist)
  - 📘 Link to [best practices for Enterprise Organizations](https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations)
  - 📘 Link to general best practices via [Cloud Architecture Framework](https://cloud.google.com/architecture/framework)
