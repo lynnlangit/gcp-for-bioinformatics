@@ -63,6 +63,11 @@
    - A billing account is linked to a payment profile (individual or corporate)
 
  [![billing](/images/billing.png)]()
+
+ #### Enterprise GCP Setup
+
+Enterprises will generally set up a GCP Organizational Hierarchy, to enforce policy over the business units and/or projects.  This policy can include GCP service usage limits which impacts security and billing.
+
  [![GCP Resource Hierarchy](/images/resources.png)]()
 
 ---
@@ -73,10 +78,6 @@
  - 📘 Link to [Enterprise Onboarding Checklist](https://cloud.google.com/docs/enterprise/onboarding-checklist)
  - 📘 Link to [best practices for Enterprise Organizations](https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations)
  - 📘 Link to general best practices via [Cloud Architecture Framework](https://cloud.google.com/architecture/framework)
-
-#### Enterprise GCP Setup
-
-Enterprises will generally set up a GCP Organizational Hierarchy, to enforce policy over the business units and/or projects.  This policy can include GCP service usage limits which impacts security and billing.
 
 <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/recommendations.png" width="460" align="right"> 
 
