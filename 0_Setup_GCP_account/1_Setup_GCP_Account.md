@@ -70,16 +70,16 @@ Enterprises will generally set up a GCP Organizational Hierarchy, to enforce pol
 
  [![GCP Resource Hierarchy](/images/resources.png)]()
 
----
-
-### How to learn more
-
 #### GCP Enterprise Account Setup Guidance
  - 📘 Link to [Enterprise Onboarding Checklist](https://cloud.google.com/docs/enterprise/onboarding-checklist)
  - 📘 Link to [best practices for Enterprise Organizations](https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations)
  - 📘 Link to general best practices via [Cloud Architecture Framework](https://cloud.google.com/architecture/framework)
 
 <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/recommendations.png" width="460" align="right"> 
+
+---
+
+### How to learn more
 
 #### GCP Billing
 
