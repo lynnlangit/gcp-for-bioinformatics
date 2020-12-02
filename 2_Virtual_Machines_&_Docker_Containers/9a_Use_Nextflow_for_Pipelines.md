@@ -41,6 +41,8 @@ Nextflow RNAseq DOCKERFILE - uses bowtie, cufflinks and tophat tools
  - Note that Nextflow (NF) on Dockstore is a bit different from CWL or WDL. Instead of having one workflow descriptor file, Nextflow with Dockstore uses two different kinds of files: A config file, `nextflow.config` and a descriptor file, generally called, `main.nf`.
  - Use The Broad's GATK 4 with Nextflow.io use this command `nextflow run CRG-CNAG/CalliNGS-NF -r gatk4 -with-docker`
  - Understand that Nextflow is written in the [Groovy programming language](https://en.wikipedia.org/wiki/Apache_Groovy) & is designed to run on [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine) instances 
+
+---
  
 ### How to learn more
 
@@ -51,11 +53,15 @@ Shown below is a reference architecture for running Nextflow analysis on GCP usi
 #### General Nextflow
  - 📘 Link to [Nextflow guide](https://www.nextflow.io/blog/2020/learning-nextflow-in-2020.html)
  - 📘 Link to [Nextflow code patterns](http://nextflow-io.github.io/patterns/index.html)
+ - 📘 Link to [Awesome Nextflow links](https://github.com/nextflow-io/awesome-nextflow)
+  - 📺 Watch Nextflow presentations - [link](https://www.nextflow.io/presentations.html)
+
+#### Nextflow Tools
+
  - 📘 Read about [Pipeliner for Nextflow paper](https://www.biorxiv.org/content/biorxiv/early/2018/11/23/476515.full.pdf)
- - 📺 Watch Nextflow presentations - [link](https://www.nextflow.io/presentations.html)
  - 📘 Link to [using caching with Nextflow](https://www.nextflow.io/blog/2019/demystifying-nextflow-resume.html)
  - 📘 Link to paper on [containerized approaches to workflows(includes Nextflow)](https://www.preprints.org/manuscript/202001.0378/v1/download)
-   - 📘 Link to using [Nextflow cli](https://www.nextflow.io/docs/edge/cli.html) for scripting 
+ - 📘 Link to using [Nextflow cli](https://www.nextflow.io/docs/edge/cli.html) for scripting 
  - 📘 Link to using [Nextflow Tower](https://www.seqera.io/blog/introducing-nextflow-tower/) for monitoring - screenshot shown below
 
 ![Nextflow Tower](/images/nf-tower.png)
