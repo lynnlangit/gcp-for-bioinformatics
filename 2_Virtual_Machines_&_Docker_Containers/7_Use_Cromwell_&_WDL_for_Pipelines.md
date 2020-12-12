@@ -77,13 +77,12 @@ Shown below is the relationship between WDL (scripts), cromwell and typical exec
  - 📺 Watch 38 minute [Intro to pipelining platforms](https://www.youtube.com/watch?v=HNONc2cmIO8&t=9s) screencast from the Broad, covers cromwell & WDL
  - 📘 Link to [Google Life Sciences Reference Architecture](https://cloud.google.com/solutions/genomic-data-processing-reference-architecture) using Google Cloud Platform services.  Shown below is a reference architure using `cromwell` running with `Google Cloud Life Sciences API` on GCP  
 
-    [![life-sciences-cromwell](/images/life-sciences-cromwell.png)]()  
-
-#### Source code for WDL, Cromwell & MiniWDL runner
+    [![life-sciences-cromwell](/images/life-sciences-cromwell.png)]()  c
+#### Source code for WDL-language, Cromwell or miniwdl WDL runners
  - :octocat: OpenWDL source code for WDL itself - [link](https://github.com/openwdl/wdl) on Github
- - :octocat: [Cromwell source code](https://github.com/broadinstitute/cromwell) on GitHub
- - :octocat: [Miniwdl](https://github.com/chanzuckerberg/miniwdl) - miniwdl provides WDL developer productivity tools, a local runtime implementation, and a foundation for language experimentation in Python 3.6+. It includes the following tools:
+ - :octocat: [cromwell source code](https://github.com/broadinstitute/cromwell) on GitHub
+ - :octocat: [miniwdl](https://github.com/chanzuckerberg/miniwdl) - miniwdl provides WDL developer productivity tools, a local runtime implementation, and a foundation for language experimentation in Python 3.6+. It includes the following tools:
     - [miniwdl check](https://github.com/chanzuckerberg/miniwdl#miniwdl-check) - a WDL linter
-    - [miniwdl cromwell](https://github.com/chanzuckerberg/miniwdl#miniwdl-cromwell) - command-line interface for running a workflow locally using Cromwell
     - [miniwdl run](https://github.com/chanzuckerberg/miniwdl#miniwdl-run) - Operation is nearly identical to miniwdl cromwell. The invoking user must have permission to control Docker.
-- 📘 EXAMPLE using a set of scripts and tools for the analysis of viral NGS data via a WDL workflow [on Dockstore with miniwdl](https://dockstore.org/workflows/github.com/broadinstitute/viral-pipelines/isnvs_merge_to_vcf:master?tab=info)
+   - 📘 [miniwdl EXAMPLE](https://dockstore.org/workflows/github.com/broadinstitute/viral-pipelines/isnvs_merge_to_vcf:master?tab=info)
+ -  using a set of scripts and tools for the analysis of viral NGS data via a WDL workflow [on Dockstore with miniwdl](https://dockstore.org/workflows/github.com/broadinstitute/viral-pipelines/isnvs_merge_to_vcf:master?tab=info)
