@@ -1,5 +1,8 @@
 # Use Cromwell & WDL 
 
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/cromwell-others.png" width=500 align=left>  
+
+
 ### Why do this
 - USE these tools to run genomic analysis jobs **at scale in your choice of location (cloud, HPC...)**
 - USE **[cromwell (orchestration engine)]**(https://github.com/broadinstitute/cromwell) to run your WDL analysis job(s) on the public cloud or on other locations (i.e. HPC...). Cromwell is a open source Workflow Management System geared towards scientific workflows.
@@ -7,9 +10,9 @@
 - USE **[WDL (workflow definition language)]**(https://software.broadinstitute.org/wdl) to define and configure cromwell workflows. WDL is an open source languge.
    - Use WDL scripts to configure your workflow tasks(tools) AND input/outputs files. Examples of configurable tools include GATK, Hail, Picard and others
    - Use WDL scripts to configure execution environments (i.e. local, public cloud...) & resources allocated for each execution.  Examples of configurable resources include Docker container image locations, task batch sizes, VM configuration (CPU, RAM, pre-emptible..) and others
-   - Find WDL scripts for re-use to scale jobs with **your data** for known analysis types, i.e. single cell epigenomics, viral, germline variant discovery...) using the Dockstore WDL script registry. Example for [The Broad on Dockstore](https://dockstore.org/organizations/BroadInstitute)
-
- [![cromwell-others](/images/cromwell-others.png)]()
+   - Find WDL scripts for re-use to scale jobs with **your data** for known analysis types, i.e. single cell epigenomics, viral, germline variant discovery...) using the Dockstore WDL script registry. Example for [The Broad on Dockstore](https://dockstore.org/organizations/BroadInstitute)  
+   
+---
  
 ### What is this
 
