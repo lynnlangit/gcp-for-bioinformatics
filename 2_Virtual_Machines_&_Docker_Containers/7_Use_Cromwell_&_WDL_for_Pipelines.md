@@ -1,12 +1,14 @@
 # Use Cromwell & WDL 
 
 ### Why do this
-- USE cromwell & WDL to create and run analysis at scale in your choice of location (cloud, HPC...)
-- USE [cromwell (orchestration engine)](https://github.com/broadinstitute/cromwell) to scale your analysis job(s) on the public cloud or to other locations (i.e. HPC...). Cromwell is a open source Workflow Management System geared towards scientific workflows.
-- USE [WDL (workflow definition language)](https://software.broadinstitute.org/wdl) to define and configure cromwell workflows. WDL is an open source languge.
-   - Use WDL scripts to configure your tool/workflow inputs & outputs. Examples of configurable tools include GATK, Hail, Picard and others
+- USE these tools to run genomic analysis jobs **at scale in your choice of location (cloud, HPC...)**
+- USE **[cromwell (orchestration engine)]**(https://github.com/broadinstitute/cromwell) to run your WDL analysis job(s) on the public cloud or on other locations (i.e. HPC...). Cromwell is a open source Workflow Management System geared towards scientific workflows.
+   - cromwell works with WDL and other languages (CWL) and can be run on multiple execution environments. Conceptual diagram shown below
+- USE **[WDL (workflow definition language)]**(https://software.broadinstitute.org/wdl) to define and configure cromwell workflows. WDL is an open source languge.
+   - Use WDL scripts to configure your workflow tasks(tools) AND input/outputs files. Examples of configurable tools include GATK, Hail, Picard and others
    - Use WDL scripts to configure execution environments (i.e. local, public cloud...) & resources allocated for each execution.  Examples of configurable resources include Docker container image locations, task batch sizes, VM configuration (CPU, RAM, pre-emptible..) and others
-- Cromwell works with WDL and other languages (CWL) and can be run on multiple execution environments. Conceptual diagram shown below
+   - Find WDL scripts for re-use to scale jobs with **your data** for known analysis types, i.e. single cell epigenomics, viral, germline variant discovery...) using the Dockstore WDL script registry. Example for [The Broad on Dockstore](https://dockstore.org/organizations/BroadInstitute)
+
  [![cromwell-others](/images/cromwell-others.png)]()
  
 ### What is this
