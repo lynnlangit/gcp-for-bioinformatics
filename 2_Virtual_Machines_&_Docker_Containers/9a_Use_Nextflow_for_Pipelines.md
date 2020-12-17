@@ -24,10 +24,10 @@
 
 ### Nextflow code and DOCKERFILE
 
- <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/nextflow-rnaseq.png" width=400 align=left>
+ <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/nextflow-rnaseq.png" width=500 align=left>
 Nextflow RNAseq Nextflow file - runs tools from `DOCKERFILE` shown here  
 Nextflow RNAseq `DOCKERFILE` - uses bioinformatics tools `bowtie`, `cufflinks` and `tophat`   
- <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/nextflow-docker.png" width=400 align=right>
+ <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/nextflow-docker.png" width=500 align=right>
  
  ---
 
