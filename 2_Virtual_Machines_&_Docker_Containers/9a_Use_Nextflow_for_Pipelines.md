@@ -20,16 +20,7 @@
   ### 📺 Click to see Lynn's 4 minute exploration of this section  
 [![Nextflow on GCP for Bioinformatics](http://img.youtube.com/vi/YtUOCMiC7Dk/0.jpg)](http://www.youtube.com/watch?v=YtUOCMiC7Dk "Nextflow on GCP for Bioinformatics")
 
------
-
-### Nextflow code and DOCKERFILE
-
- <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/nextflow-rnaseq.png" width=500 align=left>
-Nextflow RNAseq Nextflow file - runs tools from `DOCKERFILE` shown here  
-Nextflow RNAseq `DOCKERFILE` - uses bioinformatics tools `bowtie`, `cufflinks` and `tophat`   
- <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/nextflow-docker.png" width=500 align=right>
- 
- ---
+---
 
 ### How to verify you've done it
  - VERIFY the output files from the examples above
