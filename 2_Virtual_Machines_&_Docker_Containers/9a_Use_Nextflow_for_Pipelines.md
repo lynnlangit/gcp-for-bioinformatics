@@ -22,12 +22,12 @@
 
 -----
 
-Nextflow RNAseq Nextflow file - runs tools from below
- aaa
  <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/nextflow-rnaseq.png" width=400 align=left>
-
+Nextflow RNAseq Nextflow file - runs tools from `DOCKERFILE` shown here
 Nextflow RNAseq `DOCKERFILE` - uses bioinformatics tools `bowtie`, `cufflinks` and `tophat` 
  <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/nextflow-docker.png" width=400 align=right>
+ 
+ ---
 
 ### How to verify you've done it
  - VERIFY the output files from the examples above
