@@ -1,4 +1,4 @@
-# Use Cromwell & WDL 
+# Use WDL (Workflow Definition Language) 
 
 <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/cromwell-others.png" width=500 align=left>  
 
@@ -89,5 +89,5 @@ Shown below is the relationship between WDL (scripts), cromwell and typical exec
  - :octocat: [miniwdl](https://github.com/chanzuckerberg/miniwdl) - miniwdl provides WDL developer productivity tools, a local runtime implementation, and a foundation for language experimentation in Python 3.6+. It includes the following tools:
     - [miniwdl check](https://github.com/chanzuckerberg/miniwdl#miniwdl-check) - a WDL linter
     - [miniwdl run](https://github.com/chanzuckerberg/miniwdl#miniwdl-run) - Operation is nearly identical to miniwdl cromwell. The invoking user must have permission to control Docker.
-    - [learn miniwdl](https://github.com/openwdl/learn-wdl/tree/master/6_miniwdl_course) short course with examples and screencasts, how to use miniwdl to run WDL scripts
+    - [learn miniwdl](https://github.com/openwdl/learn-wdl/tree/master/6_miniwdl_course) - short course with examples and screencasts, how to use miniwdl to run WDL scripts
 
