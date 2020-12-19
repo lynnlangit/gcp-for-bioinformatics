@@ -81,12 +81,13 @@ Shown below is the relationship between WDL (scripts), cromwell and typical exec
  - 📺 Watch 38 minute [Intro to pipelining platforms](https://www.youtube.com/watch?v=HNONc2cmIO8&t=9s) screencast from the Broad, covers cromwell & WDL
  - 📘 Link to [Google Life Sciences Reference Architecture](https://cloud.google.com/solutions/genomic-data-processing-reference-architecture) using Google Cloud Platform services.  Shown below is a reference architure using `cromwell` running with `Google Cloud Life Sciences API` on GCP  
 
-    [![life-sciences-cromwell](/images/life-sciences-cromwell.png)]()  c
-#### Source code for WDL-language, Cromwell or miniwdl WDL runners
- - :octocat: OpenWDL source code for WDL itself - [link](https://github.com/openwdl/wdl) on Github
- - :octocat: [cromwell source code](https://github.com/broadinstitute/cromwell) on GitHub
+    [![life-sciences-cromwell](/images/life-sciences-cromwell.png)]()  
+    
+---
+ 
+#### miniwdl for WDL 
  - :octocat: [miniwdl](https://github.com/chanzuckerberg/miniwdl) - miniwdl provides WDL developer productivity tools, a local runtime implementation, and a foundation for language experimentation in Python 3.6+. It includes the following tools:
     - [miniwdl check](https://github.com/chanzuckerberg/miniwdl#miniwdl-check) - a WDL linter
     - [miniwdl run](https://github.com/chanzuckerberg/miniwdl#miniwdl-run) - Operation is nearly identical to miniwdl cromwell. The invoking user must have permission to control Docker.
-    - [learn miniwdl](https://github.com/openwdl/learn-wdl/tree/master/6_miniwdl_course) - short course with examples and screencasts, how to use miniwdl to run WDL scripts
+ - 📘 [learn miniwdl](https://github.com/openwdl/learn-wdl/tree/master/6_miniwdl_course) - short course with examples and screencasts, how to use miniwdl to run WDL scripts
 
