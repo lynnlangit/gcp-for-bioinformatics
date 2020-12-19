@@ -89,4 +89,5 @@ Shown below is the relationship between WDL (scripts), cromwell and typical exec
  - :octocat: [miniwdl](https://github.com/chanzuckerberg/miniwdl) - miniwdl provides WDL developer productivity tools, a local runtime implementation, and a foundation for language experimentation in Python 3.6+. It includes the following tools:
     - [miniwdl check](https://github.com/chanzuckerberg/miniwdl#miniwdl-check) - a WDL linter
     - [miniwdl run](https://github.com/chanzuckerberg/miniwdl#miniwdl-run) - Operation is nearly identical to miniwdl cromwell. The invoking user must have permission to control Docker.
-   - [miniwdl EXAMPLE](https://dockstore.org/workflows/github.com/broadinstitute/viral-pipelines/isnvs_merge_to_vcf:master?tab=info) - using a set of scripts and tools for the analysis of viral NGS data via a WDL workflow registered on Dockstore 
+    - [learn miniwdl](https://github.com/openwdl/learn-wdl/tree/master/6_miniwdl_course) short course with examples and screencasts, how to use miniwdl to run WDL scripts
+
