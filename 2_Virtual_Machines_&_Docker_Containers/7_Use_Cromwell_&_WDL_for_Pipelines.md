@@ -1,7 +1,5 @@
 # Use WDL (Workflow Definition Language) 
 
-<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/cromwell-others.png" width=500 align=left>  
-
 
 ### Why do this
 - USE these tools to run genomic analysis jobs **at scale in your choice of location (cloud, HPC...)**
