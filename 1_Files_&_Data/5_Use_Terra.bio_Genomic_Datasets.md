@@ -50,7 +50,6 @@ See screenshots below for general flow of working with reference data and your o
 ### Data Workflow Screens from Terra
 
 1. View Terra.bio welcome page -> click 'Browse Data'
- [![terra-start](/images/terra-start.png)]()
 2. Review Showcase & Tutorials (View Datasets Section) -> click the top left menu and Create a Workspace to get started
  [![workspace](/images/workspace.png)]()
 3. Review available reference datasets (based on permissions assigned to your Terra user login account)
