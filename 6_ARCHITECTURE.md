@@ -15,7 +15,7 @@ Five key patterns used in creating reproducible genomic-scale cloud analysis pip
 5. **Use of domain-specific pipeline configuration languages**, such as WDL, Nextflow, CWL (rather than cloud vendor scripts or templates, such as AWS CloudFormation, or GCP Deployments). These configuration languages enable configuration of both bioinformatics tools and also cloud services (VM size, bucket security...) 
 
 ----
-Shown below is an example reference architecture using GCP services.
+Shown below is an example reference architecture for a Data Lake pattern **using GCP services**.  
 
 Each blue icon represents a type of ☁️ GCP service.  In this Repo, you'll get information how to get started with the services shown below.  
 
