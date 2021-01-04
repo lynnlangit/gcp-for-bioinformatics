@@ -16,6 +16,8 @@ This Repo includes content you can read, watch or run:
 - 📘 **EXPAND** - linked (external) resources
 - 🔍 **SCAN** - search a list in this Repo
 
+NOTE: If you are **NEW to bioinformatics** and have a computational background, see my 'study Repo' which includes links to explanations of bioinformatics concepts, tools and platforms - [link](https://github.com/lynnlangit/TeamTeri)
+
 ---
 
 ### 📺Click below to WATCH 'Lynn's Welcome Video' (4 min) on YouTube
