@@ -78,7 +78,7 @@
  - USE the open source `Variant Transforms` tool to transform and load hundreds of thousands of files, millions of samples, and billions of records in a scalable manner. The tool also has a preprocessor which you can use to validate VCF files and identify inconsistencies. Variant Transforms is based on Apache Beam and uses GCP Dataflow - [link](https://cloud.google.com/life-sciences/docs/how-tos/variant-transforms)
 
  - USE BQ includes many genomic or annotation data sets, a list is shown below
- [![bq-public-data](/images/bq-public-data.png)]()
+ <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/bq-public-data.png" width=600>  
 
  -------
 
