@@ -54,12 +54,20 @@
  - **AVOID** using `SELECT * ...` in queries to reduce the amount of data scanned, speed up the query execution time and potentially reduce the cost of running the query
 
  
- RUN QUERY
+ RUN QUERY using GCP BigQuery Service  
  [![BigQuery query](/images/query.png)]()
- REVIEW QUERY RESULTS
- <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/results.png" width=800>
- REVIEW EXECUTION PLAN (OPTIONAL)
-  <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/plan.png" width=800>
+ 
+ ---
+ 
+ REVIEW QUERY RESULTS  
+ <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/results.png" width=600 align=left>  
+ 
+ ---
+ 
+ REVIEW EXECUTION PLAN (OPTIONAL)  
+  <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/plan.png" width=600 align=right>
+  
+---
 
 ### Other Things to Know
  
