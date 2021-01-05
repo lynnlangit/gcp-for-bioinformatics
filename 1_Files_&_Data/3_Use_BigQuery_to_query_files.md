@@ -57,9 +57,9 @@
  RUN QUERY
  [![BigQuery query](/images/query.png)]()
  REVIEW QUERY RESULTS
- <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/results.png" width=800
+ <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/results.png" width=800>
  REVIEW EXECUTION PLAN (OPTIONAL)
-  [![BigQuery plan](/images/plan.png)]()
+  <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/plan.png" width=800>
 
 ### Other Things to Know
  
