@@ -118,6 +118,7 @@
  - :octocat: Utility code for [Spark-to-BigQuery-connector](https://github.com/GoogleCloudDataproc/spark-bigquery-connector)
  - 📙 Try out BigQuery and BQ ML using [example Jupyter notebooks](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/3_Machine_Learning/Jupyter_Notebook_Examples)
  - 📺 Link to 6 minute screencast - [BigQuery Machine Learning](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-bigquery-ml)
-[![bq-ml-demo](/images/bq-ml-demo.png)](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-bigquery-ml) 
 
+ <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/bq-ml-demo.png" width=600>
+  
 ---
