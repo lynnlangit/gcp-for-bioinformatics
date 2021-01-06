@@ -190,7 +190,7 @@ Use a **self-join** by creating two instances of the same table, to derive a hie
         SELECT {tableName}.{parentColumn}
         FROM {t1a} AS children, {t1b} AS parents
         WHERE children.{column} = {'stringValue'}
-        AND children.{parentColumn} = parents.{parentColumn}
+        AND children.{parentColumn} = parents.{column}
 
 ---
 
