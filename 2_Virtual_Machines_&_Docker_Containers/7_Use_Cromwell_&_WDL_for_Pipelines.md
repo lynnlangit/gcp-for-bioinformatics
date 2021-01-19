@@ -22,7 +22,7 @@ Shown below is the relationship between WDL (scripts), cromwell and typical exec
  - Scaling GCE VM instances out (by dynamically adding instances to a cluster as needed) using the Google Life Sciences API, using cromwell. Cromwell orchestrations are defined by WDL scripts. NOTE: Google Life Sciences API was called Google Genomics/Pipelines API previously.
  - NOTE: WDL/Cromwell documentation uses the words 'workflow' or 'pipeline' to define a series of tasks run for an analysis
  - WDL (Workflow Definition Language) script concepts are shown below 
-   - READ WDL documentation - [link](https://software.broadinstitute.org/wdl/documentation/quickstart)
+   - READ WDL documentation - [link](https://support.terra.bio/hc/en-us/sections/360007274612-WDL-Documentation)
    - VIEW 'Using WDL' MindMap - [link](https://atlas.mindmup.com/lynnlangit/wdl/index.html)
 
 ### Key considerations
