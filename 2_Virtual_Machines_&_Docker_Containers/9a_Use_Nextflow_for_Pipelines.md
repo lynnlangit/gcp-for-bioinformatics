@@ -48,6 +48,7 @@ Shown below is a reference architecture for running Nextflow analysis on GCP usi
  - 📘 Link to [Awesome Nextflow links](https://github.com/nextflow-io/awesome-nextflow)
  - 📺 Watch Nextflow presentations - [link](https://www.nextflow.io/presentations.html)
  - 🗄️ Link to [Nextflow test datasets](https://github.com/nf-core/test-datasets)
+ - 📺 Watch Nextflow v2 live coding - [link](https://www.youtube.com/watch?v=-Ne4OP0aiYw)
 
 #### Nextflow Tools and Structure
 
