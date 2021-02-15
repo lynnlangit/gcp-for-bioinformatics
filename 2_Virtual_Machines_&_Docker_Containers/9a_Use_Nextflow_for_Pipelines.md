@@ -14,6 +14,7 @@
 - Understand core Nextflow features - [link](https://www.nextflow.io/index.html#Features)
 
 ### How to do this
+ - SETUP prereqs for Nextflow on your VM - JDK, Docker, Graphviz(optional)
  - RUN RNAseq example pipeline on Compute Engine and Cloud Storage - [link](https://cloud.google.com/genomics/docs/tutorials/nextflow)
  - RUN VariantCalling pipeline w/GATK - [link](https://github.com/CRG-CNAG/CalliNGS-NF/)
  ---
@@ -24,7 +25,7 @@
 
 ### How to verify you've done it
  - VERIFY the output files from the examples above
- - REVIEW Nextflow examples whic produce files in a `results` folder
+ - REVIEW Nextflow examples which produce files in a `results` folder
 
 ### Other Things to Know
  - RUN short example using Nextflow and the `blastn` tool, running in Docker on a custom GCE VM image - [link](https://medium.com/@lynnlangit/cloud-native-hello-world-for-bioinformatics-7831aecc8d1a)
@@ -48,17 +49,22 @@ Shown below is a reference architecture for running Nextflow analysis on GCP usi
  - 📘 Link to [Awesome Nextflow links](https://github.com/nextflow-io/awesome-nextflow)
  - 📺 Watch Nextflow presentations - [link](https://www.nextflow.io/presentations.html)
  - 🗄️ Link to [Nextflow test datasets](https://github.com/nf-core/test-datasets)
+ 
+ #### Nextflow v2
+ - 📘 Link to Nextflow v2 migration notes - [link](https://www.nextflow.io/docs/latest/dsl2.html#dsl2-migration-notes)
  - 📺 Watch Nextflow v2 live coding - [link](https://www.youtube.com/watch?v=-Ne4OP0aiYw)
 
-#### Nextflow Tools and Structure
-
+#### Nextflow Pipeline Patterns and Examples
  - 📘 Read about [Pipeliner for Nextflow paper](https://www.biorxiv.org/content/biorxiv/early/2018/11/23/476515.full.pdf)
  - 📘 Link to [using caching with Nextflow](https://www.nextflow.io/blog/2019/demystifying-nextflow-resume.html)
  - 📘 Link to paper on [containerized approaches to workflows(includes Nextflow)](https://www.preprints.org/manuscript/202001.0378/v1/download)
- - 📘 Link to using [Nextflow cli](https://www.nextflow.io/docs/edge/cli.html) for scripting 
- - 📘 Link to using [Nextflow Tower](https://www.seqera.io/blog/introducing-nextflow-tower/) for monitoring - screenshot shown below
  - 📘 Link to run a NF workflow using The Broad's `GATK 4` tools with Nextflow.io use this command `nextflow run CRG-CNAG/CalliNGS-NF -r gatk4 -with-docker`
  - 📘 Link to understanding that Nextflow architecture.  NF is written in the [Groovy programming language](https://en.wikipedia.org/wiki/Apache_Groovy) & is designed to run on [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine) instances 
+
+#### Nextflow Tools
+ - 📘 Link to using [Nextflow cli](https://www.nextflow.io/docs/edge/cli.html) for scripting 
+ - 📘 Link to using [Nextflow Tower](https://www.seqera.io/blog/introducing-nextflow-tower/) for monitoring - screenshot shown below
+ - 📘 Link to using [Nextflow tracing & viz tools](https://www.nextflow.io/docs/latest/tracing.html)
 
 ![Nextflow Tower](/images/nf-tower.png)
 
