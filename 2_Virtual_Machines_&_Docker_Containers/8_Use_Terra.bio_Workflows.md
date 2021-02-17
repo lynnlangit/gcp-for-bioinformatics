@@ -130,3 +130,5 @@ Terra is the next generation of The Broad Institute's Firecloud tool. Shown belo
 - 📘 Link to tutorial to learn how to [register a custom bioinformatics tool or workflow](https://docs.dockstore.org/docs/prereqs/) in Dockstore
 - 📘 Link to article to learn how to [request to feature your workspace](https://support.terra.bio/hc/en-us/articles/360033599791-Feature-Your-Workspace-) in Terra
 - 📙 Try out the Terra notebook and workflows using Broad's [Terra example workspace](https://app.terra.bio/#workspaces/help-gatk/Reproducibility_Case_Study_Tetralogy_of_Fallot) for the example in the screencast shown above
+- 📘 Creating a Galaxy Project instance on Terra -[link](https://support.terra.bio/hc/en-us/articles/360050566271-Galaxy-interactive-environments)
+- 📘 Creating a R-Studio instance on Terra -[link](https://terra.bio/try-rstudio-in-terra/)
