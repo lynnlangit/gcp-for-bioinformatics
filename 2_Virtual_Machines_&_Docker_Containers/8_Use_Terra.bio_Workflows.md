@@ -3,8 +3,8 @@
 ### Why do this
 
  - USE bioinformatics tools (GATK, Hail...) in Terra workflows on GCP
- - RUN scalable analysis on GCP without manually configuring Cloud Storage & VMs (or container clusters)
- - READ - [Getting Stated with GATK via Terra Workspaces](https://support.terra.bio/hc/en-us/articles/360046095192-The-workspace-your-dedicated-project-space-on-Terra)
+ - RUN **scalable** analysis on GCP without manually configuring Cloud Storage & VMs (or container clusters)
+ - READ "Getting Stated with GATK via Terra Workspaces" - [link](https://support.terra.bio/hc/en-us/articles/360046095192-The-workspace-your-dedicated-project-space-on-Terra)
  - UNDERSTAND the GCP services used for your workflow (analysis) job using Terra Job Manager tools
  
 ### What is this
@@ -13,7 +13,9 @@
 
 [![terra-wk-arch](/images/terra-wk-arch.png)]()
  
- Terra Workflows are written with WDL scripts.  Terra implements a persistent cromwell server cluster on GCP.  Terra workflows run using Google Cloud Storage buckets, GCP Virtual Machines and the Cloud Life Sciences API (also called PAPI for pipelines API).  You can configure existing workflows or create your own workflows.  Terra includes examples - these are runnable pre-configured workflows. Workflows can implement standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) - shown below, or [Hail](https://hail.is/). Workflows can also run your own custom tools or scripts.
+ Terra Workflows are written with WDL workflow scripts.  Terra implements a persistent cromwell server cluster on GCP.  Terra workflows run using Google Cloud Storage buckets, GCP Virtual Machines and the Cloud Life Sciences API (also called PAPI for pipelines API).    
+ 
+ You can configure existing workflows or create your own workflows.  Terra includes examples - these are runnable pre-configured workflows. Workflows can implement standard bioinformatics tools, such as [GATK](https://software.broadinstitute.org/gatk/) - shown below, or [Hail](https://hail.is/). Workflows can also run your own custom tools or scripts.
  
   [![gatk-concepts](/images/gatk-concepts.png)]()
 
@@ -105,6 +107,7 @@ Terra is the next generation of The Broad Institute's Firecloud tool. Shown belo
 ## How to learn more
 
 ### Using Terra 
+- 📺 Watch [Terra in a Nutshell](https://www.youtube.com/watch?v=hj0SGlVb4H0) - 2 minute video from the Broad
 - 📺 Watch [use a MindMap to understand where data is stored on GCP with Terra](https://www.youtube.com/watch?v=tYmJ2n8YqNc) - 20 minute video covering GCP services (GCS and BigQuery) with Terra
 - 📺 Watch [understanding Terra (GCP service) costs](https://www.youtube.com/watch?v=SRVrzXHkZKU) - 27 minute video from the Broad
 - 📘 Link to [Terra community forum](https://support.terra.bio/hc/en-us/community/topics/360000500432)
@@ -114,7 +117,7 @@ Terra is the next generation of The Broad Institute's Firecloud tool. Shown belo
 ### Using Terra Workflows
 
 #### Getting Started
-
+- 📺 Watch [Terra Workflow Quickstart](https://www.youtube.com/watch?v=rUBrJNqLyfU) - 3 short videos (each ~ 5 min) showing how to run the Terra Workflow Quickstart 
 - 📺 Watch [Intro to Terra](https://www.youtube.com/watch?v=9kffTkK-B7g) - 32 minute video from the Broad  
 - 📙 Try out the Terra workflows using Broad's [Terra Workflows QuickStart workspace](https://app.terra.bio/#workspaces/fc-product-demo/Terra-Workflows-Quickstart) 
 - 📺 Watch short [using Terra](https://www.youtube.com/channel/UCkXAqpR5Hk1ZmNd2-1K2l5Q/videos) screencasts by the Broad
