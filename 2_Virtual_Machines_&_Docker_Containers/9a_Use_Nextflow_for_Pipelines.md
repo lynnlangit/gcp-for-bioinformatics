@@ -24,6 +24,7 @@
 ---
 
 ### How to verify you've done it
+ - VERIFY using a short example script - [link](https://gist.github.com/lynnlangit/c1ed2a3535b3ae6711dd14687d5174c3)
  - VERIFY the output files from the examples above
  - REVIEW Nextflow examples which produce files in a `results` folder
 
@@ -51,6 +52,7 @@ Shown below is a reference architecture for running Nextflow analysis on GCP usi
  - 🗄️ Link to [Nextflow test datasets](https://github.com/nf-core/test-datasets)
  
  #### Nextflow v2
+ - 📝 Link to Nextflow v2 example workflow - [link](https://gist.github.com/lynnlangit/e5d3e86d632a7db796efae04145d44ff)
  - 📘 Link to Nextflow v2 migration notes - [link](https://www.nextflow.io/docs/latest/dsl2.html#dsl2-migration-notes)
  - 📺 Watch Nextflow v2 live coding - [link](https://www.youtube.com/watch?v=-Ne4OP0aiYw)
 
