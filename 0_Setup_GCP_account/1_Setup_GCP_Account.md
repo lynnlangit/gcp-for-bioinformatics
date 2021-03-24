@@ -83,6 +83,8 @@ Enterprises will generally set up a GCP Organizational Hierarchy, to enforce pol
 
 #### GCP Billing
 
+Read about funding opportunities to cover cloud costs - https://terra.bio/funding-opportunities-to-cover-cloud-costs/.  
+
 - 📘 Link to [how to set up a budget alert](https://cloud.google.com/billing/docs/how-to/budgets)
 - 📘 Link to [best practices for optimizing cloud costs](https://cloud.google.com/blog/products/gcp/best-practices-for-optimizing-your-cloud-costs)
 - 📘 Link to [GCP Billing concepts](https://cloud.google.com/billing/docs/concepts)
