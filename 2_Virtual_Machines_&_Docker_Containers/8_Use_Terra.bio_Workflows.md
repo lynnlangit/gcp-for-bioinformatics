@@ -131,6 +131,7 @@ Terra is the next generation of The Broad Institute's Firecloud tool. Shown belo
 - 📺 Watch [Case study using Terra](https://www.youtube.com/watch?v=xOzwWNLXdHc) - 28 minute video from the Broad covers how they created reproducible research using the results of published work around a condition called "tetralogy of fallot" (congential heart defect). Broad created a synthetic cohort, with NEATkit & BAMsurgeon (genomic data obfuscation tools) and then applied the methods in the paper using Terra workflows (Terra notebook shown below)
   [![terra-repro](/images/terra-repro.png)]()
 - 📘 Link to tutorial to learn how to [register a custom bioinformatics tool or workflow](https://docs.dockstore.org/docs/prereqs/) in Dockstore
+- 📘 Link to article to learn how to [save on storage costs by deleting intermediate workflow outputs](https://terra.bio/deleting-intermediate-workflow-outputs) in Terra
 - 📘 Link to article to learn how to [request to feature your workspace](https://support.terra.bio/hc/en-us/articles/360033599791-Feature-Your-Workspace-) in Terra
 - 📙 Try out the Terra notebook and workflows using Broad's [Terra example workspace](https://app.terra.bio/#workspaces/help-gatk/Reproducibility_Case_Study_Tetralogy_of_Fallot) for the example in the screencast shown above
 - 📘 Creating a Galaxy Project instance on Terra -[link](https://support.terra.bio/hc/en-us/articles/360050566271-Galaxy-interactive-environments)
