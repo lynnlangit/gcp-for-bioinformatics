@@ -104,8 +104,9 @@ See screenshots below for general flow of working with reference data and your o
 ### How to learn more
 
 #### Learn about Terra Data Tab
- - 📺 Watch 5 minute [Intro to Data Tables](https://www.youtube.com/watch?v=IeLywroCNNA) screencast by the Broad 
- - 📺 Watch 5 minute [Making and Uploading a Data Table in Terra](https://www.youtube.com/watch?v=2MxSlKhIrFY) screencast by the Broad
+- 📺 Watch 5 minute [Intro to Data Tables](https://www.youtube.com/watch?v=IeLywroCNNA) screencast by the Broad 
+- 📺 Watch 5 minute [Making and Uploading a Data Table in Terra](https://www.youtube.com/watch?v=2MxSlKhIrFY) screencast by the Broad
+- 📺 Watch 3 minute [Making Data Tables Using a Template](https://www.youtube.com/watch?v=7YyWptsdC-w) screencast by the Broad 
 - 📺 Watch 32 minute [Intro to Terra](https://www.youtube.com/watch?v=9kffTkK-B7g) screencast by the Broad
 
  #### Learn about Terra Data Analysis 
