@@ -128,6 +128,7 @@ Terra is the next generation of The Broad Institute's Firecloud tool. Shown belo
 
 #### Learning More
 
+- 📘 Link to article -[7 things I learned while reprocessing my WGS data on Terra: part 1](https://genomedad.com/2021/06/13/7-things-i-learned-while-reprocessing-my-wgs-data-on-terra-part-1/)
 - 📺 Watch [Case study using Terra](https://www.youtube.com/watch?v=xOzwWNLXdHc) - 28 minute video from the Broad covers how they created reproducible research using the results of published work around a condition called "tetralogy of fallot" (congential heart defect). Broad created a synthetic cohort, with NEATkit & BAMsurgeon (genomic data obfuscation tools) and then applied the methods in the paper using Terra workflows (Terra notebook shown below)
   [![terra-repro](/images/terra-repro.png)]()
 - 📘 Link to tutorial to learn how to [register a custom bioinformatics tool or workflow](https://docs.dockstore.org/docs/prereqs/) in Dockstore
