@@ -98,6 +98,7 @@ Read about funding opportunities to cover cloud costs - https://terra.bio/fundin
 ![billing-actions](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/billing-actions.png)
 
 #### GCP Billing on Terra.bio
+ - 📘 Link to [How much did a {Terra} workflow analysis cost?](https://support.terra.bio/hc/en-us/articles/360037862771#h_01F9BVT3WM7SNZEXD2CSB7B7WN)
  - 📘 Link to [How to link a GCP Billing Account to a Terra Project](https://support.terra.bio/hc/en-us/articles/360026182251)
  - 📘 Link to [Tips for controlling costs](https://support.terra.bio/hc/en-us/articles/360029748111-Understanding-and-controlling-cloud-costs-) article written by team at The Broad
  - 📘 Link to [Understanding costs by analysis type](https://support.terra.bio/hc/en-us/articles/360029772212) - using Terra for GCP for work at The Broad
