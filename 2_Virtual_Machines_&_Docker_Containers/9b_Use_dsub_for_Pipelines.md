@@ -16,6 +16,7 @@
 
 ### How to do this
  - USE GCP Cloud Genomics tutorial - [link](https://cloud.google.com/genomics/docs/tutorials/dsub)
+ - Deploy a SLURM cluster on GCP tutorial - [link](https://cloud.google.com/architecture/deploying-slurm-cluster-compute-engine)
 
  ---
  ### 📺 Click to see Lynn's 4 minute exploration of this section  
