@@ -106,6 +106,7 @@ See screenshots below for general flow of working with reference data and your o
 #### Learn about Terra Data Tab
 - 📺 Watch 5 minute [Intro to Data Tables](https://www.youtube.com/watch?v=IeLywroCNNA) screencast by the Broad 
 - 📺 Watch 5 minute [Making and Uploading a Data Table in Terra](https://www.youtube.com/watch?v=2MxSlKhIrFY) screencast by the Broad
+- 📘 Link to step-by-step article on how to [Set up Terra Data Tables](https://support.terra.bio/hc/en-us/articles/360051043031)
 - 📺 Watch 3 minute [Making Data Tables Using a Template](https://www.youtube.com/watch?v=7YyWptsdC-w) screencast by the Broad 
 - 📺 Watch 32 minute [Intro to Terra](https://www.youtube.com/watch?v=9kffTkK-B7g) screencast by the Broad
 
