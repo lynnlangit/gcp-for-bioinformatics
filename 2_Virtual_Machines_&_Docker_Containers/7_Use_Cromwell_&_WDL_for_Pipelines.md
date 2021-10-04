@@ -76,11 +76,11 @@ Shown below is the relationship between WDL (scripts), cromwell and typical exec
 
 #### Best practices for running WDL Workflows
 
- - 📘 Step-by-step [run GATK cromwell pipeline locally and then on GCP](https://software.broadinstitute.org/gatk/documentation/article?id=12521)
+ - 📘 Step-by-step [how to run GATK cromwell pipeline locally and then on GCP](https://software.broadinstitute.org/gatk/documentation/article?id=12521)
+ - 📘 Step-by-Step [Medium article "How to set up cromwell on GCP](https://medium.com/@hnawar/cromwell-hello-gcp-833c18df3caf)  
  - 📘 Link to [run a GATK best practices pipeline](https://cloud.google.com/genomics/docs/tutorials/gatk) on GCP
  - 📺 Watch 38 minute [Intro to pipelining platforms](https://www.youtube.com/watch?v=HNONc2cmIO8&t=9s) screencast from the Broad, covers cromwell & WDL
  - 📘 Link to [Google Life Sciences Reference Architecture](https://cloud.google.com/solutions/genomic-data-processing-reference-architecture) using Google Cloud Platform services.  Shown below is a reference architure using `cromwell` running with `Google Cloud Life Sciences API` on GCP  
-
     [![life-sciences-cromwell](/images/life-sciences-cromwell.png)]()  
     
 ---
