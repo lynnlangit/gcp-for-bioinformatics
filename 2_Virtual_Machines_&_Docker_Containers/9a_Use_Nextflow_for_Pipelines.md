@@ -57,6 +57,7 @@ Shown below is a reference architecture for running Nextflow analysis on GCP usi
  - 📺 Watch Nextflow v2 live coding - [link](https://www.youtube.com/watch?v=-Ne4OP0aiYw)
 
 #### Nextflow Pipeline Patterns and Examples
+ - 📘 Huge list of [Learn Nextflow links](https://www.nextflow.io/blog/2022/learn-nextflow-in-2022.html)
  - 📘 Read about [Pipeliner for Nextflow paper](https://www.biorxiv.org/content/biorxiv/early/2018/11/23/476515.full.pdf)
  - 📘 Link to [using caching with Nextflow](https://www.nextflow.io/blog/2019/demystifying-nextflow-resume.html)
  - 📘 Link to paper on [containerized approaches to workflows(includes Nextflow)](https://www.preprints.org/manuscript/202001.0378/v1/download)
