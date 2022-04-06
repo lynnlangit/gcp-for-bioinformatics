@@ -19,7 +19,6 @@
  
   [![gatk-concepts](/images/gatk-concepts.png)]()
 
-
 ### Key considerations
 - IMPLEMENT Terra best practice workflows --or--
 - CREATE your own tools and workflows   
@@ -69,46 +68,37 @@
   Run your job and review the job history in Terra 
    [![verify-job](/images/verify-job.png)]()
 
+ ### Key Terra Concepts:
 
-### Other Things to Know
-
-Terra runs on GCE VMs & the GCP Genomics/Pipelines API.
-Terra is the next generation of The Broad Institute's Firecloud tool. Shown below is a conceptual diagram of a Terra workspace.  
- [![terra-concepts](/images/terra-concepts.png)]()
-
----
-
- - Key Terra concepts:
+- **Workspace** -> container for WDL workflow(s), Jupyter notebooks and your data (research and reference).  Your data, which includes your input data as well as your job run output data, is stored in a GCS bucket.  A GCS bucket (name starts with `fc-nnnnn....`) is generated for each workspace.  You can find that bucket name on the middle right of the first page (Dashboard) of your workspace, as shown below.
   [![terra-bucket-name](/images/bucket-name.png)]()
-    - **Workspace** -> container for WDL workflow(s), Jupyter notebooks and your data (research and reference).  Your data, which includes your input data as well as your job run output data, is stored in a GCS bucket.  A GCS bucket (name starts with `fc-nnnnn....`) is generated for each workspace.  You can find that bucket name on the middle right of the first page (Dashboard) of your workspace, as shown above.
-    - **Dashboard** -> Wiki describing WDL workflow(s)
-    - **Notebooks** -> container for Jupyter notebooks -`*.ipynb` files
-    - **Workflows** -> container for tool(s)/scripts (GATK, Hail...) and configuration, written in WDL for cromwell, JSON for parameters  
-    - **Tool** -> docker container image of your research script or binary tool and configuration in WDL
-    - **WDL** -> [workflow definition language](https://software.broadinstitute.org/wdl), dialect required for configuring [cromwell orchestration engine](https://github.com/broadinstitute/cromwell), as in 'a WDL file'
-    - **Data** -> there are serveral types of data, when you create a workspace Terra creates an associated GCS bucket (name starts with `gs://fc-nnnnnn-nnnnnn-nnnnn...` . Also you can reference data in any GCS bucket to which you assign GCS IAM permissions (i.e. `gs://<myBucket>/...`) 
-      - **Table Inputs** -> this is the data (files) that you will be analyzing in your pipeline, both WDL inputs and outputs
-        - You can reference your data using the path to your GCS bucket, (i.e. `gs://<bucketName>/<fileName>) --or--
-        - You can reference your data using a pointer to your GCS bucket path, i.e. (`this.myInputFile`, `this.myOutputFile`)
-        - More about the Terra Data Inputs Model - [link](https://gatkforums.broadinstitute.org/firecloud/discussion/9769/data-model)
-          - Participant -> a person enrolled in a study
-          - Sample -> a biological sample collected from a participant
-          - Pair -> represents a pair of biological samples collected from a participant
-          - Set -> group of Participants, Samples or Pairs
-      - **Reference Data** -> genomic reference data, i.e. `b37human` or `hg38`
-      - **Workspace Data** -> workspace parameters, i.e. path to dockerfile, variable values, etc..., i.e. (`worskpace.myDocker`), in the form of a single `*.tsv` file.  NOTE: all variable values are strongly typed.  Workspace data types are a subset of WDL data types (ex. Workspace `string` can be WDL `File` or `String`) - see WDL documentation for detail - [link](https://github.com/openwdl/wdl/blob/master/versions/1.0/SPEC.md#types)
-      - **Workflow Data** -> WDL script files (i.e. `myWorkflow.wdl`) & workflow parameter configuration (i.e. `input.json`) files
+  - **Dashboard** -> Wiki describing WDL workflow(s)
+  - **Notebooks** -> container for Jupyter notebooks -`*.ipynb` files
+  - **Workflows** -> container for tool(s)/scripts (GATK, Hail...) and configuration, written in WDL for cromwell, JSON for parameters  
+  - **Tool** -> docker container image of your research script or binary tool and configuration in WDL
+  - **WDL** -> [workflow definition language](https://software.broadinstitute.org/wdl), dialect required for configuring [cromwell orchestration engine](https://github.com/broadinstitute/cromwell), as in 'a WDL file'
+- **Data** -> there are serveral types of data, when you create a workspace Terra creates an associated GCS bucket (name starts with `gs://fc-nnnnnn-nnnnnn-nnnnn...` . Also you can reference data in any GCS bucket to which you assign GCS IAM permissions (i.e. `gs://<myBucket>/...`) 
+  - **Table Inputs** -> this is the data (files) that you will be analyzing in your pipeline, both WDL inputs and outputs
+    - You can reference your data using the path to your GCS bucket, (i.e. `gs://<bucketName>/<fileName>) --or--
+    - You can reference your data using a pointer to your GCS bucket path, i.e. (`this.myInputFile`, `this.myOutputFile`)
+    - More about the Terra Data Inputs Model - [link](https://gatkforums.broadinstitute.org/firecloud/discussion/9769/data-model)
+      - Participant -> a person enrolled in a study
+      - Sample -> a biological sample collected from a participant
+      - Pair -> represents a pair of biological samples collected from a participant
+      - Set -> group of Participants, Samples or Pairs
+  - **Reference Data** -> genomic reference data, i.e. `b37human` or `hg38`
+  - **Workspace Data** -> workspace parameters, i.e. path to dockerfile, variable values, etc..., i.e. (`worskpace.myDocker`), in the form of a single `*.tsv` file.  NOTE: all variable values are strongly typed.  Workspace data types are a subset of WDL data types (ex. Workspace `string` can be WDL `File` or `String`) - see WDL documentation for detail - [link](https://github.com/openwdl/wdl/blob/master/versions/1.0/SPEC.md#types)
+  - **Workflow Data** -> WDL script files (i.e. `myWorkflow.wdl`) & workflow parameter configuration (i.e. `input.json`) files
 
 [![data-model](/images/data-model.png)]()  
   Image of Terra Data Model from this [link](https://software.broadinstitute.org/firecloud/documentation/quickstart?page=data)
-
+  
 ---  
 
 ## How to learn more
 
 ### Using Terra 
 - 📺 Watch [Terra in a Nutshell](https://www.youtube.com/watch?v=hj0SGlVb4H0) - 2 minute video from the Broad
-- 📺 Watch [use a MindMap to understand where data is stored on GCP with Terra](https://www.youtube.com/watch?v=tYmJ2n8YqNc) - 20 minute video covering GCP services (GCS and BigQuery) with Terra
 - 📺 Watch [understanding Terra (GCP service) costs](https://www.youtube.com/watch?v=SRVrzXHkZKU) - 27 minute video from the Broad
 - 📘 Link to [Terra community forum](https://support.terra.bio/hc/en-us/community/topics/360000500432)
 - 📘 Link to [Terra support forums](https://support.terra.bio/hc/en-us)
@@ -126,15 +116,23 @@ Terra is the next generation of The Broad Institute's Firecloud tool. Shown belo
 - 📺 Watch short video showing how to import existing workflows into Terra from Dockstore or by [directly uploading WDL files](https://www.youtube.com/watch?v=VtKlYqWBW6A)
 
 
-#### Learning More
+#### Learning More - Examples
 
 - 📘 Link to article -[7 things I learned while reprocessing my WGS data on Terra: part 1](https://genomedad.com/2021/06/13/7-things-i-learned-while-reprocessing-my-wgs-data-on-terra-part-1/)
 - 📺 Watch [Case study using Terra](https://www.youtube.com/watch?v=xOzwWNLXdHc) - 28 minute video from the Broad covers how they created reproducible research using the results of published work around a condition called "tetralogy of fallot" (congential heart defect). Broad created a synthetic cohort, with NEATkit & BAMsurgeon (genomic data obfuscation tools) and then applied the methods in the paper using Terra workflows (Terra notebook shown below)
   [![terra-repro](/images/terra-repro.png)]()
 - 📘 Link to tutorial to learn how to [register a custom bioinformatics tool or workflow](https://docs.dockstore.org/docs/prereqs/) in Dockstore
-- 📘 Link to article to learn how to [save on storage costs by deleting intermediate workflow outputs](https://terra.bio/deleting-intermediate-workflow-outputs) in Terra
-- 📘 Link to article to learn how to [request to feature your workspace](https://support.terra.bio/hc/en-us/articles/360033599791-Feature-Your-Workspace-) in Terra
-- 📘 Link to article to learn how [workflow updates reduce latency](https://terra.bio/smarter-workflow-launching-reduces-latency-and-improves-user-experience/) in Terra services (includes service diagrams)
 - 📙 Try out the Terra notebook and workflows using Broad's [Terra example workspace](https://app.terra.bio/#workspaces/help-gatk/Reproducibility_Case_Study_Tetralogy_of_Fallot) for the example in the screencast shown above
 - 📘 Creating a Galaxy Project instance on Terra -[link](https://support.terra.bio/hc/en-us/articles/360050566271-Galaxy-interactive-environments)
 - 📘 Creating a R-Studio instance on Terra -[link](https://terra.bio/try-rstudio-in-terra/)
+
+#### Terra Architecture and Advanced Use
+
+Terra runs on GCE VMs & the GCP Life Sciences API.
+Terra is the next generation of The Broad Institute's Firecloud tool. Shown below is a conceptual diagram of a Terra workspace.  
+ [![terra-concepts](/images/terra-concepts.png)]()
+
+- 📘 Link to article to learn how to [save on storage costs by deleting intermediate workflow outputs](https://terra.bio/deleting-intermediate-workflow-outputs) in Terra
+- 📘 Link to article to learn how to [request to feature your workspace](https://support.terra.bio/hc/en-us/articles/360033599791-Feature-Your-Workspace-) in Terra
+- 📘 Link to article to learn how [workflow updates reduce latency](https://terra.bio/smarter-workflow-launching-reduces-latency-and-improves-user-experience/) in Terra services (includes service diagrams)
+- 📺 Watch [use a MindMap to understand where data is stored on GCP with Terra](https://www.youtube.com/watch?v=tYmJ2n8YqNc) - 20 minute video covering GCP services (GCS and BigQuery) with Terra
