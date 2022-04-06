@@ -9,6 +9,7 @@ Here's a collection of links and notes on best practices for running HPC workloa
 - Blog: "Introducing HPC VM images—pre-tuned for optimal performance" - [link](https://cloud.google.com/blog/topics/hpc/introducing-hpc-vm-images)
 - GCP Marketplace: "HPC pre-tuned VM image" - [link](https://console.cloud.google.com/marketplace/product/click-to-deploy-images/hpc-vm-image)
 - Tutorial: "Create an HPC-ready VM instance" - [link](https://cloud.google.com/compute/docs/instances/create-hpc-vm) includes tuning / settings recommended practices
+- Playbook: "HPC on GCP Playbook from NIH" - [link](https://cloud.nih.gov/resources/guides/science-at-cloud-providers/science-on-gcp/GCPHPCPlaybook.pdf)
 
 
 ## Slurm on GCP
