@@ -1,0 +1,26 @@
+# HPC on Google Cloud
+
+Here's a collection of links and notes on best practices for running HPC workloads on GCP
+
+## Best Practices for HPC on GCP
+
+- Article: "Best practices for running tightly coupled HPC applications on Compute Engine" - [link](Best practices for running tightly coupled HPC applications on Compute Engine)
+- Checklist: "Best practice list for HPC on GCP" - [link](https://cloud.google.com/architecture/best-practices-for-using-mpi-on-compute-engine#checklist)
+- Blog: "Introducing HPC VM images—pre-tuned for optimal performance" - [link](Introducing HPC VM images—pre-tuned for optimal performance)
+- GCP Marketplace: "HPC pre-tuned VM image" - [link](https://console.cloud.google.com/marketplace/product/click-to-deploy-images/hpc-vm-image)
+- Tutorial: "Create an HPC-ready VM instance" - [link](https://cloud.google.com/compute/docs/instances/create-hpc-vm) includes tuning / settings recommended practices
+
+
+## Slurm on GCP
+
+- GitHub Repo: "Slurm on GCP" - [link](https://github.com/SchedMD/slurm-gcp)
+- Tutorial: "Deploying a Slurm cluster on Compute Engine" - [link](https://cloud.google.com/architecture/deploying-slurm-cluster-compute-engine) uses Terraform template
+- User Guide: "Slurm on GCP guide" - [link](https://docs.google.com/document/d/e/2PACX-1vS0I0IcgVvby98Rdo91nUjd7E9u83oIMCM4arne-9_IdBg6BdV1lBpUcSje_PyHcbAaErC1rY7p4u1g/pub)
+
+## File Systems for HPC
+
+- GCP Best Practice: "When to use parallel file systems" - [link](https://cloud.google.com/architecture/parallel-file-systems-for-hpc#when_to_use_parallel_file_systems)
+- Main site: "Lustre.org" - [link](https://www.lustre.org/)
+- Documentation: "DDN EXAScaler Cloud" (commerical Lustre) - [link](https://cloud.google.com/architecture/filers-on-compute-engine#DDN)
+- GCP Marketplace: "EXAScaler Cloud Offering" - [link](https://console.cloud.google.com/marketplace/details/ddnstorage/exascaler-cloud)
+- Architecture Center: "Parallel file systems for HPC workloads" - [link](Parallel file systems for HPC workloads)
