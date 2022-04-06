@@ -4,9 +4,9 @@ Here's a collection of links and notes on best practices for running HPC workloa
 
 ## Best Practices for HPC on GCP
 
-- Article: "Best practices for running tightly coupled HPC applications on Compute Engine" - [link](Best practices for running tightly coupled HPC applications on Compute Engine)
+- Article: "Best practices for running tightly coupled HPC applications on Compute Engine" - [link](https://cloud.google.com/architecture/best-practices-for-using-mpi-on-compute-engine)
 - Checklist: "Best practice list for HPC on GCP" - [link](https://cloud.google.com/architecture/best-practices-for-using-mpi-on-compute-engine#checklist)
-- Blog: "Introducing HPC VM images—pre-tuned for optimal performance" - [link](Introducing HPC VM images—pre-tuned for optimal performance)
+- Blog: "Introducing HPC VM images—pre-tuned for optimal performance" - [link](https://cloud.google.com/blog/topics/hpc/introducing-hpc-vm-images)
 - GCP Marketplace: "HPC pre-tuned VM image" - [link](https://console.cloud.google.com/marketplace/product/click-to-deploy-images/hpc-vm-image)
 - Tutorial: "Create an HPC-ready VM instance" - [link](https://cloud.google.com/compute/docs/instances/create-hpc-vm) includes tuning / settings recommended practices
 
@@ -23,4 +23,4 @@ Here's a collection of links and notes on best practices for running HPC workloa
 - Main site: "Lustre.org" - [link](https://www.lustre.org/)
 - Documentation: "DDN EXAScaler Cloud" (commerical Lustre) - [link](https://cloud.google.com/architecture/filers-on-compute-engine#DDN)
 - GCP Marketplace: "EXAScaler Cloud Offering" - [link](https://console.cloud.google.com/marketplace/details/ddnstorage/exascaler-cloud)
-- Architecture Center: "Parallel file systems for HPC workloads" - [link](Parallel file systems for HPC workloads)
+- Architecture Center: "Parallel file systems for HPC workloads" - [link](https://cloud.google.com/architecture/parallel-file-systems-for-hpc)
