@@ -92,9 +92,16 @@ Click on your workspace, then the `Notebooks` menu to run Notebooks
 
   [![data-model](/images/data-model.png)]()  
   Image of Terra Data Model from this [link](https://software.broadinstitute.org/firecloud/documentation/quickstart?page=data)
+  
+### Interative Environments in Terra
 
+Terra supports a number of interactive environments (shown below)
+
+<img src="xxx" width=800>
+  
 
 ### How to learn more
+
  - 📙 Try out some example Terra notebooks using the [Terra Notebooks Playground](https://app.terra.bio/#workspaces/help-gatk/Terra%20Notebooks%20Playground) workspace - examples using Python, R and also many bioinformatics tools
  - 📙 Try out the scenario-based [Terra Jupyter Notebooks QuickStart Workspace](https://app.terra.bio/#workspaces/fc-product-demo/Terra-Notebooks-Quickstart) this uses Google BigQuery as well
  - 📙 Try out some example Terra notebooks (Jupyter_Notebook_Examples folder), includes using the [CSIRO Bioinformatics VariantSpark](https://bioinformatics.csiro.au/variantspark) library and other bioinformatics libraries.
