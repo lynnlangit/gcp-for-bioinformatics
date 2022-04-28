@@ -97,7 +97,7 @@ Click on your workspace, then the `Notebooks` menu to run Notebooks
 
 Terra supports a number of interactive environments (shown below)
 
-<img src="xxx" width=800>
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/interactive-terra.png" width=800>
   
 
 ### How to learn more
