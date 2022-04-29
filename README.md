@@ -19,7 +19,7 @@ This Repo includes content you can read, watch or run:
 NOTE: If you are **NEW to bioinformatics** and have a computational background...
 - :octocat: **REVIEW** my bioinformatics concepts tools and terms 
   - Designed for cloud practioners who are **NEW to Bioinformatics**
-  - The 'student notes repo' is named `Team Teri` 
+  - The 'student notes repo' is named `Team Teri` - [link](https://github.com/lynnlangit/TeamTeri#who-is-teri) to 'who is Teri?'
   - This Repo includes links to explanations of bioinformatics concepts, tools and platforms - [link](https://github.com/lynnlangit/TeamTeri)
 
 ---
