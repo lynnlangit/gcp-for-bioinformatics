@@ -2,7 +2,7 @@
 
 ## What is it?
 
-Fast Healthcare Interoperability Resources (FHIR) is a healthcare data standard with an application programming interface (API) for representing and exchanging electronic health records (EHR). FHIR is an information network that lets you link data across systems and a communication network that lets you exchange data between systems.
+**Fast Healthcare Interoperability Resources (FHIR)** is a healthcare data standard with an application programming interface (API) for representing and exchanging electronic health records (EHR). FHIR is an information network that lets you link data across systems and a communication network that lets you exchange data between systems.
 
 In GCP, there are the following services:
 - A **FHIR store** is a data store in the Cloud Healthcare API that holds FHIR resources. FHIR stores exist inside datasets.
