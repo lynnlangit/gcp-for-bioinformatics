@@ -32,5 +32,6 @@ Interoperability of patient records.  Steps from the GCP Quickstart - [link](htt
 
 
 ## Learn More
+ - 📗 Use the de-identification sensitive data service for FHIR store - [link](https://cloud.google.com/healthcare-api/docs/how-tos/deidentify)
  - 📘 Use the 'how-to' guide for FHIR store - [link](https://cloud.google.com/healthcare-api/docs/how-tos#fhir-guide)
 
