@@ -52,12 +52,13 @@ Shown below is the relationship between WDL (scripts), cromwell and typical exec
 ### Other Things to Know
  - General GATK tool usage best practice guidlines from The Broad - [link](https://software.broadinstitute.org/gatk/best-practices/)
  - Cromwell workflows can be run in one of two modes:
-  - '(run) stand-alone'(to run a single workflow) --or-- 
-  - '(server) persistent-mode'(to run multiple workflows)
-    - VERIFY the version of Cromwell, WDL and tools when creating workflows (i.e. v50) - [link](https://github.com/broadinstitute/cromwell/releases/download/50/cromwell-50.jar)
-    - USE the 'wdl_runner' tool to run/test Cromwell workflows locally - [link](https://github.com/broadinstitute/wdl-runner)
-    - USE the Broad's 'WOM tool' to validate WDL workflow syntax - [link](https://github.com/broadinstitute/cromwell/releases/download/50/womtool-50.jar)
-    - USE the Broad's Terra platform to run your workflow on a persistent Cromwell server using a web UI - [link](https:/terra.bio)
+     - '(run) stand-alone'(to run a single workflow) --or-- 
+     - '(server) persistent-mode'(to run multiple workflows)
+       - VERIFY the version of Cromwell, WDL and tools when creating workflows (i.e. v50) - [link](https://github.com/broadinstitute/cromwell/releases/download/50/cromwell-50.jar)
+       - USE the `wdl_runner` tool to run/test Cromwell workflows locally - [link](https://github.com/broadinstitute/wdl-runner)
+       - USE the `cromshell` tools to run/test cromwell workflows from the shell - [link](https://github.com/broadinstitute/cromshell)
+       - USE the Broad's `WOM tool` to validate WDL workflow syntax - [link](https://github.com/broadinstitute/cromwell/releases/download/50/womtool-50.jar)
+       - USE the Broad's Terra platform to run your workflow on a persistent Cromwell server using a web UI - [link](https:/terra.bio)
  - WDL is an open source scripting language. To learn more and see source code, see these links
    - Go to the 'learn-wdl' repo for lessons and example WDL scripts - [link](https://github.com/openwdl/learn-wdl)
    - Go to the 'open-wdl' repo to see the source code for WDL - [link](https://github.com/openwdl/wdl)
