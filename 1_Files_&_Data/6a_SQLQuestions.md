@@ -36,7 +36,7 @@ The original source bioinformatics Dataset and base SQL queries used in this ope
   If you get stuck - here is a [link](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/6b_SQLQueries.sql) to completed queries for each question.
 
 ---
----
+
 ## Part 1 - Single Table Queries
 
 In this section you will execute or write (and execute) SQL queries against a single table in a **public** Google Cloud BigQuery bioinformatics dataset that I created for these lessons.  
@@ -54,7 +54,7 @@ To get started, I suggest that you run a couple of SQL queries to list all of th
         SELECT *
         FROM `gcp-for-bioinformatics.sql_genomics_examples.experiments` AS experiments
 
-**IMPORTANT: You must enclose the fully qualified table name in the backtick charachter (NOT a single quote) so that BigQuery can parse the table statement. Note the use of the `AS` keyword to alias the table name.**  
+**IMPORTANT: You must enclose the fully qualified table name in the backtick character (NOT a single quote) so that BigQuery can parse the table statement. Note the use of the `AS` keyword to alias the table name.**  
 
 ![backtick](/images/backtick.png)  
  
