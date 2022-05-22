@@ -125,7 +125,7 @@ Rename the column `name` to "Experiment" and `experimentId` to "ExperimentID" us
         FROM {table1} AS {t1}  
         WHERE {t1}.{c1} = {'stringValue'}  
         AND {t1}.{c2} > {'dateValue'}
----
+
 ---
 
 ## Part 2 - Two Table Queries
