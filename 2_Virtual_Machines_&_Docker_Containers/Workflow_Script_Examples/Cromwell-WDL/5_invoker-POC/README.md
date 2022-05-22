@@ -1,6 +1,6 @@
 # WIP - Invoker POC for cromwell and PAPI
 
-<img src="https://github.dev/lynnlangit/gcp-for-bioinformatics/blob/6f146579e2db1ec231d2d797bac647960dcadffc/images/cromwell-run.png">
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/cromwell-run.png">
 
 Will update as we work through this POC. Shown above is the initial architecture.
 
