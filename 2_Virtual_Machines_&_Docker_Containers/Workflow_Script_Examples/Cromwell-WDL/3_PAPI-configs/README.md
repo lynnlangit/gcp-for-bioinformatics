@@ -1,6 +1,6 @@
 # Cromwell Backend Config Files 
 
-This folder contains examples of these files.  To run use this pattern:
+This folder contains examples of these files.  To run use this pattern for cromwell run mode on PAPI (GCP):
 
 `java -Dconfig.file=google.conf -jar cromwell-67.jar run hello.wdl -i hello.inputs`
 
