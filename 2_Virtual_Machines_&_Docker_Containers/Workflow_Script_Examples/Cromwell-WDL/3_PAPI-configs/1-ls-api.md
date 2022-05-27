@@ -1,6 +1,9 @@
 # GCP Life Sciences Example
 
 ## Simplified workflow
+
+From this LS API Quickstart --> https://cloud.google.com/life-sciences/docs/process-genomic-data
+
 ```
 gcloud beta lifesciences pipelines run \
     --regions us-east1 \
