@@ -107,6 +107,7 @@
  - 📘 Link to [BQ Variants data schema](https://cloud.google.com/genomics/docs/how-tos/bigquery-variants-schema)
  - 📘 Link to [Load Variants into BQ](https://cloud.google.com/genomics/docs/how-tos/load-variants#transform-pipeline)
  - 📘 Link to [Analyze variants with BQ](https://cloud.google.com/genomics/docs/tutorials/analyze-variants-advanced)
+ - 📘 Link to [Using BigQuery to Annotate Clinically Significant SNPs](https://www.sourcedgroup.com/blog/gcp-genomics-big-query)
  - :octocat: Link to [Example Genomics BQ queries](https://github.com/googlegenomics/bigquery-examples/tree/master/1000genomes)
  - 📘 Link to 60+ min Codelab [Analyze variants in BQ](https://codelabs.developers.google.com/codelabs/genomics-vcfbq/#0)
  - 📘 Link to [Example ISB-CGC tutorial](https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/Tutorials/KidneyCancerDemo/KidneyCancerDemo.html)
