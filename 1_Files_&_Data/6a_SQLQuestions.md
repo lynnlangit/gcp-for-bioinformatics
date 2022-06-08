@@ -504,4 +504,5 @@ Use a SQL conditional statement to test level value, i.e. `CASE`...
     - **CREATE** your own BigQuery dataset 
     - **CREATE** both the dataset TABLES and VIEWS from the source CSV files (in this repo `/genomic_data_samples/CSV-or-TXT/CSV-for-BigQuery-lessons/...`/)
     - *Directions are [here](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/6c_BQ_dataset.md) on how to set up your own copy of my public BigQuery dataset
+- LEARN MORE using more advanced examples of genomic data exploration with BigQuery, see this [link](https://github.com/googlegenomics/bigquery-examples)
 
