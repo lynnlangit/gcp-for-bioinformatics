@@ -2,7 +2,7 @@
 
 Here's a collection of examples, links and notes on best practices for running HPC workloads on GCP.  Image from Google's [`HPC Toolkit` docs](https://cloud.google.com/hpc-toolkit/docs/overview) shown below
 
-<img src="xxx" width=800>
+<img src="lynnlangit/gcp-for-bioinformatics/images/hpc-toolkit.png" width=800>
 
 ## Best Practices for HPC on GCP
 
