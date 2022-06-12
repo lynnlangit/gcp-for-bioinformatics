@@ -1,6 +1,8 @@
 # HPC on Google Cloud
 
-Here's a collection of links and notes on best practices for running HPC workloads on GCP
+Here's a collection of examples, links and notes on best practices for running HPC workloads on GCP.  Image from Google's [`HPC Toolkit` docs](https://cloud.google.com/hpc-toolkit/docs/overview) shown below
+
+<img src="xxx" width=800>
 
 ## Best Practices for HPC on GCP
 
