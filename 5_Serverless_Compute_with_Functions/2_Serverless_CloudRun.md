@@ -25,8 +25,8 @@
  - REVIEW the Stackdriver logs to see the result of the function invocation
 
 ### Other Things to Know
+
  - Serverless patterns are often used for workloads that have spikes in demand
- - 📘 Link to [choosing a serverless option](https://cloud.google.com/serverless-options/)
  - Using the 'revision settings' you can set a min/max number of instances for autoscaling for your deployment.  You can also set the 'maximum requests per container'
  - Serverless auto-scales (to your GCP account limits) by default
  - Cloud Run has two execution modes - within CloudRun and CloudRun for Anthos using Kubernetes (GKE)
@@ -35,14 +35,13 @@
 
 ### How to learn more
 
+- 📘 Link to [choosing a serverless option](https://cloud.google.com/serverless-options/)
 - 📓 Do a GCP Codelab to use CloudRun on GKE(K8) - [link](https://codelabs.developers.google.com/codelabs/cloud-run-gke/)
 - 📺 Demo of 'R Shiny on Cloud Run' - shows configuration and set up - [link](https://www.youtube.com/watch?v=uu97P0IWsO0)
- - :octocat: Link to [Try Cloud Run from a GitHub Repo](https://github.com/lynnlangit/hello-cloud-run).  Shown below is the output in Cloud Shell after you click the 'try cloud run' button in the GitHub repo.  The following actions run -> CloudRun API enabled, Docker container image is built and registered at Google Container Registry and then deployed as a service to Cloud Run.  
+ - :octocat: Link to [Try Cloud Run from a GitHub Repo](https://github.com/lynnlangit/hello-cloud-run).  
  - 📺 Watch to "What is Cloud Run?" 3 minute demo video - [link](https://www.linkedin.com/learning/google-cloud-platform-essential-training-3/google-cloud-run)
-[![cloud-run-api](/images/cloud-run-api.png)](https://www.linkedin.com/learning/google-cloud-platform-essential-training-3/google-cloud-run)
 - 📺 Watch to "What is Cloud run on GKE?" 4 minute demo video - [link](
 https://www.linkedin.com/learning/google-cloud-platform-essential-training-3/google-cloud-run-on-gke)
-[![cloud-run-on-gke](/images/cloud-run-on-gke.png)](https://www.linkedin.com/learning/google-cloud-platform-essential-training-3/google-cloud-run-on-gke)
 
 ### See it in action
 
