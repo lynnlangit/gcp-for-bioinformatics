@@ -42,14 +42,15 @@ https://www.linkedin.com/learning/google-cloud-platform-essential-training-3/goo
 [![cloud-run-on-gke](/images/cloud-run-on-gke.png)](https://www.linkedin.com/learning/google-cloud-platform-essential-training-3/google-cloud-run-on-gke)
 
 ### See it in action
---demo repo
+- demo repo
  ![hello-cloud-run](/images/hello-cloud-run.png)
---builds a docker container from the Dockerfile   
---registers the container image on gcr.io  
+- builds a docker container from the Dockerfile   
+- registers the container image on gcr.io  
  ![container-registry](/images/container-registry.png) 
---creates a serverless function from the container image
+- creates a serverless function from the container image
  ![cloud-run](/images/cloud-run.png)  
-- Do a GCP Codelab to use CloudRun on GKE(K8) - [link](https://codelabs.developers.google.com/codelabs/cloud-run-gke/)
+- 📓 Do a GCP Codelab to use CloudRun on GKE(K8) - [link](https://codelabs.developers.google.com/codelabs/cloud-run-gke/)
+- 📺 Demo of 'R Shiny on Cloud Run' - shows configuration and set up - [link](https://www.youtube.com/watch?v=uu97P0IWsO0)
 
 
 
