@@ -21,7 +21,7 @@
  - Forecast & verify service costs for your analysis jobs --particularly for BigQuery. This is important so that you can inadvertently avoid overspending, which can hapen based on both the data size and computational complexity of your analysis
 
 ### How to do this
- USE the [Quick Start](https://cloud.google.com/genomics/quickstart) to run a pipeline that uses the Pipelines API to create an index file (BAI file) from a large binary file containing DNA sequences (BAM file)
+ USE the [Quick Start](https://cloud.google.com/life-sciences/docs/process-genomic-data) to run a pipeline that uses the Pipelines API to create an index file (BAI file) from a large binary file containing DNA sequences (BAM file)
 
  -----
 
