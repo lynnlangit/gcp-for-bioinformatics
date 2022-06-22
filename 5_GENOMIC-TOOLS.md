@@ -1,6 +1,6 @@
 # Genomic Tools
 
-This page lists some common genomics tools used in bioinformatics analysis pipelines.  
+This page lists some common genomics tools used in bioinformatics analysis pipelines.  For a more comprehensive list see the section `genomic tools` in my other Repo `Team Teri` --> [link](https://github.com/lynnlangit/TeamTeri/tree/master/3_Genomic_Tools)
 
 ## Tools Summary Table
 
