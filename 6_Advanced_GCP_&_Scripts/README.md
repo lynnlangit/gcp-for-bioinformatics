@@ -12,11 +12,19 @@ In addition to a list of links to advanced GCP topics, here are the script examp
 - Use Genomics API
 - Run VariantTransforms in DataFlow and then use BigQuery to query results
 -------
-### More Information
+## More GCP Automation Information
 
-#### GCP General
+### GCP General
 
- - 📘  See the [Advanced-GCP-concepts.csv](https://github.com/lynnlangit/gcp-essentials/blob/master/GCP-Essentials-Links.csv) file in this folder for a list of links to advanced GCP concepts.  
  - :octocat: Find GCP enterprise usages patterns and examples scripts using the GCP SDK command line tools (gcloud, gsutil, bq,...) - see the 'gcp-essentials' repository at this [link](https://github.com/lynnlangit/gcp-essentials)
+  - 📘  See the [Advanced-GCP-concepts.csv](https://github.com/lynnlangit/gcp-essentials/blob/master/GCP-Essentials-Links.csv) file in this folder for a list of links to advanced GCP concepts.  
+
+  ### GCP Machine Learning 
+
  - :octocat: For many more examples of GCP Machine Learning tools, libaries and example GCP SDK ML scripts, see the 'gcp-ml-essentials' repository at this [link](https://github.com/lynnlangit/gcp-ml)
+
+ ### Google Genomics Resouces
+
  - :octocat: See Google Genomics Organization on GitHub - [link](https://github.com/googlegenomics) 
+ - 📘  Google Genomics Cookbook - [link](https://googlegenomics.readthedocs.io/en/latest)
+
