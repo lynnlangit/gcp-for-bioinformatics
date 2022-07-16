@@ -48,4 +48,5 @@ This service is currently in preview.  Also it does NOT yet support the ability 
 
 - :octocat: Batch Samples - [link](https://github.com/GoogleCloudPlatform/batch-samples)
 - :octocat: HPC + Batch Toolkit - [link](https://github.com/GoogleCloudPlatform/hpc-toolkit/blob/develop/docs/cloud-batch.md)
+- :book: Nextflow Pipelines using Google Batch - [link](https://www.nextflow.io/blog/2022/deploy-nextflow-pipelines-with-google-cloud-batch.html)
 
