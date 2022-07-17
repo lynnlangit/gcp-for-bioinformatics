@@ -28,7 +28,13 @@ This service is currently in preview.  Also it does NOT yet support the ability 
 
 ### How to do this
 
- USE the [Transcoding Tutorial](https://github.com/GoogleCloudPlatform/batch-samples/tree/main/transcoding) to run a pipeline that which leverages Batch to transcode H.264 video files to VP9.
+ <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/batch-running.png" width=400 align=right>
+ 
+ USE the [Transcoding Tutorial](https://github.com/GoogleCloudPlatform/batch-samples/tree/main/transcoding) to run a pipeline that which leverages Batch to transcode H.264 video files to VP9.  Running batch job example shown to the right.
+ 
+ Use Cloud Logging and the Google Batch Web UI to monitor batch job status.  After the batch job completes, verify the output files in the configured cloud storage bucket.  When the job is complete, the web UI will show the status of the job, "succeeded", "failed", etc...  An example is shown below.
+ 
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/batch-complete.png" width=600>
 
  -----
 
