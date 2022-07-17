@@ -32,9 +32,15 @@ This service is currently in preview.  Also it does NOT yet support the ability 
  
  USE the [Transcoding Tutorial](https://github.com/GoogleCloudPlatform/batch-samples/tree/main/transcoding) to run a pipeline that which leverages Batch to transcode H.264 video files to VP9.  Running batch job example shown to the right.
  
+ You can use either a container image or a script to detail job run steps (or tasks).  This example uses a shell script `transcode.sh` to run a job.    
+ 
+ To configure a job, update the example `job.json` with your demo cloud storage bucket.  Use this file to configure the cores and memory requested for your job run.  In this configuration file, you can also detail the `VM Model` (standard or spot) type, task count and parallelism for your job run.    
+ 
+ If you select spot VM instance type, then the VM types that will be used are Google Compute Engine pre-emptible types and their execution can be interrupted, depending on spot instance availability.
+ 
  Use Cloud Logging and the Google Batch Web UI to monitor batch job status.  After the batch job completes, verify the output files in the configured cloud storage bucket.  When the job is complete, the web UI will show the status of the job, "succeeded", "failed", etc...  An example is shown below.
  
-<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/batch-complete.png" width=600>
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/batch-result.png" width=700>
 
  -----
 
