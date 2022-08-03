@@ -50,7 +50,7 @@
  - VIEW your account login (upper right of console)
  - VIEW your project name, shown as 'gcp-for-bioinformatics' below
 
- <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/gcp-account.png" width="460" align="right">  
+ <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/gcp-account.png" width="400" align="right">  
 
 
 ### Other Things to Know
@@ -62,7 +62,7 @@
     - A billing account can be linked to one or more GCP projects and the billing account specifies how you pay (credit card, invoice...) for GCP services
    - A billing account is linked to a payment profile (individual or corporate)
 
- [![billing](/images/billing.png)]()
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/billing.png" width="660">  
 
 ---
 ### GCP Enterprise Account Setup Guidance
@@ -72,12 +72,12 @@ Enterprises will generally set up a GCP Organizational Hierarchy, to enforce pol
  - 📘 Link to [Enterprise Onboarding Checklist](https://cloud.google.com/docs/enterprise/onboarding-checklist)
  - 📘 Link to [best practices for Enterprise Organizations](https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations)
  - 📘 Link to general best practices via [Cloud Architecture Framework](https://cloud.google.com/architecture/framework)
-
- [![GCP Resource Hierarchy](/images/resources.png)]()
+ 
+ <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/resources.png" width="800">  
 
 ---
 
-<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/recommendations.png" width="460" align="right"> 
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/recommendations.png" width="400" align="right"> 
 
 ### How to learn more
 
@@ -95,7 +95,7 @@ Read about funding opportunities to cover cloud costs - https://terra.bio/fundin
 
 ---
 
-![billing-actions](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/billing-actions.png)
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/raw/master/images/billing-actions.png" width="460">  
 
 #### GCP Billing on Terra.bio
  - 📘 Link to [How much did a {Terra} workflow analysis cost?](https://support.terra.bio/hc/en-us/articles/360037862771#h_01F9BVT3WM7SNZEXD2CSB7B7WN)
