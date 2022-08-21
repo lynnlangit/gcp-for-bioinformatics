@@ -70,7 +70,8 @@ Shown below is the relationship between WDL (scripts), cromwell and typical exec
 - :octocat: Example WDL scripts using bioinformatics tools which can be used in workflows - [link](https://github.com/biowdl/tasks) to BioWDL
 - :octocat: WDL pipeline (workflow) template examples - [link](https://github.com/biowdl/pipeline-template) to BioWDL template
 - :octocat: Source WDL for 5 Dollar Genome Analysis Pipeline - [link](https://github.com/gatk-workflows/five-dollar-genome-analysis-pipeline) includes JSON inputs, all data accessed from GCS public buckets
-- :octocat: WARP (WDL Analysis Research Pipelines) - example, optimized WDL pipelines from The Broad - [link](https://broadinstitute.github.io/warp/) - WARP repository is a collection of cloud-optimized pipelines for processing biological data from the Broad Institute Data Sciences Platform and collaborators.
+- :octocat: WARP (WDL Analysis Research Pipelines) - example, optimized WDL pipelines from The Broad - [link](https://broadinstitute.github.io/warp/) - WARP repository is a collection of cloud-optimized pipelines for processing biological data from the Broad Institute Data Sciences Platform and collaborators. 
+   - See also the index tool for WARP pipelines (currently ~ 30 pipelines)  - at [link](https://github.com/broadinstitute/warp/tree/develop/wreleaser)
 - 📺 Watch short WDL screencasts [YouTube series](https://www.youtube.com/playlist?list=PL4Q4HssKcxYv5syJKUKRrD8Fbd-_CnxTM) to learn more about WDL syntax, playlist is shown below.
 
 ![Learn WDL YouTube Playlist](/images/learn-wdl-playlist.png)
