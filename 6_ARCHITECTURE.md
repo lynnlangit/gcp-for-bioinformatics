@@ -19,6 +19,6 @@ Shown below is an example reference architecture for a Data Lake pattern **using
 
 Each blue icon represents a type of ☁️ GCP service.  In this Repo, you'll get information how to get started with the services shown below.  
 
-<img src="https://github.com/lynnlangit/learning-cloud/blob/master/CLOUD-PATTERNS/images/new-main.png" width=800>
+<img src="https://github.com/lynnlangit/learning-cloud/blob/master/CLOUD-PATTERNS/images/new-main.png" width=900>
 
 ---
