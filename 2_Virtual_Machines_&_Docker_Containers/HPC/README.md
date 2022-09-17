@@ -27,3 +27,11 @@ Here's a collection of examples, links and notes on best practices for running H
 - Documentation: "DDN EXAScaler Cloud" (commerical Lustre) - [link](https://cloud.google.com/architecture/filers-on-compute-engine#DDN)
 - GCP Marketplace: "EXAScaler Cloud Offering" - [link](https://console.cloud.google.com/marketplace/details/ddnstorage/exascaler-cloud)
 - Architecture Center: "Parallel file systems for HPC workloads" - [link](https://cloud.google.com/architecture/parallel-file-systems-for-hpc)
+
+----
+
+## Google Reference Architecture for HPC on GCP
+
+This pattern is from Google Cloud guidance, drawn using the Google Cloud free, online cloud architecture tool.
+
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/gcp-hpc-arch.png" width=900>
