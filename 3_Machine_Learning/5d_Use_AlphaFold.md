@@ -9,6 +9,7 @@
 ### Key considerations
 - Use Colabs or Vertex AI Notebook to test w/Example Notebook (output shown below)
 - Use Vertex AI (batch) Pipeline to scale - [link](https://cloud.google.com/blog/products/ai-machine-learning/alphafold-batch-inference-with-vertex-ai-pipelines)
+- Vertex AI AlphaFold Pipeline on Github - [link](https://github.com/GoogleCloudPlatform/vertex-ai-alphafold-inference-pipeline)
 
 <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/alphafold.png" width=800>
 
