@@ -29,4 +29,5 @@
 ### How to learn more
 - 📘 FAQ for AlphaFold - [link](https://alphafold.ebi.ac.uk/faq)
 - 📰 From Nature: "Highly Accurate Protein Structure Prediction w/AlphaFold" - [link](https://www.nature.com/articles/s41586-021-03819-2)
+- :octocat: AlphaFold source code on Github - -[link](https://github.com/deepmind/alphafold)
  
