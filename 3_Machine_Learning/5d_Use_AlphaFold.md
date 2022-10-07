@@ -10,13 +10,14 @@
 - Use Colabs or Vertex AI Notebook to test w/Example Notebook (output shown below)
 - Use Vertex AI (batch) Pipeline to scale - [link](https://cloud.google.com/blog/products/ai-machine-learning/alphafold-batch-inference-with-vertex-ai-pipelines)
 
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/alphafold.png" width=800>
+
 ### How to do this
  - Run the example notebook linked below in Google Colabs 
-
-- AlphaFold BigQuery public dataset → https://goo.gle/3Em79pd
-- AlphaFold notebook on Vertex AI Workbench → https://goo.gle/3ryXbcp
-- AlphaFold batch inferencing solution on Vertex AI Pipelines → https://goo.gle/3V7OJhI
-- Deepmind Youtube channel → https://goo.gle/3EeHr66
+   - AlphaFold BigQuery public dataset → https://goo.gle/3Em79pd
+   - AlphaFold notebook on Vertex AI Workbench → https://goo.gle/3ryXbcp
+   - AlphaFold batch inferencing solution on Vertex AI Pipelines → https://goo.gle/3V7OJhI
+   - Deepmind Youtube channel → https://goo.gle/3EeHr66
 
 ### How to verify you've done it
  - Run the example Colabs Notebook linked above
@@ -26,5 +27,5 @@
 
 ### How to learn more
 - 📘 FAQ for AlphaFold - [link](https://alphafold.ebi.ac.uk/faq)
-- :paper: From Nature: "Highly Accurate Protein Structure Prediction w/AlphaFold" - [link](https://www.nature.com/articles/s41586-021-03819-2)
+- 📰 From Nature: "Highly Accurate Protein Structure Prediction w/AlphaFold" - [link](https://www.nature.com/articles/s41586-021-03819-2)
  
