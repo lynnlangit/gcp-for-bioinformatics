@@ -10,7 +10,7 @@
 
 You can run AlphaFold using example notebooks (small-sized test) or via a scalable cloud-based machine learning pipeline.
 - SMALL: 
-  - Use Colabs [example notebook - here](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/3_Machine_Learning/Jupyter_Notebook_Examples/AlphaFold.ipynb).Example notebook output shown below. --or-- 
+  - Use Colabs [example notebook - here](https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb).Example notebook output shown below. --or-- 
   - Use Vertex AI Notebook to test [w/Example Notebook](https://github.com/GoogleCloudPlatform/vertex-ai-samples/blob/main/community-content/alphafold_on_workbench/AlphaFold.ipynb). 
 - SCALABLE/ LARGE: 
   - Use Vertex AI (batch) Pipeline to scale - [link](https://cloud.google.com/blog/products/ai-machine-learning/alphafold-batch-inference-with-vertex-ai-pipelines)
