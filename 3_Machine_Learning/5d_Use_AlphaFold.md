@@ -12,10 +12,10 @@ You can run AlphaFold using example notebooks (small-sized test) or via a scalab
 - SMALL: 
   - Use **Colabs** [very small example notebook - here](https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb). Runs in 5 minutes on default Colab env.
   - Use **Colabs** [small sample notebook - here](https://colab.research.google.com/github/deepmind/alphafold/blob/main/notebooks/AlphaFold.ipynb). Runs in ~ 30 minutes. Example notebook output shown below. --or-- 
-  - Use Vertex AI Notebook to test [example notebook - here](https://github.com/GoogleCloudPlatform/vertex-ai-samples/blob/main/community-content/alphafold_on_workbench/AlphaFold.ipynb). 
+  - Use **Vertex AI Notebook** to test [example notebook - here](https://github.com/GoogleCloudPlatform/vertex-ai-samples/blob/main/community-content/alphafold_on_workbench/AlphaFold.ipynb). 
 - SCALABLE/ LARGE: 
-  - Use Vertex AI (batch) Pipeline to scale - [link](https://cloud.google.com/blog/products/ai-machine-learning/alphafold-batch-inference-with-vertex-ai-pipelines)
-  - Vertex AI AlphaFold Pipeline on Github - [link](https://github.com/GoogleCloudPlatform/vertex-ai-alphafold-inference-pipeline)
+  - Use **Vertex AI (batch) Pipeline** to scale - [link](https://cloud.google.com/blog/products/ai-machine-learning/alphafold-batch-inference-with-vertex-ai-pipelines)
+  - See **Vertex AI AlphaFold Pipeline** code on Github - [link](https://github.com/GoogleCloudPlatform/vertex-ai-alphafold-inference-pipeline)
 
 <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/alphafold.png" width=800>
 
