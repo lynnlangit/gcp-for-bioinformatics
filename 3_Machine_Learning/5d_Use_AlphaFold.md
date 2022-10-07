@@ -7,9 +7,14 @@
  - AlphaFold is a machine learning model (uses TensorFlow) created by Google DeepMind. Here's a 7 minute video on AlphaFold concepts, including running it on GCP Vertex AI - [link](https://www.youtube.com/watch?v=CX0BTkimL7A)
 
 ### Key considerations
-- Use Colabs [example notebook - here](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/3_Machine_Learning/Jupyter_Notebook_Examples/AlphaFold.ipynb) or Vertex AI Notebook to test [w/Example Notebook](https://github.com/GoogleCloudPlatform/vertex-ai-samples/blob/main/community-content/alphafold_on_workbench/AlphaFold.ipynb). Example notebook output shown below.
-- Use Vertex AI (batch) Pipeline to scale - [link](https://cloud.google.com/blog/products/ai-machine-learning/alphafold-batch-inference-with-vertex-ai-pipelines)
-- Vertex AI AlphaFold Pipeline on Github - [link](https://github.com/GoogleCloudPlatform/vertex-ai-alphafold-inference-pipeline)
+
+You can run AlphaFold using example notebooks (small-sized test) or via a scalable cloud-based machine learning pipeline.
+- SMALL: 
+  - Use Colabs [example notebook - here](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/3_Machine_Learning/Jupyter_Notebook_Examples/AlphaFold.ipynb).Example notebook output shown below. --or-- 
+  - Use Vertex AI Notebook to test [w/Example Notebook](https://github.com/GoogleCloudPlatform/vertex-ai-samples/blob/main/community-content/alphafold_on_workbench/AlphaFold.ipynb). 
+- SCALABLE/ LARGE: 
+  - Use Vertex AI (batch) Pipeline to scale - [link](https://cloud.google.com/blog/products/ai-machine-learning/alphafold-batch-inference-with-vertex-ai-pipelines)
+  - Vertex AI AlphaFold Pipeline on Github - [link](https://github.com/GoogleCloudPlatform/vertex-ai-alphafold-inference-pipeline)
 
 <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/alphafold.png" width=800>
 
