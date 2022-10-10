@@ -6,14 +6,12 @@
  - When you don't want to wait for time on your organization's shared cluster
 
 ### What is this
-  Google Cloud Platform Cloud Storage is an online file storage web service for storing, accessing and transferring data files on the Google Cloud platform. 
-  
-  GCP Cloud Storage (or GCS) is frequently used as the input and output location for files when you run analysis (workflows or pipelines).
-
-  Files are stored in buckets. Bucket usually contain folders for orgnaziation as well. Each bucket must have a globally unique name.  
+- Google Cloud Platform Cloud Storage is an online file storage web service for storing, accessing and transferring data files on the Google Cloud platform. 
+- GCP Cloud Storage (or GCS) is frequently used as the input and output location for files when you run analysis (workflows or pipelines).
+- Files are stored in buckets. Bucket usually contain folders for orgnaziation as well. Each bucket must have a globally unique name.  
 
 ### Key considerations
- Storage can be the most significant GCP service cost for bioinformatics (due to the number and size of files involved in analysis) so be careful to select the storage class that fits your analysis best i.e. multi-regional, regional.... so as not to pay for unused resources
+Storage can be the most significant GCP service cost for bioinformatics (due to the number and size of files involved in analysis) so be careful to select the storage class that fits your analysis best i.e. multi-regional, regional.... so as not to pay for unused resources
  - Understand costs and selecting the best fit type of storage for your data [here](https://cloud.google.com/storage/docs/locations)
  - Understand storage class types (multi-regional, regional, nearline, coldline) [here](https://cloud.google.com/storage/docs/storage-classes)
  - Understand storage location options [here](https://cloud.google.com/about/locations)
@@ -42,7 +40,9 @@
  -----
 
 ### How to verify you've done it
- - UPLOAD file(s) to the bucket using the web console or the 'gsutil' tool - [link](https://cloud.google.com/storage/docs/gsutil) - example shown below
+ - UPLOAD file(s) to the bucket using the web console (example shown below) --or-- 
+ - SCRIPT upload using the `gsutil` tool - [link](https://cloud.google.com/storage/docs/gsutil) --or--
+ - SCRIPT updload using the `gcloud storage` tool - [link](https://cloud.google.com/blog/products/storage-data-transfer/new-gcloud-storage-cli-for-your-data-transfers)
 
  [![upload](/images/upload.png)]()
 
