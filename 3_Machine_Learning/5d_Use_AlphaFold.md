@@ -30,7 +30,8 @@ You can run AlphaFold using example notebooks (small-sized test) or via a scalab
  - Run the example Colabs Notebook linked above
 
 ### Other Things to Know
- - BigQuery AlphFold public database (214M AlphaFold protein structure predictions from DeepMind) at [link](https://console.cloud.google.com/marketplace/product/bigquery-public-data/deepmind-alphafold)
+ - BigQuery AlphaFold public database (214M AlphaFold protein structure predictions from DeepMind) at [link](https://console.cloud.google.com/marketplace/product/bigquery-public-data/deepmind-alphafold)
+ - Article: Using AlphaFold "Zhong Yan Gan uncovers crucial insights into the molecular basis of Parkinson's" - [link](https://unfolded.deepmind.com/stories/accelerating-our-understanding-of-early-onset-parkinsons)
 
 ### How to learn more
 - 📘 FAQ for AlphaFold - [link](https://alphafold.ebi.ac.uk/faq)
