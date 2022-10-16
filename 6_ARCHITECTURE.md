@@ -15,9 +15,12 @@ Five key patterns used in creating reproducible genomic-scale cloud analysis pip
 5. **Use of domain-specific pipeline configuration languages**, such as WDL, Nextflow, CWL (rather than cloud vendor scripts or templates, such as AWS CloudFormation, or GCP Deployments). These configuration languages enable configuration of both bioinformatics tools and also cloud services (VM size, bucket security...) 
 
 ----
-Shown below is an example reference architecture for a Data Mesh pattern **using GCP services**.  
+## DataMesh on GCP for Bioinformatics
 
-Each blue icon represents a type of ☁️ GCP service.  In this Repo, you'll get information how to get started with the services shown below.  
+Shown below is an example reference architecture for a Data Mesh pattern **using GCP services**. 
+- A Data Mesh is a group of Data Lakes
+- Each blue icon represents a type of ☁️ GCP service.  
+- In this Repo, you'll get information how to get started with the services shown below.  
 
 <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/new-main.png" width=1000>
 
