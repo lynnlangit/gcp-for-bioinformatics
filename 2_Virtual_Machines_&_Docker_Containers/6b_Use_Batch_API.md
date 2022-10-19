@@ -20,7 +20,7 @@ The Google Batch service can...
 - Use accelerator-optimized resources. In collaboration with NVIDIA, Batch supports the use of NVIDIA GPUs when running demanding batch workloads such as ML training, HPC, and graphics simulation.
 - Support common job types including arrays of jobs and multi-node MPI jobs utilizing task parallelization. 
 - Handle any executable. Bring your scripts or containerized workload.
-- Provide flexible provisioning models, including support for Spot VMs, which offer up to 91% savings versus regular compute instances, and custom machine types.
+- Provide flexible provisioning models, including support for **Spot VMs, which offer up to 91% savings** versus regular compute instances, and custom machine types.
 - Simplify native integrations with Google Cloud services as well as popular workflow engines and tools such as Nextflow. The dsub command line tool will be supported imminently.
 
 ### Key considerations
