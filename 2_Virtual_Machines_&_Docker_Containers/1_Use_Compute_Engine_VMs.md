@@ -22,8 +22,10 @@ Tip: Connect your instance to a Cloud Storage bucket when latency and throughput
 - Select the best-fit VM type.  There are two key types:
     - **Standard VM** (default) - size the VM appropriately, use for one-time, small-sized jobs
     - **[Preemptible VM](https://cloud.google.com/compute/docs/instances/preemptible)** is an VM that you can create and run at a much lower price than normal instances (can be up to 80% LESS than regular instances). 
+      - Important: Compute Engine might terminate (preempt) these VMs if it requires access to those resources for other tasks. Preemptible VMs are excess Compute Engine capacity so their availability varies with usage. Select this VM type to save money.  The configuration switch to enable a VM to be preemptible is shown below.
+      - **Spot VM** - next generation preemptible VMs, which support [more features that preemptible VMs (such as `no max runtime`)](https://cloud.google.com/compute/docs/instances/preemptible#:). See also short article about Spot VMs - [link](https://cloud.google.com/blog/topics/cost-management/rethinking-your-vm-strategy-spot-vms)
     
-      Important: Compute Engine might terminate (preempt) these VMs if it requires access to those resources for other tasks. Preemptible VMs are excess Compute Engine capacity so their availability varies with usage. Select this VM type to save money.  The configuration switch to enable a VM to be preemptible is shown below.
+     
  - Understand service costs. VMs are billed by size (CPU/RAM), time (per second) and other factors (region).  Reduce VM cost by using preemptible VMs.  Pricing can also be reduced by always on auto-discounting (see screen below).
  - Read GCP FAQs for GCE VMs - [link](https://cloud.google.com/compute/docs/faq)
 
