@@ -58,3 +58,9 @@ This service is currently in preview.  Also it does NOT yet support the ability 
 - :book: Nextflow Pipelines using Google Batch - [link](https://www.nextflow.io/blog/2022/deploy-nextflow-pipelines-with-google-cloud-batch.html)
 - :books: Nextflow Pipelines and Google Batch configuration documentation - [link](https://www.nextflow.io/docs/edge/google.html#cloud-batch)
 
+### Example Architecture
+
+Shown below is an expandable compute cluster, driven by batch, which is designed to run multiple types of bioinformatics pipelines (primary or secondary.)  Also shown is the use of Google DataPlex (as a DataMesh) set of services for reference and other data.
+
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/batch-pipelines.png" width=800>
+
