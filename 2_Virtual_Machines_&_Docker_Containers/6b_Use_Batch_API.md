@@ -9,26 +9,26 @@
 
 
 ### What is this
- The Batch service handles several essential batch computing tasks. 
- - It manages the job queue 
- - provisions and autoscales resources
- - runs jobs and executes subtasks
- - automatically handles common errors 
- - access the service through the API, the gcloud command line tool, workflow engines, or via UI in Cloud Console. 
+ The Google Batch service handles several essential batch computing tasks. 
+ - It manages the job queue by...
+   - provisioning and autoscaling resources
+   - running jobs and executing subtasks
+   - automatically handling common errors 
+ - Access the service through the API, the gcloud command line tool, workflow engines, or via UI in Cloud Console. 
 
 The Google Batch service can...
 - Run batch jobs as a service. Batch supports throughput-oriented, HPC, AI/ML, and data processing jobs.
 - Provision compute resources. Batch supports all CPU machine families including the newly released T2A Arm instances
-- Use accelerator-optimized resources. In collaboration with NVIDIA, Batch supports the use of NVIDIA GPUs when running demanding batch workloads such as ML training, HPC, and graphics simulation.
+- Use accelerator-optimized resources. Batch supports the use of NVIDIA GPUs for workloads such as ML training, HPC, and graphics simulation.
 - Support common job types including arrays of jobs and multi-node MPI jobs utilizing task parallelization. 
-- Handle any executable. Bring your scripts or containerized workload.
-- Provide flexible provisioning models, including support for **Spot VMs, which offer up to 91% savings** versus regular compute instances, and custom machine types.
-- Simplify native integrations with Google Cloud services as well as popular workflow engines and tools such as Nextflow. The dsub command line tool will be supported imminently.
+- Handle any executable. Bring your **scripts** or **containerized** workload.
+- Support for **Spot VMs, which offer up to 91% savings** (versus regular compute instances), and for custom machine types.
+- Simplify native integrations with bioinformatics workflow engines and tools such as Nextflow and the `dsub` command line tool.
 
 ### Key considerations
 This service is currently in preview.  Also it does NOT yet support the ability to configure integration with a particular Google Cloud VPC.
 
-### How to do this
+### How to do this - Video Transcoding Example
 
  <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/batch-running.png" width=400 align=right>
  
@@ -48,7 +48,7 @@ This service is currently in preview.  Also it does NOT yet support the ability 
 
 ### How to verify you've done it
  - Run your analysis, monitor for correct results (view files in your output bucket)
- - Monitor for service cost, execution time and adjust to meet your requirements
+ - Monitor for service cost, execution time and adjust job configuration parameters to meet your requirements
 
 
 ### How to learn more
