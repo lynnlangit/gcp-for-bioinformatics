@@ -17,7 +17,7 @@ It consists of three separate repositories:
 
 NOTE: Samtools and BCFtools both use HTSlib internally, but these source packages contain their own copies of htslib so they can be built independently.
 
-One or more of the available Samtools is often used in a genomic data anlysis pipeline.  An example, from [here](https://wikis.utexas.edu/display/CoreNGSTools/The+Basic+Alignment+Workflow), is shown below.
+One or more of the available Samtools is often used in a genomic data anlysis pipeline.  An example, from an article from [UT in Austin, TX](https://wikis.utexas.edu/display/CoreNGSTools/The+Basic+Alignment+Workflow), is shown below.
 
 <img src="https://wikis.utexas.edu/download/attachments/66697008/image2016-5-23%2018%3A17%3A24.png?version=1&modificationDate=1464027446000&api=v2" width=900>
 
