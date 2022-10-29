@@ -21,17 +21,30 @@ One or more of the available Samtools is often used in a genomic data anlysis pi
 
 <img src="https://wikis.utexas.edu/download/attachments/66697008/image2016-5-23%2018%3A17%3A24.png?version=1&modificationDate=1464027446000&api=v2" width=900>
 
-### Get it / Set it up
+---
 
-- Open source - download [here](http://www.htslib.org/)
-- Set up - directions [here](http://www.htslib.org/download/)
-- Source files - buckets + public data (bq dataset?)  --> Dataplex
-- GCR samtools container - [here](gcr.io/cloud-lifesciences/samtools)
-- BAM input in GCP bucket - [here](gs://genomics-public-data/NA12878.chr20.sample.bam)
+## Prepare to Test
 
-## The Tests
+There are a number of steps to prepare before testing.  These include downloading and installing samtools  Also you'll need to get sample input data. Your test results will differ, depending on your input data type, size and values.
 
-This article will cover a series of types of `samtools` task pipeline deployments on a number of GCP Services.  Most services will use Cloud Storage buckets for input/output files.
+### Samtools: Get it / Set it up
+
+- Get Samtools (open source and free) - download [here](http://www.htslib.org/)
+- Set up Samtools - directions [here](http://www.htslib.org/download/)
+- (Optional) Upload Samatools source files to your GCP Cloud Storage bucket
+- (Optional) GCR samtools container - [here](gcr.io/cloud-lifesciences/samtools)
+
+### Sample Input Data: Get it / Set it up
+
+- Create one or more Cloud Storage buckets in your GCP account
+- Add your input data to your bucket
+- Use public datasets on GCP
+	- BAM input in GCP bucket - [here](gs://genomics-public-data/NA12878.chr20.sample.bam)
+- (Optional) Index/Tag buckets / BigQuery datasets as a DataMesh using GCP DataPlex services
+
+## Perform The Tests
+
+This page will cover a series of types of `samtools` task pipeline deployments on a number of GCP Services.  Most services will use Cloud Storage buckets for input/output files.
 
 - Single task group pipeline (script)
 - Containerized pipeline - get a container vs make a container (gcr)
