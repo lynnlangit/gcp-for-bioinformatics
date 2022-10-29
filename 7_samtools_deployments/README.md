@@ -25,7 +25,16 @@ One or more of the available Samtools is often used in a genomic data anlysis pi
 
 ## Prepare to Test
 
-There are a number of steps to prepare before testing.  These include downloading and installing samtools  Also you'll need to get sample input data. Your test results will differ, depending on your input data type, size and values.
+There are a number of steps to prepare before testing.  These include downloading and installing samtools  Also you'll need to get sample input data. Your test results will differ, depending on your input data type, size and values.  We will use the `samtools index` command for our testing.  An example (using the GCP Life Sciences API service) is shown below.
+
+```
+gcloud beta lifesciences pipelines run \
+    --regions us-east1 \
+    --command-line 'samtools index ${BAM} ${BAI}' \
+    --docker-image "gcr.io/cloud-lifesciences/samtools" \
+    --inputs BAM=gs://genomics-public-data/NA12878.chr20.sample.bam \
+    --outputs BAI=gs://mayo-demos-life-sciences/NA12878.chr20.sample.bam.bai
+```
 
 ### Samtools: Get it / Set it up
 
@@ -40,7 +49,10 @@ There are a number of steps to prepare before testing.  These include downloadin
 - Add your input data to your bucket
 - Use public datasets on GCP
 	- BAM input in GCP bucket - [here](gs://genomics-public-data/NA12878.chr20.sample.bam)
+	- TCGA public data in BQ dataset - [here](https://cloud.google.com/life-sciences/docs/resources/public-datasets/tcga#datasets)
 - (Optional) Index/Tag buckets / BigQuery datasets as a DataMesh using GCP DataPlex services
+
+----
 
 ## Perform The Tests
 
@@ -56,8 +68,8 @@ Can be run on compute IaaS, SaaS or PaaS services on the Google Cloud Platform.
 
 ### IaaS - run on VM
 
-- IaaS -- GCE/VM - run as script 
-- IaaS -- GCE/VM - run as container 
+- Compute Engine/VM - run as script 
+- Compute Engine/VM - run as container 
 	- from DockerHub - at this URL: https://hub.docker.com/r/biocontainers/samtools/ 
 		- using command `docker pull biocontainers/samtools`
 	- from GCR - at this URL: gcr.io/cloud-lifesciences/samtools 
@@ -65,24 +77,25 @@ Can be run on compute IaaS, SaaS or PaaS services on the Google Cloud Platform.
 
 ### SaaS - run via services
 
-- SaaS -- Colabs Notebook 
+- Colabs Notebook 
 	- example link (from 2014) - [link](https://colab.research.google.com/github/BenLangmead/comp-genomics-class/blob/master/notebooks/SAM.ipynb)
-- SaaS -- Cloud Function - trigger script from bucket
-- SaaS -- CloudRun Job - run container on bucket
-- SaaS -- Google Batch - run cluster of VMs from compute trigger (CloudRun or Cloud Function)
+- Cloud Function - trigger script from file upload to bucket
+- CloudRun Job - run container on file in bucket
+- Google Batch - run cluster of VMs from compute trigger (CloudRun or Cloud Function)
+	- NOTE:  Google Life Sciences is a subset of Google Batch, so we'll just test Batch
 
 ### PaaS - run on managed VMs/containers
 
-- PaaS -- Vertex AI Notebook instance - use when visualizing results
-- PaaS -- GKE - run containers
+- Vertex AI (Jupyter) Notebook instance - use when visualizing results
+- Kubernetes Engine  - run container cluster
 
 ---
 
 ## Monitor and Scale
 
-- VMs - type | size of VM, add NLB and monitoring
+- Compute Engine - type | size of VM, add NLB and monitoring
 - Functions/ CloudRun - monitor and adjust configuration
-- K8 - set up, monitor and scale
+- Kubernetes Engine - set up, monitor and scale
 
 ## Use Bioinformatics Workflow Language
 
