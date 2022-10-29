@@ -57,6 +57,10 @@ Can be run on compute IaaS, SaaS or PaaS services on the Google Cloud Platform.
 - Functions/ CloudRun - monitor and adjust configuration
 - K8 - set up, monitor and scale
 
+## Other Options
+
+- Use `nf-core` version of samtools, run on Nextflow on GCP (w/Google Batch) - [link](https://nf-co.re/modules/samtools_view)
+
 ## Links
 
 - :hammer: Workflow example `fastq to bam` - [link](http://www.htslib.org/workflow/fastq.html)
