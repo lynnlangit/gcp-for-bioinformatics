@@ -40,7 +40,6 @@ gcloud beta lifesciences pipelines run \
 
 - Get Samtools (open source and free) - download [here](http://www.htslib.org/)
 - Set up Samtools - directions [here](http://www.htslib.org/download/)
-- (Optional) Upload Samatools source files to your GCP Cloud Storage bucket
 - (Optional) GCR samtools container - [here](gcr.io/cloud-lifesciences/samtools)
 
 ### Sample Input Data: Get it / Set it up
@@ -50,13 +49,14 @@ gcloud beta lifesciences pipelines run \
 - Use public datasets on GCP
 	- BAM input in GCP bucket - [here](gs://genomics-public-data/NA12878.chr20.sample.bam)
 	- TCGA public data in BQ dataset - [here](https://cloud.google.com/life-sciences/docs/resources/public-datasets/tcga#datasets)
+- (Optional) Upload Samatools source files to your GCP Cloud Storage bucket
 - (Optional) Index/Tag buckets / BigQuery datasets as a DataMesh using GCP DataPlex services
 
 ----
 
 ## Perform The Tests
 
-This page will cover a series of types of `samtools` task pipeline deployments on a number of GCP Services.  Most services will use Cloud Storage buckets for input/output files.
+This page will cover a series of types of `samtools` task pipeline architectures on a number of GCP Services.  Most examples will use Cloud Storage buckets for input/output files.
 
 - Single task group pipeline (script)
 - Containerized pipeline - get a container vs make a container (gcr)
