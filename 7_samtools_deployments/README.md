@@ -2,7 +2,7 @@
 
 Genomic researchers frequently use open source genomic data analysis tools.  **Samtools** is a one such example. This toolset is defined as *"Utilities for the analysis of genomic files which use the Sequence Alignment/Map (SAM) format"*, source code can be found at this [link](http://www.htslib.org/doc/samtools.html).
 
-This page will detail compute service options on GCP.  The purpose is to learn | compare various GCP options for data analysis using compute services via a straightforward bioinformatics example. See the GCP Sketchnote below from [@pvergadia](https://twitter.com/pvergadia) and [link to full sketchnote page](https://thecloudgirl.dev/gcpcompute.html) to get a high-level overview of compute service option types available on GCP.
+This page will detail possible compute solutions on GCP.  The purpose is to learn | compare various GCP options for data analysis using compute services via a straightforward bioinformatics example. See the GCP Sketchnote below from [@pvergadia](https://twitter.com/pvergadia) and [link to full sketchnote page](https://thecloudgirl.dev/gcpcompute.html) to get a high-level overview of compute service option types available on GCP.
 
 <img src="https://thecloudgirl.dev/images/vs.jpg" width=900>
 
