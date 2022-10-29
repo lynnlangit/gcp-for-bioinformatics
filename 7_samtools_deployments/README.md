@@ -25,7 +25,7 @@ One or more of the available Samtools is often used in a genomic data anlysis pi
 
 ## Prepare to Test
 
-There are a number of steps to prepare before testing.  These include downloading and installing samtools  Also you'll need to get sample input data. Your test results will differ, depending on your input data type, size and values.  We will use the `samtools index` command for our testing.  An example (using the GCP Life Sciences API service) is shown below.
+There are a number of steps to prepare before testing.  These include downloading and installing samtools.  Also you'll need to get sample input data. Your test results will differ, depending on your input data type, size and values.  We will use the `samtools index` command for our testing.  An example (using the GCP Life Sciences API service) is shown below.
 
 ```
 gcloud beta lifesciences pipelines run \
