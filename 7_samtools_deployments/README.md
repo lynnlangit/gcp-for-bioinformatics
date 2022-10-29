@@ -1,14 +1,14 @@
-# Samtools GCP Cloud Deployment Options
+# GCP Cloud Deployment Options for Bioinformatics
 
-**Samtools** is a widely used open source toolset for bioinformatics. These tools are defined as *"Utilities for the analysis of genomic files which use the Sequence Alignment/Map (SAM) format"*, source code can be found at this [link](http://www.htslib.org/doc/samtools.html).
+Genomic researchers often use open source genomic data analysis tools.  **Samtools** is a widely used example. This toolset is defined as *"Utilities for the analysis of genomic files which use the Sequence Alignment/Map (SAM) format"*, source code can be found at this [link](http://www.htslib.org/doc/samtools.html).
 
-This page will detail deployment options on GCP.  The purpose is to learn | compare various GCP services for compute using a bioinformatics example. Sketchnote below from [@pvergadia](https://twitter.com/pvergadia) - [link to full sketchnote page](https://thecloudgirl.dev/gcpcompute.html)
+This page will detail deployment options on GCP.  The purpose is to learn | compare various GCP options for data analysis using compute services via a straightforward bioinformatics example. See the GCP Sketchnote below from [@pvergadia](https://twitter.com/pvergadia) and [link to full sketchnote page](https://thecloudgirl.dev/gcpcompute.html) to get a high-level overview of compute service option types available on GCP.
 
 <img src="https://thecloudgirl.dev/images/vs.jpg" width=900>
 
 ## What is it
 
-Samtools is a suite of open source programs for interacting with high-throughput sequencing data. Samtools is a set of utilities that manipulate alignments in the SAM (Sequence Alignment/Map), BAM, and CRAM formats. It converts between the formats, does sorting, merging and indexing, and can retrieve reads in any regions swiftly. Samtools is designed to work on a stream
+**Samtools** is a suite of open source programs for interacting with high-throughput sequencing data. Samtools is a set of utilities that manipulate alignments in the SAM (Sequence Alignment/Map), BAM, and CRAM formats. It converts between the formats, does sorting, merging and indexing, and can retrieve reads in any regions swiftly. Samtools is designed to work on a stream
 It consists of three separate repositories:
 
 - **Samtools**: Reading/writing/editing/indexing/viewing SAM/BAM/CRAM format
