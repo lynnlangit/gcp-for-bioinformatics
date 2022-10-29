@@ -54,7 +54,8 @@ This page will cover a series of types of `samtools` task pipeline deployments o
 
 Can be run on compute IaaS, SaaS or PaaS services on the Google Cloud Platform.
 
-### IaaS
+### IaaS - run on VM
+
 - IaaS -- GCE/VM - run as script 
 - IaaS -- GCE/VM - run as container 
 	- from DockerHub - at this URL: https://hub.docker.com/r/biocontainers/samtools/ 
@@ -62,27 +63,33 @@ Can be run on compute IaaS, SaaS or PaaS services on the Google Cloud Platform.
 	- from GCR - at this URL: gcr.io/cloud-lifesciences/samtools 
 		- using command `docker pull gcr.io/cloud-lifesciences/samtools:latest`
 
-### SaaS
+### SaaS - run via services
+
 - SaaS -- Colabs Notebook 
 	- example link (from 2014) - [link](https://colab.research.google.com/github/BenLangmead/comp-genomics-class/blob/master/notebooks/SAM.ipynb)
-- SaaS -- Function - trigger script from bucket
+- SaaS -- Cloud Function - trigger script from bucket
 - SaaS -- CloudRun Job - run container on bucket
+- SaaS -- Google Batch - run cluster of VMs from compute trigger (CloudRun or Cloud Function)
 
-### PaaS
-- PaaS -- Vertex AI Notebook instance
-- PaaS -- Nextflow samtools - [link](https://github.com/nf-modules/samtools)
+### PaaS - run on managed VMs/containers
+
+- PaaS -- Vertex AI Notebook instance - use when visualizing results
 - PaaS -- GKE - run containers
 
+---
 
 ## Monitor and Scale
 
-- VMs - add NLB and monitoring
+- VMs - type | size of VM, add NLB and monitoring
 - Functions/ CloudRun - monitor and adjust configuration
 - K8 - set up, monitor and scale
 
-## Other Options
+## Use Bioinformatics Workflow Language
 
-- Use `nf-core` version of samtools, run on Nextflow on GCP (w/Google Batch) - [link](https://nf-co.re/modules/samtools_view)
+- run on Nextflow on GCP (w/Google Batch) 
+	- Use `nf-core` version of samtools
+	- Get from `nf-core` registry - [link](https://nf-co.re/modules/samtools_view) 
+	- source code - [link](https://github.com/nf-modules/samtools)
 
 ## Links
 
