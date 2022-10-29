@@ -86,7 +86,9 @@ Can be run on compute IaaS, SaaS or PaaS services on the Google Cloud Platform.
 
 ### PaaS - run on managed VMs/containers
 
-- Vertex AI (Jupyter) Notebook instance - use when visualizing results
+- Vertex AI (Jupyter) Notebook instance - Puython, TensorFlow, R and more
+	- use with R language and|or when visualizing results
+	- Example use 'Rsamtools` library - [link](http://www.bioconductor.org/packages/2.14/bioc/html/Rsamtools.html)
 - Kubernetes Engine  - run container cluster
 
 ---
