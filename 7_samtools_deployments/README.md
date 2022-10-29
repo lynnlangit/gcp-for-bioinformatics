@@ -1,12 +1,11 @@
-# samtools cloud tests
+# Samtools GCP Cloud Deployment Options
 
-## Setup
+**Samtools** are a widely used open source toolset for bioinformatics. These tools are defined as *"Utilities for the analysis of genomic files which use the Sequence Alignment/Map (SAM) format"*, source code can be found at this [link](http://www.htslib.org/doc/samtools.html).
 
-### What is it
+## What is it
 
-- **samtools** – Utilities for the Sequence Alignment/Map (SAM) format - [link](http://www.htslib.org/doc/samtools.html)
-
-Samtools is a suite of open source programs for interacting with high-throughput sequencing data. It consists of three separate repositories:
+Samtools is a suite of open source programs for interacting with high-throughput sequencing data. Samtools is a set of utilities that manipulate alignments in the SAM (Sequence Alignment/Map), BAM, and CRAM formats. It converts between the formats, does sorting, merging and indexing, and can retrieve reads in any regions swiftly. Samtools is designed to work on a stream
+It consists of three separate repositories:
 
 - Samtools: Reading/writing/editing/indexing/viewing SAM/BAM/CRAM format
 - BCFtools: Reading/writing BCF2/VCF/gVCF files and calling/filtering/summarising SNP and short indel sequence variants
@@ -60,8 +59,9 @@ Can be run on compute IaaS, SaaS or PaaS services on the Google Cloud Platform.
 
 ## Links
 
-- Workflow example `fastq to bam` - [link](http://www.htslib.org/workflow/fastq.html)
+- :hammer: Workflow example `fastq to bam` - [link](http://www.htslib.org/workflow/fastq.html)
 - :octocat: GitHub source repo for `samtools` - [link](https://github.com/samtools/samtools)
+- :book: Article '10 Years of Samtools' - [link](http://gigasciencejournal.com/blog/play-it-again-samtools/)
 
 
 
