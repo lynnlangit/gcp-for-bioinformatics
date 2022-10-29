@@ -57,8 +57,10 @@ Can be run on compute IaaS, SaaS or PaaS services on the Google Cloud Platform.
 ### IaaS
 - IaaS -- GCE/VM - run as script 
 - IaaS -- GCE/VM - run as container 
-	- from DockerHub - [link](https://hub.docker.com/r/biocontainers/samtools/) 
-	- using command `docker pull biocontainers/samtools`
+	- from DockerHub - at this URL: https://hub.docker.com/r/biocontainers/samtools/ 
+		- using command `docker pull biocontainers/samtools`
+	- from GCR - at this URL: gcr.io/cloud-lifesciences/samtools 
+		- using command `docker pull gcr.io/cloud-lifesciences/samtools:latest`
 
 ### SaaS
 - SaaS -- Colabs Notebook 
@@ -86,6 +88,7 @@ Can be run on compute IaaS, SaaS or PaaS services on the Google Cloud Platform.
 
 - :hammer: Workflow example `fastq to bam` - [link](http://www.htslib.org/workflow/fastq.html)
 - :octocat: GitHub source repo for `samtools` - [link](https://github.com/samtools/samtools)
+- 🗃️ Google Cloud Life Sciences public container images - [link](https://console.cloud.google.com/gcr/images/cloud-lifesciences)
 - :book: Article '10 Years of Samtools' - [link](http://gigasciencejournal.com/blog/play-it-again-samtools/)
 
 
