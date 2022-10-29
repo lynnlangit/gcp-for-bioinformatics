@@ -2,7 +2,7 @@
 
 **Samtools** is a widely used open source toolset for bioinformatics. These tools are defined as *"Utilities for the analysis of genomic files which use the Sequence Alignment/Map (SAM) format"*, source code can be found at this [link](http://www.htslib.org/doc/samtools.html).
 
-This page will detail deployment options on GCP.  The purpose is to learn | compare various GCP services for compute using a bioinformatics example. Sketchnote below from @pvergadia - [link](https://thecloudgirl.dev/gcpcompute.html)
+This page will detail deployment options on GCP.  The purpose is to learn | compare various GCP services for compute using a bioinformatics example. Sketchnote below from [@pvergadia](https://twitter.com/pvergadia) - [link to full sketchnote page](https://thecloudgirl.dev/gcpcompute.html)
 
 <img src="https://thecloudgirl.dev/images/vs.jpg" width=900>
 
