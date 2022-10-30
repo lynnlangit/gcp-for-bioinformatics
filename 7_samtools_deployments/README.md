@@ -56,11 +56,13 @@ gcloud beta lifesciences pipelines run \
 
 ## Perform The Tests
 
-This page will cover a series of types of `samtools` task pipeline architectures on a number of GCP Services.  Most examples will use Cloud Storage buckets for input/output files.
+This page will cover a series of types of `samtools` task pipeline architectures on a number of GCP Services.  Most examples will use Cloud Storage buckets for input/output files. Shown below is a reference architecture which shows multiple options on GCP.
 
 - Single task group pipeline (script)
 - Containerized pipeline - get a container vs make a container (gcr)
 - Using different GCP compute services
+
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/option-arch.png" width=900>
 
 ## Possible Run locations
 
