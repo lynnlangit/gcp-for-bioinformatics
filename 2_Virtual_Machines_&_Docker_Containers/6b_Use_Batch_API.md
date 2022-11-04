@@ -25,16 +25,13 @@ The Google Batch service can...
 - Support for **Spot VMs, which offer up to 91% savings** (versus regular compute instances), and for custom machine types.
 - Simplify native integrations with bioinformatics workflow engines and tools such as Nextflow and the `dsub` command line tool.
 
-### Key considerations
-This service is currently in preview.  Also it does NOT yet support the ability to configure integration with a particular Google Cloud VPC.
-
 ### How to do this - Video Transcoding Example
 
  <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/batch-running.png" width=400 align=right>
  
  USE the [Transcoding Tutorial](https://github.com/GoogleCloudPlatform/batch-samples/tree/main/transcoding) to run a pipeline that which leverages Batch to transcode H.264 video files to VP9.  Running batch job example shown to the right.
  
- You can use either a container image or a script to detail job run steps (or tasks).  This example uses a shell script `transcode.sh` to run a job.    
+ You can use either a **container image** or a **script** to detail one or morejob run steps (or tasks).  This example uses a shell script `transcode.sh` to run a job.    
  
  To configure a job, update the example `job.json` with your demo cloud storage bucket.  Use this file to configure the cores and memory requested for your job run.  In this configuration file, you can also detail the `VM Model` (standard or spot) type, task count and parallelism for your job run.    
  
