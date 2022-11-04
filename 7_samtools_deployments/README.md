@@ -47,7 +47,7 @@ gcloud beta lifesciences pipelines run \
 - Create one or more Cloud Storage buckets in your GCP account
 	- Add your input data to your bucket
 - Use public datasets on GCP
-	- BAM input in GCP bucket - [here](gs://genomics-public-data/NA12878.chr20.sample.bam)
+	- BAM input file in public GCP bucket - at `gs://genomics-public-data/NA12878.chr20.sample.bam`
 	- TCGA public data in BQ dataset - [here](https://cloud.google.com/life-sciences/docs/resources/public-datasets/tcga#datasets)
 - (Optional) Upload Samatools source files to your GCP Cloud Storage bucket
 - (Optional) Index/Tag buckets / BigQuery datasets as a DataMesh using GCP DataPlex services
