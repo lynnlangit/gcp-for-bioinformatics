@@ -38,14 +38,14 @@ gcloud beta lifesciences pipelines run \
 
 ### Samtools: Get it / Set it up
 
-- Get Samtools (open source and free) - download [here](http://www.htslib.org/)
-- Set up Samtools - directions [here](http://www.htslib.org/download/)
-- (Optional) GCR samtools container - [here](gcr.io/cloud-lifesciences/samtools)
+- Download Samtools (open source and free) - download [here](http://www.htslib.org/)
+- Set up Samtools - directions [here](http://www.htslib.org/download/) --OR--
+	- Use GCR samtools container - [here](gcr.io/cloud-lifesciences/samtools)
 
 ### Sample Input Data: Get it / Set it up
 
 - Create one or more Cloud Storage buckets in your GCP account
-- Add your input data to your bucket
+	- Add your input data to your bucket
 - Use public datasets on GCP
 	- BAM input in GCP bucket - [here](gs://genomics-public-data/NA12878.chr20.sample.bam)
 	- TCGA public data in BQ dataset - [here](https://cloud.google.com/life-sciences/docs/resources/public-datasets/tcga#datasets)
