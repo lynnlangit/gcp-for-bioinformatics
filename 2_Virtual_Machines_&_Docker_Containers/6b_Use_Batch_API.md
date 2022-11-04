@@ -82,7 +82,7 @@ The Google Batch service can...
  Use Cloud Logging and the Google Batch Web UI to monitor batch job status.  After the batch job completes, verify the output files in the configured cloud storage bucket.  When the job is complete, the web UI will show the status of the job, "succeeded", "failed", etc...  
 
 ### How to verify you've done it
- - Run your analysis, monitor for correct results (view files in your output bucket)
+ - Run your analysis, monitor for correct results (view Cloud Logging `task` output, or files in your output bucket if you use a different samtools command which outputs a file)
  - Monitor for service cost, execution time and adjust job configuration parameters to meet your requirements
 
 -----
