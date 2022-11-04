@@ -89,9 +89,9 @@ The Google Batch service can...
 
 -----
 
-### Example Architecture
+### Example Architecture for End-to-End Analysis 
 
-Shown below is an expandable compute cluster, driven by batch, which is designed to run multiple types of bioinformatics pipelines (primary or secondary.)  Also shown is the use of Google DataPlex (as a DataMesh) set of services for reference and other data.
+Shown below is an expandable compute cluster, driven by **Google Batch**, which is designed to run *multiple types of bioinformatics pipelines* (primary or secondary.)  Also shown is the use of Google DataPlex (as a DataMesh) set of services for reference and other data.
 
 <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/batch-pipelines.png" width=1000>
 
