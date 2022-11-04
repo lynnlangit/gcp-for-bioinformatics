@@ -27,8 +27,6 @@ The Google Batch service can...
 
 ### How to do this - Samtools Example
 
- 
- 
  USE the Google Batch to run a single task pipeline which leverages Batch scale using `samtools`.  You can use either a **container image** or a **script** to detail one or more job run steps (or tasks).  This example uses a public bionformatics container which contains the open source `samtools` (gcr.io/cloud-lifesciences/samtools) to run a job.    
  
  To configure a job, create a file using the example below `samtools.json`.  Use this file to configure the cores and memory requested for your job run.  In this configuration file, you can also detail the `VM Model` (standard or spot) type, task count and parallelism for your job run.    
@@ -82,8 +80,12 @@ The Google Batch service can...
  Use Cloud Logging and the Google Batch Web UI to monitor batch job status.  After the batch job completes, verify the output files in the configured cloud storage bucket.  When the job is complete, the web UI will show the status of the job, "succeeded", "failed", etc...  
 
 ### How to verify you've done it
- - Run your analysis, monitor for correct results (view Cloud Logging `task` output, or files in your output bucket if you use a different samtools command which outputs a file)
+ - Run your analysis, monitor for correct results in the WebUI (shown below) or via the `gcloud batch jobs describe....` command
+   - view Cloud Logging `task` output  -or- 
+   - files in your output bucket if you use a different samtools command which outputs a file
  - Monitor for service cost, execution time and adjust job configuration parameters to meet your requirements
+
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/batch-samtools.png" width=900>
 
 -----
 
