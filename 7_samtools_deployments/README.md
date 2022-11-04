@@ -83,7 +83,7 @@ Can be run on compute IaaS, SaaS or PaaS services on the Google Cloud Platform.
 	- example link (from 2014) - [link](https://colab.research.google.com/github/BenLangmead/comp-genomics-class/blob/master/notebooks/SAM.ipynb)
 - Cloud Function - trigger script from file upload to bucket
 - CloudRun Job - run container on file in bucket
-- Google Batch - run cluster of VMs from compute trigger (CloudRun or Cloud Function)
+- Google Batch - run cluster of VMs from compute trigger (CloudRun or Cloud Function) - `samtools` example - [here](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/2_Virtual_Machines_&_Docker_Containers/6b_Use_Batch_API.md#how-to-do-this---samtools-example)
 	- NOTE:  Google Life Sciences is a subset of Google Batch, so we'll just test Batch
 
 ### PaaS - run on managed VMs/containers
