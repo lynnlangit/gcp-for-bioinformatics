@@ -25,21 +25,61 @@ The Google Batch service can...
 - Support for **Spot VMs, which offer up to 91% savings** (versus regular compute instances), and for custom machine types.
 - Simplify native integrations with bioinformatics workflow engines and tools such as Nextflow and the `dsub` command line tool.
 
-### How to do this - Video Transcoding Example
+### How to do this - Samtools Example
 
- <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/batch-running.png" width=400 align=right>
  
- USE the [Transcoding Tutorial](https://github.com/GoogleCloudPlatform/batch-samples/tree/main/transcoding) to run a pipeline that which leverages Batch to transcode H.264 video files to VP9.  Running batch job example shown to the right.
  
- You can use either a **container image** or a **script** to detail one or morejob run steps (or tasks).  This example uses a shell script `transcode.sh` to run a job.    
+ USE the Google Batch to run a single task pipeline which leverages Batch scale using `samtools`.  You can use either a **container image** or a **script** to detail one or more job run steps (or tasks).  This example uses a public bionformatics container which contains the open source `samtools` (gcr.io/cloud-lifesciences/samtools) to run a job.    
  
- To configure a job, update the example `job.json` with your demo cloud storage bucket.  Use this file to configure the cores and memory requested for your job run.  In this configuration file, you can also detail the `VM Model` (standard or spot) type, task count and parallelism for your job run.    
+ To configure a job, create a file using the example below `samtools.json`.  Use this file to configure the cores and memory requested for your job run.  In this configuration file, you can also detail the `VM Model` (standard or spot) type, task count and parallelism for your job run.    
+
+ ```
+ {
+    "taskGroups": [
+        {
+            "taskSpec": {
+                "runnables": [
+                    {
+                        "container": {
+                            "imageUri":"gcr.io/cloud-lifesciences/samtools",
+                            "entrypoint": "/bin/sh",
+                            "commands": [
+                                "-c",
+                                "samtools view -h ${BAM} | head"
+                            ]
+                        },
+                        "environment": {
+                            "variables": {
+                                "BAM": "gs://genomics-public-data/NA12878.chr20.sample.bam"
+                            }
+                        }
+                    }
+                ],
+                "computeResource": {
+                    "cpuMilli": 2000,
+                    "memoryMib": 2000
+                },
+                "maxRetryCount": 3,
+                "maxRunDuration": "100000s"
+            },
+            "taskCount": 3,
+            "parallelism": 10
+        }
+    ],
+    "logsPolicy":{
+        "destination": "CLOUD_LOGGING"
+    }
+}
+ ```
  
+ To run the job open cloud shell and use this gcloud command:
+
+ ```
+ gcloud batch jobs submit samtools-container --location us-central1 --config samtools.json
+ ```
  If you select spot VM instance type, then the VM types that will be used are Google Compute Engine pre-emptible types and their execution can be interrupted, depending on spot instance availability.
  
- Use Cloud Logging and the Google Batch Web UI to monitor batch job status.  After the batch job completes, verify the output files in the configured cloud storage bucket.  When the job is complete, the web UI will show the status of the job, "succeeded", "failed", etc...  An example is shown below.
- 
-<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/batch-result.png" width=700>
+ Use Cloud Logging and the Google Batch Web UI to monitor batch job status.  After the batch job completes, verify the output files in the configured cloud storage bucket.  When the job is complete, the web UI will show the status of the job, "succeeded", "failed", etc...  
 
 ### How to verify you've done it
  - Run your analysis, monitor for correct results (view files in your output bucket)
@@ -59,6 +99,7 @@ Shown below is an expandable compute cluster, driven by batch, which is designed
 - :books: GCP Docs and more examples of using Google Batch features - [link](https://cloud.google.com/batch/docs/create-run-job#create-basic-script)
 - 📺 10 minute video on Google Batch (includes demo) - [link](https://www.youtube.com/watch?v=RS7UJhD4R48)
 - :octocat: Batch Samples - [link](https://github.com/GoogleCloudPlatform/batch-samples)
+- :tutorial: Google Batch example using video transcoding - [link](https://github.com/GoogleCloudPlatform/batch-samples/tree/main/transcoding)
 
 #### Google Batch and HPC or Nextflow
 - :octocat: HPC + Batch Toolkit - [link](https://github.com/GoogleCloudPlatform/hpc-toolkit/blob/develop/docs/cloud-batch.md)
