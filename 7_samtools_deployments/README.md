@@ -85,7 +85,7 @@ Can be run on compute IaaS, SaaS or PaaS services on the Google Cloud Platform.
 - CloudRun Job - run container on file in bucket
 - Google Batch - run cluster of VMs from compute trigger (CloudRun or Cloud Function) - `samtools` example - [here](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/2_Virtual_Machines_&_Docker_Containers/6b_Use_Batch_API.md#how-to-do-this---samtools-example)
 	- example `job.json` file (below) uses the `samtools index` command with a public samtools container, a public bam file (from/to your bucket pattern)
-	- NOTE: replace the listed Cloud Storage bucket name and path in line 115 with your own bucket name and your path
+	- NOTE: replace the listed Cloud Storage bucket name and path (volume | gcs | remotePath value) with your own bucket name and your path
 
 ```
 {
