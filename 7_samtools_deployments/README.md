@@ -70,8 +70,8 @@ Can be run on compute IaaS, SaaS or PaaS services on the Google Cloud Platform.
 
 ### IaaS - run on VM
 
-- Compute Engine/VM - run as script 
-- Compute Engine/VM - run as container 
+- **Compute Engine/VM** - run as script 
+- **Compute Engine/VM** - run as container 
 	- from DockerHub - at this URL: https://hub.docker.com/r/biocontainers/samtools/ 
 		- using command `docker pull biocontainers/samtools`
 	- from GCR - at this URL: gcr.io/cloud-lifesciences/samtools 
@@ -79,11 +79,11 @@ Can be run on compute IaaS, SaaS or PaaS services on the Google Cloud Platform.
 
 ### SaaS - run via services
 
-- Colabs Notebook 
+- **Colabs Notebook** - run as Jupyter Notebook on pre-optimized GCE VM instance
 	- example link (from 2014) - [link](https://colab.research.google.com/github/BenLangmead/comp-genomics-class/blob/master/notebooks/SAM.ipynb)
-- Cloud Function - trigger script from file upload to bucket
-- CloudRun Job - run container on file in bucket
-- Google Batch - run cluster of VMs from compute trigger (CloudRun or Cloud Function) - `samtools` example - [here](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/2_Virtual_Machines_&_Docker_Containers/6b_Use_Batch_API.md#how-to-do-this---samtools-example)
+- **Cloud Function** - trigger script from file upload to bucket using `lambda-type` serverless compute function
+- **CloudRun Job** - run container on file in bucket using serverless compute job
+- **Google Batch** - run cluster of VMs from compute trigger (CloudRun or Cloud Function) - `samtools` example - [here](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/2_Virtual_Machines_&_Docker_Containers/6b_Use_Batch_API.md#how-to-do-this---samtools-example)
 	- example `job.json` file (below) uses the `samtools index` command with a public samtools container, a public bam file (from/to your bucket pattern)
 	- NOTE: replace the listed Cloud Storage bucket name and path (volume | gcs | remotePath value) with your own bucket name and your path
 
@@ -137,10 +137,12 @@ Can be run on compute IaaS, SaaS or PaaS services on the Google Cloud Platform.
 
 ### PaaS - run on managed VMs/containers
 
-- Vertex AI (Jupyter) Notebook instance - Puython, TensorFlow, R and more
+- **Vertex AI (Jupyter) Notebook instance** - Puython, TensorFlow, R and more
 	- use with R language and|or when visualizing results
 	- Example use 'Rsamtools` library - [link](http://www.bioconductor.org/packages/2.14/bioc/html/Rsamtools.html)
-- Kubernetes Engine  - run container cluster
+- **GKE/Google Kubernetes Engine**  - run container cluster
+	- create custom cluster, requires extensive manual configuration and ongoing manual management
+	- allows for custom security, scalability and control
 
 ---
 
