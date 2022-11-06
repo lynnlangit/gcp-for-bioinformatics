@@ -150,12 +150,15 @@ Can be run on compute IaaS, SaaS or PaaS services on the Google Cloud Platform.
 - Functions/ CloudRun - monitor and adjust configuration
 - Kubernetes Engine - set up, monitor and scale
 
-## Use Bioinformatics Workflow Language
+## Use Bioinformatics Workflow Language - Nextflow
 
 Test by running using the Nextflow workflow language and engine on GCP (w/Google Batch)   
 - Use `nf-core` version of samtools. [Nf-core](https://nf-co.re/) is a registry of Nextflow data analysis pipelines.
 	- Get the NF modules/pipeline code from `nf-core` registry - [link](https://nf-co.re/modules/samtools_view) 
 	- Get the NF module source code from GitHub - [link](https://github.com/nf-modules/samtools)
+- Example Nextflow pipeline that uses `samtools` - pipeline name is HGTSEQ - [link](https://nf-co.re/hgtseq). Pipeline diagram (subway map) for this pipeline is shown below. Diagram is from nf-core documentation.
+
+<img src="https://raw.githubusercontent.com/nf-core/hgtseq/1.0.0/docs/images/hgtseq_pipeline_metromap.png" width=900>
 
 ## Links
 
