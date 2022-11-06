@@ -84,7 +84,56 @@ Can be run on compute IaaS, SaaS or PaaS services on the Google Cloud Platform.
 - Cloud Function - trigger script from file upload to bucket
 - CloudRun Job - run container on file in bucket
 - Google Batch - run cluster of VMs from compute trigger (CloudRun or Cloud Function) - `samtools` example - [here](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/2_Virtual_Machines_&_Docker_Containers/6b_Use_Batch_API.md#how-to-do-this---samtools-example)
-	- NOTE:  Google Life Sciences is a subset of Google Batch, so we'll just test Batch
+	- example using `samtools index` with a public samtools container, a public bam file (from/to your bucket pattern)
+	- NOTE: replace the listed Cloud Storage bucket name and path in line 115 with your own bucket name and your path
+
+```
+{
+    "taskGroups": [
+        {
+            "taskSpec": {
+                "runnables": [
+                    {
+                        "container": {
+                            "imageUri":"gcr.io/cloud-lifesciences/samtools",
+                            "entrypoint": "/bin/sh",
+                            "commands": [
+                                "-c",    
+                                "samtools index ${BAM} /mnt/disks/share/${BAI}"            
+                            ]
+                        },
+                        "environment": {
+                            "variables": {
+                                "BAM": "gs://genomics-public-data/NA12878.chr20.sample.bam",
+                                "BAI": "NA12878.chr20.sample.bam.bai"                             
+                            }
+                        }
+                    }
+                ],
+                    "volumes": [
+                        {
+                            "gcs": {
+                                "remotePath": "batch-demo-lynn/samtools-lynn/"
+                            },
+                            "mountPath": "/mnt/disks/share"
+                        }
+                    ],
+                "computeResource": {
+                    "cpuMilli": 2000,
+                    "memoryMib": 2000
+                },
+                "maxRetryCount": 3,
+                "maxRunDuration": "100000s"
+            },
+            "taskCount": 1,
+            "parallelism": 10
+        }
+    ],
+    "logsPolicy":{
+        "destination": "CLOUD_LOGGING"
+    }
+}
+```
 
 ### PaaS - run on managed VMs/containers
 
