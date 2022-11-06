@@ -152,10 +152,10 @@ Can be run on compute IaaS, SaaS or PaaS services on the Google Cloud Platform.
 
 ## Use Bioinformatics Workflow Language
 
-Test by running using the Nextflow workflow language and engine on GCP (w/Google Batch) 
-	- Use `nf-core` version of samtools. [Nf-core](https://nf-co.re/) is a registry of Nextflow data analysis pipelines.
-		- Get the NF modules/pipeline code from `nf-core` registry - [link](https://nf-co.re/modules/samtools_view) 
-		- Get the NF module source code from GitHub - [link](https://github.com/nf-modules/samtools)
+Test by running using the Nextflow workflow language and engine on GCP (w/Google Batch)   
+- Use `nf-core` version of samtools. [Nf-core](https://nf-co.re/) is a registry of Nextflow data analysis pipelines.
+	- Get the NF modules/pipeline code from `nf-core` registry - [link](https://nf-co.re/modules/samtools_view) 
+	- Get the NF module source code from GitHub - [link](https://github.com/nf-modules/samtools)
 
 ## Links
 
