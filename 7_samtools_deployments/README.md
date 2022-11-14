@@ -25,7 +25,7 @@ One or more of the available Samtools is often used in a genomic data anlysis pi
 
 ## Prepare to Test
 
-There are a number of steps to prepare before testing.  These include downloading and installing samtools.  Also you'll need to get sample input data. Your test results will differ, depending on your input data type, size and values.  We will use the `samtools index` command for our testing.  An example (using the GCP Life Sciences API service) is shown below.
+There are a number of steps to prepare before testing.  These include downloading and installing samtools.  Also you'll need to get sample input data. Your test results will differ, depending on your input data type, size and values.  As a starting point, we will use the `samtools index` command for our testing.  An example (using the GCP Life Sciences API service) is shown below.  This example uses a public container with `samtools` and also a BAM file from GCP public datasets.  Use of these public artifacts makes initial testing simpler.
 
 ```
 gcloud beta lifesciences pipelines run \
@@ -38,11 +38,15 @@ gcloud beta lifesciences pipelines run \
 
 ### Samtools: Get it / Set it up
 
+For other testing scenarios, we'll need to get the binaries for `samtools`.  Directions/links are below.  
+
 - Download Samtools (open source and free) - download [here](http://www.htslib.org/)
 - Set up Samtools - directions [here](http://www.htslib.org/download/) --OR--
 	- Use GCR samtools container - [here](gcr.io/cloud-lifesciences/samtools)
 
 ### Sample Input Data: Get it / Set it up
+
+As we continue to test, we'll need to set up storage and get more input files.  We'll use a Cloud Storage bucket and also data stored in public datasets on GCP.
 
 - Create one or more Cloud Storage buckets in your GCP account
 	- Add your input data to your bucket
