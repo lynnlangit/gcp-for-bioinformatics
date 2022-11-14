@@ -62,9 +62,9 @@ As we continue to test, we'll need to set up storage and get more input files.  
 
 This page will cover a series of types of `samtools` task pipeline architectures on a number of GCP Services.  Most examples will use Cloud Storage buckets for input/output files. Shown below is a reference architecture which shows multiple options on GCP.
 
-- Single task group pipeline (script)
-- Containerized pipeline - get a container vs make a container (gcr)
-- Using different GCP compute services
+- Single task (or group) as a pipeline, using a script
+- Containerized pipeline - use a public container (from gcr.io) vs build a container
+- Using different GCP compute services - raw VM, other
 
 <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/option-arch.png" width=900>
 
@@ -82,6 +82,8 @@ Can be run on compute IaaS, SaaS or PaaS services on the Google Cloud Platform.
 		- using command `docker pull gcr.io/cloud-lifesciences/samtools:latest`
 
 ### SaaS - run via services
+
+These are cloud service endpoints, compute services which are pre-configured for various scenarios (batch, machine learning, etc...). Like VMs these servcies are billed by the invocation or by the time interval (minutes or seconds).
 
 - **Colabs Notebook** - run as Jupyter Notebook on pre-optimized GCE VM instance
 	- example link (from 2014) - [link](https://colab.research.google.com/github/BenLangmead/comp-genomics-class/blob/master/notebooks/SAM.ipynb)
