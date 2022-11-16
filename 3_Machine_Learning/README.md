@@ -11,7 +11,7 @@ In this section, you'll get information about using Google Cloud services for ma
 
 The sections of the reference architecture outlined in red will be covered.
 
-[![gcp-iam](/images/ml.png)]()
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/ml.png" width=700>
 
 NOTE: Right click on the 'Open in Colab' button at the top of the *.ipynb (IPython notebook file) and 'open link in a new tab' as directly opening this link is blocked in GitHub.
 
