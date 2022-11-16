@@ -19,4 +19,4 @@ Here are the topic pages in this section:
 
 The sections of the reference architecture outlined in red will be covered.
 
-[![gcp-files](/images/files.png)]()
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/files.png" width=700>
