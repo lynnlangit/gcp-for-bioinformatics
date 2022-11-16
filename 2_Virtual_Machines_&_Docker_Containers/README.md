@@ -25,7 +25,7 @@ Here are the topic pages in this section:
 
 The sections of the reference architecture outlined in red will be covered.
 
-[![gcp-compute](/images/compute.png)]()
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/compute.png" width=700>
 
 Bioinformatics APIs (or workflow languages) include the following: dsub, cromwell/WDL, Terra.bio (which implements cromwell/WDL on GCP) and Nextflow. 
 
