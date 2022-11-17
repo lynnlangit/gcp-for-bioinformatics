@@ -82,14 +82,12 @@
 
  -------
 
-
-### How to learn more
+### Learn More - General BigQuery
 
 #### About BigQuery Query Features & Architecture
  - 📘 Link to [explanation of BigQuery query features](https://medium.com/google-cloud/bigquery-explained-querying-your-data-9e017f2714a3)
  - 📘 Link to [explanation of BigQuery JOINS](https://medium.com/google-cloud/bigquery-explained-working-with-joins-nested-repeated-data-1941646ccb5b)
  - 📘 Link to [explanation of BigQuery architecture](https://medium.com/google-cloud/bigquery-explained-overview-357055ecfda3)
-
 
 #### About SQL Language for BigQuery
  - 📘 Link to lessons, [practice SQL queries using a small, public GCP bioinformatics dataset](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/1_Files_%26_Data/6a_SQLQuestions.md)
@@ -103,10 +101,28 @@
  - 📘 Link to [Save money when using BQ](https://www.linkedin.com/pulse/5-ways-save-money-google-bigquery-rob-larter/)
  - 📘 Link to [Use BQ slots](https://cloud.google.com/blog/products/data-analytics/introducing-bigquery-flex-slots)
 
+#### BigQuery Integrations
+ - :octocat: Utility code for [Spark-to-BigQuery-connector](https://github.com/GoogleCloudDataproc/spark-bigquery-connector)
+ - 📙 Try out BigQuery and BQ ML using [example Jupyter notebooks](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/3_Machine_Learning/Jupyter_Notebook_Examples)
+ - 📺 Link to 6 minute screencast - [BigQuery Machine Learning](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-bigquery-ml)
+
+ <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/bq-ml-demo.png" width=600>
+ 
+---
+  
+### Learn More - BigQuery for Bioinformatics
+
 #### About using BigQuery for Genomic Analysis
- - 📘 Link to [BQ Variants data schema](https://cloud.google.com/genomics/docs/how-tos/bigquery-variants-schema)
- - 📘 Link to [Load Variants into BQ](https://cloud.google.com/genomics/docs/how-tos/load-variants#transform-pipeline)
- - 📘 Link to [Analyze variants with BQ](https://cloud.google.com/genomics/docs/tutorials/analyze-variants-advanced)
+ - 📘 Understand [BQ Variants data schema](https://cloud.google.com/genomics/docs/how-tos/bigquery-variants-schema)
+ - 📘 Store to [variant files in a bucket](https://cloud.google.com/life-sciences/docs/how-tos/store-variants) in Cloud Storage
+ - 📘 Load [Load Variants into BQ](https://cloud.google.com/genomics/docs/how-tos/load-variants#transform-pipeline)
+ - 📘 Analyze [Analyze variants with BQ](https://cloud.google.com/genomics/docs/tutorials/analyze-variants-advanced)
+ - 📘 View [example genomics SQL queries](https://cloud.google.com/life-sciences/docs/tutorials/analyze-variants-advanced) using BigQuery 
+ - 📘 Link to [analyze variant files in a dataset](https://cloud.google.com/life-sciences/docs/how-tos/analyze-variants) in BigQuery
+ - 📘 Link to [run interval JOINS in a dataset](https://cloud.google.com/life-sciences/docs/how-tos/interval-joins) in BigQuery
+
+#### Advanced Examples
+
  - 📘 Link to [Using BigQuery to Annotate Clinically Significant SNPs](https://www.sourcedgroup.com/blog/gcp-genomics-big-query)
  - :octocat: Link to [Example Genomics BQ queries](https://github.com/googlegenomics/bigquery-examples/tree/master/1000genomes)
  - 📘 Link to 60+ min Codelab [Analyze variants in BQ](https://codelabs.developers.google.com/codelabs/genomics-vcfbq/#0)
@@ -115,11 +131,6 @@
  - 📘 Link to [Example NCBI-Sequence Read Archive (SRA) in BigQuery](https://www.ncbi.nlm.nih.gov/sra/docs/sra-bigquery/)
  - 📺 Watch [working with BigQuery datasets in Terra (GCP service) ](https://www.youtube.com/watch?v=jOmCCo3EJr0) - 40 minute video from the Broad
  
- #### BigQuery Integrations
- - :octocat: Utility code for [Spark-to-BigQuery-connector](https://github.com/GoogleCloudDataproc/spark-bigquery-connector)
- - 📙 Try out BigQuery and BQ ML using [example Jupyter notebooks](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/3_Machine_Learning/Jupyter_Notebook_Examples)
- - 📺 Link to 6 minute screencast - [BigQuery Machine Learning](https://www.linkedin.com/learning/google-cloud-platform-for-machine-learning-essential-training/predict-via-bigquery-ml)
-
- <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/bq-ml-demo.png" width=600>
-  
----
+ ---
+ 
+ 
