@@ -43,7 +43,7 @@ Review the example BigQuery dataset schema and example data (graphic below)
  - 📘 Link to [learn SQL - 12 questions](https://en.wikibooks.org/wiki/Data_Management_in_Bioinformatics/SQL_Exercises)
  - 📘 Link to [standard SQL syntax](https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax) used in Google BigQuery 
 
-### Learn More about SQL for Genomics
+### Learn More about SQL/BigQuery for Genomics
  - 📘 Link to [example genomics SQL queries](https://cloud.google.com/life-sciences/docs/tutorials/analyze-variants-advanced) using BigQuery
  - 📘 Link to [variant schema](https://cloud.google.com/life-sciences/docs/how-tos/bigquery-variants-schema) in BigQuery
  - 📘 Link to [store variant files in a bucket](https://cloud.google.com/life-sciences/docs/how-tos/store-variants) in Cloud Storage
