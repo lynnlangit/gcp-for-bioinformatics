@@ -14,6 +14,3 @@ Here are the topic pages in this section:
 - Use Container Registry to host container images
 - Monitor services with Stackdriver for reading logs
 
-The sections of the reference architecture outlined in red will be covered.
-
-<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/tools.png" width=700>
