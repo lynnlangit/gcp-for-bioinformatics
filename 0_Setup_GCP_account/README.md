@@ -11,6 +11,3 @@ Here are the topic pages in this section:
 - Setup GCP Client Tools
 - Setup GCP IAM role-based Security
 
-The sections of the reference architecture outlined in red will be covered here.
-
-<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/iam.png" width=700>
