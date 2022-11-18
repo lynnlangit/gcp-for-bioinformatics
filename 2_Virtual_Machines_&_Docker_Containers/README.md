@@ -25,11 +25,7 @@ Here are the topic pages in this section:
 
 ### Read Examples
 
-- For a perspective on different possible ways to run a bioinformatics tool, read my article
-- Review Article 
-    - `Blast 10 Ways - Adventures in Bioinformatics Tool Deployments` 
-    - published on [Medium.](https://medium.com/@lynnlangit/blast-10-ways-3db78f881059)
-- Read a new book 
-    - `Genomics in the Cloud -  using Docker, GATK, and WDL in Terra`
-    - published [link](http://shop.oreilly.com/product/0636920058182.do) to preview this book on O'Reilly
+For examples on different possible ways to run a bioinformatics tool, read...  
+- Article: `Blast 10 Ways - Adventures in Bioinformatics Tool Deployments` published on [Medium.](https://medium.com/@lynnlangit/blast-10-ways-3db78f881059)
+- Book: `Genomics in the Cloud -  using Docker, GATK, and WDL in Terra` published [link](http://shop.oreilly.com/product/0636920058182.do) to preview this book on O'Reilly
 
