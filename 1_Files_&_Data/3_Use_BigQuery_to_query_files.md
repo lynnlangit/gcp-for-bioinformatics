@@ -125,7 +125,6 @@
 
  - 📘 Link to [Using BigQuery to Annotate Clinically Significant SNPs](https://www.sourcedgroup.com/blog/gcp-genomics-big-query)
  - :octocat: Link to [Example Genomics BQ queries](https://github.com/googlegenomics/bigquery-examples/tree/master/1000genomes)
- - 📘 Link to 60+ min Codelab [Analyze variants in BQ](https://codelabs.developers.google.com/codelabs/genomics-vcfbq/#0)
  - 📘 Link to [Example ISB-CGC tutorial](https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/Tutorials/KidneyCancerDemo/KidneyCancerDemo.html)
  - 📘 Link to [Example BigQuery Syntax ISB-CGC tutorial](https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/progapi/bigqueryGUI/GettingStartedWithGoogleBigQuery.html)
  - 📘 Link to [Example NCBI-Sequence Read Archive (SRA) in BigQuery](https://www.ncbi.nlm.nih.gov/sra/docs/sra-bigquery/)
