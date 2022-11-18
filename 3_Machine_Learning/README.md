@@ -9,10 +9,6 @@ In this section, you'll get information about using Google Cloud services for ma
 ### 📺 Click below to see Lynn's 2 minute intro to this section  
 [![GCP Machine Learning](http://img.youtube.com/vi/DMBDc4vMABk/0.jpg)](http://www.youtube.com/watch?v=DMBDc4vMABk "Intro GCP Services for Machine Learning")
 
-The sections of the reference architecture outlined in red will be covered.
-
-<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/ml.png" width=700>
-
 NOTE: Right click on the 'Open in Colab' button at the top of the *.ipynb (IPython notebook file) and 'open link in a new tab' as directly opening this link is blocked in GitHub.
 
 ### For More Information
