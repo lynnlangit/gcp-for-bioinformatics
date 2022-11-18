@@ -8,14 +8,9 @@ In this section, you'll get information about using Google Cloud services for se
 
 Here are the topic pages in this section:
 
-- Use Cloud Functions
-- Use CloudRun
-- Use Google AppEngine
+- Use Cloud Functions - for HTTP workloads
+- Use CloudRun / CloudRun for GKE (Kubernetes) - for BYOC (bring-your-own-containers)
+- Use Google AppEngine - to host websites
+
 -----
 
-### Serverless GCP Services 
-- **Google Cloud Functions** - for HTTP workloads
-- **Cloud Run** - for BYOC (bring-your-own-containers)
-- **Cloud Run for GKE** (Kubernetes)
-- **Google App Engine** - to host websites
-- **Firebase** - for mobile development and data
