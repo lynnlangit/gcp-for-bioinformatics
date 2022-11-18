@@ -23,20 +23,6 @@ Here are the topic pages in this section:
 - Use dsub for Pipelines API
 - Use Galaxy Project for Pipelines API
 
-The sections of the reference architecture outlined in red will be covered.
-
-<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/compute.png" width=700>
-
-Bioinformatics APIs (or workflow languages) include the following: dsub, cromwell/WDL, Terra.bio (which implements cromwell/WDL on GCP) and Nextflow. 
-
-There are a number of possible ways to construct high volume data analysis workflows or pipelines on GCP with these purpose-built APIs.  In addition there is a specialized GCP API for scaling Genomics workloads on the Google Cloud. This API is named the Google Cloud Life Sciences API (was Genomics/Pipelines API).  
-
-### Use a Map
-
-An interactive representation (one view shown below) for several of the possible build paths for bioinformatics workflows on GCP (and in other environments, including AWS, HPC and more) is shown below.  To work with the interactive MindMap, **open this link in a NEW web page** -- https://atlas.mindmup.com/lynnlangit/bioinformatics_container_based_pipelines/index.html
-
-<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/workflows.png" width=900>
-
 ### Read Examples
 
 - For a perspective on different possible ways to run a bioinformatics tool, read my article
