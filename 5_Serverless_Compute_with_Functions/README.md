@@ -6,11 +6,4 @@ In this section, you'll get information about using Google Cloud services for se
 ### 📺 Click below to see Lynn's 1 minute intro to this section  
 [![GCP Serverless Services](http://img.youtube.com/vi/eyLWNwZtFHk/0.jpg)](http://www.youtube.com/watch?v=eyLWNwZtFHk "Intro to GCP Serverless Services")
 
-Here are the topic pages in this section:
-
-- Use Cloud Functions - for HTTP workloads
-- Use CloudRun / CloudRun for GKE (Kubernetes) - for BYOC (bring-your-own-containers)
-- Use Google AppEngine - to host websites
-
------
 
