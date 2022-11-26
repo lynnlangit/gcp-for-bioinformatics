@@ -9,23 +9,10 @@ You'll also see how to create a Notebook VM instance using a GCP template, so th
 ### 📺 Click below to see Lynn's 3 minute intro to this section  
 [![GCP Compute](http://img.youtube.com/vi/hTdBDlrf80w/0.jpg)](http://www.youtube.com/watch?v=hTdBDlrf80w "Intro GCP Services for Compute")
 
-Here are the topic pages in this section:
-
-- Use Google Compute Engine Virtual Machines
-- Use Jupyter Notebook VM Instance
-- Use Terra.bio Jupyter Notebook
-- Test Docker Container Image for Pipeline
-- Orchestrate Containers with GKE (Kubernetes)
-- Use Google Life Sciences API (was Genomics API or Pipelines API)
-- Use Cromwell and WDL for Pipelines API (PAPI)
-- Use Terra.bio Workflow
-- Use Nextflow for Pipelines API
-- Use dsub for Pipelines API
-- Use Galaxy Project for Pipelines API
-
 ### Read Examples
 
 For examples on different possible ways to run a bioinformatics tool, read...  
 - Article: `Blast 10 Ways - Adventures in Bioinformatics Tool Deployments` published on [Medium.](https://medium.com/@lynnlangit/blast-10-ways-3db78f881059)
 - Book: `Genomics in the Cloud -  using Docker, GATK, and WDL in Terra` published [link](http://shop.oreilly.com/product/0636920058182.do) to preview this book on O'Reilly
+- GPU-Optimized Pipelines: 'NVIDIA Clara Parabricks Pipelines as a GCP Deployment`, results of my testing published on [Substack](https://lynnlangit.substack.com/p/blazing-fast-secondary-analysis)
 
