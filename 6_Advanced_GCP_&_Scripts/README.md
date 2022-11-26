@@ -5,13 +5,8 @@ After learning which services to use (and how to use them) in a research pipelin
 ### 📺 Click below to see Lynn's 2 minute intro to this section  
 [![Intro to GCP Scripts](http://img.youtube.com/vi/aCkwA3ESubE/0.jpg)](http://www.youtube.com/watch?v=aCkwA3ESubE "Intro to GCP Scripts")
 
-In addition to a list of links to advanced GCP topics, here are the script example pages in this section:  
-- Manage CloudStorage
-- List Compute engine instances
-- Manage CloudSQL instance
-- Use Genomics API
-- Run VariantTransforms in DataFlow and then use BigQuery to query results
 -------
+
 ## More GCP Automation Information
 
 ### GCP General
