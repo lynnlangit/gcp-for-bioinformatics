@@ -19,9 +19,10 @@ Storage can be the most significant GCP service cost for bioinformatics (due to 
 ### How to do this
  - CREATE a bucket with a unique name
  - CONFIGURE the bucket storage class type (see below)
+   - TIP: REVIEW the potential use of AUTOCLASS for storage typing - [link](https://cloud.google.com/blog/products/storage-data-transfer/optimize-your-cloud-storage-spend)
  - CONFIGURE the bucket location 
  - CONFIGURE the bucket access control, encryption & retention
- - List of key [bucket operations](https://cloud.google.com/storage/docs/how-to)
+   - List of key [bucket operations](https://cloud.google.com/storage/docs/how-to)
 
  ----
 
