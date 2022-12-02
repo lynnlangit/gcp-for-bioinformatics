@@ -114,12 +114,11 @@
 
 #### About using BigQuery for Genomic Analysis
  - 📘 Understand [BQ Variants data schema](https://cloud.google.com/genomics/docs/how-tos/bigquery-variants-schema)
- - 📘 Store to [variant files in a bucket](https://cloud.google.com/life-sciences/docs/how-tos/store-variants) in Cloud Storage
- - 📘 Load [Load Variants into BQ](https://cloud.google.com/genomics/docs/how-tos/load-variants#transform-pipeline)
- - 📘 Analyze [Analyze variants with BQ](https://cloud.google.com/genomics/docs/tutorials/analyze-variants-advanced)
- - 📘 View [example genomics SQL queries](https://cloud.google.com/life-sciences/docs/tutorials/analyze-variants-advanced) using BigQuery 
- - 📘 Link to [analyze variant files in a dataset](https://cloud.google.com/life-sciences/docs/how-tos/analyze-variants) in BigQuery
- - 📘 Link to [run interval JOINS in a dataset](https://cloud.google.com/life-sciences/docs/how-tos/interval-joins) in BigQuery
+ - 📘 Store [variant files in a bucket](https://cloud.google.com/life-sciences/docs/how-tos/store-variants) in Cloud Storage
+ - 📘 Load [Variants into BQ](https://cloud.google.com/genomics/docs/how-tos/load-variants#transform-pipeline)
+ - 📘 Query using [analyze variant files in a dataset](https://cloud.google.com/life-sciences/docs/how-tos/analyze-variants) in BigQuery
+ - 📘 Query using [run interval JOINS in a dataset](https://cloud.google.com/life-sciences/docs/how-tos/interval-joins) in BigQuery
+ - 📘 Query using [more examples genomics SQL queries](https://cloud.google.com/life-sciences/docs/tutorials/analyze-variants-advanced) using BigQuery 
 
 #### Advanced Examples
 
