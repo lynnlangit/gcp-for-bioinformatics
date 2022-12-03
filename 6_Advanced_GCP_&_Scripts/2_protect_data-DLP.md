@@ -8,9 +8,16 @@ Cloud Data Loss Prevention (DLP) is a fully managed service designed to help you
 
 Discover where sensitive data is located across your enterprise. Conduct continuous profiling to see a high-level overview and then perform -in-depth scans on tables of interest. Once you've discovered where the sensitive data is, you can then take steps to protect it.
 
+## Use Cases
+
+A partial list...
+- Automatically discover sensitive data
+- Classify data across your enterprise
+- Protect sensitive data as you migrate to the cloud
+
 ## Why and How to use it?
 
-Shown above
+- Example: "De-identify PII using Cloud DLP" - [link](https://cloud.google.com/architecture/de-identification-re-identification-pii-using-cloud-dlp)
 
 
 ## Learn More / also De-identify data w/FIHR Store
