@@ -17,6 +17,8 @@ A partial list...
 
 ## Why and How to use it?
 
+Create a job of type `risk analysis` for a Cloud Storage bucket, Big Query dataset or GCP Datastore.  Or you can choose to scan all data in an entire GCP Project (requires an Organization). Customize output (results) notifications - locations are within DLP, BigQuery dataset, Cloud Logging, Cloud Pub/Sub and others.
+
 - Example: "De-identify PII using Cloud DLP" - [link](https://cloud.google.com/architecture/de-identification-re-identification-pii-using-cloud-dlp)
 
 
