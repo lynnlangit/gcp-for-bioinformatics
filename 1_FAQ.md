@@ -26,6 +26,5 @@
 - Automate GCP services - [Learn more about automating GCP services](https://www.linkedin.com/learning/google-cloud-platform-essential-training-3) via my LinkedIn Learning GCP Essentials course
 - Script GCP tasks - [See examples of scripting GCP services](https://github.com/lynnlangit/gcp-essentials) via my LinkedIn Learning GCP Essentials course
 
-
 ### GROW: Learn more about GCP Services
 - Use Links - [Use giant GCP Link Page](https://cloud.google.com/blog/topics/developers-practitioners/giant-list-google-cloud-resources) via GCP blog post
