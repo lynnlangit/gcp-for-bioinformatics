@@ -46,7 +46,7 @@ TIP: If you are **NEW to bioinformatics** and have a computational background...
 
 ### Contibutions
 
-We love contributions! See this [short style guide](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/7_CONTRIBUTING.md) when making pull requests to this repo.
+We love contributions! See this [short style guide](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/CONTRIBUTING.md) when making pull requests to this repo.
 
 ---
 
