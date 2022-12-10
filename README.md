@@ -16,7 +16,7 @@ This Repo includes content you can read, watch or run:
 - 📘 **EXPAND** - linked (external) resources
 - 🔍 **SCAN** - search a list in this Repo
 
-NOTE: If you would like to learn **more advanced concepts** (including script examples and patterns) about working with Google Cloud Platform, see my Repo `gcp-essentails` --> [link](https://github.com/lynnlangit/gcp-essentials)
+NOTE: If you would like to learn **more advanced concepts** (including script examples and patterns) about working with Google Cloud Platform, see my Repo `gcp-essentials` --> [link](https://github.com/lynnlangit/gcp-essentials)
 
 TIP: If you are **NEW to bioinformatics** and have a computational background...
 - :octocat: **REVIEW** my bioinformatics concepts tools and terms 
