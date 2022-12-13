@@ -42,7 +42,7 @@ For other testing scenarios, we'll need to get the binaries for `samtools`.  Dir
 
 - Download Samtools (open source and free) - download [here](http://www.htslib.org/)
 - Set up Samtools - directions [here](http://www.htslib.org/download/) --OR--
-	- Use GCR samtools container - [here](gcr.io/cloud-lifesciences/samtools)
+	- Use GCR samtools container - [here](https://console.cloud.google.com/gcr/images/cloud-lifesciences/GLOBAL/samtools)
 
 ### Sample Input Data: Get it / Set it up
 
