@@ -4,11 +4,11 @@
  USE the Nextflow pipeline language to define and run your analysis workflow at scale 
 
 ### What is this
- Nextflow is a reactive workflow framework & DSL for writing data-intensive computational pipelines.  Run jobs on a single GCE Virtual Machine or a cluster of VMs. You can use GCE + Pipelines API (PAPI) using docker images on VMs as well.
+ Nextflow is a reactive workflow framework & DSL for writing data-intensive computational pipelines.  Run jobs on a single GCE Virtual Machine or a cluster of VMs. You can use GCE + Google Cloud Batch, Life Sciences (Pipelines or PAPI) API using docker images on VMs as well.
  - Nextflow can run on GCP or many other providers
  - Nextflow can run on GCP in two ways:
-   - Run jobs on Compute Engine VMs (can run bioinformatics tools from Docker)
-   - Run jobs on Compute Engine VMS using the **& Life Sciences (Genomics Pipelines) API**
+   - Run jobs on a single Compute Engine VM 
+   - Run jobs on an elastic cluster of Compute Engine VMs using the **Cloud Batch or Life Sciences (Genomics Pipelines) API**
 
 ### Key considerations
 - Understand core Nextflow features - [link](https://www.nextflow.io/index.html#Features)
