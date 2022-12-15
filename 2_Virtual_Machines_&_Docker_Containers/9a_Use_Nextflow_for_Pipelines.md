@@ -5,15 +5,16 @@
 
 ### What is this
  Nextflow is a reactive workflow framework & DSL for writing data-intensive computational pipelines.  Run jobs on a single GCE Virtual Machine or a cluster of VMs. You can use GCE + Google Cloud Batch, Life Sciences (Pipelines or PAPI) API using docker images on VMs as well.
- - Nextflow can run on GCP or many other providers
+ - Nextflow can run on GCP or many other providers (AWS, Slurm, etc...)
  - Nextflow can run on GCP in two ways:
-   - Run jobs on a single Compute Engine VM 
-   - Run jobs on an elastic cluster of Compute Engine VMs using the **Cloud Batch or Life Sciences (Genomics Pipelines) API**
+   - Run jobs on a **single Compute Engine VM** 
+   - Run jobs on an **elastic cluster of Compute Engine VMs** using the **Cloud Batch or Life Sciences (Genomics Pipelines) API**
 
 ### Key considerations
 - Understand core Nextflow features - [link](https://www.nextflow.io/index.html#Features)
 
 ### How to do this
+ - TIP to quickly try out a couple of simple NF workflows, use GCP Cloud Shell and the main tutorials - ['Examples' link](https://www.nextflow.io/) 
  - SETUP prereqs for Nextflow on your VM - JDK, Docker, Graphviz(optional)
  - RUN RNAseq example pipeline on Compute Engine and Cloud Storage - [link](https://cloud.google.com/genomics/docs/tutorials/nextflow)
  - RUN VariantCalling pipeline w/GATK - [link](https://github.com/CRG-CNAG/CalliNGS-NF/)
