@@ -14,10 +14,12 @@
 - Understand core Nextflow features - [link](https://www.nextflow.io/index.html#Features)
 
 ### How to do this
- - TIP to quickly try out a couple of simple NF workflows, use GCP Cloud Shell and the main tutorials - ['Examples' link](https://www.nextflow.io/) 
- - SETUP prereqs for Nextflow on your VM - JDK, Docker, Graphviz(optional)
- - RUN RNAseq example pipeline on Compute Engine and Cloud Storage - [link](https://cloud.google.com/genomics/docs/tutorials/nextflow)
- - RUN VariantCalling pipeline w/GATK - [link](https://github.com/CRG-CNAG/CalliNGS-NF/)
+ - TRY out a couple of simple NF workflows with ZERO set up
+   - Use GCP Cloud Shell and the main tutorials - ['Examples' link](https://www.nextflow.io/) 
+ - TRY more sample workflows on a single GCE VM  
+   - SETUP prereqs for Nextflow on your VM - JDK, Docker, Graphviz(optional)
+   - RUN RNAseq example pipeline on Compute Engine and Cloud Storage - [link](https://cloud.google.com/genomics/docs/tutorials/nextflow)
+   - RUN VariantCalling pipeline w/GATK - [link](https://github.com/CRG-CNAG/CalliNGS-NF/)
  ---
   ### 📺 Click to see Lynn's 4 minute exploration of this section  
 [![Nextflow on GCP for Bioinformatics](http://img.youtube.com/vi/YtUOCMiC7Dk/0.jpg)](http://www.youtube.com/watch?v=YtUOCMiC7Dk "Nextflow on GCP for Bioinformatics")
