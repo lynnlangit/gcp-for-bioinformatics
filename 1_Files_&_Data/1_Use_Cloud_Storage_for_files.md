@@ -68,9 +68,10 @@ Storage can be the most significant GCP service cost for bioinformatics (due to 
  - 📘 Use Cloud Storage FUSE to mount Cloud Storage buckets as file systems on Linux or macOS systems in GCP - [link](https://cloud.google.com/storage/docs/gcs-fuse)
  - :octocat: Do incremental uploads from Illumina Sequencers to GCS - [link](https://github.com/broadinstitute/sequence-upload-to-gs)
 
-### How to learn more
+### Learn More & Best Practices
  - 📘 See examples of common genomic file types (i.e. FASTQ, BAM, VCF... ) - [link](https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/4_FILE-TYPES.md)
- - 📘 See Best practices for Google Cloud Storage - [link](https://cloud.google.com/storage/docs/best-practices)
+ - 📘 See Best practices for Google Cloud Storage from Google - [link](https://cloud.google.com/storage/docs/best-practices)
+ - 📘 See Best practices for Google Cloud Storage from ISB-CGC - [link](https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/BestPractices.html#best-practices)
  - 📘 Learn how to host a static website on Cloud Storage - [link](https://cloud.google.com/storage/docs/hosting-static-website)
 
 
