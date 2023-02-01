@@ -1,7 +1,9 @@
 # Serverless Workflows with GCP Workflows
 
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/gcp-funtctions-tools-test.png" width=700>
+
 ### Why do this
- CREATE a serverless workflow on GCP quickly
+ CREATE a serverless workflow on GCP quickly (example architecture shown above).
 
 ### What is this
  - USE GCP Workflows to create a serverless workflow using a YAML file which defines workflow steps
