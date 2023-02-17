@@ -33,4 +33,5 @@
  - 📺 Link to "How to build Serverless Workflows" 16 minute video - [link](
 https://cloud.withgoogle.com/next/sf/sessions?session=SVR101#application-modernization)
 - 📘 Link to [pricing example](https://cloud.google.com/workflows/pricing#price-tables)
+- 📘 Compare `Workflows` to `Cloud Composer` by features - [link](https://cloud.google.com/workflows/docs/choose-orchestration)
  
