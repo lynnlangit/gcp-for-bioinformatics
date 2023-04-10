@@ -85,18 +85,15 @@ See screenshots below for general flow of working with reference data and your o
           - First column includes the entity: with an id, i.e. 'entity:name_id', etc...
           - Each column is tab delimeted
           - Generally each column header refers to its rows which have links to the files for those column names in GCS buckets
-
-        - More about the Terra Data Inputs Model - [link](https://gatkforums.broadinstitute.org/firecloud/discussion/9769/data-model)
+        - More about the Terra Data Inputs Model - [link](https://support.terra.bio/hc/en-us/articles/360033913771-Overview-Entity-types-and-the-standard-genomic-data-model)
           - **Participant** -> a person enrolled in a study
           - **Sample** -> a biological sample collected from a participant
           - **Pair** -> represents a pair of biological samples collected from a participant
           - **Set** -> group of Participants, Samples or Pairs
-
       - **Reference Data** -> genomic reference data, i.e. `b37human` or `hg38`
       - **Workspace Data** -> workspace parameters, i.e. path to dockerfile, variable values, etc..., i.e. (`worskpace.myDocker`)
       - **Files** -> links to workspace files (in the associated GCS bucket at `gs://fc-nnnn....`)
       - **Workflow Data** -> WDL scripts & `input.json` files (variable configuration files)
-    
   
   [![data-model](/images/data-model.png)]()  
   Image of Terra Data Model from this [link](https://software.broadinstitute.org/firecloud/documentation/quickstart?page=data)
