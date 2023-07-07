@@ -101,7 +101,7 @@ Shown below is an expandable compute cluster, driven by **Google Batch**, which 
 - :books: GCP Docs and more examples of using Google Batch features - [link](https://cloud.google.com/batch/docs/create-run-job#create-basic-script)
 - 📺 10 minute video on Google Batch (includes demo) - [link](https://www.youtube.com/watch?v=RS7UJhD4R48)
 - :octocat: Batch Samples - [link](https://github.com/GoogleCloudPlatform/batch-samples)
-- :tutorial: Google Batch example using video transcoding - [link](https://github.com/GoogleCloudPlatform/batch-samples/tree/main/transcoding)
+- :books: Google Batch example using video transcoding - [link](https://github.com/GoogleCloudPlatform/batch-samples/tree/main/transcoding)
 
 #### Google Batch and HPC or Nextflow
 - :octocat: HPC + Batch Toolkit - [link](https://github.com/GoogleCloudPlatform/hpc-toolkit/blob/develop/docs/cloud-batch.md)
