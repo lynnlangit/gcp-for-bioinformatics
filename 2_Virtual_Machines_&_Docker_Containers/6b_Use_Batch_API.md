@@ -11,9 +11,9 @@
 ### What is this
  The Google Batch service handles several essential batch computing tasks. 
  - It manages the job queue by...
-   - provisioning and autoscaling resources
-   - running jobs and executing subtasks
-   - automatically handling common errors 
+   - **provisioning and autoscaling** resources
+   - **running jobs** and executing subtasks
+   - automatically **handling common errors** 
  - Access the service through the API, the gcloud command line tool, workflow engines, or via UI in Cloud Console. 
 
 The Google Batch service can...
