@@ -1,6 +1,6 @@
 # Use Google Cloud Services for Files and Data
 
-- :star: New in 2022 - see section on **Google Big Lake** and **GCP Dataplex** (for building a DataMesh) -> [link](https://github.com/lynnlangit/gcp-essentials/tree/master/4_big%20data_and_genomics/4k_BigLake_%26_Dataplex)
+- :star: New in 2023 - see section on **Google Big Lake** and **GCP Dataplex** (for building a DataMesh) -> [link](https://github.com/lynnlangit/gcp-essentials/tree/master/4_big%20data_and_genomics/4k_BigLake_%26_Dataplex)
 
 ---
 
