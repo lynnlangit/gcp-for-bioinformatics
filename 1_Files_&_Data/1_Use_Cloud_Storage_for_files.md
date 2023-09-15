@@ -1,5 +1,6 @@
 # Use Google Cloud File Storage
 
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/gcp-file-uploads.png" width=800>
 
 ### Why do this
  - When your workload and data files are too big to run on your laptop
