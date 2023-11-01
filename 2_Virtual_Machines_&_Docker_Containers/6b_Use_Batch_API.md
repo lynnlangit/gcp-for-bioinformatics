@@ -5,7 +5,7 @@
 
 ### Why do this
  - Scale your analysis using [`Google Cloud Batch API`](https://cloud.google.com/blog/products/compute/new-batch-service-processes-batch-jobs-on-google-cloud) to manage compute resources. One possible example architecture (for testing bioinformatics tools at scale) is shown above.
- - Google Cloud Batch API is an alternative to Google Life Sciences API (which was previously nameed Google Cloud Genomics/Pipelines API)
+ - Google Cloud Batch API is an alternative to Google Life Sciences API (which was previously nameed Google Cloud Genomics/Pipelines API) - here's guidance on migrating to Batch - [link](https://cloud.google.com/batch/docs/migrate-to-batch-from-cloud-life-sciences)
 
 
 ### What is this
