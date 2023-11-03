@@ -46,4 +46,4 @@
  - Interview with Maria Nattestad - she discusses `Deep Variant` from 30:00 onwards - [link](https://www.youtube.com/watch?v=ynX2R-aWkEg)
 
  [![DeepVariant](/images/deep-variant.png)](https://google.github.io/deepvariant/posts/2018-12-05-improved-non-human-variant-calling-using-species-specific-deepvariant-models/)
- -  📘 From GCP: Marketplace - [Parabricks](https://console.cloud.google.com/marketplace/details/parabricks/parabricks) supports the full GATK4 germline, somatic and variant calling pipelines, Google DeepVariant and population study tools.
+ -  📘 From GCP: Marketplace - [Parabricks](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/clara/containers/clara-parabricks-deepvariant) supports the full GATK4 germline, somatic and variant calling pipelines, Google DeepVariant and population study tools.
