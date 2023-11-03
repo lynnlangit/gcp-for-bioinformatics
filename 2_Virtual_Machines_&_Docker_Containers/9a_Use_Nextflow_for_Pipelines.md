@@ -77,6 +77,8 @@ Shown below is a reference architecture for running Nextflow analysis on GCP usi
 
 #### Nextflow on GCP
  - 📘 Link to [Nextflow on GCP](https://www.nextflow.io/docs/latest/google.html)
+ - 📘 Link to [Nextflow on GCP Cloud Batch rnaSeq example](https://nextflow.io/blog/2023/nextflow-with-gbatch.html) - [NF docs](https://www.nextflow.io/docs/latest/google.html#cloud-batch)
+   - **NOTE**: Cloud Batch is the intended replacement for LS API which is deprecated 
  - 📘 Link to [Nextflow on GCP Life Sciences API tutorial](https://cloud.google.com/life-sciences/docs/tutorials/nextflow)
    - **TIP**: If you are doing this tutorial create a GCS bucket name with letters or numbers only (no underscores or '_')
  - :octocat: Review featured Nextflow pipelines - [link](https://github.com/nextflow-io/awesome-nextflow)
