@@ -11,7 +11,7 @@ This page will detail possible compute solutions on GCP.  The purpose is to lear
 **Samtools** is a suite of open source programs for interacting with high-throughput sequencing data. Samtools is a set of utilities that manipulate alignments in the SAM (Sequence Alignment/Map), BAM, and CRAM formats. It converts between the formats, does sorting, merging and indexing, and can retrieve reads in any regions swiftly. Samtools is designed to work on a stream
 It consists of three separate repositories:
 
-- **Samtools**: Reading/writing/editing/indexing/viewing SAM/BAM/CRAM format
+- **Samtools**: Reading/writing/editing/indexing/viewing SAM/BAM/CRAM format.  List of `samtools` commands at [link](https://www.htslib.org/doc/samtools.html)
 - **BCFtools**: Reading/writing BCF2/VCF/gVCF files and calling/filtering/summarising SNP and short indel sequence variants
 - **HTSlib**: A C library for reading/writing high-throughput sequencing data
 
