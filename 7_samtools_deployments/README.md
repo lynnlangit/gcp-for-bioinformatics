@@ -1,4 +1,4 @@
-# GCP Cloud Compute Service Options for Bioinformatics
+# GCP Cloud Compute Service Options for Bioinformatics Tools by Example: Samtools
 
 Genomic researchers frequently use open source data analysis tools.  **Samtools** is a one such example. This toolset is defined as *"Utilities for the analysis of genomic files which use the Sequence Alignment/Map (SAM) format"*. Samtools source code can be found at this [link](http://www.htslib.org/doc/samtools.html).
 
