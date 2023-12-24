@@ -102,3 +102,4 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+1_Files_&_Data/genomic-data-samples/.DS_Store
