@@ -6,7 +6,7 @@ This page will detail possible compute solutions on GCP.  The purpose is to lear
 
 <img src="https://thecloudgirl.dev/images/vs.jpg" width=900>
 
-## What is it
+## What is Samtools?
 
 **Samtools** is a suite of open source programs for interacting with high-throughput sequencing data. Samtools is a set of utilities that manipulate alignments in the SAM (Sequence Alignment/Map), BAM, and CRAM formats. It converts between the formats, does sorting, merging and indexing, and can retrieve reads in any regions swiftly. Samtools is designed to work on a stream
 It consists of three separate repositories:
@@ -23,7 +23,7 @@ One or more of the available Samtools is often used in a genomic data anlysis pi
 
 ---
 
-## Prepare to Test
+## How to Prepare to Test?
 
 There are a number of steps to prepare before testing.  These include downloading and installing samtools.  Also you'll need to get sample input data. Your test results will differ, depending on your input data type, size and values.  As a starting point, we will use the `samtools index` command for our testing.  An example (using the GCP Life Sciences API service) is shown below.  This example uses a public container with `samtools` and also a BAM file from GCP public datasets.  Use of these public artifacts makes initial testing simpler.
 
@@ -36,7 +36,7 @@ gcloud beta lifesciences pipelines run \
     --outputs BAI=gs://mayo-demos-life-sciences/NA12878.chr20.sample.bam.bai
 ```
 
-### Samtools: Get it / Set it up
+### How to Get/Set up Samtools?
 
 For other testing scenarios, we'll need to get the binaries for `samtools`.  Directions/links are below.  
 
@@ -46,7 +46,7 @@ For other testing scenarios, we'll need to get the binaries for `samtools`.  Dir
 	- Use public GCR samtools container -> [here](https://console.cloud.google.com/gcr/images/cloud-lifesciences/GLOBAL/samtools)
  	- Use biocontainers samtools container (patched!) -> [here](https://quay.io/repository/biocontainers/samtools?tab=tags)
 
-### Sample Input Data: Get it / Set it up
+### How to Get Sample Input Data (BAM files)?
 
 As we continue to test, we'll need to set up storage and get more input files.  We'll use a Cloud Storage bucket and also data stored in public datasets on GCP.
 
@@ -60,7 +60,7 @@ As we continue to test, we'll need to set up storage and get more input files.  
 
 ----
 
-## Perform The Tests
+## How to Perform The Tests on GCP?
 
 This page will cover a series of types of `samtools` task pipeline architectures on a number of GCP Services.  Most examples will use Cloud Storage buckets for input/output files. Shown below is a reference architecture which shows multiple options on GCP.
 
@@ -70,11 +70,11 @@ This page will cover a series of types of `samtools` task pipeline architectures
 
 <img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/option-arch.png" width=900>
 
-## Possible Run locations
+### Possible Run locations
 
 Can be run on compute IaaS, SaaS or PaaS services on the Google Cloud Platform.
 
-### IaaS - run on VM
+#### IaaS - run on VM
 
 - **Compute Engine/VM** - run as script 
 - **Compute Engine/VM** - run as container 
@@ -83,7 +83,7 @@ Can be run on compute IaaS, SaaS or PaaS services on the Google Cloud Platform.
 	- from GCR - at this URL: gcr.io/cloud-lifesciences/samtools 
 		- using command `docker pull gcr.io/cloud-lifesciences/samtools:latest`
 
-### SaaS - run via services
+#### SaaS - run via services
 
 These are cloud service endpoints, compute services which are pre-configured for various scenarios (batch, machine learning, etc...). Like VMs these servcies are billed by the invocation or by the time interval (minutes or seconds).
 
@@ -144,7 +144,7 @@ These are cloud service endpoints, compute services which are pre-configured for
     }
 }
 ```
-#### Batch gcloud commands
+##### Google Batch gcloud commands
 
 ```
 gcloud batch jobs submit JOB_NAME \
@@ -167,7 +167,7 @@ gcloud batch tasks describe TASK_INDEX \
 
 ```
 
-### PaaS - run on managed VMs/containers
+#### PaaS - run on managed VMs/containers
 
 - **Vertex AI (Jupyter) Notebook instance** - Puython, TensorFlow, R and more
 	- use with R language and|or when visualizing results
@@ -178,13 +178,13 @@ gcloud batch tasks describe TASK_INDEX \
 
 ---
 
-## Monitor and Scale
+#### Monitor and Scale
 
 - Compute Engine - type | size of VM, add NLB and monitoring
 - Functions/ CloudRun - monitor and adjust configuration
 - Kubernetes Engine - set up, monitor and scale
 
-## Use Bioinformatics Workflow Language - Nextflow
+### How to Use Bioinformatics Workflow Language: Nextflow?
 
 Test by running using the Nextflow workflow language and engine on GCP (w/Google Batch)   
 - Use `nf-core` version of samtools. [Nf-core](https://nf-co.re/) is a registry of Nextflow data analysis pipelines.
@@ -194,7 +194,7 @@ Test by running using the Nextflow workflow language and engine on GCP (w/Google
 
 <img src="https://raw.githubusercontent.com/nf-core/hgtseq/1.0.0/docs/images/hgtseq_pipeline_metromap.png" width=900>
 
-## Links
+## How to Learn More: Links?
 
 - :hammer: Workflow example `fastq to bam` - [link](http://www.htslib.org/workflow/fastq.html)
 - :octocat: GitHub source repo for `samtools` - [link](https://github.com/samtools/samtools)
