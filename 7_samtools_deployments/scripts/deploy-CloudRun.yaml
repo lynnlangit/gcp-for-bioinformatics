@@ -1,0 +1,54 @@
+apiVersion: run.googleapis.com/v1
+kind: Job
+metadata:
+  name: samtools
+  namespace: '<namespaceID>'
+  selfLink: /apis/run.googleapis.com/v1/namespaces/<projectID>/jobs/samtools
+  uid: <uidID>-f0f7-45d4-a8b5-262fbe0e4067
+  resourceVersion: AAYNQionKvQ
+  generation: 1
+  creationTimestamp: '2023-12-24T14:20:55.080635Z'
+  labels:
+    cloud.googleapis.com/location: us-central1
+    run.googleapis.com/lastUpdatedTime: '2023-12-24T14:20:55.080635Z'
+  annotations:
+    run.googleapis.com/client-name: cloud-console
+    run.googleapis.com/lastModifier: <email>
+    client.knative.dev/user-image: us-central1-docker.pkg.dev/<projectName>/containers/samtools:1.19
+    run.googleapis.com/creator: <email>
+    run.googleapis.com/operation-id: <operationID>-49d2-4ddc-9085-61724b926387
+spec:
+  template:
+    metadata:
+      annotations:
+        run.googleapis.com/client-name: cloud-console
+        client.knative.dev/user-image: us-central1-docker.pkg.dev/<projectName>/containers/samtools:1.19
+        run.googleapis.com/execution-environment: gen2
+    spec:
+      taskCount: 1
+      template:
+        spec:
+          containers:
+          - image: us-central1-docker.pkg.dev/<projectName>/containers/samtools:1.19
+            command:
+            - samtools
+            args:
+            - --version
+            resources:
+              limits:
+                cpu: 1000m
+                memory: 512Mi
+          maxRetries: 3
+          timeoutSeconds: '600'
+          serviceAccountName: <account>-compute@developer.gserviceaccount.com
+status:
+  observedGeneration: 1
+  conditions:
+  - type: Ready
+    status: 'True'
+    lastTransitionTime: '2023-12-24T14:20:55.274608Z'
+  executionCount: 1
+  latestCreatedExecution:
+    name: samtools-h7lkw
+    completionTimestamp: '2023-12-24T14:21:25.371597Z'
+    creationTimestamp: '2023-12-24T14:21:00.482330Z'
