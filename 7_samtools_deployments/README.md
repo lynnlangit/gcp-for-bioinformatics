@@ -44,6 +44,7 @@ For other testing scenarios, we'll need to get the binaries for `samtools`.  Dir
 - Get Samtools
   	- Install from binaries -> directions [here](http://www.htslib.org/download/) --OR--
 	- Use public GCR samtools container -> [here](https://console.cloud.google.com/gcr/images/cloud-lifesciences/GLOBAL/samtools)
+ 	- Use biocontainers samtools container (patched!) -> [here](https://quay.io/repository/biocontainers/samtools?tab=tags)
 
 ### Sample Input Data: Get it / Set it up
 
