@@ -25,41 +25,12 @@ Use Vertex AI Notebook Instance.
     - Create a new Jupyter Notebook instance. Choose an appropriate machine type and environment that suits your needs.
 - Step 2: Access the Jupyter Notebook Instance
     - Once the instance is ready, open JupyterLab.
-- Step 3: Install Required Libraries
-    - Open a new notebook.
-    - Install any required libraries that might be needed for IGV.js. This typically includes IPython display tools. You can install them using pip in a notebook cell:  
-    `!pip install ipython`
-- Step 4: Embed IGV.js in the Notebook
-    - Use HTML and JavaScript to embed `IGV.js` in a cell. This involves writing a script to create an IGV browser instance. You can refer to the IGV.js documentation for specific scripts and configuration options.Configure the IGV instance to load data from `gs:// URLs``. Ensure that the Google Cloud Storage buckets containing your BAM/BAI files are publicly accessible or accessible to your GCP credentials.
-
-Example snippet:
-```
-from IPython.display import HTML
-
-HTML('''<div id="igvDiv"></div>
-<script type="text/javascript">
-    var igvDiv = document.getElementById("igvDiv");
-    var options = {
-        genome: "hg19",
-        tracks: [
-            {
-                name: "My BAM",
-                url: "gs://<bucket-name>/<file-path>.bam",
-                indexURL: "gs://<bucket-name>/<file-path>.bai",
-                format: "bam"
-            }
-        ]
-    };
-    igv.createBrowser(igvDiv, options);
-</script>
-''')
-
-```
-
-- Step 5: Test the IGV Browser
+- Step 3: Use the supplied notebook
+    - Open the supplied notebook
+- Step 4: Test the IGV Browser
     - Run the cell containing the `IGV.js` script.
     - The IGV browser should render within the notebook. Test its functionality by navigating the genome, zooming in/out, and loading different tracks.
-- Step 6: Save and Share Your Notebook
+- Step 5: Save and Share Your Notebook
     - Save your notebook for future use or sharing.
 
 #### Additional Considerations:
