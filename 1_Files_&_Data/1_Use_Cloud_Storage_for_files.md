@@ -64,7 +64,6 @@ Storage can be the most significant GCP service cost for bioinformatics (due to 
  - Read about 'requestor pays' Cloud Storage feature - [link](https://cloud.google.com/storage/docs/requester-pays)
 
 ### Tools to Improve File Uploading
- - 📘 Use Parallel Composite File Uploads - [link](https://cloud.google.com/storage/docs/gsutil/commands/cp#parallel-composite-uploads)
  - 📘 Use the htsget protocol to access genomic data in GCP - [link](https://cloud.google.com/genomics/docs/how-tos/reading-data-htsget)
  - 📘 Use Cloud Storage FUSE to mount Cloud Storage buckets as file systems on Linux or macOS systems in GCP - [link](https://cloud.google.com/storage/docs/gcs-fuse)
  - :octocat: Do incremental uploads from Illumina Sequencers to GCS - [link](https://github.com/broadinstitute/sequence-upload-to-gs)
