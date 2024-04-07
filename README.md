@@ -19,6 +19,8 @@ This Repo includes content you can read, watch or run:
 - 📘 **EXPAND** - linked (external) resources
 - 🔍 **SCAN** - search a list in this Repo
 
+NOTE: If you are looking for AWS guidance, see my **'aws-for-bioinformatics'** Repo/Course at [link](https://github.com/lynnlangit/aws-for-bioinformatics)
+
 ---
 
 ### 📺 Click below to WATCH 'Lynn's Welcome Video' (4 min) on YouTube
