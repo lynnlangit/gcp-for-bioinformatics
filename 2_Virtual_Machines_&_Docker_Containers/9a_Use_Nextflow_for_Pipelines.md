@@ -48,16 +48,12 @@ Shown below is a reference architecture for running Nextflow analysis on GCP usi
 ![Nextflow Architecture using GCP Genomics/Life Sciences API](/images/nf-gcp.png)
 
 #### General Nextflow
+ - 📘 Link to [Nextflow training](https://training.nextflow.io/)
  - 📘 Link to [Nextflow guide](https://www.nextflow.io/blog/2020/learning-nextflow-in-2020.html)
  - 📘 Link to [Nextflow code patterns](http://nextflow-io.github.io/patterns/index.html)
  - 📘 Link to [Awesome Nextflow links](https://github.com/nextflow-io/awesome-nextflow)
  - 📺 Watch Nextflow presentations - [link](https://www.nextflow.io/presentations.html)
  - 🗄️ Link to [Nextflow test datasets](https://github.com/nf-core/test-datasets)
- 
- #### Nextflow v2
- - 📝 Link to Nextflow v2 example workflow - [link](https://gist.github.com/lynnlangit/e5d3e86d632a7db796efae04145d44ff)
- - 📘 Link to Nextflow v2 migration notes - [link](https://www.nextflow.io/docs/latest/dsl2.html#dsl2-migration-notes)
- - 📺 Watch Nextflow v2 live coding - [link](https://www.youtube.com/watch?v=-Ne4OP0aiYw)
 
 #### Nextflow Pipeline Patterns and Examples
  - 📘 Huge list of [Learn Nextflow links](https://www.nextflow.io/blog/2022/learn-nextflow-in-2022.html)
