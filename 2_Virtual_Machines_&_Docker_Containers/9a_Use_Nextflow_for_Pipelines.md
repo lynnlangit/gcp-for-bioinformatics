@@ -68,6 +68,7 @@ Shown below is a reference architecture for running Nextflow analysis on GCP usi
  - 📘 Link to using [Nextflow Tower](https://tower.nf/) for monitoring - screenshot shown below -- NF-Tower is now named [Seqera Platform](https://docs.seqera.io/platform/23.3.0/) and has an increased feature set.
  - 📘 Link to using [Nextflow tracing & viz tools](https://www.nextflow.io/docs/latest/tracing.html)
  - 📘 Link to using [NF protein-DNA interactions and epigenomic profiling pipeline QC testing & viz tools with CI/CD](https://nf-co.re/cutandrun)
+ - 📘 Link to using [Nextflow schema validation tool](https://nextflow-io.github.io/nf-schema/latest/)
 
 ![Nextflow Tower](/images/nf-tower.png)
 
