@@ -80,8 +80,6 @@ Shown below is a reference architecture for running Nextflow analysis on GCP usi
    - **TIP**: If you are doing this tutorial create a GCS bucket name with letters or numbers only (no underscores or '_')
  - :octocat: Review featured Nextflow pipelines - [link](https://github.com/nextflow-io/awesome-nextflow)
  - 📘 Link to [using GCP Cloud Life Sciences API with Nextflow](https://www.nextflow.io/docs/edge/google.html#cloud-life-sciences)
- - 📘 Link to [using Nextflow with Kubernetes](https://www.nextflow.io/docs/edge/kubernetes.html) - high-level architecture shown below
-
-  ![Nextflow on K8](/images/nf-k8.png)
+ - 📘 Link to [using Nextflow with Kubernetes](https://www.nextflow.io/docs/edge/kubernetes.html) 
 
   
