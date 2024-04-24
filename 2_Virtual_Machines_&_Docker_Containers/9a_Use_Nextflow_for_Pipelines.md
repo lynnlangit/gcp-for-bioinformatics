@@ -65,12 +65,12 @@ Shown below is a reference architecture for running Nextflow analysis on GCP usi
 
 #### Nextflow Tools
  - 📘 Link to using [Nextflow cli](https://www.nextflow.io/docs/edge/cli.html) for scripting 
- - 📘 Link to using [Nextflow Tower](https://tower.nf/) for monitoring - screenshot shown below -- NF-Tower is now named [Seqera Platform](https://docs.seqera.io/platform/23.3.0/) and has an increased feature set.
+ - 📘 Link to using [Nextflow's Seqera WebUI](cloud.seqera.io) for monitoring - screenshot shown below 
  - 📘 Link to using [Nextflow tracing & viz tools](https://www.nextflow.io/docs/latest/tracing.html)
  - 📘 Link to using [NF protein-DNA interactions and epigenomic profiling pipeline QC testing & viz tools with CI/CD](https://nf-co.re/cutandrun)
  - 📘 Link to using [Nextflow schema validation tool](https://nextflow-io.github.io/nf-schema/latest/)
 
-![Nextflow Tower](/images/nf-tower.png)
+<img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/seqera-ui.png" width=800>
 
 #### Nextflow on GCP
  - 📘 Link to [Nextflow on GCP](https://www.nextflow.io/docs/latest/google.html)
