@@ -102,6 +102,7 @@ Shown below is an expandable compute cluster, driven by **Google Batch**, which 
 - 📺 10 minute video on Google Batch (includes demo) - [link](https://www.youtube.com/watch?v=RS7UJhD4R48)
 - :octocat: Batch Samples - [link](https://github.com/GoogleCloudPlatform/batch-samples)
 - :books: Google Batch example using video transcoding - [link](https://github.com/GoogleCloudPlatform/batch-samples/tree/main/transcoding)
+- 📘 Article: "Running DeepCell on Google Batch with Node Pools" - [link](https://medium.com/@dchaley/running-deepcell-on-google-batch-with-node-pools-8fe7d1c121a2)
 
 #### Google Batch and HPC or Nextflow
 - :octocat: HPC + Batch Toolkit - [link](https://github.com/GoogleCloudPlatform/hpc-toolkit/blob/develop/docs/cloud-batch.md)
