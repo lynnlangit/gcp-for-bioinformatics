@@ -33,7 +33,6 @@ IMPORTANT: Building containers is a complex skill set, **prefer to find and reus
    - [DockerHub](https://hub.docker.com)
    - [Quay.io](https://quay.io/) 
    - [Biocontainers](https://biocontainers.pro/#/)
-   - [Google Container Registry](gcr.io) for GCP for public or private images  
 
 --or--
 1. BUILD and TEST your own DOCKER CONTAINER IMAGE
