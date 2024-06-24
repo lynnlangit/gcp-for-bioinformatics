@@ -9,8 +9,8 @@
 ### What is this
  - CONTAINER IMAGE -> 
    - LOCATE (or BUILD) and use reusable docker container images (rather than VMs) for scalaing your analysis jobs on various GCP pipelines (VMs, Kubernetes, Nextflow, Terra, others...)
-   - Intro to Containers - [link](https://cloud.google.com/containers/)
- - DOCKERFILE -> 
+   - Intro to using Containers on GCP - [link](https://cloud.google.com/containers/)
+ - DOCKERFILE Example (uses `blast`) -> 
    - USED by docker daemon to build contents into a container image
    - EXAMPLE dockerfile shown below
 
@@ -76,8 +76,8 @@ NOTES:
 
 ### How to learn more
  
-  - 📘 Link to [Run a R Shiny app (in a container) on a GCE VM](https://cloudyr.github.io/googleComputeEngineR/articles/shiny-app.html)
- - :octocat: Link to DOCKERFILE source code example - [Blastn container files](https://github.com/lynnlangit/blastn)
+ - 📘 Link to [Run a R Shiny app (in a container) on a GCE VM](https://cloudyr.github.io/googleComputeEngineR/articles/shiny-app.html)
+ - 📘 Link to DOCKERFILE source code example - [Blastn container files](https://biocontainers-edu.readthedocs.io/en/latest/running_example.html)
  - 📺 Link to [Building a Container from scratch](https://www.youtube.com/watch?v=Utf-A4rODH8) ~20 min. screencast video, includes advanced concepts (namespaces, more)
-  - 📺 Watch [using Docker containers on Terra](https://www.youtube.com/watch?v=jv_HSFBYOJs) - 22 minute video from the Broad Institute. Terra runs on GCP
-  - :octocat: Link to [Examples of running bioinformatics tools with containers using CWL](https://github.com/genome/analysis-workflows) - common workflow language
+ - 📺 Watch [using Docker containers on Terra](https://www.youtube.com/watch?v=jv_HSFBYOJs) - 22 minute video from the Broad Institute. Terra runs on GCP
+ - :octocat: Link to [Examples of running bioinformatics tools with containers using CWL](https://github.com/genome/analysis-workflows) - common workflow language
