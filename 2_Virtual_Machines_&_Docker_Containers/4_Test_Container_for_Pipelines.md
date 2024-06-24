@@ -21,7 +21,6 @@
 IMPORTANT: Building containers is a complex skill set, **prefer to find and reuse existing container images**, rather than building your own container images
  - FIND existing containers by searching for a tool (i.e. 'gatk' etc... on public container registries - see list in next section & example below)
  - SEE Biocontainers for an intro to container technologies - [link](https://biocontainers-edu.readthedocs.io/en/latest/)
- 
 
   [![biocontainers-search](/images/biocontainers-search.png)]()
  
@@ -77,7 +76,7 @@ NOTES:
 ### How to learn more
  
  - 📘 Link to [Run a R Shiny app (in a container) on a GCE VM](https://cloudyr.github.io/googleComputeEngineR/articles/shiny-app.html)
- - 📘 Link to DOCKERFILE source code example - [Blastn container files](https://biocontainers-edu.readthedocs.io/en/latest/running_example.html)
+ - 📘 Link to DOCKERFILE example - [Blast container example](https://biocontainers-edu.readthedocs.io/en/latest/running_example.html)
  - 📺 Link to [Building a Container from scratch](https://www.youtube.com/watch?v=Utf-A4rODH8) ~20 min. screencast video, includes advanced concepts (namespaces, more)
  - 📺 Watch [using Docker containers on Terra](https://www.youtube.com/watch?v=jv_HSFBYOJs) - 22 minute video from the Broad Institute. Terra runs on GCP
  - :octocat: Link to [Examples of running bioinformatics tools with containers using CWL](https://github.com/genome/analysis-workflows) - common workflow language
