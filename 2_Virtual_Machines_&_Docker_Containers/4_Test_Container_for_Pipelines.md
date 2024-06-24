@@ -55,7 +55,7 @@ IMPORTANT: Building containers is a complex skill set, **prefer to find and reus
 
  - Review output data (usually stored in Cloud Storage buckets)
  - Review job / analysis log files
- - Review [Stackdriver logs](https://cloud.google.com/logging/docs/view/overview) for your cluster job executions
+ - Review [Cloud Logging logs](https://cloud.google.com/logging/docs/view/overview) for your cluster job executions
 
 ### Other Things to Know
  - Building a docker container via best practices - [link](https://biocontainers-edu.readthedocs.io/en/latest/best_practices.html)
