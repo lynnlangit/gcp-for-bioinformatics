@@ -8,7 +8,7 @@
  - Nextflow can run on GCP or many other providers (AWS, Slurm, etc...)
  - Nextflow can run on GCP in two ways:
    - Run jobs on a **single Compute Engine VM** 
-   - Run jobs on an **elastic cluster of Compute Engine VMs** using the **Cloud Batch or Life Sciences (Genomics Pipelines) API**
+   - Run jobs on an **elastic cluster of Compute Engine VMs** using the **Cloud Batch API**
 
 ### Key considerations
 - Understand core Nextflow features - [link](https://www.nextflow.io/index.html#Features)
