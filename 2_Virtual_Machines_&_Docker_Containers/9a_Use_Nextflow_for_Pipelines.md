@@ -27,7 +27,7 @@
 ---
 
 ### How to verify you've done it
- - VERIFY using a short example script - [link](https://gist.github.com/lynnlangit/c1ed2a3535b3ae6711dd14687d5174c3)
+ - VERIFY using a short example script - [link](https://gist.github.com/lynnlangit/c1ed2a3535b3ae6711dd14687d5174c3), uses two BASH processes (tasks), use for quick env verification.
  - VERIFY the output files from the examples above
  - REVIEW Nextflow examples which produce files in a `results` folder
 
