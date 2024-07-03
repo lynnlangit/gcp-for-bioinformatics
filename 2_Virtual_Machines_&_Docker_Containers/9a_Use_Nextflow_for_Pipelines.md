@@ -3,7 +3,7 @@
 ### Why do this
 - USE the Nextflow pipeline language, tools and runtime to define and run your analysis workflow at scale by writing your code with a bioinformatics DSL.  
 - REVIEW core Nextflow features - [link](https://www.nextflow.io/index.html#Features)
-- USE samples - see this folder in this Repo
+- USE samples - see [this folder](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/2_Virtual_Machines_%26_Docker_Containers/Workflow_Script_Examples/Nextflow-NF) in this Repo for sample NF scripts
 
 ### What is this
  Nextflow is a reactive workflow framework & DSL for writing data-intensive computational pipeline jobs.    
