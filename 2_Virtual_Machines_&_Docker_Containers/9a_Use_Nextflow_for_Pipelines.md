@@ -1,17 +1,17 @@
 # Use Nextflow for Pipelines
 
 ### Why do this
- USE the Nextflow pipeline language to define and run your analysis workflow at scale 
+USE the Nextflow pipeline language, tools and runtime to define and run your analysis workflow at scale by writing your code with a bioinformatics DSL.  
+Understand core Nextflow features - [link](https://www.nextflow.io/index.html#Features)
 
 ### What is this
- Nextflow is a reactive workflow framework & DSL for writing data-intensive computational pipelines.  Run jobs on a single GCE Virtual Machine or a cluster of VMs. You can use GCE + Google Cloud Batch API using docker images on VMs as well.
+ Nextflow is a reactive workflow framework & DSL for writing data-intensive computational pipeline jobs.    
  - Nextflow can run on GCP or many other providers (AWS, Slurm, etc...)
- - Nextflow can run on directly on GCP in two ways (eaisiest to launch jobs from `cloud shell` during testing):
+ - Nextflow can run on GCP in two ways (eaisiest to launch jobs from `cloud shell` during testing):
    - Run jobs on a **single Compute Engine VM** 
-   - Run jobs on an **elastic cluster of Compute Engine VMs** using the **Cloud Batch API** - quick start at [link](https://cloud.google.com/batch/docs/nextflow), runs example [nf-core rnaSeq](https://nf-co.re/rnaseq/3.14.0) pipeline.
-
-### Key considerations
-- Understand core Nextflow features - [link](https://www.nextflow.io/index.html#Features)
+   - Run jobs on an **elastic cluster of Compute Engine VMs** using the **Cloud Batch API**
+     - quick start at [link](https://cloud.google.com/batch/docs/nextflow)
+     - runs example [nf-core rnaSeq](https://nf-co.re/rnaseq/3.14.0) pipeline.
 
 ### How to do this
  - TRY out a couple of simple NF workflows with ZERO set up
@@ -21,7 +21,8 @@
    - RUN RNAseq example pipeline on Compute Engine and Cloud Storage - [link](https://cloud.google.com/genomics/docs/tutorials/nextflow)
    - RUN VariantCalling pipeline w/GATK - [link](https://github.com/CRG-CNAG/CalliNGS-NF/)
  ---
-  ### 📺 Click to see Lynn's 4 minute exploration of this section  
+ 
+### 📺 Click to see Lynn's 4 minute exploration of this section  
 [![Nextflow on GCP for Bioinformatics](http://img.youtube.com/vi/YtUOCMiC7Dk/0.jpg)](http://www.youtube.com/watch?v=YtUOCMiC7Dk "Nextflow on GCP for Bioinformatics")
 
 ---
