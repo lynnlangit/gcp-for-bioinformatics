@@ -1,5 +1,6 @@
 # Use Google Life Sciences API
 
+***IMPORTANT: LSAPI is deprecated, please use Google Batch (see next page in this repo folder)***
 
 ### Why do this
  - Scale your analysis using [`Google Cloud Life Sciences API`](https://cloud.google.com/life-sciences/) to manage compute resources
