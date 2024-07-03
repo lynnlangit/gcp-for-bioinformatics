@@ -44,7 +44,7 @@ Understand core Nextflow features - [link](https://www.nextflow.io/index.html#Fe
  
 ### How to learn more
 
-Shown below is a reference architecture for running Nextflow analysis on GCP using the Life Sciences (PAPI/Genomics)API.
+Shown below is a reference architecture for running Nextflow analysis on GCP using the Google Batch API.
 
 ![Nextflow Architecture using GCP Genomics/Life Sciences API](/images/nf-gcp.png)
 
