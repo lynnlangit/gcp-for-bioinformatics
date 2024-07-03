@@ -1,5 +1,7 @@
 # Use dsub & Google Genomics (Pipelines) API
 
+***IMPORTANT: Genomics API is deprecated use Google Batch (see page this Repo folder for more on using Google Batch)***
+
 ### Why do this
  - USE the dsub tool to scale your analysis job
  - USE a docker container image to run your your bioinformatics script or tool
