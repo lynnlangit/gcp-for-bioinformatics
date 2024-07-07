@@ -80,8 +80,7 @@ Shown below is a one version of a reference architecture for running Nextflow an
 #### Nextflow on GCP
  - 📘 Link to [Nextflow on GCP](https://www.nextflow.io/docs/latest/google.html)
  - 📘 Link to [Nextflow on GCP Cloud Batch rnaSeq example](https://nextflow.io/blog/2023/nextflow-with-gbatch.html) - [NF docs](https://www.nextflow.io/docs/latest/google.html#cloud-batch)
- - :octocat: Review featured Nextflow pipelines - [link](https://github.com/nextflow-io/awesome-nextflow)
- - 📘 Link to [using GCP Cloud Life Sciences API with Nextflow](https://www.nextflow.io/docs/edge/google.html#cloud-life-sciences)
+ - :octocat: Review featured ('awesome') Nextflow pipelines - [link](https://github.com/nextflow-io/awesome-nextflow)
  - 📘 Link to [using Nextflow with Kubernetes](https://www.nextflow.io/docs/edge/kubernetes.html) 
 
   
