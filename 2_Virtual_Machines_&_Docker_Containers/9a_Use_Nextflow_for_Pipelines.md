@@ -1,11 +1,13 @@
 # Use Nextflow for Pipelines
 
-Nextflow is a reactive workflow framework & DSL for writing data-intensive computational pipeline jobs. Nextflow pipelines can be run on GCP or many other providers (AWS, Slurm, etc...)
-
-### What is...& Why do this
-- USE the Nextflow pipeline language, tools and runtime to define and run your analysis workflow at scale by writing your code with a bioinformatics DSL.  
-   - REVIEW core Nextflow features - [link](https://www.nextflow.io/index.html#Features)
+Nextflow is a reactive workflow framework (tools, runtime & bioinformatics DSL) for writing data-intensive, scalable pipeline jobs 
+- The global community of Nextflow users is growing rapidly and is at *'over 100,000 collaborating scientists'*
+   - data is from the Seqera.io website as of July 2024
    - JOIN the Nextflow community - [link](https://community.seqera.io/c/nextflow/5)
+- Nextflow pipelines can be run on GCP or many other providers (AWS, Azure, HPC, Slurm, etc...)
+   - REVIEW core Nextflow features - [link](https://www.nextflow.io/index.html#Features)
+    
+### What are Nextflow Pipelines
 - RUN Nextflow pipelines as configurable jobs on GCP using a variety of GCP services:
    - Quick tests: Run jobs on directly on **cloud shell** or a **single Compute Engine VM** 
    - Scaled pipelines: Run jobs on an **elastic cluster of Compute Engine VMs** using the **Google Cloud Batch API**
@@ -17,7 +19,7 @@ Nextflow is a reactive workflow framework & DSL for writing data-intensive compu
     
 <kbd><img src="https://raw.githubusercontent.com/nf-core/rnaseq/3.14.0//docs/images/nf-core-rnaseq_metro_map_grey.png" width=900></kbd>
 
-### How to do this
+### How to Try Out Nextflow Pipelines
  - TRY out a couple of simple NF workflows with ZERO set up
    - Use GCP Cloud Shell and the main tutorials - ['Examples' link](https://www.nextflow.io/)
    - USE my samples - see [this folder](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/2_Virtual_Machines_%26_Docker_Containers/Workflow_Script_Examples/Nextflow-NF) in this Repo for sample NF scripts
@@ -32,7 +34,7 @@ Nextflow is a reactive workflow framework & DSL for writing data-intensive compu
 
 ---
 
-### How to verify you've done it
+### How to Verify Nextflow Pipeline Job Runs
  - VERIFY using a short example script - [link](https://gist.github.com/lynnlangit/c1ed2a3535b3ae6711dd14687d5174c3), uses two BASH processes (tasks), use for quick env verification.
  - VERIFY the output files from the examples above
  - REVIEW Nextflow examples which produce files in a `results` folder
