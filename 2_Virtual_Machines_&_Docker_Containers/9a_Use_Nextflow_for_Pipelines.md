@@ -5,7 +5,7 @@ Nextflow is a reactive workflow framework & DSL for writing data-intensive compu
 ### What is...& Why do this
 - USE the Nextflow pipeline language, tools and runtime to define and run your analysis workflow at scale by writing your code with a bioinformatics DSL.  
    - REVIEW core Nextflow features - [link](https://www.nextflow.io/index.html#Features)
-   - JOIN the Nextflow community - 
+   - JOIN the Nextflow community - [link](https://community.seqera.io/c/nextflow/5)
 - RUN Nextflow pipelines as configurable jobs on GCP using a variety of GCP services:
    - Quick tests: Run jobs on directly on **cloud shell** or a **single Compute Engine VM** 
    - Scaled pipelines: Run jobs on an **elastic cluster of Compute Engine VMs** using the **Google Cloud Batch API**
