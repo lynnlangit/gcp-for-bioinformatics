@@ -12,8 +12,10 @@
    - Run jobs on a **single Compute Engine VM** 
    - Run jobs on an **elastic cluster of Compute Engine VMs** using the **Cloud Batch API**
      - quick start at [link](https://cloud.google.com/batch/docs/nextflow)
-     - runs example [nf-core rnaSeq](https://nf-co.re/rnaseq/3.14.0) pipeline
+     - runs example [nf-core rnaSeq](https://nf-co.re/rnaseq/3.14.0) pipeline (subway map image of this pipeline, from nf-core website, shown below)
      - my updated version of Google's quickstart described (Medium article) at [link](https://medium.com/@lynnlangit/real-world-nextflow-on-gcp-c27c87e100d6)
+    
+<kbd><img src="https://raw.githubusercontent.com/nf-core/rnaseq/3.14.0//docs/images/nf-core-rnaseq_metro_map_grey.png" width=900></kbd>
 
 ### How to do this
  - TRY out a couple of simple NF workflows with ZERO set up
