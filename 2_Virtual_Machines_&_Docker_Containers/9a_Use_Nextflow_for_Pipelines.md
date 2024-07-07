@@ -1,16 +1,13 @@
 # Use Nextflow for Pipelines
 
-### Why do this
+Nextflow is a reactive workflow framework & DSL for writing data-intensive computational pipeline jobs. Nextflow pipelines can be run on GCP or many other providers (AWS, Slurm, etc...)
+
+### What is...& Why do this
 - USE the Nextflow pipeline language, tools and runtime to define and run your analysis workflow at scale by writing your code with a bioinformatics DSL.  
 - REVIEW core Nextflow features - [link](https://www.nextflow.io/index.html#Features)
-- USE samples - see [this folder](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/2_Virtual_Machines_%26_Docker_Containers/Workflow_Script_Examples/Nextflow-NF) in this Repo for sample NF scripts
-
-### What is this
- Nextflow is a reactive workflow framework & DSL for writing data-intensive computational pipeline jobs.    
- - Nextflow can run on GCP or many other providers (AWS, Slurm, etc...)
- - Nextflow can run on GCP in two ways (eaisiest to launch jobs from `cloud shell` during testing):
-   - Run jobs on a **single Compute Engine VM** 
-   - Run jobs on an **elastic cluster of Compute Engine VMs** using the **Cloud Batch API**
+- Nextflow can be run on GCP in two ways (eaisiest to launch jobs from `cloud shell` during testing):
+   - Quick tests: Run jobs on **cloud shell** or a **single Compute Engine VM** 
+   - Scaled pipelines: Run jobs on an **elastic cluster of Compute Engine VMs** using the **Google Cloud Batch API**
      - quick start at [link](https://cloud.google.com/batch/docs/nextflow)
      - runs example [nf-core rnaSeq](https://nf-co.re/rnaseq/3.14.0) pipeline (subway map image of this pipeline, from nf-core website, shown below)
      - my updated version of Google's quickstart described (Medium article) at [link](https://medium.com/@lynnlangit/real-world-nextflow-on-gcp-c27c87e100d6)
@@ -19,7 +16,8 @@
 
 ### How to do this
  - TRY out a couple of simple NF workflows with ZERO set up
-   - Use GCP Cloud Shell and the main tutorials - ['Examples' link](https://www.nextflow.io/) 
+   - Use GCP Cloud Shell and the main tutorials - ['Examples' link](https://www.nextflow.io/)
+   - USE my samples - see [this folder](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/2_Virtual_Machines_%26_Docker_Containers/Workflow_Script_Examples/Nextflow-NF) in this Repo for sample NF scripts
  - TRY more sample workflows on a single GCE VM  
    - SETUP prereqs for Nextflow on your VM - JDK, Docker, Graphviz(optional)
    - RUN RNAseq example pipeline on Compute Engine and Cloud Storage - [link](https://cloud.google.com/genomics/docs/tutorials/nextflow)
