@@ -4,13 +4,16 @@ Nextflow is a reactive workflow framework & DSL for writing data-intensive compu
 
 ### What is...& Why do this
 - USE the Nextflow pipeline language, tools and runtime to define and run your analysis workflow at scale by writing your code with a bioinformatics DSL.  
-- REVIEW core Nextflow features - [link](https://www.nextflow.io/index.html#Features)
-- Nextflow can be run on GCP in two ways (eaisiest to launch jobs from `cloud shell` during testing):
-   - Quick tests: Run jobs on **cloud shell** or a **single Compute Engine VM** 
+   - REVIEW core Nextflow features - [link](https://www.nextflow.io/index.html#Features)
+   - JOIN the Nextflow community - 
+- RUN Nextflow pipelines as configurable jobs on GCP using a variety of GCP services:
+   - Quick tests: Run jobs on directly on **cloud shell** or a **single Compute Engine VM** 
    - Scaled pipelines: Run jobs on an **elastic cluster of Compute Engine VMs** using the **Google Cloud Batch API**
      - quick start at [link](https://cloud.google.com/batch/docs/nextflow)
      - runs example [nf-core rnaSeq](https://nf-co.re/rnaseq/3.14.0) pipeline (subway map image of this pipeline, from nf-core website, shown below)
-     - my updated version of Google's quickstart described (Medium article) at [link](https://medium.com/@lynnlangit/real-world-nextflow-on-gcp-c27c87e100d6)
+     - my updated version of Google's quickstart described (Medium article) at [link](https://medium.com/@lynnlangit/real-world-nextflow-on-gcp-c27c87e100d6), uses cloud shell as a job invoker.  
+   - Highly tuned pipelines: Run pipelines on customized GKE (Kubernetes) clusters.
+      - NOTE: This approach commonly requires a TEAM of infrastructure engineers to implement properly.
     
 <kbd><img src="https://raw.githubusercontent.com/nf-core/rnaseq/3.14.0//docs/images/nf-core-rnaseq_metro_map_grey.png" width=900></kbd>
 
