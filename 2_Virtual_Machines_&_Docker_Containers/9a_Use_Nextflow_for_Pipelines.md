@@ -77,10 +77,10 @@ Shown below is a one version of a reference architecture for running Nextflow an
 
 <kbd><img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/seqera-ui.png" width=800></kbd>
 
-#### Nextflow on GCP
+#### Nextflow on GCP Documentation
  - 📘 Link to [Nextflow on GCP](https://www.nextflow.io/docs/latest/google.html)
  - 📘 Link to [Nextflow on GCP Cloud Batch rnaSeq example](https://nextflow.io/blog/2023/nextflow-with-gbatch.html) - [NF docs](https://www.nextflow.io/docs/latest/google.html#cloud-batch)
  - :octocat: Review featured ('awesome') Nextflow pipelines - [link](https://github.com/nextflow-io/awesome-nextflow)
- - 📘 Link to [using Nextflow with Kubernetes](https://www.nextflow.io/docs/edge/kubernetes.html) 
+ - 📘 Link to [using Nextflow with ('raw') Kubernetes](https://www.nextflow.io/docs/edge/kubernetes.html) 
 
   
