@@ -65,9 +65,18 @@ Shown below is a one version of a reference architecture for running Nextflow an
  - 📘 Link to [using caching with Nextflow](https://www.nextflow.io/blog/2019/demystifying-nextflow-resume.html)
  - 📘 Link to paper on [containerized approaches to workflows(includes Nextflow)](https://www.preprints.org/manuscript/202001.0378/v1/download)
  - 📘 Link to run a NF workflow using The Broad's `GATK 4` tools with Nextflow.io use this command `nextflow run CRG-CNAG/CalliNGS-NF -r gatk4 -with-docker`
- - 📘 Link to understanding that Nextflow architecture.  NF is written in the [Groovy programming language](https://en.wikipedia.org/wiki/Apache_Groovy) & is designed to run on [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine) instances 
+ - 📘 Link to understanding that Nextflow architecture.  NF is written in the [Groovy programming language](https://en.wikipedia.org/wiki/Apache_Groovy) & is designed to run on [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine) instances
+
+#### Nextflow on GCP Documentation
+ - 📘 Link to [Nextflow on GCP](https://www.nextflow.io/docs/latest/google.html)
+ - 📘 Link to [Nextflow on GCP Cloud Batch rnaSeq example](https://nextflow.io/blog/2023/nextflow-with-gbatch.html) - [NF docs](https://www.nextflow.io/docs/latest/google.html#cloud-batch)
+ - :octocat: Review featured ('awesome') Nextflow pipelines - [link](https://github.com/nextflow-io/awesome-nextflow)
+ - 📘 Link to [using Nextflow with ('raw') Kubernetes](https://www.nextflow.io/docs/edge/kubernetes.html) 
+
+---------
 
 #### Nextflow Tools by Seqera
+- 📘 Link to using [Nextflow Seqera Platform with Google Batch documentation](https://docs.seqera.io/platform/23.2.0/compute-envs/google-cloud-batch)
  - 📘 Link to using [Nextflow cli](https://www.nextflow.io/docs/edge/cli.html) for scripting 
  - 📘 Link to using [Nextflow's Seqera WebUI](cloud.seqera.io) for monitoring - screenshot shown below 
  - 📘 Link to using [Nextflow tracing & viz tools](https://www.nextflow.io/docs/latest/tracing.html)
@@ -76,10 +85,6 @@ Shown below is a one version of a reference architecture for running Nextflow an
 
 <kbd><img src="https://github.com/lynnlangit/gcp-for-bioinformatics/blob/master/images/seqera-ui.png" width=800></kbd>
 
-#### Nextflow on GCP Documentation
- - 📘 Link to [Nextflow on GCP](https://www.nextflow.io/docs/latest/google.html)
- - 📘 Link to [Nextflow on GCP Cloud Batch rnaSeq example](https://nextflow.io/blog/2023/nextflow-with-gbatch.html) - [NF docs](https://www.nextflow.io/docs/latest/google.html#cloud-batch)
- - :octocat: Review featured ('awesome') Nextflow pipelines - [link](https://github.com/nextflow-io/awesome-nextflow)
- - 📘 Link to [using Nextflow with ('raw') Kubernetes](https://www.nextflow.io/docs/edge/kubernetes.html) 
+
 
   
