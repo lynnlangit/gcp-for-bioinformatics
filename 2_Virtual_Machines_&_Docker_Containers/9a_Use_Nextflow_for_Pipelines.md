@@ -1,32 +1,28 @@
-# Use Nextflow for Pipelines
+# USE Nextflow for Pipelines
 
 Nextflow is a reactive workflow framework (tools, runtime & bioinformatics DSL) for writing data-intensive, scalable pipeline jobs 
 - The global community of Nextflow users is growing rapidly and is at *'over 100,000 collaborating scientists'*
-   - data is from the Seqera.io website as of July 2024
    - JOIN the Nextflow community - [link](https://community.seqera.io/c/nextflow/5)
 - Nextflow pipelines can be run on GCP or many other providers (AWS, Azure, HPC, Slurm, etc...)
    - REVIEW core Nextflow features - [link](https://www.nextflow.io/index.html#Features)
     
-### What are Nextflow Pipelines
+### TRY example Nextflow Pipelines
 - RUN Nextflow pipelines as configurable jobs on GCP using a variety of GCP services:
-   - Quick tests: Run jobs on directly on **cloud shell** or a **single Compute Engine VM** 
+   - Quick tests: Run jobs on directly on **cloud shell** or a **single Compute Engine VM**
+     - USE sample Nextflow pipelines - see ['Examples' link](https://www.nextflow.io/)
+     - USE my samples - see [this folder](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/2_Virtual_Machines_%26_Docker_Containers/Workflow_Script_Examples/Nextflow-NF) in this Repo for sample NF scripts 
+     - TEST a RNAseq pipeline using Compute Engine and Cloud Storage - [link](https://cloud.google.com/genomics/docs/tutorials/nextflow)
+     - TEST a VariantCalling pipeline w/GATK - [link](https://github.com/CRG-CNAG/CalliNGS-NF/)
    - Scaled pipelines: Run jobs on an **elastic cluster of Compute Engine VMs** using the **Google Cloud Batch API**
-     - quick start at [link](https://cloud.google.com/batch/docs/nextflow)
-     - runs example [nf-core rnaSeq](https://nf-co.re/rnaseq/3.14.0) pipeline (subway map image of this pipeline, from nf-core website, shown below)
-     - my updated version of Google's quickstart described (Medium article) at [link](https://medium.com/@lynnlangit/real-world-nextflow-on-gcp-c27c87e100d6), uses cloud shell as a job invoker.  
-   - Highly tuned pipelines: Run pipelines on customized GKE (Kubernetes) clusters.
+     - SEE the Google quick start at [link](https://cloud.google.com/batch/docs/nextflow)
+     - RUNS example [nf-core rnaSeq](https://nf-co.re/rnaseq/3.14.0) pipeline (subway map image of this pipeline, from nf-core website, shown below)
+     - SEE my updated version of Google's quickstart described (Medium article) at [link](https://medium.com/@lynnlangit/real-world-nextflow-on-gcp-c27c87e100d6), uses cloud shell as a job invoker.  
+   - Highly tuned pipelines: Run pipelines on customized GKE (**Kubernetes**) clusters
+      - BLOG: "The State of Kubernetes in Nextflow" - [link](https://nextflow.io/blog/2023/the-state-of-kubernetes-in-nextflow.html)
       - NOTE: This approach commonly requires a TEAM of infrastructure engineers to implement properly.
     
 <kbd><img src="https://raw.githubusercontent.com/nf-core/rnaseq/3.14.0//docs/images/nf-core-rnaseq_metro_map_grey.png" width=900></kbd>
 
-### How to Try Out Nextflow Pipelines
- - TRY out a couple of simple NF workflows with ZERO set up
-   - Use GCP Cloud Shell and the main tutorials - ['Examples' link](https://www.nextflow.io/)
-   - USE my samples - see [this folder](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/2_Virtual_Machines_%26_Docker_Containers/Workflow_Script_Examples/Nextflow-NF) in this Repo for sample NF scripts
- - TRY more sample workflows on a single GCE VM  
-   - SETUP prereqs for Nextflow on your VM - JDK, Docker, Graphviz(optional)
-   - RUN RNAseq example pipeline on Compute Engine and Cloud Storage - [link](https://cloud.google.com/genomics/docs/tutorials/nextflow)
-   - RUN VariantCalling pipeline w/GATK - [link](https://github.com/CRG-CNAG/CalliNGS-NF/)
  ---
  
 ### 📺 Click to see Lynn's 4 minute exploration of this section  
