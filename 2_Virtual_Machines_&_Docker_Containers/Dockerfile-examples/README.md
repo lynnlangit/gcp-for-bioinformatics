@@ -6,6 +6,8 @@ Commands and examples for bioinformatics tools and scripts, including Dockerfile
 - Cell Profiler
 - spaFlow
 
+If you just want to pull the containers, go to DockerHub --> https://hub.docker.com/repositories/lynnlangit
+
 ## In Cloud Shell
 
 build in Docker from Cloud Shell, push to DockerHub  
