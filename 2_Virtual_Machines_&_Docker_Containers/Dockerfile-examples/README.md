@@ -1,6 +1,10 @@
 # Dockerfiles
 
-Commands and examples
+Commands and examples for bioinformatics tools and scripts, including Dockerfiles and links to Dockerfiles in other repos  
+- DeepCell
+- Ilastik
+- Cell Profiler
+- spaFlow
 
 ## In Cloud Shell
 
