@@ -4,6 +4,7 @@ Commands and examples for bioinformatics tools and scripts, including Dockerfile
 - DeepCell
 - Ilastik
 - Cell Profiler
+- QuPath
 - spaFlow
 
 If you just want to pull the containers, go to DockerHub --> https://hub.docker.com/repositories/lynnlangit
