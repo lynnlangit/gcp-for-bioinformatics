@@ -20,6 +20,10 @@ Here's a collection of examples, links and notes on best practices for running H
 - GitHub Repo: "Slurm on GCP" - [link](https://github.com/SchedMD/slurm-gcp)
 - Tutorial: "Deploying a Slurm cluster on Compute Engine" - [link](https://cloud.google.com/architecture/deploying-slurm-cluster-compute-engine) uses Terraform template
 - User Guide: "Slurm on GCP guide" - [link](https://docs.google.com/document/d/e/2PACX-1vS0I0IcgVvby98Rdo91nUjd7E9u83oIMCM4arne-9_IdBg6BdV1lBpUcSje_PyHcbAaErC1rY7p4u1g/pub)
+- Quick test Slurm job script (shown below):
+  ```
+  srun -N 3 hostname
+  ```
 
 ## File Systems for HPC
 
