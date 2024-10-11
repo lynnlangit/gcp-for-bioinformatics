@@ -19,20 +19,11 @@ NOTE: Samtools and BCFtools both use HTSlib internally, but these source package
 
 ## How to Prepare to Test?
 
-There are a number of steps to prepare before testing.  These include downloading and installing samtools.  Also you'll need to get sample input data. Your test results will differ, depending on your input data type, size and values.  As a starting point, we will use the `samtools index` command for our testing.  An example (using the GCP Life Sciences API service) is shown below.  This example uses a public container with `samtools` and also a BAM file from GCP public datasets.  Use of these public artifacts makes initial testing simpler.
-
-```
-gcloud beta lifesciences pipelines run \
-    --regions us-east1 \
-    --command-line 'samtools index ${BAM} ${BAI}' \
-    --docker-image "gcr.io/cloud-lifesciences/samtools" \
-    --inputs BAM=gs://genomics-public-data/NA12878.chr20.sample.bam \
-    --outputs BAI=gs://mayo-demos-life-sciences/NA12878.chr20.sample.bam.bai
-```
+There are a number of steps to prepare before testing.  These include downloading and installing samtools.  Also you'll need to get sample input data. Your test results will differ, depending on your input data type, size and values.  As a starting point, we will use the `samtools index` command for our testing.  
 
 ### How to Get/Set up Samtools?
 
-For other testing scenarios, we'll need to get the binaries for `samtools`.  Directions/links are below.  
+For testing scenarios, we'll need to get the binaries for `samtools`.  Directions/links are below.  
 
 - Download Samtools (open source and free) - download [here](http://www.htslib.org/)
 - Get Samtools
