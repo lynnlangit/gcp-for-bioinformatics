@@ -40,7 +40,7 @@ Nextflow is a reactive workflow framework (tools, runtime & bioinformatics DSL) 
  - RUN short example using Nextflow and the `blastn` tool, running in Docker on a custom GCE VM image - [link](https://medium.com/@lynnlangit/cloud-native-hello-world-for-bioinformatics-7831aecc8d1a)
  - USE Nextflow pipelines with other cloud vendors: AWS - [link](https://www.nextflow.io/docs/latest/awscloud.html)
  - FIND and run example Nextflow bioinformatics pipelines (such as one for 'rnaseq jobs') at the `nf-core` site - [link](https://nf-co.re/rnaseq/)
- - MONITOR running Nextflow pipelines using the visual `Nextflow Tower` tool - [link](https://tower.nf/)
+ - MONITOR running Nextflow pipelines using the visual `Seqera Nextflow Tower` tool - [link](https://tower.nf/)
  - REGISTER Nextflow workflows for distribution and reuse in the [Dockstore](https://docs.dockstore.org/en/stable/getting-started/getting-started-with-nextflow.html) genomics workflow registry
     - Note that Nextflow (NF) on Dockstore is a bit different from CWL or WDL. 
     - Instead of having one workflow descriptor file, Nextflow with Dockstore uses two different kinds of files: A config file, `nextflow.config` and a descriptor file, generally called, `main.nf`.
@@ -60,6 +60,12 @@ Shown below is a one version of a reference architecture for running Nextflow an
  - 📺 Watch Nextflow presentations - [link](https://www.nextflow.io/presentations.html)
  - 🗄️ Link to [Nextflow test datasets](https://github.com/nf-core/test-datasets)
 
+#### Nextflow on GCP Documentation - including my articles on this topic too!
+ - 📘 Link to [Nextflow on GCP](https://www.nextflow.io/docs/latest/google.html)
+ - 📘 Link to [Nextflow on GCP Cloud Batch rnaSeq example](https://nextflow.io/blog/2023/nextflow-with-gbatch.html) - [NF docs](https://www.nextflow.io/docs/latest/google.html#cloud-batch)
+ - 📘 Link to [Nextflow: from HPC to Cloud(GCP)](https://seqera.io/blog/nextflow-from-hpc-to-cloud/)
+ - 📘 Link to [Building Containers for Nextflow: spaFlow Example](https://medium.com/@lynnlangit/bioinformatics-building-blocks-65fb62222759)
+
 #### Nextflow Pipeline Patterns and Examples
  - 📘 Huge list of [Learn Nextflow links](https://www.nextflow.io/blog/2022/learn-nextflow-in-2022.html)
  - :octocat: Link to [Example Nextflow pipelines and programming techniques](https://github.com/stevekm/nextflow-demos) - short NF code samples
@@ -68,18 +74,12 @@ Shown below is a one version of a reference architecture for running Nextflow an
  - 📘 Link to paper on [containerized approaches to workflows(includes Nextflow)](https://www.preprints.org/manuscript/202001.0378/v1/download)
  - 📘 Link to run a NF workflow using The Broad's `GATK 4` tools with Nextflow.io use this command `nextflow run CRG-CNAG/CalliNGS-NF -r gatk4 -with-docker`
  - 📘 Link to understanding that Nextflow architecture.  NF is written in the [Groovy programming language](https://en.wikipedia.org/wiki/Apache_Groovy) & is designed to run on [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine) instances
-
-#### Nextflow on GCP Documentation
- - 📘 Link to [Nextflow on GCP](https://www.nextflow.io/docs/latest/google.html)
- - 📘 Link to [Nextflow on GCP Cloud Batch rnaSeq example](https://nextflow.io/blog/2023/nextflow-with-gbatch.html) - [NF docs](https://www.nextflow.io/docs/latest/google.html#cloud-batch)
- - :octocat: Review featured ('awesome') Nextflow pipelines - [link](https://github.com/nextflow-io/awesome-nextflow)
- - 📘 Link to [using Nextflow with ('raw') Kubernetes](https://www.nextflow.io/docs/edge/kubernetes.html)
- - 📘 Link to [Building Containers for Nextflow: spaFlow Example](https://medium.com/@lynnlangit/bioinformatics-building-blocks-65fb62222759)
-
+- 📘 Link to [using Nextflow with ('raw') Kubernetes](https://www.nextflow.io/docs/edge/kubernetes.html)
+  
 ---------
 
 #### Nextflow Tools by Seqera
-- 📘 Link to using [Nextflow Seqera Platform with Google Batch documentation](https://docs.seqera.io/platform/23.2.0/compute-envs/google-cloud-batch)
+ - 📘 Link to using [Nextflow Seqera Platform with Google Batch documentation](https://docs.seqera.io/platform/23.2.0/compute-envs/google-cloud-batch)
  - 📘 Link to using [Nextflow cli](https://www.nextflow.io/docs/edge/cli.html) for scripting 
  - 📘 Link to using [Nextflow's Seqera WebUI](cloud.seqera.io) for monitoring - screenshot shown below 
  - 📘 Link to using [Nextflow tracing & viz tools](https://www.nextflow.io/docs/latest/tracing.html)
