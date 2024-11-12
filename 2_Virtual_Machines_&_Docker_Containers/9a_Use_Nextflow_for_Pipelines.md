@@ -50,7 +50,7 @@ Nextflow is a reactive workflow framework (tools, runtime & bioinformatics DSL) 
 
 Shown below is a one version of a reference architecture for running Nextflow analysis on GCP using the Google Batch API.  This version uses persistent GCE (VMs) as 'head nodes' in a Slurm-like approach.  It is possible to use other methods to launch nextflow workflows on GCP, such as replace the 'head nodes' with Cloud Functions.  
 
-![Nextflow Architecture using GCP Batch API](/images/nf-gcp.png)
+<kbd>![Nextflow Architecture using GCP Batch API](/images/nf-gcp.png)</kbd>
 
 #### General Nextflow
  - 📘 Link to [Nextflow training](https://training.nextflow.io/)
