@@ -40,6 +40,7 @@ Nextflow is a reactive workflow framework (tools, runtime & bioinformatics DSL) 
  - RUN short example using Nextflow and the `blastn` tool, running in Docker on a custom GCE VM image - [link](https://medium.com/@lynnlangit/cloud-native-hello-world-for-bioinformatics-7831aecc8d1a)
  - USE Nextflow pipelines with other cloud vendors: AWS - [link](https://www.nextflow.io/docs/latest/awscloud.html)
  - FIND and run example Nextflow bioinformatics pipelines (such as one for 'rnaseq jobs') at the `nf-core` site - [link](https://nf-co.re/rnaseq/)
+ - REVIEW Nextflow jobs run resource usage with the REPORTS feature.  Use this syntax `nextflow run <pipeline> -with-report [file name]` - [link](https://www.nextflow.io/docs/latest/reports.html)
  - MONITOR running Nextflow pipelines using the visual `Seqera Nextflow Tower` tool - [link](https://tower.nf/)
  - REGISTER Nextflow workflows for distribution and reuse in the [Dockstore](https://docs.dockstore.org/en/stable/getting-started/getting-started-with-nextflow.html) genomics workflow registry
     - Note that Nextflow (NF) on Dockstore is a bit different from CWL or WDL. 
