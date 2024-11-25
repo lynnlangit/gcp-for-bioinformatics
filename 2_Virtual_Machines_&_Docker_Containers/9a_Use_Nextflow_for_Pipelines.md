@@ -12,7 +12,7 @@ Nextflow is a reactive workflow framework (tools, runtime & bioinformatics DSL) 
    - Quick tests: Run jobs on directly on **cloud shell** or a **single Compute Engine VM**
      - USE sample Nextflow pipelines - see ['Examples' link](https://www.nextflow.io/)
      - USE my samples - see [this folder](https://github.com/lynnlangit/gcp-for-bioinformatics/tree/master/2_Virtual_Machines_%26_Docker_Containers/Workflow_Script_Examples/Nextflow-NF) in this Repo for sample NF scripts 
-     - TEST a RNAseq pipeline using Compute Engine and Cloud Storage - [link](https://cloud.google.com/genomics/docs/tutorials/nextflow)
+     - TEST a RNAseq pipeline using Compute Engine, Google Batch and Cloud Storage - [link](https://cloud.google.com/batch/docs/nextflow)
      - TEST a VariantCalling pipeline w/GATK - [link](https://github.com/CRG-CNAG/CalliNGS-NF/)
    - Scaled pipelines: Run example rnaSeq jobs on an **elastic cluster of Compute Engine VMs** using the **Google Cloud Batch API**
      - SEE the Google quick start at [link](https://cloud.google.com/batch/docs/nextflow)
