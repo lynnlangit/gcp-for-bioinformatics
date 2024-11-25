@@ -36,6 +36,9 @@ The nf-core/rnaseq Nextflow pipeline (subway map shown above) is a genomics 'hel
 ---
 
 ### How to Verify Nextflow Pipeline Job Runs
+
+It is helpful to use a very simple Nextflow script to test environment setup.  Linked below is a very short Nextflow script that you can use for testing.  
+
  - VERIFY using a short example script - [link](https://gist.github.com/lynnlangit/c1ed2a3535b3ae6711dd14687d5174c3), uses two BASH processes (tasks), use for quick env verification.
  - VERIFY the output files from the examples above
  - REVIEW Nextflow examples which produce files in a `results` folder
