@@ -2,7 +2,7 @@
 
 Nextflow is a reactive workflow framework (tools, runtime & bioinformatics DSL) for writing data-intensive, scalable pipeline jobs 
 
-- Nextflow pipelines can be run on GCP or many other providers (AWS, Azure, HPC, Slurm, etc...)
+- Nextflow pipelines can be run on GCP or many other providers (Amazon Batch, Azure Batch, Google Batch, HPC, Slurm, etc...)
    - REVIEW core Nextflow features - [link](https://www.nextflow.io/index.html#Features)
 - The global community of Nextflow users is growing rapidly and is at *'over 100,000 collaborating scientists'*
    - JOIN the Nextflow community - [link](https://community.seqera.io/c/nextflow/5) - see the community site for quick answers to common NF questions
