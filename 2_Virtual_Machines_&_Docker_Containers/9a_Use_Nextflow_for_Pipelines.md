@@ -8,6 +8,9 @@ Nextflow is a reactive workflow framework (tools, runtime & bioinformatics DSL) 
    - JOIN the Nextflow community - [link](https://community.seqera.io/c/nextflow/5) - see the community site for quick answers to common NF questions
     
 ### TRY example Nextflow Pipelines
+<kbd><img src="https://raw.githubusercontent.com/nf-core/rnaseq/3.14.0//docs/images/nf-core-rnaseq_metro_map_grey.png" width=900></kbd>  
+The nf-core/rnaseq Nextflow pipeline (subway map shown above) is a genomics 'hello world' example for testing Nextflow on GCP (and other environments.)
+
 - RUN Nextflow pipelines as configurable jobs on GCP using a variety of GCP services:
    - Quick tests: Run jobs on directly on **cloud shell** or a **single Compute Engine VM**
      - USE sample Nextflow pipelines - see ['Examples' link](https://www.nextflow.io/)
@@ -23,7 +26,7 @@ Nextflow is a reactive workflow framework (tools, runtime & bioinformatics DSL) 
       - BLOG: "The State of Kubernetes in Nextflow" - [link](https://nextflow.io/blog/2023/the-state-of-kubernetes-in-nextflow.html)
       - NOTE: This approach commonly requires a TEAM of infrastructure engineers to implement properly.
     
-<kbd><img src="https://raw.githubusercontent.com/nf-core/rnaseq/3.14.0//docs/images/nf-core-rnaseq_metro_map_grey.png" width=900></kbd>
+
 
  ---
  
