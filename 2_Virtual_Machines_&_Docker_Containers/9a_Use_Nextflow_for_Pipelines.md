@@ -16,7 +16,7 @@ Nextflow is a reactive workflow framework (tools, runtime & bioinformatics DSL) 
      - TEST a VariantCalling pipeline w/GATK - [link](https://github.com/CRG-CNAG/CalliNGS-NF/)
    - Scaled pipelines: Run example rnaSeq jobs on an **elastic cluster of Compute Engine VMs** using the **Google Cloud Batch API**
      - SEE the Google quick start at [link](https://cloud.google.com/batch/docs/nextflow)
-     - RUNS example [nf-core rnaSeq](https://nf-co.re/rnaseq/3.14.0) pipeline (subway map image of this pipeline, from nf-core website, shown below)
+     - RUNS example [nf-core rnaseq](https://nf-co.re/rnaseq/3.14.0) pipeline (subway map image of this pipeline, from nf-core website, shown below)
      - SEE my updated version of Google's quickstart described (Medium article) at [link](https://medium.com/@lynnlangit/real-world-nextflow-on-gcp-c27c87e100d6), uses cloud shell as a job invoker.
      - READ Seqera blog post on running rnaSeq pipeline on Google Batch at [link](https://www.nextflow.io/blog/2023/nextflow-with-gbatch.html)
    - Highly tuned pipelines: Run pipelines on customized GKE (**Kubernetes**) clusters
