@@ -71,7 +71,33 @@ NOTES:
    - If a cluster of container instances, then a container orchestration API or service is generally added.  
    - Kubernetes (K8) is the most popular open source container orchestrator.  GCP has GKE (Google Kubernetes Service).  Alternatively, there are a number of bioinformatics APIs that can orchestrate containers on GCP.  These include cromwell, dsub and Nextflow.
  - Best practice is include only small, public example data in the Dockerfile (docker image).  Use Cloud Storage buckets to store your research data.
- - [Singularity containers](http://singularity.lbl.gov/) are used for specialized compute environments such as HPC (and mostly NOT used on GCP pipelines). 
+ - [Singularity containers](http://singularity.lbl.gov/) are used for specialized compute environments such as HPC (and mostly NOT used on GCP pipelines).
+
+## Troubleshooting Constantly Restarting Containers on GCP VMs
+
+If your container is constantly restarting:
+
+1. **Check the Container Command:**
+    - Avoid using `/bin/bash` as the only command unless you are running interactively.
+    - Instead, use a long-running command in your Dockerfile, e.g.:
+      ```dockerfile
+      CMD ["tail", "-f", "/dev/null"]
+      ```
+
+2. **Debugging Steps:**
+    - SSH into your VM.
+    - Use `docker ps` to get the container ID.
+    - Use `docker logs <container-id>` to see why it exited.
+
+3. **For Manual Testing:**
+    - Run the container interactively:
+      ```sh
+      docker run -it --rm your-image-name /bin/bash
+      ```
+    - This keeps the shell open until you exit.
+
+4. **Reference:**
+    - See the GCP documentation: [Running Containers on Compute Engine](https://cloud.google.com/compute/docs/containers/deploying-containers)
 
 ### How to learn more
  
